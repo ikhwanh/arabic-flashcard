@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 1",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "1-10"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "arabic": "رَبّ",
+      "transliteration": "rabb",
+      "translation": "Tuhan, Rabb, Pemelihara",
+      "word_type": "noun",
+      "root": "ر-ب-ب",
+      "forms": {
+        "singular": "رَبّ",
+        "plural": "أَرْبَاب"
+      },
+      "related_words": [
+        {
+          "arabic": "رَبَّى",
+          "translation": "mendidik, memelihara"
+        },
+        {
+          "arabic": "تَرْبِيَة",
+          "translation": "pendidikan, pengasuhan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+        "translation": "Segala puji bagi Allah, Tuhan seluruh alam",
+        "surah": "Al-Fatihah",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 2,
+      "arabic": "رَحْمَة",
+      "transliteration": "rahmah",
+      "translation": "rahmat, kasih sayang",
+      "word_type": "noun",
+      "root": "ر-ح-م",
+      "forms": {
+        "singular": "رَحْمَة",
+        "plural": "رَحَمَات"
+      },
+      "related_words": [
+        {
+          "arabic": "رَحِيم",
+          "translation": "Maha Penyayang"
+        },
+        {
+          "arabic": "رَحْمَٰن",
+          "translation": "Maha Pengasih"
+        },
+        {
+          "arabic": "رَحِمَ",
+          "translation": "mengasihi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَرَحْمَتِي وَسِعَتْ كُلَّ شَيْءٍ",
+        "translation": "Dan rahmat-Ku meliputi segala sesuatu",
+        "surah": "Al-A'raf",
+        "ayah": 156
+      }
+    },
+    {
+      "id": 3,
+      "arabic": "عِلْم",
+      "transliteration": "ilm",
+      "translation": "ilmu, pengetahuan",
+      "word_type": "noun",
+      "root": "ع-ل-م",
+      "forms": {
+        "singular": "عِلْم",
+        "plural": "عُلُوم"
+      },
+      "related_words": [
+        {
+          "arabic": "عَالِم",
+          "translation": "orang berilmu, ulama"
+        },
+        {
+          "arabic": "عَلَّمَ",
+          "translation": "mengajarkan"
+        },
+        {
+          "arabic": "مَعْلُوم",
+          "translation": "yang diketahui"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا",
+        "translation": "Dan Dia mengajarkan kepada Adam nama-nama semuanya",
+        "surah": "Al-Baqarah",
+        "ayah": 31
+      }
+    },
+    {
+      "id": 4,
+      "arabic": "قَلْب",
+      "transliteration": "qalb",
+      "translation": "hati",
+      "word_type": "noun",
+      "root": "ق-ل-ب",
+      "forms": {
+        "singular": "قَلْب",
+        "plural": "قُلُوب"
+      },
+      "related_words": [
+        {
+          "arabic": "قَلَبَ",
+          "translation": "membalik, mengubah"
+        },
+        {
+          "arabic": "تَقَلَّبَ",
+          "translation": "berbolak-balik"
+        }
+      ],
+      "quran_example": {
+        "arabic": "خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ",
+        "translation": "Allah telah mengunci hati mereka",
+        "surah": "Al-Baqarah",
+        "ayah": 7
+      }
+    },
+    {
+      "id": 5,
+      "arabic": "يَوْم",
+      "transliteration": "yawm",
+      "translation": "hari",
+      "word_type": "noun",
+      "root": "ي-و-م",
+      "forms": {
+        "singular": "يَوْم",
+        "plural": "أَيَّام"
+      },
+      "related_words": [
+        {
+          "arabic": "يَوْمِيّ",
+          "translation": "harian"
+        },
+        {
+          "arabic": "يَوْمَئِذٍ",
+          "translation": "pada hari itu"
+        }
+      ],
+      "quran_example": {
+        "arabic": "مَالِكِ يَوْمِ الدِّينِ",
+        "translation": "Pemilik hari pembalasan",
+        "surah": "Al-Fatihah",
+        "ayah": 4
+      }
+    },
+    {
+      "id": 6,
+      "arabic": "نُور",
+      "transliteration": "nur",
+      "translation": "cahaya, nur",
+      "word_type": "noun",
+      "root": "ن-و-ر",
+      "forms": {
+        "singular": "نُور",
+        "plural": "أَنْوَار"
+      },
+      "related_words": [
+        {
+          "arabic": "أَنَارَ",
+          "translation": "menerangi"
+        },
+        {
+          "arabic": "مُنِير",
+          "translation": "bercahaya"
+        }
+      ],
+      "quran_example": {
+        "arabic": "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ",
+        "translation": "Allah adalah cahaya langit dan bumi",
+        "surah": "An-Nur",
+        "ayah": 35
+      }
+    },
+    {
+      "id": 7,
+      "arabic": "خَلَقَ",
+      "transliteration": "khalaqa",
+      "translation": "menciptakan",
+      "word_type": "verb",
+      "root": "خ-ل-ق",
+      "forms": {
+        "madhi": "خَلَقَ",
+        "mudhari": "يَخْلُقُ",
+        "masdar": "خَلْق"
+      },
+      "related_words": [
+        {
+          "arabic": "خَالِق",
+          "translation": "Pencipta"
+        },
+        {
+          "arabic": "مَخْلُوق",
+          "translation": "makhluk, ciptaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+        "translation": "Dia menciptakan manusia dari segumpal darah",
+        "surah": "Al-Alaq",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 8,
+      "arabic": "آمَنَ",
+      "transliteration": "amana",
+      "translation": "beriman, percaya",
+      "word_type": "verb",
+      "root": "أ-م-ن",
+      "forms": {
+        "madhi": "آمَنَ",
+        "mudhari": "يُؤْمِنُ",
+        "masdar": "إِيمَان"
+      },
+      "related_words": [
+        {
+          "arabic": "إِيمَان",
+          "translation": "iman, kepercayaan"
+        },
+        {
+          "arabic": "مُؤْمِن",
+          "translation": "orang beriman"
+        },
+        {
+          "arabic": "أَمَانَة",
+          "translation": "amanah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ",
+        "translation": "Orang-orang yang beriman dan mengerjakan kebajikan",
+        "surah": "Al-Baqarah",
+        "ayah": 25
+      }
+    },
+    {
+      "id": 9,
+      "arabic": "صَبْر",
+      "transliteration": "sabr",
+      "translation": "sabar, kesabaran",
+      "word_type": "noun",
+      "root": "ص-ب-ر",
+      "forms": {
+        "singular": "صَبْر",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "صَبَرَ",
+          "translation": "bersabar"
+        },
+        {
+          "arabic": "صَابِر",
+          "translation": "orang yang sabar"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+        "translation": "Sesungguhnya Allah beserta orang-orang yang sabar",
+        "surah": "Al-Baqarah",
+        "ayah": 153
+      }
+    },
+    {
+      "id": 10,
+      "arabic": "خَيْر",
+      "transliteration": "khayr",
+      "translation": "kebaikan, lebih baik",
+      "word_type": "noun",
+      "root": "خ-ي-ر",
+      "forms": {
+        "singular": "خَيْر",
+        "plural": "خَيْرَات"
+      },
+      "related_words": [
+        {
+          "arabic": "أَخْيَار",
+          "translation": "orang-orang baik"
+        },
+        {
+          "arabic": "اسْتَخَارَ",
+          "translation": "memohon pilihan terbaik (istikharah)"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ",
+        "translation": "Dan kebaikan apa saja yang kamu perbuat untuk dirimu niscaya kamu memperoleh balasannya di sisi Allah",
+        "surah": "Al-Baqarah",
+        "ayah": 110
+      }
+    }
+  ]
+}

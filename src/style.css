@@ -1,0 +1,460 @@
+:root {
+  --bg: #f5f5f5;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.15), 0 4px 10px -2px rgba(0,0,0,0.08);
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #111827;
+  --surface: #1f2937;
+  --text: #f9fafb;
+  --text-muted: #9ca3af;
+  --border: #374151;
+  --accent: #3b82f6;
+  --accent-hover: #60a5fa;
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.4), 0 2px 4px -1px rgba(0,0,0,0.3);
+  --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.5), 0 4px 10px -2px rgba(0,0,0,0.4);
+
+  color-scheme: dark;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.2s, color 0.2s;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app-header[hidden] {
+  display: none;
+}
+
+.app-header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--border);
+}
+
+/* ── Main ── */
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Navigation page ── */
+.nav-page {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nav-hero h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.nav-subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.deck-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.deck-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+  color: var(--text);
+}
+
+.deck-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.deck-emoji {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.deck-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.deck-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.deck-count {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* ── Flashcard page ── */
+.fc-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.fc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fc-deck-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.fc-progress {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.btn-back {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.btn-back:hover {
+  background: var(--border);
+}
+
+/* ── Card flip ── */
+.fc-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.fc-card {
+  width: 100%;
+  max-width: 520px;
+  min-height: 260px;
+  position: relative;
+  cursor: pointer;
+  perspective: 1200px;
+  outline: none;
+  /* height driven by the taller face */
+  display: grid;
+}
+
+.fc-card:focus-visible .fc-face {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.fc-face {
+  grid-area: 1 / 1;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  backface-visibility: hidden;
+  transition: transform 0.45s ease;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.fc-back {
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.fc-front {
+  transform: rotateY(0deg);
+}
+
+.fc-back {
+  transform: rotateY(180deg);
+}
+
+.fc-card.flipped .fc-front {
+  transform: rotateY(-180deg);
+}
+
+.fc-card.flipped .fc-back {
+  transform: rotateY(0deg);
+}
+
+.fc-arabic {
+  font-size: 3rem;
+  font-weight: 700;
+  direction: rtl;
+  line-height: 1.2;
+}
+
+.fc-transliteration {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.fc-english {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.fc-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ── Controls ── */
+.fc-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-nav {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-nav:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-nav:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ── Dots ── */
+.fc-dots {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 480px;
+}
+
+.fc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.fc-dot.active {
+  background: var(--accent);
+  transform: scale(1.3);
+}
+
+.fc-dot:hover:not(.active) {
+  background: var(--text-muted);
+}
+
+/* ── Error page ── */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: var(--text-muted);
+}
+
+/* ── Vocab extras (back face) ── */
+.fc-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+}
+
+.fc-root {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.fc-forms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.fc-form {
+  font-size: 0.78rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+}
+
+.fc-form em {
+  font-style: normal;
+  color: var(--text-muted);
+  margin-right: 0.25rem;
+}
+
+.fc-related {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+  border-top: 1px solid var(--border);
+  padding-top: 0.6rem;
+  margin-top: 0.2rem;
+}
+
+.fc-related-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.fc-related-word {
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.fc-related-arabic {
+  font-size: 1rem;
+  direction: rtl;
+}
+
+.fc-quran {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  margin-top: 0.2rem;
+}
+
+.fc-quran-arabic {
+  font-size: 1rem;
+  direction: rtl;
+  line-height: 1.6;
+}
+
+.fc-quran-translation {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.fc-quran-ref {
+  font-size: 0.7rem;
+  color: var(--accent);
+  font-weight: 500;
+}
