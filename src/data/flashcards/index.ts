@@ -1,20 +1,18 @@
-import type { Deck, GroupedFile, VocabFile } from '../../types'
+import type { Deck, DeckMeta, GroupedFile, VocabFile } from '../../types'
+import manifestData from './manifest.json'
 
-const GROUP_EMOJI: Record<string, string> = {
-  group_preposisi:   '📌',
-  group_konjungsi:   '🔗',
-  group_kondisional: '🔀',
-  group_negatif:     '❌',
-  group_kata_tanya:  '❓',
-  group_kata_ganti:  '👤',
-}
+export const deckMetas: DeckMeta[] = manifestData
 
-function normalizeGrouped(file: GroupedFile): Deck[] {
-  return file.groups.map(group => ({
+const loaders = import.meta.glob<GroupedFile | VocabFile>('./[0-9]*.json', { eager: false, import: 'default' })
+
+function normalizeGrouped(file: GroupedFile, targetId: string): Deck | null {
+  const group = file.groups.find(g => g.id === targetId)
+  if (!group) return null
+  return {
     id:          group.id,
     title:       group.group_title,
     description: group.group_description,
-    emoji:       GROUP_EMOJI[group.id] ?? '📚',
+    emoji:       deckMetas.find(m => m.id === targetId)?.emoji ?? '📚',
     cards: group.words.map((word, i) => ({
       id:              `${group.id}_${i}`,
       arabic:          word.arabic,
@@ -23,11 +21,11 @@ function normalizeGrouped(file: GroupedFile): Deck[] {
       wordType:        group.group_title,
       quranExample:    word.quran_example,
     })),
-  }))
+  }
 }
 
-function normalizeVocab(file: VocabFile): Deck[] {
-  return [{
+function normalizeVocab(file: VocabFile): Deck {
+  return {
     id:          file.meta.title.toLowerCase().replace(/\s+/g, '-'),
     title:       file.meta.title,
     description: file.meta.description,
@@ -43,7 +41,7 @@ function normalizeVocab(file: VocabFile): Deck[] {
       relatedWords:    card.related_words,
       quranExample:    card.quran_example,
     })),
-  }]
+  }
 }
 
 function isGroupedFile(data: unknown): data is GroupedFile {
@@ -54,10 +52,16 @@ function isVocabFile(data: unknown): data is VocabFile {
   return typeof data === 'object' && data !== null && 'cards' in data
 }
 
-const modules = import.meta.glob('./*.json', { eager: true, import: 'default' })
+export async function loadDeck(id: string): Promise<Deck | null> {
+  const meta = deckMetas.find(m => m.id === id)
+  if (!meta) return null
 
-export const decks: Deck[] = Object.values(modules).flatMap(raw => {
-  if (isGroupedFile(raw)) return normalizeGrouped(raw)
+  const loader = loaders[`./${meta.file}`]
+  if (!loader) return null
+
+  const raw = await loader()
+
+  if (isGroupedFile(raw)) return normalizeGrouped(raw, id)
   if (isVocabFile(raw))   return normalizeVocab(raw)
-  return []
-})
+  return null
+}

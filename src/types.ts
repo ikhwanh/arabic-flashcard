@@ -18,6 +18,15 @@ export interface Card {
   quranExample?: { arabic: string; translation: string; surah: string; ayah: number }
 }
 
+export interface DeckMeta {
+  id: string
+  file: string
+  title: string
+  description: string
+  emoji: string
+  cardCount: number
+}
+
 export interface Deck {
   id: string
   title: string

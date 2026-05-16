@@ -1,8 +1,10 @@
-import { decks } from '../data/flashcards'
+import { loadDeck } from '../data/flashcards'
 import type { Card } from '../types'
 
-export function renderFlashcard(container: HTMLElement, deckId: string) {
-  const deck = decks.find(d => d.id === deckId)
+export async function renderFlashcard(container: HTMLElement, deckId: string) {
+  container.innerHTML = `<div class="fc-loading">Loading…</div>`
+
+  const deck = await loadDeck(deckId)
 
   if (!deck) {
     container.innerHTML = `

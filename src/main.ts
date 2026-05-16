@@ -22,7 +22,7 @@ function route() {
 
   if (deckMatch) {
     appHeader.hidden = true
-    renderFlashcard(mainContent, deckMatch[1])
+    renderFlashcard(mainContent, deckMatch[1]).catch(console.error)
   } else {
     appHeader.hidden = false
     renderNavigation(mainContent)

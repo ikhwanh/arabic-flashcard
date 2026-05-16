@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 2",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "11-20"
+  },
+  "cards": [
+    {
+      "id": 11,
+      "arabic": "قَالَ",
+      "transliteration": "qāla",
+      "translation": "berkata, berfirman",
+      "word_type": "verb",
+      "root": "ق-و-ل",
+      "forms": {
+        "past": "قَالَ",
+        "present": "يَقُولُ",
+        "command": "قُلْ"
+      },
+      "related_words": [
+        {
+          "arabic": "قَوْل",
+          "translation": "perkataan, ucapan"
+        },
+        {
+          "arabic": "قَائِل",
+          "translation": "yang berkata"
+        },
+        {
+          "arabic": "أَقْوَال",
+          "translation": "perkataan-perkataan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِذْ قَالَ رَبُّكَ لِلْمَلَائِكَةِ إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً",
+        "translation": "Ingatlah ketika Tuhanmu berfirman kepada para malaikat: Sesungguhnya Aku hendak menjadikan khalifah di bumi",
+        "surah": "Al-Baqarah",
+        "ayah": 30
+      }
+    },
+    {
+      "id": 12,
+      "arabic": "كَانَ",
+      "transliteration": "kāna",
+      "translation": "adalah, ada, dahulu",
+      "word_type": "verb",
+      "root": "ك-و-ن",
+      "forms": {
+        "past": "كَانَ",
+        "present": "يَكُونُ",
+        "command": "كُنْ"
+      },
+      "related_words": [
+        {
+          "arabic": "كَوْن",
+          "translation": "alam semesta, wujud"
+        },
+        {
+          "arabic": "مَكَان",
+          "translation": "tempat"
+        },
+        {
+          "arabic": "تَكْوِين",
+          "translation": "pembentukan, penciptaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ اللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
+        "translation": "Sesungguhnya Allah selalu menjaga dan mengawasi kamu",
+        "surah": "An-Nisa",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 13,
+      "arabic": "آيَة",
+      "transliteration": "āyah",
+      "translation": "tanda, ayat, mukjizat",
+      "word_type": "noun",
+      "root": "أ-ي-ي",
+      "forms": {
+        "singular": "آيَة",
+        "plural": "آيَات"
+      },
+      "related_words": [
+        {
+          "arabic": "بَيِّنَة",
+          "translation": "bukti nyata"
+        },
+        {
+          "arabic": "دَلِيل",
+          "translation": "petunjuk, dalil"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِّأُولِي الْأَلْبَابِ",
+        "translation": "Sesungguhnya dalam penciptaan langit dan bumi dan silih bergantinya malam dan siang terdapat tanda-tanda bagi orang-orang yang berakal",
+        "surah": "Ali Imran",
+        "ayah": 190
+      }
+    },
+    {
+      "id": 14,
+      "arabic": "قَوْم",
+      "transliteration": "qawm",
+      "translation": "kaum, bangsa, umat",
+      "word_type": "noun",
+      "root": "ق-و-م",
+      "forms": {
+        "singular": "قَوْم",
+        "plural": "أَقْوَام"
+      },
+      "related_words": [
+        {
+          "arabic": "قَامَ",
+          "translation": "berdiri, bangkit"
+        },
+        {
+          "arabic": "قِيَامَة",
+          "translation": "hari kiamat"
+        },
+        {
+          "arabic": "مُقِيم",
+          "translation": "yang menetap, yang mendirikan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰ أَن يَكُونُوا خَيْرًا مِّنْهُمْ",
+        "translation": "Wahai orang-orang yang beriman, janganlah suatu kaum merendahkan kaum yang lain, boleh jadi yang direndahkan itu lebih baik dari mereka",
+        "surah": "Al-Hujurat",
+        "ayah": 11
+      }
+    },
+    {
+      "id": 15,
+      "arabic": "أَرْض",
+      "transliteration": "arḍ",
+      "translation": "bumi, tanah",
+      "word_type": "noun",
+      "root": "أ-ر-ض",
+      "forms": {
+        "singular": "أَرْض",
+        "plural": "أَرَاضٍ"
+      },
+      "related_words": [
+        {
+          "arabic": "أَرَضِيَّة",
+          "translation": "lantai, permukaan bumi"
+        },
+        {
+          "arabic": "أَرْضِيّ",
+          "translation": "bersifat bumi, duniawi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ الْأَرْضَ لِلَّهِ يُورِثُهَا مَن يَشَاءُ مِنْ عِبَادِهِ",
+        "translation": "Sesungguhnya bumi itu milik Allah, diwariskan-Nya kepada siapa yang Dia kehendaki di antara hamba-hamba-Nya",
+        "surah": "Al-A'raf",
+        "ayah": 128
+      }
+    },
+    {
+      "id": 16,
+      "arabic": "سَمَاء",
+      "transliteration": "samāʾ",
+      "translation": "langit",
+      "word_type": "noun",
+      "root": "س-م-و",
+      "forms": {
+        "singular": "سَمَاء",
+        "plural": "سَمَاوَات"
+      },
+      "related_words": [
+        {
+          "arabic": "سَامٍ",
+          "translation": "tinggi, luhur"
+        },
+        {
+          "arabic": "سُمُوّ",
+          "translation": "ketinggian, keluhuran"
+        },
+        {
+          "arabic": "سَمَاوِيّ",
+          "translation": "surgawi, langit"
+        }
+      ],
+      "quran_example": {
+        "arabic": "الَّذِي جَعَلَ لَكُمُ الْأَرْضَ فِرَاشًا وَالسَّمَاءَ بِنَاءً",
+        "translation": "Dialah yang menjadikan bumi sebagai hamparan bagimu dan langit sebagai atap",
+        "surah": "Al-Baqarah",
+        "ayah": 22
+      }
+    },
+    {
+      "id": 17,
+      "arabic": "نَفْس",
+      "transliteration": "nafs",
+      "translation": "jiwa, diri, nafsu",
+      "word_type": "noun",
+      "root": "ن-ف-س",
+      "forms": {
+        "singular": "نَفْس",
+        "plural": "أَنْفُس"
+      },
+      "related_words": [
+        {
+          "arabic": "نَفِيس",
+          "translation": "berharga, berharga tinggi"
+        },
+        {
+          "arabic": "نَفَس",
+          "translation": "nafas"
+        },
+        {
+          "arabic": "تَنَفَّسَ",
+          "translation": "bernafas"
+        }
+      ],
+      "quran_example": {
+        "arabic": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+        "translation": "Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya",
+        "surah": "Al-Baqarah",
+        "ayah": 286
+      }
+    },
+    {
+      "id": 18,
+      "arabic": "حَقّ",
+      "transliteration": "ḥaqq",
+      "translation": "kebenaran, hak, yang benar",
+      "word_type": "noun",
+      "root": "ح-ق-ق",
+      "forms": {
+        "singular": "حَقّ",
+        "plural": "حُقُوق"
+      },
+      "related_words": [
+        {
+          "arabic": "حَقِيقَة",
+          "translation": "hakikat, kenyataan"
+        },
+        {
+          "arabic": "حَقَّقَ",
+          "translation": "mewujudkan, membuktikan"
+        },
+        {
+          "arabic": "مُحَقَّق",
+          "translation": "terbukti, pasti"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَذَٰلِكُمُ اللَّهُ رَبُّكُمُ الْحَقُّ فَمَاذَا بَعْدَ الْحَقِّ إِلَّا الضَّلَالُ",
+        "translation": "Maka itulah Allah, Tuhanmu yang sebenarnya; tidak ada sesudah kebenaran itu melainkan kesesatan",
+        "surah": "Yunus",
+        "ayah": 32
+      }
+    },
+    {
+      "id": 19,
+      "arabic": "كِتَاب",
+      "transliteration": "kitāb",
+      "translation": "kitab, buku, tulisan",
+      "word_type": "noun",
+      "root": "ك-ت-ب",
+      "forms": {
+        "singular": "كِتَاب",
+        "plural": "كُتُب"
+      },
+      "related_words": [
+        {
+          "arabic": "كَتَبَ",
+          "translation": "menulis"
+        },
+        {
+          "arabic": "كَاتِب",
+          "translation": "penulis"
+        },
+        {
+          "arabic": "مَكْتُوب",
+          "translation": "yang tertulis, surat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِّلْمُتَّقِينَ",
+        "translation": "Kitab Al-Quran ini tidak ada keraguan padanya; petunjuk bagi mereka yang bertakwa",
+        "surah": "Al-Baqarah",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 20,
+      "arabic": "نَاس",
+      "transliteration": "nās",
+      "translation": "manusia, orang-orang",
+      "word_type": "noun",
+      "root": "أ-ن-س",
+      "forms": {
+        "singular": "إِنْسَان",
+        "plural": "نَاس"
+      },
+      "related_words": [
+        {
+          "arabic": "إِنْسَان",
+          "translation": "manusia"
+        },
+        {
+          "arabic": "إِنْسَانِيَّة",
+          "translation": "kemanusiaan"
+        },
+        {
+          "arabic": "أُنْس",
+          "translation": "keakraban, ketenangan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+        "translation": "Katakanlah: Aku berlindung kepada Tuhan manusia",
+        "surah": "An-Nas",
+        "ayah": 1
+      }
+    }
+  ]
+}
