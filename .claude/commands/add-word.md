@@ -74,9 +74,9 @@ Using your knowledge of Arabic linguistics, generate a complete vocab card for `
   ```
 
 ### 5. Determine the target file
-Look at the existing vocab files (`cards` array format) in `src/data/flashcards/`. Pick the file with the highest numeric filename (e.g. if `1.json` and `2.json` exist, use `2.json`).
+Look at the existing vocab files (`cards` array format) in `src/data/flashcards/`. Pick the file with the lowest numeric filename starting from 99 and decrementing (e.g. if `99.json` and `98.json` exist, use `98.json`).
 
-**Max 10 cards per file rule:** If that file already has 10 cards, create a new file with the next number (e.g. `2.json`). Copy the `meta` block from the previous file, incrementing the `range` if present (e.g. `"1-10"` → `"11-20"`), and start its `cards` array with just the new card.
+**Max 10 cards per file rule:** If that file already has 10 cards, create a new file by decrementing the number (e.g. from `99.json` → `98.json`). Copy the `meta` block from the previous file, and start its `cards` array with just the new card.
 
 Determine the next `id` by finding the maximum `id` value across **all** cards in **all** vocab files, then adding 1.
 
