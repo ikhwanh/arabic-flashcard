@@ -2,6 +2,7 @@ import './style.css'
 import { initTheme } from './theme'
 import { renderNavigation } from './pages/navigation'
 import { renderFlashcard } from './pages/flashcard'
+import { renderQuiz } from './pages/quiz'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="app-header">
@@ -20,7 +21,12 @@ function route() {
   const hash = window.location.hash.slice(1) // strip '#'
   const deckMatch = hash.match(/^deck\/(.+)$/)
 
-  if (deckMatch) {
+  const quizMatch = hash.match(/^deck\/(.+)\/quiz$/)
+
+  if (quizMatch) {
+    appHeader.hidden = true
+    renderQuiz(mainContent, quizMatch[1]).catch(console.error)
+  } else if (deckMatch) {
     appHeader.hidden = true
     renderFlashcard(mainContent, deckMatch[1]).catch(console.error)
   } else {

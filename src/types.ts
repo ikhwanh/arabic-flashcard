@@ -9,7 +9,7 @@ export interface Card {
   id: string
   arabic: string
   transliteration: string
-  english: string
+  indonesian: string
   // vocab-only extras
   wordType?: string
   root?: string

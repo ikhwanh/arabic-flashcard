@@ -39,7 +39,7 @@ export async function renderFlashcard(container: HTMLElement, deckId: string) {
             <div class="fc-face fc-back">
               ${card.wordType ? `<span class="fc-badge">${card.wordType}</span>` : ''}
               <span class="fc-transliteration">${card.transliteration}</span>
-              <span class="fc-english">${card.english}</span>
+              <span class="fc-english">${card.indonesian}</span>
               ${card.root ? `<span class="fc-root">Root: ${card.root}</span>` : ''}
               ${card.forms ? `
                 <div class="fc-forms">
