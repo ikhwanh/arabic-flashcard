@@ -82,23 +82,11 @@ Assign `id` values sequentially starting from `max_existing_id + 1`.
 Write all updated or newly created JSON files. Keep 2-space indentation to match the existing style.
 
 ### 7. Update the manifest
-Read `src/data/flashcards/manifest.json`. For each file that was updated or created:
+Run the manifest generator script to rebuild `src/data/flashcards/manifest.json` from all flashcard files:
 
-- **Updated file** (cards appended): find the entry with matching `file` field and set `cardCount` to the new total card count of that file.
-- **New file created**: append a new entry:
-  ```json
-  {
-    "id": "<deck_id>",
-    "file": "<filename>",
-    "title": "<meta.title>",
-    "description": "<meta.description>",
-    "emoji": "📖",
-    "cardCount": <number of cards in new file>
-  }
-  ```
-  where `deck_id` is `meta.title.toLowerCase().replace(/\s+/g, '-')`.
-
-Write the updated `manifest.json` with 2-space indentation.
+```
+node scripts/generate-manifest.js
+```
 
 ### 8. Confirm
 Report a summary table:

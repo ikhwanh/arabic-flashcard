@@ -84,22 +84,11 @@ Determine the next `id` by finding the maximum `id` value across **all** cards i
 Append the new card object to the `cards` array in the target file. Keep the existing JSON formatting style (2-space indentation). Write the updated file.
 
 ### 7. Update the manifest
-Read `src/data/flashcards/manifest.json`. Find the entry whose `file` matches the target filename.
+Run the manifest generator script to rebuild `src/data/flashcards/manifest.json` from all flashcard files:
 
-- If the entry exists: increment its `cardCount` by 1. If a new file was created instead, add a new entry:
-  ```json
-  {
-    "id": "<deck_id>",
-    "file": "<filename>",
-    "title": "<meta.title>",
-    "description": "<meta.description>",
-    "emoji": "📖",
-    "cardCount": 1
-  }
-  ```
-  where `deck_id` is `meta.title.toLowerCase().replace(/\s+/g, '-')`.
-
-Write the updated `manifest.json` with 2-space indentation.
+```
+node scripts/generate-manifest.js
+```
 
 ### 8. Confirm
 Report:
