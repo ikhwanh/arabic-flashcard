@@ -16,6 +16,8 @@ export async function renderFlashcard(container: HTMLElement, deckId: string) {
     return
   }
 
+  localStorage.setItem(`last_visited_${deckId}`, Date.now().toString())
+
   let currentIndex = 0
   let isFlipped = false
 

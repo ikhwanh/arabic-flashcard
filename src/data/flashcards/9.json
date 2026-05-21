@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 9",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "82-91"
+  },
+  "cards": [
+    {
+      "id": 82,
+      "arabic": "بَعْد",
+      "transliteration": "baʿda",
+      "translation": "sesudah, setelah, kemudian",
+      "word_type": "preposition",
+      "root": "ب-ع-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قَبْل",
+          "translation": "sebelum, dahulu"
+        },
+        {
+          "arabic": "بَعِيد",
+          "translation": "jauh, terjauh"
+        },
+        {
+          "arabic": "مُتَأَخِّر",
+          "translation": "yang kemudian, yang terlambat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "اعْلَمُوا أَنَّ اللَّهَ يُحْيِي الْأَرْضَ بَعْدَ مَوْتِهَا",
+        "translation": "Ketahuilah bahwa sesungguhnya Allah menghidupkan bumi sesudah matinya",
+        "surah": "Al-Hadid",
+        "ayah": 17
+      }
+    },
+    {
+      "id": 83,
+      "arabic": "قَبْل",
+      "transliteration": "qabla",
+      "translation": "sebelum, dahulu, terdahulu",
+      "word_type": "preposition",
+      "root": "ق-ب-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بَعْد",
+          "translation": "sesudah, setelah"
+        },
+        {
+          "arabic": "أَوَّل",
+          "translation": "pertama, yang paling awal"
+        },
+        {
+          "arabic": "سَابِق",
+          "translation": "terdahulu, yang mendahului"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قَدْ خَلَتْ مِن قَبْلِكُمْ سُنَنٌ فَسِيرُوا فِي الْأَرْضِ فَانظُرُوا كَيْفَ كَانَ عَاقِبَةُ الْمُكَذِّبِينَ",
+        "translation": "Sesungguhnya telah berlalu sebelum kamu sunnah-sunnah Allah; karena itu berjalanlah kamu di muka bumi dan perhatikanlah bagaimana akibat orang-orang yang mendustakan",
+        "surah": "Aal-i-Imraan",
+        "ayah": 137
+      }
+    },
+    {
+      "id": 84,
+      "arabic": "سَأَلَ",
+      "transliteration": "saʾala",
+      "translation": "bertanya, meminta, memohon",
+      "word_type": "verb",
+      "root": "س-أ-ل",
+      "forms": {
+        "past": "سَأَلَ",
+        "present": "يَسْأَلُ",
+        "command": "اسْأَلْ"
+      },
+      "related_words": [
+        {
+          "arabic": "سُؤَال",
+          "translation": "pertanyaan, permintaan"
+        },
+        {
+          "arabic": "مَسْأَلَة",
+          "translation": "masalah, persoalan"
+        },
+        {
+          "arabic": "طَلَبَ",
+          "translation": "meminta, menuntut"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَيَسْأَلُونَكَ عَنِ الرُّوحِ قُلِ الرُّوحُ مِنْ أَمْرِ رَبِّي وَمَا أُوتِيتُم مِّنَ الْعِلْمِ إِلَّا قَلِيلًا",
+        "translation": "Dan mereka bertanya kepadamu tentang roh. Katakanlah: Roh itu termasuk urusan Tuhanku, dan tidaklah kamu diberi pengetahuan melainkan sedikit",
+        "surah": "Al-Israa",
+        "ayah": 85
+      }
+    },
+    {
+      "id": 85,
+      "arabic": "أُمَّة",
+      "transliteration": "ummah",
+      "translation": "umat, bangsa, komunitas",
+      "word_type": "noun",
+      "root": "أ-م-م",
+      "forms": {
+        "singular": "أُمَّة",
+        "plural": "أُمَم"
+      },
+      "related_words": [
+        {
+          "arabic": "إِمَام",
+          "translation": "pemimpin, imam"
+        },
+        {
+          "arabic": "جَمَاعَة",
+          "translation": "kelompok, jamaah"
+        },
+        {
+          "arabic": "أُمّ",
+          "translation": "ibu, asal"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا",
+        "translation": "Dan demikian (pula) Kami telah menjadikan kamu (umat Islam) umat yang adil dan pilihan agar kamu menjadi saksi atas (perbuatan) manusia dan agar Rasul (Muhammad) menjadi saksi atas (perbuatan) kamu",
+        "surah": "Al-Baqarah",
+        "ayah": 143
+      }
+    },
+    {
+      "id": 86,
+      "arabic": "أَنفَقَ",
+      "transliteration": "anfaqa",
+      "translation": "membelanjakan, menginfakkan, menafkahkan",
+      "word_type": "verb",
+      "root": "ن-ف-ق",
+      "forms": {
+        "past": "أَنفَقَ",
+        "present": "يُنفِقُ",
+        "command": "أَنفِقْ"
+      },
+      "related_words": [
+        {
+          "arabic": "نَفَقَة",
+          "translation": "nafkah, biaya hidup"
+        },
+        {
+          "arabic": "صَدَقَة",
+          "translation": "sedekah, pemberian sukarela"
+        },
+        {
+          "arabic": "إِنفَاق",
+          "translation": "pembelanjaan, pengeluaran di jalan Allah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَأَنفِقُوا فِي سَبِيلِ اللَّهِ وَلَا تُلْقُوا بِأَيْدِيكُمْ إِلَى التَّهْلُكَةِ وَأَحْسِنُوا إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ",
+        "translation": "Dan belanjakanlah (harta bendamu) di jalan Allah, dan janganlah kamu menjatuhkan dirimu sendiri ke dalam kebinasaan, dan berbuat baiklah, karena sesungguhnya Allah menyukai orang-orang yang berbuat baik",
+        "surah": "Al-Baqarah",
+        "ayah": 195
+      }
+    },
+    {
+      "id": 87,
+      "arabic": "مَلِك",
+      "transliteration": "malik",
+      "translation": "raja, penguasa, pemilik",
+      "word_type": "noun",
+      "root": "م-ل-ك",
+      "forms": {
+        "singular": "مَلِك",
+        "plural": "مُلُوك"
+      },
+      "related_words": [
+        {
+          "arabic": "مُلْك",
+          "translation": "kerajaan, kekuasaan"
+        },
+        {
+          "arabic": "مَلَكَ",
+          "translation": "memiliki, menguasai"
+        },
+        {
+          "arabic": "مَلَكُوت",
+          "translation": "kerajaan Allah, kekuasaan mutlak"
+        }
+      ],
+      "quran_example": {
+        "arabic": "مَلِكِ النَّاسِ",
+        "translation": "Raja manusia",
+        "surah": "An-Naas",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 88,
+      "arabic": "ذَنْب",
+      "transliteration": "dhanb",
+      "translation": "dosa, kesalahan, pelanggaran",
+      "word_type": "noun",
+      "root": "ذ-ن-ب",
+      "forms": {
+        "singular": "ذَنْب",
+        "plural": "ذُنُوب"
+      },
+      "related_words": [
+        {
+          "arabic": "خَطِيئَة",
+          "translation": "dosa besar, kesalahan serius"
+        },
+        {
+          "arabic": "إِثْم",
+          "translation": "dosa, kemaksiatan"
+        },
+        {
+          "arabic": "تَوْبَة",
+          "translation": "tobat, kembali kepada Allah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَالَّذِينَ إِذَا فَعَلُوا فَاحِشَةً أَوْ ظَلَمُوا أَنفُسَهُمْ ذَكَرُوا اللَّهَ فَاسْتَغْفَرُوا لِذُنُوبِهِمْ وَمَن يَغْفِرُ الذُّنُوبَ إِلَّا اللَّهُ",
+        "translation": "Dan (juga) orang-orang yang apabila mengerjakan perbuatan keji atau menganiaya diri sendiri, mereka ingat akan Allah, lalu memohon ampun terhadap dosa-dosa mereka dan siapa lagi yang dapat mengampuni dosa selain dari pada Allah?",
+        "surah": "Aal-i-Imraan",
+        "ayah": 135
+      }
+    },
+    {
+      "id": 89,
+      "arabic": "حِسَاب",
+      "transliteration": "ḥisāb",
+      "translation": "perhitungan, hisab, pertanggungjawaban",
+      "word_type": "noun",
+      "root": "ح-س-ب",
+      "forms": {
+        "singular": "حِسَاب",
+        "plural": "حِسَابَات"
+      },
+      "related_words": [
+        {
+          "arabic": "حَسَبَ",
+          "translation": "menghitung, mengira"
+        },
+        {
+          "arabic": "حَسِيب",
+          "translation": "Yang Maha Menghitung (nama Allah)"
+        },
+        {
+          "arabic": "مِيزَان",
+          "translation": "timbangan, neraca amal"
+        }
+      ],
+      "quran_example": {
+        "arabic": "الْيَوْمَ تُجْزَىٰ كُلُّ نَفْسٍ بِمَا كَسَبَتْ لَا ظُلْمَ الْيَوْمَ إِنَّ اللَّهَ سَرِيعُ الْحِسَابِ",
+        "translation": "Pada hari ini tiap-tiap jiwa diberi balasan dengan apa yang diusahakannya. Tidak ada yang dirugikan pada hari ini. Sesungguhnya Allah amat cepat hisab-Nya",
+        "surah": "Ghafir",
+        "ayah": 17
+      }
+    },
+    {
+      "id": 90,
+      "arabic": "عَدْل",
+      "transliteration": "ʿadl",
+      "translation": "keadilan, adil, keseimbangan",
+      "word_type": "noun",
+      "root": "ع-د-ل",
+      "forms": {
+        "singular": "عَدْل",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "عَادِل",
+          "translation": "yang adil, berlaku adil"
+        },
+        {
+          "arabic": "قِسْط",
+          "translation": "kesetaraan, keadilan"
+        },
+        {
+          "arabic": "ظُلْم",
+          "translation": "kezaliman, ketidakadilan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَىٰ",
+        "translation": "Sesungguhnya Allah menyuruh (kamu) berlaku adil dan berbuat kebajikan, memberi kepada kaum kerabat",
+        "surah": "An-Nahl",
+        "ayah": 90
+      }
+    },
+    {
+      "id": 91,
+      "arabic": "طَيِّب",
+      "transliteration": "ṭayyib",
+      "translation": "baik, suci, halal, lezat",
+      "word_type": "adjective",
+      "root": "ط-ي-ب",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حَلَال",
+          "translation": "halal, yang diperbolehkan"
+        },
+        {
+          "arabic": "طَاهِر",
+          "translation": "suci, bersih"
+        },
+        {
+          "arabic": "خَبِيث",
+          "translation": "buruk, kotor, tidak suci"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ",
+        "translation": "Hai sekalian manusia, makanlah yang halal lagi baik dari apa yang terdapat di bumi, dan janganlah kamu mengikuti langkah-langkah syaitan",
+        "surah": "Al-Baqarah",
+        "ayah": 168
+      }
+    }
+  ]
+}

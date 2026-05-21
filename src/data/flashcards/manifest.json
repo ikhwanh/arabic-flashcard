@@ -104,6 +104,38 @@
     "cardCount": 10
   },
   {
+    "id": "kosakata-al-quran---part-8",
+    "file": "8.json",
+    "title": "Kosakata Al-Quran - Part 8",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "emoji": "📖",
+    "cardCount": 10
+  },
+  {
+    "id": "kosakata-al-quran---part-9",
+    "file": "9.json",
+    "title": "Kosakata Al-Quran - Part 9",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "emoji": "📖",
+    "cardCount": 10
+  },
+  {
+    "id": "kosakata-al-quran---part-10",
+    "file": "10.json",
+    "title": "Kosakata Al-Quran - Part 10",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "emoji": "📖",
+    "cardCount": 10
+  },
+  {
+    "id": "kosakata-al-quran---part-11",
+    "file": "11.json",
+    "title": "Kosakata Al-Quran - Part 11",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "emoji": "📖",
+    "cardCount": 10
+  },
+  {
     "id": "kosakata-al-quran---part-99",
     "file": "99.json",
     "title": "Kosakata Al-Quran - Part 99",

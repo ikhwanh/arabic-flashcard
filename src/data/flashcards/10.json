@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 10",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "92-101"
+  },
+  "cards": [
+    {
+      "id": 92,
+      "arabic": "عَلِيم",
+      "transliteration": "ʿalīm",
+      "translation": "Maha Mengetahui, yang mengetahui segalanya",
+      "word_type": "adjective",
+      "root": "ع-ل-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عِلْم",
+          "translation": "ilmu, pengetahuan"
+        },
+        {
+          "arabic": "عَالِم",
+          "translation": "orang berilmu, ulama"
+        },
+        {
+          "arabic": "خَبِير",
+          "translation": "Maha Mengenal, Yang Maha Waspada"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلِلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ فَأَيْنَمَا تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
+        "translation": "Dan kepunyaan Allah-lah timur dan barat, maka ke manapun kamu menghadap di situlah wajah Allah. Sesungguhnya Allah Maha Luas (rahmat-Nya) lagi Maha Mengetahui",
+        "surah": "Al-Baqarah",
+        "ayah": 115
+      }
+    },
+    {
+      "id": 93,
+      "arabic": "حَكِيم",
+      "transliteration": "ḥakīm",
+      "translation": "Maha Bijaksana, yang penuh hikmah",
+      "word_type": "adjective",
+      "root": "ح-ك-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حِكْمَة",
+          "translation": "kebijaksanaan, hikmah"
+        },
+        {
+          "arabic": "حَكَمَ",
+          "translation": "memutuskan, menghukumi"
+        },
+        {
+          "arabic": "حُكْم",
+          "translation": "keputusan, hukum, pemerintahan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَالْقُرْآنِ الْحَكِيمِ",
+        "translation": "Demi Al-Quran yang penuh hikmah",
+        "surah": "Yaseen",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 94,
+      "arabic": "عَزِيز",
+      "transliteration": "ʿazīz",
+      "translation": "Maha Perkasa, mulia, terhormat",
+      "word_type": "adjective",
+      "root": "ع-ز-ز",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عِزَّة",
+          "translation": "kemuliaan, kehormatan, kekuatan"
+        },
+        {
+          "arabic": "أَعَزَّ",
+          "translation": "memuliakan, memperkuat"
+        },
+        {
+          "arabic": "عِزٌّ",
+          "translation": "kejayaan, kemegahan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَن يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ",
+        "translation": "Dan mereka tidak menyiksa orang-orang mukmin itu melainkan karena orang-orang mukmin itu beriman kepada Allah Yang Maha Perkasa lagi Maha Terpuji",
+        "surah": "Al-Burooj",
+        "ayah": 8
+      }
+    },
+    {
+      "id": 95,
+      "arabic": "غَفُور",
+      "transliteration": "ghafūr",
+      "translation": "Maha Pengampun, Yang mengampuni dosa",
+      "word_type": "adjective",
+      "root": "غ-ف-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "غَفَرَ",
+          "translation": "mengampuni, memaafkan"
+        },
+        {
+          "arabic": "مَغْفِرَة",
+          "translation": "ampunan, pengampunan"
+        },
+        {
+          "arabic": "غُفْرَان",
+          "translation": "pengampunan, keampunan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَهُوَ الْغَفُورُ الْوَدُودُ",
+        "translation": "Dialah Yang Maha Pengampun lagi Maha Pengasih",
+        "surah": "Al-Burooj",
+        "ayah": 14
+      }
+    },
+    {
+      "id": 96,
+      "arabic": "فَعَلَ",
+      "transliteration": "faʿala",
+      "translation": "melakukan, mengerjakan, berbuat",
+      "word_type": "verb",
+      "root": "ف-ع-ل",
+      "forms": {
+        "past": "فَعَلَ",
+        "present": "يَفْعَلُ",
+        "command": "افْعَلْ"
+      },
+      "related_words": [
+        {
+          "arabic": "فِعْل",
+          "translation": "perbuatan, tindakan, kata kerja"
+        },
+        {
+          "arabic": "فَاعِل",
+          "translation": "pelaku, yang berbuat, subjek"
+        },
+        {
+          "arabic": "مَفْعُول",
+          "translation": "objek, yang diperbuat, yang dilakukan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ",
+        "translation": "Wahai orang-orang yang beriman, kenapakah kamu mengatakan sesuatu yang tidak kamu kerjakan?",
+        "surah": "As-Saff",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 97,
+      "arabic": "لَيْل",
+      "transliteration": "layl",
+      "translation": "malam, waktu malam",
+      "word_type": "noun",
+      "root": "ل-ي-ل",
+      "forms": {
+        "singular": "لَيْل",
+        "plural": "لَيَالِي"
+      },
+      "related_words": [
+        {
+          "arabic": "نَهَار",
+          "translation": "siang hari, waktu siang"
+        },
+        {
+          "arabic": "لَيْلَة",
+          "translation": "satu malam"
+        },
+        {
+          "arabic": "ظُلْمَة",
+          "translation": "kegelapan, gelap gulita"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَاللَّيْلِ إِذَا سَجَىٰ",
+        "translation": "demi malam apabila telah sunyi (gelap)",
+        "surah": "Ad-Dhuhaa",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 98,
+      "arabic": "كَثِير",
+      "transliteration": "kathīr",
+      "translation": "banyak, sangat banyak, kebanyakan",
+      "word_type": "adjective",
+      "root": "ك-ث-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "أَكْثَر",
+          "translation": "lebih banyak, kebanyakan"
+        },
+        {
+          "arabic": "كَثُرَ",
+          "translation": "menjadi banyak, bertambah banyak"
+        },
+        {
+          "arabic": "قَلِيل",
+          "translation": "sedikit (antonim)"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمَن يُؤْتَ الْحِكْمَةَ فَقَدْ أُوتِيَ خَيْرًا كَثِيرًا وَمَا يَذَّكَّرُ إِلَّا أُولُوا الْأَلْبَابِ",
+        "translation": "Dan barangsiapa yang dianugerahi hikmah, ia benar-benar telah dianugerahi karunia yang banyak. Dan hanya orang-orang yang berakallah yang dapat mengambil pelajaran",
+        "surah": "Al-Baqarah",
+        "ayah": 269
+      }
+    },
+    {
+      "id": 99,
+      "arabic": "كَبِير",
+      "transliteration": "kabīr",
+      "translation": "besar, agung, tua, parah",
+      "word_type": "adjective",
+      "root": "ك-ب-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "أَكْبَر",
+          "translation": "lebih besar, terbesar, Allahu Akbar"
+        },
+        {
+          "arabic": "كِبَر",
+          "translation": "kebesaran, usia tua"
+        },
+        {
+          "arabic": "صَغِير",
+          "translation": "kecil, muda (antonim)"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَسْأَلُونَكَ عَنِ الْخَمْرِ وَالْمَيْسِرِ قُلْ فِيهِمَا إِثْمٌ كَبِيرٌ وَمَنَافِعُ لِلنَّاسِ",
+        "translation": "Mereka bertanya kepadamu tentang khamar dan judi. Katakanlah: Pada keduanya terdapat dosa yang besar dan beberapa manfaat bagi manusia",
+        "surah": "Al-Baqarah",
+        "ayah": 219
+      }
+    },
+    {
+      "id": 100,
+      "arabic": "قَلِيل",
+      "transliteration": "qalīl",
+      "translation": "sedikit, sebentar, tidak banyak",
+      "word_type": "adjective",
+      "root": "ق-ل-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "أَقَلّ",
+          "translation": "lebih sedikit, paling sedikit"
+        },
+        {
+          "arabic": "قِلَّة",
+          "translation": "kelangkaan, sedikitnya"
+        },
+        {
+          "arabic": "كَثِير",
+          "translation": "banyak (antonim)"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلْ مَتَاعُ الدُّنْيَا قَلِيلٌ وَالْآخِرَةُ خَيْرٌ لِّمَنِ اتَّقَىٰ",
+        "translation": "Katakanlah: Kesenangan di dunia ini hanya sebentar dan akhirat itu lebih baik untuk orang-orang yang bertakwa",
+        "surah": "An-Nisaa",
+        "ayah": 77
+      }
+    },
+    {
+      "id": 101,
+      "arabic": "أَب",
+      "transliteration": "ab",
+      "translation": "ayah, bapak, leluhur",
+      "word_type": "noun",
+      "root": "أ-ب-و",
+      "forms": {
+        "singular": "أَب",
+        "plural": "آبَاء"
+      },
+      "related_words": [
+        {
+          "arabic": "أُمّ",
+          "translation": "ibu"
+        },
+        {
+          "arabic": "وَالِد",
+          "translation": "ayah kandung, orang tua laki-laki"
+        },
+        {
+          "arabic": "أَبَوَان",
+          "translation": "kedua orang tua (ayah dan ibu)"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِذْ قَالَ لِأَبِيهِ يَا أَبَتِ لِمَ تَعْبُدُ مَا لَا يَسْمَعُ وَلَا يُبْصِرُ وَلَا يُغْنِي عَنكَ شَيْئًا",
+        "translation": "Ingatlah ketika ia berkata kepada bapaknya: Wahai bapakku, mengapa kamu menyembah sesuatu yang tidak mendengar, tidak melihat dan tidak dapat menolong kamu sedikitpun?",
+        "surah": "Maryam",
+        "ayah": 42
+      }
+    }
+  ]
+}

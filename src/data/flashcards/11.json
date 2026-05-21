@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 11",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "102-111"
+  },
+  "cards": [
+    {
+      "id": 102,
+      "arabic": "قُلْ",
+      "transliteration": "qul",
+      "translation": "katakanlah, ucapkanlah",
+      "word_type": "verb",
+      "root": "ق-و-ل",
+      "forms": {
+        "past": "قَالَ",
+        "present": "يَقُولُ",
+        "command": "قُلْ"
+      },
+      "related_words": [
+        {
+          "arabic": "قَوْل",
+          "translation": "perkataan, ucapan"
+        },
+        {
+          "arabic": "يَقُولُ",
+          "translation": "dia berkata"
+        },
+        {
+          "arabic": "قُولُوا",
+          "translation": "katakanlah (jamak)"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+        "translation": "Katakanlah: 'Dialah Allah, Yang Maha Esa.'",
+        "surah": "Al-Ikhlaas",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 103,
+      "arabic": "عَلِمَ",
+      "transliteration": "ʿalima",
+      "translation": "mengetahui, tahu",
+      "word_type": "verb",
+      "root": "ع-ل-م",
+      "forms": {
+        "past": "عَلِمَ",
+        "present": "يَعْلَمُ",
+        "command": "اعْلَمْ"
+      },
+      "related_words": [
+        {
+          "arabic": "عِلْم",
+          "translation": "ilmu, pengetahuan"
+        },
+        {
+          "arabic": "عَالِم",
+          "translation": "orang berilmu, ulama"
+        },
+        {
+          "arabic": "مَعْلُوم",
+          "translation": "yang diketahui"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَاللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ",
+        "translation": "Dan Allah mengetahui, sedang kamu tidak mengetahui.",
+        "surah": "Al-Baqarah",
+        "ayah": 216
+      }
+    },
+    {
+      "id": 104,
+      "arabic": "كَذَّبَ",
+      "transliteration": "kadhdhaba",
+      "translation": "mendustakan, mengingkari, menolak",
+      "word_type": "verb",
+      "root": "ك-ذ-ب",
+      "forms": {
+        "past": "كَذَّبَ",
+        "present": "يُكَذِّبُ",
+        "command": "كَذِّبْ"
+      },
+      "related_words": [
+        {
+          "arabic": "كَذِب",
+          "translation": "dusta, kebohongan"
+        },
+        {
+          "arabic": "كَاذِب",
+          "translation": "pendusta"
+        },
+        {
+          "arabic": "تَكْذِيب",
+          "translation": "pendustaan, penolakan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ كَذِبًا أَوْ كَذَّبَ بِآيَاتِهِ",
+        "translation": "Dan siapakah yang lebih aniaya daripada orang yang membuat-buat suatu kedustaan terhadap Allah, atau mendustakan ayat-ayat-Nya?",
+        "surah": "Al-An'am",
+        "ayah": 21
+      }
+    },
+    {
+      "id": 105,
+      "arabic": "نَصَرَ",
+      "transliteration": "naṣara",
+      "translation": "menolong, membantu, mendukung",
+      "word_type": "verb",
+      "root": "ن-ص-ر",
+      "forms": {
+        "past": "نَصَرَ",
+        "present": "يَنصُرُ",
+        "command": "انصُرْ"
+      },
+      "related_words": [
+        {
+          "arabic": "نَصْر",
+          "translation": "pertolongan, kemenangan"
+        },
+        {
+          "arabic": "نَصِير",
+          "translation": "penolong"
+        },
+        {
+          "arabic": "نَاصِر",
+          "translation": "yang menolong"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِن تَنصُرُوا اللَّهَ يَنصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ",
+        "translation": "Hai orang-orang mukmin, jika kamu menolong (agama) Allah, niscaya Dia akan menolongmu dan meneguhkan kedudukanmu.",
+        "surah": "Muhammad",
+        "ayah": 7
+      }
+    },
+    {
+      "id": 106,
+      "arabic": "بَيْت",
+      "transliteration": "bayt",
+      "translation": "rumah, tempat tinggal",
+      "word_type": "noun",
+      "root": "ب-ي-ت",
+      "forms": {
+        "singular": "بَيْت",
+        "plural": "بُيُوت"
+      },
+      "related_words": [
+        {
+          "arabic": "بَيْت اللَّه",
+          "translation": "rumah Allah (Ka'bah)"
+        },
+        {
+          "arabic": "أَهْل الْبَيْت",
+          "translation": "keluarga rumah, keluarga Nabi"
+        },
+        {
+          "arabic": "بُيُوت",
+          "translation": "rumah-rumah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ أَوَّلَ بَيْتٍ وُضِعَ لِلنَّاسِ لَلَّذِي بِبَكَّةَ مُبَارَكًا وَهُدًى لِّلْعَالَمِينَ",
+        "translation": "Sesungguhnya rumah yang mula-mula dibangun untuk (tempat beribadat) manusia, ialah Baitullah yang di Bakkah (Mekah) yang diberkahi dan menjadi petunjuk bagi semua manusia.",
+        "surah": "Aal-i-Imraan",
+        "ayah": 96
+      }
+    },
+    {
+      "id": 107,
+      "arabic": "وَلَدَ",
+      "transliteration": "walada",
+      "translation": "melahirkan, memperanakkan",
+      "word_type": "verb",
+      "root": "و-ل-د",
+      "forms": {
+        "past": "وَلَدَ",
+        "present": "يَلِدُ",
+        "command": "لِدْ"
+      },
+      "related_words": [
+        {
+          "arabic": "وَلَد",
+          "translation": "anak, keturunan"
+        },
+        {
+          "arabic": "وَالِد",
+          "translation": "ayah"
+        },
+        {
+          "arabic": "وَالِدَة",
+          "translation": "ibu"
+        }
+      ],
+      "quran_example": {
+        "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+        "translation": "Dia tiada beranak dan tidak pula diperanakkan.",
+        "surah": "Al-Ikhlaas",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 108,
+      "arabic": "حُكْم",
+      "transliteration": "ḥukm",
+      "translation": "hukum, keputusan, pemerintahan",
+      "word_type": "noun",
+      "root": "ح-ك-م",
+      "forms": {
+        "singular": "حُكْم",
+        "plural": "أَحْكَام"
+      },
+      "related_words": [
+        {
+          "arabic": "حَكَمَ",
+          "translation": "memutuskan, memerintah"
+        },
+        {
+          "arabic": "حَاكِم",
+          "translation": "hakim, penguasa"
+        },
+        {
+          "arabic": "مَحْكَمَة",
+          "translation": "pengadilan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ ۚ ذَٰلِكَ الدِّينُ الْقَيِّمُ",
+        "translation": "Keputusan itu hanyalah kepunyaan Allah. Dia telah memerintahkan agar kamu tidak menyembah selain Dia. Itulah agama yang lurus.",
+        "surah": "Yusuf",
+        "ayah": 40
+      }
+    },
+    {
+      "id": 109,
+      "arabic": "بَعَثَ",
+      "transliteration": "baʿatha",
+      "translation": "membangkitkan, mengutus, mengirim",
+      "word_type": "verb",
+      "root": "ب-ع-ث",
+      "forms": {
+        "past": "بَعَثَ",
+        "present": "يَبْعَثُ",
+        "command": "ابْعَثْ"
+      },
+      "related_words": [
+        {
+          "arabic": "بَعْث",
+          "translation": "kebangkitan, pengutusan"
+        },
+        {
+          "arabic": "يَوْم الْبَعْث",
+          "translation": "hari kebangkitan"
+        },
+        {
+          "arabic": "مَبْعُوث",
+          "translation": "yang diutus, yang dibangkitkan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمَا كُنَّا مُعَذِّبِينَ حَتَّىٰ نَبْعَثَ رَسُولًا",
+        "translation": "Dan Kami tidak akan mengazab sebelum Kami mengutus seorang rasul.",
+        "surah": "Al-Israa",
+        "ayah": 15
+      }
+    },
+    {
+      "id": 110,
+      "arabic": "أَخ",
+      "transliteration": "akh",
+      "translation": "saudara, saudara laki-laki",
+      "word_type": "noun",
+      "root": "أ-خ-و",
+      "forms": {
+        "singular": "أَخ",
+        "plural": "إِخْوَة"
+      },
+      "related_words": [
+        {
+          "arabic": "أُخْت",
+          "translation": "saudara perempuan"
+        },
+        {
+          "arabic": "إِخْوَان",
+          "translation": "saudara-saudara (persaudaraan)"
+        },
+        {
+          "arabic": "أُخُوَّة",
+          "translation": "persaudaraan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ",
+        "translation": "Orang-orang beriman itu sesungguhnya bersaudara. Sebab itu damaikanlah (perbaikilah hubungan) antara kedua saudaramu itu.",
+        "surah": "Al-Hujuraat",
+        "ayah": 10
+      }
+    },
+    {
+      "id": 111,
+      "arabic": "وَجَدَ",
+      "transliteration": "wajada",
+      "translation": "menemukan, mendapati, merasa",
+      "word_type": "verb",
+      "root": "و-ج-د",
+      "forms": {
+        "past": "وَجَدَ",
+        "present": "يَجِدُ",
+        "command": "جِدْ"
+      },
+      "related_words": [
+        {
+          "arabic": "وُجُود",
+          "translation": "keberadaan, eksistensi"
+        },
+        {
+          "arabic": "مَوْجُود",
+          "translation": "yang ada, tersedia"
+        },
+        {
+          "arabic": "وِجْدَان",
+          "translation": "perasaan, hati nurani"
+        }
+      ],
+      "quran_example": {
+        "arabic": "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ",
+        "translation": "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungimu?",
+        "surah": "Ad-Dhuhaa",
+        "ayah": 6
+      }
+    }
+  ]
+}

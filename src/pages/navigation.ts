@@ -1,11 +1,16 @@
 import { deckMetas } from '../data/flashcards'
 
 function getQuizScore(deckId: string): string | null {
-  const raw = localStorage.getItem(`quiz_score_${deckId}`)
-  return raw
+  return localStorage.getItem(`quiz_score_${deckId}`)
+}
+
+function getLastVisited(deckId: string): number {
+  return Number(localStorage.getItem(`last_visited_${deckId}`) ?? 0)
 }
 
 export function renderNavigation(container: HTMLElement) {
+  const sorted = [...deckMetas].sort((a, b) => getLastVisited(b.id) - getLastVisited(a.id))
+
   container.innerHTML = `
     <div class="nav-page">
       <div class="nav-hero">
@@ -13,7 +18,7 @@ export function renderNavigation(container: HTMLElement) {
         <p class="nav-subtitle">Select a category to start studying</p>
       </div>
       <div class="deck-grid">
-        ${deckMetas.map(deck => {
+        ${sorted.map(deck => {
           const score = getQuizScore(deck.id)
           return `
           <div class="deck-card">
