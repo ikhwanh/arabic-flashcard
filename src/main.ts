@@ -6,7 +6,7 @@ import { renderQuiz } from './pages/quiz'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="app-header">
-    <h1>Arabic Flashcards</h1>
+    <h1>Arabic Flashcards <span class="app-version">v1.0.1</span></h1>
     <button class="theme-toggle" aria-label="Toggle theme"></button>
   </header>
   <main class="app-main" id="main-content"></main>
