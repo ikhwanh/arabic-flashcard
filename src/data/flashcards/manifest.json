@@ -136,6 +136,14 @@
     "cardCount": 10
   },
   {
+    "id": "kosakata-al-quran---part-12",
+    "file": "12.json",
+    "title": "Kosakata Al-Quran - Part 12",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "emoji": "📖",
+    "cardCount": 10
+  },
+  {
     "id": "kosakata-al-quran---part-99",
     "file": "99.json",
     "title": "Kosakata Al-Quran - Part 99",
