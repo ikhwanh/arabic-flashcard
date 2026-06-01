@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 14",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "132-141"
+  },
+  "cards": [
+    {
+      "id": 132,
+      "arabic": "سَمِعَ",
+      "transliteration": "samiʿa",
+      "translation": "mendengar",
+      "word_type": "verb",
+      "root": "س-م-ع",
+      "forms": {
+        "past": "سَمِعَ",
+        "present": "يَسْمَعُ",
+        "command": "اسْمَعْ"
+      },
+      "related_words": [
+        { "arabic": "سَمِيع", "transliteration": "samīʿ", "translation": "Maha Mendengar" },
+        { "arabic": "سَمْع", "transliteration": "samʿ", "translation": "pendengaran" },
+        { "arabic": "مَسْمُوع", "transliteration": "masmūʿ", "translation": "yang didengar" }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",
+        "translation": "Sesungguhnya Engkaulah yang Maha Mendengar lagi Maha Mengetahui",
+        "surah": "Al-Baqarah",
+        "ayah": 127
+      }
+    },
+    {
+      "id": 133,
+      "arabic": "يَد",
+      "transliteration": "yad",
+      "translation": "tangan",
+      "word_type": "noun",
+      "root": "ي-د-ي",
+      "forms": {
+        "singular": "يَد",
+        "plural": "أَيْدِي"
+      },
+      "related_words": [
+        { "arabic": "يَمِين", "transliteration": "yamīn", "translation": "tangan kanan" },
+        { "arabic": "شِمَال", "transliteration": "shimāl", "translation": "tangan kiri" },
+        { "arabic": "بِيَدِهِ", "transliteration": "biyadihi", "translation": "di tangan-Nya" }
+      ],
+      "quran_example": {
+        "arabic": "يَدُ اللَّهِ فَوْقَ أَيْدِيهِمْ",
+        "translation": "Tangan Allah di atas tangan mereka",
+        "surah": "Al-Fath",
+        "ayah": 10
+      }
+    },
+    {
+      "id": 134,
+      "arabic": "مُسْتَقِيم",
+      "transliteration": "mustaqīm",
+      "translation": "lurus, tegak",
+      "word_type": "adjective",
+      "root": "ق-و-م",
+      "forms": {},
+      "related_words": [
+        { "arabic": "صِرَاط", "transliteration": "ṣirāṭ", "translation": "jalan" },
+        { "arabic": "قَامَ", "transliteration": "qāma", "translation": "berdiri, tegak" },
+        { "arabic": "قِيَام", "transliteration": "qiyām", "translation": "berdiri, menegakkan" }
+      ],
+      "quran_example": {
+        "arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+        "translation": "Tunjukilah kami jalan yang lurus",
+        "surah": "Al-Faatiha",
+        "ayah": 6
+      }
+    },
+    {
+      "id": 135,
+      "arabic": "زَوْج",
+      "transliteration": "zawj",
+      "translation": "pasangan, suami/istri",
+      "word_type": "noun",
+      "root": "ز-و-ج",
+      "forms": {
+        "singular": "زَوْج",
+        "plural": "أَزْوَاج"
+      },
+      "related_words": [
+        { "arabic": "زَوَّجَ", "transliteration": "zawwaja", "translation": "menikahkan" },
+        { "arabic": "تَزَوَّجَ", "transliteration": "tazawwaja", "translation": "menikah" },
+        { "arabic": "نِكَاح", "transliteration": "nikāḥ", "translation": "pernikahan" }
+      ],
+      "quran_example": {
+        "arabic": "وَخَلَقَ مِنْهَا زَوْجَهَا",
+        "translation": "dan dari padanya Allah menciptakan pasangannya",
+        "surah": "An-Nisaa",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 136,
+      "arabic": "صَاحِب",
+      "transliteration": "ṣāḥib",
+      "translation": "sahabat, teman, pemilik",
+      "word_type": "noun",
+      "root": "ص-ح-ب",
+      "forms": {
+        "singular": "صَاحِب",
+        "plural": "أَصْحَاب"
+      },
+      "related_words": [
+        { "arabic": "صَحِبَ", "transliteration": "ṣaḥiba", "translation": "menemani" },
+        { "arabic": "صُحْبَة", "transliteration": "ṣuḥba", "translation": "persahabatan" },
+        { "arabic": "أَصْحَاب الْجَنَّة", "transliteration": "aṣḥāb al-janna", "translation": "penghuni surga" }
+      ],
+      "quran_example": {
+        "arabic": "إِذْ يَقُولُ لِصَاحِبِهِ لَا تَحْزَنْ",
+        "translation": "ketika dia berkata kepada sahabatnya: janganlah kamu berduka cita",
+        "surah": "At-Tawba",
+        "ayah": 40
+      }
+    },
+    {
+      "id": 137,
+      "arabic": "بَشَّرَ",
+      "transliteration": "bashshara",
+      "translation": "menyampaikan kabar gembira",
+      "word_type": "verb",
+      "root": "ب-ش-ر",
+      "forms": {
+        "past": "بَشَّرَ",
+        "present": "يُبَشِّرُ",
+        "command": "بَشِّرْ"
+      },
+      "related_words": [
+        { "arabic": "بُشْرَى", "transliteration": "bushrā", "translation": "kabar gembira" },
+        { "arabic": "بَشِير", "transliteration": "bashīr", "translation": "pembawa kabar gembira" },
+        { "arabic": "بَشَر", "transliteration": "bashar", "translation": "manusia" }
+      ],
+      "quran_example": {
+        "arabic": "وَبَشِّرِ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ",
+        "translation": "Dan sampaikanlah berita gembira kepada mereka yang beriman dan berbuat baik",
+        "surah": "Al-Baqarah",
+        "ayah": 25
+      }
+    },
+    {
+      "id": 138,
+      "arabic": "أَنْذَرَ",
+      "transliteration": "andhara",
+      "translation": "memperingatkan",
+      "word_type": "verb",
+      "root": "ن-ذ-ر",
+      "forms": {
+        "past": "أَنْذَرَ",
+        "present": "يُنْذِرُ",
+        "command": "أَنْذِرْ"
+      },
+      "related_words": [
+        { "arabic": "نَذِير", "transliteration": "nadhīr", "translation": "pemberi peringatan" },
+        { "arabic": "نِذَار", "transliteration": "nidhār", "translation": "peringatan" },
+        { "arabic": "مُنْذِر", "transliteration": "mundhir", "translation": "yang memperingatkan" }
+      ],
+      "quran_example": {
+        "arabic": "لِتُنذِرَ قَوْمًا مَّا أُنذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ",
+        "translation": "Agar kamu memberi peringatan kepada kaum yang bapak-bapak mereka belum pernah diberi peringatan, karena itu mereka lalai",
+        "surah": "Yaseen",
+        "ayah": 6
+      }
+    },
+    {
+      "id": 139,
+      "arabic": "كَسَبَ",
+      "transliteration": "kasaba",
+      "translation": "mengusahakan, mendapatkan",
+      "word_type": "verb",
+      "root": "ك-س-ب",
+      "forms": {
+        "past": "كَسَبَ",
+        "present": "يَكْسِبُ",
+        "command": "اكْسِبْ"
+      },
+      "related_words": [
+        { "arabic": "كَسْب", "transliteration": "kasb", "translation": "usaha, pendapatan" },
+        { "arabic": "اكْتَسَبَ", "transliteration": "iktasaba", "translation": "berusaha mendapatkan" },
+        { "arabic": "مَكْسَب", "transliteration": "maksab", "translation": "penghasilan" }
+      ],
+      "quran_example": {
+        "arabic": "لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ",
+        "translation": "ia mendapat pahala dari kebajikan yang diusahakannya dan ia mendapat siksa dari kejahatan yang dikerjakannya",
+        "surah": "Al-Baqarah",
+        "ayah": 286
+      }
+    },
+    {
+      "id": 140,
+      "arabic": "ظَنَّ",
+      "transliteration": "ẓanna",
+      "translation": "menyangka, mengira",
+      "word_type": "verb",
+      "root": "ظ-ن-ن",
+      "forms": {
+        "past": "ظَنَّ",
+        "present": "يَظُنُّ",
+        "command": "ظُنَّ"
+      },
+      "related_words": [
+        { "arabic": "ظَنّ", "transliteration": "ẓann", "translation": "sangkaan, dugaan" },
+        { "arabic": "يَقِين", "transliteration": "yaqīn", "translation": "keyakinan" },
+        { "arabic": "شَكّ", "transliteration": "shakk", "translation": "keraguan" }
+      ],
+      "quran_example": {
+        "arabic": "الَّذِينَ يَظُنُّونَ أَنَّهُم مُّلَاقُو رَبِّهِمْ",
+        "translation": "orang-orang yang meyakini bahwa mereka akan menemui Tuhannya",
+        "surah": "Al-Baqarah",
+        "ayah": 46
+      }
+    },
+    {
+      "id": 141,
+      "arabic": "رَفَعَ",
+      "transliteration": "rafaʿa",
+      "translation": "mengangkat, meninggikan",
+      "word_type": "verb",
+      "root": "ر-ف-ع",
+      "forms": {
+        "past": "رَفَعَ",
+        "present": "يَرْفَعُ",
+        "command": "ارْفَعْ"
+      },
+      "related_words": [
+        { "arabic": "رَفِيع", "transliteration": "rafīʿ", "translation": "tinggi, mulia" },
+        { "arabic": "رَفْع", "transliteration": "rafʿ", "translation": "pengangkatan" },
+        { "arabic": "مَرْفُوع", "transliteration": "marfūʿ", "translation": "yang diangkat" }
+      ],
+      "quran_example": {
+        "arabic": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+        "translation": "Dan Kami tinggikan bagimu sebutan (nama)mu",
+        "surah": "Ash-Sharh",
+        "ayah": 4
+      }
+    }
+  ]
+}
