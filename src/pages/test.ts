@@ -28,7 +28,7 @@ function generateWordQuestion(card: Card, allCards: Card[]): Question {
   const distractors = pickRandom(allCards.filter(c => c.id !== card.id), 3).map(c => c.indonesian)
   return {
     prompt: card.arabic,
-    promptLabel: 'Apa arti kata ini?',
+    promptLabel: 'What does this word mean?',
     correct: card.indonesian,
     options: shuffle([card.indonesian, ...distractors]),
   }
@@ -38,7 +38,7 @@ function generateAyatQuestion(card: Card, ayatCards: Card[]): Question {
   const distractors = pickRandom(ayatCards.filter(c => c.id !== card.id), 3).map(c => c.quranExample!.translation)
   return {
     prompt: `${card.quranExample!.arabic}\n<span class="quiz-prompt-ref">${card.quranExample!.surah} ${card.quranExample!.ayah}</span>`,
-    promptLabel: 'Apa terjemahan ayat ini?',
+    promptLabel: 'What is the translation of this verse?',
     correct: card.quranExample!.translation,
     options: shuffle([card.quranExample!.translation, ...distractors]),
   }
@@ -108,7 +108,7 @@ export async function renderTest(container: HTMLElement) {
           </div>
 
           <button class="btn-quiz-next" id="btn-next" style="display:none">
-            ${isLast ? 'Lihat Hasil' : 'Soal Berikutnya →'}
+            ${isLast ? 'See Results' : 'Next Question →'}
           </button>
         </div>
       </div>
@@ -156,7 +156,7 @@ export async function renderTest(container: HTMLElement) {
   function renderResult() {
     const total = questions.length
     const pct = Math.round((score / total) * 100)
-    const label = score === total ? 'Sempurna!' : pct >= 70 ? 'Bagus sekali!' : 'Terus berlatih!'
+    const label = score === total ? 'Perfect!' : pct >= 70 ? 'Great job!' : 'Keep practicing!'
 
     container.innerHTML = `
       <div class="quiz-page">
@@ -169,8 +169,8 @@ export async function renderTest(container: HTMLElement) {
           <div class="quiz-result-score">${score} / ${total}</div>
           <p class="quiz-result-label">${label}</p>
           <div class="quiz-result-actions">
-            <button class="btn-quiz-retry">Ulangi Test</button>
-            <button class="btn-quiz-back">← Kembali</button>
+            <button class="btn-quiz-retry">Retry Test</button>
+            <button class="btn-quiz-back">← Back</button>
           </div>
         </div>
       </div>
