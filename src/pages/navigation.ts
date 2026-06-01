@@ -100,13 +100,20 @@ export function renderNavigation(container: HTMLElement) {
         <div class="nav-filters">
           <button class="nav-filter-chip" data-filter="unfinished">Unfinished</button>
         </div>
-        <button class="btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
+        <div class="nav-toolbar-right">
+          <button class="btn-start-test">Take Exam</button>
+          <button class="btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
+        </div>
       </div>
       <div class="deck-grid"></div>
     </div>
   `
 
   renderDeckGrid(container, filterUnfinished)
+
+  container.querySelector<HTMLButtonElement>('.btn-start-test')!.addEventListener('click', () => {
+    window.location.hash = 'test'
+  })
 
   container.querySelector<HTMLButtonElement>('[data-filter="unfinished"]')!.addEventListener('click', e => {
     const btn = e.currentTarget as HTMLButtonElement

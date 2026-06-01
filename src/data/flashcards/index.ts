@@ -1,4 +1,4 @@
-import type { Deck, DeckMeta, GroupedFile, VocabFile } from '../../types'
+import type { Card, Deck, DeckMeta, GroupedFile, VocabFile } from '../../types'
 import manifestData from './manifest.json'
 
 export const deckMetas: DeckMeta[] = manifestData
@@ -50,6 +50,22 @@ function isGroupedFile(data: unknown): data is GroupedFile {
 
 function isVocabFile(data: unknown): data is VocabFile {
   return typeof data === 'object' && data !== null && 'cards' in data
+}
+
+export async function loadAllCards(): Promise<Card[]> {
+  const uniqueFiles = [...new Set(deckMetas.map(m => m.file))].filter(f => f !== '0.json')
+
+  const batches = await Promise.all(
+    uniqueFiles.map(async file => {
+      const loader = loaders[`./${file}`]
+      if (!loader) return [] as Card[]
+      const raw = await loader()
+      if (isVocabFile(raw)) return normalizeVocab(raw).cards
+      return [] as Card[]
+    })
+  )
+
+  return batches.flat()
 }
 
 export async function loadDeck(id: string): Promise<Deck | null> {

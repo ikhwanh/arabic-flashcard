@@ -3,6 +3,7 @@ import { initTheme } from './theme'
 import { renderNavigation } from './pages/navigation'
 import { renderFlashcard } from './pages/flashcard'
 import { renderQuiz } from './pages/quiz'
+import { renderTest } from './pages/test'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="app-header">
@@ -23,7 +24,10 @@ function route() {
 
   const quizMatch = hash.match(/^deck\/(.+)\/quiz$/)
 
-  if (quizMatch) {
+  if (hash === 'test') {
+    appHeader.hidden = true
+    renderTest(mainContent).catch(console.error)
+  } else if (quizMatch) {
     appHeader.hidden = true
     renderQuiz(mainContent, quizMatch[1]).catch(console.error)
   } else if (deckMatch) {
