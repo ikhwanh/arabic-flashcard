@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 17",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "162-171"
+  },
+  "cards": [
+    {
+      "id": 162,
+      "arabic": "قُرْآن",
+      "transliteration": "qur'an",
+      "translation": "Al-Quran, kitab suci",
+      "word_type": "noun",
+      "root": "ق-ر-أ",
+      "forms": {
+        "singular": "قُرْآن",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "قَرَأَ",
+          "translation": "membaca"
+        },
+        {
+          "arabic": "قِرَاءَة",
+          "translation": "bacaan"
+        },
+        {
+          "arabic": "قَارِئ",
+          "translation": "pembaca"
+        }
+      ],
+      "quran_example": {
+        "arabic": "شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ",
+        "translation": "Bulan Ramadan, yang di dalamnya diturunkan Al-Quran sebagai petunjuk bagi manusia",
+        "surah": "Al-Baqara",
+        "ayah": 185
+      }
+    },
+    {
+      "id": 163,
+      "arabic": "إِسْلَام",
+      "transliteration": "islam",
+      "translation": "Islam, penyerahan diri, ketundukan",
+      "word_type": "noun",
+      "root": "س-ل-م",
+      "forms": {
+        "singular": "إِسْلَام",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "سَلَامَة",
+          "translation": "keselamatan"
+        },
+        {
+          "arabic": "أَسْلَمَ",
+          "translation": "menyerahkan diri, masuk Islam"
+        },
+        {
+          "arabic": "سِلْم",
+          "translation": "perdamaian, ketundukan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ الدِّينَ عِندَ اللَّهِ الْإِسْلَامُ",
+        "translation": "Sesungguhnya agama yang diridhai di sisi Allah hanyalah Islam",
+        "surah": "Aal-i-Imraan",
+        "ayah": 19
+      }
+    },
+    {
+      "id": 164,
+      "arabic": "صَدَقَة",
+      "transliteration": "shadaqah",
+      "translation": "sedekah, derma, infak",
+      "word_type": "noun",
+      "root": "ص-د-ق",
+      "forms": {
+        "singular": "صَدَقَة",
+        "plural": "صَدَقَات"
+      },
+      "related_words": [
+        {
+          "arabic": "تَصَدَّقَ",
+          "translation": "bersedekah"
+        },
+        {
+          "arabic": "مُتَصَدِّق",
+          "translation": "orang yang bersedekah"
+        },
+        {
+          "arabic": "صَدِيق",
+          "translation": "sahabat, yang membenarkan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِن تُبْدُوا الصَّدَقَاتِ فَنِعِمَّا هِيَ",
+        "translation": "Jika kamu menampakkan sedekah-sedekahmu, maka itu adalah baik sekali",
+        "surah": "Al-Baqara",
+        "ayah": 271
+      }
+    },
+    {
+      "id": 165,
+      "arabic": "حَيّ",
+      "transliteration": "hayy",
+      "translation": "Maha Hidup, hidup, yang kekal hidupnya",
+      "word_type": "adjective",
+      "root": "ح-ي-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "أَحْيَا",
+          "translation": "menghidupkan"
+        },
+        {
+          "arabic": "حَيَوَان",
+          "translation": "hewan, makhluk hidup"
+        },
+        {
+          "arabic": "إِحْيَاء",
+          "translation": "penghidupan kembali"
+        }
+      ],
+      "quran_example": {
+        "arabic": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+        "translation": "Allah, tidak ada Tuhan selain Dia, Yang Maha Hidup, Yang terus-menerus mengurus makhluk-Nya",
+        "surah": "Al-Baqara",
+        "ayah": 255
+      }
+    },
+    {
+      "id": 166,
+      "arabic": "قِتَال",
+      "transliteration": "qital",
+      "translation": "pertempuran, peperangan",
+      "word_type": "noun",
+      "root": "ق-ت-ل",
+      "forms": {
+        "singular": "قِتَال",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "قَاتَلَ",
+          "translation": "berperang, memerangi"
+        },
+        {
+          "arabic": "قَتَلَ",
+          "translation": "membunuh"
+        },
+        {
+          "arabic": "مَقْتُول",
+          "translation": "yang terbunuh"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَقَاتِلُوا فِي سَبِيلِ اللَّهِ الَّذِينَ يُقَاتِلُونَكُمْ وَلَا تَعْتَدُوا",
+        "translation": "Dan perangilah di jalan Allah orang-orang yang memerangi kamu, dan janganlah kamu melampaui batas",
+        "surah": "Al-Baqara",
+        "ayah": 190
+      }
+    },
+    {
+      "id": 167,
+      "arabic": "مِيثَاق",
+      "transliteration": "mithaq",
+      "translation": "perjanjian, janji, ikatan",
+      "word_type": "noun",
+      "root": "و-ث-ق",
+      "forms": {
+        "singular": "مِيثَاق",
+        "plural": "مَوَاثِيق"
+      },
+      "related_words": [
+        {
+          "arabic": "عَهْد",
+          "translation": "perjanjian, janji"
+        },
+        {
+          "arabic": "وَثِيقَة",
+          "translation": "dokumen, akta"
+        },
+        {
+          "arabic": "تَوَثَّقَ",
+          "translation": "memperkuat, mempererat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَرَفَعْنَا فَوْقَهُمُ الطُّورَ بِمِيثَاقِهِمْ",
+        "translation": "Dan Kami angkat gunung Thursina di atas mereka untuk menerima perjanjian mereka",
+        "surah": "An-Nisaa",
+        "ayah": 154
+      }
+    },
+    {
+      "id": 168,
+      "arabic": "دَخَلَ",
+      "transliteration": "dakhala",
+      "translation": "masuk, memasuki",
+      "word_type": "verb",
+      "root": "د-خ-ل",
+      "forms": {
+        "past": "دَخَلَ",
+        "present": "يَدْخُلُ",
+        "command": "اُدْخُلْ"
+      },
+      "related_words": [
+        {
+          "arabic": "مَدْخَل",
+          "translation": "pintu masuk, jalan masuk"
+        },
+        {
+          "arabic": "دَاخِل",
+          "translation": "bagian dalam, interior"
+        },
+        {
+          "arabic": "مُدْخَل",
+          "translation": "tempat masuk"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِذْ قُلْنَا ادْخُلُوا هَذِهِ الْقَرْيَةَ فَكُلُوا مِنْهَا حَيْثُ شِئْتُمْ",
+        "translation": "Dan ketika Kami berfirman: Masuklah kamu ke negeri ini dan makanlah dari hasilnya sesukamu",
+        "surah": "Al-Baqara",
+        "ayah": 58
+      }
+    },
+    {
+      "id": 169,
+      "arabic": "جِهَاد",
+      "transliteration": "jihad",
+      "translation": "jihad, perjuangan, bersungguh-sungguh di jalan Allah",
+      "word_type": "noun",
+      "root": "ج-ه-د",
+      "forms": {
+        "singular": "جِهَاد",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "جَاهَدَ",
+          "translation": "berjihad, berjuang"
+        },
+        {
+          "arabic": "مُجَاهِد",
+          "translation": "pejuang di jalan Allah"
+        },
+        {
+          "arabic": "اِجْتِهَاد",
+          "translation": "usaha keras, ijtihad"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَجَاهِدُوا بِأَمْوَالِكُمْ وَأَنفُسِكُمْ فِي سَبِيلِ اللَّهِ",
+        "translation": "Dan berjihadlah kamu dengan harta dan dirimu di jalan Allah",
+        "surah": "At-Tawba",
+        "ayah": 41
+      }
+    },
+    {
+      "id": 170,
+      "arabic": "بَاطِل",
+      "transliteration": "bathil",
+      "translation": "kebatilan, kepalsuan, yang sia-sia",
+      "word_type": "noun",
+      "root": "ب-ط-ل",
+      "forms": {
+        "singular": "بَاطِل",
+        "plural": "أَبَاطِيل"
+      },
+      "related_words": [
+        {
+          "arabic": "بَطَلَ",
+          "translation": "batal, tidak berlaku"
+        },
+        {
+          "arabic": "إِبْطَال",
+          "translation": "pembatalan"
+        },
+        {
+          "arabic": "بَطَّلَ",
+          "translation": "membatalkan, menggagalkan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَا تَلْبِسُوا الْحَقَّ بِالْبَاطِلِ وَتَكْتُمُوا الْحَقَّ وَأَنتُمْ تَعْلَمُونَ",
+        "translation": "Dan janganlah kamu campur adukkan yang hak dengan yang batil dan jangan sembunyikan yang hak itu",
+        "surah": "Al-Baqara",
+        "ayah": 42
+      }
+    },
+    {
+      "id": 171,
+      "arabic": "إِحْسَان",
+      "transliteration": "ihsan",
+      "translation": "kebaikan, berbuat baik, ihsan",
+      "word_type": "noun",
+      "root": "ح-س-ن",
+      "forms": {
+        "singular": "إِحْسَان",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "أَحْسَنَ",
+          "translation": "berbuat baik, memperindah"
+        },
+        {
+          "arabic": "مُحْسِن",
+          "translation": "orang yang berbuat baik"
+        },
+        {
+          "arabic": "حُسْن",
+          "translation": "keindahan, kebaikan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ",
+        "translation": "Sesungguhnya Allah menyuruh kamu berlaku adil dan berbuat kebajikan",
+        "surah": "An-Nahl",
+        "ayah": 90
+      }
+    }
+  ]
+}

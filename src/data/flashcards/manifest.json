@@ -166,5 +166,13 @@
     "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
     "emoji": "📖",
     "cardCount": 10
+  },
+  {
+    "id": "kosakata-al-quran---part-17",
+    "file": "17.json",
+    "title": "Kosakata Al-Quran - Part 17",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "emoji": "📖",
+    "cardCount": 10
   }
 ]
