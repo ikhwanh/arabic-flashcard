@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 32",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "312-321"
+  },
+  "cards": [
+    {
+      "id": 312,
+      "arabic": "نَعِيم",
+      "transliteration": "na'im",
+      "translation": "kenikmatan, kesenangan",
+      "word_type": "noun",
+      "root": "ن-ع-م",
+      "forms": {
+        "singular": "نَعِيم",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "نِعْمَة",
+          "translation": "nikmat"
+        },
+        {
+          "arabic": "جَنَّة",
+          "translation": "surga"
+        },
+        {
+          "arabic": "لَذَّة",
+          "translation": "kelezatan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍۢ",
+        "translation": "Sesungguhnya orang-orang yang banyak berbakti benar-benar berada dalam surga yang penuh kenikmatan,",
+        "surah": "Al-Infitaar",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 313,
+      "arabic": "جَحِيم",
+      "transliteration": "jahim",
+      "translation": "neraka yang menyala-nyala",
+      "word_type": "noun",
+      "root": "ج-ح-م",
+      "forms": {
+        "singular": "جَحِيم",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "نَار",
+          "translation": "api"
+        },
+        {
+          "arabic": "سَعِير",
+          "translation": "neraka"
+        },
+        {
+          "arabic": "جَهَنَّم",
+          "translation": "jahannam"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِنَّ ٱلْفُجَّارَ لَفِى جَحِيمٍۢ",
+        "translation": "dan sesungguhnya orang-orang yang durhaka benar-benar berada dalam neraka.",
+        "surah": "Al-Infitaar",
+        "ayah": 14
+      }
+    },
+    {
+      "id": 314,
+      "arabic": "حَمِيد",
+      "transliteration": "hamid",
+      "translation": "Maha Terpuji",
+      "word_type": "adjective",
+      "root": "ح-م-د",
+      "forms": {
+        "singular": "حَمِيد",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "مَجِيد",
+          "translation": "Maha Mulia"
+        },
+        {
+          "arabic": "مَحْمُود",
+          "translation": "terpuji"
+        },
+        {
+          "arabic": "حَمْد",
+          "translation": "pujian"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَقَدْ ءَاتَيْنَا لُقْمَٰنَ ٱلْحِكْمَةَ أَنِ ٱشْكُرْ لِلَّهِ ۚ وَمَن يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِۦ ۖ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِىٌّ حَمِيدٌۭ",
+        "translation": "Dan sesungguhnya telah Kami berikan hikmat kepada Luqman, yaitu: \"Bersyukurlah kepada Allah. Dan barangsiapa yang bersyukur (kepada Allah), maka sesungguhnya ia bersyukur untuk dirinya sendiri; dan barangsiapa yang tidak bersyukur, maka sesungguhnya Allah Maha Kaya lagi Maha Terpuji\".",
+        "surah": "Luqman",
+        "ayah": 12
+      }
+    },
+    {
+      "id": 315,
+      "arabic": "مَجِيد",
+      "transliteration": "majid",
+      "translation": "Maha Mulia, mulia",
+      "word_type": "adjective",
+      "root": "م-ج-د",
+      "forms": {
+        "singular": "مَجِيد",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "كَرِيم",
+          "translation": "mulia"
+        },
+        {
+          "arabic": "عَظِيم",
+          "translation": "agung"
+        },
+        {
+          "arabic": "مَجْد",
+          "translation": "kemuliaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بَلْ هُوَ قُرْءَانٌۭ مَّجِيدٌۭ",
+        "translation": "Bahkan yang didustakan mereka itu ialah Al Quran yang mulia,",
+        "surah": "Al-Burooj",
+        "ayah": 21
+      }
+    },
+    {
+      "id": 316,
+      "arabic": "تَلَا",
+      "transliteration": "tala",
+      "translation": "membaca, melantunkan",
+      "word_type": "verb",
+      "root": "ت-ل-و",
+      "forms": {
+        "past": "تَلَا",
+        "present": "يَتْلُو",
+        "command": "اُتْلُ"
+      },
+      "related_words": [
+        {
+          "arabic": "قَرَأَ",
+          "translation": "membaca"
+        },
+        {
+          "arabic": "رَتَّلَ",
+          "translation": "membaca tartil"
+        },
+        {
+          "arabic": "تِلَاوَة",
+          "translation": "bacaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَأَنْ أَتْلُوَا۟ ٱلْقُرْءَانَ ۖ فَمَنِ ٱهْتَدَىٰ فَإِنَّمَا يَهْتَدِى لِنَفْسِهِۦ ۖ وَمَن ضَلَّ فَقُلْ إِنَّمَآ أَنَا۠ مِنَ ٱلْمُنذِرِينَ",
+        "translation": "Dan supaya aku membacakan Al Quran (kepada manusia). Maka barangsiapa yang mendapat petunjuk maka sesungguhnya ia hanyalah mendapat petunjuk untuk (kebaikan) dirinya, dan barangsiapa yang sesat maka katakanlah: \"Sesungguhnya aku (ini) tidak lain hanyalah salah seorang pemberi peringatan\".",
+        "surah": "An-Naml",
+        "ayah": 92
+      }
+    },
+    {
+      "id": 317,
+      "arabic": "أَلْبَاب",
+      "transliteration": "albab",
+      "translation": "akal, pikiran (jamak)",
+      "word_type": "noun",
+      "root": "ل-ب-ب",
+      "forms": {
+        "singular": "لُبّ",
+        "plural": "أَلْبَاب"
+      },
+      "related_words": [
+        {
+          "arabic": "عَقْل",
+          "translation": "akal"
+        },
+        {
+          "arabic": "فُؤَاد",
+          "translation": "hati"
+        },
+        {
+          "arabic": "فِكْر",
+          "translation": "pikiran"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يُؤْتِى ٱلْحِكْمَةَ مَن يَشَآءُ ۚ وَمَن يُؤْتَ ٱلْحِكْمَةَ فَقَدْ أُوتِىَ خَيْرًۭا كَثِيرًۭا ۗ وَمَا يَذَّكَّرُ إِلَّآ أُو۟لُوا۟ ٱلْأَلْبَٰبِ",
+        "translation": "Allah menganugerahkan al hikmah (kefahaman yang dalam tentang Al Quran dan As Sunnah) kepada siapa yang dikehendaki-Nya. Dan barangsiapa yang dianugerahi hikmah, ia benar-benar telah dianugerahi karunia yang banyak. Dan hanya orang-orang yang berakallah yang dapat mengambil pelajaran (dari firman Allah).",
+        "surah": "Al-Baqara",
+        "ayah": 269
+      }
+    },
+    {
+      "id": 318,
+      "arabic": "صَغِير",
+      "transliteration": "saghir",
+      "translation": "kecil",
+      "word_type": "adjective",
+      "root": "ص-غ-ر",
+      "forms": {
+        "singular": "صَغِير",
+        "plural": "صِغَار"
+      },
+      "related_words": [
+        {
+          "arabic": "كَبِير",
+          "translation": "besar"
+        },
+        {
+          "arabic": "قَلِيل",
+          "translation": "sedikit"
+        },
+        {
+          "arabic": "دَقِيق",
+          "translation": "halus"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَكُلُّ صَغِيرٍۢ وَكَبِيرٍۢ مُّسْتَطَرٌ",
+        "translation": "Dan segala (urusan) yang kecil maupun yang besar adalah tertulis.",
+        "surah": "Al-Qamar",
+        "ayah": 53
+      }
+    },
+    {
+      "id": 319,
+      "arabic": "وَاحِد",
+      "transliteration": "wahid",
+      "translation": "satu, esa",
+      "word_type": "adjective",
+      "root": "و-ح-د",
+      "forms": {
+        "singular": "وَاحِد",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "أَحَد",
+          "translation": "esa"
+        },
+        {
+          "arabic": "اِثْنَان",
+          "translation": "dua"
+        },
+        {
+          "arabic": "وَحْدَة",
+          "translation": "kesatuan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِلَٰهُكُمْ إِلَٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَٰهَ إِلَّا هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
+        "translation": "Dan Tuhanmu adalah Tuhan Yang Maha Esa; tidak ada Tuhan melainkan Dia Yang Maha Pemurah lagi Maha Penyayang.",
+        "surah": "Al-Baqara",
+        "ayah": 163
+      }
+    },
+    {
+      "id": 320,
+      "arabic": "حَدِيث",
+      "transliteration": "hadits",
+      "translation": "perkataan, kisah, berita",
+      "word_type": "noun",
+      "root": "ح-د-ث",
+      "forms": {
+        "singular": "حَدِيث",
+        "plural": "أَحَادِيث"
+      },
+      "related_words": [
+        {
+          "arabic": "قَوْل",
+          "translation": "perkataan"
+        },
+        {
+          "arabic": "كَلَام",
+          "translation": "ucapan"
+        },
+        {
+          "arabic": "خَبَر",
+          "translation": "berita"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ نَزَّلَ أَحْسَنَ ٱلْحَدِيثِ كِتَٰبًۭا مُّتَشَٰبِهًۭا مَّثَانِىَ تَقْشَعِرُّ مِنْهُ جُلُودُ ٱلَّذِينَ يَخْشَوْنَ رَبَّهُمْ ثُمَّ تَلِينُ جُلُودُهُمْ وَقُلُوبُهُمْ إِلَىٰ ذِكْرِ ٱللَّهِ ۚ ذَٰلِكَ هُدَى ٱللَّهِ يَهْدِى بِهِۦ مَن يَشَآءُ ۚ وَمَن يُضْلِلِ ٱللَّهُ فَمَا لَهُۥ مِنْ هَادٍ",
+        "translation": "Allah telah menurunkan perkataan yang paling baik (yaitu) Al Quran yang serupa (mutu ayat-ayatnya) lagi berulang-ulang, gemetar karenanya kulit orang-orang yang takut kepada Tuhannya, kemudian menjadi tenang kulit dan hati mereka di waktu mengingat Allah. Itulah petunjuk Allah, dengan kitab itu Dia menunjuki siapa yang dikehendaki-Nya. Dan barangsiapa yang disesatkan Allah, niscaya tak ada baginya seorang pemimpinpun.",
+        "surah": "Az-Zumar",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 321,
+      "arabic": "قَصَص",
+      "transliteration": "qasas",
+      "translation": "kisah, cerita",
+      "word_type": "noun",
+      "root": "ق-ص-ص",
+      "forms": {
+        "singular": "قِصَّة",
+        "plural": "قِصَص"
+      },
+      "related_words": [
+        {
+          "arabic": "حَدِيث",
+          "translation": "kisah"
+        },
+        {
+          "arabic": "نَبَأ",
+          "translation": "berita"
+        },
+        {
+          "arabic": "خَبَر",
+          "translation": "berita"
+        }
+      ],
+      "quran_example": {
+        "arabic": "نَحْنُ نَقُصُّ عَلَيْكَ أَحْسَنَ ٱلْقَصَصِ بِمَآ أَوْحَيْنَآ إِلَيْكَ هَٰذَا ٱلْقُرْءَانَ وَإِن كُنتَ مِن قَبْلِهِۦ لَمِنَ ٱلْغَٰفِلِينَ",
+        "translation": "Kami menceritakan kepadamu kisah yang paling baik dengan mewahyukan Al Quran ini kepadamu, dan sesungguhnya kamu sebelum (Kami mewahyukan)nya adalah termasuk orang-orang yang belum mengetahui.",
+        "surah": "Yusuf",
+        "ayah": 3
+      }
+    }
+  ]
+}

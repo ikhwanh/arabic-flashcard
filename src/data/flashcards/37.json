@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 37",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "362-371"
+  },
+  "cards": [
+    {
+      "id": 362,
+      "arabic": "نَقَضَ",
+      "transliteration": "naqadha",
+      "translation": "membatalkan, mengingkari (janji)",
+      "word_type": "verb",
+      "root": "ن-ق-ض",
+      "forms": {
+        "past": "نَقَضَ",
+        "present": "يَنْقُضُ",
+        "command": "اُنْقُضْ"
+      },
+      "related_words": [
+        {
+          "arabic": "أَوْفَى",
+          "translation": "menepati"
+        },
+        {
+          "arabic": "نَكَثَ",
+          "translation": "mengingkari"
+        },
+        {
+          "arabic": "عَهْد",
+          "translation": "perjanjian"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱلَّذِينَ يَنقُضُونَ عَهْدَ ٱللَّهِ مِنۢ بَعْدِ مِيثَٰقِهِۦ وَيَقْطَعُونَ مَآ أَمَرَ ٱللَّهُ بِهِۦٓ أَن يُوصَلَ وَيُفْسِدُونَ فِى ٱلْأَرْضِ ۚ أُو۟لَٰٓئِكَ هُمُ ٱلْخَٰسِرُونَ",
+        "translation": "(yaitu) orang-orang yang melanggar perjanjian Allah sesudah perjanjian itu teguh, dan memutuskan apa yang diperintahkan Allah (kepada mereka) untuk menghubungkannya dan membuat kerusakan di muka bumi. Mereka itulah orang-orang yang rugi.",
+        "surah": "Al-Baqara",
+        "ayah": 27
+      }
+    },
+    {
+      "id": 363,
+      "arabic": "وَعَظَ",
+      "transliteration": "wa'azha",
+      "translation": "menasihati, memberi pelajaran",
+      "word_type": "verb",
+      "root": "و-ع-ظ",
+      "forms": {
+        "past": "وَعَظَ",
+        "present": "يَعِظُ",
+        "command": "عِظْ"
+      },
+      "related_words": [
+        {
+          "arabic": "نَصَحَ",
+          "translation": "menasihati"
+        },
+        {
+          "arabic": "ذَكَّرَ",
+          "translation": "mengingatkan"
+        },
+        {
+          "arabic": "مَوْعِظَة",
+          "translation": "nasihat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِذْ قَالَ لُقْمَٰنُ لِٱبْنِهِۦ وَهُوَ يَعِظُهُۥ يَٰبُنَىَّ لَا تُشْرِكْ بِٱللَّهِ ۖ إِنَّ ٱلشِّرْكَ لَظُلْمٌ عَظِيمٌۭ",
+        "translation": "Dan (ingatlah) ketika Luqman berkata kepada anaknya, di waktu ia memberi pelajaran kepadanya: \"Hai anakku, janganlah kamu mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar\".",
+        "surah": "Luqman",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 364,
+      "arabic": "نَوْم",
+      "transliteration": "naum",
+      "translation": "tidur",
+      "word_type": "noun",
+      "root": "ن-و-م",
+      "forms": {
+        "singular": "نَوْم",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "يَقَظَة",
+          "translation": "jaga"
+        },
+        {
+          "arabic": "رُقَاد",
+          "translation": "tidur"
+        },
+        {
+          "arabic": "سِنَة",
+          "translation": "kantuk"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌۭ وَلَا نَوْمٌۭ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍۢ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+        "translation": "Allah, tidak ada Tuhan (yang berhak disembah) melainkan Dia Yang Hidup kekal lagi terus menerus mengurus (makhluk-Nya); tidak mengantuk dan tidak tidur. Kepunyaan-Nya apa yang di langit dan di bumi. Tiada yang dapat memberi syafa'at di sisi Allah tanpa izin-Nya? Allah mengetahui apa-apa yang di hadapan mereka dan di belakang mereka, dan mereka tidak mengetahui apa-apa dari ilmu Allah melainkan apa yang dikehendaki-Nya. Kursi Allah meliputi langit dan bumi. Dan Allah tidak merasa berat memelihara keduanya, dan Allah Maha Tinggi lagi Maha Besar.",
+        "surah": "Al-Baqara",
+        "ayah": 255
+      }
+    },
+    {
+      "id": 365,
+      "arabic": "عَرْش",
+      "transliteration": "'arsy",
+      "translation": "singgasana, 'arsy",
+      "word_type": "noun",
+      "root": "ع-ر-ش",
+      "forms": {
+        "singular": "عَرْش",
+        "plural": "عُرُوش / أَعْرَاش"
+      },
+      "related_words": [
+        {
+          "arabic": "كُرْسِيّ",
+          "translation": "kursi"
+        },
+        {
+          "arabic": "سَرِير",
+          "translation": "ranjang"
+        },
+        {
+          "arabic": "مُلْك",
+          "translation": "kerajaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍۢ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ يَطْلُبُهُۥ حَثِيثًۭا وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومَ مُسَخَّرَٰتٍۭ بِأَمْرِهِۦٓ ۗ أَلَا لَهُ ٱلْخَلْقُ وَٱلْأَمْرُ ۗ تَبَارَكَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ",
+        "translation": "Sesungguhnya Tuhan kamu ialah Allah yang telah menciptakan langit dan bumi dalam enam masa, lalu Dia bersemayam di atas 'Arsy. Dia menutupkan malam kepada siang yang mengikutinya dengan cepat, dan (diciptakan-Nya pula) matahari, bulan dan bintang-bintang (masing-masing) tunduk kepada perintah-Nya. Ingatlah, menciptakan dan memerintah hanyalah hak Allah. Maha Suci Allah, Tuhan semesta alam.",
+        "surah": "Al-A'raaf",
+        "ayah": 54
+      }
+    },
+    {
+      "id": 366,
+      "arabic": "كُرْسِيّ",
+      "transliteration": "kursiyy",
+      "translation": "kursi, kekuasaan",
+      "word_type": "noun",
+      "root": "ك-ر-س",
+      "forms": {
+        "singular": "كُرْسِيّ",
+        "plural": "كَرَاسِي"
+      },
+      "related_words": [
+        {
+          "arabic": "عَرْش",
+          "translation": "singgasana"
+        },
+        {
+          "arabic": "مَقْعَد",
+          "translation": "tempat duduk"
+        },
+        {
+          "arabic": "مُلْك",
+          "translation": "kekuasaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌۭ وَلَا نَوْمٌۭ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍۢ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+        "translation": "Allah, tidak ada Tuhan (yang berhak disembah) melainkan Dia Yang Hidup kekal lagi terus menerus mengurus (makhluk-Nya); tidak mengantuk dan tidak tidur. Kepunyaan-Nya apa yang di langit dan di bumi. Tiada yang dapat memberi syafa'at di sisi Allah tanpa izin-Nya? Allah mengetahui apa-apa yang di hadapan mereka dan di belakang mereka, dan mereka tidak mengetahui apa-apa dari ilmu Allah melainkan apa yang dikehendaki-Nya. Kursi Allah meliputi langit dan bumi. Dan Allah tidak merasa berat memelihara keduanya, dan Allah Maha Tinggi lagi Maha Besar.",
+        "surah": "Al-Baqara",
+        "ayah": 255
+      }
+    },
+    {
+      "id": 367,
+      "arabic": "لَوْح",
+      "transliteration": "lauh",
+      "translation": "lembaran, lauh",
+      "word_type": "noun",
+      "root": "ل-و-ح",
+      "forms": {
+        "singular": "لَوْح",
+        "plural": "أَلْوَاح"
+      },
+      "related_words": [
+        {
+          "arabic": "كِتَاب",
+          "translation": "kitab"
+        },
+        {
+          "arabic": "صَحِيفَة",
+          "translation": "lembaran"
+        },
+        {
+          "arabic": "قَلَم",
+          "translation": "pena"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فِى لَوْحٍۢ مَّحْفُوظٍۭ",
+        "translation": "yang (tersimpan) dalam Lauh Mahfuzh.",
+        "surah": "Al-Burooj",
+        "ayah": 22
+      }
+    },
+    {
+      "id": 368,
+      "arabic": "قَلَم",
+      "transliteration": "qalam",
+      "translation": "pena",
+      "word_type": "noun",
+      "root": "ق-ل-م",
+      "forms": {
+        "singular": "قَلَم",
+        "plural": "أَقْلَام"
+      },
+      "related_words": [
+        {
+          "arabic": "كِتَاب",
+          "translation": "tulisan"
+        },
+        {
+          "arabic": "حِبْر",
+          "translation": "tinta"
+        },
+        {
+          "arabic": "لَوْح",
+          "translation": "lembaran"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+        "translation": "Yang mengajar (manusia) dengan perantaran kalam,",
+        "surah": "Al-Alaq",
+        "ayah": 4
+      }
+    },
+    {
+      "id": 369,
+      "arabic": "نَخْل",
+      "transliteration": "nakhl",
+      "translation": "pohon kurma",
+      "word_type": "noun",
+      "root": "ن-خ-ل",
+      "forms": {
+        "singular": "نَخْلَة",
+        "plural": "نَخِيل"
+      },
+      "related_words": [
+        {
+          "arabic": "شَجَر",
+          "translation": "pohon"
+        },
+        {
+          "arabic": "ثَمَر",
+          "translation": "buah"
+        },
+        {
+          "arabic": "رُطَب",
+          "translation": "kurma basah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَهُوَ ٱلَّذِىٓ أَنزَلَ مِنَ ٱلسَّمَآءِ مَآءًۭ فَأَخْرَجْنَا بِهِۦ نَبَاتَ كُلِّ شَىْءٍۢ فَأَخْرَجْنَا مِنْهُ خَضِرًۭا نُّخْرِجُ مِنْهُ حَبًّۭا مُّتَرَاكِبًۭا وَمِنَ ٱلنَّخْلِ مِن طَلْعِهَا قِنْوَانٌۭ دَانِيَةٌۭ وَجَنَّٰتٍۢ مِّنْ أَعْنَابٍۢ وَٱلزَّيْتُونَ وَٱلرُّمَّانَ مُشْتَبِهًۭا وَغَيْرَ مُتَشَٰبِهٍ ۗ ٱنظُرُوٓا۟ إِلَىٰ ثَمَرِهِۦٓ إِذَآ أَثْمَرَ وَيَنْعِهِۦٓ ۚ إِنَّ فِى ذَٰلِكُمْ لَءَايَٰتٍۢ لِّقَوْمٍۢ يُؤْمِنُونَ",
+        "translation": "Dan Dialah yang menurunkan air hujan dari langit, lalu Kami tumbuhkan dengan air itu segala macam tumbuh-tumbuhan maka Kami keluarkan dari tumbuh-tumbuhan itu tanaman yang menghijau. Kami keluarkan dari tanaman yang menghijau itu butir yang banyak; dan dari mayang korma mengurai tangkai-tangkai yang menjulai, dan kebun-kebun anggur, dan (Kami keluarkan pula) zaitun dan delima yang serupa dan yang tidak serupa. Perhatikanlah buahnya di waktu pohonnya berbuah dan (perhatikan pulalah) kematangannya. Sesungguhnya pada yang demikian itu ada tanda-tanda (kekuasaan Allah) bagi orang-orang yang beriman.",
+        "surah": "Al-An'aam",
+        "ayah": 99
+      }
+    },
+    {
+      "id": 370,
+      "arabic": "عِنَب",
+      "transliteration": "'inab",
+      "translation": "anggur",
+      "word_type": "noun",
+      "root": "ع-ن-ب",
+      "forms": {
+        "singular": "عِنَبَة",
+        "plural": "أَعْنَاب"
+      },
+      "related_words": [
+        {
+          "arabic": "نَخْل",
+          "translation": "kurma"
+        },
+        {
+          "arabic": "فَاكِهَة",
+          "translation": "buah"
+        },
+        {
+          "arabic": "كَرْم",
+          "translation": "kebun anggur"
+        }
+      ],
+      "quran_example": {
+        "arabic": "حَدَآئِقَ وَأَعْنَٰبًۭا",
+        "translation": "(yaitu) kebun-kebun dan buah anggur,",
+        "surah": "An-Naba",
+        "ayah": 32
+      }
+    },
+    {
+      "id": 371,
+      "arabic": "زَيْتُون",
+      "transliteration": "zaitun",
+      "translation": "zaitun",
+      "word_type": "noun",
+      "root": "ز-ت-ن",
+      "forms": {
+        "singular": "زَيْتُونَة",
+        "plural": "زَيْتُون"
+      },
+      "related_words": [
+        {
+          "arabic": "تِين",
+          "translation": "buah tin"
+        },
+        {
+          "arabic": "شَجَر",
+          "translation": "pohon"
+        },
+        {
+          "arabic": "زَيْت",
+          "translation": "minyak"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلتِّينِ وَٱلزَّيْتُونِ",
+        "translation": "Demi (buah) Tin dan (buah) Zaitun,",
+        "surah": "At-Tin",
+        "ayah": 1
+      }
+    }
+  ]
+}

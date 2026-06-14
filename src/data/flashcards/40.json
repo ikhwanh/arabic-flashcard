@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 40",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "392-401"
+  },
+  "cards": [
+    {
+      "id": 392,
+      "arabic": "بَقَرَة",
+      "transliteration": "baqarah",
+      "translation": "sapi",
+      "word_type": "noun",
+      "root": "ب-ق-ر",
+      "forms": {
+        "singular": "بَقَرَة",
+        "plural": "بَقَر / بَقَرَات"
+      },
+      "related_words": [
+        {
+          "arabic": "ثَوْر",
+          "translation": "sapi jantan"
+        },
+        {
+          "arabic": "عِجْل",
+          "translation": "anak sapi"
+        },
+        {
+          "arabic": "أَنْعَام",
+          "translation": "ternak"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِۦٓ إِنَّ ٱللَّهَ يَأْمُرُكُمْ أَن تَذْبَحُوا۟ بَقَرَةًۭ ۖ قَالُوٓا۟ أَتَتَّخِذُنَا هُزُوًۭا ۖ قَالَ أَعُوذُ بِٱللَّهِ أَنْ أَكُونَ مِنَ ٱلْجَٰهِلِينَ",
+        "translation": "Dan (ingatlah), ketika Musa berkata kepada kaumnya: \"Sesungguhnya Allah menyuruh kamu menyembelih seekor sapi betina\". Mereka berkata: \"Apakah kamu hendak menjadikan kami buah ejekan?\" Musa menjawab: \"Aku berlindung kepada Allah agar tidak menjadi salah seorang dari orang-orang yang jahil\".",
+        "surah": "Al-Baqara",
+        "ayah": 67
+      }
+    },
+    {
+      "id": 393,
+      "arabic": "غَنَم",
+      "transliteration": "ghanam",
+      "translation": "kambing, domba",
+      "word_type": "noun",
+      "root": "غ-ن-م",
+      "forms": {
+        "singular": "غَنَم",
+        "plural": "أَغْنَام"
+      },
+      "related_words": [
+        {
+          "arabic": "شَاة",
+          "translation": "kambing"
+        },
+        {
+          "arabic": "خَرُوف",
+          "translation": "domba"
+        },
+        {
+          "arabic": "أَنْعَام",
+          "translation": "ternak"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَدَاوُۥدَ وَسُلَيْمَٰنَ إِذْ يَحْكُمَانِ فِى ٱلْحَرْثِ إِذْ نَفَشَتْ فِيهِ غَنَمُ ٱلْقَوْمِ وَكُنَّا لِحُكْمِهِمْ شَٰهِدِينَ",
+        "translation": "Dan (ingatlah kisah) Daud dan Sulaiman, di waktu keduanya memberikan keputusan mengenai tanaman, karena tanaman itu dirusak oleh kambing-kambing kepunyaan kaumnya. Dan adalah Kami menyaksikan keputusan yang diberikan oleh mereka itu,",
+        "surah": "Al-Anbiyaa",
+        "ayah": 78
+      }
+    },
+    {
+      "id": 394,
+      "arabic": "نَحْل",
+      "transliteration": "nahl",
+      "translation": "lebah",
+      "word_type": "noun",
+      "root": "ن-ح-ل",
+      "forms": {
+        "singular": "نَحْلَة",
+        "plural": "نَحْل"
+      },
+      "related_words": [
+        {
+          "arabic": "عَسَل",
+          "translation": "madu"
+        },
+        {
+          "arabic": "ذُبَاب",
+          "translation": "lalat"
+        },
+        {
+          "arabic": "نَمْل",
+          "translation": "semut"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَأَوْحَىٰ رَبُّكَ إِلَى ٱلنَّحْلِ أَنِ ٱتَّخِذِى مِنَ ٱلْجِبَالِ بُيُوتًۭا وَمِنَ ٱلشَّجَرِ وَمِمَّا يَعْرِشُونَ",
+        "translation": "Dan Tuhanmu mewahyukan kepada lebah: \"Buatlah sarang-sarang di bukit-bukit, di pohon-pohon kayu, dan di tempat-tempat yang dibikin manusia\",",
+        "surah": "An-Nahl",
+        "ayah": 68
+      }
+    },
+    {
+      "id": 395,
+      "arabic": "نَمْل",
+      "transliteration": "naml",
+      "translation": "semut",
+      "word_type": "noun",
+      "root": "ن-م-ل",
+      "forms": {
+        "singular": "نَمْلَة",
+        "plural": "نَمْل"
+      },
+      "related_words": [
+        {
+          "arabic": "نَحْل",
+          "translation": "lebah"
+        },
+        {
+          "arabic": "ذُبَاب",
+          "translation": "lalat"
+        },
+        {
+          "arabic": "حَشَرَة",
+          "translation": "serangga"
+        }
+      ],
+      "quran_example": {
+        "arabic": "حَتَّىٰٓ إِذَآ أَتَوْا۟ عَلَىٰ وَادِ ٱلنَّمْلِ قَالَتْ نَمْلَةٌۭ يَٰٓأَيُّهَا ٱلنَّمْلُ ٱدْخُلُوا۟ مَسَٰكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَٰنُ وَجُنُودُهُۥ وَهُمْ لَا يَشْعُرُونَ",
+        "translation": "Hingga apabila mereka sampai di lembah semut berkatalah seekor semut: Hai semut-semut, masuklah ke dalam sarang-sarangmu, agar kamu tidak diinjak oleh Sulaiman dan tentaranya, sedangkan mereka tidak menyadari\";",
+        "surah": "An-Naml",
+        "ayah": 18
+      }
+    },
+    {
+      "id": 396,
+      "arabic": "ذُبَاب",
+      "transliteration": "dzubab",
+      "translation": "lalat",
+      "word_type": "noun",
+      "root": "ذ-ب-ب",
+      "forms": {
+        "singular": "ذُبَابَة",
+        "plural": "ذُبَاب / أَذِبَّة"
+      },
+      "related_words": [
+        {
+          "arabic": "بَعُوضَة",
+          "translation": "nyamuk"
+        },
+        {
+          "arabic": "نَحْل",
+          "translation": "lebah"
+        },
+        {
+          "arabic": "حَشَرَة",
+          "translation": "serangga"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ ضُرِبَ مَثَلٌۭ فَٱسْتَمِعُوا۟ لَهُۥٓ ۚ إِنَّ ٱلَّذِينَ تَدْعُونَ مِن دُونِ ٱللَّهِ لَن يَخْلُقُوا۟ ذُبَابًۭا وَلَوِ ٱجْتَمَعُوا۟ لَهُۥ ۖ وَإِن يَسْلُبْهُمُ ٱلذُّبَابُ شَيْـًۭٔا لَّا يَسْتَنقِذُوهُ مِنْهُ ۚ ضَعُفَ ٱلطَّالِبُ وَٱلْمَطْلُوبُ",
+        "translation": "Hai manusia, telah dibuat perumpamaan, maka dengarkanlah olehmu perumpamaan itu. Sesungguhnya segala yang kamu seru selain Allah sekali-kali tidak dapat menciptakan seekor lalatpun, walaupun mereka bersatu menciptakannya. Dan jika lalat itu merampas sesuatu dari mereka, tiadalah mereka dapat merebutnya kembali dari lalat itu. Amat lemahlah yang menyembah dan amat lemah (pulalah) yang disembah.",
+        "surah": "Al-Hajj",
+        "ayah": 73
+      }
+    },
+    {
+      "id": 397,
+      "arabic": "عَنْكَبُوت",
+      "transliteration": "'ankabut",
+      "translation": "laba-laba",
+      "word_type": "noun",
+      "root": "ع-ن-ك-ب",
+      "forms": {
+        "singular": "عَنْكَبُوت",
+        "plural": "عَنَاكِب"
+      },
+      "related_words": [
+        {
+          "arabic": "ذُبَاب",
+          "translation": "lalat"
+        },
+        {
+          "arabic": "نَمْل",
+          "translation": "semut"
+        },
+        {
+          "arabic": "بَيْت",
+          "translation": "rumah/sarang"
+        }
+      ],
+      "quran_example": {
+        "arabic": "مَثَلُ ٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ أَوْلِيَآءَ كَمَثَلِ ٱلْعَنكَبُوتِ ٱتَّخَذَتْ بَيْتًۭا ۖ وَإِنَّ أَوْهَنَ ٱلْبُيُوتِ لَبَيْتُ ٱلْعَنكَبُوتِ ۖ لَوْ كَانُوا۟ يَعْلَمُونَ",
+        "translation": "Perumpamaan orang-orang yang mengambil pelindung-pelindung selain Allah adalah seperti laba-laba yang membuat rumah. Dan sesungguhnya rumah yang paling lemah adalah rumah laba-laba kalau mereka mengetahui.",
+        "surah": "Al-Ankaboot",
+        "ayah": 41
+      }
+    },
+    {
+      "id": 398,
+      "arabic": "بَعُوضَة",
+      "transliteration": "ba'udhah",
+      "translation": "nyamuk",
+      "word_type": "noun",
+      "root": "ب-ع-ض",
+      "forms": {
+        "singular": "بَعُوضَة",
+        "plural": "بَعُوض"
+      },
+      "related_words": [
+        {
+          "arabic": "ذُبَاب",
+          "translation": "lalat"
+        },
+        {
+          "arabic": "نَحْل",
+          "translation": "lebah"
+        },
+        {
+          "arabic": "مَثَل",
+          "translation": "perumpamaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "۞ إِنَّ ٱللَّهَ لَا يَسْتَحْىِۦٓ أَن يَضْرِبَ مَثَلًۭا مَّا بَعُوضَةًۭ فَمَا فَوْقَهَا ۚ فَأَمَّا ٱلَّذِينَ ءَامَنُوا۟ فَيَعْلَمُونَ أَنَّهُ ٱلْحَقُّ مِن رَّبِّهِمْ ۖ وَأَمَّا ٱلَّذِينَ كَفَرُوا۟ فَيَقُولُونَ مَاذَآ أَرَادَ ٱللَّهُ بِهَٰذَا مَثَلًۭا ۘ يُضِلُّ بِهِۦ كَثِيرًۭا وَيَهْدِى بِهِۦ كَثِيرًۭا ۚ وَمَا يُضِلُّ بِهِۦٓ إِلَّا ٱلْفَٰسِقِينَ",
+        "translation": "Sesungguhnya Allah tiada segan membuat perumpamaan berupa nyamuk atau yang lebih rendah dari itu. Adapun orang-orang yang beriman, maka mereka yakin bahwa perumpamaan itu benar dari Tuhan mereka, tetapi mereka yang kafir mengatakan: \"Apakah maksud Allah menjadikan ini untuk perumpamaan?\". Dengan perumpamaan itu banyak orang yang disesatkan Allah, dan dengan perumpamaan itu (pula) banyak orang yang diberi-Nya petunjuk. Dan tidak ada yang disesatkan Allah kecuali orang-orang yang fasik,",
+        "surah": "Al-Baqara",
+        "ayah": 26
+      }
+    },
+    {
+      "id": 399,
+      "arabic": "حُوت",
+      "transliteration": "hut",
+      "translation": "ikan (besar), paus",
+      "word_type": "noun",
+      "root": "ح-و-ت",
+      "forms": {
+        "singular": "حُوت",
+        "plural": "حِيتَان / أَحْوَات"
+      },
+      "related_words": [
+        {
+          "arabic": "سَمَك",
+          "translation": "ikan"
+        },
+        {
+          "arabic": "بَحْر",
+          "translation": "laut"
+        },
+        {
+          "arabic": "نُون",
+          "translation": "ikan paus"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَلَمَّا بَلَغَا مَجْمَعَ بَيْنِهِمَا نَسِيَا حُوتَهُمَا فَٱتَّخَذَ سَبِيلَهُۥ فِى ٱلْبَحْرِ سَرَبًۭا",
+        "translation": "Maka tatkala mereka sampai ke pertemuan dua buah laut itu, mereka lalai akan ikannya, lalu ikan itu melompat mengambil jalannya ke laut itu.",
+        "surah": "Al-Kahf",
+        "ayah": 61
+      }
+    },
+    {
+      "id": 400,
+      "arabic": "بَرّ",
+      "transliteration": "barr",
+      "translation": "daratan",
+      "word_type": "noun",
+      "root": "ب-ر-ر",
+      "forms": {
+        "singular": "بَرّ",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "بَحْر",
+          "translation": "laut"
+        },
+        {
+          "arabic": "أَرْض",
+          "translation": "bumi"
+        },
+        {
+          "arabic": "يَابِسَة",
+          "translation": "daratan kering"
+        }
+      ],
+      "quran_example": {
+        "arabic": "۞ وَعِندَهُۥ مَفَاتِحُ ٱلْغَيْبِ لَا يَعْلَمُهَآ إِلَّا هُوَ ۚ وَيَعْلَمُ مَا فِى ٱلْبَرِّ وَٱلْبَحْرِ ۚ وَمَا تَسْقُطُ مِن وَرَقَةٍ إِلَّا يَعْلَمُهَا وَلَا حَبَّةٍۢ فِى ظُلُمَٰتِ ٱلْأَرْضِ وَلَا رَطْبٍۢ وَلَا يَابِسٍ إِلَّا فِى كِتَٰبٍۢ مُّبِينٍۢ",
+        "translation": "Dan pada sisi Allah-lah kunci-kunci semua yang ghaib; tidak ada yang mengetahuinya kecuali Dia sendiri, dan Dia mengetahui apa yang di daratan dan di lautan, dan tiada sehelai daun pun yang gugur melainkan Dia mengetahuinya (pula), dan tidak jatuh sebutir biji-pun dalam kegelapan bumi, dan tidak sesuatu yang basah atau yang kering, melainkan tertulis dalam kitab yang nyata (Lauh Mahfudz)\"",
+        "surah": "Al-An'aam",
+        "ayah": 59
+      }
+    },
+    {
+      "id": 401,
+      "arabic": "سِرّ",
+      "transliteration": "sirr",
+      "translation": "rahasia",
+      "word_type": "noun",
+      "root": "س-ر-ر",
+      "forms": {
+        "singular": "سِرّ",
+        "plural": "أَسْرَار"
+      },
+      "related_words": [
+        {
+          "arabic": "خَفِيّ",
+          "translation": "tersembunyi"
+        },
+        {
+          "arabic": "عَلَن",
+          "translation": "terang-terangan"
+        },
+        {
+          "arabic": "غَيْب",
+          "translation": "yang gaib"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِن تَجْهَرْ بِٱلْقَوْلِ فَإِنَّهُۥ يَعْلَمُ ٱلسِّرَّ وَأَخْفَى",
+        "translation": "Dan jika kamu mengeraskan ucapanmu, maka sesungguhnya Dia mengetahui rahasia dan yang lebih tersembunyi.",
+        "surah": "Taa-Haa",
+        "ayah": 7
+      }
+    }
+  ]
+}

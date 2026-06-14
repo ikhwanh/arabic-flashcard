@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 33",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "322-331"
+  },
+  "cards": [
+    {
+      "id": 322,
+      "arabic": "أَحْسَن",
+      "transliteration": "ahsan",
+      "translation": "terbaik, paling baik",
+      "word_type": "adjective",
+      "root": "ح-س-ن",
+      "forms": {
+        "singular": "أَحْسَن",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "حَسَن",
+          "translation": "baik"
+        },
+        {
+          "arabic": "خَيْر",
+          "translation": "kebaikan"
+        },
+        {
+          "arabic": "جَمِيل",
+          "translation": "indah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍۢ",
+        "translation": "sesungguhnya Kami telah menciptakan manusia dalam bentuk yang sebaik-baiknya.",
+        "surah": "At-Tin",
+        "ayah": 4
+      }
+    },
+    {
+      "id": 323,
+      "arabic": "سَنَة",
+      "transliteration": "sanah",
+      "translation": "tahun",
+      "word_type": "noun",
+      "root": "س-ن-و",
+      "forms": {
+        "singular": "سَنَة",
+        "plural": "سِنُونَ / سِنِينَ"
+      },
+      "related_words": [
+        {
+          "arabic": "عَام",
+          "translation": "tahun"
+        },
+        {
+          "arabic": "شَهْر",
+          "translation": "bulan"
+        },
+        {
+          "arabic": "يَوْم",
+          "translation": "hari"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦ فَلَبِثَ فِيهِمْ أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًۭا فَأَخَذَهُمُ ٱلطُّوفَانُ وَهُمْ ظَٰلِمُونَ",
+        "translation": "Dan sesungguhnya Kami telah mengutus Nuh kepada kaumnya, maka ia tinggal di antara mereka seribu tahun kurang lima puluh tahun. Maka mereka ditimpa banjir besar, dan mereka adalah orang-orang yang zalim.",
+        "surah": "Al-Ankaboot",
+        "ayah": 14
+      }
+    },
+    {
+      "id": 324,
+      "arabic": "عَام",
+      "transliteration": "'am",
+      "translation": "tahun",
+      "word_type": "noun",
+      "root": "ع-و-م",
+      "forms": {
+        "singular": "عَام",
+        "plural": "أَعْوَام"
+      },
+      "related_words": [
+        {
+          "arabic": "سَنَة",
+          "translation": "tahun"
+        },
+        {
+          "arabic": "حَوْل",
+          "translation": "tahun"
+        },
+        {
+          "arabic": "شَهْر",
+          "translation": "bulan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦ فَلَبِثَ فِيهِمْ أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًۭا فَأَخَذَهُمُ ٱلطُّوفَانُ وَهُمْ ظَٰلِمُونَ",
+        "translation": "Dan sesungguhnya Kami telah mengutus Nuh kepada kaumnya, maka ia tinggal di antara mereka seribu tahun kurang lima puluh tahun. Maka mereka ditimpa banjir besar, dan mereka adalah orang-orang yang zalim.",
+        "surah": "Al-Ankaboot",
+        "ayah": 14
+      }
+    },
+    {
+      "id": 325,
+      "arabic": "أَلْف",
+      "transliteration": "alf",
+      "translation": "seribu",
+      "word_type": "noun",
+      "root": "ء-ل-ف",
+      "forms": {
+        "singular": "أَلْف",
+        "plural": "آلَاف / أُلُوف"
+      },
+      "related_words": [
+        {
+          "arabic": "مِائَة",
+          "translation": "seratus"
+        },
+        {
+          "arabic": "عَدَد",
+          "translation": "bilangan"
+        },
+        {
+          "arabic": "كَثِير",
+          "translation": "banyak"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦ فَلَبِثَ فِيهِمْ أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًۭا فَأَخَذَهُمُ ٱلطُّوفَانُ وَهُمْ ظَٰلِمُونَ",
+        "translation": "Dan sesungguhnya Kami telah mengutus Nuh kepada kaumnya, maka ia tinggal di antara mereka seribu tahun kurang lima puluh tahun. Maka mereka ditimpa banjir besar, dan mereka adalah orang-orang yang zalim.",
+        "surah": "Al-Ankaboot",
+        "ayah": 14
+      }
+    },
+    {
+      "id": 326,
+      "arabic": "طَعَام",
+      "transliteration": "ta'am",
+      "translation": "makanan",
+      "word_type": "noun",
+      "root": "ط-ع-م",
+      "forms": {
+        "singular": "طَعَام",
+        "plural": "أَطْعِمَة"
+      },
+      "related_words": [
+        {
+          "arabic": "أَكْل",
+          "translation": "santapan"
+        },
+        {
+          "arabic": "شَرَاب",
+          "translation": "minuman"
+        },
+        {
+          "arabic": "رِزْق",
+          "translation": "rezeki"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَيُطْعِمُونَ ٱلطَّعَامَ عَلَىٰ حُبِّهِۦ مِسْكِينًۭا وَيَتِيمًۭا وَأَسِيرًا",
+        "translation": "Dan mereka memberikan makanan yang disukainya kepada orang miskin, anak yatim dan orang yang ditawan.",
+        "surah": "Al-Insaan",
+        "ayah": 8
+      }
+    },
+    {
+      "id": 327,
+      "arabic": "شَرَاب",
+      "transliteration": "syarab",
+      "translation": "minuman",
+      "word_type": "noun",
+      "root": "ش-ر-ب",
+      "forms": {
+        "singular": "شَرَاب",
+        "plural": "أَشْرِبَة"
+      },
+      "related_words": [
+        {
+          "arabic": "مَاء",
+          "translation": "air"
+        },
+        {
+          "arabic": "طَعَام",
+          "translation": "makanan"
+        },
+        {
+          "arabic": "خَمْر",
+          "translation": "arak"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ثُمَّ كُلِى مِن كُلِّ ٱلثَّمَرَٰتِ فَٱسْلُكِى سُبُلَ رَبِّكِ ذُلُلًۭا ۚ يَخْرُجُ مِنۢ بُطُونِهَا شَرَابٌۭ مُّخْتَلِفٌ أَلْوَٰنُهُۥ فِيهِ شِفَآءٌۭ لِّلنَّاسِ ۗ إِنَّ فِى ذَٰلِكَ لَءَايَةًۭ لِّقَوْمٍۢ يَتَفَكَّرُونَ",
+        "translation": "kemudian makanlah dari tiap-tiap (macam) buah-buahan dan tempuhlah jalan Tuhanmu yang telah dimudahkan (bagimu). Dari perut lebah itu ke luar minuman (madu) yang bermacam-macam warnanya, di dalamnya terdapat obat yang menyembuhkan bagi manusia. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda (kebesaran Tuhan) bagi orang-orang yang memikirkan.",
+        "surah": "An-Nahl",
+        "ayah": 69
+      }
+    },
+    {
+      "id": 328,
+      "arabic": "لِبَاس",
+      "transliteration": "libas",
+      "translation": "pakaian",
+      "word_type": "noun",
+      "root": "ل-ب-س",
+      "forms": {
+        "singular": "لِبَاس",
+        "plural": "مَلَابِس"
+      },
+      "related_words": [
+        {
+          "arabic": "ثَوْب",
+          "translation": "baju"
+        },
+        {
+          "arabic": "رِيش",
+          "translation": "pakaian/perhiasan"
+        },
+        {
+          "arabic": "سِرْبَال",
+          "translation": "baju"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَٰبَنِىٓ ءَادَمَ قَدْ أَنزَلْنَا عَلَيْكُمْ لِبَاسًۭا يُوَٰرِى سَوْءَٰتِكُمْ وَرِيشًۭا ۖ وَلِبَاسُ ٱلتَّقْوَىٰ ذَٰلِكَ خَيْرٌۭ ۚ ذَٰلِكَ مِنْ ءَايَٰتِ ٱللَّهِ لَعَلَّهُمْ يَذَّكَّرُونَ",
+        "translation": "Hai anak Adam, sesungguhnya Kami telah menurunkan kepadamu pakaian untuk menutup auratmu dan pakaian indah untuk perhiasan. Dan pakaian takwa itulah yang paling baik. Yang demikian itu adalah sebahagian dari tanda-tanda kekuasaan Allah, mudah-mudahan mereka selalu ingat.",
+        "surah": "Al-A'raaf",
+        "ayah": 26
+      }
+    },
+    {
+      "id": 329,
+      "arabic": "بَطْن",
+      "transliteration": "batn",
+      "translation": "perut",
+      "word_type": "noun",
+      "root": "ب-ط-ن",
+      "forms": {
+        "singular": "بَطْن",
+        "plural": "بُطُون"
+      },
+      "related_words": [
+        {
+          "arabic": "ظَهْر",
+          "translation": "punggung"
+        },
+        {
+          "arabic": "صَدْر",
+          "translation": "dada"
+        },
+        {
+          "arabic": "جَوْف",
+          "translation": "rongga"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِنَّ لَكُمْ فِى ٱلْأَنْعَٰمِ لَعِبْرَةًۭ ۖ نُّسْقِيكُم مِّمَّا فِى بُطُونِهَا وَلَكُمْ فِيهَا مَنَٰفِعُ كَثِيرَةٌۭ وَمِنْهَا تَأْكُلُونَ",
+        "translation": "Dan sesungguhnya pada binatang-binatang ternak, benar-benar terdapat pelajaran yang penting bagi kamu, Kami memberi minum kamu dari air susu yang ada dalam perutnya, dan (juga) pada binatang-binatang ternak itu terdapat faedah yang banyak untuk kamu, dan sebagian daripadanya kamu makan,",
+        "surah": "Al-Muminoon",
+        "ayah": 21
+      }
+    },
+    {
+      "id": 330,
+      "arabic": "دَم",
+      "transliteration": "dam",
+      "translation": "darah",
+      "word_type": "noun",
+      "root": "د-م-و",
+      "forms": {
+        "singular": "دَم",
+        "plural": "دِمَاء"
+      },
+      "related_words": [
+        {
+          "arabic": "لَحْم",
+          "translation": "daging"
+        },
+        {
+          "arabic": "عَظْم",
+          "translation": "tulang"
+        },
+        {
+          "arabic": "جِلْد",
+          "translation": "kulit"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِنَّ لَكُمْ فِى ٱلْأَنْعَٰمِ لَعِبْرَةًۭ ۖ نُّسْقِيكُم مِّمَّا فِى بُطُونِهِۦ مِنۢ بَيْنِ فَرْثٍۢ وَدَمٍۢ لَّبَنًا خَالِصًۭا سَآئِغًۭا لِّلشَّٰرِبِينَ",
+        "translation": "Dan sesungguhnya pada binatang ternak itu benar-benar terdapat pelajaran bagi kamu. Kami memberimu minum dari pada apa yang berada dalam perutnya (berupa) susu yang bersih antara tahi dan darah, yang mudah ditelan bagi orang-orang yang meminumnya.",
+        "surah": "An-Nahl",
+        "ayah": 66
+      }
+    },
+    {
+      "id": 331,
+      "arabic": "لَبَن",
+      "transliteration": "laban",
+      "translation": "susu",
+      "word_type": "noun",
+      "root": "ل-ب-ن",
+      "forms": {
+        "singular": "لَبَن",
+        "plural": "أَلْبَان"
+      },
+      "related_words": [
+        {
+          "arabic": "عَسَل",
+          "translation": "madu"
+        },
+        {
+          "arabic": "مَاء",
+          "translation": "air"
+        },
+        {
+          "arabic": "شَرَاب",
+          "translation": "minuman"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِنَّ لَكُمْ فِى ٱلْأَنْعَٰمِ لَعِبْرَةًۭ ۖ نُّسْقِيكُم مِّمَّا فِى بُطُونِهِۦ مِنۢ بَيْنِ فَرْثٍۢ وَدَمٍۢ لَّبَنًا خَالِصًۭا سَآئِغًۭا لِّلشَّٰرِبِينَ",
+        "translation": "Dan sesungguhnya pada binatang ternak itu benar-benar terdapat pelajaran bagi kamu. Kami memberimu minum dari pada apa yang berada dalam perutnya (berupa) susu yang bersih antara tahi dan darah, yang mudah ditelan bagi orang-orang yang meminumnya.",
+        "surah": "An-Nahl",
+        "ayah": 66
+      }
+    }
+  ]
+}

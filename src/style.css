@@ -1045,3 +1045,20 @@ body {
   color: var(--text);
   font-size: 0.9rem;
 }
+
+/* ── Footer / GitHub link ───────────────────────────────────────────────────── */
+.app-footer {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem 2rem;
+}
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.github-link:hover { color: var(--text); }
