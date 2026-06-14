@@ -7,6 +7,26 @@ const TYPE_LABEL: Record<WordType, string> = {
   harf:   'kata tugas (harf)',
 }
 
+const FORM_LABEL: Record<keyof NonNullable<QsWord['forms']>, string> = {
+  past:    'Lampau',
+  present: 'Sekarang',
+  future:  'Akan datang',
+  command: 'Perintah',
+}
+
+function formsSection(forms: NonNullable<QsWord['forms']>): string {
+  const entries = (Object.keys(FORM_LABEL) as (keyof typeof FORM_LABEL)[])
+    .filter(k => forms[k])
+    .map(k => `
+      <span class="qs-form">
+        <span class="qs-form-label">${FORM_LABEL[k]}</span>
+        <span class="qs-form-arabic">${forms[k]}</span>
+      </span>
+    `)
+  if (entries.length === 0) return ''
+  return `<div class="qs-forms" dir="rtl">${entries.join('')}</div>`
+}
+
 function wordDetail(word: QsWord): string {
   return `
     <div class="qs-detail">
@@ -19,6 +39,7 @@ function wordDetail(word: QsWord): string {
         <span class="qs-type-badge qs-type-${word.type === "fi'l" ? 'fil' : word.type}">${TYPE_LABEL[word.type]}</span>
         ${word.root ? `<span class="qs-detail-root">Akar: ${word.root}</span>` : ''}
       </div>
+      ${word.forms ? formsSection(word.forms) : ''}
       ${word.notes ? `<p class="qs-detail-notes">${word.notes}</p>` : ''}
     </div>
   `

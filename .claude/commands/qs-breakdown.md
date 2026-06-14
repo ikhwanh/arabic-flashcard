@@ -39,6 +39,13 @@ Split the verse Arabic into its individual words **in reading order** (right to 
 - `meaning` — concise **Indonesian** meaning, in this verse's context
 - `type` — one of `ism`, `fi'l`, `harf`
 - `root` — three-letter root, space-separated Arabic letters (e.g. `ب ر ك`). Omit the field for particles (`harf`) that have no root.
+- `forms` — **only when `type` is `fi'l`**. The verb's basic conjugations (3rd person masculine singular), fully voweled, matching the verb's form/pattern of the word in the verse:
+  - `past` — fi'l madhi (lampau), e.g. `نَزَّلَ`
+  - `present` — fi'l mudhari' (sekarang), e.g. `يُنَزِّلُ`
+  - `future` — the mudhari' prefixed with `سَـ` (akan datang), e.g. `سَيُنَزِّلُ`
+  - `command` — fi'l amr (perintah), e.g. `نَزِّلْ`
+
+  Include every form that exists for the verb. Omit a single form if it does not apply (e.g. a passive verb has no natural `command` — drop just that key). Omit the whole `forms` object for `ism` and `harf`.
 - `notes` — optional, see tone guidance above
 
 ### 3. Build the file
@@ -61,12 +68,18 @@ Write `src/data/qs-breakdown/<surah>_<from>-<to>.json` (for a single ayah, use `
       "translation": "<indonesian translation>",
       "words": [
         {
-          "arabic": "تَبَارَكَ",
-          "transliteration": "tabaaraka",
-          "meaning": "Maha Suci / Maha Berkah",
+          "arabic": "نَزَّلَ",
+          "transliteration": "nazzala",
+          "meaning": "telah menurunkan",
           "type": "fi'l",
-          "root": "ب ر ك",
-          "notes": "Kata kerja bentuk lampau."
+          "root": "ن ز ل",
+          "forms": {
+            "past": "نَزَّلَ",
+            "present": "يُنَزِّلُ",
+            "future": "سَيُنَزِّلُ",
+            "command": "نَزِّلْ"
+          },
+          "notes": "Bentuk lampau."
         }
       ]
     }

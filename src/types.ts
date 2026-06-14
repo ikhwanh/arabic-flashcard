@@ -39,12 +39,21 @@ export interface Deck {
 
 export type WordType = 'ism' | "fi'l" | 'harf'
 
+// Verb conjugation forms (3rd person masc. singular), only for type "fi'l"
+export interface VerbForms {
+  past?: string            // madhi, e.g. نَزَّلَ
+  present?: string         // mudhari', e.g. يُنَزِّلُ
+  future?: string         // mudhari' + سـ, e.g. سَيُنَزِّلُ
+  command?: string        // amr, e.g. نَزِّلْ
+}
+
 export interface QsWord {
   arabic: string
   transliteration: string
   meaning: string          // Indonesian, contextual
   type: WordType
   root?: string            // 3-letter root, e.g. "ب ر ك" (omit for harf with no root)
+  forms?: VerbForms        // only for fi'l — past/present/future/command
   notes?: string           // optional single gentle Indonesian note
 }
 

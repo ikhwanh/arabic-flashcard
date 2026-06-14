@@ -46,6 +46,14 @@ function hasAnyProgress(): boolean {
   return deckMetas.some(d => getQuizScore(d.id) !== null || getLastVisited(d.id) > 0)
 }
 
+function deckLabel(deck: { title: string; cardCount: number }): string {
+  const part = Number(deck.title.match(/Part (\d+)/)?.[1])
+  if (!part) return deck.title
+  const start = (part - 1) * 10 + 1
+  const end = start + deck.cardCount - 1
+  return `Kata ${start}–${end}`
+}
+
 function renderDeckGrid(container: HTMLElement, filterUnfinished: boolean) {
   const sorted = [...deckMetas].sort((a, b) => getLastVisited(b.id) - getLastVisited(a.id))
   const visible = filterUnfinished ? sorted.filter(d => getQuizScore(d.id) === null) : sorted
@@ -59,9 +67,7 @@ function renderDeckGrid(container: HTMLElement, filterUnfinished: boolean) {
         <div class="deck-card">
           <button class="deck-card-study" data-deck-id="${deck.id}" aria-label="Study ${deck.title}">
             ${score !== null ? `<span class="deck-score-chip">${score}</span>` : ''}
-            <span class="deck-emoji">${deck.emoji}</span>
-            <h3 class="deck-title">${deck.title}</h3>
-            <p class="deck-desc">${deck.description}</p>
+            <h3 class="deck-title">${deckLabel(deck)}</h3>
           </button>
           <div class="deck-card-footer">
             <span class="deck-count">${deck.cardCount} cards</span>
@@ -115,8 +121,8 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
 
   const flashcardSection = `
     <div class="nav-hero">
-      <h2>Choose a Deck</h2>
-      <p class="nav-subtitle">Select a category to start studying</p>
+      <h2>Kosakata Al-Quran</h2>
+      <p class="nav-subtitle">Kata-kata bermakna yang paling sering muncul di Al-Quran</p>
     </div>
     <div class="nav-toolbar">
       <div class="nav-filters">
@@ -125,9 +131,10 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
       <div class="nav-menu">
         <button class="nav-menu-trigger" aria-label="Options" aria-haspopup="true" aria-expanded="false">⋮</button>
         <div class="nav-menu-dropdown" hidden>
-          <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 1–15</span></button>
-          <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 16–30</span></button>
-          <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">All of Kosakata Al-Quran</span></button>
+          <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Kata 1–150</span></button>
+          <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Kata 151–300</span></button>
+          <button class="nav-menu-item" data-exam="31-45">Exam 3 <span class="nav-menu-item-sub">Kata 301–450</span></button>
+          <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">Semua kata</span></button>
           <div class="nav-menu-divider"></div>
           <button class="nav-menu-item btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
         </div>
