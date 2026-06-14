@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 47",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "462-471"
+  },
+  "cards": [
+    {
+      "id": 462,
+      "arabic": "وَرَق",
+      "transliteration": "waraq",
+      "translation": "daun, dedaunan",
+      "word_type": "noun",
+      "root": "و-ر-ق",
+      "forms": {
+        "singular": "وَرَقَة",
+        "plural": "أَوْرَاق"
+      },
+      "related_words": [
+        {
+          "arabic": "شَجَر",
+          "translation": "pohon"
+        },
+        {
+          "arabic": "غُصْن",
+          "translation": "ranting"
+        },
+        {
+          "arabic": "ثَمَر",
+          "translation": "buah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "۞ وَعِندَهُۥ مَفَاتِحُ ٱلْغَيْبِ لَا يَعْلَمُهَآ إِلَّا هُوَ ۚ وَيَعْلَمُ مَا فِى ٱلْبَرِّ وَٱلْبَحْرِ ۚ وَمَا تَسْقُطُ مِن وَرَقَةٍ إِلَّا يَعْلَمُهَا وَلَا حَبَّةٍۢ فِى ظُلُمَٰتِ ٱلْأَرْضِ وَلَا رَطْبٍۢ وَلَا يَابِسٍ إِلَّا فِى كِتَٰبٍۢ مُّبِينٍۢ",
+        "translation": "Dan pada sisi Allah-lah kunci-kunci semua yang ghaib; tidak ada yang mengetahuinya kecuali Dia sendiri, dan Dia mengetahui apa yang di daratan dan di lautan, dan tiada sehelai daun pun yang gugur melainkan Dia mengetahuinya (pula), dan tidak jatuh sebutir biji-pun dalam kegelapan bumi, dan tidak sesuatu yang basah atau yang kering, melainkan tertulis dalam kitab yang nyata (Lauh Mahfudz)\"",
+        "surah": "Al-An'aam",
+        "ayah": 59
+      }
+    },
+    {
+      "id": 463,
+      "arabic": "زَهْرَة",
+      "transliteration": "zahrah",
+      "translation": "bunga; perhiasan (dunia)",
+      "word_type": "noun",
+      "root": "ز-ه-ر",
+      "forms": {
+        "singular": "زَهْرَة",
+        "plural": "زُهُور"
+      },
+      "related_words": [
+        {
+          "arabic": "وَرْد",
+          "translation": "mawar"
+        },
+        {
+          "arabic": "نَبَات",
+          "translation": "tumbuhan"
+        },
+        {
+          "arabic": "زِينَة",
+          "translation": "perhiasan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَا تَمُدَّنَّ عَيْنَيْكَ إِلَىٰ مَا مَتَّعْنَا بِهِۦٓ أَزْوَٰجًۭا مِّنْهُمْ زَهْرَةَ ٱلْحَيَوٰةِ ٱلدُّنْيَا لِنَفْتِنَهُمْ فِيهِ ۚ وَرِزْقُ رَبِّكَ خَيْرٌۭ وَأَبْقَىٰ",
+        "translation": "Dan janganlah kamu tujukan kedua matamu kepada apa yang telah Kami berikan kepada golongan-golongan dari mereka, sebagai bunga kehidupan dunia untuk Kami cobai mereka dengannya. Dan karunia Tuhan kamu adalah lebih baik dan lebih kekal.",
+        "surah": "Taa-Haa",
+        "ayah": 131
+      }
+    },
+    {
+      "id": 464,
+      "arabic": "سُنْبُلَة",
+      "transliteration": "sunbulah",
+      "translation": "tangkai, bulir (gandum)",
+      "word_type": "noun",
+      "root": "س-ن-ب-ل",
+      "forms": {
+        "singular": "سُنْبُلَة",
+        "plural": "سَنَابِل"
+      },
+      "related_words": [
+        {
+          "arabic": "زَرْع",
+          "translation": "tanaman"
+        },
+        {
+          "arabic": "حَبّ",
+          "translation": "biji"
+        },
+        {
+          "arabic": "قَمْح",
+          "translation": "gandum"
+        }
+      ],
+      "quran_example": {
+        "arabic": "مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍۢ مِّا۟ئَةُ حَبَّةٍۢ ۗ وَٱللَّهُ يُضَٰعِفُ لِمَن يَشَآءُ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ",
+        "translation": "Perumpamaan (nafkah yang dikeluarkan oleh) orang-orang yang menafkahkan hartanya di jalan Allah adalah serupa dengan sebutir benih yang menumbuhkan tujuh bulir, pada tiap-tiap bulir seratus biji. Allah melipat gandakan (ganjaran) bagi siapa yang Dia kehendaki. Dan Allah Maha Luas (karunia-Nya) lagi Maha Mengetahui.",
+        "surah": "Al-Baqara",
+        "ayah": 261
+      }
+    },
+    {
+      "id": 465,
+      "arabic": "نُطْفَة",
+      "transliteration": "nuthfah",
+      "translation": "setetes mani",
+      "word_type": "noun",
+      "root": "ن-ط-ف",
+      "forms": {
+        "singular": "نُطْفَة",
+        "plural": "نُطَف"
+      },
+      "related_words": [
+        {
+          "arabic": "مَاء",
+          "translation": "air"
+        },
+        {
+          "arabic": "خَلْق",
+          "translation": "penciptaan"
+        },
+        {
+          "arabic": "جَنِين",
+          "translation": "janin"
+        }
+      ],
+      "quran_example": {
+        "arabic": "خَلَقَ ٱلْإِنسَٰنَ مِن نُّطْفَةٍۢ فَإِذَا هُوَ خَصِيمٌۭ مُّبِينٌۭ",
+        "translation": "Dia telah menciptakan manusia dari mani, tiba-tiba ia menjadi pembantah yang nyata.",
+        "surah": "An-Nahl",
+        "ayah": 4
+      }
+    },
+    {
+      "id": 466,
+      "arabic": "جَهَنَّم",
+      "transliteration": "jahannam",
+      "translation": "jahanam, neraka",
+      "word_type": "noun",
+      "root": "ج-ه-ن-م",
+      "forms": {
+        "singular": "جَهَنَّم",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "نَار",
+          "translation": "api"
+        },
+        {
+          "arabic": "سَعِير",
+          "translation": "neraka menyala"
+        },
+        {
+          "arabic": "جَنَّة",
+          "translation": "surga"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَٰٓأَيُّهَا ٱلنَّبِىُّ جَٰهِدِ ٱلْكُفَّارَ وَٱلْمُنَٰفِقِينَ وَٱغْلُظْ عَلَيْهِمْ ۚ وَمَأْوَىٰهُمْ جَهَنَّمُ ۖ وَبِئْسَ ٱلْمَصِيرُ",
+        "translation": "Hai Nabi, berjihadlah (melawan) orang-orang kafir dan orang-orang munafik itu, dan bersikap keraslah terhadap mereka. Tempat mereka ialah jahannam. Dan itu adalah tempat kembali yang seburuk-buruknya.",
+        "surah": "At-Tawba",
+        "ayah": 73
+      }
+    },
+    {
+      "id": 467,
+      "arabic": "فِرْدَوْس",
+      "transliteration": "firdaus",
+      "translation": "surga firdaus",
+      "word_type": "noun",
+      "root": "ف-ر-د-س",
+      "forms": {
+        "singular": "فِرْدَوْس",
+        "plural": "فَرَادِيس"
+      },
+      "related_words": [
+        {
+          "arabic": "جَنَّة",
+          "translation": "surga"
+        },
+        {
+          "arabic": "نَعِيم",
+          "translation": "kenikmatan"
+        },
+        {
+          "arabic": "عَدْن",
+          "translation": "surga Adn"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ كَانَتْ لَهُمْ جَنَّٰتُ ٱلْفِرْدَوْسِ نُزُلًا",
+        "translation": "Sesungguhnya orang-orang yang beriman dan beramal saleh, bagi mereka adalah surga Firdaus menjadi tempat tinggal,",
+        "surah": "Al-Kahf",
+        "ayah": 107
+      }
+    },
+    {
+      "id": 468,
+      "arabic": "سَعِير",
+      "transliteration": "sa'ir",
+      "translation": "neraka yang menyala-nyala",
+      "word_type": "noun",
+      "root": "س-ع-ر",
+      "forms": {
+        "singular": "سَعِير",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "نَار",
+          "translation": "api"
+        },
+        {
+          "arabic": "جَحِيم",
+          "translation": "neraka"
+        },
+        {
+          "arabic": "جَهَنَّم",
+          "translation": "jahanam"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱلَّذِينَ يَأْكُلُونَ أَمْوَٰلَ ٱلْيَتَٰمَىٰ ظُلْمًا إِنَّمَا يَأْكُلُونَ فِى بُطُونِهِمْ نَارًۭا ۖ وَسَيَصْلَوْنَ سَعِيرًۭا",
+        "translation": "Sesungguhnya orang-orang yang memakan harta anak yatim secara zalim, sebenarnya mereka itu menelan api sepenuh perutnya dan mereka akan masuk ke dalam api yang menyala-nyala (neraka).",
+        "surah": "An-Nisaa",
+        "ayah": 10
+      }
+    },
+    {
+      "id": 469,
+      "arabic": "نُشُور",
+      "transliteration": "nusyur",
+      "translation": "kebangkitan (dari kubur)",
+      "word_type": "noun",
+      "root": "ن-ش-ر",
+      "forms": {
+        "singular": "نُشُور",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "بَعْث",
+          "translation": "kebangkitan"
+        },
+        {
+          "arabic": "قِيَامَة",
+          "translation": "kiamat"
+        },
+        {
+          "arabic": "حَشْر",
+          "translation": "pengumpulan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ ذَلُولًۭا فَٱمْشُوا۟ فِى مَنَاكِبِهَا وَكُلُوا۟ مِن رِّزْقِهِۦ ۖ وَإِلَيْهِ ٱلنُّشُورُ",
+        "translation": "Dialah Yang menjadikan bumi itu mudah bagi kamu, maka berjalanlah di segala penjurunya dan makanlah sebahagian dari rezeki-Nya. Dan hanya kepada-Nya-lah kamu (kembali setelah) dibangkitkan.",
+        "surah": "Al-Mulk",
+        "ayah": 15
+      }
+    },
+    {
+      "id": 470,
+      "arabic": "صُور",
+      "transliteration": "shur",
+      "translation": "sangkakala, terompet",
+      "word_type": "noun",
+      "root": "ص-و-ر",
+      "forms": {
+        "singular": "صُور",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "نَفْخ",
+          "translation": "tiupan"
+        },
+        {
+          "arabic": "قِيَامَة",
+          "translation": "kiamat"
+        },
+        {
+          "arabic": "بَعْث",
+          "translation": "kebangkitan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَهُوَ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ بِٱلْحَقِّ ۖ وَيَوْمَ يَقُولُ كُن فَيَكُونُ ۚ قَوْلُهُ ٱلْحَقُّ ۚ وَلَهُ ٱلْمُلْكُ يَوْمَ يُنفَخُ فِى ٱلصُّورِ ۚ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۚ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ",
+        "translation": "Dan Dialah yang menciptakan langit dan bumi dengan benar. Dan benarlah perkataan-Nya di waktu Dia mengatakan: \"Jadilah, lalu terjadilah\", dan di tangan-Nya-lah segala kekuasaan di waktu sangkakala ditiup. Dia mengetahui yang ghaib dan yang nampak. Dan Dialah Yang Maha Bijaksana lagi Maha Mengetahui.",
+        "surah": "Al-An'aam",
+        "ayah": 73
+      }
+    },
+    {
+      "id": 471,
+      "arabic": "كَوْثَر",
+      "transliteration": "kautsar",
+      "translation": "nikmat yang banyak, telaga kautsar",
+      "word_type": "noun",
+      "root": "ك-ث-ر",
+      "forms": {
+        "singular": "كَوْثَر",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "نَهْر",
+          "translation": "sungai"
+        },
+        {
+          "arabic": "خَيْر",
+          "translation": "kebaikan"
+        },
+        {
+          "arabic": "نِعْمَة",
+          "translation": "nikmat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
+        "translation": "Sesungguhnya Kami telah memberikan kepadamu nikmat yang banyak.",
+        "surah": "Al-Kawthar",
+        "ayah": 1
+      }
+    }
+  ]
+}

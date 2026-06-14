@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 49",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "482-491"
+  },
+  "cards": [
+    {
+      "id": 482,
+      "arabic": "حَسَد",
+      "transliteration": "hasad",
+      "translation": "dengki, iri hati",
+      "word_type": "noun",
+      "root": "ح-س-د",
+      "forms": {
+        "singular": "حَسَد",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "غِبْطَة",
+          "translation": "iri positif"
+        },
+        {
+          "arabic": "بُغْض",
+          "translation": "kebencian"
+        },
+        {
+          "arabic": "حِقْد",
+          "translation": "dendam"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+        "translation": "dan dari kejahatan pendengki bila ia dengki\".",
+        "surah": "Al-Falaq",
+        "ayah": 5
+      }
+    },
+    {
+      "id": 483,
+      "arabic": "عَفْو",
+      "transliteration": "'afw",
+      "translation": "maaf, pemaafan",
+      "word_type": "noun",
+      "root": "ع-ف-و",
+      "forms": {
+        "singular": "عَفْو",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "صَفْح",
+          "translation": "memaafkan"
+        },
+        {
+          "arabic": "مَغْفِرَة",
+          "translation": "ampunan"
+        },
+        {
+          "arabic": "عِقَاب",
+          "translation": "hukuman"
+        }
+      ],
+      "quran_example": {
+        "arabic": "۞ يَسْـَٔلُونَكَ عَنِ ٱلْخَمْرِ وَٱلْمَيْسِرِ ۖ قُلْ فِيهِمَآ إِثْمٌۭ كَبِيرٌۭ وَمَنَٰفِعُ لِلنَّاسِ وَإِثْمُهُمَآ أَكْبَرُ مِن نَّفْعِهِمَا ۗ وَيَسْـَٔلُونَكَ مَاذَا يُنفِقُونَ قُلِ ٱلْعَفْوَ ۗ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمُ ٱلْءَايَٰتِ لَعَلَّكُمْ تَتَفَكَّرُونَ",
+        "translation": "Mereka bertanya kepadamu tentang khamar dan judi. Katakanlah: \"Pada keduanya terdapat dosa yang besar dan beberapa manfaat bagi manusia, tetapi dosa keduanya lebih besar dari manfaatnya\". Dan mereka bertanya kepadamu apa yang mereka nafkahkan. Katakanlah: \"Yang lebih dari keperluan\". Demikianlah Allah menerangkan ayat-ayat-Nya kepadamu supaya kamu berfikir,",
+        "surah": "Al-Baqara",
+        "ayah": 219
+      }
+    },
+    {
+      "id": 484,
+      "arabic": "رَأْفَة",
+      "transliteration": "ra'fah",
+      "translation": "belas kasih, kasih sayang",
+      "word_type": "noun",
+      "root": "ر-أ-ف",
+      "forms": {
+        "singular": "رَأْفَة",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "رَحْمَة",
+          "translation": "rahmat"
+        },
+        {
+          "arabic": "شَفَقَة",
+          "translation": "kasih sayang"
+        },
+        {
+          "arabic": "لِين",
+          "translation": "lemah lembut"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱلزَّانِيَةُ وَٱلزَّانِى فَٱجْلِدُوا۟ كُلَّ وَٰحِدٍۢ مِّنْهُمَا مِا۟ئَةَ جَلْدَةٍۢ ۖ وَلَا تَأْخُذْكُم بِهِمَا رَأْفَةٌۭ فِى دِينِ ٱللَّهِ إِن كُنتُمْ تُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْءَاخِرِ ۖ وَلْيَشْهَدْ عَذَابَهُمَا طَآئِفَةٌۭ مِّنَ ٱلْمُؤْمِنِينَ",
+        "translation": "Perempuan yang berzina dan laki-laki yang berzina, maka deralah tiap-tiap seorang dari keduanya seratus dali dera, dan janganlah belas kasihan kepada keduanya mencegah kamu untuk (menjalankan) agama Allah, jika kamu beriman kepada Allah, dan hari akhirat, dan hendaklah (pelaksanaan) hukuman mereka disaksikan oleh sekumpulan orang-orang yang beriman.",
+        "surah": "An-Noor",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 485,
+      "arabic": "شُحّ",
+      "transliteration": "syuhh",
+      "translation": "kekikiran, kebakhilan",
+      "word_type": "noun",
+      "root": "ش-ح-ح",
+      "forms": {
+        "singular": "شُحّ",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "بُخْل",
+          "translation": "kikir"
+        },
+        {
+          "arabic": "طَمَع",
+          "translation": "tamak"
+        },
+        {
+          "arabic": "كَرَم",
+          "translation": "kemurahan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَٱلَّذِينَ تَبَوَّءُو ٱلدَّارَ وَٱلْإِيمَٰنَ مِن قَبْلِهِمْ يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ وَلَا يَجِدُونَ فِى صُدُورِهِمْ حَاجَةًۭ مِّمَّآ أُوتُوا۟ وَيُؤْثِرُونَ عَلَىٰٓ أَنفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌۭ ۚ وَمَن يُوقَ شُحَّ نَفْسِهِۦ فَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ",
+        "translation": "Dan orang-orang yang telah menempati kota Madinah dan telah beriman (Anshor) sebelum (kedatangan) mereka (Muhajirin), mereka (Anshor) 'mencintai' orang yang berhijrah kepada mereka (Muhajirin). Dan mereka (Anshor) tiada menaruh keinginan dalam hati mereka terhadap apa-apa yang diberikan kepada mereka (Muhajirin); dan mereka mengutamakan (orang-orang Muhajirin), atas diri mereka sendiri, sekalipun mereka dalam kesusahan. Dan siapa yang dipelihara dari kekikiran dirinya, mereka itulah orang orang yang beruntung",
+        "surah": "Al-Hashr",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 486,
+      "arabic": "عَجَل",
+      "transliteration": "'ajal",
+      "translation": "tergesa-gesa",
+      "word_type": "noun",
+      "root": "ع-ج-ل",
+      "forms": {
+        "singular": "عَجَل",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "سُرْعَة",
+          "translation": "kecepatan"
+        },
+        {
+          "arabic": "تَأَنٍّ",
+          "translation": "kehati-hatian"
+        },
+        {
+          "arabic": "عَجَلَة",
+          "translation": "ketergesaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "خُلِقَ ٱلْإِنسَٰنُ مِنْ عَجَلٍۢ ۚ سَأُو۟رِيكُمْ ءَايَٰتِى فَلَا تَسْتَعْجِلُونِ",
+        "translation": "Manusia telah dijadikan (bertabiat) tergesa-gesa. Kelak akan Aku perIihatkan kepadamu tanda-tanda azab-Ku. Maka janganlah kamu minta kepada-Ku mendatangkannya dengan segera.",
+        "surah": "Al-Anbiyaa",
+        "ayah": 37
+      }
+    },
+    {
+      "id": 487,
+      "arabic": "يُسْر",
+      "transliteration": "yusr",
+      "translation": "kemudahan",
+      "word_type": "noun",
+      "root": "ي-س-ر",
+      "forms": {
+        "singular": "يُسْر",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "سُهُولَة",
+          "translation": "kemudahan"
+        },
+        {
+          "arabic": "عُسْر",
+          "translation": "kesulitan"
+        },
+        {
+          "arabic": "فَرَج",
+          "translation": "kelapangan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+        "translation": "Karena sesungguhnya sesudah kesulitan itu ada kemudahan,",
+        "surah": "Ash-Sharh",
+        "ayah": 5
+      }
+    },
+    {
+      "id": 488,
+      "arabic": "عُسْر",
+      "transliteration": "'usr",
+      "translation": "kesulitan, kesukaran",
+      "word_type": "noun",
+      "root": "ع-س-ر",
+      "forms": {
+        "singular": "عُسْر",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "يُسْر",
+          "translation": "kemudahan"
+        },
+        {
+          "arabic": "شِدَّة",
+          "translation": "kesusahan"
+        },
+        {
+          "arabic": "ضِيق",
+          "translation": "kesempitan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+        "translation": "Karena sesungguhnya sesudah kesulitan itu ada kemudahan,",
+        "surah": "Ash-Sharh",
+        "ayah": 5
+      }
+    },
+    {
+      "id": 489,
+      "arabic": "بَأْس",
+      "transliteration": "ba's",
+      "translation": "siksa, azab; kekuatan",
+      "word_type": "noun",
+      "root": "ب-أ-س",
+      "forms": {
+        "singular": "بَأْس",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "عَذَاب",
+          "translation": "azab"
+        },
+        {
+          "arabic": "قُوَّة",
+          "translation": "kekuatan"
+        },
+        {
+          "arabic": "شِدَّة",
+          "translation": "kedahsyatan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَلَوْلَآ إِذْ جَآءَهُم بَأْسُنَا تَضَرَّعُوا۟ وَلَٰكِن قَسَتْ قُلُوبُهُمْ وَزَيَّنَ لَهُمُ ٱلشَّيْطَٰنُ مَا كَانُوا۟ يَعْمَلُونَ",
+        "translation": "Maka mengapa mereka tidak memohon (kepada Allah) dengan tunduk merendahkan diri ketika datang siksaan Kami kepada mereka, bahkan hati mereka telah menjadi keras, dan syaitanpun menampakkan kepada mereka kebagusan apa yang selalu mereka kerjakan.",
+        "surah": "Al-An'aam",
+        "ayah": 43
+      }
+    },
+    {
+      "id": 490,
+      "arabic": "فَهِمَ",
+      "transliteration": "fahima",
+      "translation": "memahami, mengerti",
+      "word_type": "verb",
+      "root": "ف-ه-م",
+      "forms": {
+        "past": "فَهِمَ",
+        "present": "يَفْهَمُ",
+        "command": "اِفْهَمْ"
+      },
+      "related_words": [
+        {
+          "arabic": "عَقَلَ",
+          "translation": "berakal"
+        },
+        {
+          "arabic": "أَدْرَكَ",
+          "translation": "memahami"
+        },
+        {
+          "arabic": "فِهْم",
+          "translation": "pemahaman"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَفَهَّمْنَٰهَا سُلَيْمَٰنَ ۚ وَكُلًّا ءَاتَيْنَا حُكْمًۭا وَعِلْمًۭا ۚ وَسَخَّرْنَا مَعَ دَاوُۥدَ ٱلْجِبَالَ يُسَبِّحْنَ وَٱلطَّيْرَ ۚ وَكُنَّا فَٰعِلِينَ",
+        "translation": "maka Kami telah memberikan pengertian kepada Sulaiman tentang hukum (yang lebih tepat); dan kepada masing-masing mereka telah Kami berikan hikmah dan ilmu dan telah Kami tundukkan gunung-gunung dan burung-burung, semua bertasbih bersama Daud. Dan kamilah yang melakukannya.",
+        "surah": "Al-Anbiyaa",
+        "ayah": 79
+      }
+    },
+    {
+      "id": 491,
+      "arabic": "حَسِبَ",
+      "transliteration": "hasiba",
+      "translation": "mengira, menyangka",
+      "word_type": "verb",
+      "root": "ح-س-ب",
+      "forms": {
+        "past": "حَسِبَ",
+        "present": "يَحْسَبُ",
+        "command": "اِحْسَبْ"
+      },
+      "related_words": [
+        {
+          "arabic": "ظَنَّ",
+          "translation": "mengira"
+        },
+        {
+          "arabic": "زَعَمَ",
+          "translation": "mengklaim"
+        },
+        {
+          "arabic": "خَالَ",
+          "translation": "menyangka"
+        }
+      ],
+      "quran_example": {
+        "arabic": "أَحَسِبَ ٱلنَّاسُ أَن يُتْرَكُوٓا۟ أَن يَقُولُوٓا۟ ءَامَنَّا وَهُمْ لَا يُفْتَنُونَ",
+        "translation": "Apakah manusia itu mengira bahwa mereka dibiarkan (saja) mengatakan: \"Kami telah beriman\", sedang mereka tidak diuji lagi?",
+        "surah": "Al-Ankaboot",
+        "ayah": 2
+      }
+    }
+  ]
+}

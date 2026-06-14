@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 42",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "412-421"
+  },
+  "cards": [
+    {
+      "id": 412,
+      "arabic": "جِنّ",
+      "transliteration": "jinn",
+      "translation": "jin",
+      "word_type": "noun",
+      "root": "ج-ن-ن",
+      "forms": {
+        "singular": "جِنِّيّ",
+        "plural": "جِنّ"
+      },
+      "related_words": [
+        {
+          "arabic": "شَيْطَان",
+          "translation": "setan"
+        },
+        {
+          "arabic": "إِنْس",
+          "translation": "manusia"
+        },
+        {
+          "arabic": "مَلَك",
+          "translation": "malaikat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌۭ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًۭا",
+        "translation": "Katakanlah (hai Muhammad): \"Telah diwahyukan kepadamu bahwasanya: telah mendengarkan sekumpulan jin (akan Al Quran), lalu mereka berkata: Sesungguhnya kami telah mendengarkan Al Quran yang menakjubkan,",
+        "surah": "Al-Jinn",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 413,
+      "arabic": "حُور",
+      "transliteration": "hur",
+      "translation": "bidadari surga",
+      "word_type": "noun",
+      "root": "ح-و-ر",
+      "forms": {
+        "singular": "حَوْرَاء",
+        "plural": "حُور"
+      },
+      "related_words": [
+        {
+          "arabic": "زَوْج",
+          "translation": "pasangan"
+        },
+        {
+          "arabic": "جَنَّة",
+          "translation": "surga"
+        },
+        {
+          "arabic": "وِلْدَان",
+          "translation": "pelayan muda"
+        }
+      ],
+      "quran_example": {
+        "arabic": "كَذَٰلِكَ وَزَوَّجْنَٰهُم بِحُورٍ عِينٍۢ",
+        "translation": "demikianlah. Dan Kami berikan kepada mereka bidadari.",
+        "surah": "Ad-Dukhaan",
+        "ayah": 54
+      }
+    },
+    {
+      "id": 414,
+      "arabic": "وِلْدَان",
+      "transliteration": "wildan",
+      "translation": "anak-anak muda (pelayan surga)",
+      "word_type": "noun",
+      "root": "و-ل-د",
+      "forms": {
+        "singular": "وَلِيد",
+        "plural": "وِلْدَان"
+      },
+      "related_words": [
+        {
+          "arabic": "غُلَام",
+          "translation": "pemuda"
+        },
+        {
+          "arabic": "حُور",
+          "translation": "bidadari"
+        },
+        {
+          "arabic": "خَادِم",
+          "translation": "pelayan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "۞ وَيَطُوفُ عَلَيْهِمْ وِلْدَٰنٌۭ مُّخَلَّدُونَ إِذَا رَأَيْتَهُمْ حَسِبْتَهُمْ لُؤْلُؤًۭا مَّنثُورًۭا",
+        "translation": "Dan mereka dikelilingi oleh pelayan-pelayan muda yang tetap muda. Apabila kamu melihat mereka, kamu akan mengira mereka, mutiara yang bertaburan.",
+        "surah": "Al-Insaan",
+        "ayah": 19
+      }
+    },
+    {
+      "id": 415,
+      "arabic": "نَفَر",
+      "transliteration": "nafar",
+      "translation": "rombongan, sekelompok orang",
+      "word_type": "noun",
+      "root": "ن-ف-ر",
+      "forms": {
+        "singular": "نَفَر",
+        "plural": "أَنْفَار"
+      },
+      "related_words": [
+        {
+          "arabic": "قَوْم",
+          "translation": "kaum"
+        },
+        {
+          "arabic": "جَمَاعَة",
+          "translation": "kelompok"
+        },
+        {
+          "arabic": "فَرِيق",
+          "translation": "golongan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِذْ صَرَفْنَآ إِلَيْكَ نَفَرًۭا مِّنَ ٱلْجِنِّ يَسْتَمِعُونَ ٱلْقُرْءَانَ فَلَمَّا حَضَرُوهُ قَالُوٓا۟ أَنصِتُوا۟ ۖ فَلَمَّا قُضِىَ وَلَّوْا۟ إِلَىٰ قَوْمِهِم مُّنذِرِينَ",
+        "translation": "Dan (ingatlah) ketika Kami hadapkan serombongan jin kepadamu yang mendengarkan Al Quran, maka tatkala mereka menghadiri pembacaan(nya) lalu mereka berkata: \"Diamlah kamu (untuk mendengarkannya)\". Ketika pembacaan telah selesai mereka kembali kepada kaumnya (untuk) memberi peringatan.",
+        "surah": "Al-Ahqaf",
+        "ayah": 29
+      }
+    },
+    {
+      "id": 416,
+      "arabic": "قَبِيلَة",
+      "transliteration": "qabilah",
+      "translation": "suku, kabilah",
+      "word_type": "noun",
+      "root": "ق-ب-ل",
+      "forms": {
+        "singular": "قَبِيلَة",
+        "plural": "قَبَائِل"
+      },
+      "related_words": [
+        {
+          "arabic": "شَعْب",
+          "translation": "bangsa"
+        },
+        {
+          "arabic": "عَشِيرَة",
+          "translation": "kerabat"
+        },
+        {
+          "arabic": "أُمَّة",
+          "translation": "umat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَٰكُم مِّن ذَكَرٍۢ وَأُنثَىٰ وَجَعَلْنَٰكُمْ شُعُوبًۭا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌۭ",
+        "translation": "Hai manusia, sesungguhnya Kami menciptakan kamu dari seorang laki-laki dan seorang perempuan dan menjadikan kamu berbangsa-bangsa dan bersuku-suku supaya kamu saling kenal-mengenal. Sesungguhnya orang yang paling mulia diantara kamu disisi Allah ialah orang yang paling takwa diantara kamu. Sesungguhnya Allah Maha Mengetahui lagi Maha Mengenal.",
+        "surah": "Al-Hujuraat",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 417,
+      "arabic": "شَعْب",
+      "transliteration": "sya'b",
+      "translation": "bangsa",
+      "word_type": "noun",
+      "root": "ش-ع-ب",
+      "forms": {
+        "singular": "شَعْب",
+        "plural": "شُعُوب"
+      },
+      "related_words": [
+        {
+          "arabic": "قَبِيلَة",
+          "translation": "suku"
+        },
+        {
+          "arabic": "أُمَّة",
+          "translation": "umat"
+        },
+        {
+          "arabic": "قَوْم",
+          "translation": "kaum"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَٰكُم مِّن ذَكَرٍۢ وَأُنثَىٰ وَجَعَلْنَٰكُمْ شُعُوبًۭا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌۭ",
+        "translation": "Hai manusia, sesungguhnya Kami menciptakan kamu dari seorang laki-laki dan seorang perempuan dan menjadikan kamu berbangsa-bangsa dan bersuku-suku supaya kamu saling kenal-mengenal. Sesungguhnya orang yang paling mulia diantara kamu disisi Allah ialah orang yang paling takwa diantara kamu. Sesungguhnya Allah Maha Mengetahui lagi Maha Mengenal.",
+        "surah": "Al-Hujuraat",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 418,
+      "arabic": "ضَعِيف",
+      "transliteration": "dha'if",
+      "translation": "lemah",
+      "word_type": "adjective",
+      "root": "ض-ع-ف",
+      "forms": {
+        "singular": "ضَعِيف",
+        "plural": "ضُعَفَاء"
+      },
+      "related_words": [
+        {
+          "arabic": "قَوِيّ",
+          "translation": "kuat"
+        },
+        {
+          "arabic": "عَاجِز",
+          "translation": "tak berdaya"
+        },
+        {
+          "arabic": "ضَعْف",
+          "translation": "kelemahan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يُرِيدُ ٱللَّهُ أَن يُخَفِّفَ عَنكُمْ ۚ وَخُلِقَ ٱلْإِنسَٰنُ ضَعِيفًۭا",
+        "translation": "Allah hendak memberikan keringanan kepadamu, dan manusia dijadikan bersifat lemah.",
+        "surah": "An-Nisaa",
+        "ayah": 28
+      }
+    },
+    {
+      "id": 419,
+      "arabic": "غُلَام",
+      "transliteration": "ghulam",
+      "translation": "anak laki-laki, pemuda",
+      "word_type": "noun",
+      "root": "غ-ل-م",
+      "forms": {
+        "singular": "غُلَام",
+        "plural": "غِلْمَان"
+      },
+      "related_words": [
+        {
+          "arabic": "وَلَد",
+          "translation": "anak"
+        },
+        {
+          "arabic": "صَبِيّ",
+          "translation": "bocah"
+        },
+        {
+          "arabic": "وِلْدَان",
+          "translation": "anak-anak muda"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَٰزَكَرِيَّآ إِنَّا نُبَشِّرُكَ بِغُلَٰمٍ ٱسْمُهُۥ يَحْيَىٰ لَمْ نَجْعَل لَّهُۥ مِن قَبْلُ سَمِيًّۭا",
+        "translation": "Hai Zakaria, sesungguhnya Kami memberi kabar gembira kepadamu akan (beroleh) seorang anak yang namanya Yahya, yang sebelumnya Kami belum pernah menciptakan orang yang serupa dengan dia.",
+        "surah": "Maryam",
+        "ayah": 7
+      }
+    },
+    {
+      "id": 420,
+      "arabic": "سَاعَة",
+      "transliteration": "sa'ah",
+      "translation": "saat, waktu; Hari Kiamat",
+      "word_type": "noun",
+      "root": "س-و-ع",
+      "forms": {
+        "singular": "سَاعَة",
+        "plural": "سَاعَات"
+      },
+      "related_words": [
+        {
+          "arabic": "وَقْت",
+          "translation": "waktu"
+        },
+        {
+          "arabic": "حِين",
+          "translation": "saat"
+        },
+        {
+          "arabic": "قِيَامَة",
+          "translation": "kiamat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بَلِ ٱلسَّاعَةُ مَوْعِدُهُمْ وَٱلسَّاعَةُ أَدْهَىٰ وَأَمَرُّ",
+        "translation": "Sebenarnya hari kiamat itulah hari yang dijanjikan kepada mereka dan kiamat itu lebih dahsyat dan lebih pahit.",
+        "surah": "Al-Qamar",
+        "ayah": 46
+      }
+    },
+    {
+      "id": 421,
+      "arabic": "صُبْح",
+      "transliteration": "shubh",
+      "translation": "pagi, subuh",
+      "word_type": "noun",
+      "root": "ص-ب-ح",
+      "forms": {
+        "singular": "صُبْح",
+        "plural": "أَصْبَاح"
+      },
+      "related_words": [
+        {
+          "arabic": "فَجْر",
+          "translation": "fajar"
+        },
+        {
+          "arabic": "ضُحَى",
+          "translation": "dhuha"
+        },
+        {
+          "arabic": "مَسَاء",
+          "translation": "sore"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قَالُوا۟ يَٰلُوطُ إِنَّا رُسُلُ رَبِّكَ لَن يَصِلُوٓا۟ إِلَيْكَ ۖ فَأَسْرِ بِأَهْلِكَ بِقِطْعٍۢ مِّنَ ٱلَّيْلِ وَلَا يَلْتَفِتْ مِنكُمْ أَحَدٌ إِلَّا ٱمْرَأَتَكَ ۖ إِنَّهُۥ مُصِيبُهَا مَآ أَصَابَهُمْ ۚ إِنَّ مَوْعِدَهُمُ ٱلصُّبْحُ ۚ أَلَيْسَ ٱلصُّبْحُ بِقَرِيبٍۢ",
+        "translation": "Para utusan (malaikat) berkata: \"Hai Luth, sesungguhnya kami adalah utusan-utusan Tuhanmu, sekali-kali mereka tidak akan dapat mengganggu kamu, sebab itu pergilah dengan membawa keluarga dan pengikut-pengikut kamu di akhir malam dan janganlah ada seorangpun di antara kamu yang tertinggal, kecuali isterimu. Sesungguhnya dia akan ditimpa azab yang menimpa mereka karena sesungguhnya saat jatuhnya azab kepada mereka ialah di waktu subuh; bukankah subuh itu sudah dekat?\".",
+        "surah": "Hud",
+        "ayah": 81
+      }
+    }
+  ]
+}

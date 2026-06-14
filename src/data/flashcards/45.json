@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 45",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "442-451"
+  },
+  "cards": [
+    {
+      "id": 442,
+      "arabic": "فَم",
+      "transliteration": "fam",
+      "translation": "mulut",
+      "word_type": "noun",
+      "root": "ف-و-ه",
+      "forms": {
+        "singular": "فَم",
+        "plural": "أَفْوَاه"
+      },
+      "related_words": [
+        {
+          "arabic": "لِسَان",
+          "translation": "lidah"
+        },
+        {
+          "arabic": "شَفَة",
+          "translation": "bibir"
+        },
+        {
+          "arabic": "سِنّ",
+          "translation": "gigi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ بِطَانَةًۭ مِّن دُونِكُمْ لَا يَأْلُونَكُمْ خَبَالًۭا وَدُّوا۟ مَا عَنِتُّمْ قَدْ بَدَتِ ٱلْبَغْضَآءُ مِنْ أَفْوَٰهِهِمْ وَمَا تُخْفِى صُدُورُهُمْ أَكْبَرُ ۚ قَدْ بَيَّنَّا لَكُمُ ٱلْءَايَٰتِ ۖ إِن كُنتُمْ تَعْقِلُونَ",
+        "translation": "Hai orang-orang yang beriman, janganlah kamu ambil menjadi teman kepercayaanmu orang-orang yang, di luar kalanganmu (karena) mereka tidak henti-hentinya (menimbulkan) kemudharatan bagimu. Mereka menyukai apa yang menyusahkan kamu. Telah nyata kebencian dari mulut mereka, dan apa yang disembunyikan oleh hati mereka adalah lebih besar lagi. Sungguh telah Kami terangkan kepadamu ayat-ayat (Kami), jika kamu memahaminya.",
+        "surah": "Aal-i-Imraan",
+        "ayah": 118
+      }
+    },
+    {
+      "id": 443,
+      "arabic": "شَفَة",
+      "transliteration": "syafah",
+      "translation": "bibir",
+      "word_type": "noun",
+      "root": "ش-ف-ه",
+      "forms": {
+        "singular": "شَفَة",
+        "plural": "شِفَاه"
+      },
+      "related_words": [
+        {
+          "arabic": "فَم",
+          "translation": "mulut"
+        },
+        {
+          "arabic": "لِسَان",
+          "translation": "lidah"
+        },
+        {
+          "arabic": "وَجْه",
+          "translation": "wajah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلِسَانًۭا وَشَفَتَيْنِ",
+        "translation": "lidah dan dua buah bibir.",
+        "surah": "Al-Balad",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 444,
+      "arabic": "جِلْد",
+      "transliteration": "jild",
+      "translation": "kulit",
+      "word_type": "noun",
+      "root": "ج-ل-د",
+      "forms": {
+        "singular": "جِلْد",
+        "plural": "جُلُود"
+      },
+      "related_words": [
+        {
+          "arabic": "لَحْم",
+          "translation": "daging"
+        },
+        {
+          "arabic": "عَظْم",
+          "translation": "tulang"
+        },
+        {
+          "arabic": "بَشَرَة",
+          "translation": "kulit"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا سَوْفَ نُصْلِيهِمْ نَارًۭا كُلَّمَا نَضِجَتْ جُلُودُهُم بَدَّلْنَٰهُمْ جُلُودًا غَيْرَهَا لِيَذُوقُوا۟ ٱلْعَذَابَ ۗ إِنَّ ٱللَّهَ كَانَ عَزِيزًا حَكِيمًۭا",
+        "translation": "Sesungguhnya orang-orang yang kafir kepada ayat-ayat Kami, kelak akan Kami masukkan mereka ke dalam neraka. Setiap kali kulit mereka hangus, Kami ganti kulit mereka dengan kulit yang lain, supaya mereka merasakan azab. Sesungguhnya Allah Maha Perkasa lagi Maha Bijaksana.",
+        "surah": "An-Nisaa",
+        "ayah": 56
+      }
+    },
+    {
+      "id": 445,
+      "arabic": "شَعْر",
+      "transliteration": "sya'r",
+      "translation": "rambut, bulu",
+      "word_type": "noun",
+      "root": "ش-ع-ر",
+      "forms": {
+        "singular": "شَعْر",
+        "plural": "أَشْعَار"
+      },
+      "related_words": [
+        {
+          "arabic": "رَأْس",
+          "translation": "kepala"
+        },
+        {
+          "arabic": "صُوف",
+          "translation": "wol"
+        },
+        {
+          "arabic": "وَبَر",
+          "translation": "bulu"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَٱللَّهُ جَعَلَ لَكُم مِّنۢ بُيُوتِكُمْ سَكَنًۭا وَجَعَلَ لَكُم مِّن جُلُودِ ٱلْأَنْعَٰمِ بُيُوتًۭا تَسْتَخِفُّونَهَا يَوْمَ ظَعْنِكُمْ وَيَوْمَ إِقَامَتِكُمْ ۙ وَمِنْ أَصْوَافِهَا وَأَوْبَارِهَا وَأَشْعَارِهَآ أَثَٰثًۭا وَمَتَٰعًا إِلَىٰ حِينٍۢ",
+        "translation": "Dan Allah menjadikan bagimu rumah-rumahmu sebagai tempat tinggal dan Dia menjadikan bagi kamu rumah-rumah (kemah-kemah) dari kulit binatang ternak yang kamu merasa ringan (membawa)nya di waktu kamu berjalan dan waktu kamu bermukim dan (dijadikan-Nya pula) dari bulu domba, bulu unta dan bulu kambing, alat-alat rumah tangga dan perhiasan (yang kamu pakai) sampai waktu (tertentu).",
+        "surah": "An-Nahl",
+        "ayah": 80
+      }
+    },
+    {
+      "id": 446,
+      "arabic": "ظَهْر",
+      "transliteration": "zhahr",
+      "translation": "punggung",
+      "word_type": "noun",
+      "root": "ظ-ه-ر",
+      "forms": {
+        "singular": "ظَهْر",
+        "plural": "ظُهُور"
+      },
+      "related_words": [
+        {
+          "arabic": "بَطْن",
+          "translation": "perut"
+        },
+        {
+          "arabic": "صَدْر",
+          "translation": "dada"
+        },
+        {
+          "arabic": "كَتِف",
+          "translation": "bahu"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قَدْ خَسِرَ ٱلَّذِينَ كَذَّبُوا۟ بِلِقَآءِ ٱللَّهِ ۖ حَتَّىٰٓ إِذَا جَآءَتْهُمُ ٱلسَّاعَةُ بَغْتَةًۭ قَالُوا۟ يَٰحَسْرَتَنَا عَلَىٰ مَا فَرَّطْنَا فِيهَا وَهُمْ يَحْمِلُونَ أَوْزَارَهُمْ عَلَىٰ ظُهُورِهِمْ ۚ أَلَا سَآءَ مَا يَزِرُونَ",
+        "translation": "Sungguh telah rugilah orang-orang yang mendustakan pertemuan mereka dengan Tuhan; sehingga apabila kiamat datang kepada mereka dengan tiba-tiba, mereka berkata: \"Alangkah besarnya penyesalan kami, terhadap kelalaian kami tentang kiamat itu!\", sambil mereka memikul dosa-dosa di atas punggungnya. Ingatlah, amat buruklah apa yang mereka pikul itu.",
+        "surah": "Al-An'aam",
+        "ayah": 31
+      }
+    },
+    {
+      "id": 447,
+      "arabic": "صُلْب",
+      "transliteration": "shulb",
+      "translation": "tulang punggung, sulbi",
+      "word_type": "noun",
+      "root": "ص-ل-ب",
+      "forms": {
+        "singular": "صُلْب",
+        "plural": "أَصْلَاب"
+      },
+      "related_words": [
+        {
+          "arabic": "ظَهْر",
+          "translation": "punggung"
+        },
+        {
+          "arabic": "عَظْم",
+          "translation": "tulang"
+        },
+        {
+          "arabic": "نُطْفَة",
+          "translation": "mani"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَخْرُجُ مِنۢ بَيْنِ ٱلصُّلْبِ وَٱلتَّرَآئِبِ",
+        "translation": "yang keluar dari antara tulang sulbi laki-laki dan tulang dada perempuan.",
+        "surah": "At-Taariq",
+        "ayah": 7
+      }
+    },
+    {
+      "id": 448,
+      "arabic": "عُنُق",
+      "transliteration": "'unuq",
+      "translation": "leher",
+      "word_type": "noun",
+      "root": "ع-ن-ق",
+      "forms": {
+        "singular": "عُنُق",
+        "plural": "أَعْنَاق"
+      },
+      "related_words": [
+        {
+          "arabic": "رَأْس",
+          "translation": "kepala"
+        },
+        {
+          "arabic": "كَتِف",
+          "translation": "bahu"
+        },
+        {
+          "arabic": "رَقَبَة",
+          "translation": "leher"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَكُلَّ إِنسَٰنٍ أَلْزَمْنَٰهُ طَٰٓئِرَهُۥ فِى عُنُقِهِۦ ۖ وَنُخْرِجُ لَهُۥ يَوْمَ ٱلْقِيَٰمَةِ كِتَٰبًۭا يَلْقَىٰهُ مَنشُورًا",
+        "translation": "Dan tiap-tiap manusia itu telah Kami tetapkan amal perbuatannya (sebagaimana tetapnya kalung) pada lehernya. Dan Kami keluarkan baginya pada hari kiamat sebuah kitab yang dijumpainya terbuka.",
+        "surah": "Al-Israa",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 449,
+      "arabic": "كَبِد",
+      "transliteration": "kabid",
+      "translation": "kesusahan, susah payah; hati (organ)",
+      "word_type": "noun",
+      "root": "ك-ب-د",
+      "forms": {
+        "singular": "كَبِد",
+        "plural": "أَكْبَاد"
+      },
+      "related_words": [
+        {
+          "arabic": "مَشَقَّة",
+          "translation": "kesulitan"
+        },
+        {
+          "arabic": "تَعَب",
+          "translation": "lelah"
+        },
+        {
+          "arabic": "عَنَاء",
+          "translation": "susah payah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِى كَبَدٍ",
+        "translation": "Sesungguhnya Kami telah menciptakan manusia berada dalam susah payah.",
+        "surah": "Al-Balad",
+        "ayah": 4
+      }
+    },
+    {
+      "id": 450,
+      "arabic": "جَنَاح",
+      "transliteration": "janah",
+      "translation": "sayap",
+      "word_type": "noun",
+      "root": "ج-ن-ح",
+      "forms": {
+        "singular": "جَنَاح",
+        "plural": "أَجْنِحَة"
+      },
+      "related_words": [
+        {
+          "arabic": "طَيْر",
+          "translation": "burung"
+        },
+        {
+          "arabic": "رِيش",
+          "translation": "bulu"
+        },
+        {
+          "arabic": "طَيَرَان",
+          "translation": "terbang"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمَا مِن دَآبَّةٍۢ فِى ٱلْأَرْضِ وَلَا طَٰٓئِرٍۢ يَطِيرُ بِجَنَاحَيْهِ إِلَّآ أُمَمٌ أَمْثَالُكُم ۚ مَّا فَرَّطْنَا فِى ٱلْكِتَٰبِ مِن شَىْءٍۢ ۚ ثُمَّ إِلَىٰ رَبِّهِمْ يُحْشَرُونَ",
+        "translation": "Dan tiadalah binatang-binatang yang ada di bumi dan burung-burung yang terbang dengan kedua sayapnya, melainkan umat (juga) seperti kamu. Tiadalah Kami alpakan sesuatupun dalam Al-Kitab, kemudian kepada Tuhanlah mereka dihimpunkan.",
+        "surah": "Al-An'aam",
+        "ayah": 38
+      }
+    },
+    {
+      "id": 451,
+      "arabic": "إِصْبَع",
+      "transliteration": "ishba'",
+      "translation": "jari",
+      "word_type": "noun",
+      "root": "ص-ب-ع",
+      "forms": {
+        "singular": "إِصْبَع",
+        "plural": "أَصَابِع"
+      },
+      "related_words": [
+        {
+          "arabic": "يَد",
+          "translation": "tangan"
+        },
+        {
+          "arabic": "كَفّ",
+          "translation": "telapak tangan"
+        },
+        {
+          "arabic": "أُذُن",
+          "translation": "telinga"
+        }
+      ],
+      "quran_example": {
+        "arabic": "أَوْ كَصَيِّبٍۢ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٌۭ وَرَعْدٌۭ وَبَرْقٌۭ يَجْعَلُونَ أَصَٰبِعَهُمْ فِىٓ ءَاذَانِهِم مِّنَ ٱلصَّوَٰعِقِ حَذَرَ ٱلْمَوْتِ ۚ وَٱللَّهُ مُحِيطٌۢ بِٱلْكَٰفِرِينَ",
+        "translation": "atau seperti (orang-orang yang ditimpa) hujan lebat dari langit disertai gelap gulita, guruh dan kilat; mereka menyumbat telinganya dengan anak jarinya, karena (mendengar suara) petir, sebab takut akan mati. Dan Allah meliputi orang-orang yang kafir.",
+        "surah": "Al-Baqara",
+        "ayah": 19
+      }
+    }
+  ]
+}

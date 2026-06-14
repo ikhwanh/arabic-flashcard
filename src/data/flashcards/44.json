@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 44",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "432-441"
+  },
+  "cards": [
+    {
+      "id": 432,
+      "arabic": "بَلَد",
+      "transliteration": "balad",
+      "translation": "negeri, kota",
+      "word_type": "noun",
+      "root": "ب-ل-د",
+      "forms": {
+        "singular": "بَلَد",
+        "plural": "بِلَاد"
+      },
+      "related_words": [
+        {
+          "arabic": "مَدِينَة",
+          "translation": "kota"
+        },
+        {
+          "arabic": "قَرْيَة",
+          "translation": "desa"
+        },
+        {
+          "arabic": "أَرْض",
+          "translation": "tanah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
+        "translation": "Aku benar-benar bersumpah dengan kota ini (Mekah),",
+        "surah": "Al-Balad",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 433,
+      "arabic": "طَرِيق",
+      "transliteration": "thariq",
+      "translation": "jalan",
+      "word_type": "noun",
+      "root": "ط-ر-ق",
+      "forms": {
+        "singular": "طَرِيق",
+        "plural": "طُرُق"
+      },
+      "related_words": [
+        {
+          "arabic": "سَبِيل",
+          "translation": "jalan"
+        },
+        {
+          "arabic": "صِرَاط",
+          "translation": "jalan lurus"
+        },
+        {
+          "arabic": "سُبُل",
+          "translation": "jalan-jalan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَقَدْ أَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنْ أَسْرِ بِعِبَادِى فَٱضْرِبْ لَهُمْ طَرِيقًۭا فِى ٱلْبَحْرِ يَبَسًۭا لَّا تَخَٰفُ دَرَكًۭا وَلَا تَخْشَىٰ",
+        "translation": "Dan sesungguhnya telah Kami wahyukan kepada Musa: \"Pergilah kamu dengan hamba-hamba-Ku (Bani Israil) di malam hari, maka buatlah untuk mereka jalan yang kering dilaut itu, kamu tak usah khawatir akan tersusul dan tidak usah takut (akan tenggelam)\".",
+        "surah": "Taa-Haa",
+        "ayah": 77
+      }
+    },
+    {
+      "id": 434,
+      "arabic": "سُور",
+      "transliteration": "sur",
+      "translation": "dinding, pagar, benteng",
+      "word_type": "noun",
+      "root": "س-و-ر",
+      "forms": {
+        "singular": "سُور",
+        "plural": "أَسْوَار"
+      },
+      "related_words": [
+        {
+          "arabic": "جِدَار",
+          "translation": "tembok"
+        },
+        {
+          "arabic": "حَائِط",
+          "translation": "dinding"
+        },
+        {
+          "arabic": "حِجَاب",
+          "translation": "penghalang"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَوْمَ يَقُولُ ٱلْمُنَٰفِقُونَ وَٱلْمُنَٰفِقَٰتُ لِلَّذِينَ ءَامَنُوا۟ ٱنظُرُونَا نَقْتَبِسْ مِن نُّورِكُمْ قِيلَ ٱرْجِعُوا۟ وَرَآءَكُمْ فَٱلْتَمِسُوا۟ نُورًۭا فَضُرِبَ بَيْنَهُم بِسُورٍۢ لَّهُۥ بَابٌۢ بَاطِنُهُۥ فِيهِ ٱلرَّحْمَةُ وَظَٰهِرُهُۥ مِن قِبَلِهِ ٱلْعَذَابُ",
+        "translation": "Pada hari ketika orang-orang munafik laki-laki dan perempuan berkata kepada orang-orang yang beriman: \"Tunggulah kami supaya kami dapat mengambil sebahagian dari cahayamu\". Dikatakan (kepada mereka): \"Kembalilah kamu ke belakang dan carilah sendiri cahaya (untukmu)\". Lalu diadakan di antara mereka dinding yang mempunyai pintu. Di sebelah dalamnya ada rahmat dan di sebelah luarnya dari situ ada siksa.",
+        "surah": "Al-Hadid",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 435,
+      "arabic": "مَقَام",
+      "transliteration": "maqam",
+      "translation": "tempat, kedudukan",
+      "word_type": "noun",
+      "root": "ق-و-م",
+      "forms": {
+        "singular": "مَقَام",
+        "plural": "مَقَامَات"
+      },
+      "related_words": [
+        {
+          "arabic": "مَكَان",
+          "translation": "tempat"
+        },
+        {
+          "arabic": "مَنْزِلَة",
+          "translation": "kedudukan"
+        },
+        {
+          "arabic": "مَوْقِف",
+          "translation": "posisi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فِيهِ ءَايَٰتٌۢ بَيِّنَٰتٌۭ مَّقَامُ إِبْرَٰهِيمَ ۖ وَمَن دَخَلَهُۥ كَانَ ءَامِنًۭا ۗ وَلِلَّهِ عَلَى ٱلنَّاسِ حِجُّ ٱلْبَيْتِ مَنِ ٱسْتَطَاعَ إِلَيْهِ سَبِيلًۭا ۚ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِىٌّ عَنِ ٱلْعَٰلَمِينَ",
+        "translation": "Padanya terdapat tanda-tanda yang nyata, (di antaranya) maqam Ibrahim; barangsiapa memasukinya (Baitullah itu) menjadi amanlah dia; mengerjakan haji adalah kewajiban manusia terhadap Allah, yaitu (bagi) orang yang sanggup mengadakan perjalanan ke Baitullah. Barangsiapa mengingkari (kewajiban haji), maka sesungguhnya Allah Maha Kaya (tidak memerlukan sesuatu) dari semesta alam.",
+        "surah": "Aal-i-Imraan",
+        "ayah": 97
+      }
+    },
+    {
+      "id": 436,
+      "arabic": "حَدِيقَة",
+      "transliteration": "hadiqah",
+      "translation": "taman, kebun",
+      "word_type": "noun",
+      "root": "ح-د-ق",
+      "forms": {
+        "singular": "حَدِيقَة",
+        "plural": "حَدَائِق"
+      },
+      "related_words": [
+        {
+          "arabic": "جَنَّة",
+          "translation": "kebun"
+        },
+        {
+          "arabic": "بُسْتَان",
+          "translation": "kebun"
+        },
+        {
+          "arabic": "رَوْضَة",
+          "translation": "taman"
+        }
+      ],
+      "quran_example": {
+        "arabic": "أَمَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَأَنزَلَ لَكُم مِّنَ ٱلسَّمَآءِ مَآءًۭ فَأَنۢبَتْنَا بِهِۦ حَدَآئِقَ ذَاتَ بَهْجَةٍۢ مَّا كَانَ لَكُمْ أَن تُنۢبِتُوا۟ شَجَرَهَآ ۗ أَءِلَٰهٌۭ مَّعَ ٱللَّهِ ۚ بَلْ هُمْ قَوْمٌۭ يَعْدِلُونَ",
+        "translation": "Atau siapakah yang telah menciptakan langit dan bumi dan yang menurunkan air untukmu dari langit, lalu Kami tumbuhkan dengan air itu kebun-kebun yang berpemandangan indah, yang kamu sekali-kali tidak mampu menumbuhkan pohon-pohonnya? Apakah disamping Allah ada tuhan (yang lain)? Bahkan (sebenarnya) mereka adalah orang-orang yang menyimpang (dari kebenaran).",
+        "surah": "An-Naml",
+        "ayah": 60
+      }
+    },
+    {
+      "id": 437,
+      "arabic": "بِئْر",
+      "transliteration": "bi'r",
+      "translation": "sumur",
+      "word_type": "noun",
+      "root": "ب-أ-ر",
+      "forms": {
+        "singular": "بِئْر",
+        "plural": "آبَار"
+      },
+      "related_words": [
+        {
+          "arabic": "عَيْن",
+          "translation": "mata air"
+        },
+        {
+          "arabic": "مَاء",
+          "translation": "air"
+        },
+        {
+          "arabic": "جُبّ",
+          "translation": "sumur"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَكَأَيِّن مِّن قَرْيَةٍ أَهْلَكْنَٰهَا وَهِىَ ظَالِمَةٌۭ فَهِىَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا وَبِئْرٍۢ مُّعَطَّلَةٍۢ وَقَصْرٍۢ مَّشِيدٍ",
+        "translation": "Berapalah banyaknya kota yang Kami telah membinasakannya, yang penduduknya dalam keadaan zalim, maka (tembok-tembok) kota itu roboh menutupi atap-atapnya dan (berapa banyak pula) sumur yang telah ditinggalkan dan istana yang tinggi,",
+        "surah": "Al-Hajj",
+        "ayah": 45
+      }
+    },
+    {
+      "id": 438,
+      "arabic": "قَبْر",
+      "transliteration": "qabr",
+      "translation": "kubur, makam",
+      "word_type": "noun",
+      "root": "ق-ب-ر",
+      "forms": {
+        "singular": "قَبْر",
+        "plural": "قُبُور"
+      },
+      "related_words": [
+        {
+          "arabic": "مَوْت",
+          "translation": "kematian"
+        },
+        {
+          "arabic": "لَحْد",
+          "translation": "liang lahat"
+        },
+        {
+          "arabic": "بَعْث",
+          "translation": "kebangkitan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
+        "translation": "Maka apakah dia tidak mengetahui apabila dibangkitkan apa yang ada di dalam kubur,",
+        "surah": "Al-Aadiyaat",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 439,
+      "arabic": "مَأْوَى",
+      "transliteration": "ma'wa",
+      "translation": "tempat tinggal, tempat berlindung",
+      "word_type": "noun",
+      "root": "أ-و-ي",
+      "forms": {
+        "singular": "مَأْوَى",
+        "plural": null
+      },
+      "related_words": [
+        {
+          "arabic": "دَار",
+          "translation": "negeri"
+        },
+        {
+          "arabic": "مَسْكَن",
+          "translation": "tempat tinggal"
+        },
+        {
+          "arabic": "مَلْجَأ",
+          "translation": "tempat berlindung"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَإِنَّ ٱلْجَحِيمَ هِىَ ٱلْمَأْوَىٰ",
+        "translation": "maka sesungguhnya nerakalah tempat tinggal(nya).",
+        "surah": "An-Naazi'aat",
+        "ayah": 39
+      }
+    },
+    {
+      "id": 440,
+      "arabic": "قَدَم",
+      "transliteration": "qadam",
+      "translation": "telapak kaki",
+      "word_type": "noun",
+      "root": "ق-د-م",
+      "forms": {
+        "singular": "قَدَم",
+        "plural": "أَقْدَام"
+      },
+      "related_words": [
+        {
+          "arabic": "رِجْل",
+          "translation": "kaki"
+        },
+        {
+          "arabic": "سَاق",
+          "translation": "betis"
+        },
+        {
+          "arabic": "خُطْوَة",
+          "translation": "langkah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَا تَتَّخِذُوٓا۟ أَيْمَٰنَكُمْ دَخَلًۢا بَيْنَكُمْ فَتَزِلَّ قَدَمٌۢ بَعْدَ ثُبُوتِهَا وَتَذُوقُوا۟ ٱلسُّوٓءَ بِمَا صَدَدتُّمْ عَن سَبِيلِ ٱللَّهِ ۖ وَلَكُمْ عَذَابٌ عَظِيمٌۭ",
+        "translation": "Dan janganlah kamu jadikan sumpah-sumpahmu sebagai alat penipu di antaramu, yang menyebabkan tergelincir kaki(mu) sesudah kokoh tegaknya, dan kamu rasakan kemelaratan (di dunia) karena kamu menghalangi (manusia) dari jalan Allah; dan bagimu azab yang besar.",
+        "surah": "An-Nahl",
+        "ayah": 94
+      }
+    },
+    {
+      "id": 441,
+      "arabic": "أَنْف",
+      "transliteration": "anf",
+      "translation": "hidung",
+      "word_type": "noun",
+      "root": "أ-ن-ف",
+      "forms": {
+        "singular": "أَنْف",
+        "plural": "أُنُوف"
+      },
+      "related_words": [
+        {
+          "arabic": "وَجْه",
+          "translation": "wajah"
+        },
+        {
+          "arabic": "فَم",
+          "translation": "mulut"
+        },
+        {
+          "arabic": "أُذُن",
+          "translation": "telinga"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَكَتَبْنَا عَلَيْهِمْ فِيهَآ أَنَّ ٱلنَّفْسَ بِٱلنَّفْسِ وَٱلْعَيْنَ بِٱلْعَيْنِ وَٱلْأَنفَ بِٱلْأَنفِ وَٱلْأُذُنَ بِٱلْأُذُنِ وَٱلسِّنَّ بِٱلسِّنِّ وَٱلْجُرُوحَ قِصَاصٌۭ ۚ فَمَن تَصَدَّقَ بِهِۦ فَهُوَ كَفَّارَةٌۭ لَّهُۥ ۚ وَمَن لَّمْ يَحْكُم بِمَآ أَنزَلَ ٱللَّهُ فَأُو۟لَٰٓئِكَ هُمُ ٱلظَّٰلِمُونَ",
+        "translation": "Dan Kami telah tetapkan terhadap mereka di dalamnya (At Taurat) bahwasanya jiwa (dibalas) dengan jiwa, mata dengan mata, hidung dengan hidung, telinga dengan telinga, gigi dengan gigi, dan luka luka (pun) ada qishaashnya. Barangsiapa yang melepaskan (hak qishaash)nya, maka melepaskan hak itu (menjadi) penebus dosa baginya. Barangsiapa tidak memutuskan perkara menurut apa yang diturunkan Allah, maka mereka itu adalah orang-orang yang zalim.",
+        "surah": "Al-Maaida",
+        "ayah": 45
+      }
+    }
+  ]
+}

@@ -22,6 +22,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </svg>
       <span>Source on GitHub</span>
     </a>
+    <span class="app-version">v${__APP_VERSION__}</span>
   </footer>
 `
 
