@@ -23,10 +23,11 @@ function route() {
   const deckMatch = hash.match(/^deck\/(.+)$/)
 
   const quizMatch = hash.match(/^deck\/(.+)\/quiz$/)
+  const testMatch = hash.match(/^test(?:\/(.+))?$/)
 
-  if (hash === 'test') {
+  if (testMatch) {
     appHeader.hidden = true
-    renderTest(mainContent).catch(console.error)
+    renderTest(mainContent, testMatch[1]).catch(console.error)
   } else if (quizMatch) {
     appHeader.hidden = true
     renderQuiz(mainContent, quizMatch[1]).catch(console.error)

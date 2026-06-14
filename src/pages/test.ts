@@ -2,7 +2,22 @@ import { loadAllCards } from '../data/flashcards'
 import type { Card } from '../types'
 
 const TEST_SIZE = 50
-const TEST_SCORE_KEY = 'test_score'
+
+export interface ExamConfig {
+  key: string
+  title: string
+  range?: [number, number]
+}
+
+const EXAMS: Record<string, ExamConfig> = {
+  '1-15':  { key: 'test_score_1_15',  title: 'Exam 1', range: [1, 15] },
+  '16-30': { key: 'test_score_16_30', title: 'Exam 2', range: [16, 30] },
+  all:     { key: 'test_score',       title: 'Final Exam' },
+}
+
+function resolveExam(slug?: string): ExamConfig {
+  return (slug && EXAMS[slug]) || EXAMS.all
+}
 
 interface Question {
   prompt: string
@@ -60,14 +75,15 @@ function buildTestQuestions(cards: Card[]): Question[] {
   return shuffle([...wordQuestions, ...ayatQuestions])
 }
 
-function saveScore(score: number, total: number) {
-  localStorage.setItem(TEST_SCORE_KEY, `${score}/${total}`)
+function saveScore(key: string, score: number, total: number) {
+  localStorage.setItem(key, `${score}/${total}`)
 }
 
-export async function renderTest(container: HTMLElement) {
+export async function renderTest(container: HTMLElement, slug?: string) {
+  const exam = resolveExam(slug)
   container.innerHTML = `<div class="fc-loading">Loading test…</div>`
 
-  const cards = await loadAllCards()
+  const cards = await loadAllCards(exam.range)
 
   if (cards.length < 4) {
     container.innerHTML = `
@@ -93,7 +109,7 @@ export async function renderTest(container: HTMLElement) {
       <div class="quiz-page">
         <div class="fc-header">
           <button class="btn-back">← Back</button>
-          <span class="fc-deck-title">Exam</span>
+          <span class="fc-deck-title">${exam.title}</span>
           <span class="fc-progress">${currentIndex + 1} / ${total}</span>
         </div>
 
@@ -147,7 +163,7 @@ export async function renderTest(container: HTMLElement) {
         answered = false
         renderQuestion()
       } else {
-        saveScore(score, questions.length)
+        saveScore(exam.key, score, questions.length)
         renderResult()
       }
     })
@@ -162,7 +178,7 @@ export async function renderTest(container: HTMLElement) {
       <div class="quiz-page">
         <div class="fc-header">
           <button class="btn-back">← Back</button>
-          <span class="fc-deck-title">Exam</span>
+          <span class="fc-deck-title">${exam.title}</span>
         </div>
 
         <div class="quiz-result">
@@ -181,7 +197,7 @@ export async function renderTest(container: HTMLElement) {
     })
 
     container.querySelector('.btn-quiz-retry')!.addEventListener('click', () => {
-      renderTest(container)
+      renderTest(container, slug)
     })
 
     container.querySelector('.btn-quiz-back')!.addEventListener('click', () => {

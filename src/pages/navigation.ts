@@ -100,9 +100,15 @@ export function renderNavigation(container: HTMLElement) {
         <div class="nav-filters">
           <button class="nav-filter-chip" data-filter="unfinished">Unfinished</button>
         </div>
-        <div class="nav-toolbar-right">
-          <button class="btn-start-test">Take Exam</button>
-          <button class="btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
+        <div class="nav-menu">
+          <button class="nav-menu-trigger" aria-label="Options" aria-haspopup="true" aria-expanded="false">⋮</button>
+          <div class="nav-menu-dropdown" hidden>
+            <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 1–15</span></button>
+            <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 16–30</span></button>
+            <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">All of Kosakata Al-Quran</span></button>
+            <div class="nav-menu-divider"></div>
+            <button class="nav-menu-item btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
+          </div>
         </div>
       </div>
       <div class="deck-grid"></div>
@@ -111,8 +117,35 @@ export function renderNavigation(container: HTMLElement) {
 
   renderDeckGrid(container, filterUnfinished)
 
-  container.querySelector<HTMLButtonElement>('.btn-start-test')!.addEventListener('click', () => {
-    window.location.hash = 'test'
+  const menu = container.querySelector<HTMLElement>('.nav-menu')!
+  const menuTrigger = menu.querySelector<HTMLButtonElement>('.nav-menu-trigger')!
+  const menuDropdown = menu.querySelector<HTMLElement>('.nav-menu-dropdown')!
+
+  const closeMenu = () => {
+    menuDropdown.hidden = true
+    menuTrigger.setAttribute('aria-expanded', 'false')
+    document.removeEventListener('click', onDocClick)
+  }
+  const onDocClick = (e: MouseEvent) => {
+    if (!menu.contains(e.target as Node)) closeMenu()
+  }
+  menuTrigger.addEventListener('click', () => {
+    const willOpen = menuDropdown.hidden
+    menuDropdown.hidden = !willOpen
+    menuTrigger.setAttribute('aria-expanded', String(willOpen))
+    if (willOpen) {
+      document.addEventListener('click', onDocClick)
+    } else {
+      document.removeEventListener('click', onDocClick)
+    }
+  })
+
+  menu.querySelectorAll<HTMLButtonElement>('[data-exam]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      closeMenu()
+      const exam = btn.dataset.exam!
+      window.location.hash = exam === 'all' ? 'test' : `test/${exam}`
+    })
   })
 
   container.querySelector<HTMLButtonElement>('[data-filter="unfinished"]')!.addEventListener('click', e => {
@@ -123,6 +156,7 @@ export function renderNavigation(container: HTMLElement) {
   })
 
   container.querySelector<HTMLButtonElement>('.btn-reset-all')!.addEventListener('click', () => {
+    closeMenu()
     showConfirm('Reset all progress?', 'This will clear all quiz scores and visit history.', () => {
       resetAll()
       filterUnfinished = false

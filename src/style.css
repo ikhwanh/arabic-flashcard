@@ -122,27 +122,92 @@ body {
   font-size: 1rem;
 }
 
-.btn-start-test {
-  background: none;
-  border: none;
-  padding: 0;
-  font-size: 0.8rem;
-  cursor: pointer;
-  color: var(--text-muted);
-  white-space: nowrap;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.15s;
+.nav-menu {
+  position: relative;
 }
 
-.btn-start-test:hover {
+.nav-menu-trigger {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.nav-menu-trigger:hover {
+  border-color: var(--accent);
   color: var(--accent);
 }
 
-.nav-toolbar-right {
+.nav-menu-dropdown {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  z-index: 20;
+  min-width: 11rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 0.35rem;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+}
+
+.nav-menu-dropdown[hidden] {
+  display: none;
+}
+
+.nav-menu-item {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-menu-item:hover:not(:disabled) {
+  background: var(--accent);
+  color: #fff;
+}
+
+.nav-menu-item.btn-reset-all:hover:not(:disabled) {
+  background: #dc2626;
+  color: #fff;
+}
+
+.nav-menu-item:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.nav-menu-item-sub {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+.nav-menu-item:hover:not(:disabled) .nav-menu-item-sub {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-menu-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0.35rem 0.25rem;
 }
 
 .nav-toolbar {
@@ -182,30 +247,6 @@ body {
   border-color: var(--accent);
   color: #fff;
 }
-
-.btn-reset-all {
-  background: none;
-  border: none;
-  padding: 0;
-  font-size: 0.8rem;
-  cursor: pointer;
-  color: var(--text-muted);
-  white-space: nowrap;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.15s;
-}
-
-.btn-reset-all:hover:not(:disabled) {
-  color: #dc2626;
-}
-
-.btn-reset-all:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-  text-decoration: none;
-}
-
 
 .confirm-overlay {
   position: fixed;

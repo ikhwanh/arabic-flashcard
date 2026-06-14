@@ -52,8 +52,20 @@ function isVocabFile(data: unknown): data is VocabFile {
   return typeof data === 'object' && data !== null && 'cards' in data
 }
 
-export async function loadAllCards(): Promise<Card[]> {
-  const uniqueFiles = [...new Set(deckMetas.map(m => m.file))].filter(f => f !== '0.json')
+function partNumber(title: string): number | null {
+  const m = title.match(/Part\s+(\d+)/i)
+  return m ? Number(m[1]) : null
+}
+
+export async function loadAllCards(partRange?: [number, number]): Promise<Card[]> {
+  const metas = partRange
+    ? deckMetas.filter(m => {
+        const n = partNumber(m.title)
+        return n !== null && n >= partRange[0] && n <= partRange[1]
+      })
+    : deckMetas
+
+  const uniqueFiles = [...new Set(metas.map(m => m.file))].filter(f => f !== '0.json')
 
   const batches = await Promise.all(
     uniqueFiles.map(async file => {

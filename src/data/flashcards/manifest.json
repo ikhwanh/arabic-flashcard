@@ -1,45 +1,5 @@
 [
   {
-    "id": "group_preposisi",
-    "file": "0.json",
-    "title": "Preposisi",
-    "description": "Kata depan yang menghubungkan kata benda dengan kata lain",
-    "emoji": "📌",
-    "cardCount": 14
-  },
-  {
-    "id": "group_konjungsi",
-    "file": "0.json",
-    "title": "Konjungsi",
-    "description": "Kata penghubung antar kalimat atau kata",
-    "emoji": "🔗",
-    "cardCount": 7
-  },
-  {
-    "id": "group_kondisional",
-    "file": "0.json",
-    "title": "Kondisional",
-    "description": "Kata yang menyatakan syarat atau kondisi",
-    "emoji": "🔀",
-    "cardCount": 9
-  },
-  {
-    "id": "group_negatif",
-    "file": "0.json",
-    "title": "Negatif",
-    "description": "Kata yang menyatakan penolakan atau pengingkaran",
-    "emoji": "❌",
-    "cardCount": 7
-  },
-  {
-    "id": "group_kata_tanya",
-    "file": "0.json",
-    "title": "Kata Tanya",
-    "description": "Kata yang digunakan untuk bertanya",
-    "emoji": "❓",
-    "cardCount": 9
-  },
-  {
     "id": "kosakata-al-quran---part-1",
     "file": "1.json",
     "title": "Kosakata Al-Quran - Part 1",
