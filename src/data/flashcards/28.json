@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 28",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "272-281"
+  },
+  "cards": [
+    {
+      "id": 272,
+      "arabic": "تَابَ",
+      "transliteration": "taaba",
+      "translation": "bertaubat, kembali",
+      "word_type": "verb",
+      "root": "ت-و-ب",
+      "forms": {
+        "past": "تَابَ",
+        "present": "يَتُوبُ",
+        "command": "تُبْ"
+      },
+      "related_words": [
+        { "arabic": "تَوْبَة", "translation": "taubat" },
+        { "arabic": "تَوَّاب", "translation": "Maha Penerima taubat" },
+        { "arabic": "تَائِب", "translation": "orang yang bertaubat" }
+      ],
+      "quran_example": {
+        "arabic": "فَتَلَقَّىٰٓ ءَادَمُ مِن رَّبِّهِۦ كَلِمَٰتٍۢ فَتَابَ عَلَيْهِ ۚ إِنَّهُۥ هُوَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+        "translation": "Kemudian Adam menerima beberapa kalimat dari Tuhannya, maka Allah menerima taubatnya. Sesungguhnya Allah Maha Penerima taubat lagi Maha Penyayang.",
+        "surah": "Al-Baqara",
+        "ayah": 37
+      }
+    },
+    {
+      "id": 273,
+      "arabic": "عَصَى",
+      "transliteration": "'ashaa",
+      "translation": "durhaka, mendurhakai",
+      "word_type": "verb",
+      "root": "ع-ص-ي",
+      "forms": {
+        "past": "عَصَى",
+        "present": "يَعْصِي",
+        "command": "اِعْصِ"
+      },
+      "related_words": [
+        { "arabic": "مَعْصِيَة", "translation": "kemaksiatan" },
+        { "arabic": "عَاصٍ", "translation": "orang yang durhaka" },
+        { "arabic": "أَطَاعَ", "translation": "taat (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "فَأَكَلَا مِنْهَا فَبَدَتْ لَهُمَا سَوْءَٰتُهُمَا وَطَفِقَا يَخْصِفَانِ عَلَيْهِمَا مِن وَرَقِ ٱلْجَنَّةِ ۚ وَعَصَىٰٓ ءَادَمُ رَبَّهُۥ فَغَوَىٰ",
+        "translation": "Maka keduanya memakan dari buah pohon itu, lalu nampaklah bagi keduanya aurat-auratnya dan mulailah keduanya menutupinya dengan daun-daun (yang ada di) surga, dan durhakalah Adam kepada Tuhan dan sesatlah ia.",
+        "surah": "Taa-Haa",
+        "ayah": 121
+      }
+    },
+    {
+      "id": 274,
+      "arabic": "أَطَاعَ",
+      "transliteration": "ataa'a",
+      "translation": "menaati, patuh",
+      "word_type": "verb",
+      "root": "ط-و-ع",
+      "forms": {
+        "past": "أَطَاعَ",
+        "present": "يُطِيعُ",
+        "command": "أَطِعْ"
+      },
+      "related_words": [
+        { "arabic": "طَاعَة", "translation": "ketaatan" },
+        { "arabic": "مُطِيع", "translation": "orang yang taat" },
+        { "arabic": "عَصَى", "translation": "durhaka (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "مَّن يُطِعِ ٱلرَّسُولَ فَقَدْ أَطَاعَ ٱللَّهَ ۖ وَمَن تَوَلَّىٰ فَمَآ أَرْسَلْنَٰكَ عَلَيْهِمْ حَفِيظًۭا",
+        "translation": "Barangsiapa yang mentaati Rasul itu, sesungguhnya ia telah mentaati Allah. Dan barangsiapa yang berpaling (dari ketaatan itu), maka Kami tidak mengutusmu untuk menjadi pemelihara bagi mereka.",
+        "surah": "An-Nisaa",
+        "ayah": 80
+      }
+    },
+    {
+      "id": 275,
+      "arabic": "نَسِيَ",
+      "transliteration": "nasiya",
+      "translation": "lupa, melupakan",
+      "word_type": "verb",
+      "root": "ن-س-ي",
+      "forms": {
+        "past": "نَسِيَ",
+        "present": "يَنْسَى",
+        "command": "اِنْسَ"
+      },
+      "related_words": [
+        { "arabic": "نِسْيَان", "translation": "kelupaan" },
+        { "arabic": "نَاسٍ", "translation": "orang yang lupa" },
+        { "arabic": "ذَكَرَ", "translation": "mengingat (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "وَلَقَدْ عَهِدْنَآ إِلَىٰٓ ءَادَمَ مِن قَبْلُ فَنَسِىَ وَلَمْ نَجِدْ لَهُۥ عَزْمًۭا",
+        "translation": "Dan sesungguhnya telah Kami perintahkan kepada Adam dahulu, maka ia lupa (akan perintah itu), dan tidak Kami dapati padanya kemauan yang kuat.",
+        "surah": "Taa-Haa",
+        "ayah": 115
+      }
+    },
+    {
+      "id": 276,
+      "arabic": "هَلَكَ",
+      "transliteration": "halaka",
+      "translation": "binasa, hancur",
+      "word_type": "verb",
+      "root": "ه-ل-ك",
+      "forms": {
+        "past": "هَلَكَ",
+        "present": "يَهْلِكُ",
+        "command": "اِهْلِكْ"
+      },
+      "related_words": [
+        { "arabic": "هَلَاك", "translation": "kebinasaan" },
+        { "arabic": "مُهْلِك", "translation": "yang membinasakan" },
+        { "arabic": "هَالِك", "translation": "orang yang binasa" }
+      ],
+      "quran_example": {
+        "arabic": "هَلَكَ عَنِّى سُلْطَٰنِيَهْ",
+        "translation": "Telah hilang kekuasaanku daripadaku\".",
+        "surah": "Al-Haaqqa",
+        "ayah": 29
+      }
+    },
+    {
+      "id": 277,
+      "arabic": "خَافَ",
+      "transliteration": "khaafa",
+      "translation": "takut",
+      "word_type": "verb",
+      "root": "خ-و-ف",
+      "forms": {
+        "past": "خَافَ",
+        "present": "يَخَافُ",
+        "command": "خَفْ"
+      },
+      "related_words": [
+        { "arabic": "خَوْف", "translation": "rasa takut" },
+        { "arabic": "خَائِف", "translation": "orang yang takut" },
+        { "arabic": "أَمِنَ", "translation": "merasa aman (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ",
+        "translation": "Dan bagi orang yang takut akan saat menghadap Tuhannya ada dua surga.",
+        "surah": "Ar-Rahmaan",
+        "ayah": 46
+      }
+    },
+    {
+      "id": 278,
+      "arabic": "مَنَعَ",
+      "transliteration": "mana'a",
+      "translation": "mencegah, menghalangi",
+      "word_type": "verb",
+      "root": "م-ن-ع",
+      "forms": {
+        "past": "مَنَعَ",
+        "present": "يَمْنَعُ",
+        "command": "اِمْنَعْ"
+      },
+      "related_words": [
+        { "arabic": "مَانِع", "translation": "penghalang" },
+        { "arabic": "مَمْنُوع", "translation": "yang dilarang" },
+        { "arabic": "أَعْطَى", "translation": "memberi (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "وَمَنْ أَظْلَمُ مِمَّن مَّنَعَ مَسَٰجِدَ ٱللَّهِ أَن يُذْكَرَ فِيهَا ٱسْمُهُۥ وَسَعَىٰ فِى خَرَابِهَآ ۚ أُو۟لَٰٓئِكَ مَا كَانَ لَهُمْ أَن يَدْخُلُوهَآ إِلَّا خَآئِفِينَ ۚ لَهُمْ فِى ٱلدُّنْيَا خِزْىٌۭ وَلَهُمْ فِى ٱلْءَاخِرَةِ عَذَابٌ عَظِيمٌۭ",
+        "translation": "Dan siapakah yang lebih aniaya daripada orang yang menghalang-halangi menyebut nama Allah dalam mesjid-mesjid-Nya, dan berusaha untuk merobohkannya? Mereka itu tidak sepatutnya masuk ke dalamnya (mesjid Allah), kecuali dengan rasa takut (kepada Allah). Mereka di dunia mendapat kehinaan dan di akhirat mendapat siksa yang berat.",
+        "surah": "Al-Baqara",
+        "ayah": 114
+      }
+    },
+    {
+      "id": 279,
+      "arabic": "أَكَلَ",
+      "transliteration": "akala",
+      "translation": "makan, memakan",
+      "word_type": "verb",
+      "root": "ء-ك-ل",
+      "forms": {
+        "past": "أَكَلَ",
+        "present": "يَأْكُلُ",
+        "command": "كُلْ"
+      },
+      "related_words": [
+        { "arabic": "طَعَام", "translation": "makanan" },
+        { "arabic": "أَكْل", "translation": "makanan, santapan" },
+        { "arabic": "آكِل", "translation": "orang yang makan" }
+      ],
+      "quran_example": {
+        "arabic": "قَالُوا۟ يَٰٓأَبَانَآ إِنَّا ذَهَبْنَا نَسْتَبِقُ وَتَرَكْنَا يُوسُفَ عِندَ مَتَٰعِنَا فَأَكَلَهُ ٱلذِّئْبُ ۖ وَمَآ أَنتَ بِمُؤْمِنٍۢ لَّنَا وَلَوْ كُنَّا صَٰدِقِينَ",
+        "translation": "Mereka berkata: \"Wahai ayah kami, sesungguhnya kami pergi berlomba-lomba dan kami tinggalkan Yusuf di dekat barang-barang kami, lalu dia dimakan serigala; dan kamu sekali-kali tidak akan percaya kepada kami, sekalipun kami adalah orang-orang yang benar\".",
+        "surah": "Yusuf",
+        "ayah": 17
+      }
+    },
+    {
+      "id": 280,
+      "arabic": "حَرَّمَ",
+      "transliteration": "harrama",
+      "translation": "mengharamkan, melarang",
+      "word_type": "verb",
+      "root": "ح-ر-م",
+      "forms": {
+        "past": "حَرَّمَ",
+        "present": "يُحَرِّمُ",
+        "command": "حَرِّمْ"
+      },
+      "related_words": [
+        { "arabic": "حَرَام", "translation": "yang diharamkan" },
+        { "arabic": "تَحْرِيم", "translation": "pengharaman" },
+        { "arabic": "أَحَلَّ", "translation": "menghalalkan (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "قُلْ إِنَّمَا حَرَّمَ رَبِّىَ ٱلْفَوَٰحِشَ مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ وَٱلْإِثْمَ وَٱلْبَغْىَ بِغَيْرِ ٱلْحَقِّ وَأَن تُشْرِكُوا۟ بِٱللَّهِ مَا لَمْ يُنَزِّلْ بِهِۦ سُلْطَٰنًۭا وَأَن تَقُولُوا۟ عَلَى ٱللَّهِ مَا لَا تَعْلَمُونَ",
+        "translation": "Katakanlah: \"Tuhanku hanya mengharamkan perbuatan yang keji, baik yang nampak ataupun yang tersembunyi, dan perbuatan dosa, melanggar hak manusia tanpa alasan yang benar, (mengharamkan) mempersekutukan Allah dengan sesuatu yang Allah tidak menurunkan hujjah untuk itu dan (mengharamkan) mengada-adakan terhadap Allah apa yang tidak kamu ketahui\".",
+        "surah": "Al-A'raaf",
+        "ayah": 33
+      }
+    },
+    {
+      "id": 281,
+      "arabic": "وَهَبَ",
+      "transliteration": "wahaba",
+      "translation": "menganugerahkan, memberi",
+      "word_type": "verb",
+      "root": "و-ه-ب",
+      "forms": {
+        "past": "وَهَبَ",
+        "present": "يَهَبُ",
+        "command": "هَبْ"
+      },
+      "related_words": [
+        { "arabic": "هِبَة", "translation": "pemberian, anugerah" },
+        { "arabic": "وَهَّاب", "translation": "Maha Pemberi" },
+        { "arabic": "مَوْهِبَة", "translation": "karunia, bakat" }
+      ],
+      "quran_example": {
+        "arabic": "فَلَمَّا ٱعْتَزَلَهُمْ وَمَا يَعْبُدُونَ مِن دُونِ ٱللَّهِ وَهَبْنَا لَهُۥٓ إِسْحَٰقَ وَيَعْقُوبَ ۖ وَكُلًّۭا جَعَلْنَا نَبِيًّۭا",
+        "translation": "Maka ketika Ibrahim sudah menjauhkan diri dari mereka dan dari apa yang mereka sembah selain Allah, Kami anugerahkan kepadanya Ishak, dan Ya'qub. Dan masing-masingnya Kami angkat menjadi nabi.",
+        "surah": "Maryam",
+        "ayah": 49
+      }
+    }
+  ]
+}

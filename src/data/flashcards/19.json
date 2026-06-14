@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 19",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "182-191"
+  },
+  "cards": [
+    {
+      "id": 182,
+      "arabic": "عِبَادَة",
+      "transliteration": "ʿibādah",
+      "translation": "ibadah, penyembahan",
+      "word_type": "noun",
+      "root": "ع-ب-د",
+      "forms": {
+        "singular": "عِبَادَة",
+        "plural": "عِبَادَات"
+      },
+      "related_words": [
+        { "arabic": "عَبَدَ", "translation": "menyembah, beribadah" },
+        { "arabic": "عَابِد", "translation": "orang yang beribadah" },
+        { "arabic": "مَعْبُود", "translation": "yang disembah, sesembahan" }
+      ],
+      "quran_example": {
+        "arabic": "رَبُّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا فَاعْبُدْهُ وَاصْطَبِرْ لِعِبَادَتِهِ",
+        "translation": "Tuhan langit dan bumi dan apa yang ada di antara keduanya, maka sembahlah Dia dan berteguhlah dalam ibadah kepada-Nya",
+        "surah": "Maryam",
+        "ayah": 65
+      }
+    },
+    {
+      "id": 183,
+      "arabic": "غَفَرَ",
+      "transliteration": "ghafara",
+      "translation": "mengampuni, memaafkan",
+      "word_type": "verb",
+      "root": "غ-ف-ر",
+      "forms": {
+        "past": "غَفَرَ",
+        "present": "يَغْفِرُ",
+        "command": "اِغْفِرْ"
+      },
+      "related_words": [
+        { "arabic": "مَغْفِرَة", "translation": "ampunan, pengampunan" },
+        { "arabic": "غَفُور", "translation": "Maha Pengampun" },
+        { "arabic": "غَفَّار", "translation": "Yang Maha Pengampun (terus-menerus)" }
+      ],
+      "quran_example": {
+        "arabic": "وَالَّذِينَ إِذَا فَعَلُوا فَاحِشَةً أَوْ ظَلَمُوا أَنفُسَهُمْ ذَكَرُوا اللَّهَ فَاسْتَغْفَرُوا لِذُنُوبِهِمْ وَمَن يَغْفِرُ الذُّنُوبَ إِلَّا اللَّهُ",
+        "translation": "Dan orang-orang yang apabila mengerjakan perbuatan keji atau menganiaya diri sendiri, mereka mengingat Allah lalu memohon ampun atas dosa mereka. Dan siapa yang dapat mengampuni dosa-dosa selain Allah?",
+        "surah": "Aal-i-Imraan",
+        "ayah": 135
+      }
+    },
+    {
+      "id": 184,
+      "arabic": "إِخْلَاص",
+      "transliteration": "ikhlāṣ",
+      "translation": "keikhlasan, kemurnian niat",
+      "word_type": "noun",
+      "root": "خ-ل-ص",
+      "forms": {
+        "singular": "إِخْلَاص",
+        "plural": "إِخْلَاصَات"
+      },
+      "related_words": [
+        { "arabic": "مُخْلِص", "translation": "orang yang ikhlas, yang memurnikan" },
+        { "arabic": "خَالِص", "translation": "murni, tulus" },
+        { "arabic": "أَخْلَصَ", "translation": "memurnikan, mengikhlaskan" }
+      ],
+      "quran_example": {
+        "arabic": "قُلْ إِنِّي أُمِرْتُ أَنْ أَعْبُدَ اللَّهَ مُخْلِصًا لَّهُ الدِّينَ",
+        "translation": "Katakanlah, sesungguhnya aku diperintahkan agar menyembah Allah dengan memurnikan ketaatan kepada-Nya dalam menjalankan agama",
+        "surah": "Az-Zumar",
+        "ayah": 11
+      }
+    },
+    {
+      "id": 185,
+      "arabic": "بَرَكَة",
+      "transliteration": "barakah",
+      "translation": "berkah, keberkahan",
+      "word_type": "noun",
+      "root": "ب-ر-ك",
+      "forms": {
+        "singular": "بَرَكَة",
+        "plural": "بَرَكَات"
+      },
+      "related_words": [
+        { "arabic": "بَارَكَ", "translation": "memberi berkah, memberkahi" },
+        { "arabic": "مُبَارَك", "translation": "yang diberkahi, penuh berkah" },
+        { "arabic": "تَبَارَكَ", "translation": "Maha Suci dan Berkah" }
+      ],
+      "quran_example": {
+        "arabic": "وَلَوْ أَنَّ أَهْلَ الْقُرَىٰ آمَنُوا وَاتَّقَوْا لَفَتَحْنَا عَلَيْهِم بَرَكَاتٍ مِّنَ السَّمَاءِ وَالْأَرْضِ",
+        "translation": "Jikalau penduduk negeri-negeri beriman dan bertakwa, niscaya Kami limpahkan kepada mereka berkah dari langit dan bumi",
+        "surah": "Al-A'raaf",
+        "ayah": 96
+      }
+    },
+    {
+      "id": 186,
+      "arabic": "أَمَانَة",
+      "transliteration": "amānah",
+      "translation": "amanah, kepercayaan, titipan",
+      "word_type": "noun",
+      "root": "أ-م-ن",
+      "forms": {
+        "singular": "أَمَانَة",
+        "plural": "أَمَانَات"
+      },
+      "related_words": [
+        { "arabic": "أَمِين", "translation": "yang terpercaya, jujur" },
+        { "arabic": "أَمَانَ", "translation": "keamanan, perlindungan" },
+        { "arabic": "مُؤْتَمَن", "translation": "yang dipercaya, yang diberi amanah" }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ وَالْأَرْضِ وَالْجِبَالِ فَأَبَيْنَ أَن يَحْمِلْنَهَا وَحَمَلَهَا الْإِنسَانُ",
+        "translation": "Sesungguhnya Kami telah menawarkan amanah kepada langit, bumi, dan gunung-gunung; semuanya enggan memikulnya, namun manusia memikulnya",
+        "surah": "Al-Ahzaab",
+        "ayah": 72
+      }
+    },
+    {
+      "id": 187,
+      "arabic": "جَمَعَ",
+      "transliteration": "jamaʿa",
+      "translation": "mengumpulkan, menghimpun",
+      "word_type": "verb",
+      "root": "ج-م-ع",
+      "forms": {
+        "past": "جَمَعَ",
+        "present": "يَجْمَعُ",
+        "command": "اجْمَعْ"
+      },
+      "related_words": [
+        { "arabic": "جَمِيع", "translation": "semua, seluruh" },
+        { "arabic": "جَمَاعَة", "translation": "kelompok, jamaah" },
+        { "arabic": "مَجْمَع", "translation": "tempat berkumpul, pertemuan" }
+      ],
+      "quran_example": {
+        "arabic": "رَبَّنَا إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ",
+        "translation": "Ya Tuhan kami, sesungguhnya Engkau mengumpulkan manusia pada hari yang tidak ada keraguan padanya. Sungguh Allah tidak menyalahi janji",
+        "surah": "Aal-i-Imraan",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 188,
+      "arabic": "عَهْد",
+      "transliteration": "ʿahd",
+      "translation": "janji, perjanjian, covenant",
+      "word_type": "noun",
+      "root": "ع-ه-د",
+      "forms": {
+        "singular": "عَهْد",
+        "plural": "عُهُود"
+      },
+      "related_words": [
+        { "arabic": "عَاهَدَ", "translation": "berjanji, membuat perjanjian" },
+        { "arabic": "مُعَاهَدَة", "translation": "perjanjian, traktat" },
+        { "arabic": "أَوْفَى بِالْعَهْد", "translation": "memenuhi janji" }
+      ],
+      "quran_example": {
+        "arabic": "وَأَوْفُوا بِعَهْدِي أُوفِ بِعَهْدِكُمْ وَإِيَّايَ فَارْهَبُونِ",
+        "translation": "Penuhilah janjimu kepada-Ku, niscaya Aku penuhi janji-Ku kepadamu; dan hanya kepada-Kulah kamu harus takut",
+        "surah": "Al-Baqarah",
+        "ayah": 40
+      }
+    },
+    {
+      "id": 189,
+      "arabic": "لِقَاء",
+      "transliteration": "liqāʾ",
+      "translation": "pertemuan, perjumpaan",
+      "word_type": "noun",
+      "root": "ل-ق-ي",
+      "forms": {
+        "singular": "لِقَاء",
+        "plural": "لِقَاءَات"
+      },
+      "related_words": [
+        { "arabic": "لَقِيَ", "translation": "bertemu, menjumpai" },
+        { "arabic": "مُلَاقَاة", "translation": "pertemuan, perjumpaan" },
+        { "arabic": "لَقَّى", "translation": "mempertemukan" }
+      ],
+      "quran_example": {
+        "arabic": "فَمَن كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّهِ أَحَدًا",
+        "translation": "Barang siapa mengharap pertemuan dengan Tuhannya, hendaklah ia mengerjakan amal saleh dan tidak menyekutukan siapa pun dalam ibadah kepada Tuhannya",
+        "surah": "Al-Kahf",
+        "ayah": 110
+      }
+    },
+    {
+      "id": 190,
+      "arabic": "اِسْتَغْفَرَ",
+      "transliteration": "istaghfara",
+      "translation": "memohon ampun, beristighfar",
+      "word_type": "verb",
+      "root": "غ-ف-ر",
+      "forms": {
+        "past": "اِسْتَغْفَرَ",
+        "present": "يَسْتَغْفِرُ",
+        "command": "اِسْتَغْفِرْ"
+      },
+      "related_words": [
+        { "arabic": "اِسْتِغْفَار", "translation": "istighfar, permohonan ampun" },
+        { "arabic": "غَفَّار", "translation": "Yang Maha Pengampun" },
+        { "arabic": "غُفْرَان", "translation": "pengampunan" }
+      ],
+      "quran_example": {
+        "arabic": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا",
+        "translation": "Maka aku katakan kepada mereka: Mohonlah ampun kepada Tuhanmu, sesungguhnya Dia Maha Pengampun",
+        "surah": "Nooh",
+        "ayah": 10
+      }
+    },
+    {
+      "id": 191,
+      "arabic": "مَسْجِد",
+      "transliteration": "masjid",
+      "translation": "masjid, tempat sujud",
+      "word_type": "noun",
+      "root": "س-ج-د",
+      "forms": {
+        "singular": "مَسْجِد",
+        "plural": "مَسَاجِد"
+      },
+      "related_words": [
+        { "arabic": "سَجَدَ", "translation": "bersujud, sujud" },
+        { "arabic": "سُجُود", "translation": "sujud, prostasi" },
+        { "arabic": "سَاجِد", "translation": "orang yang sedang sujud" }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَأَقَامَ الصَّلَاةَ",
+        "translation": "Hanya yang memakmurkan masjid-masjid Allah adalah orang-orang yang beriman kepada Allah dan hari akhir serta mendirikan shalat",
+        "surah": "At-Tawbah",
+        "ayah": 18
+      }
+    }
+  ]
+}

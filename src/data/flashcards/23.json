@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 23",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "222-231"
+  },
+  "cards": [
+    {
+      "id": 222,
+      "arabic": "إِذْ",
+      "transliteration": "idh",
+      "translation": "ketika, tatkala, sewaktu",
+      "word_type": "particle",
+      "root": "",
+      "forms": {},
+      "related_words": [
+        { "arabic": "إِذَا", "translation": "apabila, jika, ketika (kondisional)" },
+        { "arabic": "حِين", "translation": "waktu, saat, ketika" },
+        { "arabic": "لَمَّا", "translation": "tatkala, setelah, sewaktu" }
+      ],
+      "quran_example": {
+        "arabic": "وَإِذْ قَالَ رَبُّكَ لِلْمَلَائِكَةِ إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً",
+        "translation": "Ingatlah ketika Tuhanmu berfirman kepada para Malaikat: 'Sesungguhnya Aku hendak menjadikan seorang khalifah di muka bumi'",
+        "surah": "Al-Baqara",
+        "ayah": 30
+      }
+    },
+    {
+      "id": 223,
+      "arabic": "قَدْ",
+      "transliteration": "qad",
+      "translation": "sungguh, telah, memang (penegas)",
+      "word_type": "particle",
+      "root": "",
+      "forms": {},
+      "related_words": [
+        { "arabic": "لَقَدْ", "translation": "sungguh-sungguh, demi Allah telah" },
+        { "arabic": "إِنَّ", "translation": "sesungguhnya, bahwa" },
+        { "arabic": "قَطُّ", "translation": "sama sekali, pernah (dalam kalimat negatif)" }
+      ],
+      "quran_example": {
+        "arabic": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
+        "translation": "Sesungguhnya beruntunglah orang yang membersihkan diri (dengan beriman)",
+        "surah": "Al-A'laa",
+        "ayah": 14
+      }
+    },
+    {
+      "id": 224,
+      "arabic": "أَمَّا",
+      "transliteration": "ammā",
+      "translation": "adapun, sedangkan, mengenai",
+      "word_type": "particle",
+      "root": "",
+      "forms": {},
+      "related_words": [
+        { "arabic": "بَلْ", "translation": "bahkan, melainkan" },
+        { "arabic": "أَيُّ", "translation": "yang mana, siapapun" },
+        { "arabic": "مَا", "translation": "apa, yang, sesuatu yang" }
+      ],
+      "quran_example": {
+        "arabic": "فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ",
+        "translation": "Sebab itu, terhadap anak yatim janganlah kamu berlaku sewenang-wenang",
+        "surah": "Ad-Dhuhaa",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 225,
+      "arabic": "كَذَٰلِكَ",
+      "transliteration": "kadhālika",
+      "translation": "demikianlah, seperti itu, begitulah",
+      "word_type": "adverb",
+      "root": "",
+      "forms": {},
+      "related_words": [
+        { "arabic": "هَٰكَذَا", "translation": "begini, seperti ini" },
+        { "arabic": "كَمَا", "translation": "sebagaimana, seperti" },
+        { "arabic": "مِثْل", "translation": "seperti, serupa, contoh" }
+      ],
+      "quran_example": {
+        "arabic": "كَذَٰلِكَ يُحْيِ اللَّهُ الْمَوْتَىٰ وَيُرِيكُمْ آيَاتِهِ لَعَلَّكُمْ تَعْقِلُونَ",
+        "translation": "Demikianlah Allah menghidupkan kembali orang-orang yang telah mati, dan memperlihatkan padamu tanda-tanda kekuasaan-Nya agar kamu mengerti",
+        "surah": "Al-Baqara",
+        "ayah": 73
+      }
+    },
+    {
+      "id": 226,
+      "arabic": "أَقَامَ",
+      "transliteration": "aqāma",
+      "translation": "mendirikan, menegakkan, melaksanakan",
+      "word_type": "verb",
+      "root": "ق-و-م",
+      "forms": {
+        "past": "أَقَامَ",
+        "present": "يُقِيمُ",
+        "command": "أَقِمْ"
+      },
+      "related_words": [
+        { "arabic": "قَامَ", "translation": "berdiri, bangkit, melaksanakan" },
+        { "arabic": "إِقَامَة", "translation": "pendirian, penegakan, pelaksanaan" },
+        { "arabic": "قَوْم", "translation": "kaum, umat, bangsa" }
+      ],
+      "quran_example": {
+        "arabic": "الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَوٰةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ",
+        "translation": "(yaitu) mereka yang beriman kepada yang ghaib, yang mendirikan shalat, dan menafkahkan sebahagian rezeki yang Kami anugerahkan kepada mereka",
+        "surah": "Al-Baqara",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 227,
+      "arabic": "نَظَرَ",
+      "transliteration": "naẓara",
+      "translation": "melihat, memandang, memperhatikan",
+      "word_type": "verb",
+      "root": "ن-ظ-ر",
+      "forms": {
+        "past": "نَظَرَ",
+        "present": "يَنْظُرُ",
+        "command": "انْظُرْ"
+      },
+      "related_words": [
+        { "arabic": "نَظَر", "translation": "pandangan, penglihatan, pertimbangan" },
+        { "arabic": "مَنْظَر", "translation": "pemandangan, pemandangan alam" },
+        { "arabic": "رَأَى", "translation": "melihat, memandang" }
+      ],
+      "quran_example": {
+        "arabic": "أَفَلَا يَنظُرُونَ إِلَى الْإِبِلِ كَيْفَ خُلِقَتْ",
+        "translation": "Maka apakah mereka tidak memperhatikan unta bagaimana dia diciptakan",
+        "surah": "Al-Ghaashiya",
+        "ayah": 17
+      }
+    },
+    {
+      "id": 228,
+      "arabic": "بَلَغَ",
+      "transliteration": "balagha",
+      "translation": "mencapai, sampai, tiba",
+      "word_type": "verb",
+      "root": "ب-ل-غ",
+      "forms": {
+        "past": "بَلَغَ",
+        "present": "يَبْلُغُ",
+        "command": "اُبْلُغْ"
+      },
+      "related_words": [
+        { "arabic": "بَلَاغ", "translation": "penyampaian, ketercapaian" },
+        { "arabic": "أَبْلَغَ", "translation": "menyampaikan, mengkomunikasikan" },
+        { "arabic": "بَالِغ", "translation": "yang telah baligh, mencapai" }
+      ],
+      "quran_example": {
+        "arabic": "حَتَّىٰ إِذَا بَلَغَ مَغْرِبَ الشَّمْسِ وَجَدَهَا تَغْرُبُ فِي عَيْنٍ حَمِئَةٍ",
+        "translation": "Hingga apabila dia telah sampai ke tempat terbenam matahari, dia melihat matahari terbenam di dalam laut yang berlumpur hitam",
+        "surah": "Al-Kahf",
+        "ayah": 86
+      }
+    },
+    {
+      "id": 229,
+      "arabic": "حَمَلَ",
+      "transliteration": "ḥamala",
+      "translation": "membawa, memikul, menanggung",
+      "word_type": "verb",
+      "root": "ح-م-ل",
+      "forms": {
+        "past": "حَمَلَ",
+        "present": "يَحْمِلُ",
+        "command": "اِحْمِلْ"
+      },
+      "related_words": [
+        { "arabic": "حِمْل", "translation": "beban, muatan, pikul" },
+        { "arabic": "حَامِل", "translation": "yang membawa, pembawa" },
+        { "arabic": "أَمَانَة", "translation": "amanah, kepercayaan, tanggung jawab" }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ وَالْأَرْضِ وَالْجِبَالِ فَأَبَيْنَ أَن يَحْمِلْنَهَا وَأَشْفَقْنَ مِنْهَا وَحَمَلَهَا الْإِنسَانُ",
+        "translation": "Sesungguhnya Kami telah mengemukakan amanat kepada langit, bumi dan gunung-gunung, maka semuanya enggan untuk memikul amanat itu, dan mereka khawatir akan mengkhianatinya, dan dipikullah amanat itu oleh manusia",
+        "surah": "Al-Ahzaab",
+        "ayah": 72
+      }
+    },
+    {
+      "id": 230,
+      "arabic": "كَفَى",
+      "transliteration": "kafā",
+      "translation": "cukup, memadai, mencukupi",
+      "word_type": "verb",
+      "root": "ك-ف-ي",
+      "forms": {
+        "past": "كَفَى",
+        "present": "يَكْفِي",
+        "command": "اِكْفِ"
+      },
+      "related_words": [
+        { "arabic": "كِفَايَة", "translation": "kecukupan, kemampuan yang memadai" },
+        { "arabic": "كَافٍ", "translation": "yang cukup, yang memadai" },
+        { "arabic": "وَافٍ", "translation": "yang memenuhi, yang sempurna" }
+      ],
+      "quran_example": {
+        "arabic": "وَتَوَكَّلْ عَلَى اللَّهِ ۚ وَكَفَىٰ بِاللَّهِ وَكِيلًا",
+        "translation": "dan bertawakkallah kepada Allah. Dan cukuplah Allah sebagai Pemelihara",
+        "surah": "Al-Ahzaab",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 231,
+      "arabic": "فَرِيقٌ",
+      "transliteration": "farīq",
+      "translation": "golongan, kelompok, pihak",
+      "word_type": "noun",
+      "root": "ف-ر-ق",
+      "forms": {
+        "singular": "فَرِيقٌ",
+        "plural": "فِرَق"
+      },
+      "related_words": [
+        { "arabic": "فَرَقَ", "translation": "memisahkan, membedakan" },
+        { "arabic": "فُرْقَان", "translation": "pembeda, pemisah (gelar Al-Quran)" },
+        { "arabic": "حِزْب", "translation": "golongan, kelompok, partai" }
+      ],
+      "quran_example": {
+        "arabic": "أَلَمْ تَرَ إِلَى الَّذِينَ أُوتُوا نَصِيبًا مِّنَ الْكِتَابِ يُدْعَوْنَ إِلَىٰ كِتَابِ اللَّهِ لِيَحْكُمَ بَيْنَهُمْ ثُمَّ يَتَوَلَّىٰ فَرِيقٌ مِّنْهُمْ وَهُم مُّعْرِضُونَ",
+        "translation": "Tidakkah kamu memperhatikan orang-orang yang telah diberi bahagian yaitu Al Kitab (Taurat), mereka diseru kepada kitab Allah supaya kitab itu menetapkan hukum diantara mereka; kemudian sebahagian dari mereka berpaling, dan mereka selalu membelakangi kebenaran",
+        "surah": "Aal-i-Imraan",
+        "ayah": 23
+      }
+    }
+  ]
+}

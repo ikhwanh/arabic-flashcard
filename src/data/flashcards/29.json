@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 29",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "282-291"
+  },
+  "cards": [
+    {
+      "id": 282,
+      "arabic": "مَال",
+      "transliteration": "maal",
+      "translation": "harta, kekayaan",
+      "word_type": "noun",
+      "root": "م-و-ل",
+      "forms": {
+        "singular": "مَال",
+        "plural": "أَمْوَال"
+      },
+      "related_words": [
+        { "arabic": "غِنَى", "translation": "kekayaan" },
+        { "arabic": "كَنْز", "translation": "harta simpanan" },
+        { "arabic": "رِزْق", "translation": "rezeki" }
+      ],
+      "quran_example": {
+        "arabic": "ٱلْمَالُ وَٱلْبَنُونَ زِينَةُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۖ وَٱلْبَٰقِيَٰتُ ٱلصَّٰلِحَٰتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًۭا وَخَيْرٌ أَمَلًۭا",
+        "translation": "Harta dan anak-anak adalah perhiasan kehidupan dunia tetapi amalan-amalan yang kekal lagi saleh adalah lebih baik pahalanya di sisi Tuhanmu serta lebih baik untuk menjadi harapan.",
+        "surah": "Al-Kahf",
+        "ayah": 46
+      }
+    },
+    {
+      "id": 283,
+      "arabic": "قَتَلَ",
+      "transliteration": "qatala",
+      "translation": "membunuh",
+      "word_type": "verb",
+      "root": "ق-ت-ل",
+      "forms": {
+        "past": "قَتَلَ",
+        "present": "يَقْتُلُ",
+        "command": "اُقْتُلْ"
+      },
+      "related_words": [
+        { "arabic": "قِتَال", "translation": "peperangan" },
+        { "arabic": "قَتْل", "translation": "pembunuhan" },
+        { "arabic": "قَاتِل", "translation": "pembunuh" }
+      ],
+      "quran_example": {
+        "arabic": "فَهَزَمُوهُم بِإِذْنِ ٱللَّهِ وَقَتَلَ دَاوُۥدُ جَالُوتَ وَءَاتَىٰهُ ٱللَّهُ ٱلْمُلْكَ وَٱلْحِكْمَةَ وَعَلَّمَهُۥ مِمَّا يَشَآءُ ۗ وَلَوْلَا دَفْعُ ٱللَّهِ ٱلنَّاسَ بَعْضَهُم بِبَعْضٍۢ لَّفَسَدَتِ ٱلْأَرْضُ وَلَٰكِنَّ ٱللَّهَ ذُو فَضْلٍ عَلَى ٱلْعَٰلَمِينَ",
+        "translation": "Mereka (tentara Thalut) mengalahkan tentara Jalut dengan izin Allah dan (dalam peperangan itu) Daud membunuh Jalut, kemudian Allah memberikan kepadanya (Daud) pemerintahan dan hikmah dan mengajarkan kepadanya apa yang dikehendaki-Nya. Seandainya Allah tidak menolak (keganasan) sebahagian umat manusia dengan sebagian yang lain, pasti rusaklah bumi ini. Tetapi Allah mempunyai karunia (yang dicurahkan) atas semesta alam.",
+        "surah": "Al-Baqara",
+        "ayah": 251
+      }
+    },
+    {
+      "id": 284,
+      "arabic": "شَمْس",
+      "transliteration": "syams",
+      "translation": "matahari",
+      "word_type": "noun",
+      "root": "ش-م-س",
+      "forms": {
+        "singular": "شَمْس",
+        "plural": "شُمُوس"
+      },
+      "related_words": [
+        { "arabic": "قَمَر", "translation": "bulan" },
+        { "arabic": "ضِيَاء", "translation": "cahaya" },
+        { "arabic": "نَهَار", "translation": "siang" }
+      ],
+      "quran_example": {
+        "arabic": "وَٱلشَّمْسِ وَضُحَىٰهَا",
+        "translation": "Demi matahari dan cahayanya di pagi hari,",
+        "surah": "Ash-Shams",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 285,
+      "arabic": "قَمَر",
+      "transliteration": "qamar",
+      "translation": "bulan (benda langit)",
+      "word_type": "noun",
+      "root": "ق-م-ر",
+      "forms": {
+        "singular": "قَمَر",
+        "plural": "أَقْمَار"
+      },
+      "related_words": [
+        { "arabic": "شَمْس", "translation": "matahari" },
+        { "arabic": "نَجْم", "translation": "bintang" },
+        { "arabic": "لَيْل", "translation": "malam" }
+      ],
+      "quran_example": {
+        "arabic": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
+        "translation": "dan bulan apabila mengiringinya,",
+        "surah": "Ash-Shams",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 286,
+      "arabic": "وَضَعَ",
+      "transliteration": "wadha'a",
+      "translation": "meletakkan, melahirkan",
+      "word_type": "verb",
+      "root": "و-ض-ع",
+      "forms": {
+        "past": "وَضَعَ",
+        "present": "يَضَعُ",
+        "command": "ضَعْ"
+      },
+      "related_words": [
+        { "arabic": "مَوْضِع", "translation": "tempat" },
+        { "arabic": "وَضْع", "translation": "peletakan, keadaan" },
+        { "arabic": "رَفَعَ", "translation": "mengangkat (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "فَلَمَّا وَضَعَتْهَا قَالَتْ رَبِّ إِنِّى وَضَعْتُهَآ أُنثَىٰ وَٱللَّهُ أَعْلَمُ بِمَا وَضَعَتْ وَلَيْسَ ٱلذَّكَرُ كَٱلْأُنثَىٰ ۖ وَإِنِّى سَمَّيْتُهَا مَرْيَمَ وَإِنِّىٓ أُعِيذُهَا بِكَ وَذُرِّيَّتَهَا مِنَ ٱلشَّيْطَٰنِ ٱلرَّجِيمِ",
+        "translation": "Maka tatkala isteri 'Imran melahirkan anaknya, diapun berkata: \"Ya Tuhanku, sesunguhnya aku melahirkannya seorang anak perempuan; dan Allah lebih mengetahui apa yang dilahirkannya itu; dan anak laki-laki tidaklah seperti anak perempuan. Sesungguhnya aku telah menamai dia Maryam dan aku mohon perlindungan untuknya serta anak-anak keturunannya kepada (pemeliharaan) Engkau daripada syaitan yang terkutuk\".",
+        "surah": "Aal-i-Imraan",
+        "ayah": 36
+      }
+    },
+    {
+      "id": 287,
+      "arabic": "شَهِدَ",
+      "transliteration": "syahida",
+      "translation": "menyaksikan, bersaksi",
+      "word_type": "verb",
+      "root": "ش-ه-د",
+      "forms": {
+        "past": "شَهِدَ",
+        "present": "يَشْهَدُ",
+        "command": "اِشْهَدْ"
+      },
+      "related_words": [
+        { "arabic": "شَهَادَة", "translation": "kesaksian, syahadat" },
+        { "arabic": "شَهِيد", "translation": "saksi, syuhada" },
+        { "arabic": "شَاهِد", "translation": "saksi" }
+      ],
+      "quran_example": {
+        "arabic": "شَهِدَ ٱللَّهُ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا هُوَ وَٱلْمَلَٰٓئِكَةُ وَأُو۟لُوا۟ ٱلْعِلْمِ قَآئِمًۢا بِٱلْقِسْطِ ۚ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+        "translation": "Allah menyatakan bahwasanya tidak ada Tuhan melainkan Dia (yang berhak disembah), Yang menegakkan keadilan. Para Malaikat dan orang-orang yang berilmu (juga menyatakan yang demikian itu). Tak ada Tuhan melainkan Dia (yang berhak disembah), Yang Maha Perkasa lagi Maha Bijaksana.",
+        "surah": "Aal-i-Imraan",
+        "ayah": 18
+      }
+    },
+    {
+      "id": 288,
+      "arabic": "لِسَان",
+      "transliteration": "lisaan",
+      "translation": "lidah, bahasa",
+      "word_type": "noun",
+      "root": "ل-س-ن",
+      "forms": {
+        "singular": "لِسَان",
+        "plural": "أَلْسِنَة"
+      },
+      "related_words": [
+        { "arabic": "كَلَام", "translation": "perkataan" },
+        { "arabic": "قَوْل", "translation": "ucapan" },
+        { "arabic": "لُغَة", "translation": "bahasa" }
+      ],
+      "quran_example": {
+        "arabic": "وَٱحْلُلْ عُقْدَةًۭ مِّن لِّسَانِى",
+        "translation": "dan lepaskanlah kekakuan dari lidahku,",
+        "surah": "Taa-Haa",
+        "ayah": 27
+      }
+    },
+    {
+      "id": 289,
+      "arabic": "عَيْن",
+      "transliteration": "'ain",
+      "translation": "mata, mata air",
+      "word_type": "noun",
+      "root": "ع-ي-ن",
+      "forms": {
+        "singular": "عَيْن",
+        "plural": "عُيُون"
+      },
+      "related_words": [
+        { "arabic": "نَظَر", "translation": "penglihatan" },
+        { "arabic": "بَصَر", "translation": "penglihatan" },
+        { "arabic": "يَنْبُوع", "translation": "sumber air" }
+      ],
+      "quran_example": {
+        "arabic": "عَيْنًۭا يَشْرَبُ بِهَا عِبَادُ ٱللَّهِ يُفَجِّرُونَهَا تَفْجِيرًۭا",
+        "translation": "(yaitu) mata air (dalam surga) yang daripadanya hamba-hamba Allah minum, yang mereka dapat mengalirkannya dengan sebaik-baiknya.",
+        "surah": "Al-Insaan",
+        "ayah": 6
+      }
+    },
+    {
+      "id": 290,
+      "arabic": "بَاب",
+      "transliteration": "baab",
+      "translation": "pintu, gerbang",
+      "word_type": "noun",
+      "root": "ب-و-ب",
+      "forms": {
+        "singular": "بَاب",
+        "plural": "أَبْوَاب"
+      },
+      "related_words": [
+        { "arabic": "مِفْتَاح", "translation": "kunci" },
+        { "arabic": "بَيْت", "translation": "rumah" },
+        { "arabic": "دَار", "translation": "tempat tinggal" }
+      ],
+      "quran_example": {
+        "arabic": "قَالَ رَجُلَانِ مِنَ ٱلَّذِينَ يَخَافُونَ أَنْعَمَ ٱللَّهُ عَلَيْهِمَا ٱدْخُلُوا۟ عَلَيْهِمُ ٱلْبَابَ فَإِذَا دَخَلْتُمُوهُ فَإِنَّكُمْ غَٰلِبُونَ ۚ وَعَلَى ٱللَّهِ فَتَوَكَّلُوٓا۟ إِن كُنتُم مُّؤْمِنِينَ",
+        "translation": "Berkatalah dua orang diantara orang-orang yang takut (kepada Allah) yang Allah telah memberi nikmat atas keduanya: \"Serbulah mereka dengan melalui pintu gerbang (kota) itu, maka bila kamu memasukinya niscaya kamu akan menang. Dan hanya kepada Allah hendaknya kamu bertawakkal, jika kamu benar-benar orang yang beriman\".",
+        "surah": "Al-Maaida",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 291,
+      "arabic": "رِيح",
+      "transliteration": "riih",
+      "translation": "angin",
+      "word_type": "noun",
+      "root": "ر-و-ح",
+      "forms": {
+        "singular": "رِيح",
+        "plural": "رِيَاح"
+      },
+      "related_words": [
+        { "arabic": "عَاصِفَة", "translation": "badai" },
+        { "arabic": "سَحَاب", "translation": "awan" },
+        { "arabic": "مَطَر", "translation": "hujan" }
+      ],
+      "quran_example": {
+        "arabic": "وَفِى عَادٍ إِذْ أَرْسَلْنَا عَلَيْهِمُ ٱلرِّيحَ ٱلْعَقِيمَ",
+        "translation": "Dan juga pada (kisah) Aad ketika Kami kirimkan kepada mereka angin yang membinasakan,",
+        "surah": "Adh-Dhaariyat",
+        "ayah": 41
+      }
+    }
+  ]
+}

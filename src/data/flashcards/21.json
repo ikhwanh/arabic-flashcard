@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 21",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "202-211"
+  },
+  "cards": [
+    {
+      "id": 202,
+      "arabic": "سَيِّئَة",
+      "transliteration": "sayyiʾah",
+      "translation": "perbuatan buruk, kejahatan, keburukan",
+      "word_type": "noun",
+      "root": "س-و-ء",
+      "forms": {
+        "singular": "سَيِّئَة",
+        "plural": "سَيِّئَات"
+      },
+      "related_words": [
+        { "arabic": "حَسَنَة", "translation": "kebaikan, perbuatan baik" },
+        { "arabic": "ذَنْب", "translation": "dosa, kesalahan" },
+        { "arabic": "مَعْصِيَة", "translation": "pelanggaran, kedurhakaan" }
+      ],
+      "quran_example": {
+        "arabic": "مَن جَاءَ بِالْحَسَنَةِ فَلَهُ عَشْرُ أَمْثَالِهَا ۖ وَمَن جَاءَ بِالسَّيِّئَةِ فَلَا يُجْزَىٰ إِلَّا مِثْلَهَا وَهُمْ لَا يُظْلَمُونَ",
+        "translation": "Barangsiapa membawa amal yang baik, maka baginya (pahala) sepuluh kali lipat amalnya; dan barangsiapa yang membawa perbuatan jahat maka dia tidak diberi pembalasan melainkan seimbang dengan kejahatannya, sedang mereka sedikitpun tidak dianiaya",
+        "surah": "Al-An'aam",
+        "ayah": 160
+      }
+    },
+    {
+      "id": 203,
+      "arabic": "مَصِير",
+      "transliteration": "maṣīr",
+      "translation": "tempat kembali, tujuan akhir, nasib",
+      "word_type": "noun",
+      "root": "ص-ي-ر",
+      "forms": {
+        "singular": "مَصِير",
+        "plural": "مَصَائِر"
+      },
+      "related_words": [
+        { "arabic": "عَاقِبَة", "translation": "akibat, ujung dari sesuatu" },
+        { "arabic": "مَرْجِع", "translation": "tempat kembali" },
+        { "arabic": "صَارَ", "translation": "menjadi, berubah" }
+      ],
+      "quran_example": {
+        "arabic": "وَيُحَذِّرُكُمُ اللَّهُ نَفْسَهُ وَإِلَى اللَّهِ الْمَصِيرُ",
+        "translation": "Allah memperingatkan kamu terhadap diri (siksa)-Nya, dan hanya kepada Allah tempat kembali",
+        "surah": "Aal-i-Imraan",
+        "ayah": 28
+      }
+    },
+    {
+      "id": 204,
+      "arabic": "أَكْثَر",
+      "transliteration": "akthar",
+      "translation": "lebih banyak, kebanyakan, mayoritas",
+      "word_type": "adjective",
+      "root": "ك-ث-ر",
+      "forms": {},
+      "related_words": [
+        { "arabic": "كَثِير", "translation": "banyak, berlimpah" },
+        { "arabic": "أَقَلّ", "translation": "lebih sedikit, minoritas" },
+        { "arabic": "أَغْلَب", "translation": "kebanyakan, umumnya" }
+      ],
+      "quran_example": {
+        "arabic": "وَمَا يَتَّبِعُ أَكْثَرُهُمْ إِلَّا ظَنًّا ۚ إِنَّ الظَّنَّ لَا يُغْنِي مِنَ الْحَقِّ شَيْئًا ۚ إِنَّ اللَّهَ عَلِيمٌ بِمَا يَفْعَلُونَ",
+        "translation": "Dan kebanyakan mereka tidak mengikuti kecuali persangkaan saja. Sesungguhnya persangkaan itu tidak sedikitpun berguna untuk mencapai kebenaran. Sesungguhnya Allah Maha Mengetahui apa yang mereka kerjakan",
+        "surah": "Yunus",
+        "ayah": 36
+      }
+    },
+    {
+      "id": 205,
+      "arabic": "وَاسِع",
+      "transliteration": "wāsiʿ",
+      "translation": "Maha Luas, yang meliputi, yang mencakup segalanya",
+      "word_type": "adjective",
+      "root": "و-س-ع",
+      "forms": {},
+      "related_words": [
+        { "arabic": "سَعَة", "translation": "keluasan, kemampuan" },
+        { "arabic": "اتَّسَعَ", "translation": "menjadi luas, meluas" },
+        { "arabic": "ضَيِّق", "translation": "sempit, terbatas" }
+      ],
+      "quran_example": {
+        "arabic": "وَلِلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ ۚ فَأَيْنَمَا تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ ۚ إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
+        "translation": "Dan kepunyaan Allah-lah timur dan barat, maka kemanapun kamu menghadap di situlah wajah Allah. Sesungguhnya Allah Maha Luas (rahmat-Nya) lagi Maha Mengetahui",
+        "surah": "Al-Baqara",
+        "ayah": 115
+      }
+    },
+    {
+      "id": 206,
+      "arabic": "سَعَى",
+      "transliteration": "saʿā",
+      "translation": "berusaha, berjalan, mengejar",
+      "word_type": "verb",
+      "root": "س-ع-ي",
+      "forms": {
+        "past": "سَعَى",
+        "present": "يَسْعَى",
+        "command": "اسْعَ"
+      },
+      "related_words": [
+        { "arabic": "سَعْي", "translation": "usaha, perjalanan, ikhtiar" },
+        { "arabic": "مَسْعَى", "translation": "tempat berusaha, upaya" },
+        { "arabic": "اِجْتَهَدَ", "translation": "bersungguh-sungguh, berijtihad" }
+      ],
+      "quran_example": {
+        "arabic": "وَمَنْ أَرَادَ الْآخِرَةَ وَسَعَىٰ لَهَا سَعْيَهَا وَهُوَ مُؤْمِنٌ فَأُولَٰئِكَ كَانَ سَعْيُهُم مَّشْكُورًا",
+        "translation": "Dan barangsiapa yang menghendaki kehidupan akhirat dan berusaha ke arah itu dengan sungguh-sungguh sedang ia adalah mukmin, maka mereka itu adalah orang-orang yang usahanya dibalasi dengan baik",
+        "surah": "Al-Israa",
+        "ayah": 19
+      }
+    },
+    {
+      "id": 207,
+      "arabic": "رَجُل",
+      "transliteration": "rajul",
+      "translation": "laki-laki, pria",
+      "word_type": "noun",
+      "root": "ر-ج-ل",
+      "forms": {
+        "singular": "رَجُل",
+        "plural": "رِجَال"
+      },
+      "related_words": [
+        { "arabic": "امْرَأَة", "translation": "perempuan, wanita" },
+        { "arabic": "رُجُولَة", "translation": "kejantanan, sifat laki-laki" },
+        { "arabic": "رِجَال", "translation": "para laki-laki, kaum pria" }
+      ],
+      "quran_example": {
+        "arabic": "وَجَاءَ مِنْ أَقْصَا الْمَدِينَةِ رَجُلٌ يَسْعَىٰ قَالَ يَا قَوْمِ اتَّبِعُوا الْمُرْسَلِينَ",
+        "translation": "Dan datanglah dari ujung kota, seorang laki-laki dengan bergegas-gegas ia berkata: Hai kaumku, ikutilah utusan-utusan itu",
+        "surah": "Yaseen",
+        "ayah": 20
+      }
+    },
+    {
+      "id": 208,
+      "arabic": "بُشْرَى",
+      "transliteration": "bushrā",
+      "translation": "kabar gembira, berita bahagia",
+      "word_type": "noun",
+      "root": "ب-ش-ر",
+      "forms": {
+        "singular": "بُشْرَى",
+        "plural": "بُشْرَيَات"
+      },
+      "related_words": [
+        { "arabic": "بَشَّرَ", "translation": "memberi kabar gembira" },
+        { "arabic": "مُبَشِّر", "translation": "pembawa berita gembira" },
+        { "arabic": "بِشَارَة", "translation": "berita gembira, kabar baik" }
+      ],
+      "quran_example": {
+        "arabic": "لَهُمُ الْبُشْرَىٰ فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ",
+        "translation": "Bagi mereka berita gembira di dalam kehidupan di dunia dan (dalam kehidupan) di akhirat",
+        "surah": "Yunus",
+        "ayah": 64
+      }
+    },
+    {
+      "id": 209,
+      "arabic": "سَرِيع",
+      "transliteration": "sarīʿ",
+      "translation": "cepat, segera, Maha Cepat",
+      "word_type": "adjective",
+      "root": "س-ر-ع",
+      "forms": {},
+      "related_words": [
+        { "arabic": "أَسْرَعَ", "translation": "mempercepat, bergegas" },
+        { "arabic": "سُرْعَة", "translation": "kecepatan, kegesitan" },
+        { "arabic": "بَطِيء", "translation": "lambat, perlahan" }
+      ],
+      "quran_example": {
+        "arabic": "أُولَٰئِكَ لَهُمْ نَصِيبٌ مِّمَّا كَسَبُوا ۖ وَاللَّهُ سَرِيعُ الْحِسَابِ",
+        "translation": "Mereka itulah orang-orang yang mendapat bahagian daripada yang mereka usahakan; dan Allah sangat cepat perhitungan-Nya",
+        "surah": "Al-Baqara",
+        "ayah": 202
+      }
+    },
+    {
+      "id": 210,
+      "arabic": "جَهْل",
+      "transliteration": "jahl",
+      "translation": "kebodohan, ketidaktahuan, kecerobohan",
+      "word_type": "noun",
+      "root": "ج-ه-ل",
+      "forms": {
+        "singular": "جَهْل",
+        "plural": "جَهَالَات"
+      },
+      "related_words": [
+        { "arabic": "جَاهِل", "translation": "orang bodoh, yang tidak tahu" },
+        { "arabic": "جَاهِلِيَّة", "translation": "masa jahiliyah, kebodohan" },
+        { "arabic": "عِلْم", "translation": "ilmu, pengetahuan (lawan kata)" }
+      ],
+      "quran_example": {
+        "arabic": "خُذِ الْعَفْوَ وَأْمُرْ بِالْعُرْفِ وَأَعْرِضْ عَنِ الْجَاهِلِينَ",
+        "translation": "Jadilah engkau pemaaf dan suruhlah orang mengerjakan yang ma'ruf, serta berpalinglah dari pada orang-orang yang bodoh",
+        "surah": "Al-A'raaf",
+        "ayah": 199
+      }
+    },
+    {
+      "id": 211,
+      "arabic": "فَقِير",
+      "transliteration": "faqīr",
+      "translation": "miskin, fakir, yang membutuhkan",
+      "word_type": "adjective",
+      "root": "ف-ق-ر",
+      "forms": {
+        "singular": "فَقِير",
+        "plural": "فُقَرَاء"
+      },
+      "related_words": [
+        { "arabic": "فَقْر", "translation": "kemiskinan, kekurangan" },
+        { "arabic": "غَنِيّ", "translation": "kaya, yang berkecukupan" },
+        { "arabic": "مِسْكِين", "translation": "orang miskin, yang papa" }
+      ],
+      "quran_example": {
+        "arabic": "يَا أَيُّهَا النَّاسُ أَنتُمُ الْفُقَرَاءُ إِلَى اللَّهِ ۖ وَاللَّهُ هُوَ الْغَنِيُّ الْحَمِيدُ",
+        "translation": "Hai manusia, kamulah yang berkehendak kepada Allah; dan Allah Dialah Yang Maha Kaya (tidak memerlukan sesuatu) lagi Maha Terpuji",
+        "surah": "Faatir",
+        "ayah": 15
+      }
+    }
+  ]
+}

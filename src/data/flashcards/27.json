@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 27",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "262-271"
+  },
+  "cards": [
+    {
+      "id": 262,
+      "arabic": "أُولَٰئِكَ",
+      "transliteration": "ulā'ika",
+      "translation": "mereka itu, itulah orang-orang",
+      "word_type": "pronoun",
+      "root": "",
+      "forms": {},
+      "related_words": [
+        { "arabic": "هَٰذَا", "translation": "ini (laki-laki)" },
+        { "arabic": "ذَٰلِكَ", "translation": "itu (jauh, laki-laki)" },
+        { "arabic": "هُمْ", "translation": "mereka" }
+      ],
+      "quran_example": {
+        "arabic": "وَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أُولَٰئِكَ أَصْحَابُ الْجَنَّةِ ۖ هُمْ فِيهَا خَالِدُونَ",
+        "translation": "Dan orang-orang yang beriman serta beramal saleh, mereka itu penghuni surga; mereka kekal di dalamnya",
+        "surah": "Al-Baqara",
+        "ayah": 82
+      }
+    },
+    {
+      "id": 263,
+      "arabic": "أَعَدَّ",
+      "transliteration": "a'adda",
+      "translation": "menyiapkan, mempersiapkan",
+      "word_type": "verb",
+      "root": "ع-د-د",
+      "forms": {
+        "past": "أَعَدَّ",
+        "present": "يُعِدُّ",
+        "command": "أَعِدَّ"
+      },
+      "related_words": [
+        { "arabic": "عَدَّ", "translation": "menghitung, mempersiapkan" },
+        { "arabic": "اسْتَعَدَّ", "translation": "bersiap-siap, mempersiapkan diri" },
+        { "arabic": "عُدَّة", "translation": "persiapan, perlengkapan" }
+      ],
+      "quran_example": {
+        "arabic": "أَعَدَّ اللَّهُ لَهُمْ جَنَّاتٍ تَجْرِي تَحْتَهَا الْأَنْهَارُ خَالِدِينَ فِيهَا ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
+        "translation": "Allah telah menyediakan bagi mereka surga yang mengalir di bawahnya sungai-sungai, mereka kekal di dalamnya; itulah kemenangan yang besar",
+        "surah": "At-Tawba",
+        "ayah": 89
+      }
+    },
+    {
+      "id": 264,
+      "arabic": "وَرِثَ",
+      "transliteration": "waritha",
+      "translation": "mewarisi, menerima warisan",
+      "word_type": "verb",
+      "root": "و-ر-ث",
+      "forms": {
+        "past": "وَرِثَ",
+        "present": "يَرِثُ",
+        "command": "اِرِثْ"
+      },
+      "related_words": [
+        { "arabic": "وَارِث", "translation": "pewaris, ahli waris" },
+        { "arabic": "مِيرَاث", "translation": "warisan, harta pusaka" },
+        { "arabic": "تَرَكَ", "translation": "meninggalkan (harta pusaka)" }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّا نَحْنُ نَرِثُ الْأَرْضَ وَمَن عَلَيْهَا وَإِلَيْنَا يُرْجَعُونَ",
+        "translation": "Sesungguhnya Kami mewarisi bumi dan semua orang-orang yang ada di atasnya, dan hanya kepada Kamilah mereka dikembalikan",
+        "surah": "Maryam",
+        "ayah": 40
+      }
+    },
+    {
+      "id": 265,
+      "arabic": "ذُرِّيَّة",
+      "transliteration": "dhurriyya",
+      "translation": "keturunan, anak cucu",
+      "word_type": "noun",
+      "root": "ذ-ر-ر",
+      "forms": {
+        "singular": "ذُرِّيَّة",
+        "plural": "ذُرِّيَّات"
+      },
+      "related_words": [
+        { "arabic": "وَلَد", "translation": "anak, keturunan" },
+        { "arabic": "نَسْل", "translation": "keturunan, generasi penerus" },
+        { "arabic": "أَسْلَاف", "translation": "leluhur, nenek moyang" }
+      ],
+      "quran_example": {
+        "arabic": "ذُرِّيَّةً بَعْضُهَا مِن بَعْضٍ ۗ وَاللَّهُ سَمِيعٌ عَلِيمٌ",
+        "translation": "(sebagai) satu keturunan yang sebagiannya (turunan) dari yang lain. Dan Allah Maha Mendengar lagi Maha Mengetahui",
+        "surah": "Aal-i-Imraan",
+        "ayah": 34
+      }
+    },
+    {
+      "id": 266,
+      "arabic": "مِيزَانٌ",
+      "transliteration": "mīzān",
+      "translation": "timbangan, neraca, keseimbangan",
+      "word_type": "noun",
+      "root": "و-ز-ن",
+      "forms": {
+        "singular": "مِيزَانٌ",
+        "plural": "مَوَازِين"
+      },
+      "related_words": [
+        { "arabic": "وَزَنَ", "translation": "menimbang, mengukur berat" },
+        { "arabic": "عَدْل", "translation": "keadilan, keseimbangan" },
+        { "arabic": "قِسْط", "translation": "keadilan, timbangan yang adil" }
+      ],
+      "quran_example": {
+        "arabic": "أَلَّا تَطْغَوْا فِي الْمِيزَانِ",
+        "translation": "Supaya kamu jangan melampaui batas tentang neraca itu",
+        "surah": "Ar-Rahmaan",
+        "ayah": 8
+      }
+    },
+    {
+      "id": 267,
+      "arabic": "خَالِدٌ",
+      "transliteration": "khālid",
+      "translation": "kekal, abadi, yang tinggal selamanya",
+      "word_type": "adjective",
+      "root": "خ-ل-د",
+      "forms": {
+        "singular": "خَالِدٌ",
+        "plural": "خَالِدُونَ"
+      },
+      "related_words": [
+        { "arabic": "خُلُود", "translation": "kekekalan, keabadian" },
+        { "arabic": "أَبَدٌ", "translation": "selamanya, abadi" },
+        { "arabic": "زَائِل", "translation": "yang fana, yang akan lenyap" }
+      ],
+      "quran_example": {
+        "arabic": "أَعَدَّ اللَّهُ لَهُمْ جَنَّاتٍ تَجْرِي تَحْتَهَا الْأَنْهَارُ خَالِدِينَ فِيهَا ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
+        "translation": "Allah telah menyediakan bagi mereka surga yang mengalir di bawahnya sungai-sungai, mereka kekal di dalamnya; itulah kemenangan yang besar",
+        "surah": "At-Tawba",
+        "ayah": 89
+      }
+    },
+    {
+      "id": 268,
+      "arabic": "أَيُّهَا",
+      "transliteration": "ayyuhā",
+      "translation": "wahai, hai (seruan kepada yang hadir)",
+      "word_type": "particle",
+      "root": "",
+      "forms": {},
+      "related_words": [
+        { "arabic": "يَا", "translation": "wahai, O (huruf nida)" },
+        { "arabic": "أَيُّ", "translation": "yang mana, siapapun" },
+        { "arabic": "أَيَّتُهَا", "translation": "wahai (untuk kata benda perempuan)" }
+      ],
+      "quran_example": {
+        "arabic": "يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ الَّذِي خَلَقَكُمْ وَالَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+        "translation": "Hai manusia, sembahlah Tuhanmu yang telah menciptakanmu dan orang-orang yang sebelummu, agar kamu bertakwa",
+        "surah": "Al-Baqara",
+        "ayah": 21
+      }
+    },
+    {
+      "id": 269,
+      "arabic": "أَجَابَ",
+      "transliteration": "ajāba",
+      "translation": "menjawab, memperkenankan, mengabulkan",
+      "word_type": "verb",
+      "root": "ج-و-ب",
+      "forms": {
+        "past": "أَجَابَ",
+        "present": "يُجِيبُ",
+        "command": "أَجِبْ"
+      },
+      "related_words": [
+        { "arabic": "جَوَاب", "translation": "jawaban, balasan" },
+        { "arabic": "اسْتَجَابَ", "translation": "memperkenankan, mengabulkan (doa)" },
+        { "arabic": "سَأَلَ", "translation": "bertanya, memohon" }
+      ],
+      "quran_example": {
+        "arabic": "أَمَّن يُجِيبُ الْمُضْطَرَّ إِذَا دَعَاهُ وَيَكْشِفُ السُّوءَ وَيَجْعَلُكُمْ خُلَفَاءَ الْأَرْضِ",
+        "translation": "Atau siapakah yang memperkenankan (doa) orang dalam kesulitan apabila ia berdoa kepada-Nya, dan yang menghilangkan kesusahan dan yang menjadikan kamu sebagai khalifah di bumi",
+        "surah": "An-Naml",
+        "ayah": 62
+      }
+    },
+    {
+      "id": 270,
+      "arabic": "يَمِينٌ",
+      "transliteration": "yamīn",
+      "translation": "kanan, tangan kanan, sumpah",
+      "word_type": "noun",
+      "root": "ي-م-ن",
+      "forms": {
+        "singular": "يَمِينٌ",
+        "plural": "أَيْمَان"
+      },
+      "related_words": [
+        { "arabic": "شِمَال", "translation": "kiri, tangan kiri" },
+        { "arabic": "يُمْن", "translation": "berkah, keberuntungan" },
+        { "arabic": "أَيْمَان", "translation": "sumpah-sumpah" }
+      ],
+      "quran_example": {
+        "arabic": "فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ",
+        "translation": "Adapun orang yang diberikan kitabnya dari sebelah kanannya",
+        "surah": "Al-Inshiqaaq",
+        "ayah": 7
+      }
+    },
+    {
+      "id": 271,
+      "arabic": "هَٰذِهِ",
+      "transliteration": "hādhihi",
+      "translation": "ini (untuk kata benda perempuan/muannath)",
+      "word_type": "pronoun",
+      "root": "",
+      "forms": {},
+      "related_words": [
+        { "arabic": "هَٰذَا", "translation": "ini (untuk kata benda laki-laki/mudzakkar)" },
+        { "arabic": "تِلْكَ", "translation": "itu (perempuan, yang jauh)" },
+        { "arabic": "ذَٰلِكَ", "translation": "itu (laki-laki, yang jauh)" }
+      ],
+      "quran_example": {
+        "arabic": "وَقُلْنَا يَا آدَمُ اسْكُنْ أَنتَ وَزَوْجُكَ الْجَنَّةَ وَكُلَا مِنْهَا رَغَدًا حَيْثُ شِئْتُمَا وَلَا تَقْرَبَا هَٰذِهِ الشَّجَرَةَ فَتَكُونَا مِنَ الظَّالِمِينَ",
+        "translation": "Dan Kami berfirman: 'Hai Adam, diamilah oleh kamu dan isterimu surga ini, dan makanlah makanan-makanannya yang banyak lagi baik dimana saja yang kamu sukai, dan janganlah kamu dekati pohon ini, yang menyebabkan kamu termasuk orang-orang yang zalim'",
+        "surah": "Al-Baqara",
+        "ayah": 35
+      }
+    }
+  ]
+}

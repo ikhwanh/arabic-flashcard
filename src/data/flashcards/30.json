@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Kosakata Al-Quran - Part 30",
+    "description": "Kata-kata bermakna yang paling sering muncul di Al-Quran",
+    "range": "292-301"
+  },
+  "cards": [
+    {
+      "id": 292,
+      "arabic": "أُمّ",
+      "transliteration": "umm",
+      "translation": "ibu",
+      "word_type": "noun",
+      "root": "ء-م-م",
+      "forms": {
+        "singular": "أُمّ",
+        "plural": "أُمَّهَات"
+      },
+      "related_words": [
+        { "arabic": "أَب", "translation": "ayah" },
+        { "arabic": "وَالِدَة", "translation": "ibu yang melahirkan" },
+        { "arabic": "اِبْن", "translation": "anak laki-laki" }
+      ],
+      "quran_example": {
+        "arabic": "وَجَعَلْنَا ٱبْنَ مَرْيَمَ وَأُمَّهُۥٓ ءَايَةًۭ وَءَاوَيْنَٰهُمَآ إِلَىٰ رَبْوَةٍۢ ذَاتِ قَرَارٍۢ وَمَعِينٍۢ",
+        "translation": "Dan telah Kami jadikan (Isa) putera Maryam beserta ibunya suatu bukti yang nyata bagi (kekuasaan Kami), dan Kami melindungi mereka di suatu tanah tinggi yang datar yang banyak terdapat padang-padang rumput dan sumber-sumber air bersih yang mengalir.",
+        "surah": "Al-Muminoon",
+        "ayah": 50
+      }
+    },
+    {
+      "id": 293,
+      "arabic": "اِبْن",
+      "transliteration": "ibn",
+      "translation": "anak laki-laki, putra",
+      "word_type": "noun",
+      "root": "ب-ن-و",
+      "forms": {
+        "singular": "اِبْن",
+        "plural": "بَنُونَ / أَبْنَاء"
+      },
+      "related_words": [
+        { "arabic": "بِنْت", "translation": "anak perempuan" },
+        { "arabic": "وَلَد", "translation": "anak" },
+        { "arabic": "ذُرِّيَّة", "translation": "keturunan" }
+      ],
+      "quran_example": {
+        "arabic": "وَإِذْ قَالَ لُقْمَٰنُ لِٱبْنِهِۦ وَهُوَ يَعِظُهُۥ يَٰبُنَىَّ لَا تُشْرِكْ بِٱللَّهِ ۖ إِنَّ ٱلشِّرْكَ لَظُلْمٌ عَظِيمٌۭ",
+        "translation": "Dan (ingatlah) ketika Luqman berkata kepada anaknya, di waktu ia memberi pelajaran kepadanya: \"Hai anakku, janganlah kamu mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar\".",
+        "surah": "Luqman",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 294,
+      "arabic": "نَجْم",
+      "transliteration": "najm",
+      "translation": "bintang",
+      "word_type": "noun",
+      "root": "ن-ج-م",
+      "forms": {
+        "singular": "نَجْم",
+        "plural": "نُجُوم"
+      },
+      "related_words": [
+        { "arabic": "كَوْكَب", "translation": "planet, bintang" },
+        { "arabic": "شَمْس", "translation": "matahari" },
+        { "arabic": "قَمَر", "translation": "bulan" }
+      ],
+      "quran_example": {
+        "arabic": "وَٱلنَّجْمِ إِذَا هَوَىٰ",
+        "translation": "Demi bintang ketika terbenam.",
+        "surah": "An-Najm",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 295,
+      "arabic": "شَجَر",
+      "transliteration": "syajar",
+      "translation": "pohon, pepohonan",
+      "word_type": "noun",
+      "root": "ش-ج-ر",
+      "forms": {
+        "singular": "شَجَرَة",
+        "plural": "أَشْجَار"
+      },
+      "related_words": [
+        { "arabic": "نَخْل", "translation": "pohon kurma" },
+        { "arabic": "ثَمَر", "translation": "buah" },
+        { "arabic": "وَرَق", "translation": "daun" }
+      ],
+      "quran_example": {
+        "arabic": "وَقُلْنَا يَٰٓـَٔادَمُ ٱسْكُنْ أَنتَ وَزَوْجُكَ ٱلْجَنَّةَ وَكُلَا مِنْهَا رَغَدًا حَيْثُ شِئْتُمَا وَلَا تَقْرَبَا هَٰذِهِ ٱلشَّجَرَةَ فَتَكُونَا مِنَ ٱلظَّٰلِمِينَ",
+        "translation": "Dan Kami berfirman: \"Hai Adam, diamilah oleh kamu dan isterimu surga ini, dan makanlah makanan-makanannya yang banyak lagi baik dimana saja yang kamu sukai, dan janganlah kamu dekati pohon ini, yang menyebabkan kamu termasuk orang-orang yang zalim.",
+        "surah": "Al-Baqara",
+        "ayah": 35
+      }
+    },
+    {
+      "id": 296,
+      "arabic": "ثَمَر",
+      "transliteration": "tsamar",
+      "translation": "buah",
+      "word_type": "noun",
+      "root": "ث-م-ر",
+      "forms": {
+        "singular": "ثَمَرَة",
+        "plural": "ثِمَار / ثَمَرَات"
+      },
+      "related_words": [
+        { "arabic": "شَجَر", "translation": "pohon" },
+        { "arabic": "زَرْع", "translation": "tanaman" },
+        { "arabic": "رِزْق", "translation": "rezeki" }
+      ],
+      "quran_example": {
+        "arabic": "۞ وَهُوَ ٱلَّذِىٓ أَنشَأَ جَنَّٰتٍۢ مَّعْرُوشَٰتٍۢ وَغَيْرَ مَعْرُوشَٰتٍۢ وَٱلنَّخْلَ وَٱلزَّرْعَ مُخْتَلِفًا أُكُلُهُۥ وَٱلزَّيْتُونَ وَٱلرُّمَّانَ مُتَشَٰبِهًۭا وَغَيْرَ مُتَشَٰبِهٍۢ ۚ كُلُوا۟ مِن ثَمَرِهِۦٓ إِذَآ أَثْمَرَ وَءَاتُوا۟ حَقَّهُۥ يَوْمَ حَصَادِهِۦ ۖ وَلَا تُسْرِفُوٓا۟ ۚ إِنَّهُۥ لَا يُحِبُّ ٱلْمُسْرِفِينَ",
+        "translation": "Dan Dialah yang menjadikan kebun-kebun yang berjunjung dan yang tidak berjunjung, pohon korma, tanam-tanaman yang bermacam-macam buahnya, zaitun dan delima yang serupa (bentuk dan warnanya) dan tidak sama (rasanya). Makanlah dari buahnya (yang bermacam-macam itu) bila dia berbuah, dan tunaikanlah haknya di hari memetik hasilnya; dan janganlah kamu berlebih-lebihan. Sesungguhnya Allah tidak menyukai orang yang berlebih-lebihan.",
+        "surah": "Al-An'aam",
+        "ayah": 141
+      }
+    },
+    {
+      "id": 297,
+      "arabic": "طَيْر",
+      "transliteration": "thair",
+      "translation": "burung",
+      "word_type": "noun",
+      "root": "ط-ي-ر",
+      "forms": {
+        "singular": "طَائِر",
+        "plural": "طَيْر / طُيُور"
+      },
+      "related_words": [
+        { "arabic": "جَنَاح", "translation": "sayap" },
+        { "arabic": "عُشّ", "translation": "sarang" },
+        { "arabic": "سَمَاء", "translation": "langit" }
+      ],
+      "quran_example": {
+        "arabic": "أَلَمْ يَرَوْا۟ إِلَى ٱلطَّيْرِ مُسَخَّرَٰتٍۢ فِى جَوِّ ٱلسَّمَآءِ مَا يُمْسِكُهُنَّ إِلَّا ٱللَّهُ ۗ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍۢ لِّقَوْمٍۢ يُؤْمِنُونَ",
+        "translation": "Tidakkah mereka memperhatikan burung-burung yang dimudahkan terbang diangkasa bebas. Tidak ada yang menahannya selain daripada Allah. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Tuhan) bagi orang-orang yang beriman.",
+        "surah": "An-Nahl",
+        "ayah": 79
+      }
+    },
+    {
+      "id": 298,
+      "arabic": "ظِلّ",
+      "transliteration": "zhill",
+      "translation": "naungan, bayangan",
+      "word_type": "noun",
+      "root": "ظ-ل-ل",
+      "forms": {
+        "singular": "ظِلّ",
+        "plural": "ظِلَال / ظُلُول"
+      },
+      "related_words": [
+        { "arabic": "فَيْء", "translation": "bayangan sore" },
+        { "arabic": "حَرّ", "translation": "panas" },
+        { "arabic": "شَمْس", "translation": "matahari" }
+      ],
+      "quran_example": {
+        "arabic": "وَظِلٍّۢ مَّمْدُودٍۢ",
+        "translation": "dan naungan yang terbentang luas,",
+        "surah": "Al-Waaqia",
+        "ayah": 30
+      }
+    },
+    {
+      "id": 299,
+      "arabic": "مَطَر",
+      "transliteration": "mathar",
+      "translation": "hujan",
+      "word_type": "noun",
+      "root": "م-ط-ر",
+      "forms": {
+        "singular": "مَطَر",
+        "plural": "أَمْطَار"
+      },
+      "related_words": [
+        { "arabic": "غَيْث", "translation": "hujan (yang menyuburkan)" },
+        { "arabic": "سَحَاب", "translation": "awan" },
+        { "arabic": "رِيح", "translation": "angin" }
+      ],
+      "quran_example": {
+        "arabic": "وَأَمْطَرْنَا عَلَيْهِم مَّطَرًۭا ۖ فَٱنظُرْ كَيْفَ كَانَ عَٰقِبَةُ ٱلْمُجْرِمِينَ",
+        "translation": "Dan Kami turunkan kepada mereka hujan (batu); maka perhatikanlah bagaimana kesudahan orang-orang yang berdosa itu.",
+        "surah": "Al-A'raaf",
+        "ayah": 84
+      }
+    },
+    {
+      "id": 300,
+      "arabic": "يَتِيم",
+      "transliteration": "yatiim",
+      "translation": "anak yatim",
+      "word_type": "noun",
+      "root": "ي-ت-م",
+      "forms": {
+        "singular": "يَتِيم",
+        "plural": "يَتَامَى / أَيْتَام"
+      },
+      "related_words": [
+        { "arabic": "مِسْكِين", "translation": "orang miskin" },
+        { "arabic": "فَقِير", "translation": "orang fakir" },
+        { "arabic": "صَدَقَة", "translation": "sedekah" }
+      ],
+      "quran_example": {
+        "arabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+        "translation": "Sebab itu, terhadap anak yatim janganlah kamu berlaku sewenang-wenang.",
+        "surah": "Ad-Dhuhaa",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 301,
+      "arabic": "مِسْكِين",
+      "transliteration": "miskiin",
+      "translation": "orang miskin",
+      "word_type": "noun",
+      "root": "س-ك-ن",
+      "forms": {
+        "singular": "مِسْكِين",
+        "plural": "مَسَاكِين"
+      },
+      "related_words": [
+        { "arabic": "فَقِير", "translation": "orang fakir" },
+        { "arabic": "يَتِيم", "translation": "anak yatim" },
+        { "arabic": "صَدَقَة", "translation": "sedekah" }
+      ],
+      "quran_example": {
+        "arabic": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+        "translation": "dan tidak menganjurkan memberi makan orang miskin.",
+        "surah": "Al-Maa'un",
+        "ayah": 3
+      }
+    }
+  ]
+}
