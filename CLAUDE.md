@@ -18,6 +18,7 @@ npm run dev                      # Vite dev server
 npm run build                    # tsc type-check + vite build (build base path is /arabic-flashcard/)
 npm run preview                  # serve the production build
 npm run generate-manifest        # rebuild src/data/flashcards/manifest.json from all deck JSON files
+npm run generate-qs-manifest     # rebuild src/data/qs-breakdown/qs-manifest.json from all breakdown files
 ```
 
 There is no test runner or linter; `tsc` (run as part of `build`) is the only static check. `tsconfig.json` enables `noUnusedLocals` / `noUnusedParameters`, so unused symbols fail the build.
@@ -29,6 +30,12 @@ There is no test runner or linter; `tsc` (run as part of `build`) is the only st
 - `#deck/<id>` → flashcard viewer ([src/pages/flashcard.ts](src/pages/flashcard.ts))
 - `#deck/<id>/quiz` → per-deck quiz ([src/pages/quiz.ts](src/pages/quiz.ts))
 - `#test` → 50-question exam across all decks ([src/pages/test.ts](src/pages/test.ts))
+- `#qs` → navigation page with the Surah Breakdown tab active
+- `#qs/<id>` → word-by-word verse reader ([src/pages/qs-breakdown.ts](src/pages/qs-breakdown.ts))
+
+The navigation page ([src/pages/navigation.ts](src/pages/navigation.ts)) has two tabs — **Flashcard** (deck grid, route ``) and **Surah Breakdown** (route `#qs`). The active tab is driven by the hash, not internal state, so the QS reader's back button (`#qs`) returns to the right tab.
+
+**Surah Breakdown** is a separate learning module from decks (not a flashcard). It renders a contiguous range of Quran verses for *reading comprehension*: each verse shows full Arabic + Indonesian translation, and tapping any word reveals a gentle, beginner-level grammar card (`ism`/`fi'l`/`harf` type, root, contextual meaning, optional note). Data lives in [src/data/qs-breakdown/](src/data/qs-breakdown/) as `{surah}_{from}-{to}.json` files (one passage per file), normalized by [src/data/qs-breakdown/index.ts](src/data/qs-breakdown/index.ts); `qs-manifest.json` is generated, never hand-edited. Generate new passages with the `/qs-breakdown <surah> <from> <to>` command ([.claude/commands/qs-breakdown.md](.claude/commands/qs-breakdown.md)), then run `npm run generate-qs-manifest`.
 
 Each page module exports a `render*(container, ...)` function that owns its own `innerHTML` and event wiring. There is no shared component layer or virtual DOM — pages re-render by reassigning `innerHTML`. Scores persist in `localStorage`.
 

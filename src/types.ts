@@ -35,6 +35,48 @@ export interface Deck {
   cards: Card[]
 }
 
+// ── QS Breakdown types (verse-by-verse grammatical reader) ────────────────────
+
+export type WordType = 'ism' | "fi'l" | 'harf'
+
+export interface QsWord {
+  arabic: string
+  transliteration: string
+  meaning: string          // Indonesian, contextual
+  type: WordType
+  root?: string            // 3-letter root, e.g. "ب ر ك" (omit for harf with no root)
+  notes?: string           // optional single gentle Indonesian note
+}
+
+export interface QsVerse {
+  ayah: number
+  arabic: string           // uthmani full verse
+  translation: string      // Indonesian
+  words: QsWord[]
+}
+
+export interface QsBreakdown {
+  id: string               // e.g. "25_1-10"
+  surah: number
+  surahName: string
+  from: number
+  to: number
+  title: string
+  description: string      // Indonesian
+  verses: QsVerse[]
+}
+
+export interface QsMeta {
+  id: string
+  surah: number
+  surahName: string
+  from: number
+  to: number
+  title: string
+  description: string
+  verseCount: number
+}
+
 // ── Raw JSON types ────────────────────────────────────────────────────────────
 
 interface QuranExample {

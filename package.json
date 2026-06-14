@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "generate-manifest": "node scripts/generate-manifest.js"
+    "generate-manifest": "node scripts/generate-manifest.js",
+    "generate-qs-manifest": "node scripts/generate-qs-manifest.js"
   },
   "devDependencies": {
     "typescript": "~6.0.2",

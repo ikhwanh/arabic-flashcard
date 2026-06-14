@@ -1,18 +1,19 @@
 import { loadAllCards } from '../data/flashcards'
 import type { Card } from '../types'
 
-const TEST_SIZE = 50
+const DEFAULT_TEST_SIZE = 50
 
 export interface ExamConfig {
   key: string
   title: string
   range?: [number, number]
+  size?: number
 }
 
 const EXAMS: Record<string, ExamConfig> = {
   '1-15':  { key: 'test_score_1_15',  title: 'Exam 1', range: [1, 15] },
   '16-30': { key: 'test_score_16_30', title: 'Exam 2', range: [16, 30] },
-  all:     { key: 'test_score',       title: 'Final Exam' },
+  all:     { key: 'test_score',       title: 'Final Exam', size: 100 },
 }
 
 function resolveExam(slug?: string): ExamConfig {
@@ -59,11 +60,12 @@ function generateAyatQuestion(card: Card, ayatCards: Card[]): Question {
   }
 }
 
-function buildTestQuestions(cards: Card[]): Question[] {
+function buildTestQuestions(cards: Card[], size: number): Question[] {
   const ayatCards = cards.filter(c => c.quranExample)
 
-  const ayatCount = ayatCards.length >= 4 ? Math.min(15, ayatCards.length) : 0
-  const wordCount = TEST_SIZE - ayatCount
+  const ayatCap = Math.round(size * 0.3)
+  const ayatCount = ayatCards.length >= 4 ? Math.min(ayatCap, ayatCards.length) : 0
+  const wordCount = size - ayatCount
 
   const wordQuestions = pickRandom(cards, Math.min(wordCount, cards.length))
     .map(c => generateWordQuestion(c, cards))
@@ -95,7 +97,7 @@ export async function renderTest(container: HTMLElement, slug?: string) {
     return
   }
 
-  const questions = buildTestQuestions(cards)
+  const questions = buildTestQuestions(cards, exam.size ?? DEFAULT_TEST_SIZE)
   let currentIndex = 0
   let score = 0
   let answered = false

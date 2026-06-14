@@ -1,4 +1,7 @@
 import { deckMetas } from '../data/flashcards'
+import { qsMetas } from '../data/qs-breakdown'
+
+type NavTab = 'flashcard' | 'breakdown'
 
 function getQuizScore(deckId: string): string | null {
   return localStorage.getItem(`quiz_score_${deckId}`)
@@ -82,38 +85,75 @@ function renderDeckGrid(container: HTMLElement, filterUnfinished: boolean) {
 
 }
 
+function renderBreakdownGrid(container: HTMLElement) {
+  const grid = container.querySelector<HTMLElement>('.qs-index-grid')!
+  grid.innerHTML = qsMetas.length === 0
+    ? `<p class="nav-empty">No breakdowns yet. Generate one with the qs-breakdown command.</p>`
+    : qsMetas.map(m => `
+        <button class="qs-index-card" data-id="${m.id}">
+          <span class="qs-index-surah">QS ${m.surah} · ${m.surahName}</span>
+          <h3 class="qs-index-title">${m.title}</h3>
+          <p class="qs-index-desc">${m.description}</p>
+          <span class="qs-index-count">Ayat ${m.from}–${m.to} · ${m.verseCount} ayat</span>
+        </button>
+      `).join('')
+
+  grid.querySelectorAll<HTMLButtonElement>('.qs-index-card').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.hash = `qs/${btn.dataset.id!}`
+    })
+  })
+}
+
 function syncResetAllButton(container: HTMLElement) {
   const btn = container.querySelector<HTMLButtonElement>('.btn-reset-all')
   if (btn) btn.disabled = !hasAnyProgress()
 }
 
-export function renderNavigation(container: HTMLElement) {
+export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'flashcard') {
   let filterUnfinished = false
+
+  const flashcardSection = `
+    <div class="nav-hero">
+      <h2>Choose a Deck</h2>
+      <p class="nav-subtitle">Select a category to start studying</p>
+    </div>
+    <div class="nav-toolbar">
+      <div class="nav-filters">
+        <button class="nav-filter-chip" data-filter="unfinished">Unfinished</button>
+      </div>
+      <div class="nav-menu">
+        <button class="nav-menu-trigger" aria-label="Options" aria-haspopup="true" aria-expanded="false">⋮</button>
+        <div class="nav-menu-dropdown" hidden>
+          <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 1–15</span></button>
+          <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 16–30</span></button>
+          <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">All of Kosakata Al-Quran</span></button>
+          <div class="nav-menu-divider"></div>
+          <button class="nav-menu-item btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
+        </div>
+      </div>
+    </div>
+    <div class="deck-grid"></div>
+  `
+
+  const breakdownSection = `
+    <div class="nav-hero">
+      <h2>Surah Breakdown</h2>
+      <p class="nav-subtitle">Read verses word by word</p>
+    </div>
+    <div class="qs-index-grid"></div>
+  `
 
   container.innerHTML = `
     <div class="nav-page">
-      <div class="nav-hero">
-        <h2>Choose a Deck</h2>
-        <p class="nav-subtitle">Select a category to start studying</p>
-      </div>
-      <div class="nav-toolbar">
-        <div class="nav-filters">
-          <button class="nav-filter-chip" data-filter="unfinished">Unfinished</button>
-        </div>
-        <div class="nav-menu">
-          <button class="nav-menu-trigger" aria-label="Options" aria-haspopup="true" aria-expanded="false">⋮</button>
-          <div class="nav-menu-dropdown" hidden>
-            <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 1–15</span></button>
-            <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Kosakata Al-Quran · Part 16–30</span></button>
-            <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">All of Kosakata Al-Quran</span></button>
-            <div class="nav-menu-divider"></div>
-            <button class="nav-menu-item btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
-          </div>
-        </div>
-      </div>
-      <div class="deck-grid"></div>
+      ${activeTab === 'flashcard' ? flashcardSection : breakdownSection}
     </div>
   `
+
+  if (activeTab === 'breakdown') {
+    renderBreakdownGrid(container)
+    return
+  }
 
   renderDeckGrid(container, filterUnfinished)
 
