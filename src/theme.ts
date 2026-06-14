@@ -1,6 +1,15 @@
-type Theme = 'light' | 'dark'
+type Theme = 'light' | 'dark' | 'sand' | 'tundra'
 
 const STORAGE_KEY = 'theme'
+
+const THEMES: Theme[] = ['light', 'dark', 'sand', 'tundra']
+
+const THEME_META: Record<Theme, { icon: string; label: string }> = {
+  light: { icon: '☀️', label: 'Light' },
+  dark: { icon: '🌙', label: 'Dark' },
+  sand: { icon: '🏜️', label: 'Melancholy Sand' },
+  tundra: { icon: '🌲', label: 'Greeny Tundra' },
+}
 
 function getSystemTheme(): Theme {
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
@@ -8,7 +17,7 @@ function getSystemTheme(): Theme {
 
 function getStoredTheme(): Theme | null {
   const stored = localStorage.getItem(STORAGE_KEY)
-  return stored === 'light' || stored === 'dark' ? stored : null
+  return THEMES.includes(stored as Theme) ? (stored as Theme) : null
 }
 
 function applyTheme(theme: Theme) {
@@ -21,14 +30,15 @@ export function initTheme(button: HTMLButtonElement) {
   applyTheme(current)
 
   const updateIcon = () => {
-    button.textContent = current === 'dark' ? '☀️' : '🌙'
-    button.setAttribute('aria-label', `Switch to ${current === 'dark' ? 'light' : 'dark'} theme`)
+    const next = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length]
+    button.textContent = THEME_META[current].icon
+    button.setAttribute('aria-label', `Theme: ${THEME_META[current].label}. Switch to ${THEME_META[next].label}`)
   }
 
   updateIcon()
 
   button.addEventListener('click', () => {
-    current = current === 'dark' ? 'light' : 'dark'
+    current = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length]
     applyTheme(current)
     updateIcon()
   })
