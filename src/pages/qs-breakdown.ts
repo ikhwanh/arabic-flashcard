@@ -60,55 +60,88 @@ export async function renderQsBreakdown(container: HTMLElement, id: string) {
     return
   }
 
-  // active[verseIndex] = wordIndex currently expanded, or undefined
-  const active: Record<number, number | undefined> = {}
-  let hasInteracted = false
-
-  function render() {
-    container.innerHTML = `
-      <div class="qs-page">
-        <div class="qs-header">
-          <button class="btn-back">← Back</button>
-          <span class="qs-deck-title">QS ${bd!.surah} · ${bd!.surahName}</span>
-          <span class="qs-range">${bd!.from}–${bd!.to}</span>
-        </div>
-
-        ${hasInteracted ? '' : `
-          <p class="qs-tip">👆 Tap any word to see its meaning and grammar</p>
-        `}
-
-        <div class="qs-verses">
-          ${bd!.verses.map((verse, vi) => `
-            <div class="qs-verse">
-              <span class="qs-ayah-num">${verse.ayah}</span>
-              <div class="qs-arabic" dir="rtl">
-                ${verse.words.map((w, wi) => `
-                  <button class="qs-word ${active[vi] === wi ? 'active' : ''}"
-                          data-vi="${vi}" data-wi="${wi}">${w.arabic}</button>
-                `).join(' ')}
-              </div>
-              ${active[vi] !== undefined ? wordDetail(verse.words[active[vi]!]) : ''}
-              <p class="qs-translation">${verse.translation}</p>
-            </div>
-          `).join('')}
-        </div>
+  container.innerHTML = `
+    <div class="qs-page">
+      <div class="qs-header">
+        <button class="btn-back">← Back</button>
+        <span class="qs-deck-title">QS ${bd.surah} · ${bd.surahName}</span>
+        <span class="qs-range">${bd.from}–${bd.to}</span>
       </div>
-    `
 
-    container.querySelector('.btn-back')!.addEventListener('click', () => {
-      window.location.hash = 'qs'
-    })
+      <p class="qs-tip">👆 Tap any word to see its meaning and grammar</p>
 
-    container.querySelectorAll<HTMLButtonElement>('.qs-word').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const vi = Number(btn.dataset.vi)
-        const wi = Number(btn.dataset.wi)
-        active[vi] = active[vi] === wi ? undefined : wi
-        hasInteracted = true
-        render()
-      })
-    })
+      <div class="qs-verses">
+        ${bd.verses.map((verse, vi) => `
+          <div class="qs-verse">
+            <span class="qs-ayah-num">${verse.ayah}</span>
+            <div class="qs-arabic" dir="rtl">
+              ${verse.words.map((w, wi) => `
+                <button class="qs-word" data-vi="${vi}" data-wi="${wi}">${w.arabic}</button>
+              `).join(' ')}
+            </div>
+            <p class="qs-translation">${verse.translation}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="qs-sheet" hidden>
+      <div class="qs-sheet-backdrop"></div>
+      <div class="qs-sheet-panel" role="dialog" aria-modal="true">
+        <div class="qs-sheet-handle"></div>
+        <button class="qs-sheet-close" aria-label="Close">✕</button>
+        <div class="qs-sheet-body"></div>
+      </div>
+    </div>
+  `
+
+  const sheet = container.querySelector<HTMLElement>('.qs-sheet')!
+  const sheetBody = container.querySelector<HTMLElement>('.qs-sheet-body')!
+  const tip = container.querySelector<HTMLElement>('.qs-tip')
+
+  // The word button currently expanded (so re-tapping it closes the sheet).
+  let activeBtn: HTMLButtonElement | null = null
+
+  function closeSheet() {
+    sheet.hidden = true
+    sheet.classList.remove('open')
+    activeBtn?.classList.remove('active')
+    activeBtn = null
   }
 
-  render()
+  function openSheet(btn: HTMLButtonElement, word: QsWord) {
+    activeBtn?.classList.remove('active')
+    activeBtn = btn
+    btn.classList.add('active')
+    sheetBody.innerHTML = wordDetail(word)
+    sheet.hidden = false
+    // Force reflow so the transition runs when toggling .open.
+    void sheet.offsetWidth
+    sheet.classList.add('open')
+  }
+
+  container.querySelector('.btn-back')!.addEventListener('click', () => {
+    window.location.hash = 'qs'
+  })
+
+  container.querySelectorAll<HTMLButtonElement>('.qs-word').forEach(btn => {
+    btn.addEventListener('click', () => {
+      tip?.remove()
+      if (activeBtn === btn) {
+        closeSheet()
+        return
+      }
+      const vi = Number(btn.dataset.vi)
+      const wi = Number(btn.dataset.wi)
+      openSheet(btn, bd.verses[vi].words[wi])
+    })
+  })
+
+  container.querySelector('.qs-sheet-backdrop')!.addEventListener('click', closeSheet)
+  container.querySelector('.qs-sheet-close')!.addEventListener('click', closeSheet)
+  document.addEventListener('keydown', function onKey(e) {
+    if (e.key === 'Escape' && !sheet.hidden) closeSheet()
+    // Detach once the page is replaced (sheet removed from DOM).
+    if (!document.contains(sheet)) document.removeEventListener('keydown', onKey)
+  })
 }

@@ -1029,15 +1029,72 @@ body {
   line-height: 1.5;
 }
 
+/* ── Word detail bottom sheet ────────────────────────────────────────────── */
+.qs-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.qs-sheet[hidden] { display: none; }
+
+.qs-sheet-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.qs-sheet.open .qs-sheet-backdrop { opacity: 1; }
+
+.qs-sheet-panel {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 1.5rem 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.18);
+  transform: translateY(100%);
+  transition: transform 0.25s ease;
+}
+.qs-sheet.open .qs-sheet-panel { transform: translateY(0); }
+
+.qs-sheet-handle {
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: -0.5rem auto 0.9rem;
+  background: var(--border);
+  border-radius: 999px;
+}
+.qs-sheet-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.9rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.qs-sheet-close:hover { color: var(--text); }
+
 .qs-detail {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 0.85rem 1rem;
-  margin: 0.5rem 0;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  gap: 0.65rem;
 }
 .qs-detail-head {
   display: flex;
