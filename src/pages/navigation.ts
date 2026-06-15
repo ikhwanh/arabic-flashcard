@@ -46,12 +46,8 @@ function hasAnyProgress(): boolean {
   return deckMetas.some(d => getQuizScore(d.id) !== null || getLastVisited(d.id) > 0)
 }
 
-function deckLabel(deck: { title: string; cardCount: number }): string {
-  const part = Number(deck.title.match(/Part (\d+)/)?.[1])
-  if (!part) return deck.title
-  const start = (part - 1) * 10 + 1
-  const end = start + deck.cardCount - 1
-  return `Kata ${start}–${end}`
+function deckLabel(deck: { title: string }): string {
+  return deck.title.replace(/^Kosakata Al-Quran - /, '')
 }
 
 function renderDeckGrid(container: HTMLElement, filterUnfinished: boolean) {
@@ -68,6 +64,7 @@ function renderDeckGrid(container: HTMLElement, filterUnfinished: boolean) {
           <button class="deck-card-study" data-deck-id="${deck.id}" aria-label="Study ${deck.title}">
             ${score !== null ? `<span class="deck-score-chip">${score}</span>` : ''}
             <h3 class="deck-title">${deckLabel(deck)}</h3>
+            <p class="deck-preview">${deck.preview.join(' · ')}</p>
           </button>
           <div class="deck-card-footer">
             <span class="deck-count">${deck.cardCount} cards</span>
@@ -131,10 +128,10 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
       <div class="nav-menu">
         <button class="nav-menu-trigger" aria-label="Options" aria-haspopup="true" aria-expanded="false">⋮</button>
         <div class="nav-menu-dropdown" hidden>
-          <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Kata 1–150</span></button>
-          <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Kata 151–300</span></button>
-          <button class="nav-menu-item" data-exam="31-45">Exam 3 <span class="nav-menu-item-sub">Kata 301–450</span></button>
-          <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">Semua kata</span></button>
+          <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Part 1–15</span></button>
+          <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Part 16–30</span></button>
+          <button class="nav-menu-item" data-exam="31-45">Exam 3 <span class="nav-menu-item-sub">Part 31–45</span></button>
+          <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">Semua part</span></button>
           <div class="nav-menu-divider"></div>
           <button class="nav-menu-item btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>
         </div>

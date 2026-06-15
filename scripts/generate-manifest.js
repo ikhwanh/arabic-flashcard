@@ -32,6 +32,7 @@ for (const filename of files) {
         description: group.group_description,
         emoji: existingEmoji[group.id] ?? '📌',
         cardCount: group.words.length,
+        preview: group.words.slice(0, 3).map(w => w.arabic),
       });
     }
   } else if (data.cards) {
@@ -44,6 +45,7 @@ for (const filename of files) {
       description: data.meta.description,
       emoji: existingEmoji[id] ?? '📖',
       cardCount: data.cards.length,
+      preview: data.cards.slice(0, 3).map(c => c.arabic),
     });
   }
 }

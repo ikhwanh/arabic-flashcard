@@ -25,6 +25,7 @@ export interface DeckMeta {
   description: string
   emoji: string
   cardCount: number
+  preview: string[]
 }
 
 export interface Deck {
