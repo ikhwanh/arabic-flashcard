@@ -26,6 +26,9 @@ interface Question {
   promptLabel: string
   correct: string
   options: string[]
+  ayatArabic?: string
+  ayatRef?: string
+  ayatTranslation?: string
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -48,34 +51,15 @@ function generateWordQuestion(card: Card, allCards: Card[]): Question {
     promptLabel: 'What does this word mean?',
     correct: card.indonesian,
     options: shuffle([card.indonesian, ...distractors]),
-  }
-}
-
-function generateAyatQuestion(card: Card, ayatCards: Card[]): Question {
-  const distractors = pickRandom(ayatCards.filter(c => c.id !== card.id), 3).map(c => c.quranExample!.translation)
-  return {
-    prompt: `${card.quranExample!.arabic}\n<span class="quiz-prompt-ref">${card.quranExample!.surah} ${card.quranExample!.ayah}</span>`,
-    promptLabel: 'What is the translation of this verse?',
-    correct: card.quranExample!.translation,
-    options: shuffle([card.quranExample!.translation, ...distractors]),
+    ayatArabic: card.quranExample?.arabic,
+    ayatRef: card.quranExample ? `${card.quranExample.surah} ${card.quranExample.ayah}` : undefined,
+    ayatTranslation: card.quranExample?.translation,
   }
 }
 
 function buildTestQuestions(cards: Card[], size: number): Question[] {
-  const ayatCards = cards.filter(c => c.quranExample)
-
-  const ayatCap = Math.round(size * 0.3)
-  const ayatCount = ayatCards.length >= 4 ? Math.min(ayatCap, ayatCards.length) : 0
-  const wordCount = size - ayatCount
-
-  const wordQuestions = pickRandom(cards, Math.min(wordCount, cards.length))
+  return pickRandom(cards, Math.min(size, cards.length))
     .map(c => generateWordQuestion(c, cards))
-
-  const ayatQuestions = ayatCount > 0
-    ? pickRandom(ayatCards, ayatCount).map(c => generateAyatQuestion(c, ayatCards))
-    : []
-
-  return shuffle([...wordQuestions, ...ayatQuestions])
 }
 
 function saveScore(key: string, score: number, total: number) {
@@ -118,7 +102,16 @@ export async function renderTest(container: HTMLElement, slug?: string) {
 
         <div class="quiz-body">
           <p class="quiz-label">${q.promptLabel}</p>
-          <div class="quiz-prompt">${q.prompt.replace(/\n/g, '<br>')}</div>
+          <div class="quiz-prompt">
+            ${q.ayatArabic ? `<button class="btn-quiz-hint" id="btn-hint">💡 Hint</button>` : ''}
+            <span class="quiz-word">${q.prompt}</span>
+            ${q.ayatArabic ? `
+              <div class="quiz-ayat">
+                <span class="quiz-ayat-arabic">${q.ayatArabic}</span>
+                <span class="quiz-ayat-ref">${q.ayatRef}</span>
+                <span class="quiz-ayat-translation" id="ayat-translation" style="display:none">${q.ayatTranslation}</span>
+              </div>` : ''}
+          </div>
 
           <div class="quiz-options">
             ${q.options.map(opt => `
@@ -137,10 +130,20 @@ export async function renderTest(container: HTMLElement, slug?: string) {
       window.location.hash = ''
     })
 
+    const revealAyat = () => {
+      const translation = container.querySelector<HTMLElement>('#ayat-translation')
+      if (translation) translation.style.display = 'block'
+      const hint = container.querySelector<HTMLElement>('#btn-hint')
+      if (hint) hint.style.display = 'none'
+    }
+
+    container.querySelector('#btn-hint')?.addEventListener('click', revealAyat)
+
     container.querySelectorAll<HTMLButtonElement>('.quiz-option').forEach(btn => {
       btn.addEventListener('click', () => {
         if (answered) return
         answered = true
+        revealAyat()
 
         const chosen = decodeURIComponent(btn.dataset.value!)
         const isCorrect = chosen === q.correct

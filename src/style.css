@@ -788,16 +788,24 @@ body {
 }
 
 .quiz-prompt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem 1.25rem;
-  font-size: 1.6rem;
-  direction: rtl;
-  line-height: 1.8;
   text-align: center;
   width: 100%;
   box-shadow: var(--shadow);
+}
+
+.quiz-word {
+  font-size: 1.6rem;
+  direction: rtl;
+  line-height: 1.8;
 }
 
 .quiz-prompt-ref {
@@ -807,6 +815,56 @@ body {
   color: var(--accent);
   font-weight: 500;
   margin-top: 0.25rem;
+}
+
+.quiz-ayat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.quiz-ayat-arabic {
+  direction: rtl;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.quiz-ayat-ref {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.quiz-ayat-translation {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  border-top: 1px dashed var(--border);
+  padding-top: 0.6rem;
+}
+
+.btn-quiz-hint {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-quiz-hint:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 .quiz-options {
