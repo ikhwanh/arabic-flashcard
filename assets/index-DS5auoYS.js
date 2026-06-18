@@ -1,0 +1,303 @@
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`theme`,t=[`light`,`dark`,`sand`,`tundra`],n={light:{icon:`☀️`,label:`Light`},dark:{icon:`🌙`,label:`Dark`},sand:{icon:`🏜️`,label:`Melancholy Sand`},tundra:{icon:`🌲`,label:`Greeny Tundra`}};function r(){return window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`}function i(){let n=localStorage.getItem(e);return t.includes(n)?n:null}function a(t){document.documentElement.setAttribute(`data-theme`,t),localStorage.setItem(e,t)}function o(e){let o=i()??r();a(o);let s=()=>{let r=t[(t.indexOf(o)+1)%t.length];e.textContent=n[o].icon,e.setAttribute(`aria-label`,`Theme: ${n[o].label}. Switch to ${n[r].label}`)};s(),e.addEventListener(`click`,()=>{o=t[(t.indexOf(o)+1)%t.length],a(o),s()}),window.matchMedia(`(prefers-color-scheme: dark)`).addEventListener(`change`,e=>{i()||(o=e.matches?`dark`:`light`,a(o),s())})}var s=JSON.parse(`[{"id":"kosakata-al-quran---part-1","file":"1.json","title":"Kosakata Al-Quran - Part 1","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["رَبّ","رَحْمَة","عِلْم"]},{"id":"kosakata-al-quran---part-2","file":"2.json","title":"Kosakata Al-Quran - Part 2","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["قَالَ","كَانَ","آيَة"]},{"id":"kosakata-al-quran---part-3","file":"3.json","title":"Kosakata Al-Quran - Part 3","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["كُلّ","شَيْء","عَبْد"]},{"id":"kosakata-al-quran---part-4","file":"4.json","title":"Kosakata Al-Quran - Part 4","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["جَعَلَ","ذَٰلِك","جَاءَ"]},{"id":"kosakata-al-quran---part-5","file":"5.json","title":"Kosakata Al-Quran - Part 5","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["عَمَل","شَاءَ","آتَى"]},{"id":"kosakata-al-quran---part-6","file":"6.json","title":"Kosakata Al-Quran - Part 6","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["دِين","رَحِيم","دَعَا"]},{"id":"kosakata-al-quran---part-7","file":"7.json","title":"Kosakata Al-Quran - Part 7","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أَرَادَ","عَظِيم","مُسْلِم"]},{"id":"kosakata-al-quran---part-8","file":"8.json","title":"Kosakata Al-Quran - Part 8","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["رَأَى","وَعَدَ","أَجْر"]},{"id":"kosakata-al-quran---part-9","file":"9.json","title":"Kosakata Al-Quran - Part 9","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["بَعْد","قَبْل","سَأَلَ"]},{"id":"kosakata-al-quran---part-10","file":"10.json","title":"Kosakata Al-Quran - Part 10","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["عَلِيم","حَكِيم","عَزِيز"]},{"id":"kosakata-al-quran---part-11","file":"11.json","title":"Kosakata Al-Quran - Part 11","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["قُلْ","عَلِمَ","كَذَّبَ"]},{"id":"kosakata-al-quran---part-12","file":"12.json","title":"Kosakata Al-Quran - Part 12","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["إِلَٰه","رَحْمَٰن","سَلَام"]},{"id":"kosakata-al-quran---part-13","file":"13.json","title":"Kosakata Al-Quran - Part 13","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["قَدَرَ","وَلِيّ","اسْم"]},{"id":"kosakata-al-quran---part-14","file":"14.json","title":"Kosakata Al-Quran - Part 14","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["سَمِعَ","يَد","مُسْتَقِيم"]},{"id":"kosakata-al-quran---part-15","file":"15.json","title":"Kosakata Al-Quran - Part 15","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["ضَلَّ","سَجَدَ","قَرَأَ"]},{"id":"kosakata-al-quran---part-16","file":"16.json","title":"Kosakata Al-Quran - Part 16","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["هَذَا","كَتَبَ","عَدُوّ"]},{"id":"kosakata-al-quran---part-17","file":"17.json","title":"Kosakata Al-Quran - Part 17","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["قُرْآن","إِسْلَام","صَدَقَة"]},{"id":"kosakata-al-quran---part-18","file":"18.json","title":"Kosakata Al-Quran - Part 18","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["قَضَى","نَزَلَ","خَرَجَ"]},{"id":"kosakata-al-quran---part-19","file":"19.json","title":"Kosakata Al-Quran - Part 19","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["عِبَادَة","غَفَرَ","إِخْلَاص"]},{"id":"kosakata-al-quran---part-20","file":"20.json","title":"Kosakata Al-Quran - Part 20","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["قَوْل","جَزَاء","تَرَكَ"]},{"id":"kosakata-al-quran---part-21","file":"21.json","title":"Kosakata Al-Quran - Part 21","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["سَيِّئَة","مَصِير","أَكْثَر"]},{"id":"kosakata-al-quran---part-22","file":"22.json","title":"Kosakata Al-Quran - Part 22","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["إِلَّا","أَرْسَلَ","شَدِيدٌ"]},{"id":"kosakata-al-quran---part-23","file":"23.json","title":"Kosakata Al-Quran - Part 23","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["إِذْ","قَدْ","أَمَّا"]},{"id":"kosakata-al-quran---part-24","file":"24.json","title":"Kosakata Al-Quran - Part 24","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أَنَّ","هُوَ","هُمْ"]},{"id":"kosakata-al-quran---part-25","file":"25.json","title":"Kosakata Al-Quran - Part 25","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أَنَا","نَحْنُ","هِيَ"]},{"id":"kosakata-al-quran---part-26","file":"26.json","title":"Kosakata Al-Quran - Part 26","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أَنْتَ","تَبِعَ","نَفَعَ"]},{"id":"kosakata-al-quran---part-27","file":"27.json","title":"Kosakata Al-Quran - Part 27","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أُولَٰئِكَ","أَعَدَّ","وَرِثَ"]},{"id":"kosakata-al-quran---part-28","file":"28.json","title":"Kosakata Al-Quran - Part 28","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["تَابَ","عَصَى","أَطَاعَ"]},{"id":"kosakata-al-quran---part-29","file":"29.json","title":"Kosakata Al-Quran - Part 29","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["مَال","قَتَلَ","شَمْس"]},{"id":"kosakata-al-quran---part-30","file":"30.json","title":"Kosakata Al-Quran - Part 30","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أُمّ","اِبْن","نَجْم"]},{"id":"kosakata-al-quran---part-31","file":"31.json","title":"Kosakata Al-Quran - Part 31","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["خَبِير","لَطِيف","قَوِيّ"]},{"id":"kosakata-al-quran---part-32","file":"32.json","title":"Kosakata Al-Quran - Part 32","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["نَعِيم","جَحِيم","حَمِيد"]},{"id":"kosakata-al-quran---part-33","file":"33.json","title":"Kosakata Al-Quran - Part 33","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أَحْسَن","سَنَة","عَام"]},{"id":"kosakata-al-quran---part-34","file":"34.json","title":"Kosakata Al-Quran - Part 34","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["عَسَل","خَمْر","لَحْم"]},{"id":"kosakata-al-quran---part-35","file":"35.json","title":"Kosakata Al-Quran - Part 35","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["حُزْن","غَضَب","رَضِيَ"]},{"id":"kosakata-al-quran---part-36","file":"36.json","title":"Kosakata Al-Quran - Part 36","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["وَصَلَ","قَطَعَ","بَنَى"]},{"id":"kosakata-al-quran---part-37","file":"37.json","title":"Kosakata Al-Quran - Part 37","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["نَقَضَ","وَعَظَ","نَوْم"]},{"id":"kosakata-al-quran---part-38","file":"38.json","title":"Kosakata Al-Quran - Part 38","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["تِين","رُمَّان","فَاكِهَة"]},{"id":"kosakata-al-quran---part-39","file":"39.json","title":"Kosakata Al-Quran - Part 39","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["لُؤْلُؤ","حَرِير","سَحَاب"]},{"id":"kosakata-al-quran---part-40","file":"40.json","title":"Kosakata Al-Quran - Part 40","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["بَقَرَة","غَنَم","نَحْل"]},{"id":"kosakata-al-quran---part-41","file":"41.json","title":"Kosakata Al-Quran - Part 41","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["أُخْت","بِنْت","جَدّ"]},{"id":"kosakata-al-quran---part-42","file":"42.json","title":"Kosakata Al-Quran - Part 42","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["جِنّ","حُور","وِلْدَان"]},{"id":"kosakata-al-quran---part-43","file":"43.json","title":"Kosakata Al-Quran - Part 43","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["ضُحَى","عَصْر","عَشِيّ"]},{"id":"kosakata-al-quran---part-44","file":"44.json","title":"Kosakata Al-Quran - Part 44","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["بَلَد","طَرِيق","سُور"]},{"id":"kosakata-al-quran---part-45","file":"45.json","title":"Kosakata Al-Quran - Part 45","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["فَم","شَفَة","جِلْد"]},{"id":"kosakata-al-quran---part-46","file":"46.json","title":"Kosakata Al-Quran - Part 46","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["طِين","تُرَاب","دُخَان"]},{"id":"kosakata-al-quran---part-47","file":"47.json","title":"Kosakata Al-Quran - Part 47","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["وَرَق","زَهْرَة","سُنْبُلَة"]},{"id":"kosakata-al-quran---part-48","file":"48.json","title":"Kosakata Al-Quran - Part 48","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["حِجَاب","بُرْهَان","سُلْطَان"]},{"id":"kosakata-al-quran---part-49","file":"49.json","title":"Kosakata Al-Quran - Part 49","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["حَسَد","عَفْو","رَأْفَة"]},{"id":"kosakata-al-quran---part-50","file":"50.json","title":"Kosakata Al-Quran - Part 50","description":"Kata-kata bermakna yang paling sering muncul di Al-Quran","emoji":"📖","cardCount":10,"preview":["زَعَمَ","وَدَّ","يَئِسَ"]}]`),c=`modulepreload`,l=function(e){return`/arabic-flashcard/`+e},u={},d=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=l(t,n),t in u)return;u[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:c,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})},f=s,p=Object.assign({"./1.json":()=>d(()=>import(`./1-BY9HUKhi.js`).then(e=>e.default),[]),"./10.json":()=>d(()=>import(`./10-BVxsw477.js`).then(e=>e.default),[]),"./11.json":()=>d(()=>import(`./11-aRlhkRex.js`).then(e=>e.default),[]),"./12.json":()=>d(()=>import(`./12-BXooq2Tp.js`).then(e=>e.default),[]),"./13.json":()=>d(()=>import(`./13-5I3k22Ac.js`).then(e=>e.default),[]),"./14.json":()=>d(()=>import(`./14-DSnG5Ggx.js`).then(e=>e.default),[]),"./15.json":()=>d(()=>import(`./15-Qgn3AVqc.js`).then(e=>e.default),[]),"./16.json":()=>d(()=>import(`./16-BTmKUV5A.js`).then(e=>e.default),[]),"./17.json":()=>d(()=>import(`./17-D1Q-W4gB.js`).then(e=>e.default),[]),"./18.json":()=>d(()=>import(`./18-d0Wv3yi0.js`).then(e=>e.default),[]),"./19.json":()=>d(()=>import(`./19-BMo-89Dz.js`).then(e=>e.default),[]),"./2.json":()=>d(()=>import(`./2-BB7pJ9EJ.js`).then(e=>e.default),[]),"./20.json":()=>d(()=>import(`./20-Dk8q1UA3.js`).then(e=>e.default),[]),"./21.json":()=>d(()=>import(`./21-y2c9Yrnr.js`).then(e=>e.default),[]),"./22.json":()=>d(()=>import(`./22-2ZEdYDm5.js`).then(e=>e.default),[]),"./23.json":()=>d(()=>import(`./23-AOGgKRbF.js`).then(e=>e.default),[]),"./24.json":()=>d(()=>import(`./24-p63hXVya.js`).then(e=>e.default),[]),"./25.json":()=>d(()=>import(`./25-B8RS5vue.js`).then(e=>e.default),[]),"./26.json":()=>d(()=>import(`./26-9LZU3XYi.js`).then(e=>e.default),[]),"./27.json":()=>d(()=>import(`./27-D7WajPD-.js`).then(e=>e.default),[]),"./28.json":()=>d(()=>import(`./28-eEPdzPcg.js`).then(e=>e.default),[]),"./29.json":()=>d(()=>import(`./29-BYqHr2WO.js`).then(e=>e.default),[]),"./3.json":()=>d(()=>import(`./3-BOBGzlLZ.js`).then(e=>e.default),[]),"./30.json":()=>d(()=>import(`./30-fKLApsjM.js`).then(e=>e.default),[]),"./31.json":()=>d(()=>import(`./31-mywjK1Zi.js`).then(e=>e.default),[]),"./32.json":()=>d(()=>import(`./32-Bgx95sj7.js`).then(e=>e.default),[]),"./33.json":()=>d(()=>import(`./33-BVsv0zU0.js`).then(e=>e.default),[]),"./34.json":()=>d(()=>import(`./34-CqaHJ3OG.js`).then(e=>e.default),[]),"./35.json":()=>d(()=>import(`./35-DwNYqH42.js`).then(e=>e.default),[]),"./36.json":()=>d(()=>import(`./36-XqDlRaCb.js`).then(e=>e.default),[]),"./37.json":()=>d(()=>import(`./37-95vN8BOT.js`).then(e=>e.default),[]),"./38.json":()=>d(()=>import(`./38-BodKD7k1.js`).then(e=>e.default),[]),"./39.json":()=>d(()=>import(`./39-DNvnBNIk.js`).then(e=>e.default),[]),"./4.json":()=>d(()=>import(`./4-BvrfaMae.js`).then(e=>e.default),[]),"./40.json":()=>d(()=>import(`./40-BbNZsw1G.js`).then(e=>e.default),[]),"./41.json":()=>d(()=>import(`./41-Bs2SMp3T.js`).then(e=>e.default),[]),"./42.json":()=>d(()=>import(`./42-CUBYJzpk.js`).then(e=>e.default),[]),"./43.json":()=>d(()=>import(`./43-CKpjSu0i.js`).then(e=>e.default),[]),"./44.json":()=>d(()=>import(`./44-BJ-LAy7h.js`).then(e=>e.default),[]),"./45.json":()=>d(()=>import(`./45-cH1LR6Os.js`).then(e=>e.default),[]),"./46.json":()=>d(()=>import(`./46-DrIuQu2G.js`).then(e=>e.default),[]),"./47.json":()=>d(()=>import(`./47-CHUqlT68.js`).then(e=>e.default),[]),"./48.json":()=>d(()=>import(`./48-BzQkLfKV.js`).then(e=>e.default),[]),"./49.json":()=>d(()=>import(`./49-DS3lhSW8.js`).then(e=>e.default),[]),"./5.json":()=>d(()=>import(`./5-DWALfBMH.js`).then(e=>e.default),[]),"./50.json":()=>d(()=>import(`./50-8WfGB42I.js`).then(e=>e.default),[]),"./6.json":()=>d(()=>import(`./6-De_42IXr.js`).then(e=>e.default),[]),"./7.json":()=>d(()=>import(`./7-C6FjekWi.js`).then(e=>e.default),[]),"./8.json":()=>d(()=>import(`./8-B7girZFL.js`).then(e=>e.default),[]),"./9.json":()=>d(()=>import(`./9-CvZgr27y.js`).then(e=>e.default),[])});function m(e,t){let n=e.groups.find(e=>e.id===t);return n?{id:n.id,title:n.group_title,description:n.group_description,emoji:f.find(e=>e.id===t)?.emoji??`📚`,cards:n.words.map((e,t)=>({id:`${n.id}_${t}`,arabic:e.arabic,transliteration:e.transliteration,indonesian:e.translation,wordType:n.group_title,quranExample:e.quran_example}))}:null}function h(e){return{id:e.meta.title.toLowerCase().replace(/\s+/g,`-`),title:e.meta.title,description:e.meta.description,emoji:`📖`,cards:e.cards.map(e=>({id:String(e.id),arabic:e.arabic,transliteration:e.transliteration,indonesian:e.translation,wordType:e.word_type,root:e.root,forms:e.forms,relatedWords:e.related_words,quranExample:e.quran_example}))}}function g(e){return typeof e==`object`&&!!e&&`groups`in e}function _(e){return typeof e==`object`&&!!e&&`cards`in e}function v(e){let t=e.match(/Part\s+(\d+)/i);return t?Number(t[1]):null}async function y(e){let t=e?f.filter(t=>{let n=v(t.title);return n!==null&&n>=e[0]&&n<=e[1]}):f,n=[...new Set(t.map(e=>e.file))].filter(e=>e!==`0.json`);return(await Promise.all(n.map(async e=>{let t=p[`./${e}`];if(!t)return[];let n=await t();return _(n)?h(n).cards:[]}))).flat()}async function b(e){let t=f.find(t=>t.id===e);if(!t)return null;let n=p[`./${t.file}`];if(!n)return null;let r=await n();return g(r)?m(r,e):_(r)?h(r):null}var x=[{id:`24_35-38`,surah:24,surahName:`An-Nur`,from:35,to:38,title:`An-Nur 35–38`,description:`Ayat Cahaya (Ayatun Nur): perumpamaan agung tentang cahaya Allah, lalu gambaran orang-orang beriman yang berdzikir di masjid dan tidak dilalaikan dunia.`,verseCount:4}],ee=Object.assign({"./24_35-38.json":()=>d(()=>import(`./24_35-38-BmVHzYzi.js`).then(e=>e.default),[])});function te(e){return`./${e}.json`}async function S(e){let t=ee[te(e)];if(!t)return null;let n=await t();return{id:e,surah:n.meta.surah,surahName:n.meta.surahName,from:n.meta.from,to:n.meta.to,title:n.meta.title,description:n.meta.description,verses:n.verses}}function C(e){return localStorage.getItem(`quiz_score_${e}`)}function w(e){return Number(localStorage.getItem(`last_visited_${e}`)??0)}function T(){f.forEach(e=>{localStorage.removeItem(`quiz_score_${e.id}`),localStorage.removeItem(`last_visited_${e.id}`)})}function E(e,t,n){let r=document.createElement(`div`);r.className=`confirm-overlay`,r.innerHTML=`
+    <div class="confirm-dialog">
+      <p class="confirm-title">${e}</p>
+      <p class="confirm-message">${t}</p>
+      <div class="confirm-actions">
+        <button class="confirm-cancel">Cancel</button>
+        <button class="confirm-ok">Reset</button>
+      </div>
+    </div>
+  `;let i=()=>document.body.removeChild(r);r.querySelector(`.confirm-cancel`).addEventListener(`click`,i),r.querySelector(`.confirm-ok`).addEventListener(`click`,()=>{i(),n()}),r.addEventListener(`click`,e=>{e.target===r&&i()}),document.body.appendChild(r),r.querySelector(`.confirm-cancel`).focus()}function D(){return f.some(e=>C(e.id)!==null||w(e.id)>0)}function O(e){return e.title.replace(/^Kosakata Al-Quran - /,``)}function k(e,t){let n=[...f].sort((e,t)=>w(t.id)-w(e.id)),r=t?n.filter(e=>C(e.id)===null):n,i=e.querySelector(`.deck-grid`);i.innerHTML=r.length===0?`<p class="nav-empty">All decks have been quizzed. Well done!</p>`:r.map(e=>{let t=C(e.id);return`
+        <div class="deck-card">
+          <button class="deck-card-study" data-deck-id="${e.id}" aria-label="Study ${e.title}">
+            ${t===null?``:`<span class="deck-score-chip">${t}</span>`}
+            <h3 class="deck-title">${O(e)}</h3>
+            <p class="deck-preview">${e.preview.join(` · `)}</p>
+          </button>
+          <div class="deck-card-footer">
+            <span class="deck-count">${e.cardCount} cards</span>
+            <button class="btn-quiz" data-quiz-id="${e.id}" aria-label="Take quiz for ${e.title}">Quiz →</button>
+          </div>
+        </div>
+      `}).join(``),i.querySelectorAll(`.deck-card-study`).forEach(e=>{e.addEventListener(`click`,()=>{window.location.hash=`deck/${e.dataset.deckId}`})}),i.querySelectorAll(`.btn-quiz`).forEach(e=>{e.addEventListener(`click`,()=>{window.location.hash=`deck/${e.dataset.quizId}/quiz`})})}function ne(e){let t=e.querySelector(`.qs-index-grid`);t.innerHTML=x.length===0?`<p class="nav-empty">No breakdowns yet. Generate one with the qs-breakdown command.</p>`:x.map(e=>`
+        <button class="qs-index-card" data-id="${e.id}">
+          <span class="qs-index-surah">QS ${e.surah} · ${e.surahName}</span>
+          <h3 class="qs-index-title">${e.title}</h3>
+          <p class="qs-index-desc">${e.description}</p>
+          <span class="qs-index-count">Ayat ${e.from}–${e.to} · ${e.verseCount} ayat</span>
+        </button>
+      `).join(``),t.querySelectorAll(`.qs-index-card`).forEach(e=>{e.addEventListener(`click`,()=>{window.location.hash=`qs/${e.dataset.id}`})})}function re(e){let t=e.querySelector(`.btn-reset-all`);t&&(t.disabled=!D())}function A(e,t=`flashcard`){let n=!1,r=`
+    <div class="nav-hero">
+      <h2>Kosakata Al-Quran</h2>
+      <p class="nav-subtitle">Kata-kata bermakna yang paling sering muncul di Al-Quran</p>
+    </div>
+    <div class="nav-toolbar">
+      <div class="nav-filters">
+        <button class="nav-filter-chip" data-filter="unfinished">Unfinished</button>
+      </div>
+      <div class="nav-menu">
+        <button class="nav-menu-trigger" aria-label="Options" aria-haspopup="true" aria-expanded="false">⋮</button>
+        <div class="nav-menu-dropdown" hidden>
+          <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Part 1–15</span></button>
+          <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Part 16–30</span></button>
+          <button class="nav-menu-item" data-exam="31-45">Exam 3 <span class="nav-menu-item-sub">Part 31–45</span></button>
+          <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">Semua part</span></button>
+          <div class="nav-menu-divider"></div>
+          <button class="nav-menu-item btn-reset-all" ${D()?``:`disabled`}>Reset all progress</button>
+        </div>
+      </div>
+    </div>
+    <div class="deck-grid"></div>
+  `;if(e.innerHTML=`
+    <div class="nav-page">
+      ${t===`flashcard`?r:`
+    <div class="nav-hero">
+      <h2>Surah Breakdown</h2>
+      <p class="nav-subtitle">Read verses word by word</p>
+    </div>
+    <div class="qs-index-grid"></div>
+  `}
+    </div>
+  `,t===`breakdown`){ne(e);return}k(e,n);let i=e.querySelector(`.nav-menu`),a=i.querySelector(`.nav-menu-trigger`),o=i.querySelector(`.nav-menu-dropdown`),s=()=>{o.hidden=!0,a.setAttribute(`aria-expanded`,`false`),document.removeEventListener(`click`,c)},c=e=>{i.contains(e.target)||s()};a.addEventListener(`click`,()=>{let e=o.hidden;o.hidden=!e,a.setAttribute(`aria-expanded`,String(e)),e?document.addEventListener(`click`,c):document.removeEventListener(`click`,c)}),i.querySelectorAll(`[data-exam]`).forEach(e=>{e.addEventListener(`click`,()=>{s();let t=e.dataset.exam;window.location.hash=t===`all`?`test`:`test/${t}`})}),e.querySelector(`[data-filter="unfinished"]`).addEventListener(`click`,t=>{let r=t.currentTarget;n=!n,r.classList.toggle(`active`,n),k(e,n)}),e.querySelector(`.btn-reset-all`).addEventListener(`click`,()=>{s(),E(`Reset all progress?`,`This will clear all quiz scores and visit history.`,()=>{T(),n=!1,e.querySelector(`[data-filter="unfinished"]`).classList.remove(`active`),re(e),k(e,n)})})}async function ie(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await b(t);if(!n){e.innerHTML=`
+      <div class="error-page">
+        <p>Deck not found.</p>
+        <button class="btn-back" onclick="window.location.hash=''">← Back</button>
+      </div>
+    `;return}localStorage.setItem(`last_visited_${t}`,Date.now().toString());let r=0,i=!1;function a(){let t=n.cards[r],a=n.cards.length;e.innerHTML=`
+      <div class="fc-page">
+        <div class="fc-header">
+          <button class="btn-back">← Back</button>
+          <span class="fc-deck-title">${n.emoji} ${n.title}</span>
+          <span class="fc-progress">${r+1} / ${a}</span>
+        </div>
+
+        <div class="fc-area">
+          <div class="fc-card ${i?`flipped`:``}" id="fc-card" role="button" tabindex="0" aria-label="Flip card">
+            <div class="fc-face fc-front">
+              <span class="fc-arabic">${t.arabic}</span>
+            </div>
+            <div class="fc-face fc-back">
+              ${t.wordType?`<span class="fc-badge">${t.wordType}</span>`:``}
+              <span class="fc-transliteration">${t.transliteration}</span>
+              <span class="fc-english">${t.indonesian}</span>
+              ${t.root?`<span class="fc-root">Root: ${t.root}</span>`:``}
+              ${t.forms?`
+                <div class="fc-forms">
+                  ${Object.entries(t.forms).filter(([,e])=>e).map(([e,t])=>`<span class="fc-form"><em>${e}</em> ${t}</span>`).join(``)}
+                </div>`:``}
+              ${t.relatedWords?.length?`
+                <div class="fc-related">
+                  <span class="fc-related-label">Related</span>
+                  ${t.relatedWords.map(e=>`
+                    <span class="fc-related-word"><span class="fc-related-arabic">${e.arabic}</span> — ${e.translation}</span>
+                  `).join(``)}
+                </div>`:``}
+              ${t.quranExample?`
+                <div class="fc-quran">
+                  <span class="fc-quran-arabic">${t.quranExample.arabic}</span>
+                  <span class="fc-quran-translation">${t.quranExample.translation}</span>
+                  <span class="fc-quran-ref">${t.quranExample.surah} ${t.quranExample.ayah}</span>
+                </div>`:``}
+            </div>
+          </div>
+          <p class="fc-hint">${i?`Click card to flip back`:`Click card to reveal`}</p>
+        </div>
+
+        <div class="fc-controls">
+          <button class="btn-nav" id="btn-prev" ${r===0?`disabled`:``}>← Prev</button>
+          <button class="btn-nav" id="btn-next" ${r===a-1?`disabled`:``}>Next →</button>
+        </div>
+
+        <div class="fc-dots">
+          ${n.cards.map((e,t)=>`
+            <span class="fc-dot ${t===r?`active`:``}" data-index="${t}"></span>
+          `).join(``)}
+        </div>
+      </div>
+    `,o()}function o(){e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let t=e.querySelector(`#fc-card`),o=()=>{i=!i,a()};t.addEventListener(`click`,o),t.addEventListener(`keydown`,e=>{(e.key===`Enter`||e.key===` `)&&(e.preventDefault(),o())}),e.querySelector(`#btn-prev`)?.addEventListener(`click`,()=>{r>0&&(r--,i=!1,a())}),e.querySelector(`#btn-next`)?.addEventListener(`click`,()=>{r<n.cards.length-1&&(r++,i=!1,a())}),e.querySelectorAll(`.fc-dot`).forEach(e=>{e.addEventListener(`click`,()=>{r=Number(e.dataset.index),i=!1,a()})})}a()}function j(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function M(e,t){return j(e).slice(0,t)}function N(e,t){let n=M(t.filter(t=>t.id!==e.id),3).map(e=>e.indonesian);return{prompt:e.arabic,promptLabel:`What does this word mean?`,correct:e.indonesian,options:j([e.indonesian,...n]),ayatArabic:e.quranExample?.arabic,ayatRef:e.quranExample?`${e.quranExample.surah} ${e.quranExample.ayah}`:void 0,ayatTranslation:e.quranExample?.translation}}function P(e){return e.length<4?[]:M(e,Math.min(10,e.length)).map(t=>N(t,e))}function F(e,t,n){localStorage.setItem(`quiz_score_${e}`,`${t}/${n}`)}async function I(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await b(t);if(!n){e.innerHTML=`
+      <div class="error-page">
+        <p>Deck not found.</p>
+        <button class="btn-back" onclick="window.location.hash=''">← Back</button>
+      </div>
+    `;return}let r=P(n.cards);if(r.length===0){e.innerHTML=`
+      <div class="error-page">
+        <p>Not enough cards to generate a quiz (minimum 4).</p>
+        <button class="btn-back" onclick="window.location.hash='deck/${t}'">← Back to Deck</button>
+      </div>
+    `;return}let i=0,a=0,o=!1;function s(){let l=r[i],u=r.length,d=i===u-1;e.innerHTML=`
+      <div class="quiz-page">
+        <div class="fc-header">
+          <button class="btn-back">← Back</button>
+          <span class="fc-deck-title">${n.emoji} ${n.title}</span>
+          <span class="fc-progress">${i+1} / ${u}</span>
+        </div>
+
+        <div class="quiz-body">
+          <p class="quiz-label">${l.promptLabel}</p>
+          <div class="quiz-prompt">
+            ${l.ayatArabic?`<button class="btn-quiz-hint" id="btn-hint">💡 Hint</button>`:``}
+            <span class="quiz-word">${l.prompt}</span>
+            ${l.ayatArabic?`
+              <div class="quiz-ayat">
+                <span class="quiz-ayat-arabic">${l.ayatArabic}</span>
+                <span class="quiz-ayat-ref">${l.ayatRef}</span>
+                <span class="quiz-ayat-translation" id="ayat-translation" style="display:none">${l.ayatTranslation}</span>
+              </div>`:``}
+          </div>
+
+          <div class="quiz-options">
+            ${l.options.map(e=>`
+              <button class="quiz-option" data-value="${encodeURIComponent(e)}">${e}</button>
+            `).join(``)}
+          </div>
+
+          <button class="btn-quiz-next" id="btn-next" style="display:none">
+            ${d?`Show Results`:`Next Question →`}
+          </button>
+        </div>
+      </div>
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let f=()=>{let t=e.querySelector(`#ayat-translation`);t&&(t.style.display=`block`);let n=e.querySelector(`#btn-hint`);n&&(n.style.display=`none`)};e.querySelector(`#btn-hint`)?.addEventListener(`click`,f),e.querySelectorAll(`.quiz-option`).forEach(t=>{t.addEventListener(`click`,()=>{o||(o=!0,f(),decodeURIComponent(t.dataset.value)===l.correct?(a++,t.classList.add(`correct`)):(t.classList.add(`wrong`),e.querySelectorAll(`.quiz-option`).forEach(e=>{decodeURIComponent(e.dataset.value)===l.correct&&e.classList.add(`correct`)})),e.querySelectorAll(`.quiz-option`).forEach(e=>e.disabled=!0),e.querySelector(`#btn-next`).style.display=`block`)})}),e.querySelector(`#btn-next`).addEventListener(`click`,()=>{i<r.length-1?(i++,o=!1,s()):(F(t,a,r.length),c())})}function c(){let i=r.length;e.innerHTML=`
+      <div class="quiz-page">
+        <div class="fc-header">
+          <button class="btn-back">← Back</button>
+          <span class="fc-deck-title">${n.emoji} ${n.title}</span>
+        </div>
+
+        <div class="quiz-result">
+          <div class="quiz-result-score">${a} / ${i}</div>
+          <p class="quiz-result-label">${a===i?`Perfect!`:a>=i*.7?`Well done!`:`Keep practicing!`}</p>
+          <div class="quiz-result-actions">
+            <button class="btn-quiz-retry">Retry Quiz</button>
+            <button class="btn-quiz-back">← Back</button>
+          </div>
+        </div>
+      </div>
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``}),e.querySelector(`.btn-quiz-retry`).addEventListener(`click`,()=>{I(e,t)}),e.querySelector(`.btn-quiz-back`).addEventListener(`click`,()=>{window.location.hash=``})}s()}var L=50,R={"1-15":{key:`test_score_1_15`,title:`Exam 1`,range:[1,15]},"16-30":{key:`test_score_16_30`,title:`Exam 2`,range:[16,30]},"31-45":{key:`test_score_31_45`,title:`Exam 3`,range:[31,45]},all:{key:`test_score`,title:`Final Exam`,size:100}};function z(e){return e&&R[e]||R.all}function B(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function V(e,t){return B(e).slice(0,t)}function H(e,t){let n=V(t.filter(t=>t.id!==e.id),3).map(e=>e.indonesian);return{prompt:e.arabic,promptLabel:`What does this word mean?`,correct:e.indonesian,options:B([e.indonesian,...n]),ayatArabic:e.quranExample?.arabic,ayatRef:e.quranExample?`${e.quranExample.surah} ${e.quranExample.ayah}`:void 0,ayatTranslation:e.quranExample?.translation}}function U(e,t){return V(e,Math.min(t,e.length)).map(t=>H(t,e))}function W(e,t,n){localStorage.setItem(e,`${t}/${n}`)}async function G(e,t){let n=z(t);e.innerHTML=`<div class="fc-loading">Loading test…</div>`;let r=await y(n.range);if(r.length<4){e.innerHTML=`
+      <div class="error-page">
+        <p>Not enough cards to generate a test.</p>
+        <button class="btn-back" onclick="window.location.hash=''">← Back</button>
+      </div>
+    `;return}let i=U(r,n.size??L),a=0,o=0,s=!1;function c(){let t=i[a],r=i.length,u=a===r-1;e.innerHTML=`
+      <div class="quiz-page">
+        <div class="fc-header">
+          <button class="btn-back">← Back</button>
+          <span class="fc-deck-title">${n.title}</span>
+          <span class="fc-progress">${a+1} / ${r}</span>
+        </div>
+
+        <div class="quiz-body">
+          <p class="quiz-label">${t.promptLabel}</p>
+          <div class="quiz-prompt">
+            ${t.ayatArabic?`<button class="btn-quiz-hint" id="btn-hint">💡 Hint</button>`:``}
+            <span class="quiz-word">${t.prompt}</span>
+            ${t.ayatArabic?`
+              <div class="quiz-ayat">
+                <span class="quiz-ayat-arabic">${t.ayatArabic}</span>
+                <span class="quiz-ayat-ref">${t.ayatRef}</span>
+                <span class="quiz-ayat-translation" id="ayat-translation" style="display:none">${t.ayatTranslation}</span>
+              </div>`:``}
+          </div>
+
+          <div class="quiz-options">
+            ${t.options.map(e=>`
+              <button class="quiz-option" data-value="${encodeURIComponent(e)}">${e}</button>
+            `).join(``)}
+          </div>
+
+          <button class="btn-quiz-next" id="btn-next" style="display:none">
+            ${u?`See Results`:`Next Question →`}
+          </button>
+        </div>
+      </div>
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let d=()=>{let t=e.querySelector(`#ayat-translation`);t&&(t.style.display=`block`);let n=e.querySelector(`#btn-hint`);n&&(n.style.display=`none`)};e.querySelector(`#btn-hint`)?.addEventListener(`click`,d),e.querySelectorAll(`.quiz-option`).forEach(n=>{n.addEventListener(`click`,()=>{s||(s=!0,d(),decodeURIComponent(n.dataset.value)===t.correct?(o++,n.classList.add(`correct`)):(n.classList.add(`wrong`),e.querySelectorAll(`.quiz-option`).forEach(e=>{decodeURIComponent(e.dataset.value)===t.correct&&e.classList.add(`correct`)})),e.querySelectorAll(`.quiz-option`).forEach(e=>e.disabled=!0),e.querySelector(`#btn-next`).style.display=`block`)})}),e.querySelector(`#btn-next`).addEventListener(`click`,()=>{a<i.length-1?(a++,s=!1,c()):(W(n.key,o,i.length),l())})}function l(){let r=i.length,a=Math.round(o/r*100),s=o===r?`Perfect!`:a>=70?`Great job!`:`Keep practicing!`;e.innerHTML=`
+      <div class="quiz-page">
+        <div class="fc-header">
+          <button class="btn-back">← Back</button>
+          <span class="fc-deck-title">${n.title}</span>
+        </div>
+
+        <div class="quiz-result">
+          <div class="quiz-result-score">${o} / ${r}</div>
+          <p class="quiz-result-label">${s}</p>
+          <div class="quiz-result-actions">
+            <button class="btn-quiz-retry">Retry Test</button>
+            <button class="btn-quiz-back">← Back</button>
+          </div>
+        </div>
+      </div>
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``}),e.querySelector(`.btn-quiz-retry`).addEventListener(`click`,()=>{G(e,t)}),e.querySelector(`.btn-quiz-back`).addEventListener(`click`,()=>{window.location.hash=``})}c()}var K={ism:`kata benda (ism)`,"fi'l":`kata kerja (fi'l)`,harf:`kata tugas (harf)`},q={past:`Lampau`,present:`Sekarang`,future:`Akan datang`,command:`Perintah`};function J(e){let t=Object.keys(q).filter(t=>e[t]).map(t=>`
+      <span class="qs-form">
+        <span class="qs-form-label">${q[t]}</span>
+        <span class="qs-form-arabic">${e[t]}</span>
+      </span>
+    `);return t.length===0?``:`<div class="qs-forms" dir="rtl">${t.join(``)}</div>`}function ae(e){return`
+    <div class="qs-detail">
+      <div class="qs-detail-head">
+        <span class="qs-detail-arabic">${e.arabic}</span>
+        <span class="qs-detail-translit">${e.transliteration}</span>
+      </div>
+      <span class="qs-detail-meaning">${e.meaning}</span>
+      <div class="qs-detail-tags">
+        <span class="qs-type-badge qs-type-${e.type===`fi'l`?`fil`:e.type}">${K[e.type]}</span>
+        ${e.root?`<span class="qs-detail-root">Akar: ${e.root}</span>`:``}
+      </div>
+      ${e.forms?J(e.forms):``}
+      ${e.notes?`<p class="qs-detail-notes">${e.notes}</p>`:``}
+    </div>
+  `}async function oe(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await S(t);if(!n){e.innerHTML=`
+      <div class="error-page">
+        <p>Breakdown not found.</p>
+        <button class="btn-back" onclick="window.location.hash='qs'">← Back</button>
+      </div>
+    `;return}e.innerHTML=`
+    <div class="qs-page">
+      <div class="qs-header">
+        <button class="btn-back">← Back</button>
+        <span class="qs-deck-title">QS ${n.surah} · ${n.surahName}</span>
+        <span class="qs-range">${n.from}–${n.to}</span>
+      </div>
+
+      <p class="qs-tip">👆 Tap any word to see its meaning and grammar</p>
+
+      <div class="qs-verses">
+        ${n.verses.map((e,t)=>`
+          <div class="qs-verse">
+            <span class="qs-ayah-num">${e.ayah}</span>
+            <div class="qs-arabic" dir="rtl">
+              ${e.words.map((e,n)=>`
+                <button class="qs-word" data-vi="${t}" data-wi="${n}">${e.arabic}</button>
+              `).join(` `)}
+            </div>
+            <p class="qs-translation">${e.translation}</p>
+          </div>
+        `).join(``)}
+      </div>
+    </div>
+
+    <div class="qs-sheet" hidden>
+      <div class="qs-sheet-backdrop"></div>
+      <div class="qs-sheet-panel" role="dialog" aria-modal="true">
+        <div class="qs-sheet-handle"></div>
+        <button class="qs-sheet-close" aria-label="Close">✕</button>
+        <div class="qs-sheet-body"></div>
+      </div>
+    </div>
+  `;let r=e.querySelector(`.qs-sheet`),i=e.querySelector(`.qs-sheet-body`),a=e.querySelector(`.qs-tip`),o=null;function s(){r.hidden=!0,r.classList.remove(`open`),o?.classList.remove(`active`),o=null}function c(e,t){o?.classList.remove(`active`),o=e,e.classList.add(`active`),i.innerHTML=ae(t),r.hidden=!1,r.offsetWidth,r.classList.add(`open`)}e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`qs`}),e.querySelectorAll(`.qs-word`).forEach(e=>{e.addEventListener(`click`,()=>{if(a?.remove(),o===e){s();return}let t=Number(e.dataset.vi),r=Number(e.dataset.wi);c(e,n.verses[t].words[r])})}),e.querySelector(`.qs-sheet-backdrop`).addEventListener(`click`,s),e.querySelector(`.qs-sheet-close`).addEventListener(`click`,s),document.addEventListener(`keydown`,function e(t){t.key===`Escape`&&!r.hidden&&s(),document.contains(r)||document.removeEventListener(`keydown`,e)})}document.querySelector(`#app`).innerHTML=`
+  <header class="app-header">
+    <nav class="header-tabs" role="tablist">
+      <button class="header-tab" data-tab="flashcard" role="tab">Flashcard</button>
+      <button class="header-tab" data-tab="breakdown" role="tab">Surah Breakdown</button>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle theme"></button>
+  </header>
+  <main class="app-main" id="main-content"></main>
+  <footer class="app-footer">
+    <a class="github-link" href="https://github.com/ikhwanh/arabic-flashcard" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="currentColor">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      <span>Source on GitHub</span>
+    </a>
+    <span class="app-version">v2.1.0</span>
+  </footer>
+`,o(document.querySelector(`.theme-toggle`));var Y=document.getElementById(`main-content`),X=document.querySelector(`.app-header`),Z=X.querySelectorAll(`.header-tab`);Z.forEach(e=>{e.addEventListener(`click`,()=>{window.location.hash=e.dataset.tab===`breakdown`?`qs`:``})});function Q(e){Z.forEach(t=>t.classList.toggle(`active`,t.dataset.tab===e))}function $(){let e=window.location.hash.slice(1),t=e.match(/^deck\/(.+)$/),n=e.match(/^deck\/(.+)\/quiz$/),r=e.match(/^test(?:\/(.+))?$/),i=e.match(/^qs\/(.+)$/);i?(X.hidden=!0,oe(Y,i[1]).catch(console.error)):e===`qs`?(X.hidden=!1,Q(`breakdown`),A(Y,`breakdown`)):r?(X.hidden=!0,G(Y,r[1]).catch(console.error)):n?(X.hidden=!0,I(Y,n[1]).catch(console.error)):t?(X.hidden=!0,ie(Y,t[1]).catch(console.error)):(X.hidden=!1,Q(`flashcard`),A(Y,`flashcard`))}window.addEventListener(`hashchange`,$),$();
