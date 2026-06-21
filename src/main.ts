@@ -1,10 +1,12 @@
 import './style.css'
+import './font'
 import { initTheme } from './theme'
 import { renderNavigation } from './pages/navigation'
 import { renderFlashcard } from './pages/flashcard'
 import { renderQuiz } from './pages/quiz'
 import { renderTest } from './pages/test'
 import { renderQsBreakdown } from './pages/qs-breakdown'
+import { renderSettings } from './pages/settings'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="app-header">
@@ -12,7 +14,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button class="header-tab" data-tab="flashcard" role="tab">Flashcard</button>
       <button class="header-tab" data-tab="breakdown" role="tab">Surah Breakdown</button>
     </nav>
-    <button class="theme-toggle" aria-label="Toggle theme"></button>
+    <div class="header-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="settings-toggle" aria-label="Settings">⚙️</button>
+    </div>
   </header>
   <main class="app-main" id="main-content"></main>
   <footer class="app-footer">
@@ -38,7 +43,11 @@ headerTabs.forEach(btn => {
   })
 })
 
-function setActiveTab(tab: 'flashcard' | 'breakdown') {
+appHeader.querySelector<HTMLButtonElement>('.settings-toggle')!.addEventListener('click', () => {
+  window.location.hash = 'settings'
+})
+
+function setActiveTab(tab: 'flashcard' | 'breakdown' | null) {
   headerTabs.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab))
 }
 
@@ -50,8 +59,13 @@ function route() {
   const testMatch = hash.match(/^test(?:\/(.+))?$/)
   const qsReaderMatch = hash.match(/^qs\/(.+)$/)
   const qsIndexMatch = hash === 'qs'
+  const settingsMatch = hash === 'settings'
 
-  if (qsReaderMatch) {
+  if (settingsMatch) {
+    appHeader.hidden = false
+    setActiveTab(null)
+    renderSettings(mainContent)
+  } else if (qsReaderMatch) {
     appHeader.hidden = true
     renderQsBreakdown(mainContent, qsReaderMatch[1]).catch(console.error)
   } else if (qsIndexMatch) {

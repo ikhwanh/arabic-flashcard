@@ -147,6 +147,127 @@ body {
   background: var(--border);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.settings-toggle:hover {
+  background: var(--border);
+}
+
+/* ── Settings page ── */
+.settings-section {
+  margin-bottom: 2.5rem;
+}
+
+.settings-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.settings-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.settings-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0.75rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--text);
+  transition: border-color 0.15s, transform 0.1s;
+}
+
+.settings-option:hover {
+  transform: translateY(-2px);
+}
+
+.settings-option.active {
+  border-color: var(--accent);
+}
+
+.settings-option-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.settings-option-sample {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  direction: rtl;
+}
+
+.settings-option-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.settings-option.active .settings-option-label {
+  color: var(--accent);
+}
+
+.settings-history {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.settings-history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.settings-history-item:hover {
+  border-color: var(--accent);
+}
+
+.settings-history-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.settings-history-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
 /* ── Main ── */
 .app-main {
   flex: 1;
