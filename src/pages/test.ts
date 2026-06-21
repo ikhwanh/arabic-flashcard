@@ -11,9 +11,11 @@ export interface ExamConfig {
 }
 
 const EXAMS: Record<string, ExamConfig> = {
-  '1-15':  { key: 'test_score_1_15',  title: 'Exam 1', range: [1, 15] },
-  '16-30': { key: 'test_score_16_30', title: 'Exam 2', range: [16, 30] },
-  '31-45': { key: 'test_score_31_45', title: 'Exam 3', range: [31, 45] },
+  '1-10':  { key: 'test_score_1_10',  title: 'Exam 1', range: [1, 10] },
+  '11-20': { key: 'test_score_11_20', title: 'Exam 2', range: [11, 20] },
+  '21-30': { key: 'test_score_21_30', title: 'Exam 3', range: [21, 30] },
+  '31-40': { key: 'test_score_31_40', title: 'Exam 4', range: [31, 40] },
+  '41-50': { key: 'test_score_41_50', title: 'Exam 5', range: [41, 50] },
   all:     { key: 'test_score',       title: 'Final Exam', size: 100 },
 }
 

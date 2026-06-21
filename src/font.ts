@@ -1,46 +1,43 @@
-export type ArabicFont = 'amiri' | 'scheherazade' | 'noto-naskh' | 'lateef' | 'markazi'
+export type KasraPosition = 'low' | 'high'
 
-const STORAGE_KEY = 'arabic_font'
+const KASRA_KEY = 'arabic_kasra'
 
-// Shared fallback chain appended after the chosen family
-const FALLBACK = "'Scheherazade New', 'Noto Naskh Arabic', serif"
+// The app uses a single self-hosted Arabic face (see the @font-face in style.css).
+const FONT_STACK = "'Scheherazade New', serif"
 
-export const ARABIC_FONTS: { id: ArabicFont; label: string; family: string }[] = [
-  { id: 'amiri', label: 'Amiri', family: "'Amiri'" },
-  { id: 'scheherazade', label: 'Scheherazade New', family: "'Scheherazade New'" },
-  { id: 'noto-naskh', label: 'Noto Naskh Arabic', family: "'Noto Naskh Arabic'" },
-  { id: 'lateef', label: 'Lateef', family: "'Lateef'" },
-  { id: 'markazi', label: 'Markazi Text', family: "'Markazi Text'" },
-]
+const DEFAULT_KASRA: KasraPosition = 'low'
 
-const DEFAULT_FONT: ArabicFont = 'noto-naskh'
-
-function getStoredFont(): ArabicFont {
-  const stored = localStorage.getItem(STORAGE_KEY)
-  return ARABIC_FONTS.some(f => f.id === stored) ? (stored as ArabicFont) : DEFAULT_FONT
+function getStoredKasra(): KasraPosition {
+  const stored = localStorage.getItem(KASRA_KEY)
+  return stored === 'low' || stored === 'high' ? stored : DEFAULT_KASRA
 }
 
-/** The CSS font stack for a given font id, including the shared fallback. */
-export function fontStack(id: ArabicFont): string {
-  const font = ARABIC_FONTS.find(f => f.id === id) ?? ARABIC_FONTS[0]
-  return `${font.family}, ${FALLBACK}`
+/**
+ * cv62 controls Shadda+kasra placement in Scheherazade New: `1` lowers the
+ * kasra below the letter (Indonesian / Indo-Pak convention), while the default
+ * keeps it under the shadda (Uthmani convention).
+ */
+function kasraFeature(pos: KasraPosition): string {
+  return pos === 'low' ? '"cv62" 1' : 'normal'
 }
 
-let current: ArabicFont = getStoredFont()
+let currentKasra = getStoredKasra()
 
 function applyFont() {
-  document.documentElement.style.setProperty('--font-arabic', fontStack(current))
+  const root = document.documentElement.style
+  root.setProperty('--font-arabic', FONT_STACK)
+  root.setProperty('--font-feature', kasraFeature(currentKasra))
 }
 
-// Apply persisted font as early as this module is imported
+// Apply persisted settings as early as this module is imported
 applyFont()
 
-export function getFont(): ArabicFont {
-  return current
+export function getKasra(): KasraPosition {
+  return currentKasra
 }
 
-export function setFont(id: ArabicFont) {
-  current = id
-  localStorage.setItem(STORAGE_KEY, id)
+export function setKasra(pos: KasraPosition) {
+  currentKasra = pos
+  localStorage.setItem(KASRA_KEY, pos)
   applyFont()
 }

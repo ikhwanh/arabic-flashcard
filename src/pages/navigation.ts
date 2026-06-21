@@ -128,9 +128,11 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
       <div class="nav-menu">
         <button class="nav-menu-trigger" aria-label="Options" aria-haspopup="true" aria-expanded="false">⋮</button>
         <div class="nav-menu-dropdown" hidden>
-          <button class="nav-menu-item" data-exam="1-15">Exam 1 <span class="nav-menu-item-sub">Part 1–15</span></button>
-          <button class="nav-menu-item" data-exam="16-30">Exam 2 <span class="nav-menu-item-sub">Part 16–30</span></button>
-          <button class="nav-menu-item" data-exam="31-45">Exam 3 <span class="nav-menu-item-sub">Part 31–45</span></button>
+          <button class="nav-menu-item" data-exam="1-10">Exam 1 <span class="nav-menu-item-sub">Part 1–10</span></button>
+          <button class="nav-menu-item" data-exam="11-20">Exam 2 <span class="nav-menu-item-sub">Part 11–20</span></button>
+          <button class="nav-menu-item" data-exam="21-30">Exam 3 <span class="nav-menu-item-sub">Part 21–30</span></button>
+          <button class="nav-menu-item" data-exam="31-40">Exam 4 <span class="nav-menu-item-sub">Part 31–40</span></button>
+          <button class="nav-menu-item" data-exam="41-50">Exam 5 <span class="nav-menu-item-sub">Part 41–50</span></button>
           <button class="nav-menu-item" data-exam="all">Final Exam <span class="nav-menu-item-sub">Semua part</span></button>
           <div class="nav-menu-divider"></div>
           <button class="nav-menu-item btn-reset-all" ${hasAnyProgress() ? '' : 'disabled'}>Reset all progress</button>

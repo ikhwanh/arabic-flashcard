@@ -1,8 +1,13 @@
 import { deckMetas } from '../data/flashcards'
 import { THEMES, THEME_META, getTheme, setTheme } from '../theme'
-import { ARABIC_FONTS, fontStack, getFont, setFont } from '../font'
+import { getKasra, setKasra } from '../font'
 
-const ARABIC_SAMPLE = 'بِسْمِ اللَّهِ'
+// Has a shadda + kasra (رَبِّ) so the two positions are visibly different
+const KASRA_SAMPLE = 'رَبِّ'
+const KASRA_OPTIONS = [
+  { id: 'low' as const, label: 'Low (under letter)', feature: '"cv62" 1' },
+  { id: 'high' as const, label: 'High (under shadda)', feature: 'normal' },
+]
 
 function deckLabel(title: string): string {
   return title.replace(/^Kosakata Al-Quran - /, '')
@@ -35,10 +40,10 @@ export function renderSettings(container: HTMLElement) {
     </button>
   `).join('')
 
-  const fontOptions = ARABIC_FONTS.map(f => `
-    <button class="settings-option font-option ${getFont() === f.id ? 'active' : ''}" data-font="${f.id}">
-      <span class="settings-option-sample" style="font-family: ${fontStack(f.id)}">${ARABIC_SAMPLE}</span>
-      <span class="settings-option-label">${f.label}</span>
+  const kasraOptions = KASRA_OPTIONS.map(k => `
+    <button class="settings-option kasra-option ${getKasra() === k.id ? 'active' : ''}" data-kasra="${k.id}">
+      <span class="settings-option-sample" style="font-family: 'Scheherazade New', serif; font-feature-settings: ${k.feature}">${KASRA_SAMPLE}</span>
+      <span class="settings-option-label">${k.label}</span>
     </button>
   `).join('')
 
@@ -64,8 +69,8 @@ export function renderSettings(container: HTMLElement) {
       </section>
 
       <section class="settings-section">
-        <h3 class="settings-heading">Arabic Font</h3>
-        <div class="settings-options">${fontOptions}</div>
+        <h3 class="settings-heading">Kasra Position</h3>
+        <div class="settings-options">${kasraOptions}</div>
       </section>
 
       <section class="settings-section">
@@ -83,11 +88,11 @@ export function renderSettings(container: HTMLElement) {
     })
   })
 
-  const fontButtons = container.querySelectorAll<HTMLButtonElement>('.font-option')
-  fontButtons.forEach(btn => {
+  const kasraButtons = container.querySelectorAll<HTMLButtonElement>('.kasra-option')
+  kasraButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      setFont(btn.dataset.font as Parameters<typeof setFont>[0])
-      fontButtons.forEach(b => b.classList.toggle('active', b === btn))
+      setKasra(btn.dataset.kasra as Parameters<typeof setKasra>[0])
+      kasraButtons.forEach(b => b.classList.toggle('active', b === btn))
     })
   })
 

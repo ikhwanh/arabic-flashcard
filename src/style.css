@@ -1,3 +1,24 @@
+/*
+ * Self-hosted Scheherazade New 4.500 (SIL, OFL — see assets/fonts/OFL.txt).
+ * The Google Fonts build ships an older cv62 ("Shadda+kasra placement") that
+ * only lowers the kasra in final/isolated forms; 4.500 lowers it everywhere,
+ * which the Kasra Position setting relies on.
+ */
+@font-face {
+  font-family: 'Scheherazade New';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/ScheherazadeNew-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Scheherazade New';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./assets/fonts/ScheherazadeNew-Bold.woff2') format('woff2');
+}
+
 :root {
   --bg: #f5f5f5;
   --surface: #ffffff;
@@ -8,7 +29,9 @@
   --accent-hover: #1d4ed8;
   --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
   --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.15), 0 4px 10px -2px rgba(0,0,0,0.08);
-  --font-arabic: 'Amiri', 'Scheherazade New', 'Noto Naskh Arabic', serif;
+  --font-arabic: 'Scheherazade New', serif;
+  /* Set by src/font.ts; cv62 lowers the kasra under a shadda in SIL fonts */
+  --font-feature: normal;
 
   color-scheme: light;
 }
@@ -82,6 +105,7 @@ body {
 .qs-detail-root,
 .qs-form-arabic {
   font-family: var(--font-arabic);
+  font-feature-settings: var(--font-feature, normal);
 }
 
 #app {
@@ -168,6 +192,12 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 0.75rem;
+}
+
+.settings-hint {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .settings-option {
