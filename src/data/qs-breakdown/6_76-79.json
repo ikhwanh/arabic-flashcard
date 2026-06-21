@@ -1,0 +1,592 @@
+{
+  "meta": {
+    "surah": 6,
+    "surahName": "Al-An'aam",
+    "from": 76,
+    "to": 79,
+    "title": "Al-An'aam 76–79",
+    "description": "Kisah Nabi Ibrahim mencari Tuhan: ia mengamati bintang, bulan, dan matahari, lalu menyadari semuanya tenggelam, hingga ia berserah hanya kepada Pencipta langit dan bumi."
+  },
+  "verses": [
+    {
+      "ayah": 76,
+      "arabic": "فَلَمَّا جَنَّ عَلَيْهِ ٱلَّيْلُ رَءَا كَوْكَبًۭا ۖ قَالَ هَٰذَا رَبِّى ۖ فَلَمَّآ أَفَلَ قَالَ لَآ أُحِبُّ ٱلْءَافِلِينَ",
+      "translation": "Ketika malam telah gelap, dia melihat sebuah bintang (lalu) dia berkata: \"Inilah Tuhanku\", tetapi tatkala bintang itu tenggelam dia berkata: \"Saya tidak suka kepada yang tenggelam\".",
+      "words": [
+        {
+          "arabic": "فَلَمَّا",
+          "transliteration": "falammaa",
+          "meaning": "maka ketika",
+          "type": "harf",
+          "notes": "Gabungan 'fa' (maka) dan 'lammaa' (ketika)."
+        },
+        {
+          "arabic": "جَنَّ",
+          "transliteration": "janna",
+          "meaning": "menjadi gelap / menutupi",
+          "type": "fi'l",
+          "root": "ج ن ن",
+          "forms": {
+            "past": "جَنَّ",
+            "present": "يَجُنُّ",
+            "future": "سَيَجُنُّ"
+          },
+          "notes": "Bentuk lampau."
+        },
+        {
+          "arabic": "عَلَيْهِ",
+          "transliteration": "'alaihi",
+          "meaning": "atasnya / kepadanya",
+          "type": "harf",
+          "notes": "Akhiran -hi berarti 'nya'."
+        },
+        {
+          "arabic": "ٱلَّيْلُ",
+          "transliteration": "al-lailu",
+          "meaning": "malam",
+          "type": "ism",
+          "root": "ل ي ل"
+        },
+        {
+          "arabic": "رَءَا",
+          "transliteration": "ra'aa",
+          "meaning": "dia melihat",
+          "type": "fi'l",
+          "root": "ر أ ي",
+          "forms": {
+            "past": "رَأَى",
+            "present": "يَرَى",
+            "future": "سَيَرَى",
+            "command": "رَ"
+          },
+          "notes": "Bentuk lampau."
+        },
+        {
+          "arabic": "كَوْكَبًۭا",
+          "transliteration": "kaukaban",
+          "meaning": "sebuah bintang",
+          "type": "ism",
+          "root": "ك و ك ب"
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata",
+          "type": "fi'l",
+          "root": "ق و ل",
+          "forms": {
+            "past": "قَالَ",
+            "present": "يَقُولُ",
+            "future": "سَيَقُولُ",
+            "command": "قُلْ"
+          },
+          "notes": "Bentuk lampau."
+        },
+        {
+          "arabic": "هَٰذَا",
+          "transliteration": "haadzaa",
+          "meaning": "ini",
+          "type": "ism",
+          "notes": "Kata tunjuk untuk sesuatu yang dekat."
+        },
+        {
+          "arabic": "رَبِّى",
+          "transliteration": "rabbii",
+          "meaning": "Tuhanku",
+          "type": "ism",
+          "root": "ر ب ب",
+          "notes": "Akhiran -ii berarti 'ku'."
+        },
+        {
+          "arabic": "فَلَمَّآ",
+          "transliteration": "falammaa",
+          "meaning": "maka ketika",
+          "type": "harf"
+        },
+        {
+          "arabic": "أَفَلَ",
+          "transliteration": "afala",
+          "meaning": "ia tenggelam / terbenam",
+          "type": "fi'l",
+          "root": "أ ف ل",
+          "forms": {
+            "past": "أَفَلَ",
+            "present": "يَأْفُلُ",
+            "future": "سَيَأْفُلُ"
+          },
+          "notes": "Bentuk lampau."
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata",
+          "type": "fi'l",
+          "root": "ق و ل",
+          "forms": {
+            "past": "قَالَ",
+            "present": "يَقُولُ",
+            "future": "سَيَقُولُ",
+            "command": "قُلْ"
+          }
+        },
+        {
+          "arabic": "لَآ",
+          "transliteration": "laa",
+          "meaning": "tidak",
+          "type": "harf"
+        },
+        {
+          "arabic": "أُحِبُّ",
+          "transliteration": "uhibbu",
+          "meaning": "aku menyukai",
+          "type": "fi'l",
+          "root": "ح ب ب",
+          "forms": {
+            "past": "أَحَبَّ",
+            "present": "يُحِبُّ",
+            "future": "سَيُحِبُّ",
+            "command": "أَحْبِبْ"
+          },
+          "notes": "Bentuk sekarang, pelakunya 'aku'."
+        },
+        {
+          "arabic": "ٱلْءَافِلِينَ",
+          "transliteration": "al-aafiliin",
+          "meaning": "yang tenggelam (jamak)",
+          "type": "ism",
+          "root": "أ ف ل",
+          "notes": "Isim fa'il (pelaku) dalam bentuk jamak."
+        }
+      ]
+    },
+    {
+      "ayah": 77,
+      "arabic": "فَلَمَّا رَءَا ٱلْقَمَرَ بَازِغًۭا قَالَ هَٰذَا رَبِّى ۖ فَلَمَّآ أَفَلَ قَالَ لَئِن لَّمْ يَهْدِنِى رَبِّى لَأَكُونَنَّ مِنَ ٱلْقَوْمِ ٱلضَّآلِّينَ",
+      "translation": "Kemudian tatkala dia melihat bulan terbit dia berkata: \"Inilah Tuhanku\". Tetapi setelah bulan itu terbenam, dia berkata: \"Sesungguhnya jika Tuhanku tidak memberi petunjuk kepadaku, pastilah aku termasuk orang yang sesat\".",
+      "words": [
+        {
+          "arabic": "فَلَمَّا",
+          "transliteration": "falammaa",
+          "meaning": "maka ketika",
+          "type": "harf"
+        },
+        {
+          "arabic": "رَءَا",
+          "transliteration": "ra'aa",
+          "meaning": "dia melihat",
+          "type": "fi'l",
+          "root": "ر أ ي",
+          "forms": {
+            "past": "رَأَى",
+            "present": "يَرَى",
+            "future": "سَيَرَى",
+            "command": "رَ"
+          }
+        },
+        {
+          "arabic": "ٱلْقَمَرَ",
+          "transliteration": "al-qamara",
+          "meaning": "bulan",
+          "type": "ism",
+          "root": "ق م ر"
+        },
+        {
+          "arabic": "بَازِغًۭا",
+          "transliteration": "baazighan",
+          "meaning": "yang sedang terbit",
+          "type": "ism",
+          "root": "ب ز غ",
+          "notes": "Isim fa'il (pelaku): yang sedang terbit/memancar."
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata",
+          "type": "fi'l",
+          "root": "ق و ل",
+          "forms": {
+            "past": "قَالَ",
+            "present": "يَقُولُ",
+            "future": "سَيَقُولُ",
+            "command": "قُلْ"
+          }
+        },
+        {
+          "arabic": "هَٰذَا",
+          "transliteration": "haadzaa",
+          "meaning": "ini",
+          "type": "ism"
+        },
+        {
+          "arabic": "رَبِّى",
+          "transliteration": "rabbii",
+          "meaning": "Tuhanku",
+          "type": "ism",
+          "root": "ر ب ب"
+        },
+        {
+          "arabic": "فَلَمَّآ",
+          "transliteration": "falammaa",
+          "meaning": "maka ketika",
+          "type": "harf"
+        },
+        {
+          "arabic": "أَفَلَ",
+          "transliteration": "afala",
+          "meaning": "ia terbenam",
+          "type": "fi'l",
+          "root": "أ ف ل",
+          "forms": {
+            "past": "أَفَلَ",
+            "present": "يَأْفُلُ",
+            "future": "سَيَأْفُلُ"
+          }
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata",
+          "type": "fi'l",
+          "root": "ق و ل",
+          "forms": {
+            "past": "قَالَ",
+            "present": "يَقُولُ",
+            "future": "سَيَقُولُ",
+            "command": "قُلْ"
+          }
+        },
+        {
+          "arabic": "لَئِن",
+          "transliteration": "la'in",
+          "meaning": "sungguh jika",
+          "type": "harf"
+        },
+        {
+          "arabic": "لَّمْ",
+          "transliteration": "lam",
+          "meaning": "tidak",
+          "type": "harf",
+          "notes": "Menafikan kata kerja menjadi bermakna lampau (belum/tidak)."
+        },
+        {
+          "arabic": "يَهْدِنِى",
+          "transliteration": "yahdinii",
+          "meaning": "memberiku petunjuk",
+          "type": "fi'l",
+          "root": "ه د ي",
+          "forms": {
+            "past": "هَدَى",
+            "present": "يَهْدِي",
+            "future": "سَيَهْدِي",
+            "command": "اهْدِ"
+          },
+          "notes": "Akhiran -nii berarti 'ku' (objek)."
+        },
+        {
+          "arabic": "رَبِّى",
+          "transliteration": "rabbii",
+          "meaning": "Tuhanku",
+          "type": "ism",
+          "root": "ر ب ب"
+        },
+        {
+          "arabic": "لَأَكُونَنَّ",
+          "transliteration": "la-akuunanna",
+          "meaning": "pastilah aku akan menjadi",
+          "type": "fi'l",
+          "root": "ك و ن",
+          "forms": {
+            "past": "كَانَ",
+            "present": "يَكُونُ",
+            "future": "سَيَكُونُ",
+            "command": "كُنْ"
+          },
+          "notes": "Awalan 'la-' dan akhiran '-nna' memberi makna penegasan: 'pasti'."
+        },
+        {
+          "arabic": "مِنَ",
+          "transliteration": "mina",
+          "meaning": "termasuk / dari",
+          "type": "harf"
+        },
+        {
+          "arabic": "ٱلْقَوْمِ",
+          "transliteration": "al-qaumi",
+          "meaning": "kaum / orang-orang",
+          "type": "ism",
+          "root": "ق و م"
+        },
+        {
+          "arabic": "ٱلضَّآلِّينَ",
+          "transliteration": "adh-dhaalliin",
+          "meaning": "yang sesat (jamak)",
+          "type": "ism",
+          "root": "ض ل ل",
+          "notes": "Isim fa'il (pelaku) dalam bentuk jamak."
+        }
+      ]
+    },
+    {
+      "ayah": 78,
+      "arabic": "فَلَمَّا رَءَا ٱلشَّمْسَ بَازِغَةًۭ قَالَ هَٰذَا رَبِّى هَٰذَآ أَكْبَرُ ۖ فَلَمَّآ أَفَلَتْ قَالَ يَٰقَوْمِ إِنِّى بَرِىٓءٌۭ مِّمَّا تُشْرِكُونَ",
+      "translation": "Kemudian tatkala ia melihat matahari terbit, dia berkata: \"Inilah Tuhanku, ini yang lebih besar\". Maka tatkala matahari itu terbenam, dia berkata: \"Hai kaumku, sesungguhnya aku berlepas diri dari apa yang kamu persekutukan.",
+      "words": [
+        {
+          "arabic": "فَلَمَّا",
+          "transliteration": "falammaa",
+          "meaning": "maka ketika",
+          "type": "harf"
+        },
+        {
+          "arabic": "رَءَا",
+          "transliteration": "ra'aa",
+          "meaning": "dia melihat",
+          "type": "fi'l",
+          "root": "ر أ ي",
+          "forms": {
+            "past": "رَأَى",
+            "present": "يَرَى",
+            "future": "سَيَرَى",
+            "command": "رَ"
+          }
+        },
+        {
+          "arabic": "ٱلشَّمْسَ",
+          "transliteration": "asy-syamsa",
+          "meaning": "matahari",
+          "type": "ism",
+          "root": "ش م س"
+        },
+        {
+          "arabic": "بَازِغَةًۭ",
+          "transliteration": "baazighatan",
+          "meaning": "yang sedang terbit",
+          "type": "ism",
+          "root": "ب ز غ",
+          "notes": "Isim fa'il bentuk perempuan (karena matahari muannats)."
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata",
+          "type": "fi'l",
+          "root": "ق و ل",
+          "forms": {
+            "past": "قَالَ",
+            "present": "يَقُولُ",
+            "future": "سَيَقُولُ",
+            "command": "قُلْ"
+          }
+        },
+        {
+          "arabic": "هَٰذَا",
+          "transliteration": "haadzaa",
+          "meaning": "ini",
+          "type": "ism"
+        },
+        {
+          "arabic": "رَبِّى",
+          "transliteration": "rabbii",
+          "meaning": "Tuhanku",
+          "type": "ism",
+          "root": "ر ب ب"
+        },
+        {
+          "arabic": "هَٰذَآ",
+          "transliteration": "haadzaa",
+          "meaning": "ini",
+          "type": "ism"
+        },
+        {
+          "arabic": "أَكْبَرُ",
+          "transliteration": "akbaru",
+          "meaning": "lebih besar",
+          "type": "ism",
+          "root": "ك ب ر",
+          "notes": "Bentuk perbandingan: 'lebih besar'."
+        },
+        {
+          "arabic": "فَلَمَّآ",
+          "transliteration": "falammaa",
+          "meaning": "maka ketika",
+          "type": "harf"
+        },
+        {
+          "arabic": "أَفَلَتْ",
+          "transliteration": "afalat",
+          "meaning": "ia (matahari) terbenam",
+          "type": "fi'l",
+          "root": "أ ف ل",
+          "forms": {
+            "past": "أَفَلَ",
+            "present": "يَأْفُلُ",
+            "future": "سَيَأْفُلُ"
+          },
+          "notes": "Akhiran -t menunjukkan pelakunya perempuan."
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata",
+          "type": "fi'l",
+          "root": "ق و ل",
+          "forms": {
+            "past": "قَالَ",
+            "present": "يَقُولُ",
+            "future": "سَيَقُولُ",
+            "command": "قُلْ"
+          }
+        },
+        {
+          "arabic": "يَٰقَوْمِ",
+          "transliteration": "yaa qaumi",
+          "meaning": "wahai kaumku",
+          "type": "ism",
+          "root": "ق و م",
+          "notes": "'yaa' artinya 'wahai' (kata seru), akhiran -i berarti 'ku'."
+        },
+        {
+          "arabic": "إِنِّى",
+          "transliteration": "innii",
+          "meaning": "sesungguhnya aku",
+          "type": "harf",
+          "notes": "'inna' (sesungguhnya) + akhiran '-ii' (aku)."
+        },
+        {
+          "arabic": "بَرِىٓءٌۭ",
+          "transliteration": "barii'un",
+          "meaning": "berlepas diri / bebas",
+          "type": "ism",
+          "root": "ب ر أ"
+        },
+        {
+          "arabic": "مِّمَّا",
+          "transliteration": "mimmaa",
+          "meaning": "dari apa yang",
+          "type": "harf",
+          "notes": "Gabungan 'min' (dari) dan 'maa' (apa)."
+        },
+        {
+          "arabic": "تُشْرِكُونَ",
+          "transliteration": "tusyrikuun",
+          "meaning": "kalian persekutukan",
+          "type": "fi'l",
+          "root": "ش ر ك",
+          "forms": {
+            "past": "أَشْرَكَ",
+            "present": "يُشْرِكُ",
+            "future": "سَيُشْرِكُ",
+            "command": "أَشْرِكْ"
+          },
+          "notes": "Bentuk sekarang, pelakunya 'kalian'."
+        }
+      ]
+    },
+    {
+      "ayah": 79,
+      "arabic": "إِنِّى وَجَّهْتُ وَجْهِىَ لِلَّذِى فَطَرَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ حَنِيفًۭا ۖ وَمَآ أَنَا۠ مِنَ ٱلْمُشْرِكِينَ",
+      "translation": "Sesungguhnya aku menghadapkan diriku kepada Rabb yang menciptakan langit dan bumi, dengan cenderung kepada agama yang benar, dan aku bukanlah termasuk orang-orang yang mempersekutukan Tuhan.",
+      "words": [
+        {
+          "arabic": "إِنِّى",
+          "transliteration": "innii",
+          "meaning": "sesungguhnya aku",
+          "type": "harf",
+          "notes": "'inna' (sesungguhnya) + akhiran '-ii' (aku)."
+        },
+        {
+          "arabic": "وَجَّهْتُ",
+          "transliteration": "wajjahtu",
+          "meaning": "aku menghadapkan",
+          "type": "fi'l",
+          "root": "و ج ه",
+          "forms": {
+            "past": "وَجَّهَ",
+            "present": "يُوَجِّهُ",
+            "future": "سَيُوَجِّهُ",
+            "command": "وَجِّهْ"
+          },
+          "notes": "Akhiran -tu menunjukkan pelakunya 'aku'."
+        },
+        {
+          "arabic": "وَجْهِىَ",
+          "transliteration": "wajhiya",
+          "meaning": "wajahku / diriku",
+          "type": "ism",
+          "root": "و ج ه",
+          "notes": "Akhiran -iya berarti 'ku'."
+        },
+        {
+          "arabic": "لِلَّذِى",
+          "transliteration": "lilladzii",
+          "meaning": "kepada (Dzat) yang",
+          "type": "ism",
+          "notes": "'li-' artinya 'kepada', 'alladzii' adalah kata sambung 'yang'."
+        },
+        {
+          "arabic": "فَطَرَ",
+          "transliteration": "fathara",
+          "meaning": "menciptakan",
+          "type": "fi'l",
+          "root": "ف ط ر",
+          "forms": {
+            "past": "فَطَرَ",
+            "present": "يَفْطُرُ",
+            "future": "سَيَفْطُرُ",
+            "command": "افْطُرْ"
+          },
+          "notes": "Bentuk lampau: menciptakan dari mula."
+        },
+        {
+          "arabic": "ٱلسَّمَٰوَٰتِ",
+          "transliteration": "as-samaawaati",
+          "meaning": "langit (jamak)",
+          "type": "ism",
+          "root": "س م و"
+        },
+        {
+          "arabic": "وَٱلْأَرْضَ",
+          "transliteration": "wal-ardha",
+          "meaning": "dan bumi",
+          "type": "ism",
+          "root": "أ ر ض",
+          "notes": "Awalan 'wa-' artinya 'dan'."
+        },
+        {
+          "arabic": "حَنِيفًۭا",
+          "transliteration": "haniifan",
+          "meaning": "dengan lurus (cenderung pada kebenaran)",
+          "type": "ism",
+          "root": "ح ن ف"
+        },
+        {
+          "arabic": "وَمَآ",
+          "transliteration": "wa maa",
+          "meaning": "dan tidaklah",
+          "type": "harf"
+        },
+        {
+          "arabic": "أَنَا۠",
+          "transliteration": "anaa",
+          "meaning": "aku",
+          "type": "ism",
+          "notes": "Kata ganti orang pertama."
+        },
+        {
+          "arabic": "مِنَ",
+          "transliteration": "mina",
+          "meaning": "termasuk / dari",
+          "type": "harf"
+        },
+        {
+          "arabic": "ٱلْمُشْرِكِينَ",
+          "transliteration": "al-musyrikiin",
+          "meaning": "orang-orang yang menyekutukan (Allah)",
+          "type": "ism",
+          "root": "ش ر ك",
+          "notes": "Isim fa'il (pelaku) dalam bentuk jamak."
+        }
+      ]
+    }
+  ]
+}

@@ -15,7 +15,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button class="header-tab" data-tab="breakdown" role="tab">Surah Breakdown</button>
     </nav>
     <div class="header-actions">
-      <button class="theme-toggle" aria-label="Toggle theme"></button>
       <button class="settings-toggle" aria-label="Settings">⚙️</button>
     </div>
   </header>
@@ -31,7 +30,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </footer>
 `
 
-initTheme(document.querySelector<HTMLButtonElement>('.theme-toggle')!)
+initTheme()
 
 const mainContent = document.getElementById('main-content')!
 const appHeader = document.querySelector<HTMLElement>('.app-header')!

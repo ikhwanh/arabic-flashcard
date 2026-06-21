@@ -46,21 +46,9 @@ export function onThemeChange(fn: (theme: Theme) => void): () => void {
   return () => listeners.delete(fn)
 }
 
-export function initTheme(button: HTMLButtonElement) {
-  const updateIcon = () => {
-    const next = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length]
-    button.textContent = THEME_META[current].icon
-    button.setAttribute('aria-label', `Theme: ${THEME_META[current].label}. Switch to ${THEME_META[next].label}`)
-  }
-
-  updateIcon()
-  onThemeChange(updateIcon)
-
-  button.addEventListener('click', () => {
-    setTheme(THEMES[(THEMES.indexOf(current) + 1) % THEMES.length])
-  })
-
-  // Sync with OS-level changes when no manual preference is saved
+export function initTheme() {
+  // Theme is applied at module import; here we only keep it in sync with
+  // OS-level changes when the user has not chosen a theme manually.
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
     if (!getStoredTheme()) setTheme(e.matches ? 'dark' : 'light')
   })
