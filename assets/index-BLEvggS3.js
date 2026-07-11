@@ -339,6 +339,6 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
       </svg>
       <span>Source on GitHub</span>
     </a>
-    <span class="app-version">v2.4.0</span>
+    <span class="app-version">v2.4.1</span>
   </footer>
 `,ne();var Y=document.getElementById(`main-content`),X=document.querySelector(`.app-header`),Z=X.querySelectorAll(`.header-tab`);Z.forEach(e=>{e.addEventListener(`click`,()=>{window.location.hash=e.dataset.tab===`breakdown`?`qs`:``})}),X.querySelector(`.settings-toggle`).addEventListener(`click`,()=>{window.location.hash=`settings`});function Q(e){Z.forEach(t=>t.classList.toggle(`active`,t.dataset.tab===e))}function $(){let e=window.location.hash.slice(1),t=e.match(/^deck\/(.+)$/),n=e.match(/^deck\/(.+)\/quiz$/),r=e.match(/^test(?:\/(.+))?$/),i=e.match(/^qs\/(.+)$/);e===`settings`?(X.hidden=!1,Q(null),Oe(Y)):i?(X.hidden=!0,Ce(Y,i[1]).catch(console.error)):e===`qs`?(X.hidden=!1,Q(`breakdown`),L(Y,`breakdown`)):r?(X.hidden=!0,K(Y,r[1]).catch(console.error)):n?(X.hidden=!0,H(Y,n[1]).catch(console.error)):t?(X.hidden=!0,R(Y,t[1]).catch(console.error)):(X.hidden=!1,Q(`flashcard`),L(Y,`flashcard`))}window.addEventListener(`hashchange`,$),$();
