@@ -648,5 +648,18 @@
       "وَدَّ",
       "يَئِسَ"
     ]
+  },
+  {
+    "id": "asmaul-husna",
+    "file": "asmaul-husna.json",
+    "title": "Asmaul Husna",
+    "description": "99 Nama Allah yang indah (al-Asmā' al-Ḥusnā) — lengkap dengan akar kata, kata terkait, dan contoh ayat Al-Quran",
+    "emoji": "📖",
+    "cardCount": 99,
+    "preview": [
+      "الرَّحْمَٰنُ",
+      "الرَّحِيمُ",
+      "الْمَلِكُ"
+    ]
   }
 ]

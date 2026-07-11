@@ -1,0 +1,2484 @@
+{
+  "meta": {
+    "title": "Asmaul Husna",
+    "description": "99 Nama Allah yang indah (al-Asmā' al-Ḥusnā) — lengkap dengan akar kata, kata terkait, dan contoh ayat Al-Quran",
+    "range": "1-99"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "arabic": "الرَّحْمَٰنُ",
+      "transliteration": "Ar-Raḥmān",
+      "translation": "Maha Pengasih",
+      "word_type": "noun",
+      "root": "ر-ح-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "رَحْمَة",
+          "translation": "kasih sayang"
+        },
+        {
+          "arabic": "رَحِيم",
+          "translation": "penyayang"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+        "translation": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang",
+        "surah": "Al-Fatihah",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 2,
+      "arabic": "الرَّحِيمُ",
+      "transliteration": "Ar-Raḥīm",
+      "translation": "Maha Penyayang",
+      "word_type": "noun",
+      "root": "ر-ح-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "رَحْمَة",
+          "translation": "kasih sayang"
+        },
+        {
+          "arabic": "رَحْمَٰن",
+          "translation": "pengasih"
+        }
+      ],
+      "quran_example": {
+        "arabic": "نَبِّئْ عِبَادِىٓ أَنِّىٓ أَنَا ٱلْغَفُورُ ٱلرَّحِيمُ",
+        "translation": "Kabarkanlah kepada hamba-Ku bahwa Aku Maha Pengampun lagi Maha Penyayang",
+        "surah": "Al-Hijr",
+        "ayah": 49
+      }
+    },
+    {
+      "id": 3,
+      "arabic": "الْمَلِكُ",
+      "transliteration": "Al-Malik",
+      "translation": "Maha Merajai",
+      "word_type": "noun",
+      "root": "م-ل-ك",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مُلْك",
+          "translation": "kerajaan"
+        },
+        {
+          "arabic": "مَلَك",
+          "translation": "malaikat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ",
+        "translation": "Maka Maha Tinggi Allah, Raja yang sebenarnya",
+        "surah": "Taha",
+        "ayah": 114
+      }
+    },
+    {
+      "id": 4,
+      "arabic": "الْقُدُّوسُ",
+      "transliteration": "Al-Quddūs",
+      "translation": "Maha Suci",
+      "word_type": "noun",
+      "root": "ق-د-س",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مُقَدَّس",
+          "translation": "disucikan"
+        },
+        {
+          "arabic": "رُوحُ الْقُدُس",
+          "translation": "Ruhul Qudus"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ٱلْمَلِكِ ٱلْقُدُّوسِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+        "translation": "Apa yang di langit dan di bumi bertasbih kepada Allah, Maharaja, Mahasuci, Mahaperkasa, Mahabijaksana",
+        "surah": "Al-Jumu'ah",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 5,
+      "arabic": "السَّلَامُ",
+      "transliteration": "As-Salām",
+      "translation": "Maha Memberi Kesejahteraan",
+      "word_type": "noun",
+      "root": "س-ل-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "سَلَام",
+          "translation": "damai"
+        },
+        {
+          "arabic": "إِسْلَام",
+          "translation": "Islam"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ",
+        "translation": "Dialah Allah, Maharaja, Mahasuci, Mahasejahtera",
+        "surah": "Al-Hasyr",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 6,
+      "arabic": "الْمُؤْمِنُ",
+      "transliteration": "Al-Mu'min",
+      "translation": "Maha Memberi Keamanan",
+      "word_type": "noun",
+      "root": "أ-م-ن",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "إِيمَان",
+          "translation": "iman"
+        },
+        {
+          "arabic": "أَمْن",
+          "translation": "keamanan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ",
+        "translation": "Dialah Allah, Maharaja, Mahasuci, Mahasejahtera, Maha Pemberi Keamanan",
+        "surah": "Al-Hasyr",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 7,
+      "arabic": "الْمُهَيْمِنُ",
+      "transliteration": "Al-Muhaymin",
+      "translation": "Maha Pemelihara",
+      "word_type": "noun",
+      "root": "ه-ي-م-ن",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "هَيْمَنَة",
+          "translation": "pengawasan"
+        },
+        {
+          "arabic": "مُهَيْمِن",
+          "translation": "pengawas"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ",
+        "translation": "Dialah Allah, Maharaja, Mahasuci, Mahasejahtera, Pemberi Keamanan, Maha Pemelihara",
+        "surah": "Al-Hasyr",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 8,
+      "arabic": "الْعَزِيزُ",
+      "transliteration": "Al-'Azīz",
+      "translation": "Maha Perkasa",
+      "word_type": "noun",
+      "root": "ع-ز-ز",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عِزَّة",
+          "translation": "kemuliaan"
+        },
+        {
+          "arabic": "عَزِيز",
+          "translation": "perkasa"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ عَزِيزٌ حَكِيمٌ",
+        "translation": "Sesungguhnya Allah Maha Perkasa lagi Maha Bijaksana",
+        "surah": "Al-Baqarah",
+        "ayah": 220
+      }
+    },
+    {
+      "id": 9,
+      "arabic": "الْجَبَّارُ",
+      "transliteration": "Al-Jabbār",
+      "translation": "Maha Memaksa",
+      "word_type": "noun",
+      "root": "ج-ب-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "جَبَرُوت",
+          "translation": "kekuasaan mutlak"
+        },
+        {
+          "arabic": "جَبْر",
+          "translation": "pemulihan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱللَّهُ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ",
+        "translation": "Dialah Allah, Maharaja, Mahasuci, Mahaperkasa, Maha Memaksa",
+        "surah": "Al-Hasyr",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 10,
+      "arabic": "الْمُتَكَبِّرُ",
+      "transliteration": "Al-Mutakabbir",
+      "translation": "Maha Megah",
+      "word_type": "noun",
+      "root": "ك-ب-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "كَبِير",
+          "translation": "besar"
+        },
+        {
+          "arabic": "أَكْبَر",
+          "translation": "terbesar"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَـٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+        "translation": "Mahaperkasa, Maha Memaksa, Maha Megah. Mahasuci Allah dari apa yang mereka persekutukan",
+        "surah": "Al-Hasyr",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 11,
+      "arabic": "الْخَالِقُ",
+      "transliteration": "Al-Khāliq",
+      "translation": "Maha Pencipta",
+      "word_type": "noun",
+      "root": "خ-ل-ق",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "خَلْق",
+          "translation": "ciptaan"
+        },
+        {
+          "arabic": "خَلَّاق",
+          "translation": "Maha Pencipta"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ",
+        "translation": "Dialah Allah Yang Maha Pencipta, Yang Mengadakan, Yang Membentuk Rupa",
+        "surah": "Al-Hasyr",
+        "ayah": 24
+      }
+    },
+    {
+      "id": 12,
+      "arabic": "الْبَارِئُ",
+      "transliteration": "Al-Bāri'",
+      "translation": "Maha Mengadakan",
+      "word_type": "noun",
+      "root": "ب-ر-أ",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بَرِيء",
+          "translation": "bebas"
+        },
+        {
+          "arabic": "بَرَاءَة",
+          "translation": "pembebasan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ",
+        "translation": "Dialah Allah Yang Maha Pencipta, Yang Mengadakan, Yang Membentuk Rupa",
+        "surah": "Al-Hasyr",
+        "ayah": 24
+      }
+    },
+    {
+      "id": 13,
+      "arabic": "الْمُصَوِّرُ",
+      "transliteration": "Al-Muṣawwir",
+      "translation": "Maha Membentuk Rupa",
+      "word_type": "noun",
+      "root": "ص-و-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "صُورَة",
+          "translation": "bentuk"
+        },
+        {
+          "arabic": "تَصْوِير",
+          "translation": "penggambaran"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ",
+        "translation": "Dialah Allah Yang Maha Pencipta, Yang Mengadakan, Yang Membentuk Rupa. Dia memiliki nama-nama yang indah",
+        "surah": "Al-Hasyr",
+        "ayah": 24
+      }
+    },
+    {
+      "id": 14,
+      "arabic": "الْغَفَّارُ",
+      "transliteration": "Al-Ghaffār",
+      "translation": "Maha Pengampun",
+      "word_type": "noun",
+      "root": "غ-ف-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مَغْفِرَة",
+          "translation": "ampunan"
+        },
+        {
+          "arabic": "غَفُور",
+          "translation": "Maha Pengampun"
+        }
+      ],
+      "quran_example": {
+        "arabic": "رَبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا ٱلْعَزِيزُ ٱلْغَفَّـٰرُ",
+        "translation": "Tuhan langit dan bumi serta apa di antaranya, Maha Perkasa lagi Maha Pengampun",
+        "surah": "Sad",
+        "ayah": 66
+      }
+    },
+    {
+      "id": 15,
+      "arabic": "الْقَهَّارُ",
+      "transliteration": "Al-Qahhār",
+      "translation": "Maha Menundukkan",
+      "word_type": "noun",
+      "root": "ق-ه-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قَهْر",
+          "translation": "paksaan"
+        },
+        {
+          "arabic": "قَاهِر",
+          "translation": "pengalah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلِ ٱللَّهُ خَـٰلِقُ كُلِّ شَىْءٍۢ وَهُوَ ٱلْوَٰحِدُ ٱلْقَهَّـٰرُ",
+        "translation": "Katakanlah, Allah adalah Pencipta segala sesuatu, dan Dia Maha Esa lagi Maha Menundukkan",
+        "surah": "Ar-Ra'd",
+        "ayah": 16
+      }
+    },
+    {
+      "id": 16,
+      "arabic": "الْوَهَّابُ",
+      "transliteration": "Al-Wahhāb",
+      "translation": "Maha Pemberi Karunia",
+      "word_type": "noun",
+      "root": "و-ه-ب",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "هِبَة",
+          "translation": "hadiah"
+        },
+        {
+          "arabic": "مَوْهُوب",
+          "translation": "dianugerahi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ",
+        "translation": "Ya Tuhan kami, janganlah condongkan hati kami setelah Kauberi petunjuk, anugerahkanlah rahmat. Sesungguhnya Engkau Maha Pemberi",
+        "surah": "Ali 'Imran",
+        "ayah": 8
+      }
+    },
+    {
+      "id": 17,
+      "arabic": "الرَّزَّاقُ",
+      "transliteration": "Ar-Razzāq",
+      "translation": "Maha Pemberi Rezeki",
+      "word_type": "noun",
+      "root": "ر-ز-ق",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "رِزْق",
+          "translation": "rezeki"
+        },
+        {
+          "arabic": "مَرْزُوق",
+          "translation": "diberi rezeki"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ",
+        "translation": "Sesungguhnya Allah Dialah Maha Pemberi Rezeki yang mempunyai kekuatan lagi sangat kokoh",
+        "surah": "Adz-Dzariyat",
+        "ayah": 58
+      }
+    },
+    {
+      "id": 18,
+      "arabic": "الْفَتَّاحُ",
+      "transliteration": "Al-Fattāḥ",
+      "translation": "Maha Pembuka",
+      "word_type": "noun",
+      "root": "ف-ت-ح",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "فَتْح",
+          "translation": "pembukaan"
+        },
+        {
+          "arabic": "مَفَاتِيح",
+          "translation": "kunci-kunci"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِٱلْحَقِّ وَهُوَ ٱلْفَتَّاحُ ٱلْعَلِيمُ",
+        "translation": "Katakanlah, Tuhan kita akan mengumpulkan kita, lalu Dia memberi keputusan dengan benar. Dialah Maha Pemberi Keputusan lagi Maha Mengetahui",
+        "surah": "Saba'",
+        "ayah": 26
+      }
+    },
+    {
+      "id": 19,
+      "arabic": "اَلْعَلِيْمُ",
+      "transliteration": "Al-'Alīm",
+      "translation": "Maha Mengetahui",
+      "word_type": "noun",
+      "root": "ع-ل-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عِلْم",
+          "translation": "ilmu"
+        },
+        {
+          "arabic": "عَالِم",
+          "translation": "ulama"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ",
+        "translation": "Sesungguhnya Allah Maha Mengetahui segala isi hati",
+        "surah": "Ali 'Imran",
+        "ayah": 119
+      }
+    },
+    {
+      "id": 20,
+      "arabic": "الْقَابِضُ",
+      "transliteration": "Al-Qābiḍ",
+      "translation": "Maha Menyempitkan",
+      "word_type": "noun",
+      "root": "ق-ب-ض",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قَبْض",
+          "translation": "genggaman"
+        },
+        {
+          "arabic": "مَقْبُوض",
+          "translation": "digenggam"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَٱللَّهُ يَقْبِضُ وَيَبْصُۜطُ وَإِلَيْهِ تُرْجَعُونَ",
+        "translation": "Allah menyempitkan dan melapangkan rezeki, dan kepada-Nya kamu dikembalikan",
+        "surah": "Al-Baqarah",
+        "ayah": 245
+      }
+    },
+    {
+      "id": 21,
+      "arabic": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "translation": "Maha Melapangkan",
+      "word_type": "noun",
+      "root": "ب-س-ط",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بَسْط",
+          "translation": "kelapangan"
+        },
+        {
+          "arabic": "مَبْسُوط",
+          "translation": "dilapangkan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَٱللَّهُ يَقْبِضُ وَيَبْصُۜطُ وَإِلَيْهِ تُرْجَعُونَ",
+        "translation": "Allah menyempitkan dan melapangkan rezeki, dan kepada-Nya kamu dikembalikan",
+        "surah": "Al-Baqarah",
+        "ayah": 245
+      }
+    },
+    {
+      "id": 22,
+      "arabic": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "translation": "Maha Merendahkan",
+      "word_type": "noun",
+      "root": "خ-ف-ض",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "خَفْض",
+          "translation": "perendahan"
+        },
+        {
+          "arabic": "مَخْفُوض",
+          "translation": "direndahkan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "خَـٰفِضَةٌۭ رَّافِعَةٌ",
+        "translation": "Kejadian itu merendahkan satu golongan dan meninggikan golongan lain",
+        "surah": "Al-Waqi'ah",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 23,
+      "arabic": "الرَّافِعُ",
+      "transliteration": "Ar-Rāfi'",
+      "translation": "Maha Meninggikan",
+      "word_type": "noun",
+      "root": "ر-ف-ع",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "رَفْع",
+          "translation": "peninggian"
+        },
+        {
+          "arabic": "مَرْفُوع",
+          "translation": "ditinggikan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍۢ",
+        "translation": "Allah akan meninggikan orang beriman di antaramu dan yang diberi ilmu beberapa derajat",
+        "surah": "Al-Mujadilah",
+        "ayah": 11
+      }
+    },
+    {
+      "id": 24,
+      "arabic": "الْمُعِزُّ",
+      "transliteration": "Al-Mu'izz",
+      "translation": "Maha Memuliakan",
+      "word_type": "noun",
+      "root": "ع-ز-ز",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عِزَّة",
+          "translation": "kemuliaan"
+        },
+        {
+          "arabic": "عَزِيز",
+          "translation": "mulia"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلِ ٱللَّهُمَّ مَـٰلِكَ ٱلْمُلْكِ تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ",
+        "translation": "Ya Allah, Pemilik kerajaan, Engkau berikan kerajaan dan Engkau muliakan siapa yang Kaukehendaki",
+        "surah": "Ali 'Imran",
+        "ayah": 26
+      }
+    },
+    {
+      "id": 25,
+      "arabic": "الْمُذِلُّ",
+      "transliteration": "Al-Mudzill",
+      "translation": "Maha Menghinakan",
+      "word_type": "noun",
+      "root": "ذ-ل-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "ذِلَّة",
+          "translation": "kehinaan"
+        },
+        {
+          "arabic": "ذَلِيل",
+          "translation": "hina"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلِ ٱللَّهُمَّ مَـٰلِكَ ٱلْمُلْكِ تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ",
+        "translation": "Ya Allah, Engkau hinakan siapa yang Kaukehendaki. Di tangan-Mu segala kebajikan",
+        "surah": "Ali 'Imran",
+        "ayah": 26
+      }
+    },
+    {
+      "id": 26,
+      "arabic": "السَّمِيعُ",
+      "transliteration": "As-Samī'",
+      "translation": "Maha Mendengar",
+      "word_type": "noun",
+      "root": "س-م-ع",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "سَمْع",
+          "translation": "pendengaran"
+        },
+        {
+          "arabic": "سَمِيع",
+          "translation": "yang mendengar"
+        }
+      ],
+      "quran_example": {
+        "arabic": "لَيْسَ كَمِثْلِهِۦ شَىْءٌۭ ۖ وَهُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+        "translation": "Tidak ada sesuatu pun yang serupa dengan Dia. Dan Dia Maha Mendengar lagi Maha Melihat",
+        "surah": "Asy-Syura",
+        "ayah": 11
+      }
+    },
+    {
+      "id": 27,
+      "arabic": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "translation": "Maha Melihat",
+      "word_type": "noun",
+      "root": "ب-ص-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بَصَر",
+          "translation": "penglihatan"
+        },
+        {
+          "arabic": "بَصِيرَة",
+          "translation": "mata hati"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ كَانَ سَمِيعًۢا بَصِيرًا",
+        "translation": "Sesungguhnya Allah Maha Mendengar lagi Maha Melihat",
+        "surah": "An-Nisa'",
+        "ayah": 58
+      }
+    },
+    {
+      "id": 28,
+      "arabic": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "translation": "Maha Menetapkan Hukum",
+      "word_type": "noun",
+      "root": "ح-ك-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حُكْم",
+          "translation": "hukum"
+        },
+        {
+          "arabic": "حَكِيم",
+          "translation": "bijaksana"
+        }
+      ],
+      "quran_example": {
+        "arabic": "أَفَغَيْرَ ٱللَّهِ أَبْتَغِى حَكَمًۭا وَهُوَ ٱلَّذِىٓ أَنزَلَ إِلَيْكُمُ ٱلْكِتَـٰبَ مُفَصَّلًۭا",
+        "translation": "Apakah aku mencari hakim selain Allah, padahal Dialah yang menurunkan kitab terperinci?",
+        "surah": "Al-An'am",
+        "ayah": 114
+      }
+    },
+    {
+      "id": 29,
+      "arabic": "الْعَدْلُ",
+      "transliteration": "Al-'Adl",
+      "translation": "Maha Adil",
+      "word_type": "noun",
+      "root": "ع-د-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عَدْل",
+          "translation": "keadilan"
+        },
+        {
+          "arabic": "عَادِل",
+          "translation": "adil"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَـٰنِ",
+        "translation": "Sesungguhnya Allah menyuruh berlaku adil dan berbuat kebajikan",
+        "surah": "An-Nahl",
+        "ayah": 90
+      }
+    },
+    {
+      "id": 30,
+      "arabic": "اللَّطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "translation": "Maha Lembut",
+      "word_type": "noun",
+      "root": "ل-ط-ف",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "لُطْف",
+          "translation": "kelembutan"
+        },
+        {
+          "arabic": "لَطِيف",
+          "translation": "lembut"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ لَطِيفٌۢ بِعِبَادِهِۦ يَرْزُقُ مَن يَشَآءُ",
+        "translation": "Allah Maha Lembut kepada hamba-Nya; Dia memberi rezeki kepada siapa yang Dia kehendaki",
+        "surah": "Asy-Syura",
+        "ayah": 19
+      }
+    },
+    {
+      "id": 31,
+      "arabic": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "translation": "Maha Mengetahui Rahasia",
+      "word_type": "noun",
+      "root": "خ-ب-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "خَبَر",
+          "translation": "berita"
+        },
+        {
+          "arabic": "خِبْرَة",
+          "translation": "pengalaman"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَهُوَ ٱلْقَاهِرُ فَوْقَ عِبَادِهِۦ ۚ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ",
+        "translation": "Dialah Maha Kuasa atas hamba-Nya. Dialah Maha Bijaksana lagi Maha Mengetahui",
+        "surah": "Al-An'am",
+        "ayah": 18
+      }
+    },
+    {
+      "id": 32,
+      "arabic": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "translation": "Maha Penyantun",
+      "word_type": "noun",
+      "root": "ح-ل-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حِلْم",
+          "translation": "kesantunan"
+        },
+        {
+          "arabic": "حَلِيم",
+          "translation": "penyantun"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَٱللَّهُ غَنِىٌّ حَلِيمٌ",
+        "translation": "Dan Allah Maha Kaya lagi Maha Penyantun",
+        "surah": "Al-Baqarah",
+        "ayah": 263
+      }
+    },
+    {
+      "id": 33,
+      "arabic": "الْعَظِيمُ",
+      "transliteration": "Al-'Aẓīm",
+      "translation": "Maha Agung",
+      "word_type": "noun",
+      "root": "ع-ظ-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عَظَمَة",
+          "translation": "keagungan"
+        },
+        {
+          "arabic": "عَظِيم",
+          "translation": "agung"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+        "translation": "Allah tidak merasa berat memelihara keduanya. Dialah Maha Tinggi lagi Maha Agung",
+        "surah": "Al-Baqarah",
+        "ayah": 255
+      }
+    },
+    {
+      "id": 34,
+      "arabic": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "translation": "Maha Pengampun",
+      "word_type": "noun",
+      "root": "غ-ف-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مَغْفِرَة",
+          "translation": "ampunan"
+        },
+        {
+          "arabic": "غَفَّار",
+          "translation": "Maha Pengampun"
+        }
+      ],
+      "quran_example": {
+        "arabic": "نَبِّئْ عِبَادِىٓ أَنِّىٓ أَنَا ٱلْغَفُورُ ٱلرَّحِيمُ",
+        "translation": "Kabarkanlah kepada hamba-Ku bahwa Aku Maha Pengampun lagi Maha Penyayang",
+        "surah": "Al-Hijr",
+        "ayah": 49
+      }
+    },
+    {
+      "id": 35,
+      "arabic": "الشَّكُورُ",
+      "transliteration": "Asy-Syakūr",
+      "translation": "Maha Menerima Syukur",
+      "word_type": "noun",
+      "root": "ش-ك-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "شُكْر",
+          "translation": "syukur"
+        },
+        {
+          "arabic": "شَاكِر",
+          "translation": "bersyukur"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ غَفُورٌۭ شَكُورٌ",
+        "translation": "Sesungguhnya Allah Maha Pengampun lagi Maha Mensyukuri",
+        "surah": "Asy-Syura",
+        "ayah": 23
+      }
+    },
+    {
+      "id": 36,
+      "arabic": "الْعَلِيُّ",
+      "transliteration": "Al-'Aliyy",
+      "translation": "Maha Tinggi",
+      "word_type": "noun",
+      "root": "ع-ل-و",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عُلُوّ",
+          "translation": "ketinggian"
+        },
+        {
+          "arabic": "أَعْلَىٰ",
+          "translation": "tertinggi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+        "translation": "Milik-Nya apa di langit dan di bumi. Dialah Maha Tinggi lagi Maha Agung",
+        "surah": "Asy-Syura",
+        "ayah": 4
+      }
+    },
+    {
+      "id": 37,
+      "arabic": "الْكَبِيرُ",
+      "transliteration": "Al-Kabīr",
+      "translation": "Maha Besar",
+      "word_type": "noun",
+      "root": "ك-ب-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "كِبْرِيَاء",
+          "translation": "kebesaran"
+        },
+        {
+          "arabic": "أَكْبَر",
+          "translation": "terbesar"
+        }
+      ],
+      "quran_example": {
+        "arabic": "عَـٰلِمُ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ ٱلْكَبِيرُ ٱلْمُتَعَالِ",
+        "translation": "Yang Mengetahui yang gaib dan nyata, Maha Besar lagi Maha Tinggi",
+        "surah": "Ar-Ra'd",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 38,
+      "arabic": "الْحَفِيظُ",
+      "transliteration": "Al-Ḥafīẓ",
+      "translation": "Maha Memelihara",
+      "word_type": "noun",
+      "root": "ح-ف-ظ",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حِفْظ",
+          "translation": "penjagaan"
+        },
+        {
+          "arabic": "حَافِظ",
+          "translation": "penjaga"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَٱللَّهُ خَيْرٌ حَـٰفِظًۭا ۖ وَهُوَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+        "translation": "Maka Allah sebaik-baik penjaga, dan Dia Maha Penyayang di antara penyayang",
+        "surah": "Yusuf",
+        "ayah": 64
+      }
+    },
+    {
+      "id": 39,
+      "arabic": "الْمُقِيتُ",
+      "transliteration": "Al-Muqīt",
+      "translation": "Maha Pemberi Kecukupan",
+      "word_type": "noun",
+      "root": "ق-و-ت",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قُوت",
+          "translation": "makanan pokok"
+        },
+        {
+          "arabic": "إِقَاتَة",
+          "translation": "kecukupan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَكَانَ ٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ مُّقِيتًا",
+        "translation": "Dan Allah Maha Kuasa atas segala sesuatu",
+        "surah": "An-Nisa'",
+        "ayah": 85
+      }
+    },
+    {
+      "id": 40,
+      "arabic": "الْحَسِيبُ",
+      "transliteration": "Al-Ḥasīb",
+      "translation": "Maha Mencukupi",
+      "word_type": "noun",
+      "root": "ح-س-ب",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حِسَاب",
+          "translation": "perhitungan"
+        },
+        {
+          "arabic": "حَسْب",
+          "translation": "cukup"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ كَانَ عَلَىٰ كُلِّ شَىْءٍ حَسِيبًا",
+        "translation": "Sesungguhnya Allah Maha Memperhitungkan segala sesuatu",
+        "surah": "An-Nisa'",
+        "ayah": 86
+      }
+    },
+    {
+      "id": 41,
+      "arabic": "الْجَلِيلُ",
+      "transliteration": "Al-Jalīl",
+      "translation": "Maha Mulia",
+      "word_type": "noun",
+      "root": "ج-ل-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "جَلَال",
+          "translation": "kemuliaan"
+        },
+        {
+          "arabic": "جَلِيل",
+          "translation": "mulia"
+        }
+      ],
+      "quran_example": {
+        "arabic": "تَبَـٰرَكَ ٱسْمُ رَبِّكَ ذِى ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ",
+        "translation": "Mahasuci nama Tuhanmu Pemilik keagungan dan kemuliaan",
+        "surah": "Ar-Rahman",
+        "ayah": 78
+      }
+    },
+    {
+      "id": 42,
+      "arabic": "الْكَرِيمُ",
+      "transliteration": "Al-Karīm",
+      "translation": "Maha Pemurah",
+      "word_type": "noun",
+      "root": "ك-ر-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "كَرَم",
+          "translation": "kemuliaan"
+        },
+        {
+          "arabic": "إِكْرَام",
+          "translation": "penghormatan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلْكَرِيمِ",
+        "translation": "Wahai manusia, apakah yang memperdayakanmu terhadap Tuhanmu Yang Maha Mulia?",
+        "surah": "Al-Infitar",
+        "ayah": 6
+      }
+    },
+    {
+      "id": 43,
+      "arabic": "الرَّقِيبُ",
+      "transliteration": "Ar-Raqīb",
+      "translation": "Maha Mengawasi",
+      "word_type": "noun",
+      "root": "ر-ق-ب",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مُرَاقَبَة",
+          "translation": "pengawasan"
+        },
+        {
+          "arabic": "رَقِيب",
+          "translation": "pengawas"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
+        "translation": "Sesungguhnya Allah Maha Mengawasi kamu",
+        "surah": "An-Nisa'",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 44,
+      "arabic": "الْمُجِيبُ",
+      "transliteration": "Al-Mujīb",
+      "translation": "Maha Mengabulkan",
+      "word_type": "noun",
+      "root": "ج-و-ب",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "إِجَابَة",
+          "translation": "jawaban"
+        },
+        {
+          "arabic": "مُسْتَجِيب",
+          "translation": "menjawab"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَإِنِّى قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ",
+        "translation": "Aku dekat. Aku mengabulkan doa orang yang berdoa apabila ia berdoa kepada-Ku",
+        "surah": "Al-Baqarah",
+        "ayah": 186
+      }
+    },
+    {
+      "id": 45,
+      "arabic": "الْوَاسِعُ",
+      "transliteration": "Al-Wāsi'",
+      "translation": "Maha Luas",
+      "word_type": "noun",
+      "root": "و-س-ع",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "سَعَة",
+          "translation": "keluasan"
+        },
+        {
+          "arabic": "وَاسِع",
+          "translation": "luas"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ وَٰسِعٌ عَلِيمٌ",
+        "translation": "Sesungguhnya Allah Maha Luas lagi Maha Mengetahui",
+        "surah": "Al-Baqarah",
+        "ayah": 115
+      }
+    },
+    {
+      "id": 46,
+      "arabic": "الْحَكِيمُ",
+      "transliteration": "Al-Ḥakīm",
+      "translation": "Maha Bijaksana",
+      "word_type": "noun",
+      "root": "ح-ك-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حِكْمَة",
+          "translation": "kebijaksanaan"
+        },
+        {
+          "arabic": "حُكْم",
+          "translation": "hukum"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
+        "translation": "Dan Allah Maha Perkasa lagi Maha Bijaksana",
+        "surah": "An-Nisa'",
+        "ayah": 158
+      }
+    },
+    {
+      "id": 47,
+      "arabic": "الْوَدُودُ",
+      "transliteration": "Al-Wadūd",
+      "translation": "Maha Pencinta",
+      "word_type": "noun",
+      "root": "و-د-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "وُدّ",
+          "translation": "cinta"
+        },
+        {
+          "arabic": "مَوَدَّة",
+          "translation": "kasih sayang"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ رَبِّى رَحِيمٌۭ وَدُودٌ",
+        "translation": "Sesungguhnya Tuhanku Maha Penyayang lagi Maha Mengasihi",
+        "surah": "Hud",
+        "ayah": 90
+      }
+    },
+    {
+      "id": 48,
+      "arabic": "الْمَجِيدُ",
+      "transliteration": "Al-Majīd",
+      "translation": "Maha Mulia",
+      "word_type": "noun",
+      "root": "م-ج-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مَجْد",
+          "translation": "kemuliaan"
+        },
+        {
+          "arabic": "تَمْجِيد",
+          "translation": "pemuliaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّهُۥ حَمِيدٌۭ مَّجِيدٌ",
+        "translation": "Sesungguhnya Dia Maha Terpuji lagi Maha Mulia",
+        "surah": "Hud",
+        "ayah": 73
+      }
+    },
+    {
+      "id": 49,
+      "arabic": "الْبَاعِثُ",
+      "transliteration": "Al-Bā'iṡ",
+      "translation": "Maha Membangkitkan",
+      "word_type": "noun",
+      "root": "ب-ع-ث",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بَعْث",
+          "translation": "kebangkitan"
+        },
+        {
+          "arabic": "مَبْعُوث",
+          "translation": "dibangkitkan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَأَنَّ ٱلسَّاعَةَ ءَاتِيَةٌۭ لَّا رَيْبَ فِيهَا وَأَنَّ ٱللَّهَ يَبْعَثُ مَن فِى ٱلْقُبُورِ",
+        "translation": "Sungguh kiamat pasti datang, dan Allah membangkitkan yang di kubur",
+        "surah": "Al-Hajj",
+        "ayah": 7
+      }
+    },
+    {
+      "id": 50,
+      "arabic": "الشَّهِيدُ",
+      "transliteration": "Asy-Syahīd",
+      "translation": "Maha Menyaksikan",
+      "word_type": "noun",
+      "root": "ش-ه-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "شَهَادَة",
+          "translation": "kesaksian"
+        },
+        {
+          "arabic": "شَاهِد",
+          "translation": "saksi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًۢا بَصِيرًا",
+        "translation": "Sesungguhnya Dia Maha Mengetahui lagi Maha Melihat hamba-Nya",
+        "surah": "Al-Isra'",
+        "ayah": 96
+      }
+    },
+    {
+      "id": 51,
+      "arabic": "الْحَقُّ",
+      "transliteration": "Al-Ḥaqq",
+      "translation": "Maha Benar",
+      "word_type": "noun",
+      "root": "ح-ق-ق",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حَقِيقَة",
+          "translation": "hakikat"
+        },
+        {
+          "arabic": "حَقّ",
+          "translation": "benar"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ذَٰلِكَ بِأَنَّ ٱللَّهَ هُوَ ٱلْحَقُّ وَأَنَّ مَا يَدْعُونَ مِن دُونِهِۦ هُوَ ٱلْبَـٰطِلُ",
+        "translation": "Karena Allah Dialah yang benar, dan selain-Nya batil",
+        "surah": "Luqman",
+        "ayah": 30
+      }
+    },
+    {
+      "id": 52,
+      "arabic": "الْوَكِيلُ",
+      "transliteration": "Al-Wakīl",
+      "translation": "Maha Memelihara",
+      "word_type": "noun",
+      "root": "و-ك-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "تَوَكُّل",
+          "translation": "berserah diri"
+        },
+        {
+          "arabic": "وَكِيل",
+          "translation": "wakil"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَقَالُوا۟ حَسْبُنَا ٱللَّهُ وَنِعْمَ ٱلْوَكِيلُ",
+        "translation": "Dan mereka berkata, Cukuplah Allah menjadi Penolong kami, dan Allah sebaik-baik Pelindung",
+        "surah": "Ali 'Imran",
+        "ayah": 173
+      }
+    },
+    {
+      "id": 53,
+      "arabic": "الْقَوِيُّ",
+      "transliteration": "Al-Qawiyy",
+      "translation": "Maha Kuat",
+      "word_type": "noun",
+      "root": "ق-و-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قُوَّة",
+          "translation": "kekuatan"
+        },
+        {
+          "arabic": "قَوِيّ",
+          "translation": "kuat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ",
+        "translation": "Sesungguhnya Allah Dialah Maha Pemberi Rezeki, Pemilik kekuatan lagi sangat kokoh",
+        "surah": "Adz-Dzariyat",
+        "ayah": 58
+      }
+    },
+    {
+      "id": 54,
+      "arabic": "الْمَتِينُ",
+      "transliteration": "Al-Matīn",
+      "translation": "Maha Kokoh",
+      "word_type": "noun",
+      "root": "م-ت-ن",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مَتَانَة",
+          "translation": "kekokohan"
+        },
+        {
+          "arabic": "مَتِين",
+          "translation": "kokoh"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ",
+        "translation": "Sesungguhnya Allah Maha Pemberi Rezeki, Pemilik kekuatan lagi sangat kokoh",
+        "surah": "Adz-Dzariyat",
+        "ayah": 58
+      }
+    },
+    {
+      "id": 55,
+      "arabic": "الْوَلِيُّ",
+      "transliteration": "Al-Waliyy",
+      "translation": "Maha Melindungi",
+      "word_type": "noun",
+      "root": "و-ل-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "وِلَايَة",
+          "translation": "perlindungan"
+        },
+        {
+          "arabic": "وَلِيّ",
+          "translation": "pelindung"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ وَلِىُّ ٱلَّذِينَ ءَامَنُوا۟ يُخْرِجُهُم مِّنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ",
+        "translation": "Allah Pelindung orang beriman; Dia mengeluarkan mereka dari kegelapan menuju cahaya",
+        "surah": "Al-Baqarah",
+        "ayah": 257
+      }
+    },
+    {
+      "id": 56,
+      "arabic": "الْحَمِيدُ",
+      "transliteration": "Al-Ḥamīd",
+      "translation": "Maha Terpuji",
+      "word_type": "noun",
+      "root": "ح-م-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حَمْد",
+          "translation": "pujian"
+        },
+        {
+          "arabic": "مَحْمُود",
+          "translation": "terpuji"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ هُوَ ٱلْغَنِىُّ ٱلْحَمِيدُ",
+        "translation": "Allah Dialah Yang Maha Kaya lagi Maha Terpuji",
+        "surah": "Fatir",
+        "ayah": 15
+      }
+    },
+    {
+      "id": 57,
+      "arabic": "الْمُحْصِي",
+      "transliteration": "Al-Muḥṣī",
+      "translation": "Maha Menghitung",
+      "word_type": "noun",
+      "root": "ح-ص-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "إِحْصَاء",
+          "translation": "penghitungan"
+        },
+        {
+          "arabic": "حَصَىٰ",
+          "translation": "menghitung"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِن تَعُدُّوا۟ نِعْمَتَ ٱللَّهِ لَا تُحْصُوهَآ",
+        "translation": "Jika kamu menghitung nikmat Allah, niscaya kamu tidak akan mampu",
+        "surah": "An-Nahl",
+        "ayah": 18
+      }
+    },
+    {
+      "id": 58,
+      "arabic": "الْمُبْدِئُ",
+      "transliteration": "Al-Mubdi'",
+      "translation": "Maha Memulai",
+      "word_type": "noun",
+      "root": "ب-د-أ",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بِدَايَة",
+          "translation": "permulaan"
+        },
+        {
+          "arabic": "مَبْدَأ",
+          "translation": "prinsip"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ يَبْدَؤُا۟ ٱلْخَلْقَ ثُمَّ يُعِيدُهُۥ",
+        "translation": "Allah memulai penciptaan, kemudian mengembalikannya",
+        "surah": "Ar-Rum",
+        "ayah": 11
+      }
+    },
+    {
+      "id": 59,
+      "arabic": "الْمُعِيدُ",
+      "transliteration": "Al-Mu'īd",
+      "translation": "Maha Mengembalikan",
+      "word_type": "noun",
+      "root": "ع-و-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "إِعَادَة",
+          "translation": "pengembalian"
+        },
+        {
+          "arabic": "عَوْدَة",
+          "translation": "kembali"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّهُۥ هُوَ يُبْدِئُ وَيُعِيدُ",
+        "translation": "Sesungguhnya Dialah yang memulai penciptaan dan mengembalikannya",
+        "surah": "Al-Buruj",
+        "ayah": 13
+      }
+    },
+    {
+      "id": 60,
+      "arabic": "الْمُحْيِي",
+      "transliteration": "Al-Muḥyī",
+      "translation": "Maha Menghidupkan",
+      "word_type": "noun",
+      "root": "ح-ي-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حَيَاة",
+          "translation": "kehidupan"
+        },
+        {
+          "arabic": "إِحْيَاء",
+          "translation": "penghidupan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَأَنَّهُۥ هُوَ أَمَاتَ وَأَحْيَا",
+        "translation": "Sesungguhnya Dialah yang mematikan dan menghidupkan",
+        "surah": "An-Najm",
+        "ayah": 44
+      }
+    },
+    {
+      "id": 61,
+      "arabic": "الْمُمِيتُ",
+      "transliteration": "Al-Mumīt",
+      "translation": "Maha Mematikan",
+      "word_type": "noun",
+      "root": "م-و-ت",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مَوْت",
+          "translation": "kematian"
+        },
+        {
+          "arabic": "مَيِّت",
+          "translation": "yang mati"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ يَتَوَفَّى ٱلْأَنفُسَ حِينَ مَوْتِهَا",
+        "translation": "Allah memegang nyawa seseorang pada saat kematiannya",
+        "surah": "Az-Zumar",
+        "ayah": 42
+      }
+    },
+    {
+      "id": 62,
+      "arabic": "الْحَيُّ",
+      "transliteration": "Al-Ḥayy",
+      "translation": "Maha Hidup",
+      "word_type": "noun",
+      "root": "ح-ي-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "حَيَاة",
+          "translation": "kehidupan"
+        },
+        {
+          "arabic": "أَحْيَاء",
+          "translation": "yang hidup"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ",
+        "translation": "Allah, tidak ada tuhan selain Dia, Yang Maha Hidup, Yang terus-menerus mengurus",
+        "surah": "Al-Baqarah",
+        "ayah": 255
+      }
+    },
+    {
+      "id": 63,
+      "arabic": "الْقَيُّومُ",
+      "transliteration": "Al-Qayyūm",
+      "translation": "Maha Berdiri Sendiri",
+      "word_type": "noun",
+      "root": "ق-و-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قِيَام",
+          "translation": "berdiri"
+        },
+        {
+          "arabic": "قَيِّم",
+          "translation": "pengurus"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌۭ وَلَا نَوْمٌۭ",
+        "translation": "Allah, tidak ada tuhan selain Dia, Yang Maha Hidup lagi terus-menerus mengurus. Tidak mengantuk dan tidak tidur",
+        "surah": "Al-Baqarah",
+        "ayah": 255
+      }
+    },
+    {
+      "id": 64,
+      "arabic": "الْوَاجِدُ",
+      "transliteration": "Al-Wājid",
+      "translation": "Maha Menemukan",
+      "word_type": "noun",
+      "root": "و-ج-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "وُجُود",
+          "translation": "keberadaan"
+        },
+        {
+          "arabic": "مَوْجُود",
+          "translation": "yang ada"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَوَجَدَ ٱللَّهَ عِندَهُۥ فَوَفَّىٰهُ حِسَابَهُۥ",
+        "translation": "Dan ia mendapati Allah di sisinya, lalu Allah memperhitungkan amalnya",
+        "surah": "An-Nur",
+        "ayah": 39
+      }
+    },
+    {
+      "id": 65,
+      "arabic": "الْمَاجِدُ",
+      "transliteration": "Al-Mājid",
+      "translation": "Maha Mulia",
+      "word_type": "noun",
+      "root": "م-ج-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مَجْد",
+          "translation": "kemuliaan"
+        },
+        {
+          "arabic": "مَجِيد",
+          "translation": "Maha Mulia"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّهُۥ حَمِيدٌۭ مَّجِيدٌ",
+        "translation": "Sesungguhnya Dia Maha Terpuji lagi Maha Mulia",
+        "surah": "Hud",
+        "ayah": 73
+      }
+    },
+    {
+      "id": 66,
+      "arabic": "الْوَاحِدُ",
+      "transliteration": "Al-Wāḥid",
+      "translation": "Maha Tunggal",
+      "word_type": "noun",
+      "root": "و-ح-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "وَحْدَة",
+          "translation": "kesatuan"
+        },
+        {
+          "arabic": "أَحَد",
+          "translation": "satu"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَـٰهَ إِلَّا هُوَ",
+        "translation": "Dan Tuhanmu adalah Tuhan Yang Maha Esa, tidak ada tuhan selain Dia",
+        "surah": "Al-Baqarah",
+        "ayah": 163
+      }
+    },
+    {
+      "id": 67,
+      "arabic": "الْأَحَدُ",
+      "transliteration": "Al-Aḥad",
+      "translation": "Maha Esa",
+      "word_type": "noun",
+      "root": "أ-ح-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "أَحَدِيَّة",
+          "translation": "keesaan"
+        },
+        {
+          "arabic": "أَحَد",
+          "translation": "esa"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+        "translation": "Katakanlah, Dialah Allah Yang Maha Esa",
+        "surah": "Al-Ikhlas",
+        "ayah": 1
+      }
+    },
+    {
+      "id": 68,
+      "arabic": "الصَّمَدُ",
+      "transliteration": "Aṣ-Ṣamad",
+      "translation": "Tempat Meminta",
+      "word_type": "noun",
+      "root": "ص-م-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "صَمَدَ",
+          "translation": "menuju"
+        },
+        {
+          "arabic": "مَصْمُود",
+          "translation": "dituju"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ ٱلصَّمَدُ",
+        "translation": "Allah tempat meminta segala sesuatu",
+        "surah": "Al-Ikhlas",
+        "ayah": 2
+      }
+    },
+    {
+      "id": 69,
+      "arabic": "الْقَادِرُ",
+      "transliteration": "Al-Qādir",
+      "translation": "Maha Berkuasa",
+      "word_type": "noun",
+      "root": "ق-د-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قُدْرَة",
+          "translation": "kekuasaan"
+        },
+        {
+          "arabic": "قَدِير",
+          "translation": "Maha Kuasa"
+        }
+      ],
+      "quran_example": {
+        "arabic": "أَوَلَيْسَ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ بِقَـٰدِرٍ",
+        "translation": "Bukankah Yang menciptakan langit dan bumi mampu menciptakan yang serupa?",
+        "surah": "Yasin",
+        "ayah": 81
+      }
+    },
+    {
+      "id": 70,
+      "arabic": "الْمُقْتَدِرُ",
+      "transliteration": "Al-Muqtadir",
+      "translation": "Maha Menentukan",
+      "word_type": "noun",
+      "root": "ق-د-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "اِقْتِدَار",
+          "translation": "kekuasaan penuh"
+        },
+        {
+          "arabic": "قَادِر",
+          "translation": "berkuasa"
+        }
+      ],
+      "quran_example": {
+        "arabic": "كَذَّبُوا۟ بِـَٔايَـٰتِنَا كُلِّهَا فَأَخَذْنَـٰهُمْ أَخْذَ عَزِيزٍۢ مُّقْتَدِرٍ",
+        "translation": "Mereka dustakan ayat Kami, maka Kami siksa dengan siksaan Maha Perkasa lagi Maha Kuasa",
+        "surah": "Al-Qamar",
+        "ayah": 42
+      }
+    },
+    {
+      "id": 71,
+      "arabic": "الْمُقَدِّمُ",
+      "transliteration": "Al-Muqaddim",
+      "translation": "Maha Mendahulukan",
+      "word_type": "noun",
+      "root": "ق-د-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "تَقْدِيم",
+          "translation": "pendahuluan"
+        },
+        {
+          "arabic": "مُتَقَدِّم",
+          "translation": "terdahulu"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَمِنْهُمْ ظَالِمٌۭ لِّنَفْسِهِۦ وَمِنْهُم مُّقْتَصِدٌۭ وَمِنْهُمْ سَابِقٌۢ بِٱلْخَيْرَٰتِ",
+        "translation": "Di antara mereka ada yang zalim, pertengahan, dan yang lebih dahulu berbuat kebaikan",
+        "surah": "Fatir",
+        "ayah": 32
+      }
+    },
+    {
+      "id": 72,
+      "arabic": "الْمُؤَخِّرُ",
+      "transliteration": "Al-Mu'akhkhir",
+      "translation": "Maha Mengakhirkan",
+      "word_type": "noun",
+      "root": "أ-خ-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "تَأْخِير",
+          "translation": "penundaan"
+        },
+        {
+          "arabic": "آخِر",
+          "translation": "akhir"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَمَا نُؤَخِّرُهُۥٓ إِلَّا لِأَجَلٍۢ مَّعْدُودٍۢ",
+        "translation": "Dan Kami tidak menundanya melainkan sampai waktu yang ditentukan",
+        "surah": "Hud",
+        "ayah": 104
+      }
+    },
+    {
+      "id": 73,
+      "arabic": "الْأَوَّلُ",
+      "transliteration": "Al-Awwal",
+      "translation": "Maha Awal",
+      "word_type": "noun",
+      "root": "أ-و-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "أَوَّلِيَّة",
+          "translation": "keawalan"
+        },
+        {
+          "arabic": "أَوَائِل",
+          "translation": "yang pertama"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱلْأَوَّلُ وَٱلْـَٔاخِرُ وَٱلظَّـٰهِرُ وَٱلْبَاطِنُ",
+        "translation": "Dialah Yang Awal, Yang Akhir, Yang Zahir, dan Yang Batin",
+        "surah": "Al-Hadid",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 74,
+      "arabic": "الْآخِرُ",
+      "transliteration": "Al-Ākhir",
+      "translation": "Maha Akhir",
+      "word_type": "noun",
+      "root": "أ-خ-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "آخِرَة",
+          "translation": "akhirat"
+        },
+        {
+          "arabic": "أَوَّل",
+          "translation": "awal"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱلْأَوَّلُ وَٱلْـَٔاخِرُ وَٱلظَّـٰهِرُ وَٱلْبَاطِنُ",
+        "translation": "Dialah Yang Awal, Yang Akhir, Yang Zahir, dan Yang Batin",
+        "surah": "Al-Hadid",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 75,
+      "arabic": "الظَّاهِرُ",
+      "transliteration": "Aẓ-Ẓāhir",
+      "translation": "Maha Nyata",
+      "word_type": "noun",
+      "root": "ظ-ه-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "ظُهُور",
+          "translation": "kenyataan"
+        },
+        {
+          "arabic": "ظَاهِرَة",
+          "translation": "fenomena"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱلْأَوَّلُ وَٱلْـَٔاخِرُ وَٱلظَّـٰهِرُ وَٱلْبَاطِنُ",
+        "translation": "Dialah Yang Awal, Yang Akhir, Yang Zahir, dan Yang Batin",
+        "surah": "Al-Hadid",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 76,
+      "arabic": "الْبَاطِنُ",
+      "transliteration": "Al-Bāṭin",
+      "translation": "Maha Tersembunyi",
+      "word_type": "noun",
+      "root": "ب-ط-ن",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بَاطِن",
+          "translation": "batin"
+        },
+        {
+          "arabic": "بَطْن",
+          "translation": "perut"
+        }
+      ],
+      "quran_example": {
+        "arabic": "هُوَ ٱلْأَوَّلُ وَٱلْـَٔاخِرُ وَٱلظَّـٰهِرُ وَٱلْبَاطِنُ",
+        "translation": "Dialah Yang Awal, Yang Akhir, Yang Zahir, dan Yang Batin",
+        "surah": "Al-Hadid",
+        "ayah": 3
+      }
+    },
+    {
+      "id": 77,
+      "arabic": "الْوَالِي",
+      "transliteration": "Al-Wālī",
+      "translation": "Maha Memerintah",
+      "word_type": "noun",
+      "root": "و-ل-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "وِلَايَة",
+          "translation": "kekuasaan"
+        },
+        {
+          "arabic": "وَالٍ",
+          "translation": "penguasa"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَهُوَ ٱلَّذِى يُنَزِّلُ ٱلْغَيْثَ مِنۢ بَعْدِ مَا قَنَطُوا۟ وَيَنشُرُ رَحْمَتَهُۥ",
+        "translation": "Dialah yang menurunkan hujan setelah putus asa dan menyebarkan rahmat-Nya",
+        "surah": "Asy-Syura",
+        "ayah": 28
+      }
+    },
+    {
+      "id": 78,
+      "arabic": "الْمُتَعَالِي",
+      "transliteration": "Al-Muta'ālī",
+      "translation": "Maha Tinggi",
+      "word_type": "noun",
+      "root": "ع-ل-و",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "تَعَالِي",
+          "translation": "ketinggian"
+        },
+        {
+          "arabic": "عَلِيّ",
+          "translation": "tinggi"
+        }
+      ],
+      "quran_example": {
+        "arabic": "عَـٰلِمُ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ ٱلْكَبِيرُ ٱلْمُتَعَالِ",
+        "translation": "Yang Mengetahui gaib dan nyata, Maha Besar lagi Maha Tinggi",
+        "surah": "Ar-Ra'd",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 79,
+      "arabic": "الْبَرُّ",
+      "transliteration": "Al-Barr",
+      "translation": "Maha Dermawan",
+      "word_type": "noun",
+      "root": "ب-ر-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بِرّ",
+          "translation": "kebajikan"
+        },
+        {
+          "arabic": "بَارّ",
+          "translation": "berbakti"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّهُۥ هُوَ ٱلْبَرُّ ٱلرَّحِيمُ",
+        "translation": "Sesungguhnya Dialah Yang Maha Baik lagi Maha Penyayang",
+        "surah": "At-Tur",
+        "ayah": 28
+      }
+    },
+    {
+      "id": 80,
+      "arabic": "التَّوَّابُ",
+      "transliteration": "At-Tawwāb",
+      "translation": "Maha Penerima Taubat",
+      "word_type": "noun",
+      "root": "ت-و-ب",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "تَوْبَة",
+          "translation": "taubat"
+        },
+        {
+          "arabic": "تَائِب",
+          "translation": "bertaubat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ يُحِبُّ ٱلتَّوَّٰبِينَ وَيُحِبُّ ٱلْمُتَطَهِّرِينَ",
+        "translation": "Sesungguhnya Allah mencintai yang bertaubat dan mencintai yang menyucikan diri",
+        "surah": "Al-Baqarah",
+        "ayah": 222
+      }
+    },
+    {
+      "id": 81,
+      "arabic": "الْمُنْتَقِمُ",
+      "transliteration": "Al-Muntaqim",
+      "translation": "Maha Memberi Balasan",
+      "word_type": "noun",
+      "root": "ن-ق-م",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "اِنْتِقَام",
+          "translation": "pembalasan"
+        },
+        {
+          "arabic": "نِقْمَة",
+          "translation": "azab"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَٱنتَقَمْنَا مِنْهُمْ وَإِنَّهُمَا لَبِإِمَامٍۢ مُّبِينٍۢ",
+        "translation": "Maka Kami membinasakan mereka. Keduanya terletak di jalan raya yang nyata",
+        "surah": "Al-Hijr",
+        "ayah": 79
+      }
+    },
+    {
+      "id": 82,
+      "arabic": "الْعَفُوُّ",
+      "transliteration": "Al-'Afuww",
+      "translation": "Maha Pemaaf",
+      "word_type": "noun",
+      "root": "ع-ف-و",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "عَفْو",
+          "translation": "maaf"
+        },
+        {
+          "arabic": "عَافِيَة",
+          "translation": "keselamatan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "فَإِنَّ ٱللَّهَ كَانَ عَفُوًّۭا قَدِيرًا",
+        "translation": "Sesungguhnya Allah Maha Pemaaf lagi Maha Kuasa",
+        "surah": "An-Nisa'",
+        "ayah": 149
+      }
+    },
+    {
+      "id": 83,
+      "arabic": "الرَّؤُوفُ",
+      "transliteration": "Ar-Ra'ūf",
+      "translation": "Maha Pengasih",
+      "word_type": "noun",
+      "root": "ر-أ-ف",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "رَأْفَة",
+          "translation": "belas kasih"
+        },
+        {
+          "arabic": "رَحْمَة",
+          "translation": "rahmat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بِٱلْمُؤْمِنِينَ رَءُوفٌۭ رَّحِيمٌۭ",
+        "translation": "Terhadap orang beriman, Dia Maha Pengasih lagi Maha Penyayang",
+        "surah": "At-Taubah",
+        "ayah": 128
+      }
+    },
+    {
+      "id": 84,
+      "arabic": "مَالِكُ الْمُلْكِ",
+      "transliteration": "Mālik-ul-Mulk",
+      "translation": "Pemilik Kerajaan",
+      "word_type": "noun",
+      "root": "م-ل-ك",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مُلْك",
+          "translation": "kerajaan"
+        },
+        {
+          "arabic": "مَالِك",
+          "translation": "pemilik"
+        }
+      ],
+      "quran_example": {
+        "arabic": "قُلِ ٱللَّهُمَّ مَـٰلِكَ ٱلْمُلْكِ تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ",
+        "translation": "Ya Allah, Pemilik kerajaan, Engkau berikan kerajaan kepada yang Kaukehendaki",
+        "surah": "Ali 'Imran",
+        "ayah": 26
+      }
+    },
+    {
+      "id": 85,
+      "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      "transliteration": "Dzul-Jalāli wal-Ikrām",
+      "translation": "Pemilik Kebesaran dan Kemuliaan",
+      "word_type": "noun",
+      "root": "ج-ل-ل",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "جَلَال",
+          "translation": "kebesaran"
+        },
+        {
+          "arabic": "إِكْرَام",
+          "translation": "kemuliaan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "تَبَـٰرَكَ ٱسْمُ رَبِّكَ ذِى ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ",
+        "translation": "Mahasuci nama Tuhanmu Pemilik keagungan dan kemuliaan",
+        "surah": "Ar-Rahman",
+        "ayah": 78
+      }
+    },
+    {
+      "id": 86,
+      "arabic": "الْمُقْسِطُ",
+      "transliteration": "Al-Muqsiṭ",
+      "translation": "Maha Adil",
+      "word_type": "noun",
+      "root": "ق-س-ط",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "قِسْط",
+          "translation": "keadilan"
+        },
+        {
+          "arabic": "مُقْسِط",
+          "translation": "berlaku adil"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُقْسِطِينَ",
+        "translation": "Sesungguhnya Allah mencintai orang-orang yang berlaku adil",
+        "surah": "Al-Ma'idah",
+        "ayah": 42
+      }
+    },
+    {
+      "id": 87,
+      "arabic": "الْجَامِعُ",
+      "transliteration": "Al-Jāmi'",
+      "translation": "Maha Mengumpulkan",
+      "word_type": "noun",
+      "root": "ج-م-ع",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "جَمْع",
+          "translation": "pengumpulan"
+        },
+        {
+          "arabic": "جَامِع",
+          "translation": "pengumpul"
+        }
+      ],
+      "quran_example": {
+        "arabic": "رَبَّنَآ إِنَّكَ جَامِعُ ٱلنَّاسِ لِيَوْمٍۢ لَّا رَيْبَ فِيهِ",
+        "translation": "Ya Tuhan kami, Engkaulah yang mengumpulkan manusia pada hari yang tidak diragukan",
+        "surah": "Ali 'Imran",
+        "ayah": 9
+      }
+    },
+    {
+      "id": 88,
+      "arabic": "الْغَنِيُّ",
+      "transliteration": "Al-Ghaniyy",
+      "translation": "Maha Kaya",
+      "word_type": "noun",
+      "root": "غ-ن-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "غِنَىٰ",
+          "translation": "kekayaan"
+        },
+        {
+          "arabic": "غَنِيّ",
+          "translation": "kaya"
+        }
+      ],
+      "quran_example": {
+        "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ أَنتُمُ ٱلْفُقَرَآءُ إِلَى ٱللَّهِ ۖ وَٱللَّهُ هُوَ ٱلْغَنِىُّ",
+        "translation": "Wahai manusia, kamulah yang fakir kepada Allah; dan Allah Dialah Yang Maha Kaya",
+        "surah": "Fatir",
+        "ayah": 15
+      }
+    },
+    {
+      "id": 89,
+      "arabic": "الْمُغْنِي",
+      "transliteration": "Al-Mughnī",
+      "translation": "Maha Memberi Kekayaan",
+      "word_type": "noun",
+      "root": "غ-ن-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "إِغْنَاء",
+          "translation": "pemberian kekayaan"
+        },
+        {
+          "arabic": "غَنِيّ",
+          "translation": "kaya"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَأَنَّهُۥ هُوَ أَغْنَىٰ وَأَقْنَىٰ",
+        "translation": "Dan sesungguhnya Dialah yang memberikan kekayaan dan kecukupan",
+        "surah": "An-Najm",
+        "ayah": 48
+      }
+    },
+    {
+      "id": 90,
+      "arabic": "الْمَانِعُ",
+      "transliteration": "Al-Māni'",
+      "translation": "Maha Mencegah",
+      "word_type": "noun",
+      "root": "م-ن-ع",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مَنْع",
+          "translation": "pencegahan"
+        },
+        {
+          "arabic": "مَانِع",
+          "translation": "pencegah"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِن يَمْسَسْكَ ٱللَّهُ بِضُرٍّۢ فَلَا كَاشِفَ لَهُۥٓ إِلَّا هُوَ",
+        "translation": "Jika Allah menimpakan suatu kemudaratan, tidak ada yang dapat menghilangkannya selain Dia",
+        "surah": "Yunus",
+        "ayah": 107
+      }
+    },
+    {
+      "id": 91,
+      "arabic": "الضَّارُّ",
+      "transliteration": "Aḍ-Ḍārr",
+      "translation": "Maha Pemberi Derita",
+      "word_type": "noun",
+      "root": "ض-ر-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "ضَرَر",
+          "translation": "kemudaratan"
+        },
+        {
+          "arabic": "ضُرّ",
+          "translation": "derita"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِن يَمْسَسْكَ ٱللَّهُ بِضُرٍّۢ فَلَا كَاشِفَ لَهُۥٓ إِلَّا هُوَ",
+        "translation": "Jika Allah menimpakan kepadamu kemudaratan, tidak ada yang dapat menghilangkannya kecuali Dia",
+        "surah": "Yunus",
+        "ayah": 107
+      }
+    },
+    {
+      "id": 92,
+      "arabic": "النَّافِعُ",
+      "transliteration": "An-Nāfi'",
+      "translation": "Maha Pemberi Manfaat",
+      "word_type": "noun",
+      "root": "ن-ف-ع",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "نَفْع",
+          "translation": "manfaat"
+        },
+        {
+          "arabic": "نَافِع",
+          "translation": "bermanfaat"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَإِن يَمْسَسْكَ بِخَيْرٍۢ فَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ",
+        "translation": "Dan jika Dia memberimu kebaikan, maka Dia Maha Kuasa atas segala sesuatu",
+        "surah": "Al-An'am",
+        "ayah": 17
+      }
+    },
+    {
+      "id": 93,
+      "arabic": "النُّورُ",
+      "transliteration": "An-Nūr",
+      "translation": "Maha Bercahaya",
+      "word_type": "noun",
+      "root": "ن-و-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "نُور",
+          "translation": "cahaya"
+        },
+        {
+          "arabic": "إِنَارَة",
+          "translation": "penerangan"
+        }
+      ],
+      "quran_example": {
+        "arabic": "ٱللَّهُ نُورُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ",
+        "translation": "Allah cahaya langit dan bumi",
+        "surah": "An-Nur",
+        "ayah": 35
+      }
+    },
+    {
+      "id": 94,
+      "arabic": "الْهَادِي",
+      "transliteration": "Al-Hādī",
+      "translation": "Maha Memberi Petunjuk",
+      "word_type": "noun",
+      "root": "ه-د-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "هُدًى",
+          "translation": "petunjuk"
+        },
+        {
+          "arabic": "هَادٍ",
+          "translation": "pemberi petunjuk"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ ٱللَّهَ لَهَادِ ٱلَّذِينَ ءَامَنُوٓا۟ إِلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ",
+        "translation": "Sesungguhnya Allah benar-benar Pemberi petunjuk bagi orang beriman ke jalan lurus",
+        "surah": "Al-Hajj",
+        "ayah": 54
+      }
+    },
+    {
+      "id": 95,
+      "arabic": "الْبَدِيعُ",
+      "transliteration": "Al-Badī'",
+      "translation": "Maha Pencipta",
+      "word_type": "noun",
+      "root": "ب-د-ع",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "إِبْدَاع",
+          "translation": "penciptaan"
+        },
+        {
+          "arabic": "بَدِيع",
+          "translation": "pencipta orisinal"
+        }
+      ],
+      "quran_example": {
+        "arabic": "بَدِيعُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ",
+        "translation": "Pencipta langit dan bumi tanpa contoh sebelumnya",
+        "surah": "Al-Baqarah",
+        "ayah": 117
+      }
+    },
+    {
+      "id": 96,
+      "arabic": "الْبَاقِي",
+      "transliteration": "Al-Bāqī",
+      "translation": "Maha Kekal",
+      "word_type": "noun",
+      "root": "ب-ق-ي",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "بَقَاء",
+          "translation": "kekekalan"
+        },
+        {
+          "arabic": "بَاقٍ",
+          "translation": "kekal"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ",
+        "translation": "Dan tetap kekal Wajah Tuhanmu Pemilik kebesaran dan kemuliaan",
+        "surah": "Ar-Rahman",
+        "ayah": 27
+      }
+    },
+    {
+      "id": 97,
+      "arabic": "الْوَارِثُ",
+      "transliteration": "Al-Wāriṡ",
+      "translation": "Maha Mewarisi",
+      "word_type": "noun",
+      "root": "و-ر-ث",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "مِيرَاث",
+          "translation": "warisan"
+        },
+        {
+          "arabic": "وَارِث",
+          "translation": "pewaris"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّا نَحْنُ نَرِثُ ٱلْأَرْضَ وَمَنْ عَلَيْهَا",
+        "translation": "Sesungguhnya Kami mewarisi bumi dan semua yang ada di atasnya",
+        "surah": "Maryam",
+        "ayah": 40
+      }
+    },
+    {
+      "id": 98,
+      "arabic": "الرَّشِيدُ",
+      "transliteration": "Ar-Rasyīd",
+      "translation": "Maha Pandai",
+      "word_type": "noun",
+      "root": "ر-ش-د",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "رُشْد",
+          "translation": "kepandaian"
+        },
+        {
+          "arabic": "رَاشِد",
+          "translation": "terbimbing"
+        }
+      ],
+      "quran_example": {
+        "arabic": "إِنَّ رَبِّى عَلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ",
+        "translation": "Sesungguhnya Tuhanku di atas jalan yang lurus",
+        "surah": "Hud",
+        "ayah": 56
+      }
+    },
+    {
+      "id": 99,
+      "arabic": "الصَّبُورُ",
+      "transliteration": "Aṣ-Ṣabūr",
+      "translation": "Maha Sabar",
+      "word_type": "noun",
+      "root": "ص-ب-ر",
+      "forms": {},
+      "related_words": [
+        {
+          "arabic": "صَبْر",
+          "translation": "kesabaran"
+        },
+        {
+          "arabic": "صَابِر",
+          "translation": "penyabar"
+        }
+      ],
+      "quran_example": {
+        "arabic": "وَٱصْبِرْ وَمَا صَبْرُكَ إِلَّا بِٱللَّهِ",
+        "translation": "Bersabarlah, dan kesabaranmu itu tidak lain hanyalah dengan pertolongan Allah",
+        "surah": "An-Nahl",
+        "ayah": 127
+      }
+    }
+  ]
+}

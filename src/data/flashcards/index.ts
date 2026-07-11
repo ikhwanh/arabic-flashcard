@@ -3,7 +3,7 @@ import manifestData from './manifest.json'
 
 export const deckMetas: DeckMeta[] = manifestData
 
-const loaders = import.meta.glob<GroupedFile | VocabFile>('./[0-9]*.json', { eager: false, import: 'default' })
+const loaders = import.meta.glob<GroupedFile | VocabFile>('./*.json', { eager: false, import: 'default' })
 
 function normalizeGrouped(file: GroupedFile, targetId: string): Deck | null {
   const group = file.groups.find(g => g.id === targetId)
