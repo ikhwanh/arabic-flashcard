@@ -41,7 +41,7 @@ function generateWordQuestion(card: Card, allCards: Card[]): Question {
 function buildQuestions(cards: Card[]): Question[] {
   if (cards.length < 4) return []
 
-  const wordCards = pickRandom(cards, Math.min(10, cards.length))
+  const wordCards = shuffle(cards)
   return wordCards.map(c => generateWordQuestion(c, cards))
 }
 
