@@ -48,6 +48,13 @@ Split the verse Arabic into its individual words **in reading order** (right to 
   Include every form that exists for the verb. Omit a single form if it does not apply (e.g. a passive verb has no natural `command` — drop just that key). Omit the whole `forms` object for `ism` and `harf`.
 - `notes` — optional, see tone guidance above
 
+### 2b. Write the `literalTranslation`
+For each verse, produce a `literalTranslation` — this is the translation the reader actually sees (the app displays it in place of the official one). Write it as **natural, flowing Indonesian** that a beginner reads comfortably, while staying **faithful and complete**: do **not** drop the words the official Kemenag translation compresses away (pronouns, particles, `wajh`, `haniif`, etc.). Aim for the middle ground between a stiff word-for-word gloss and a loose idiomatic paraphrase — it should read naturally yet still let the reader account for each word card.
+
+- Keep every meaningful word (e.g. 6:76 `فَلَمَّا جَنَّ عَلَيْهِ ٱلَّيْلُ` → "Maka ketika malam menyelimutinya" — عَلَيْهِ is preserved), but phrase it fluently — avoid robotic word order.
+- Stay consistent with the per-word `meaning` values so the reader can map the sentence back to the cards.
+- Still fetch the official Kemenag `translation` in step 1 and keep it in the JSON (it is retained as data even though it is hidden in the UI).
+
 ### 3. Build the file
 Write `src/data/qs-breakdown/<surah>_<from>-<to>.json` (for a single ayah, use `<surah>_<from>-<from>.json`) with 2-space indentation:
 
@@ -65,7 +72,8 @@ Write `src/data/qs-breakdown/<surah>_<from>-<to>.json` (for a single ayah, use `
     {
       "ayah": 1,
       "arabic": "<verse arabic>",
-      "translation": "<indonesian translation>",
+      "translation": "<official Kemenag indonesian translation from API>",
+      "literalTranslation": "<word-aligned indonesian gloss (optional)>",
       "words": [
         {
           "arabic": "نَزَّلَ",

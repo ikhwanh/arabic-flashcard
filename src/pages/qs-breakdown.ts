@@ -79,7 +79,7 @@ export async function renderQsBreakdown(container: HTMLElement, id: string) {
                 <button class="qs-word" data-vi="${vi}" data-wi="${wi}">${w.arabic}</button>
               `).join(' ')}
             </div>
-            <p class="qs-translation">${verse.translation}</p>
+            <p class="qs-translation">${verse.literalTranslation ?? verse.translation}</p>
           </div>
         `).join('')}
       </div>

@@ -60,8 +60,9 @@ export interface QsWord {
 
 export interface QsVerse {
   ayah: number
-  arabic: string           // uthmani full verse
-  translation: string      // Indonesian
+  arabic: string             // uthmani full verse
+  translation: string        // Indonesian — official Kemenag (from API)
+  literalTranslation?: string // Indonesian — AI-generated word-aligned gloss (optional)
   words: QsWord[]
 }
 
