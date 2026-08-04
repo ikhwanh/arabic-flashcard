@@ -1387,3 +1387,143 @@ body {
   transition: color 0.15s;
 }
 .github-link:hover { color: var(--text); }
+
+/* ── Continue strip (curriculum progress) ───────────────────────────────────── */
+.nav-continue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.nav-continue-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--accent);
+  background: var(--surface);
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.nav-continue-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.nav-continue-card.resume {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.nav-continue-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+}
+.nav-continue-title { font-size: 1.05rem; font-weight: 600; }
+
+/* ── Surah Breakdown passage card (wrapper + play) ──────────────────────────── */
+.qs-index-card { position: relative; padding: 0; }
+.qs-index-open {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.1rem 1.1rem 0.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  width: 100%;
+}
+.qs-index-title { margin: 0; font-size: 1.1rem; font-weight: 600; color: var(--text); }
+.btn-qs-play-card {
+  margin: 0 1.1rem 1rem;
+  padding: 0.4rem 0.9rem;
+  align-self: flex-start;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: none;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.btn-qs-play-card:hover { background: var(--accent); color: #fff; }
+
+.btn-qs-play {
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: none;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.btn-qs-play:hover { background: var(--accent); color: #fff; }
+
+/* ── Surah Breakdown game ───────────────────────────────────────────────────── */
+.qs-game-page { max-width: 760px; margin: 0 auto; padding: 1rem; }
+.qs-game-label {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 1rem 0 0.5rem;
+}
+.qs-game-translation {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+.qs-game-answer {
+  min-height: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-content: flex-start;
+  padding: 0.75rem;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+}
+.qs-game-answer.correct { border-color: #16a34a; border-style: solid; }
+.qs-game-answer.wrong { border-color: #dc2626; border-style: solid; }
+.qs-game-placeholder {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+.qs-game-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  min-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+.qs-game-chip {
+  font-family: var(--font-arabic, inherit);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.5rem 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.1s;
+}
+.qs-game-chip:hover { border-color: var(--accent); transform: translateY(-1px); }
+.qs-game-feedback { text-align: center; margin-bottom: 1rem; }
+.qs-game-result-ok { color: #16a34a; font-weight: 700; }
+.qs-game-result-bad { color: #dc2626; font-weight: 600; margin-bottom: 0.35rem; }
+.qs-game-correct { font-size: 1.6rem; color: var(--text); line-height: 1.6; }

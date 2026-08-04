@@ -6,6 +6,7 @@ import { renderFlashcard } from './pages/flashcard'
 import { renderQuiz } from './pages/quiz'
 import { renderTest } from './pages/test'
 import { renderQsBreakdown } from './pages/qs-breakdown'
+import { renderQsGame } from './pages/qs-game'
 import { renderSettings } from './pages/settings'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -56,6 +57,7 @@ function route() {
 
   const quizMatch = hash.match(/^deck\/(.+)\/quiz$/)
   const testMatch = hash.match(/^test(?:\/(.+))?$/)
+  const qsGameMatch = hash.match(/^qs\/(.+)\/game$/)
   const qsReaderMatch = hash.match(/^qs\/(.+)$/)
   const qsIndexMatch = hash === 'qs'
   const settingsMatch = hash === 'settings'
@@ -64,6 +66,9 @@ function route() {
     appHeader.hidden = false
     setActiveTab(null)
     renderSettings(mainContent)
+  } else if (qsGameMatch) {
+    appHeader.hidden = true
+    renderQsGame(mainContent, qsGameMatch[1]).catch(console.error)
   } else if (qsReaderMatch) {
     appHeader.hidden = true
     renderQsBreakdown(mainContent, qsReaderMatch[1]).catch(console.error)

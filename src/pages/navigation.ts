@@ -11,11 +11,49 @@ function getLastVisited(deckId: string): number {
   return Number(localStorage.getItem(`last_visited_${deckId}`) ?? 0)
 }
 
+function getQsScore(id: string): string | null {
+  return localStorage.getItem(`qs_score_${id}`)
+}
+
+// Part index of a numbered vocab deck (e.g. "…-part-12" → 12).
+// Grouped/other decks have no part number → null (excluded from curriculum).
+function numericId(id: string): number | null {
+  const m = id.match(/part-(\d+)$/)
+  return m ? Number(m[1]) : null
+}
+
+// Resume = the most recently visited deck (by timestamp). Next up = the next
+// sequential part after it that hasn't been quizzed yet.
+function getContinueState(): { resume: typeof deckMetas[number] | null; next: typeof deckMetas[number] | null } {
+  const resume = deckMetas
+    .map(d => ({ deck: d, t: getLastVisited(d.id) }))
+    .filter(x => x.t > 0)
+    .sort((a, b) => b.t - a.t)[0]?.deck ?? null
+
+  const numbered = deckMetas
+    .map(d => ({ deck: d, n: numericId(d.id) }))
+    .filter((x): x is { deck: typeof deckMetas[number]; n: number } => x.n !== null)
+    .sort((a, b) => a.n - b.n)
+
+  let next: typeof deckMetas[number] | null
+  if (!resume) {
+    next = numbered[0]?.deck ?? null
+  } else {
+    const rn = numericId(resume.id)
+    next = rn === null
+      ? null
+      : numbered.find(x => x.n > rn && getQuizScore(x.deck.id) === null)?.deck ?? null
+  }
+
+  return { resume, next }
+}
+
 function resetAll() {
   deckMetas.forEach(d => {
     localStorage.removeItem(`quiz_score_${d.id}`)
     localStorage.removeItem(`last_visited_${d.id}`)
   })
+  qsMetas.forEach(m => localStorage.removeItem(`qs_score_${m.id}`))
 }
 
 function showConfirm(title: string, message: string, onConfirm: () => void) {
@@ -44,10 +82,49 @@ function showConfirm(title: string, message: string, onConfirm: () => void) {
 
 function hasAnyProgress(): boolean {
   return deckMetas.some(d => getQuizScore(d.id) !== null || getLastVisited(d.id) > 0)
+    || qsMetas.some(m => getQsScore(m.id) !== null)
 }
 
 function deckLabel(deck: { title: string }): string {
   return deck.title.replace(/^Kosakata Al-Quran - /, '')
+}
+
+function renderContinueStrip(container: HTMLElement) {
+  const strip = container.querySelector<HTMLElement>('.nav-continue')
+  if (!strip) return
+
+  const { resume, next } = getContinueState()
+
+  const cards: string[] = []
+  if (resume) {
+    cards.push(`
+      <button class="nav-continue-card resume" data-deck-id="${resume.id}">
+        <span class="nav-continue-kicker">▶ Resume</span>
+        <span class="nav-continue-title">${deckLabel(resume)}</span>
+      </button>
+    `)
+  }
+  if (next && next.id !== resume?.id) {
+    cards.push(`
+      <button class="nav-continue-card next" data-deck-id="${next.id}">
+        <span class="nav-continue-kicker">${resume ? 'Next up' : 'Start here'}</span>
+        <span class="nav-continue-title">${deckLabel(next)}</span>
+      </button>
+    `)
+  }
+
+  if (cards.length === 0) {
+    strip.hidden = true
+    return
+  }
+
+  strip.hidden = false
+  strip.innerHTML = cards.join('')
+  strip.querySelectorAll<HTMLButtonElement>('.nav-continue-card').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.hash = `deck/${btn.dataset.deckId!}`
+    })
+  })
 }
 
 function renderDeckGrid(container: HTMLElement, filterUnfinished: boolean) {
@@ -92,18 +169,31 @@ function renderBreakdownGrid(container: HTMLElement) {
   const grid = container.querySelector<HTMLElement>('.qs-index-grid')!
   grid.innerHTML = qsMetas.length === 0
     ? `<p class="nav-empty">No breakdowns yet. Generate one with the qs-breakdown command.</p>`
-    : qsMetas.map(m => `
-        <button class="qs-index-card" data-id="${m.id}">
-          <span class="qs-index-surah">QS ${m.surah} · ${m.surahName}</span>
-          <h3 class="qs-index-title">${m.title}</h3>
-          <p class="qs-index-desc">${m.description}</p>
-          <span class="qs-index-count">Ayat ${m.from}–${m.to} · ${m.verseCount} ayat</span>
-        </button>
-      `).join('')
+    : qsMetas.map(m => {
+        const score = getQsScore(m.id)
+        return `
+        <div class="qs-index-card">
+          ${score !== null ? `<span class="deck-score-chip">${score}</span>` : ''}
+          <button class="qs-index-open" data-id="${m.id}">
+            <span class="qs-index-surah">QS ${m.surah} · ${m.surahName}</span>
+            <span class="qs-index-title">${m.title}</span>
+            <span class="qs-index-desc">${m.description}</span>
+            <span class="qs-index-count">Ayat ${m.from}–${m.to} · ${m.verseCount} ayat</span>
+          </button>
+          <button class="btn-qs-play-card" data-play-id="${m.id}">Play ▶</button>
+        </div>
+      `
+      }).join('')
 
-  grid.querySelectorAll<HTMLButtonElement>('.qs-index-card').forEach(btn => {
+  grid.querySelectorAll<HTMLButtonElement>('.qs-index-open').forEach(btn => {
     btn.addEventListener('click', () => {
       window.location.hash = `qs/${btn.dataset.id!}`
+    })
+  })
+
+  grid.querySelectorAll<HTMLButtonElement>('.btn-qs-play-card').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.hash = `qs/${btn.dataset.playId!}/game`
     })
   })
 }
@@ -139,6 +229,7 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
         </div>
       </div>
     </div>
+    <div class="nav-continue" hidden></div>
     <div class="deck-grid"></div>
   `
 
@@ -161,6 +252,7 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
     return
   }
 
+  renderContinueStrip(container)
   renderDeckGrid(container, filterUnfinished)
 
   const menu = container.querySelector<HTMLElement>('.nav-menu')!
@@ -209,6 +301,7 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
       const chip = container.querySelector<HTMLButtonElement>('[data-filter="unfinished"]')!
       chip.classList.remove('active')
       syncResetAllButton(container)
+      renderContinueStrip(container)
       renderDeckGrid(container, filterUnfinished)
     })
   })

@@ -65,7 +65,7 @@ export async function renderQsBreakdown(container: HTMLElement, id: string) {
       <div class="qs-header">
         <button class="btn-back">← Back</button>
         <span class="qs-deck-title">QS ${bd.surah} · ${bd.surahName}</span>
-        <span class="qs-range">${bd.from}–${bd.to}</span>
+        <button class="btn-qs-play">Play ▶</button>
       </div>
 
       <p class="qs-tip">👆 Tap any word to see its meaning and grammar</p>
@@ -122,6 +122,10 @@ export async function renderQsBreakdown(container: HTMLElement, id: string) {
 
   container.querySelector('.btn-back')!.addEventListener('click', () => {
     window.location.hash = 'qs'
+  })
+
+  container.querySelector('.btn-qs-play')!.addEventListener('click', () => {
+    window.location.hash = `qs/${id}/game`
   })
 
   container.querySelectorAll<HTMLButtonElement>('.qs-word').forEach(btn => {
