@@ -25,7 +25,7 @@ function buildRounds(verses: QsVerse[]): Round[] {
     .filter(v => v.words.length >= MIN_WORDS)
     .map(v => ({
       ayah: v.ayah,
-      translation: v.translation,
+      translation: v.literalTranslation ?? v.translation,
       words: v.words.map(w => w.arabic),
     }))
 }
