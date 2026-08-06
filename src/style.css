@@ -1523,6 +1523,24 @@ body {
   transition: border-color 0.15s, transform 0.1s;
 }
 .qs-game-chip:hover { border-color: var(--accent); transform: translateY(-1px); }
+.qs-game-answer .qs-game-chip, .qs-game-pool .qs-game-chip {
+  touch-action: none; cursor: grab;
+  -webkit-user-select: none; user-select: none;
+}
+/* The word left behind while its clone is being dragged. */
+.qs-game-chip.chip-drag-source { opacity: 0.3; }
+/* The clone that follows the pointer. Positioned in JS via left/top, so no
+   transition (a transform/position transition would make it lag the pointer). */
+.qs-game-chip.chip-drag-clone {
+  position: fixed; margin: 0; z-index: 9999;
+  pointer-events: none; transition: none;
+  cursor: grabbing; box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+.qs-game-chip.chip-correct { cursor: default; }
+.qs-game-chip.chip-wrong {
+  background: transparent; border-color: var(--border);
+  color: var(--text); opacity: 0.4; cursor: default;
+}
 .qs-game-feedback { text-align: center; margin-bottom: 1rem; }
 .qs-game-result-ok { color: #16a34a; font-weight: 700; }
 .qs-game-result-bad { color: #dc2626; font-weight: 600; margin-bottom: 0.35rem; }

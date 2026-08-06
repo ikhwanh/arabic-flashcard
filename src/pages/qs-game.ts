@@ -20,6 +20,36 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
+// Work out where a dropped word should land: which list, and the insertion index
+// within it. The word being dragged is excluded from the calculation. RTL + wrap
+// aware — a chip counts as "before" the pointer if it sits on an earlier row, or
+// on the same row further to the right (reading order).
+function resolveDrop(
+  x: number, y: number,
+  dragged: HTMLElement,
+  poolEl: HTMLElement, answerEl: HTMLElement,
+  fallback: 'pool' | 'answer',
+): { list: 'pool' | 'answer'; index: number } {
+  const within = (el: HTMLElement, pad = 24) => {
+    const r = el.getBoundingClientRect()
+    return x >= r.left - pad && x <= r.right + pad && y >= r.top - pad && y <= r.bottom + pad
+  }
+  const list = within(answerEl) ? 'answer' : within(poolEl) ? 'pool' : fallback
+  const el = list === 'answer' ? answerEl : poolEl
+  const chips = [...el.querySelectorAll<HTMLElement>('.qs-game-chip')].filter(c => c !== dragged)
+
+  let index = 0
+  for (const c of chips) {
+    const r = c.getBoundingClientRect()
+    const cx = r.left + r.width / 2
+    const cy = r.top + r.height / 2
+    const sameRow = Math.abs(cy - y) < r.height * 0.6
+    const earlierRow = cy < y - r.height * 0.6
+    if (earlierRow || (sameRow && cx > x)) index++
+  }
+  return { list, index }
+}
+
 function buildRounds(verses: QsVerse[]): Round[] {
   return verses
     .filter(v => v.words.length >= MIN_WORDS)
@@ -87,7 +117,11 @@ export async function renderQsGame(container: HTMLElement, id: string) {
       .join('')
 
     const answerChips = answer
-      .map(i => `<button class="qs-game-chip" data-from="answer" data-idx="${i}">${round.words[i]}</button>`)
+      .map((i, pos) => {
+        let cls = 'qs-game-chip'
+        if (checked) cls += round.words[i] === round.words[pos] ? ' chip-correct' : ' chip-wrong'
+        return `<button class="${cls}" data-from="answer" data-idx="${i}">${round.words[i]}</button>`
+      })
       .join('')
 
     container.innerHTML = `
@@ -126,19 +160,70 @@ export async function renderQsGame(container: HTMLElement, id: string) {
     })
 
     if (!checked) {
-      container.querySelectorAll<HTMLButtonElement>('.qs-game-chip').forEach(chip => {
-        chip.addEventListener('click', () => {
+      const poolEl = container.querySelector<HTMLElement>('.qs-game-pool')!
+      const answerEl = container.querySelector<HTMLElement>('.qs-game-answer')!
+
+      // Tap toggles a word between pool and answer; press-and-drag drops it at a
+      // precise spot. Nothing reflows during the drag (no live "shadow" swap that
+      // would flicker on this wrapping RTL row) — the list only changes on drop.
+      const wireChip = (chip: HTMLButtonElement, from: 'pool' | 'answer') => {
+        chip.addEventListener('pointerdown', e => {
+          if (e.button !== 0 && e.pointerType === 'mouse') return
+          e.preventDefault()
           const idx = Number(chip.dataset.idx)
-          if (chip.dataset.from === 'pool') {
-            pool = pool.filter(i => i !== idx)
-            answer.push(idx)
-          } else {
-            answer = answer.filter(i => i !== idx)
-            pool.push(idx)
+          const startX = e.clientX, startY = e.clientY
+          let dragging = false
+          let clone: HTMLElement | null = null
+          let grabX = 0, grabY = 0
+
+          const onMove = (ev: PointerEvent) => {
+            if (!dragging) {
+              if (Math.hypot(ev.clientX - startX, ev.clientY - startY) < 6) return
+              dragging = true
+              const r = chip.getBoundingClientRect()
+              grabX = startX - r.left
+              grabY = startY - r.top
+              clone = chip.cloneNode(true) as HTMLElement
+              clone.className = 'qs-game-chip chip-drag-clone'
+              clone.style.width = `${r.width}px`
+              clone.style.height = `${r.height}px`
+              document.body.appendChild(clone)
+              chip.classList.add('chip-drag-source')
+            }
+            clone!.style.left = `${ev.clientX - grabX}px`
+            clone!.style.top = `${ev.clientY - grabY}px`
           }
-          renderRound()
+
+          const onUp = (ev: PointerEvent) => {
+            document.removeEventListener('pointermove', onMove)
+            document.removeEventListener('pointerup', onUp)
+            clone?.remove()
+            chip.classList.remove('chip-drag-source')
+
+            if (!dragging) {
+              // Plain tap → toggle between lists.
+              if (from === 'pool') { pool = pool.filter(i => i !== idx); answer.push(idx) }
+              else { answer = answer.filter(i => i !== idx); pool.push(idx) }
+              renderRound()
+              return
+            }
+
+            const drop = resolveDrop(ev.clientX, ev.clientY, chip, poolEl, answerEl, from)
+            // Remove the word from wherever it was, then insert it at the drop slot.
+            pool = pool.filter(i => i !== idx)
+            answer = answer.filter(i => i !== idx)
+            if (drop.list === 'answer') answer.splice(drop.index, 0, idx)
+            else pool.splice(drop.index, 0, idx)
+            renderRound()
+          }
+
+          document.addEventListener('pointermove', onMove)
+          document.addEventListener('pointerup', onUp)
         })
-      })
+      }
+
+      poolEl.querySelectorAll<HTMLButtonElement>('.qs-game-chip').forEach(c => wireChip(c, 'pool'))
+      answerEl.querySelectorAll<HTMLButtonElement>('.qs-game-chip').forEach(c => wireChip(c, 'answer'))
 
       container.querySelector('#btn-check')?.addEventListener('click', () => {
         checked = true
