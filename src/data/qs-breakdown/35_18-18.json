@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "surah": 35,
+    "surahName": "Faatir",
+    "from": 18,
+    "to": 18,
+    "title": "Faatir 18",
+    "description": "Setiap orang memikul dosanya sendiri, dan peringatan hanya bermanfaat bagi orang yang takut kepada Tuhannya serta menyucikan dirinya."
+  },
+  "verses": [
+    {
+      "ayah": 18,
+      "arabic": "وَلَا تَزِرُ وَازِرَةٌۭ وِزْرَ أُخْرَىٰ ۚ وَإِن تَدْعُ مُثْقَلَةٌ إِلَىٰ حِمْلِهَا لَا يُحْمَلْ مِنْهُ شَىْءٌۭ وَلَوْ كَانَ ذَا قُرْبَىٰٓ ۗ إِنَّمَا تُنذِرُ ٱلَّذِينَ يَخْشَوْنَ رَبَّهُم بِٱلْغَيْبِ وَأَقَامُوا۟ ٱلصَّلَوٰةَ ۚ وَمَن تَزَكَّىٰ فَإِنَّمَا يَتَزَكَّىٰ لِنَفْسِهِۦ ۚ وَإِلَى ٱللَّهِ ٱلْمَصِيرُ",
+      "translation": "Dan orang yang berdosa tidak akan memikul dosa orang lain. Dan jika seseorang yang berat dosanya memanggil (orang lain) untuk memikul dosanya itu tiadalah akan dipikulkan untuknya sedikitpun meskipun (yang dipanggilnya itu) kaum kerabatnya. Sesungguhnya yang dapat kamu beri peringatan hanya orang-orang yang takut kepada azab Tuhannya (sekalipun) mereka tidak melihat-Nya dan mereka mendirikan sembahyang. Dan barangsiapa yang mensucikan dirinya, sesungguhnya ia mensucikan diri untuk kebaikan dirinya sendiri. Dan kepada Allahlah kembali(mu).",
+      "literalTranslation": "Dan seorang yang berdosa tidak akan memikul dosa orang lain. Dan jika seseorang yang berat bebannya memanggil orang lain untuk memikul bebannya, tidaklah akan dipikulkan sedikit pun darinya, meskipun dia adalah kerabatnya. Sesungguhnya engkau hanya memberi peringatan kepada orang-orang yang takut kepada Tuhan mereka dalam keadaan gaib dan yang mendirikan shalat. Dan barangsiapa menyucikan diri, maka sesungguhnya ia menyucikan diri untuk dirinya sendiri. Dan hanya kepada Allah-lah tempat kembali.",
+      "words": [
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa-lā",
+          "meaning": "dan tidak",
+          "type": "harf"
+        },
+        {
+          "arabic": "تَزِرُ",
+          "transliteration": "taziru",
+          "meaning": "memikul (dosa)",
+          "type": "fi'l",
+          "root": "و ز ر",
+          "forms": {
+            "past": "وَزَرَ",
+            "present": "يَزِرُ",
+            "future": "سَيَزِرُ",
+            "command": "زِرْ"
+          },
+          "notes": "Bentuk sekarang."
+        },
+        {
+          "arabic": "وَازِرَةٌۭ",
+          "transliteration": "wāziratun",
+          "meaning": "seorang yang berdosa (pemikul beban)",
+          "type": "ism",
+          "root": "و ز ر"
+        },
+        {
+          "arabic": "وِزْرَ",
+          "transliteration": "wizra",
+          "meaning": "dosa (beban)",
+          "type": "ism",
+          "root": "و ز ر"
+        },
+        {
+          "arabic": "أُخْرَىٰ",
+          "transliteration": "ukhrā",
+          "meaning": "orang lain",
+          "type": "ism",
+          "root": "أ خ ر"
+        },
+        {
+          "arabic": "وَإِن",
+          "transliteration": "wa-in",
+          "meaning": "dan jika",
+          "type": "harf"
+        },
+        {
+          "arabic": "تَدْعُ",
+          "transliteration": "tad'u",
+          "meaning": "memanggil (mengajak)",
+          "type": "fi'l",
+          "root": "د ع و",
+          "forms": {
+            "past": "دَعَا",
+            "present": "يَدْعُو",
+            "future": "سَيَدْعُو",
+            "command": "اُدْعُ"
+          },
+          "notes": "Bentuk sekarang."
+        },
+        {
+          "arabic": "مُثْقَلَةٌ",
+          "transliteration": "mutsqalatun",
+          "meaning": "orang yang berat bebannya",
+          "type": "ism",
+          "root": "ث ق ل"
+        },
+        {
+          "arabic": "إِلَىٰ",
+          "transliteration": "ilā",
+          "meaning": "untuk (kepada)",
+          "type": "harf"
+        },
+        {
+          "arabic": "حِمْلِهَا",
+          "transliteration": "ḥimlihā",
+          "meaning": "bebannya",
+          "type": "ism",
+          "root": "ح م ل",
+          "notes": "Akhiran -hā berarti \"nya\"."
+        },
+        {
+          "arabic": "لَا",
+          "transliteration": "lā",
+          "meaning": "tidak",
+          "type": "harf"
+        },
+        {
+          "arabic": "يُحْمَلْ",
+          "transliteration": "yuḥmal",
+          "meaning": "dipikulkan",
+          "type": "fi'l",
+          "root": "ح م ل",
+          "forms": {
+            "past": "حُمِلَ",
+            "present": "يُحْمَلُ",
+            "future": "سَيُحْمَلُ"
+          },
+          "notes": "Kata kerja bentuk pasif (dikenai perbuatan)."
+        },
+        {
+          "arabic": "مِنْهُ",
+          "transliteration": "minhu",
+          "meaning": "darinya (dari beban itu)",
+          "type": "harf",
+          "notes": "Akhiran -hu berarti \"nya\"."
+        },
+        {
+          "arabic": "شَىْءٌۭ",
+          "transliteration": "syai'un",
+          "meaning": "sesuatu (sedikit pun)",
+          "type": "ism",
+          "root": "ش ي أ"
+        },
+        {
+          "arabic": "وَلَوْ",
+          "transliteration": "wa-law",
+          "meaning": "dan meskipun",
+          "type": "harf"
+        },
+        {
+          "arabic": "كَانَ",
+          "transliteration": "kāna",
+          "meaning": "dia adalah",
+          "type": "fi'l",
+          "root": "ك و ن",
+          "forms": {
+            "past": "كَانَ",
+            "present": "يَكُونُ",
+            "future": "سَيَكُونُ",
+            "command": "كُنْ"
+          },
+          "notes": "Bentuk lampau."
+        },
+        {
+          "arabic": "ذَا",
+          "transliteration": "dzā",
+          "meaning": "yang memiliki (pemilik)",
+          "type": "ism",
+          "notes": "Berarti \"yang mempunyai\"; di sini \"yang mempunyai kekerabatan\"."
+        },
+        {
+          "arabic": "قُرْبَىٰٓ",
+          "transliteration": "qurbā",
+          "meaning": "kekerabatan (kerabat)",
+          "type": "ism",
+          "root": "ق ر ب"
+        },
+        {
+          "arabic": "إِنَّمَا",
+          "transliteration": "innamā",
+          "meaning": "sesungguhnya hanyalah",
+          "type": "harf"
+        },
+        {
+          "arabic": "تُنذِرُ",
+          "transliteration": "tundziru",
+          "meaning": "engkau memberi peringatan",
+          "type": "fi'l",
+          "root": "ن ذ ر",
+          "forms": {
+            "past": "أَنْذَرَ",
+            "present": "يُنْذِرُ",
+            "future": "سَيُنْذِرُ",
+            "command": "أَنْذِرْ"
+          },
+          "notes": "Bentuk sekarang."
+        },
+        {
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladzīna",
+          "meaning": "orang-orang yang",
+          "type": "ism"
+        },
+        {
+          "arabic": "يَخْشَوْنَ",
+          "transliteration": "yakhsyawna",
+          "meaning": "mereka takut",
+          "type": "fi'l",
+          "root": "خ ش ي",
+          "forms": {
+            "past": "خَشِيَ",
+            "present": "يَخْشَىٰ",
+            "future": "سَيَخْشَىٰ",
+            "command": "اِخْشَ"
+          },
+          "notes": "Bentuk sekarang; akhiran -na berarti \"mereka\"."
+        },
+        {
+          "arabic": "رَبَّهُم",
+          "transliteration": "rabbahum",
+          "meaning": "Tuhan mereka",
+          "type": "ism",
+          "root": "ر ب ب",
+          "notes": "Akhiran -hum berarti \"mereka\"."
+        },
+        {
+          "arabic": "بِٱلْغَيْبِ",
+          "transliteration": "bil-ghaib",
+          "meaning": "dalam keadaan gaib (tanpa melihat-Nya)",
+          "type": "ism",
+          "root": "غ ي ب",
+          "notes": "\"Bi\" berarti \"dengan/dalam\"."
+        },
+        {
+          "arabic": "وَأَقَامُوا۟",
+          "transliteration": "wa-aqāmū",
+          "meaning": "dan mereka mendirikan",
+          "type": "fi'l",
+          "root": "ق و م",
+          "forms": {
+            "past": "أَقَامَ",
+            "present": "يُقِيمُ",
+            "future": "سَيُقِيمُ",
+            "command": "أَقِمْ"
+          },
+          "notes": "Bentuk lampau; akhiran -ū berarti \"mereka\"."
+        },
+        {
+          "arabic": "ٱلصَّلَوٰةَ",
+          "transliteration": "ash-shalāh",
+          "meaning": "shalat (sembahyang)",
+          "type": "ism",
+          "root": "ص ل و"
+        },
+        {
+          "arabic": "وَمَن",
+          "transliteration": "wa-man",
+          "meaning": "dan barangsiapa",
+          "type": "ism",
+          "notes": "\"Wa\" berarti \"dan\"; \"man\" berarti \"siapa/barangsiapa\"."
+        },
+        {
+          "arabic": "تَزَكَّىٰ",
+          "transliteration": "tazakkā",
+          "meaning": "menyucikan diri",
+          "type": "fi'l",
+          "root": "ز ك و",
+          "forms": {
+            "past": "تَزَكَّىٰ",
+            "present": "يَتَزَكَّىٰ",
+            "future": "سَيَتَزَكَّىٰ",
+            "command": "تَزَكَّ"
+          },
+          "notes": "Bentuk lampau."
+        },
+        {
+          "arabic": "فَإِنَّمَا",
+          "transliteration": "fa-innamā",
+          "meaning": "maka sesungguhnya hanyalah",
+          "type": "harf"
+        },
+        {
+          "arabic": "يَتَزَكَّىٰ",
+          "transliteration": "yatazakkā",
+          "meaning": "dia menyucikan diri",
+          "type": "fi'l",
+          "root": "ز ك و",
+          "forms": {
+            "past": "تَزَكَّىٰ",
+            "present": "يَتَزَكَّىٰ",
+            "future": "سَيَتَزَكَّىٰ",
+            "command": "تَزَكَّ"
+          },
+          "notes": "Bentuk sekarang."
+        },
+        {
+          "arabic": "لِنَفْسِهِۦ",
+          "transliteration": "linafsihi",
+          "meaning": "untuk dirinya sendiri",
+          "type": "ism",
+          "root": "ن ف س",
+          "notes": "\"Li\" berarti \"untuk\"; akhiran -hi berarti \"nya\"."
+        },
+        {
+          "arabic": "وَإِلَى",
+          "transliteration": "wa-ilā",
+          "meaning": "dan kepada",
+          "type": "harf"
+        },
+        {
+          "arabic": "ٱللَّهِ",
+          "transliteration": "Allāhi",
+          "meaning": "Allah",
+          "type": "ism"
+        },
+        {
+          "arabic": "ٱلْمَصِيرُ",
+          "transliteration": "al-maṣīr",
+          "meaning": "tempat kembali",
+          "type": "ism",
+          "root": "ص ي ر"
+        }
+      ]
+    }
+  ]
+}

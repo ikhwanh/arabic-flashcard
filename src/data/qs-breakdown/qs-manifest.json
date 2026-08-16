@@ -10,6 +10,16 @@
     "verseCount": 4
   },
   {
+    "id": "17_83-84",
+    "surah": 17,
+    "surahName": "Al-Israa",
+    "from": 83,
+    "to": 84,
+    "title": "Al-Israa 83–84",
+    "description": "Tentang tabiat manusia yang sombong saat diberi nikmat dan putus asa saat ditimpa kesusahan, serta perintah bahwa setiap orang beramal menurut keadaannya.",
+    "verseCount": 2
+  },
+  {
     "id": "24_35-38",
     "surah": 24,
     "surahName": "An-Nur",
@@ -28,5 +38,15 @@
     "title": "Al-Qasas 76–82",
     "description": "Kisah Karun yang kaya raya namun sombong: ia membanggakan hartanya dan mengira semua itu berkat ilmunya sendiri, sampai akhirnya Allah membenamkan dia dan rumahnya ke dalam bumi sebagai pelajaran.",
     "verseCount": 7
+  },
+  {
+    "id": "35_18-18",
+    "surah": 35,
+    "surahName": "Faatir",
+    "from": 18,
+    "to": 18,
+    "title": "Faatir 18",
+    "description": "Setiap orang memikul dosanya sendiri, dan peringatan hanya bermanfaat bagi orang yang takut kepada Tuhannya serta menyucikan dirinya.",
+    "verseCount": 1
   }
 ]

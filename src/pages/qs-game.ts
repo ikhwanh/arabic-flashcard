@@ -98,12 +98,14 @@ export async function renderQsGame(container: HTMLElement, id: string) {
   // Original word indices placed in the answer row, in order.
   let answer: number[] = []
   let checked = false
+  let skipped = false
 
   function startRound() {
     const round = rounds[currentIndex]
     pool = shuffle(round.words.map((_, i) => i))
     answer = []
     checked = false
+    skipped = false
     renderRound()
   }
 
@@ -119,7 +121,7 @@ export async function renderQsGame(container: HTMLElement, id: string) {
     const answerChips = answer
       .map((i, pos) => {
         let cls = 'qs-game-chip'
-        if (checked) cls += round.words[i] === round.words[pos] ? ' chip-correct' : ' chip-wrong'
+        if (checked && !skipped) cls += round.words[i] === round.words[pos] ? ' chip-correct' : ' chip-wrong'
         return `<button class="${cls}" data-from="answer" data-idx="${i}">${round.words[i]}</button>`
       })
       .join('')
@@ -135,7 +137,7 @@ export async function renderQsGame(container: HTMLElement, id: string) {
         <p class="qs-game-label">Arrange the Arabic to match this translation</p>
         <p class="qs-game-translation">${round.translation}</p>
 
-        <div class="qs-game-answer${checked ? (isRoundCorrect() ? ' correct' : ' wrong') : ''}" dir="rtl">
+        <div class="qs-game-answer${checked && !skipped ? (isRoundCorrect() ? ' correct' : ' wrong') : ''}" dir="rtl">
           ${answerChips || '<span class="qs-game-placeholder">Tap words below to build the verse</span>'}
         </div>
 
@@ -143,14 +145,20 @@ export async function renderQsGame(container: HTMLElement, id: string) {
 
         ${checked ? `
           <div class="qs-game-feedback">
-            ${isRoundCorrect()
+            ${skipped
+              ? `<p class="qs-game-result-bad">Skipped. Correct order:</p>
+                 <p class="qs-game-correct" dir="rtl">${round.words.join(' ')}</p>`
+              : isRoundCorrect()
               ? '<p class="qs-game-result-ok">✔ Correct!</p>'
               : `<p class="qs-game-result-bad">✗ Not quite. Correct order:</p>
                  <p class="qs-game-correct" dir="rtl">${round.words.join(' ')}</p>`}
           </div>
           <button class="btn-quiz-next" id="btn-next">${isLast ? 'Show Results' : 'Next Verse →'}</button>
         ` : `
-          <button class="btn-quiz-next" id="btn-check" ${answer.length === round.words.length ? '' : 'disabled'}>Check</button>
+          <div class="qs-game-actions">
+            <button class="btn-quiz-next" id="btn-check" ${answer.length > 0 ? '' : 'disabled'}>Check</button>
+            <button class="btn-quiz-skip" id="btn-skip">Skip</button>
+          </div>
         `}
       </div>
     `
@@ -228,6 +236,12 @@ export async function renderQsGame(container: HTMLElement, id: string) {
       container.querySelector('#btn-check')?.addEventListener('click', () => {
         checked = true
         if (isRoundCorrect()) score++
+        renderRound()
+      })
+
+      container.querySelector('#btn-skip')?.addEventListener('click', () => {
+        skipped = true
+        checked = true
         renderRound()
       })
     } else {
