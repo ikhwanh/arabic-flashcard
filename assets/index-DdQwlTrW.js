@@ -131,12 +131,12 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
           `).join(``)}
         </div>
       </div>
-    `,o()}function o(){e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let t=e.querySelector(`#fc-card`),o=()=>{i=!i,a()};t.addEventListener(`click`,o),t.addEventListener(`keydown`,e=>{(e.key===`Enter`||e.key===` `)&&(e.preventDefault(),o())}),e.querySelector(`#btn-prev`)?.addEventListener(`click`,()=>{r>0&&(r--,i=!1,a())}),e.querySelector(`#btn-next`)?.addEventListener(`click`,()=>{r<n.cards.length-1&&(r++,i=!1,a())}),e.querySelectorAll(`.fc-dot`).forEach(e=>{e.addEventListener(`click`,()=>{r=Number(e.dataset.index),i=!1,a()})})}a()}function B(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function ge(e,t){return B(e).slice(0,t)}function V(e,t){let n=ge(t.filter(t=>t.id!==e.id),3).map(e=>e.indonesian);return{prompt:e.arabic,promptLabel:`What does this word mean?`,correct:e.indonesian,options:B([e.indonesian,...n]),ayatArabic:e.quranExample?.arabic,ayatRef:e.quranExample?`${e.quranExample.surah} ${e.quranExample.ayah}`:void 0,ayatTranslation:e.quranExample?.translation}}function _e(e){return e.length<4?[]:B(e).map(t=>V(t,e))}function ve(e,t,n){localStorage.setItem(`quiz_score_${e}`,`${t}/${n}`)}async function H(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await O(t);if(!n){e.innerHTML=`
+    `,o()}function o(){e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let t=e.querySelector(`#fc-card`),o=()=>{i=!i,a()};t.addEventListener(`click`,o),t.addEventListener(`keydown`,e=>{(e.key===`Enter`||e.key===` `)&&(e.preventDefault(),o())}),e.querySelector(`#btn-prev`)?.addEventListener(`click`,()=>{r>0&&(r--,i=!1,a())}),e.querySelector(`#btn-next`)?.addEventListener(`click`,()=>{r<n.cards.length-1&&(r++,i=!1,a())}),e.querySelectorAll(`.fc-dot`).forEach(e=>{e.addEventListener(`click`,()=>{r=Number(e.dataset.index),i=!1,a()})})}a()}function B(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function ge(e,t){return B(e).slice(0,t)}function _e(e,t){let n=ge(t.filter(t=>t.id!==e.id),3).map(e=>e.indonesian);return{prompt:e.arabic,promptLabel:`What does this word mean?`,correct:e.indonesian,options:B([e.indonesian,...n]),ayatArabic:e.quranExample?.arabic,ayatRef:e.quranExample?`${e.quranExample.surah} ${e.quranExample.ayah}`:void 0,ayatTranslation:e.quranExample?.translation}}function ve(e){return e.length<4?[]:B(e).map(t=>_e(t,e))}function ye(e,t,n){localStorage.setItem(`quiz_score_${e}`,`${t}/${n}`)}async function V(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await O(t);if(!n){e.innerHTML=`
       <div class="error-page">
         <p>Deck not found.</p>
         <button class="btn-back" onclick="window.location.hash=''">← Back</button>
       </div>
-    `;return}let r=_e(n.cards);if(r.length===0){e.innerHTML=`
+    `;return}let r=ve(n.cards);if(r.length===0){e.innerHTML=`
       <div class="error-page">
         <p>Not enough cards to generate a quiz (minimum 4).</p>
         <button class="btn-back" onclick="window.location.hash='deck/${t}'">← Back to Deck</button>
@@ -173,7 +173,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
           </button>
         </div>
       </div>
-    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let f=()=>{let t=e.querySelector(`#ayat-translation`);t&&(t.style.display=`block`);let n=e.querySelector(`#btn-hint`);n&&(n.style.display=`none`)};e.querySelector(`#btn-hint`)?.addEventListener(`click`,f),e.querySelectorAll(`.quiz-option`).forEach(t=>{t.addEventListener(`click`,()=>{o||(o=!0,f(),decodeURIComponent(t.dataset.value)===l.correct?(a++,t.classList.add(`correct`)):(t.classList.add(`wrong`),e.querySelectorAll(`.quiz-option`).forEach(e=>{decodeURIComponent(e.dataset.value)===l.correct&&e.classList.add(`correct`)})),e.querySelectorAll(`.quiz-option`).forEach(e=>e.disabled=!0),e.querySelector(`#btn-next`).style.display=`block`)})}),e.querySelector(`#btn-next`).addEventListener(`click`,()=>{i<r.length-1?(i++,o=!1,s()):(ve(t,a,r.length),c())})}function c(){let i=r.length;e.innerHTML=`
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let f=()=>{let t=e.querySelector(`#ayat-translation`);t&&(t.style.display=`block`);let n=e.querySelector(`#btn-hint`);n&&(n.style.display=`none`)};e.querySelector(`#btn-hint`)?.addEventListener(`click`,f),e.querySelectorAll(`.quiz-option`).forEach(t=>{t.addEventListener(`click`,()=>{o||(o=!0,f(),decodeURIComponent(t.dataset.value)===l.correct?(a++,t.classList.add(`correct`)):(t.classList.add(`wrong`),e.querySelectorAll(`.quiz-option`).forEach(e=>{decodeURIComponent(e.dataset.value)===l.correct&&e.classList.add(`correct`)})),e.querySelectorAll(`.quiz-option`).forEach(e=>e.disabled=!0),e.querySelector(`#btn-next`).style.display=`block`)})}),e.querySelector(`#btn-next`).addEventListener(`click`,()=>{i<r.length-1?(i++,o=!1,s()):(ye(t,a,r.length),c())})}function c(){let i=r.length;e.innerHTML=`
       <div class="quiz-page">
         <div class="fc-header">
           <button class="btn-back">← Back</button>
@@ -189,12 +189,12 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
           </div>
         </div>
       </div>
-    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``}),e.querySelector(`.btn-quiz-retry`).addEventListener(`click`,()=>{H(e,t)}),e.querySelector(`.btn-quiz-back`).addEventListener(`click`,()=>{window.location.hash=``})}s()}var ye=50,U={"1-10":{key:`test_score_1_10`,title:`Exam 1`,range:[1,10]},"11-20":{key:`test_score_11_20`,title:`Exam 2`,range:[11,20]},"21-30":{key:`test_score_21_30`,title:`Exam 3`,range:[21,30]},"31-40":{key:`test_score_31_40`,title:`Exam 4`,range:[31,40]},"41-50":{key:`test_score_41_50`,title:`Exam 5`,range:[41,50]},all:{key:`test_score`,title:`Final Exam`,size:100}};function be(e){return e&&U[e]||U.all}function W(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function G(e,t){return W(e).slice(0,t)}function xe(e,t){let n=G(t.filter(t=>t.id!==e.id),3).map(e=>e.indonesian);return{prompt:e.arabic,promptLabel:`What does this word mean?`,correct:e.indonesian,options:W([e.indonesian,...n]),ayatArabic:e.quranExample?.arabic,ayatRef:e.quranExample?`${e.quranExample.surah} ${e.quranExample.ayah}`:void 0,ayatTranslation:e.quranExample?.translation}}function Se(e,t){return G(e,Math.min(t,e.length)).map(t=>xe(t,e))}function Ce(e,t,n){localStorage.setItem(e,`${t}/${n}`)}async function K(e,t){let n=be(t);e.innerHTML=`<div class="fc-loading">Loading test…</div>`;let r=await D(n.range);if(r.length<4){e.innerHTML=`
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``}),e.querySelector(`.btn-quiz-retry`).addEventListener(`click`,()=>{V(e,t)}),e.querySelector(`.btn-quiz-back`).addEventListener(`click`,()=>{window.location.hash=``})}s()}var be=50,H={"1-10":{key:`test_score_1_10`,title:`Exam 1`,range:[1,10]},"11-20":{key:`test_score_11_20`,title:`Exam 2`,range:[11,20]},"21-30":{key:`test_score_21_30`,title:`Exam 3`,range:[21,30]},"31-40":{key:`test_score_31_40`,title:`Exam 4`,range:[31,40]},"41-50":{key:`test_score_41_50`,title:`Exam 5`,range:[41,50]},all:{key:`test_score`,title:`Final Exam`,size:100}};function xe(e){return e&&H[e]||H.all}function U(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function W(e,t){return U(e).slice(0,t)}function Se(e,t){let n=W(t.filter(t=>t.id!==e.id),3).map(e=>e.indonesian);return{prompt:e.arabic,promptLabel:`What does this word mean?`,correct:e.indonesian,options:U([e.indonesian,...n]),ayatArabic:e.quranExample?.arabic,ayatRef:e.quranExample?`${e.quranExample.surah} ${e.quranExample.ayah}`:void 0,ayatTranslation:e.quranExample?.translation}}function Ce(e,t){return W(e,Math.min(t,e.length)).map(t=>Se(t,e))}function G(e,t,n){localStorage.setItem(e,`${t}/${n}`)}async function K(e,t){let n=xe(t);e.innerHTML=`<div class="fc-loading">Loading test…</div>`;let r=await D(n.range);if(r.length<4){e.innerHTML=`
       <div class="error-page">
         <p>Not enough cards to generate a test.</p>
         <button class="btn-back" onclick="window.location.hash=''">← Back</button>
       </div>
-    `;return}let i=Se(r,n.size??ye),a=0,o=0,s=!1;function c(){let t=i[a],r=i.length,u=a===r-1;e.innerHTML=`
+    `;return}let i=Ce(r,n.size??be),a=0,o=0,s=!1;function c(){let t=i[a],r=i.length,u=a===r-1;e.innerHTML=`
       <div class="quiz-page">
         <div class="fc-header">
           <button class="btn-back">← Back</button>
@@ -226,7 +226,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
           </button>
         </div>
       </div>
-    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let d=()=>{let t=e.querySelector(`#ayat-translation`);t&&(t.style.display=`block`);let n=e.querySelector(`#btn-hint`);n&&(n.style.display=`none`)};e.querySelector(`#btn-hint`)?.addEventListener(`click`,d),e.querySelectorAll(`.quiz-option`).forEach(n=>{n.addEventListener(`click`,()=>{s||(s=!0,d(),decodeURIComponent(n.dataset.value)===t.correct?(o++,n.classList.add(`correct`)):(n.classList.add(`wrong`),e.querySelectorAll(`.quiz-option`).forEach(e=>{decodeURIComponent(e.dataset.value)===t.correct&&e.classList.add(`correct`)})),e.querySelectorAll(`.quiz-option`).forEach(e=>e.disabled=!0),e.querySelector(`#btn-next`).style.display=`block`)})}),e.querySelector(`#btn-next`).addEventListener(`click`,()=>{a<i.length-1?(a++,s=!1,c()):(Ce(n.key,o,i.length),l())})}function l(){let r=i.length,a=Math.round(o/r*100),s=o===r?`Perfect!`:a>=70?`Great job!`:`Keep practicing!`;e.innerHTML=`
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=``});let d=()=>{let t=e.querySelector(`#ayat-translation`);t&&(t.style.display=`block`);let n=e.querySelector(`#btn-hint`);n&&(n.style.display=`none`)};e.querySelector(`#btn-hint`)?.addEventListener(`click`,d),e.querySelectorAll(`.quiz-option`).forEach(n=>{n.addEventListener(`click`,()=>{s||(s=!0,d(),decodeURIComponent(n.dataset.value)===t.correct?(o++,n.classList.add(`correct`)):(n.classList.add(`wrong`),e.querySelectorAll(`.quiz-option`).forEach(e=>{decodeURIComponent(e.dataset.value)===t.correct&&e.classList.add(`correct`)})),e.querySelectorAll(`.quiz-option`).forEach(e=>e.disabled=!0),e.querySelector(`#btn-next`).style.display=`block`)})}),e.querySelector(`#btn-next`).addEventListener(`click`,()=>{a<i.length-1?(a++,s=!1,c()):(G(n.key,o,i.length),l())})}function l(){let r=i.length,a=Math.round(o/r*100),s=o===r?`Perfect!`:a>=70?`Great job!`:`Keep practicing!`;e.innerHTML=`
       <div class="quiz-page">
         <div class="fc-header">
           <button class="btn-back">← Back</button>
@@ -247,7 +247,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
         <span class="qs-form-label">${q[t]}</span>
         <span class="qs-form-arabic">${e[t]}</span>
       </span>
-    `);return t.length===0?``:`<div class="qs-forms" dir="rtl">${t.join(``)}</div>`}function Ee(e){return`
+    `);return t.length===0?``:`<div class="qs-forms" dir="rtl">${t.join(``)}</div>`}function Ee(e){return e.length>0&&[...e].every(e=>{let t=e.codePointAt(0);return t>=1750&&t<=1773})}function De(e,t){let n=0;return e.arabic.split(` `).map(r=>{if(Ee(r)||n>=e.words.length)return`<span class="qs-waqaf">${r}</span>`;let i=`<button class="qs-word" data-vi="${t}" data-wi="${n}">${e.words[n].arabic}</button>`;return n++,i}).join(` `)}function Oe(e){return`
     <div class="qs-detail">
       <div class="qs-detail-head">
         <span class="qs-detail-arabic">${e.arabic}</span>
@@ -261,7 +261,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
       ${e.forms?Te(e.forms):``}
       ${e.notes?`<p class="qs-detail-notes">${e.notes}</p>`:``}
     </div>
-  `}async function De(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await A(t);if(!n){e.innerHTML=`
+  `}async function ke(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await A(t);if(!n){e.innerHTML=`
       <div class="error-page">
         <p>Breakdown not found.</p>
         <button class="btn-back" onclick="window.location.hash='qs'">← Back</button>
@@ -281,9 +281,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
           <div class="qs-verse">
             <span class="qs-ayah-num">${e.ayah}</span>
             <div class="qs-arabic" dir="rtl">
-              ${e.words.map((e,n)=>`
-                <button class="qs-word" data-vi="${t}" data-wi="${n}">${e.arabic}</button>
-              `).join(` `)}
+              ${De(e,t)}
             </div>
             <p class="qs-translation">${e.literalTranslation??e.translation}</p>
           </div>
@@ -299,17 +297,17 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
         <div class="qs-sheet-body"></div>
       </div>
     </div>
-  `;let r=e.querySelector(`.qs-sheet`),i=e.querySelector(`.qs-sheet-body`),a=e.querySelector(`.qs-tip`),o=null;function s(){r.hidden=!0,r.classList.remove(`open`),o?.classList.remove(`active`),o=null}function c(e,t){o?.classList.remove(`active`),o=e,e.classList.add(`active`),i.innerHTML=Ee(t),r.hidden=!1,r.offsetWidth,r.classList.add(`open`)}e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`qs`}),e.querySelector(`.btn-qs-play`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}/game`}),e.querySelectorAll(`.qs-word`).forEach(e=>{e.addEventListener(`click`,()=>{if(a?.remove(),o===e){s();return}let t=Number(e.dataset.vi),r=Number(e.dataset.wi);c(e,n.verses[t].words[r])})}),e.querySelector(`.qs-sheet-backdrop`).addEventListener(`click`,s),e.querySelector(`.qs-sheet-close`).addEventListener(`click`,s),document.addEventListener(`keydown`,function e(t){t.key===`Escape`&&!r.hidden&&s(),document.contains(r)||document.removeEventListener(`keydown`,e)})}var Oe=2;function ke(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function Ae(e,t,n,r,i,a){let o=(n,r=24)=>{let i=n.getBoundingClientRect();return e>=i.left-r&&e<=i.right+r&&t>=i.top-r&&t<=i.bottom+r},s=o(i)?`answer`:o(r)?`pool`:a,c=[...(s===`answer`?i:r).querySelectorAll(`.qs-game-chip`)].filter(e=>e!==n),l=0;for(let n of c){let r=n.getBoundingClientRect(),i=r.left+r.width/2,a=r.top+r.height/2,o=Math.abs(a-t)<r.height*.6;(a<t-r.height*.6||o&&i>e)&&l++}return{list:s,index:l}}function je(e){return e.filter(e=>e.words.length>=Oe).map(e=>({ayah:e.ayah,translation:e.literalTranslation??e.translation,words:e.words.map(e=>e.arabic)}))}function Me(e,t,n){localStorage.setItem(`qs_score_${e}`,`${t}/${n}`)}async function J(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await A(t);if(!n){e.innerHTML=`
+  `;let r=e.querySelector(`.qs-sheet`),i=e.querySelector(`.qs-sheet-body`),a=e.querySelector(`.qs-tip`),o=null;function s(){r.hidden=!0,r.classList.remove(`open`),o?.classList.remove(`active`),o=null}function c(e,t){o?.classList.remove(`active`),o=e,e.classList.add(`active`),i.innerHTML=Oe(t),r.hidden=!1,r.offsetWidth,r.classList.add(`open`)}e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`qs`}),e.querySelector(`.btn-qs-play`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}/game`}),e.querySelectorAll(`.qs-word`).forEach(e=>{e.addEventListener(`click`,()=>{if(a?.remove(),o===e){s();return}let t=Number(e.dataset.vi),r=Number(e.dataset.wi);c(e,n.verses[t].words[r])})}),e.querySelector(`.qs-sheet-backdrop`).addEventListener(`click`,s),e.querySelector(`.qs-sheet-close`).addEventListener(`click`,s),document.addEventListener(`keydown`,function e(t){t.key===`Escape`&&!r.hidden&&s(),document.contains(r)||document.removeEventListener(`keydown`,e)})}var Ae=2;function je(e){let t=[...e];for(let e=t.length-1;e>0;e--){let n=Math.floor(Math.random()*(e+1));[t[e],t[n]]=[t[n],t[e]]}return t}function Me(e,t,n,r,i,a){let o=(n,r=24)=>{let i=n.getBoundingClientRect();return e>=i.left-r&&e<=i.right+r&&t>=i.top-r&&t<=i.bottom+r},s=o(i)?`answer`:o(r)?`pool`:a,c=[...(s===`answer`?i:r).querySelectorAll(`.qs-game-chip`)].filter(e=>e!==n),l=0;for(let n of c){let r=n.getBoundingClientRect(),i=r.left+r.width/2,a=r.top+r.height/2,o=Math.abs(a-t)<r.height*.6;(a<t-r.height*.6||o&&i>e)&&l++}return{list:s,index:l}}function Ne(e){return e.filter(e=>e.words.length>=Ae).map(e=>({ayah:e.ayah,translation:e.literalTranslation??e.translation,words:e.words.map(e=>e.arabic),arabic:e.arabic}))}function Pe(e,t,n){localStorage.setItem(`qs_score_${e}`,`${t}/${n}`)}async function J(e,t){e.innerHTML=`<div class="fc-loading">Loading…</div>`;let n=await A(t);if(!n){e.innerHTML=`
       <div class="error-page">
         <p>Breakdown not found.</p>
         <button class="btn-back" onclick="window.location.hash='qs'">← Back</button>
       </div>
-    `;return}let r=je(n.verses);if(r.length===0){e.innerHTML=`
+    `;return}let r=Ne(n.verses);if(r.length===0){e.innerHTML=`
       <div class="error-page">
         <p>Not enough words in this passage to play.</p>
         <button class="btn-back" onclick="window.location.hash='qs/${t}'">← Back to Reader</button>
       </div>
-    `;return}let i=0,a=0,o=[],s=[],c=!1,l=!1;function u(){let e=r[i];o=ke(e.words.map((e,t)=>t)),s=[],c=!1,l=!1,d()}function d(){let m=r[i],h=r.length,g=i===h-1,_=o.map(e=>`<button class="qs-game-chip" data-from="pool" data-idx="${e}">${m.words[e]}</button>`).join(``),v=s.map((e,t)=>{let n=`qs-game-chip`;return c&&!l&&(n+=m.words[e]===m.words[t]?` chip-correct`:` chip-wrong`),`<button class="${n}" data-from="answer" data-idx="${e}">${m.words[e]}</button>`}).join(``);if(e.innerHTML=`
+    `;return}let i=0,a=0,o=[],s=[],c=!1,l=!1;function u(){let e=r[i];o=je(e.words.map((e,t)=>t)),s=[],c=!1,l=!1,d()}function d(){let m=r[i],h=r.length,g=i===h-1,_=o.map(e=>`<button class="qs-game-chip" data-from="pool" data-idx="${e}">${m.words[e]}</button>`).join(``),v=s.map((e,t)=>{let n=`qs-game-chip`;return c&&!l&&(n+=m.words[e]===m.words[t]?` chip-correct`:` chip-wrong`),`<button class="${n}" data-from="answer" data-idx="${e}">${m.words[e]}</button>`}).join(``);if(e.innerHTML=`
       <div class="qs-game-page">
         <div class="qs-header">
           <button class="btn-back">← Back</button>
@@ -329,8 +327,8 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
         ${c?`
           <div class="qs-game-feedback">
             ${l?`<p class="qs-game-result-bad">Skipped. Correct order:</p>
-                 <p class="qs-game-correct" dir="rtl">${m.words.join(` `)}</p>`:f()?`<p class="qs-game-result-ok">✔ Correct!</p>`:`<p class="qs-game-result-bad">✗ Not quite. Correct order:</p>
-                 <p class="qs-game-correct" dir="rtl">${m.words.join(` `)}</p>`}
+                 <p class="qs-game-correct" dir="rtl">${m.arabic}</p>`:f()?`<p class="qs-game-result-ok">✔ Correct!</p>`:`<p class="qs-game-result-bad">✗ Not quite. Correct order:</p>
+                 <p class="qs-game-correct" dir="rtl">${m.arabic}</p>`}
           </div>
           <button class="btn-quiz-next" id="btn-next">${g?`Show Results`:`Next Verse →`}</button>
         `:`
@@ -340,7 +338,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
           </div>
         `}
       </div>
-    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}`}),c)e.querySelector(`#btn-next`).addEventListener(`click`,()=>{i<r.length-1?(i++,u()):(Me(t,a,r.length),p())});else{let t=e.querySelector(`.qs-game-pool`),n=e.querySelector(`.qs-game-answer`),r=(e,r)=>{e.addEventListener(`pointerdown`,i=>{if(i.button!==0&&i.pointerType===`mouse`)return;i.preventDefault();let a=Number(e.dataset.idx),c=i.clientX,l=i.clientY,u=!1,f=null,p=0,m=0,h=t=>{if(!u){if(Math.hypot(t.clientX-c,t.clientY-l)<6)return;u=!0;let n=e.getBoundingClientRect();p=c-n.left,m=l-n.top,f=e.cloneNode(!0),f.className=`qs-game-chip chip-drag-clone`,f.style.width=`${n.width}px`,f.style.height=`${n.height}px`,document.body.appendChild(f),e.classList.add(`chip-drag-source`)}f.style.left=`${t.clientX-p}px`,f.style.top=`${t.clientY-m}px`},g=i=>{if(document.removeEventListener(`pointermove`,h),document.removeEventListener(`pointerup`,g),f?.remove(),e.classList.remove(`chip-drag-source`),!u){r===`pool`?(o=o.filter(e=>e!==a),s.push(a)):(s=s.filter(e=>e!==a),o.push(a)),d();return}let c=Ae(i.clientX,i.clientY,e,t,n,r);o=o.filter(e=>e!==a),s=s.filter(e=>e!==a),c.list===`answer`?s.splice(c.index,0,a):o.splice(c.index,0,a),d()};document.addEventListener(`pointermove`,h),document.addEventListener(`pointerup`,g)})};t.querySelectorAll(`.qs-game-chip`).forEach(e=>r(e,`pool`)),n.querySelectorAll(`.qs-game-chip`).forEach(e=>r(e,`answer`)),e.querySelector(`#btn-check`)?.addEventListener(`click`,()=>{c=!0,f()&&a++,d()}),e.querySelector(`#btn-skip`)?.addEventListener(`click`,()=>{l=!0,c=!0,d()})}}function f(){let e=r[i];return s.length===e.words.length&&s.every((t,n)=>e.words[t]===e.words[n])}function p(){let i=r.length;e.innerHTML=`
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}`}),c)e.querySelector(`#btn-next`).addEventListener(`click`,()=>{i<r.length-1?(i++,u()):(Pe(t,a,r.length),p())});else{let t=e.querySelector(`.qs-game-pool`),n=e.querySelector(`.qs-game-answer`),r=(e,r)=>{e.addEventListener(`pointerdown`,i=>{if(i.button!==0&&i.pointerType===`mouse`)return;i.preventDefault();let a=Number(e.dataset.idx),c=i.clientX,l=i.clientY,u=!1,f=null,p=0,m=0,h=t=>{if(!u){if(Math.hypot(t.clientX-c,t.clientY-l)<6)return;u=!0;let n=e.getBoundingClientRect();p=c-n.left,m=l-n.top,f=e.cloneNode(!0),f.className=`qs-game-chip chip-drag-clone`,f.style.width=`${n.width}px`,f.style.height=`${n.height}px`,document.body.appendChild(f),e.classList.add(`chip-drag-source`)}f.style.left=`${t.clientX-p}px`,f.style.top=`${t.clientY-m}px`},g=i=>{if(document.removeEventListener(`pointermove`,h),document.removeEventListener(`pointerup`,g),f?.remove(),e.classList.remove(`chip-drag-source`),!u){r===`pool`?(o=o.filter(e=>e!==a),s.push(a)):(s=s.filter(e=>e!==a),o.push(a)),d();return}let c=Me(i.clientX,i.clientY,e,t,n,r);o=o.filter(e=>e!==a),s=s.filter(e=>e!==a),c.list===`answer`?s.splice(c.index,0,a):o.splice(c.index,0,a),d()};document.addEventListener(`pointermove`,h),document.addEventListener(`pointerup`,g)})};t.querySelectorAll(`.qs-game-chip`).forEach(e=>r(e,`pool`)),n.querySelectorAll(`.qs-game-chip`).forEach(e=>r(e,`answer`)),e.querySelector(`#btn-check`)?.addEventListener(`click`,()=>{c=!0,f()&&a++,d()}),e.querySelector(`#btn-skip`)?.addEventListener(`click`,()=>{l=!0,c=!0,d()})}}function f(){let e=r[i];return s.length===e.words.length&&s.every((t,n)=>e.words[t]===e.words[n])}function p(){let i=r.length;e.innerHTML=`
       <div class="qs-game-page">
         <div class="qs-header">
           <button class="btn-back">← Back</button>
@@ -356,7 +354,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
           </div>
         </div>
       </div>
-    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}`}),e.querySelector(`.btn-quiz-retry`).addEventListener(`click`,()=>{J(e,t)}),e.querySelector(`.btn-quiz-back`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}`})}u()}var Ne=`رَبِّ`,Pe=[{id:`low`,label:`Low (under letter)`,feature:`"cv62" 1`},{id:`high`,label:`High (under shadda)`,feature:`normal`}];function Fe(e){return e.replace(/^Kosakata Al-Quran - /,``)}function Ie(e){let t=Date.now()-e,n=6e4,r=60*n,i=24*r;return t<n?`just now`:t<r?`${Math.floor(t/n)}m ago`:t<i?`${Math.floor(t/r)}h ago`:t<7*i?`${Math.floor(t/i)}d ago`:new Date(e).toLocaleDateString()}function Le(){return C.map(e=>({deck:e,visited:Number(localStorage.getItem(`last_visited_${e.id}`)??0)})).filter(e=>e.visited>0).sort((e,t)=>t.visited-e.visited)}function Re(e){let t=Le();e.innerHTML=`
+    `,e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}`}),e.querySelector(`.btn-quiz-retry`).addEventListener(`click`,()=>{J(e,t)}),e.querySelector(`.btn-quiz-back`).addEventListener(`click`,()=>{window.location.hash=`qs/${t}`})}u()}var Fe=`رَبِّ`,Ie=[{id:`low`,label:`Low (under letter)`,feature:`"cv62" 1`},{id:`high`,label:`High (under shadda)`,feature:`normal`}];function Le(e){return e.replace(/^Kosakata Al-Quran - /,``)}function Re(e){let t=Date.now()-e,n=6e4,r=60*n,i=24*r;return t<n?`just now`:t<r?`${Math.floor(t/n)}m ago`:t<i?`${Math.floor(t/r)}h ago`:t<7*i?`${Math.floor(t/i)}d ago`:new Date(e).toLocaleDateString()}function ze(){return C.map(e=>({deck:e,visited:Number(localStorage.getItem(`last_visited_${e.id}`)??0)})).filter(e=>e.visited>0).sort((e,t)=>t.visited-e.visited)}function Be(e){let t=ze();e.innerHTML=`
     <div class="nav-page settings-page">
       <div class="nav-hero">
         <h2>Settings</h2>
@@ -375,9 +373,9 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
 
       <section class="settings-section">
         <h3 class="settings-heading">Kasra Position</h3>
-        <div class="settings-options">${Pe.map(e=>`
+        <div class="settings-options">${Ie.map(e=>`
     <button class="settings-option kasra-option ${l()===e.id?`active`:``}" data-kasra="${e.id}">
-      <span class="settings-option-sample" style="font-family: 'Scheherazade New', serif; font-feature-settings: ${e.feature}">${Ne}</span>
+      <span class="settings-option-sample" style="font-family: 'Scheherazade New', serif; font-feature-settings: ${e.feature}">${Fe}</span>
       <span class="settings-option-label">${e.label}</span>
     </button>
   `).join(``)}</div>
@@ -387,8 +385,8 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
         <h3 class="settings-heading">Recently Visited</h3>
         <div class="settings-history">${t.length===0?`<p class="nav-empty">No decks visited yet.</p>`:t.map(({deck:e,visited:t})=>`
         <button class="settings-history-item" data-deck-id="${e.id}">
-          <span class="settings-history-title">${Fe(e.title)}</span>
-          <span class="settings-history-time">${Ie(t)}</span>
+          <span class="settings-history-title">${Le(e.title)}</span>
+          <span class="settings-history-time">${Re(t)}</span>
         </button>
       `).join(``)}</div>
       </section>
@@ -411,6 +409,6 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
       </svg>
       <span>Source on GitHub</span>
     </a>
-    <span class="app-version">v3.1.0</span>
+    <span class="app-version">v3.1.1</span>
   </footer>
-`,te();var Y=document.getElementById(`main-content`),X=document.querySelector(`.app-header`),Z=X.querySelectorAll(`.header-tab`);Z.forEach(e=>{e.addEventListener(`click`,()=>{window.location.hash=e.dataset.tab===`breakdown`?`qs`:``})}),X.querySelector(`.settings-toggle`).addEventListener(`click`,()=>{window.location.hash=`settings`});function Q(e){Z.forEach(t=>t.classList.toggle(`active`,t.dataset.tab===e))}function $(){let e=window.location.hash.slice(1),t=e.match(/^deck\/(.+)$/),n=e.match(/^deck\/(.+)\/quiz$/),r=e.match(/^test(?:\/(.+))?$/),i=e.match(/^qs\/(.+)\/game$/),a=e.match(/^qs\/(.+)$/);e===`settings`?(X.hidden=!1,Q(null),Re(Y)):i?(X.hidden=!0,J(Y,i[1]).catch(console.error)):a?(X.hidden=!0,De(Y,a[1]).catch(console.error)):e===`qs`?(X.hidden=!1,Q(`breakdown`),z(Y,`breakdown`)):r?(X.hidden=!0,K(Y,r[1]).catch(console.error)):n?(X.hidden=!0,H(Y,n[1]).catch(console.error)):t?(X.hidden=!0,he(Y,t[1]).catch(console.error)):(X.hidden=!1,Q(`flashcard`),z(Y,`flashcard`))}window.addEventListener(`hashchange`,$),$();
+`,te();var Y=document.getElementById(`main-content`),X=document.querySelector(`.app-header`),Z=X.querySelectorAll(`.header-tab`);Z.forEach(e=>{e.addEventListener(`click`,()=>{window.location.hash=e.dataset.tab===`breakdown`?`qs`:``})}),X.querySelector(`.settings-toggle`).addEventListener(`click`,()=>{window.location.hash=`settings`});function Q(e){Z.forEach(t=>t.classList.toggle(`active`,t.dataset.tab===e))}function $(){let e=window.location.hash.slice(1),t=e.match(/^deck\/(.+)$/),n=e.match(/^deck\/(.+)\/quiz$/),r=e.match(/^test(?:\/(.+))?$/),i=e.match(/^qs\/(.+)\/game$/),a=e.match(/^qs\/(.+)$/);e===`settings`?(X.hidden=!1,Q(null),Be(Y)):i?(X.hidden=!0,J(Y,i[1]).catch(console.error)):a?(X.hidden=!0,ke(Y,a[1]).catch(console.error)):e===`qs`?(X.hidden=!1,Q(`breakdown`),z(Y,`breakdown`)):r?(X.hidden=!0,K(Y,r[1]).catch(console.error)):n?(X.hidden=!0,V(Y,n[1]).catch(console.error)):t?(X.hidden=!0,he(Y,t[1]).catch(console.error)):(X.hidden=!1,Q(`flashcard`),z(Y,`flashcard`))}window.addEventListener(`hashchange`,$),$();
