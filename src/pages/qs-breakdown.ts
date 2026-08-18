@@ -27,6 +27,30 @@ function formsSection(forms: NonNullable<QsWord['forms']>): string {
   return `<div class="qs-forms" dir="rtl">${entries.join('')}</div>`
 }
 
+// A standalone waqaf/pause sign (ۖ ۗ ۘ ۙ ۚ ۛ ۜ …) is a token whose every char
+// falls in the Arabic pause-mark range. These sit between words in verse.arabic
+// but have no entry in words[], so they're rendered as non-interactive spans.
+function isWaqaf(token: string): boolean {
+  return token.length > 0 && [...token].every(c => {
+    const cp = c.codePointAt(0)!
+    return cp >= 0x06d6 && cp <= 0x06ed
+  })
+}
+
+// Build the verse line from verse.arabic so freestanding waqaf marks survive,
+// while each real word stays a tappable button mapped to its words[] entry.
+function verseArabic(verse: { arabic: string; words: QsWord[] }, vi: number): string {
+  let wi = 0
+  return verse.arabic.split(' ').map(token => {
+    if (isWaqaf(token) || wi >= verse.words.length) {
+      return `<span class="qs-waqaf">${token}</span>`
+    }
+    const html = `<button class="qs-word" data-vi="${vi}" data-wi="${wi}">${verse.words[wi].arabic}</button>`
+    wi++
+    return html
+  }).join(' ')
+}
+
 function wordDetail(word: QsWord): string {
   return `
     <div class="qs-detail">
@@ -75,9 +99,7 @@ export async function renderQsBreakdown(container: HTMLElement, id: string) {
           <div class="qs-verse">
             <span class="qs-ayah-num">${verse.ayah}</span>
             <div class="qs-arabic" dir="rtl">
-              ${verse.words.map((w, wi) => `
-                <button class="qs-word" data-vi="${vi}" data-wi="${wi}">${w.arabic}</button>
-              `).join(' ')}
+              ${verseArabic(verse, vi)}
             </div>
             <p class="qs-translation">${verse.literalTranslation ?? verse.translation}</p>
           </div>

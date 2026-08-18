@@ -1230,6 +1230,14 @@ body {
 }
 .qs-word:hover { background: var(--border); }
 .qs-word.active { background: var(--accent); color: #fff; }
+.qs-waqaf {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--accent);
+  cursor: default;
+  user-select: none;
+  align-self: center;
+}
 
 .qs-translation {
   margin: 0.6rem 0 0;

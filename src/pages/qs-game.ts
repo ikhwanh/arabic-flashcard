@@ -9,6 +9,8 @@ interface Round {
   translation: string
   // Correct Arabic sequence for the whole verse, in order.
   words: string[]
+  // Full Uthmani verse (with waqaf marks) — shown in the "correct order" reveal.
+  arabic: string
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -57,6 +59,7 @@ function buildRounds(verses: QsVerse[]): Round[] {
       ayah: v.ayah,
       translation: v.literalTranslation ?? v.translation,
       words: v.words.map(w => w.arabic),
+      arabic: v.arabic,
     }))
 }
 
@@ -147,11 +150,11 @@ export async function renderQsGame(container: HTMLElement, id: string) {
           <div class="qs-game-feedback">
             ${skipped
               ? `<p class="qs-game-result-bad">Skipped. Correct order:</p>
-                 <p class="qs-game-correct" dir="rtl">${round.words.join(' ')}</p>`
+                 <p class="qs-game-correct" dir="rtl">${round.arabic}</p>`
               : isRoundCorrect()
               ? '<p class="qs-game-result-ok">✔ Correct!</p>'
               : `<p class="qs-game-result-bad">✗ Not quite. Correct order:</p>
-                 <p class="qs-game-correct" dir="rtl">${round.words.join(' ')}</p>`}
+                 <p class="qs-game-correct" dir="rtl">${round.arabic}</p>`}
           </div>
           <button class="btn-quiz-next" id="btn-next">${isLast ? 'Show Results' : 'Next Verse →'}</button>
         ` : `
