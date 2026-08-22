@@ -158,6 +158,20 @@
           "root": "أ ف ل",
           "notes": "Isim fa'il (pelaku) dalam bentuk jamak."
         }
+      ],
+      "segments": [
+        {
+          "translation": "Maka ketika malam menyelimutinya,",
+          "wordCount": 4
+        },
+        {
+          "translation": "dia melihat sebuah bintang, lalu berkata, \"Inilah Tuhanku.\"",
+          "wordCount": 5
+        },
+        {
+          "translation": "Namun ketika bintang itu terbenam, ia berkata, \"Aku tidak suka kepada yang terbenam.\"",
+          "wordCount": 6
+        }
       ]
     },
     {
@@ -326,6 +340,24 @@
           "root": "ض ل ل",
           "notes": "Isim fa'il (pelaku) dalam bentuk jamak."
         }
+      ],
+      "segments": [
+        {
+          "translation": "Maka ketika ia melihat bulan terbit,",
+          "wordCount": 4
+        },
+        {
+          "translation": "ia berkata, \"Inilah Tuhanku.\" Namun ketika bulan itu terbenam, ia berkata,",
+          "wordCount": 6
+        },
+        {
+          "translation": "\"Sungguh, jika Tuhanku tidak memberiku petunjuk,",
+          "wordCount": 4
+        },
+        {
+          "translation": "pastilah aku termasuk kaum yang sesat.\"",
+          "wordCount": 4
+        }
       ]
     },
     {
@@ -482,6 +514,24 @@
             "command": "أَشْرِكْ"
           },
           "notes": "Bentuk sekarang, pelakunya 'kalian'."
+        }
+      ],
+      "segments": [
+        {
+          "translation": "Maka ketika ia melihat matahari terbit,",
+          "wordCount": 4
+        },
+        {
+          "translation": "ia berkata, \"Inilah Tuhanku; ini lebih besar.\"",
+          "wordCount": 5
+        },
+        {
+          "translation": "Namun ketika matahari itu terbenam, ia berkata,",
+          "wordCount": 3
+        },
+        {
+          "translation": "\"Wahai kaumku, sesungguhnya aku berlepas diri dari apa yang kalian persekutukan.\"",
+          "wordCount": 5
         }
       ]
     },

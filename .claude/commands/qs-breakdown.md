@@ -55,6 +55,17 @@ For each verse, produce a `literalTranslation` — this is the translation the r
 - Stay consistent with the per-word `meaning` values so the reader can map the sentence back to the cards.
 - Still fetch the official Kemenag `translation` in step 1 and keep it in the JSON (it is retained as data even though it is hidden in the UI).
 
+### 2c. Split long verses into parts (`segments`)
+The **game** (`#qs/<id>/game`) asks the player to arrange a verse's words in order. A long verse becomes an unplayable wall of chips, so any verse over **12 words** must be split into parts — each part becomes its own page in the game.
+
+For each verse longer than 12 words, add a `segments` array that **partitions the verse's `words` in order**:
+- Cut the verse at natural clause boundaries — align to the waqaf/pause marks (ۖ ۗ ۚ …) in the Arabic where possible.
+- Each part should be **~4–9 words** — not a lone particle, not the whole verse. Keep the meaning of each part intact.
+- `wordCount` = how many `words[]` entries the part covers. The counts **must sum to `words.length`** (every word used once, in order) or the app ignores the split and falls back to one big round.
+- `translation` = the matching clause of this verse's `literalTranslation`, so each part reads faithfully on its own.
+
+Omit `segments` entirely for verses of 12 words or fewer.
+
 ### 3. Build the file
 Write `src/data/qs-breakdown/<surah>_<from>-<to>.json` (for a single ayah, use `<surah>_<from>-<from>.json`) with 2-space indentation:
 
@@ -89,11 +100,16 @@ Write `src/data/qs-breakdown/<surah>_<from>-<to>.json` (for a single ayah, use `
           },
           "notes": "Bentuk lampau."
         }
+      ],
+      "segments": [
+        { "translation": "<clause 1 of literalTranslation>", "wordCount": 5 },
+        { "translation": "<clause 2 of literalTranslation>", "wordCount": 6 }
       ]
     }
   ]
 }
 ```
+(`segments` is only present on verses over 12 words — see step 2c; wordCounts must sum to the verse's total words.)
 
 Use a clean English `title` like `<surahName> <from>–<to>`.
 

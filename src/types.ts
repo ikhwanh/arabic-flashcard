@@ -58,12 +58,18 @@ export interface QsWord {
   notes?: string           // optional single gentle Indonesian note
 }
 
+export interface QsSegment {
+  translation: string        // Indonesian gloss for just this clause (a slice of literalTranslation)
+  wordCount: number          // words consumed from the verse's words[], in reading order
+}
+
 export interface QsVerse {
   ayah: number
   arabic: string             // uthmani full verse
   translation: string        // Indonesian — official Kemenag (from API)
   literalTranslation?: string // Indonesian — AI-generated word-aligned gloss (optional)
   words: QsWord[]
+  segments?: QsSegment[]     // present only for long verses; the game plays one round per segment
 }
 
 export interface QsBreakdown {

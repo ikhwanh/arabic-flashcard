@@ -388,6 +388,52 @@
           "type": "ism",
           "root": "ع ل م"
         }
+      ],
+      "segments": [
+        {
+          "translation": "Allah adalah cahaya langit dan bumi.",
+          "wordCount": 4
+        },
+        {
+          "translation": "Perumpamaan cahaya-Nya bagaikan sebuah ceruk yang di dalamnya ada pelita.",
+          "wordCount": 5
+        },
+        {
+          "translation": "Pelita itu berada dalam kaca, dan kaca itu",
+          "wordCount": 4
+        },
+        {
+          "translation": "bagaikan bintang yang berkilau seperti mutiara,",
+          "wordCount": 3
+        },
+        {
+          "translation": "yang dinyalakan dari (minyak) pohon yang diberkahi, yaitu pohon zaitun",
+          "wordCount": 5
+        },
+        {
+          "translation": "yang tumbuh tidak di timur maupun di barat.",
+          "wordCount": 4
+        },
+        {
+          "translation": "Minyaknya nyaris menerangi meski tak tersentuh api.",
+          "wordCount": 7
+        },
+        {
+          "translation": "Cahaya di atas cahaya.",
+          "wordCount": 3
+        },
+        {
+          "translation": "Allah membimbing kepada cahaya-Nya siapa yang Dia kehendaki.",
+          "wordCount": 5
+        },
+        {
+          "translation": "Allah pun membuat perumpamaan-perumpamaan bagi manusia,",
+          "wordCount": 4
+        },
+        {
+          "translation": "dan Allah Maha Mengetahui segala sesuatu.",
+          "wordCount": 4
+        }
       ]
     },
     {
@@ -516,6 +562,20 @@
           "meaning": "dan waktu petang",
           "type": "ism",
           "root": "ء ص ل"
+        }
+      ],
+      "segments": [
+        {
+          "translation": "(Cahaya itu bersinar) di rumah-rumah yang Allah perintahkan untuk dimuliakan",
+          "wordCount": 6
+        },
+        {
+          "translation": "dan disebut nama-Nya di dalamnya,",
+          "wordCount": 3
+        },
+        {
+          "translation": "tempat orang bertasbih kepada-Nya pada waktu pagi dan petang,",
+          "wordCount": 5
         }
       ]
     },
@@ -673,6 +733,24 @@
           "type": "ism",
           "root": "ب ص ر"
         }
+      ],
+      "segments": [
+        {
+          "translation": "yaitu para lelaki yang tidak dilalaikan oleh perniagaan maupun jual beli",
+          "wordCount": 6
+        },
+        {
+          "translation": "dari mengingat Allah,",
+          "wordCount": 3
+        },
+        {
+          "translation": "mendirikan shalat, dan menunaikan zakat.",
+          "wordCount": 4
+        },
+        {
+          "translation": "Mereka takut akan suatu hari yang saat itu hati dan penglihatan menjadi guncang,",
+          "wordCount": 6
+        }
       ]
     },
     {
@@ -807,6 +885,20 @@
           "meaning": "perhitungan, batas",
           "type": "ism",
           "root": "ح س ب"
+        }
+      ],
+      "segments": [
+        {
+          "translation": "agar Allah membalas mereka dengan yang lebih baik daripada apa yang mereka kerjakan,",
+          "wordCount": 5
+        },
+        {
+          "translation": "dan menambahkan kepada mereka dari karunia-Nya.",
+          "wordCount": 3
+        },
+        {
+          "translation": "Dan Allah memberi rezeki kepada siapa yang Dia kehendaki tanpa batas.",
+          "wordCount": 6
         }
       ]
     }

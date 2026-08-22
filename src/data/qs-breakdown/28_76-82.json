@@ -255,6 +255,32 @@
           "type": "ism",
           "root": "ف ر ح"
         }
+      ],
+      "segments": [
+        {
+          "translation": "Sesungguhnya Karun termasuk kaum Musa,",
+          "wordCount": 6
+        },
+        {
+          "translation": "tetapi ia berlaku aniaya terhadap mereka, dan Kami telah memberinya",
+          "wordCount": 3
+        },
+        {
+          "translation": "sebagian perbendaharaan harta",
+          "wordCount": 3
+        },
+        {
+          "translation": "yang kunci-kuncinya saja sungguh memberatkan sekelompok orang yang kuat.",
+          "wordCount": 6
+        },
+        {
+          "translation": "(Ingatlah) ketika kaumnya berkata kepadanya,",
+          "wordCount": 4
+        },
+        {
+          "translation": "\"Janganlah engkau terlalu bangga; sesungguhnya Allah tidak menyukai orang-orang yang membanggakan diri.\"",
+          "wordCount": 7
+        }
       ]
     },
     {
@@ -484,6 +510,28 @@
           "type": "ism",
           "root": "ف س د"
         }
+      ],
+      "segments": [
+        {
+          "translation": "Carilah pada apa yang telah Allah berikan kepadamu (kebahagiaan) negeri akhirat,",
+          "wordCount": 6
+        },
+        {
+          "translation": "tetapi janganlah engkau lupakan bagianmu di dunia.",
+          "wordCount": 5
+        },
+        {
+          "translation": "Berbuat baiklah sebagaimana Allah telah berbuat baik kepadamu,",
+          "wordCount": 5
+        },
+        {
+          "translation": "dan janganlah engkau berbuat kerusakan di bumi.",
+          "wordCount": 5
+        },
+        {
+          "translation": "Sesungguhnya Allah tidak menyukai orang-orang yang berbuat kerusakan.",
+          "wordCount": 5
+        }
       ]
     },
     {
@@ -711,6 +759,28 @@
           "type": "ism",
           "root": "ج ر م"
         }
+      ],
+      "segments": [
+        {
+          "translation": "Karun berkata, \"Sesungguhnya aku diberi harta itu semata-mata karena ilmu yang ada padaku.\"",
+          "wordCount": 6
+        },
+        {
+          "translation": "Tidakkah ia mengetahui bahwa Allah",
+          "wordCount": 4
+        },
+        {
+          "translation": "sungguh telah membinasakan umat-umat sebelumnya",
+          "wordCount": 6
+        },
+        {
+          "translation": "yang lebih kuat dan lebih banyak mengumpulkan harta daripadanya?",
+          "wordCount": 7
+        },
+        {
+          "translation": "Dan orang-orang yang berdosa itu tidak (perlu) ditanya tentang dosa-dosa mereka.",
+          "wordCount": 5
+        }
       ]
     },
     {
@@ -881,6 +951,24 @@
           "type": "ism",
           "root": "ع ظ م"
         }
+      ],
+      "segments": [
+        {
+          "translation": "Maka keluarlah Karun menemui kaumnya dengan segala kemegahannya.",
+          "wordCount": 5
+        },
+        {
+          "translation": "Orang-orang yang menghendaki kehidupan dunia berkata,",
+          "wordCount": 5
+        },
+        {
+          "translation": "\"Andai saja kita memiliki seperti apa yang diberikan kepada Karun;",
+          "wordCount": 6
+        },
+        {
+          "translation": "sungguh, ia benar-benar memiliki keberuntungan yang besar.\"",
+          "wordCount": 4
+        }
       ]
     },
     {
@@ -1029,6 +1117,20 @@
           "type": "ism",
           "root": "ص ب ر"
         }
+      ],
+      "segments": [
+        {
+          "translation": "Namun orang-orang yang dianugerahi ilmu berkata, \"Celakalah kalian!",
+          "wordCount": 5
+        },
+        {
+          "translation": "Pahala Allah lebih baik bagi orang yang beriman dan beramal saleh,",
+          "wordCount": 7
+        },
+        {
+          "translation": "dan (pahala) itu tidak diperoleh kecuali oleh orang-orang yang sabar.\"",
+          "wordCount": 4
+        }
       ]
     },
     {
@@ -1176,6 +1278,24 @@
           "meaning": "orang-orang yang membela diri",
           "type": "ism",
           "root": "ن ص ر"
+        }
+      ],
+      "segments": [
+        {
+          "translation": "Maka Kami benamkan Karun beserta rumahnya ke dalam bumi.",
+          "wordCount": 4
+        },
+        {
+          "translation": "Tak ada satu golongan pun yang dapat menolongnya",
+          "wordCount": 6
+        },
+        {
+          "translation": "dari (azab) Allah,",
+          "wordCount": 3
+        },
+        {
+          "translation": "dan ia pun tidak termasuk orang-orang yang mampu membela diri.",
+          "wordCount": 4
         }
       ]
     },
@@ -1417,6 +1537,28 @@
           "meaning": "orang-orang yang mengingkari",
           "type": "ism",
           "root": "ك ف ر"
+        }
+      ],
+      "segments": [
+        {
+          "translation": "Dan orang-orang yang kemarin mengangankan kedudukannya pun berkata,",
+          "wordCount": 6
+        },
+        {
+          "translation": "\"Aduhai, benarlah bahwa Allah melapangkan rezeki",
+          "wordCount": 4
+        },
+        {
+          "translation": "bagi siapa yang Dia kehendaki di antara hamba-hamba-Nya dan menyempitkannya.",
+          "wordCount": 5
+        },
+        {
+          "translation": "Sekiranya Allah tidak melimpahkan karunia-Nya kepada kita, tentu Dia telah membenamkan kita pula.",
+          "wordCount": 7
+        },
+        {
+          "translation": "Aduhai, benarlah bahwa orang-orang yang ingkar tidak akan beruntung.\"",
+          "wordCount": 4
         }
       ]
     }

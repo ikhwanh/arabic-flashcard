@@ -7,10 +7,13 @@ const MIN_WORDS = 2
 interface Round {
   ayah: number
   translation: string
-  // Correct Arabic sequence for the whole verse, in order.
+  // Correct Arabic sequence for this round, in order.
   words: string[]
-  // Full Uthmani verse (with waqaf marks) — shown in the "correct order" reveal.
+  // Arabic shown in the "correct order" reveal — the full Uthmani verse (with
+  // waqaf marks) for a whole-verse round, or the joined part words for a segment.
   arabic: string
+  // Set when the verse was split into parts, so the header can show "Part i/n".
+  part?: { index: number; count: number }
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -52,15 +55,46 @@ function resolveDrop(
   return { list, index }
 }
 
+// A verse's `segments` are a valid partition only if they cover every word,
+// in order, with none dropped or duplicated. Otherwise we fall back to a single
+// whole-verse round rather than trust a malformed split.
+function segmentsCoverWords(v: QsVerse): boolean {
+  if (!v.segments || v.segments.length === 0) return false
+  const sum = v.segments.reduce((n, s) => n + s.wordCount, 0)
+  return sum === v.words.length
+}
+
 function buildRounds(verses: QsVerse[]): Round[] {
-  return verses
-    .filter(v => v.words.length >= MIN_WORDS)
-    .map(v => ({
-      ayah: v.ayah,
-      translation: v.literalTranslation ?? v.translation,
-      words: v.words.map(w => w.arabic),
-      arabic: v.arabic,
-    }))
+  const rounds: Round[] = []
+  for (const v of verses) {
+    if (v.words.length < MIN_WORDS) continue
+
+    if (segmentsCoverWords(v)) {
+      const count = v.segments!.length
+      let offset = 0
+      v.segments!.forEach((seg, i) => {
+        const slice = v.words.slice(offset, offset + seg.wordCount)
+        offset += seg.wordCount
+        // Skip trivial parts that can't be meaningfully arranged.
+        if (slice.length < MIN_WORDS) return
+        rounds.push({
+          ayah: v.ayah,
+          translation: seg.translation,
+          words: slice.map(w => w.arabic),
+          arabic: slice.map(w => w.arabic).join(' '),
+          part: { index: i + 1, count },
+        })
+      })
+    } else {
+      rounds.push({
+        ayah: v.ayah,
+        translation: v.literalTranslation ?? v.translation,
+        words: v.words.map(w => w.arabic),
+        arabic: v.arabic,
+      })
+    }
+  }
+  return rounds
 }
 
 function saveScore(id: string, score: number, total: number) {
@@ -133,7 +167,7 @@ export async function renderQsGame(container: HTMLElement, id: string) {
       <div class="qs-game-page">
         <div class="qs-header">
           <button class="btn-back">← Back</button>
-          <span class="qs-deck-title">${bd!.surahName} · Ayat ${round.ayah}</span>
+          <span class="qs-deck-title">${bd!.surahName} · Ayat ${round.ayah}${round.part ? ` · Part ${round.part.index}/${round.part.count}` : ''}</span>
           <span class="qs-range">${currentIndex + 1} / ${total}</span>
         </div>
 
