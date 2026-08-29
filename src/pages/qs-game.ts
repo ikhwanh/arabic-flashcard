@@ -9,6 +9,9 @@ interface Round {
   translation: string
   // Correct Arabic sequence for this round, in order.
   words: string[]
+  // Indonesian per-word meanings, aligned by index with `words` — one gloss slot
+  // per word, shown in Arabic reading order as the target the player fills.
+  meanings: string[]
   // Arabic shown in the "correct order" reveal — the full Uthmani verse (with
   // waqaf marks) for a whole-verse round, or the joined part words for a segment.
   arabic: string
@@ -25,34 +28,10 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-// Work out where a dropped word should land: which list, and the insertion index
-// within it. The word being dragged is excluded from the calculation. RTL + wrap
-// aware — a chip counts as "before" the pointer if it sits on an earlier row, or
-// on the same row further to the right (reading order).
-function resolveDrop(
-  x: number, y: number,
-  dragged: HTMLElement,
-  poolEl: HTMLElement, answerEl: HTMLElement,
-  fallback: 'pool' | 'answer',
-): { list: 'pool' | 'answer'; index: number } {
-  const within = (el: HTMLElement, pad = 24) => {
-    const r = el.getBoundingClientRect()
-    return x >= r.left - pad && x <= r.right + pad && y >= r.top - pad && y <= r.bottom + pad
-  }
-  const list = within(answerEl) ? 'answer' : within(poolEl) ? 'pool' : fallback
-  const el = list === 'answer' ? answerEl : poolEl
-  const chips = [...el.querySelectorAll<HTMLElement>('.qs-game-chip')].filter(c => c !== dragged)
-
-  let index = 0
-  for (const c of chips) {
-    const r = c.getBoundingClientRect()
-    const cx = r.left + r.width / 2
-    const cy = r.top + r.height / 2
-    const sameRow = Math.abs(cy - y) < r.height * 0.6
-    const earlierRow = cy < y - r.height * 0.6
-    if (earlierRow || (sameRow && cx > x)) index++
-  }
-  return { list, index }
+// True if the pointer sits within (a padded box around) the element.
+function within(el: HTMLElement, x: number, y: number, pad = 12): boolean {
+  const r = el.getBoundingClientRect()
+  return x >= r.left - pad && x <= r.right + pad && y >= r.top - pad && y <= r.bottom + pad
 }
 
 // A verse's `segments` are a valid partition only if they cover every word,
@@ -81,6 +60,7 @@ function buildRounds(verses: QsVerse[]): Round[] {
           ayah: v.ayah,
           translation: seg.translation,
           words: slice.map(w => w.arabic),
+          meanings: slice.map(w => w.meaning),
           arabic: slice.map(w => w.arabic).join(' '),
           part: { index: i + 1, count },
         })
@@ -90,6 +70,7 @@ function buildRounds(verses: QsVerse[]): Round[] {
         ayah: v.ayah,
         translation: v.literalTranslation ?? v.translation,
         words: v.words.map(w => w.arabic),
+        meanings: v.words.map(w => w.meaning),
         arabic: v.arabic,
       })
     }
@@ -130,20 +111,34 @@ export async function renderQsGame(container: HTMLElement, id: string) {
 
   let currentIndex = 0
   let score = 0
-  // Original word indices still available in the pool.
+  // Word index placed in each gloss slot, in Arabic reading order (null = empty).
+  let slots: (number | null)[] = []
+  // Word indices not yet placed into a slot.
   let pool: number[] = []
-  // Original word indices placed in the answer row, in order.
-  let answer: number[] = []
   let checked = false
   let skipped = false
 
+  // A slot holds the correct word when the placed word's meaning matches the
+  // slot's own meaning — by value, so duplicate-meaning words are interchangeable.
+  function slotCorrect(round: Round, pos: number): boolean {
+    const wIdx = slots[pos]
+    return wIdx !== null && round.meanings[wIdx] === round.meanings[pos]
+  }
+
   function startRound() {
     const round = rounds[currentIndex]
+    slots = new Array(round.words.length).fill(null)
     pool = shuffle(round.words.map((_, i) => i))
-    answer = []
     checked = false
     skipped = false
     renderRound()
+  }
+
+  // Detach a word from wherever it currently sits (pool or a slot).
+  function removeWord(idx: number) {
+    pool = pool.filter(i => i !== idx)
+    const s = slots.indexOf(idx)
+    if (s !== -1) slots[s] = null
   }
 
   function renderRound() {
@@ -151,16 +146,28 @@ export async function renderQsGame(container: HTMLElement, id: string) {
     const total = rounds.length
     const isLast = currentIndex === total - 1
 
-    const poolChips = pool
-      .map(i => `<button class="qs-game-chip" data-from="pool" data-idx="${i}">${round.words[i]}</button>`)
+    const slotEls = round.meanings
+      .map((meaning, pos) => {
+        const wIdx = slots[pos]
+        let slotCls = 'qs-slot'
+        if (checked && !skipped && wIdx !== null) slotCls += slotCorrect(round, pos) ? ' correct' : ' wrong'
+        let chip = ''
+        if (wIdx !== null) {
+          let chipCls = 'qs-game-chip'
+          if (checked && !skipped) chipCls += slotCorrect(round, pos) ? ' chip-correct' : ' chip-wrong'
+          chip = `<button class="${chipCls}" data-from="slot" data-idx="${wIdx}">${round.words[wIdx]}</button>`
+        }
+        return `
+          <div class="${slotCls}">
+            <span class="qs-slot-label">${meaning}</span>
+            <div class="qs-slot-drop" dir="rtl">${chip}</div>
+          </div>
+        `
+      })
       .join('')
 
-    const answerChips = answer
-      .map((i, pos) => {
-        let cls = 'qs-game-chip'
-        if (checked && !skipped) cls += round.words[i] === round.words[pos] ? ' chip-correct' : ' chip-wrong'
-        return `<button class="${cls}" data-from="answer" data-idx="${i}">${round.words[i]}</button>`
-      })
+    const poolChips = pool
+      .map(i => `<button class="qs-game-chip" data-from="pool" data-idx="${i}">${round.words[i]}</button>`)
       .join('')
 
     container.innerHTML = `
@@ -171,14 +178,13 @@ export async function renderQsGame(container: HTMLElement, id: string) {
           <span class="qs-range">${currentIndex + 1} / ${total}</span>
         </div>
 
-        <p class="qs-game-label">Arrange the Arabic to match this translation</p>
-        <p class="qs-game-translation">${round.translation}</p>
+        <p class="qs-game-label">Drop each Arabic word onto its meaning</p>
 
-        <div class="qs-game-answer${checked && !skipped ? (isRoundCorrect() ? ' correct' : ' wrong') : ''}" dir="rtl">
-          ${answerChips || '<span class="qs-game-placeholder">Tap words below to build the verse</span>'}
+        <div class="qs-slots" dir="rtl">${slotEls}</div>
+
+        <div class="qs-game-pool" dir="rtl">
+          ${poolChips || '<span class="qs-game-placeholder">All words placed — tap Check</span>'}
         </div>
-
-        <div class="qs-game-pool" dir="rtl">${poolChips}</div>
 
         ${checked ? `
           <div class="qs-game-feedback">
@@ -193,7 +199,7 @@ export async function renderQsGame(container: HTMLElement, id: string) {
           <button class="btn-quiz-next" id="btn-next">${isLast ? 'Show Results' : 'Next Verse →'}</button>
         ` : `
           <div class="qs-game-actions">
-            <button class="btn-quiz-next" id="btn-check" ${answer.length > 0 ? '' : 'disabled'}>Check</button>
+            <button class="btn-quiz-next" id="btn-check" ${pool.length === 0 ? '' : 'disabled'}>Check</button>
             <button class="btn-quiz-skip" id="btn-skip">Skip</button>
           </div>
         `}
@@ -206,12 +212,12 @@ export async function renderQsGame(container: HTMLElement, id: string) {
 
     if (!checked) {
       const poolEl = container.querySelector<HTMLElement>('.qs-game-pool')!
-      const answerEl = container.querySelector<HTMLElement>('.qs-game-answer')!
+      const slotDoms = [...container.querySelectorAll<HTMLElement>('.qs-slot')]
 
-      // Tap toggles a word between pool and answer; press-and-drag drops it at a
-      // precise spot. Nothing reflows during the drag (no live "shadow" swap that
-      // would flicker on this wrapping RTL row) — the list only changes on drop.
-      const wireChip = (chip: HTMLButtonElement, from: 'pool' | 'answer') => {
+      // Tap places a pooled word into the first empty slot (or returns a placed
+      // word to the pool); press-and-drag drops it onto a specific slot. Nothing
+      // reflows during the drag — the layout only changes on drop.
+      const wireChip = (chip: HTMLButtonElement, from: 'pool' | 'slot') => {
         chip.addEventListener('pointerdown', e => {
           if (e.button !== 0 && e.pointerType === 'mouse') return
           e.preventDefault()
@@ -246,19 +252,28 @@ export async function renderQsGame(container: HTMLElement, id: string) {
             chip.classList.remove('chip-drag-source')
 
             if (!dragging) {
-              // Plain tap → toggle between lists.
-              if (from === 'pool') { pool = pool.filter(i => i !== idx); answer.push(idx) }
-              else { answer = answer.filter(i => i !== idx); pool.push(idx) }
+              // Plain tap → place into first empty slot, or return to the pool.
+              if (from === 'pool') {
+                const empty = slots.indexOf(null)
+                if (empty !== -1) { removeWord(idx); slots[empty] = idx }
+              } else {
+                removeWord(idx); pool.push(idx)
+              }
               renderRound()
               return
             }
 
-            const drop = resolveDrop(ev.clientX, ev.clientY, chip, poolEl, answerEl, from)
-            // Remove the word from wherever it was, then insert it at the drop slot.
-            pool = pool.filter(i => i !== idx)
-            answer = answer.filter(i => i !== idx)
-            if (drop.list === 'answer') answer.splice(drop.index, 0, idx)
-            else pool.splice(drop.index, 0, idx)
+            // Drop onto a slot → place there, bumping any occupant back to pool.
+            // Drop onto the pool area → return to pool. Elsewhere → no change.
+            const targetSlot = slotDoms.findIndex(el => within(el, ev.clientX, ev.clientY))
+            if (targetSlot !== -1) {
+              const occupant = slots[targetSlot]
+              removeWord(idx)
+              if (occupant !== null && occupant !== idx) pool.push(occupant)
+              slots[targetSlot] = idx
+            } else if (within(poolEl, ev.clientX, ev.clientY)) {
+              removeWord(idx); pool.push(idx)
+            }
             renderRound()
           }
 
@@ -267,8 +282,8 @@ export async function renderQsGame(container: HTMLElement, id: string) {
         })
       }
 
-      poolEl.querySelectorAll<HTMLButtonElement>('.qs-game-chip').forEach(c => wireChip(c, 'pool'))
-      answerEl.querySelectorAll<HTMLButtonElement>('.qs-game-chip').forEach(c => wireChip(c, 'answer'))
+      container.querySelectorAll<HTMLButtonElement>('.qs-game-chip').forEach(c =>
+        wireChip(c, c.dataset.from === 'slot' ? 'slot' : 'pool'))
 
       container.querySelector('#btn-check')?.addEventListener('click', () => {
         checked = true
@@ -296,8 +311,8 @@ export async function renderQsGame(container: HTMLElement, id: string) {
 
   function isRoundCorrect(): boolean {
     const round = rounds[currentIndex]
-    if (answer.length !== round.words.length) return false
-    return answer.every((wordIdx, pos) => round.words[wordIdx] === round.words[pos])
+    if (slots.some(s => s === null)) return false
+    return slots.every((_, pos) => slotCorrect(round, pos))
   }
 
   function renderResult() {
