@@ -1,7 +1,8 @@
 import { deckMetas } from '../data/flashcards'
 import { qsMetas } from '../data/qs-breakdown'
+import { readingMetas } from '../data/reading'
 
-type NavTab = 'flashcard' | 'breakdown'
+type NavTab = 'flashcard' | 'breakdown' | 'reading'
 
 function getQuizScore(deckId: string): string | null {
   return localStorage.getItem(`quiz_score_${deckId}`)
@@ -198,6 +199,28 @@ function renderBreakdownGrid(container: HTMLElement) {
   })
 }
 
+function renderReadingGrid(container: HTMLElement) {
+  const grid = container.querySelector<HTMLElement>('.qs-index-grid')!
+  grid.innerHTML = readingMetas.length === 0
+    ? `<p class="nav-empty">No surahs yet. Generate one with the quran-reading command.</p>`
+    : readingMetas.map(m => `
+        <div class="qs-index-card">
+          <button class="qs-index-open" data-id="${m.id}">
+            <span class="qs-index-surah">QS ${m.surah} · ${m.surahName}</span>
+            <span class="qs-index-title">${m.title}</span>
+            <span class="qs-index-desc">${m.description}</span>
+            <span class="qs-index-count">Ayat ${m.from}–${m.to} · ${m.verseCount} ayat</span>
+          </button>
+        </div>
+      `).join('')
+
+  grid.querySelectorAll<HTMLButtonElement>('.qs-index-open').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.hash = `read/${btn.dataset.id!}`
+    })
+  })
+}
+
 function syncResetAllButton(container: HTMLElement) {
   const btn = container.querySelector<HTMLButtonElement>('.btn-reset-all')
   if (btn) btn.disabled = !hasAnyProgress()
@@ -241,14 +264,31 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
     <div class="qs-index-grid"></div>
   `
 
+  const readingSection = `
+    <div class="nav-hero">
+      <h2>Read</h2>
+      <p class="nav-subtitle">Read the Quran, tap a word for its meaning</p>
+    </div>
+    <div class="qs-index-grid"></div>
+  `
+
+  const section = activeTab === 'breakdown' ? breakdownSection
+    : activeTab === 'reading' ? readingSection
+    : flashcardSection
+
   container.innerHTML = `
     <div class="nav-page">
-      ${activeTab === 'flashcard' ? flashcardSection : breakdownSection}
+      ${section}
     </div>
   `
 
   if (activeTab === 'breakdown') {
     renderBreakdownGrid(container)
+    return
+  }
+
+  if (activeTab === 'reading') {
+    renderReadingGrid(container)
     return
   }
 

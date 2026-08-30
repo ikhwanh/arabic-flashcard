@@ -7,6 +7,7 @@ import { renderQuiz } from './pages/quiz'
 import { renderTest } from './pages/test'
 import { renderQsBreakdown } from './pages/qs-breakdown'
 import { renderQsGame } from './pages/qs-game'
+import { renderReading } from './pages/reading'
 import { renderSettings } from './pages/settings'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -14,6 +15,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <nav class="header-tabs" role="tablist">
       <button class="header-tab" data-tab="flashcard" role="tab">Flashcard</button>
       <button class="header-tab" data-tab="breakdown" role="tab">Surah Breakdown</button>
+      <button class="header-tab" data-tab="reading" role="tab">Read</button>
     </nav>
     <div class="header-actions">
       <button class="settings-toggle" aria-label="Settings">⚙️</button>
@@ -39,7 +41,8 @@ const appHeader = document.querySelector<HTMLElement>('.app-header')!
 const headerTabs = appHeader.querySelectorAll<HTMLButtonElement>('.header-tab')
 headerTabs.forEach(btn => {
   btn.addEventListener('click', () => {
-    window.location.hash = btn.dataset.tab === 'breakdown' ? 'qs' : ''
+    const tab = btn.dataset.tab
+    window.location.hash = tab === 'breakdown' ? 'qs' : tab === 'reading' ? 'read' : ''
   })
 })
 
@@ -47,7 +50,7 @@ appHeader.querySelector<HTMLButtonElement>('.settings-toggle')!.addEventListener
   window.location.hash = 'settings'
 })
 
-function setActiveTab(tab: 'flashcard' | 'breakdown' | null) {
+function setActiveTab(tab: 'flashcard' | 'breakdown' | 'reading' | null) {
   headerTabs.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab))
 }
 
@@ -60,6 +63,8 @@ function route() {
   const qsGameMatch = hash.match(/^qs\/(.+)\/game$/)
   const qsReaderMatch = hash.match(/^qs\/(.+)$/)
   const qsIndexMatch = hash === 'qs'
+  const readReaderMatch = hash.match(/^read\/(.+)$/)
+  const readIndexMatch = hash === 'read'
   const settingsMatch = hash === 'settings'
 
   if (settingsMatch) {
@@ -76,6 +81,13 @@ function route() {
     appHeader.hidden = false
     setActiveTab('breakdown')
     renderNavigation(mainContent, 'breakdown')
+  } else if (readReaderMatch) {
+    appHeader.hidden = true
+    renderReading(mainContent, readReaderMatch[1]).catch(console.error)
+  } else if (readIndexMatch) {
+    appHeader.hidden = false
+    setActiveTab('reading')
+    renderNavigation(mainContent, 'reading')
   } else if (testMatch) {
     appHeader.hidden = true
     renderTest(mainContent, testMatch[1]).catch(console.error)

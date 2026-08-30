@@ -1,0 +1,4135 @@
+{
+  "meta": {
+    "surah": 36,
+    "surahName": "Yaseen",
+    "from": 1,
+    "to": 83,
+    "title": "Ya-Sin 1–83",
+    "description": "Surah Ya-Sin, dibuka dengan sumpah atas Al-Quran yang penuh hikmah dan penegasan kerasulan Nabi Muhammad."
+  },
+  "verses": [
+    {
+      "ayah": 1,
+      "arabic": "يسٓ",
+      "words": [
+        {
+          "arabic": "يسٓ",
+          "transliteration": "yaa siin",
+          "meaning": "Ya Sin"
+        }
+      ]
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَٱلْقُرْءَانِ ٱلْحَكِيمِ",
+      "words": [
+        {
+          "arabic": "وَٱلْقُرْءَانِ",
+          "transliteration": "wal-qur'aan",
+          "meaning": "demi Al-Quran"
+        },
+        {
+          "arabic": "ٱلْحَكِيمِ",
+          "transliteration": "al-hakiim",
+          "meaning": "yang penuh hikmah"
+        }
+      ]
+    },
+    {
+      "ayah": 3,
+      "arabic": "إِنَّكَ لَمِنَ ٱلْمُرْسَلِينَ",
+      "words": [
+        {
+          "arabic": "إِنَّكَ",
+          "transliteration": "innaka",
+          "meaning": "sesungguhnya engkau"
+        },
+        {
+          "arabic": "لَمِنَ",
+          "transliteration": "lamina",
+          "meaning": "benar-benar termasuk"
+        },
+        {
+          "arabic": "ٱلْمُرْسَلِينَ",
+          "transliteration": "al-mursaliin",
+          "meaning": "para rasul yang diutus"
+        }
+      ]
+    },
+    {
+      "ayah": 4,
+      "arabic": "عَلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ",
+      "words": [
+        {
+          "arabic": "عَلَىٰ",
+          "transliteration": "'alaa",
+          "meaning": "di atas"
+        },
+        {
+          "arabic": "صِرَٰطٍۢ",
+          "transliteration": "siraatin",
+          "meaning": "jalan"
+        },
+        {
+          "arabic": "مُّسْتَقِيمٍۢ",
+          "transliteration": "mustaqiim",
+          "meaning": "yang lurus"
+        }
+      ]
+    },
+    {
+      "ayah": 5,
+      "arabic": "تَنزِيلَ ٱلْعَزِيزِ ٱلرَّحِيمِ",
+      "words": [
+        {
+          "arabic": "تَنزِيلَ",
+          "transliteration": "tanziil",
+          "meaning": "(Al-Quran itu) diturunkan"
+        },
+        {
+          "arabic": "ٱلْعَزِيزِ",
+          "transliteration": "al-'aziiz",
+          "meaning": "Yang Mahaperkasa"
+        },
+        {
+          "arabic": "ٱلرَّحِيمِ",
+          "transliteration": "ar-rahiim",
+          "meaning": "Yang Maha Penyayang"
+        }
+      ]
+    },
+    {
+      "ayah": 6,
+      "arabic": "لِتُنذِرَ قَوْمًۭا مَّآ أُنذِرَ ءَابَآؤُهُمْ فَهُمْ غَٰفِلُونَ",
+      "words": [
+        {
+          "arabic": "لِتُنذِرَ",
+          "transliteration": "litundzira",
+          "meaning": "agar engkau memberi peringatan"
+        },
+        {
+          "arabic": "قَوْمًۭا",
+          "transliteration": "qauman",
+          "meaning": "kepada suatu kaum"
+        },
+        {
+          "arabic": "مَّآ",
+          "transliteration": "maa",
+          "meaning": "yang belum"
+        },
+        {
+          "arabic": "أُنذِرَ",
+          "transliteration": "undzira",
+          "meaning": "diberi peringatan"
+        },
+        {
+          "arabic": "ءَابَآؤُهُمْ",
+          "transliteration": "aabaa'uhum",
+          "meaning": "bapak-bapak mereka"
+        },
+        {
+          "arabic": "فَهُمْ",
+          "transliteration": "fahum",
+          "meaning": "maka mereka"
+        },
+        {
+          "arabic": "غَٰفِلُونَ",
+          "transliteration": "ghaafiluun",
+          "meaning": "lalai"
+        }
+      ]
+    },
+    {
+      "ayah": 7,
+      "arabic": "لَقَدْ حَقَّ ٱلْقَوْلُ عَلَىٰٓ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ",
+      "words": [
+        {
+          "arabic": "لَقَدْ",
+          "transliteration": "laqad",
+          "meaning": "sungguh"
+        },
+        {
+          "arabic": "حَقَّ",
+          "transliteration": "haqqa",
+          "meaning": "telah pasti berlaku"
+        },
+        {
+          "arabic": "ٱلْقَوْلُ",
+          "transliteration": "al-qaul",
+          "meaning": "perkataan (ketetapan)"
+        },
+        {
+          "arabic": "عَلَىٰٓ",
+          "transliteration": "'alaa",
+          "meaning": "atas"
+        },
+        {
+          "arabic": "أَكْثَرِهِمْ",
+          "transliteration": "aktsarihim",
+          "meaning": "kebanyakan mereka"
+        },
+        {
+          "arabic": "فَهُمْ",
+          "transliteration": "fahum",
+          "meaning": "maka mereka"
+        },
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "يُؤْمِنُونَ",
+          "transliteration": "yu'minuun",
+          "meaning": "beriman"
+        }
+      ]
+    },
+    {
+      "ayah": 8,
+      "arabic": "إِنَّا جَعَلْنَا فِىٓ أَعْنَٰقِهِمْ أَغْلَٰلًۭا فَهِىَ إِلَى ٱلْأَذْقَانِ فَهُم مُّقْمَحُونَ",
+      "words": [
+        {
+          "arabic": "إِنَّا",
+          "transliteration": "innaa",
+          "meaning": "sesungguhnya Kami"
+        },
+        {
+          "arabic": "جَعَلْنَا",
+          "transliteration": "ja'alnaa",
+          "meaning": "Kami pasang"
+        },
+        {
+          "arabic": "فِىٓ",
+          "transliteration": "fii",
+          "meaning": "pada"
+        },
+        {
+          "arabic": "أَعْنَٰقِهِمْ",
+          "transliteration": "a'naaqihim",
+          "meaning": "leher-leher mereka"
+        },
+        {
+          "arabic": "أَغْلَٰلًۭا",
+          "transliteration": "aghlaalan",
+          "meaning": "belenggu-belenggu"
+        },
+        {
+          "arabic": "فَهِىَ",
+          "transliteration": "fahiya",
+          "meaning": "lalu ia (belenggu itu)"
+        },
+        {
+          "arabic": "إِلَى",
+          "transliteration": "ilaa",
+          "meaning": "sampai ke"
+        },
+        {
+          "arabic": "ٱلْأَذْقَانِ",
+          "transliteration": "al-adzqaan",
+          "meaning": "dagu"
+        },
+        {
+          "arabic": "فَهُم",
+          "transliteration": "fahum",
+          "meaning": "maka mereka"
+        },
+        {
+          "arabic": "مُّقْمَحُونَ",
+          "transliteration": "muqmahuun",
+          "meaning": "tertengadah kaku"
+        }
+      ]
+    },
+    {
+      "ayah": 9,
+      "arabic": "وَجَعَلْنَا مِنۢ بَيْنِ أَيْدِيهِمْ سَدًّۭا وَمِنْ خَلْفِهِمْ سَدًّۭا فَأَغْشَيْنَٰهُمْ فَهُمْ لَا يُبْصِرُونَ",
+      "words": [
+        {
+          "arabic": "وَجَعَلْنَا",
+          "transliteration": "wa ja'alnaa",
+          "meaning": "dan Kami adakan"
+        },
+        {
+          "arabic": "مِنۢ",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "بَيْنِ",
+          "transliteration": "baina",
+          "meaning": "depan"
+        },
+        {
+          "arabic": "أَيْدِيهِمْ",
+          "transliteration": "aidiihim",
+          "meaning": "hadapan mereka"
+        },
+        {
+          "arabic": "سَدًّۭا",
+          "transliteration": "saddan",
+          "meaning": "dinding penghalang"
+        },
+        {
+          "arabic": "وَمِنْ",
+          "transliteration": "wa min",
+          "meaning": "dan dari"
+        },
+        {
+          "arabic": "خَلْفِهِمْ",
+          "transliteration": "khalfihim",
+          "meaning": "belakang mereka"
+        },
+        {
+          "arabic": "سَدًّۭا",
+          "transliteration": "saddan",
+          "meaning": "dinding penghalang"
+        },
+        {
+          "arabic": "فَأَغْشَيْنَٰهُمْ",
+          "transliteration": "fa aghsyainaahum",
+          "meaning": "lalu Kami tutup (mata) mereka"
+        },
+        {
+          "arabic": "فَهُمْ",
+          "transliteration": "fahum",
+          "meaning": "maka mereka"
+        },
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "يُبْصِرُونَ",
+          "transliteration": "yubshiruun",
+          "meaning": "melihat"
+        }
+      ]
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَسَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ",
+      "words": [
+        {
+          "arabic": "وَسَوَآءٌ",
+          "transliteration": "wa sawaa'un",
+          "meaning": "dan sama saja"
+        },
+        {
+          "arabic": "عَلَيْهِمْ",
+          "transliteration": "'alaihim",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "ءَأَنذَرْتَهُمْ",
+          "transliteration": "a andzartahum",
+          "meaning": "apakah engkau beri peringatan mereka"
+        },
+        {
+          "arabic": "أَمْ",
+          "transliteration": "am",
+          "meaning": "ataukah"
+        },
+        {
+          "arabic": "لَمْ",
+          "transliteration": "lam",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "تُنذِرْهُمْ",
+          "transliteration": "tundzirhum",
+          "meaning": "engkau beri peringatan mereka"
+        },
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "يُؤْمِنُونَ",
+          "transliteration": "yu'minuun",
+          "meaning": "beriman"
+        }
+      ]
+    },
+    {
+      "ayah": 11,
+      "arabic": "إِنَّمَا تُنذِرُ مَنِ ٱتَّبَعَ ٱلذِّكْرَ وَخَشِىَ ٱلرَّحْمَٰنَ بِٱلْغَيْبِ ۖ فَبَشِّرْهُ بِمَغْفِرَةٍۢ وَأَجْرٍۢ كَرِيمٍ",
+      "words": [
+        {
+          "arabic": "إِنَّمَا",
+          "transliteration": "innamaa",
+          "meaning": "sesungguhnya hanyalah"
+        },
+        {
+          "arabic": "تُنذِرُ",
+          "transliteration": "tundziru",
+          "meaning": "engkau dapat memberi peringatan"
+        },
+        {
+          "arabic": "مَنِ",
+          "transliteration": "mani",
+          "meaning": "kepada orang yang"
+        },
+        {
+          "arabic": "ٱتَّبَعَ",
+          "transliteration": "ittaba'a",
+          "meaning": "mengikuti"
+        },
+        {
+          "arabic": "ٱلذِّكْرَ",
+          "transliteration": "adz-dzikr",
+          "meaning": "peringatan (Al-Quran)"
+        },
+        {
+          "arabic": "وَخَشِىَ",
+          "transliteration": "wa khasyiya",
+          "meaning": "dan takut kepada"
+        },
+        {
+          "arabic": "ٱلرَّحْمَٰنَ",
+          "transliteration": "ar-rahmaan",
+          "meaning": "Yang Maha Pengasih"
+        },
+        {
+          "arabic": "بِٱلْغَيْبِ",
+          "transliteration": "bil-ghaib",
+          "meaning": "dalam keadaan gaib"
+        },
+        {
+          "arabic": "فَبَشِّرْهُ",
+          "transliteration": "fa basysyirhu",
+          "meaning": "maka berilah dia kabar gembira"
+        },
+        {
+          "arabic": "بِمَغْفِرَةٍۢ",
+          "transliteration": "bi maghfiratin",
+          "meaning": "dengan ampunan"
+        },
+        {
+          "arabic": "وَأَجْرٍۢ",
+          "transliteration": "wa ajrin",
+          "meaning": "dan pahala"
+        },
+        {
+          "arabic": "كَرِيمٍ",
+          "transliteration": "kariim",
+          "meaning": "yang mulia"
+        }
+      ]
+    },
+    {
+      "ayah": 12,
+      "arabic": "إِنَّا نَحْنُ نُحْىِ ٱلْمَوْتَىٰ وَنَكْتُبُ مَا قَدَّمُوا۟ وَءَاثَٰرَهُمْ ۚ وَكُلَّ شَىْءٍ أَحْصَيْنَٰهُ فِىٓ إِمَامٍۢ مُّبِينٍۢ",
+      "words": [
+        {
+          "arabic": "إِنَّا",
+          "transliteration": "innaa",
+          "meaning": "sesungguhnya Kami"
+        },
+        {
+          "arabic": "نَحْنُ",
+          "transliteration": "nahnu",
+          "meaning": "Kami"
+        },
+        {
+          "arabic": "نُحْىِ",
+          "transliteration": "nuhyii",
+          "meaning": "menghidupkan"
+        },
+        {
+          "arabic": "ٱلْمَوْتَىٰ",
+          "transliteration": "al-mautaa",
+          "meaning": "orang-orang mati"
+        },
+        {
+          "arabic": "وَنَكْتُبُ",
+          "transliteration": "wa naktubu",
+          "meaning": "dan Kami menuliskan"
+        },
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "apa yang"
+        },
+        {
+          "arabic": "قَدَّمُوا۟",
+          "transliteration": "qaddamuu",
+          "meaning": "telah mereka kerjakan"
+        },
+        {
+          "arabic": "وَءَاثَٰرَهُمْ",
+          "transliteration": "wa aatsaarahum",
+          "meaning": "dan bekas-bekas jejak mereka"
+        },
+        {
+          "arabic": "وَكُلَّ",
+          "transliteration": "wa kulla",
+          "meaning": "dan segala"
+        },
+        {
+          "arabic": "شَىْءٍ",
+          "transliteration": "syai'in",
+          "meaning": "sesuatu"
+        },
+        {
+          "arabic": "أَحْصَيْنَٰهُ",
+          "transliteration": "ahshainaahu",
+          "meaning": "Kami catat"
+        },
+        {
+          "arabic": "فِىٓ",
+          "transliteration": "fii",
+          "meaning": "dalam"
+        },
+        {
+          "arabic": "إِمَامٍۢ",
+          "transliteration": "imaamin",
+          "meaning": "kitab induk"
+        },
+        {
+          "arabic": "مُّبِينٍۢ",
+          "transliteration": "mubiin",
+          "meaning": "yang jelas"
+        }
+      ]
+    },
+    {
+      "ayah": 13,
+      "arabic": "وَٱضْرِبْ لَهُم مَّثَلًا أَصْحَٰبَ ٱلْقَرْيَةِ إِذْ جَآءَهَا ٱلْمُرْسَلُونَ",
+      "words": [
+        {
+          "arabic": "وَٱضْرِبْ",
+          "transliteration": "wadhrib",
+          "meaning": "dan buatlah"
+        },
+        {
+          "arabic": "لَهُم",
+          "transliteration": "lahum",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "مَّثَلًا",
+          "transliteration": "matsalan",
+          "meaning": "suatu perumpamaan"
+        },
+        {
+          "arabic": "أَصْحَٰبَ",
+          "transliteration": "ashhaaba",
+          "meaning": "penduduk"
+        },
+        {
+          "arabic": "ٱلْقَرْيَةِ",
+          "transliteration": "al-qaryah",
+          "meaning": "negeri itu"
+        },
+        {
+          "arabic": "إِذْ",
+          "transliteration": "idz",
+          "meaning": "ketika"
+        },
+        {
+          "arabic": "جَآءَهَا",
+          "transliteration": "jaa'ahaa",
+          "meaning": "datang kepadanya"
+        },
+        {
+          "arabic": "ٱلْمُرْسَلُونَ",
+          "transliteration": "al-mursaluun",
+          "meaning": "para utusan"
+        }
+      ]
+    },
+    {
+      "ayah": 14,
+      "arabic": "إِذْ أَرْسَلْنَآ إِلَيْهِمُ ٱثْنَيْنِ فَكَذَّبُوهُمَا فَعَزَّزْنَا بِثَالِثٍۢ فَقَالُوٓا۟ إِنَّآ إِلَيْكُم مُّرْسَلُونَ",
+      "words": [
+        {
+          "arabic": "إِذْ",
+          "transliteration": "idz",
+          "meaning": "ketika"
+        },
+        {
+          "arabic": "أَرْسَلْنَآ",
+          "transliteration": "arsalnaa",
+          "meaning": "Kami mengutus"
+        },
+        {
+          "arabic": "إِلَيْهِمُ",
+          "transliteration": "ilaihimu",
+          "meaning": "kepada mereka"
+        },
+        {
+          "arabic": "ٱثْنَيْنِ",
+          "transliteration": "itsnaini",
+          "meaning": "dua orang utusan"
+        },
+        {
+          "arabic": "فَكَذَّبُوهُمَا",
+          "transliteration": "fa kadzdzabuuhumaa",
+          "meaning": "lalu mereka mendustakan keduanya"
+        },
+        {
+          "arabic": "فَعَزَّزْنَا",
+          "transliteration": "fa 'azzaznaa",
+          "meaning": "maka Kami kuatkan"
+        },
+        {
+          "arabic": "بِثَالِثٍۢ",
+          "transliteration": "bi tsaalitsin",
+          "meaning": "dengan (utusan) ketiga"
+        },
+        {
+          "arabic": "فَقَالُوٓا۟",
+          "transliteration": "fa qaaluu",
+          "meaning": "lalu mereka berkata"
+        },
+        {
+          "arabic": "إِنَّآ",
+          "transliteration": "innaa",
+          "meaning": "sesungguhnya kami"
+        },
+        {
+          "arabic": "إِلَيْكُم",
+          "transliteration": "ilaikum",
+          "meaning": "kepada kalian"
+        },
+        {
+          "arabic": "مُّرْسَلُونَ",
+          "transliteration": "mursaluun",
+          "meaning": "para utusan"
+        }
+      ]
+    },
+    {
+      "ayah": 15,
+      "arabic": "قَالُوا۟ مَآ أَنتُمْ إِلَّا بَشَرٌۭ مِّثْلُنَا وَمَآ أَنزَلَ ٱلرَّحْمَٰنُ مِن شَىْءٍ إِنْ أَنتُمْ إِلَّا تَكْذِبُونَ",
+      "words": [
+        {
+          "arabic": "قَالُوا۟",
+          "transliteration": "qaaluu",
+          "meaning": "mereka berkata"
+        },
+        {
+          "arabic": "مَآ",
+          "transliteration": "maa",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "أَنتُمْ",
+          "transliteration": "antum",
+          "meaning": "kalian"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "بَشَرٌۭ",
+          "transliteration": "basyarun",
+          "meaning": "manusia"
+        },
+        {
+          "arabic": "مِّثْلُنَا",
+          "transliteration": "mitslunaa",
+          "meaning": "seperti kami"
+        },
+        {
+          "arabic": "وَمَآ",
+          "transliteration": "wa maa",
+          "meaning": "dan tidak"
+        },
+        {
+          "arabic": "أَنزَلَ",
+          "transliteration": "anzala",
+          "meaning": "menurunkan"
+        },
+        {
+          "arabic": "ٱلرَّحْمَٰنُ",
+          "transliteration": "ar-rahmaan",
+          "meaning": "Yang Maha Pengasih"
+        },
+        {
+          "arabic": "مِن",
+          "transliteration": "min",
+          "meaning": "sesuatu pun"
+        },
+        {
+          "arabic": "شَىْءٍ",
+          "transliteration": "syai'in",
+          "meaning": "apa pun"
+        },
+        {
+          "arabic": "إِنْ",
+          "transliteration": "in",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "أَنتُمْ",
+          "transliteration": "antum",
+          "meaning": "kalian"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "تَكْذِبُونَ",
+          "transliteration": "takdzibuun",
+          "meaning": "berdusta"
+        }
+      ]
+    },
+    {
+      "ayah": 16,
+      "arabic": "قَالُوا۟ رَبُّنَا يَعْلَمُ إِنَّآ إِلَيْكُمْ لَمُرْسَلُونَ",
+      "words": [
+        {
+          "arabic": "قَالُوا۟",
+          "transliteration": "qaaluu",
+          "meaning": "mereka berkata"
+        },
+        {
+          "arabic": "رَبُّنَا",
+          "transliteration": "rabbunaa",
+          "meaning": "Tuhan kami"
+        },
+        {
+          "arabic": "يَعْلَمُ",
+          "transliteration": "ya'lamu",
+          "meaning": "mengetahui"
+        },
+        {
+          "arabic": "إِنَّآ",
+          "transliteration": "innaa",
+          "meaning": "sesungguhnya kami"
+        },
+        {
+          "arabic": "إِلَيْكُمْ",
+          "transliteration": "ilaikum",
+          "meaning": "kepada kalian"
+        },
+        {
+          "arabic": "لَمُرْسَلُونَ",
+          "transliteration": "lamursaluun",
+          "meaning": "benar-benar diutus"
+        }
+      ]
+    },
+    {
+      "ayah": 17,
+      "arabic": "وَمَا عَلَيْنَآ إِلَّا ٱلْبَلَٰغُ ٱلْمُبِينُ",
+      "words": [
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan tidaklah"
+        },
+        {
+          "arabic": "عَلَيْنَآ",
+          "transliteration": "'alainaa",
+          "meaning": "kewajiban kami"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "kecuali"
+        },
+        {
+          "arabic": "ٱلْبَلَٰغُ",
+          "transliteration": "al-balaagh",
+          "meaning": "menyampaikan"
+        },
+        {
+          "arabic": "ٱلْمُبِينُ",
+          "transliteration": "al-mubiin",
+          "meaning": "dengan jelas"
+        }
+      ]
+    },
+    {
+      "ayah": 18,
+      "arabic": "قَالُوٓا۟ إِنَّا تَطَيَّرْنَا بِكُمْ ۖ لَئِن لَّمْ تَنتَهُوا۟ لَنَرْجُمَنَّكُمْ وَلَيَمَسَّنَّكُم مِّنَّا عَذَابٌ أَلِيمٌۭ",
+      "words": [
+        {
+          "arabic": "قَالُوٓا۟",
+          "transliteration": "qaaluu",
+          "meaning": "mereka berkata"
+        },
+        {
+          "arabic": "إِنَّا",
+          "transliteration": "innaa",
+          "meaning": "sesungguhnya kami"
+        },
+        {
+          "arabic": "تَطَيَّرْنَا",
+          "transliteration": "tathayyarnaa",
+          "meaning": "kami bernasib sial"
+        },
+        {
+          "arabic": "بِكُمْ",
+          "transliteration": "bikum",
+          "meaning": "karena kalian"
+        },
+        {
+          "arabic": "لَئِن",
+          "transliteration": "la'in",
+          "meaning": "sungguh jika"
+        },
+        {
+          "arabic": "لَّمْ",
+          "transliteration": "lam",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "تَنتَهُوا۟",
+          "transliteration": "tantahuu",
+          "meaning": "kalian berhenti"
+        },
+        {
+          "arabic": "لَنَرْجُمَنَّكُمْ",
+          "transliteration": "lanarjumannakum",
+          "meaning": "pasti kami rajam kalian"
+        },
+        {
+          "arabic": "وَلَيَمَسَّنَّكُم",
+          "transliteration": "wa layamassannakum",
+          "meaning": "dan pasti menimpa kalian"
+        },
+        {
+          "arabic": "مِّنَّا",
+          "transliteration": "minnaa",
+          "meaning": "dari kami"
+        },
+        {
+          "arabic": "عَذَابٌ",
+          "transliteration": "'adzaabun",
+          "meaning": "azab"
+        },
+        {
+          "arabic": "أَلِيمٌۭ",
+          "transliteration": "aliim",
+          "meaning": "yang pedih"
+        }
+      ]
+    },
+    {
+      "ayah": 19,
+      "arabic": "قَالُوا۟ طَٰٓئِرُكُم مَّعَكُمْ ۚ أَئِن ذُكِّرْتُم ۚ بَلْ أَنتُمْ قَوْمٌۭ مُّسْرِفُونَ",
+      "words": [
+        {
+          "arabic": "قَالُوا۟",
+          "transliteration": "qaaluu",
+          "meaning": "mereka (utusan) berkata"
+        },
+        {
+          "arabic": "طَٰٓئِرُكُم",
+          "transliteration": "thaa'irukum",
+          "meaning": "kesialan kalian"
+        },
+        {
+          "arabic": "مَّعَكُمْ",
+          "transliteration": "ma'akum",
+          "meaning": "ada pada diri kalian"
+        },
+        {
+          "arabic": "أَئِن",
+          "transliteration": "a'in",
+          "meaning": "apakah karena"
+        },
+        {
+          "arabic": "ذُكِّرْتُم",
+          "transliteration": "dzukkirtum",
+          "meaning": "kalian diberi peringatan"
+        },
+        {
+          "arabic": "بَلْ",
+          "transliteration": "bal",
+          "meaning": "bahkan"
+        },
+        {
+          "arabic": "أَنتُمْ",
+          "transliteration": "antum",
+          "meaning": "kalian"
+        },
+        {
+          "arabic": "قَوْمٌۭ",
+          "transliteration": "qaumun",
+          "meaning": "kaum"
+        },
+        {
+          "arabic": "مُّسْرِفُونَ",
+          "transliteration": "musrifuun",
+          "meaning": "yang melampaui batas"
+        }
+      ]
+    },
+    {
+      "ayah": 20,
+      "arabic": "وَجَآءَ مِنْ أَقْصَا ٱلْمَدِينَةِ رَجُلٌۭ يَسْعَىٰ قَالَ يَٰقَوْمِ ٱتَّبِعُوا۟ ٱلْمُرْسَلِينَ",
+      "words": [
+        {
+          "arabic": "وَجَآءَ",
+          "transliteration": "wa jaa'a",
+          "meaning": "dan datanglah"
+        },
+        {
+          "arabic": "مِنْ",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "أَقْصَا",
+          "transliteration": "aqsha",
+          "meaning": "ujung"
+        },
+        {
+          "arabic": "ٱلْمَدِينَةِ",
+          "transliteration": "al-madiinah",
+          "meaning": "kota itu"
+        },
+        {
+          "arabic": "رَجُلٌۭ",
+          "transliteration": "rajulun",
+          "meaning": "seorang laki-laki"
+        },
+        {
+          "arabic": "يَسْعَىٰ",
+          "transliteration": "yas'aa",
+          "meaning": "dengan bergegas"
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata"
+        },
+        {
+          "arabic": "يَٰقَوْمِ",
+          "transliteration": "yaa qaumi",
+          "meaning": "wahai kaumku"
+        },
+        {
+          "arabic": "ٱتَّبِعُوا۟",
+          "transliteration": "ittabi'uu",
+          "meaning": "ikutilah"
+        },
+        {
+          "arabic": "ٱلْمُرْسَلِينَ",
+          "transliteration": "al-mursaliin",
+          "meaning": "para utusan"
+        }
+      ]
+    },
+    {
+      "ayah": 21,
+      "arabic": "ٱتَّبِعُوا۟ مَن لَّا يَسْـَٔلُكُمْ أَجْرًۭا وَهُم مُّهْتَدُونَ",
+      "words": [
+        {
+          "arabic": "ٱتَّبِعُوا۟",
+          "transliteration": "ittabi'uu",
+          "meaning": "ikutilah"
+        },
+        {
+          "arabic": "مَن",
+          "transliteration": "man",
+          "meaning": "orang yang"
+        },
+        {
+          "arabic": "لَّا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "يَسْـَٔلُكُمْ",
+          "transliteration": "yas'alukum",
+          "meaning": "meminta kepada kalian"
+        },
+        {
+          "arabic": "أَجْرًۭا",
+          "transliteration": "ajran",
+          "meaning": "upah"
+        },
+        {
+          "arabic": "وَهُم",
+          "transliteration": "wa hum",
+          "meaning": "dan mereka"
+        },
+        {
+          "arabic": "مُّهْتَدُونَ",
+          "transliteration": "muhtaduun",
+          "meaning": "orang yang mendapat petunjuk"
+        }
+      ]
+    },
+    {
+      "ayah": 22,
+      "arabic": "وَمَا لِىَ لَآ أَعْبُدُ ٱلَّذِى فَطَرَنِى وَإِلَيْهِ تُرْجَعُونَ",
+      "words": [
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan mengapa"
+        },
+        {
+          "arabic": "لِىَ",
+          "transliteration": "liya",
+          "meaning": "aku"
+        },
+        {
+          "arabic": "لَآ",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "أَعْبُدُ",
+          "transliteration": "a'budu",
+          "meaning": "menyembah"
+        },
+        {
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladzii",
+          "meaning": "(Tuhan) yang"
+        },
+        {
+          "arabic": "فَطَرَنِى",
+          "transliteration": "fatharanii",
+          "meaning": "menciptakanku"
+        },
+        {
+          "arabic": "وَإِلَيْهِ",
+          "transliteration": "wa ilaihi",
+          "meaning": "dan kepada-Nya"
+        },
+        {
+          "arabic": "تُرْجَعُونَ",
+          "transliteration": "turja'uun",
+          "meaning": "kalian dikembalikan"
+        }
+      ]
+    },
+    {
+      "ayah": 23,
+      "arabic": "ءَأَتَّخِذُ مِن دُونِهِۦٓ ءَالِهَةً إِن يُرِدْنِ ٱلرَّحْمَٰنُ بِضُرٍّۢ لَّا تُغْنِ عَنِّى شَفَٰعَتُهُمْ شَيْـًۭٔا وَلَا يُنقِذُونِ",
+      "words": [
+        {
+          "arabic": "ءَأَتَّخِذُ",
+          "transliteration": "a attakhidzu",
+          "meaning": "apakah aku akan menjadikan"
+        },
+        {
+          "arabic": "مِن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "دُونِهِۦٓ",
+          "transliteration": "duunihi",
+          "meaning": "selain Dia"
+        },
+        {
+          "arabic": "ءَالِهَةً",
+          "transliteration": "aalihatan",
+          "meaning": "tuhan-tuhan"
+        },
+        {
+          "arabic": "إِن",
+          "transliteration": "in",
+          "meaning": "jika"
+        },
+        {
+          "arabic": "يُرِدْنِ",
+          "transliteration": "yuridni",
+          "meaning": "menghendaki (menimpakan) padaku"
+        },
+        {
+          "arabic": "ٱلرَّحْمَٰنُ",
+          "transliteration": "ar-rahmaan",
+          "meaning": "Yang Maha Pengasih"
+        },
+        {
+          "arabic": "بِضُرٍّۢ",
+          "transliteration": "bi dhurrin",
+          "meaning": "suatu bahaya"
+        },
+        {
+          "arabic": "لَّا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "تُغْنِ",
+          "transliteration": "tughni",
+          "meaning": "berguna"
+        },
+        {
+          "arabic": "عَنِّى",
+          "transliteration": "'annii",
+          "meaning": "bagiku"
+        },
+        {
+          "arabic": "شَفَٰعَتُهُمْ",
+          "transliteration": "syafaa'atuhum",
+          "meaning": "syafaat mereka"
+        },
+        {
+          "arabic": "شَيْـًۭٔا",
+          "transliteration": "syai'an",
+          "meaning": "sedikit pun"
+        },
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa laa",
+          "meaning": "dan tidak (dapat)"
+        },
+        {
+          "arabic": "يُنقِذُونِ",
+          "transliteration": "yunqidzuuni",
+          "meaning": "menyelamatkanku"
+        }
+      ]
+    },
+    {
+      "ayah": 24,
+      "arabic": "إِنِّىٓ إِذًۭا لَّفِى ضَلَٰلٍۢ مُّبِينٍ",
+      "words": [
+        {
+          "arabic": "إِنِّىٓ",
+          "transliteration": "innii",
+          "meaning": "sesungguhnya aku"
+        },
+        {
+          "arabic": "إِذًۭا",
+          "transliteration": "idzan",
+          "meaning": "kalau begitu"
+        },
+        {
+          "arabic": "لَّفِى",
+          "transliteration": "lafii",
+          "meaning": "benar-benar dalam"
+        },
+        {
+          "arabic": "ضَلَٰلٍۢ",
+          "transliteration": "dhalaalin",
+          "meaning": "kesesatan"
+        },
+        {
+          "arabic": "مُّبِينٍ",
+          "transliteration": "mubiin",
+          "meaning": "yang nyata"
+        }
+      ]
+    },
+    {
+      "ayah": 25,
+      "arabic": "إِنِّىٓ ءَامَنتُ بِرَبِّكُمْ فَٱسْمَعُونِ",
+      "words": [
+        {
+          "arabic": "إِنِّىٓ",
+          "transliteration": "innii",
+          "meaning": "sesungguhnya aku"
+        },
+        {
+          "arabic": "ءَامَنتُ",
+          "transliteration": "aamantu",
+          "meaning": "aku beriman"
+        },
+        {
+          "arabic": "بِرَبِّكُمْ",
+          "transliteration": "bi rabbikum",
+          "meaning": "kepada Tuhan kalian"
+        },
+        {
+          "arabic": "فَٱسْمَعُونِ",
+          "transliteration": "fasma'uuni",
+          "meaning": "maka dengarkanlah aku"
+        }
+      ]
+    },
+    {
+      "ayah": 26,
+      "arabic": "قِيلَ ٱدْخُلِ ٱلْجَنَّةَ ۖ قَالَ يَٰلَيْتَ قَوْمِى يَعْلَمُونَ",
+      "words": [
+        {
+          "arabic": "قِيلَ",
+          "transliteration": "qiila",
+          "meaning": "dikatakan (kepadanya)"
+        },
+        {
+          "arabic": "ٱدْخُلِ",
+          "transliteration": "udkhuli",
+          "meaning": "masuklah"
+        },
+        {
+          "arabic": "ٱلْجَنَّةَ",
+          "transliteration": "al-jannah",
+          "meaning": "ke dalam surga"
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "dia berkata"
+        },
+        {
+          "arabic": "يَٰلَيْتَ",
+          "transliteration": "yaa laita",
+          "meaning": "alangkah baiknya sekiranya"
+        },
+        {
+          "arabic": "قَوْمِى",
+          "transliteration": "qaumii",
+          "meaning": "kaumku"
+        },
+        {
+          "arabic": "يَعْلَمُونَ",
+          "transliteration": "ya'lamuun",
+          "meaning": "mengetahui"
+        }
+      ]
+    },
+    {
+      "ayah": 27,
+      "arabic": "بِمَا غَفَرَ لِى رَبِّى وَجَعَلَنِى مِنَ ٱلْمُكْرَمِينَ",
+      "words": [
+        {
+          "arabic": "بِمَا",
+          "transliteration": "bimaa",
+          "meaning": "atas apa yang"
+        },
+        {
+          "arabic": "غَفَرَ",
+          "transliteration": "ghafara",
+          "meaning": "telah mengampuni"
+        },
+        {
+          "arabic": "لِى",
+          "transliteration": "lii",
+          "meaning": "aku"
+        },
+        {
+          "arabic": "رَبِّى",
+          "transliteration": "rabbii",
+          "meaning": "Tuhanku"
+        },
+        {
+          "arabic": "وَجَعَلَنِى",
+          "transliteration": "wa ja'alanii",
+          "meaning": "dan menjadikanku"
+        },
+        {
+          "arabic": "مِنَ",
+          "transliteration": "mina",
+          "meaning": "termasuk"
+        },
+        {
+          "arabic": "ٱلْمُكْرَمِينَ",
+          "transliteration": "al-mukramiin",
+          "meaning": "orang-orang yang dimuliakan"
+        }
+      ]
+    },
+    {
+      "ayah": 28,
+      "arabic": "۞ وَمَآ أَنزَلْنَا عَلَىٰ قَوْمِهِۦ مِنۢ بَعْدِهِۦ مِن جُندٍۢ مِّنَ ٱلسَّمَآءِ وَمَا كُنَّا مُنزِلِينَ",
+      "words": [
+        {
+          "arabic": "وَمَآ",
+          "transliteration": "wa maa",
+          "meaning": "dan tidaklah"
+        },
+        {
+          "arabic": "أَنزَلْنَا",
+          "transliteration": "anzalnaa",
+          "meaning": "Kami menurunkan"
+        },
+        {
+          "arabic": "عَلَىٰ",
+          "transliteration": "'alaa",
+          "meaning": "kepada"
+        },
+        {
+          "arabic": "قَوْمِهِۦ",
+          "transliteration": "qaumihi",
+          "meaning": "kaumnya"
+        },
+        {
+          "arabic": "مِنۢ",
+          "transliteration": "min",
+          "meaning": "setelah"
+        },
+        {
+          "arabic": "بَعْدِهِۦ",
+          "transliteration": "ba'dihi",
+          "meaning": "sesudah dia"
+        },
+        {
+          "arabic": "مِن",
+          "transliteration": "min",
+          "meaning": "berupa"
+        },
+        {
+          "arabic": "جُندٍۢ",
+          "transliteration": "jundin",
+          "meaning": "bala tentara"
+        },
+        {
+          "arabic": "مِّنَ",
+          "transliteration": "mina",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "ٱلسَّمَآءِ",
+          "transliteration": "as-samaa'",
+          "meaning": "langit"
+        },
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan tidaklah"
+        },
+        {
+          "arabic": "كُنَّا",
+          "transliteration": "kunnaa",
+          "meaning": "Kami perlu"
+        },
+        {
+          "arabic": "مُنزِلِينَ",
+          "transliteration": "munziliin",
+          "meaning": "menurunkannya"
+        }
+      ]
+    },
+    {
+      "ayah": 29,
+      "arabic": "إِن كَانَتْ إِلَّا صَيْحَةًۭ وَٰحِدَةًۭ فَإِذَا هُمْ خَٰمِدُونَ",
+      "words": [
+        {
+          "arabic": "إِن",
+          "transliteration": "in",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "كَانَتْ",
+          "transliteration": "kaanat",
+          "meaning": "ia (siksa itu)"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "صَيْحَةًۭ",
+          "transliteration": "shaihatan",
+          "meaning": "satu teriakan"
+        },
+        {
+          "arabic": "وَٰحِدَةًۭ",
+          "transliteration": "waahidatan",
+          "meaning": "yang tunggal"
+        },
+        {
+          "arabic": "فَإِذَا",
+          "transliteration": "fa idzaa",
+          "meaning": "maka seketika itu"
+        },
+        {
+          "arabic": "هُمْ",
+          "transliteration": "hum",
+          "meaning": "mereka"
+        },
+        {
+          "arabic": "خَٰمِدُونَ",
+          "transliteration": "khaamiduun",
+          "meaning": "mati binasa"
+        }
+      ]
+    },
+    {
+      "ayah": 30,
+      "arabic": "يَٰحَسْرَةً عَلَى ٱلْعِبَادِ ۚ مَا يَأْتِيهِم مِّن رَّسُولٍ إِلَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ",
+      "words": [
+        {
+          "arabic": "يَٰحَسْرَةً",
+          "transliteration": "yaa hasratan",
+          "meaning": "aduhai, betapa sedihnya"
+        },
+        {
+          "arabic": "عَلَى",
+          "transliteration": "'alaa",
+          "meaning": "atas"
+        },
+        {
+          "arabic": "ٱلْعِبَادِ",
+          "transliteration": "al-'ibaad",
+          "meaning": "para hamba"
+        },
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "يَأْتِيهِم",
+          "transliteration": "ya'tiihim",
+          "meaning": "datang kepada mereka"
+        },
+        {
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "meaning": "seorang"
+        },
+        {
+          "arabic": "رَّسُولٍ",
+          "transliteration": "rasuulin",
+          "meaning": "rasul"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "كَانُوا۟",
+          "transliteration": "kaanuu",
+          "meaning": "mereka selalu"
+        },
+        {
+          "arabic": "بِهِۦ",
+          "transliteration": "bihi",
+          "meaning": "kepadanya"
+        },
+        {
+          "arabic": "يَسْتَهْزِءُونَ",
+          "transliteration": "yastahzi'uun",
+          "meaning": "memperolok-olok"
+        }
+      ]
+    },
+    {
+      "ayah": 31,
+      "arabic": "أَلَمْ يَرَوْا۟ كَمْ أَهْلَكْنَا قَبْلَهُم مِّنَ ٱلْقُرُونِ أَنَّهُمْ إِلَيْهِمْ لَا يَرْجِعُونَ",
+      "words": [
+        {
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "meaning": "tidakkah"
+        },
+        {
+          "arabic": "يَرَوْا۟",
+          "transliteration": "yarau",
+          "meaning": "mereka perhatikan"
+        },
+        {
+          "arabic": "كَمْ",
+          "transliteration": "kam",
+          "meaning": "berapa banyak"
+        },
+        {
+          "arabic": "أَهْلَكْنَا",
+          "transliteration": "ahlaknaa",
+          "meaning": "Kami binasakan"
+        },
+        {
+          "arabic": "قَبْلَهُم",
+          "transliteration": "qablahum",
+          "meaning": "sebelum mereka"
+        },
+        {
+          "arabic": "مِّنَ",
+          "transliteration": "mina",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "ٱلْقُرُونِ",
+          "transliteration": "al-quruun",
+          "meaning": "umat-umat terdahulu"
+        },
+        {
+          "arabic": "أَنَّهُمْ",
+          "transliteration": "annahum",
+          "meaning": "bahwa mereka"
+        },
+        {
+          "arabic": "إِلَيْهِمْ",
+          "transliteration": "ilaihim",
+          "meaning": "kepada mereka"
+        },
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "يَرْجِعُونَ",
+          "transliteration": "yarji'uun",
+          "meaning": "kembali lagi"
+        }
+      ]
+    },
+    {
+      "ayah": 32,
+      "arabic": "وَإِن كُلٌّۭ لَّمَّا جَمِيعٌۭ لَّدَيْنَا مُحْضَرُونَ",
+      "words": [
+        {
+          "arabic": "وَإِن",
+          "transliteration": "wa in",
+          "meaning": "dan tidaklah"
+        },
+        {
+          "arabic": "كُلٌّۭ",
+          "transliteration": "kullun",
+          "meaning": "setiap (mereka)"
+        },
+        {
+          "arabic": "لَّمَّا",
+          "transliteration": "lammaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "جَمِيعٌۭ",
+          "transliteration": "jamii'un",
+          "meaning": "semuanya"
+        },
+        {
+          "arabic": "لَّدَيْنَا",
+          "transliteration": "ladainaa",
+          "meaning": "di hadapan Kami"
+        },
+        {
+          "arabic": "مُحْضَرُونَ",
+          "transliteration": "muhdharuun",
+          "meaning": "dihadirkan"
+        }
+      ]
+    },
+    {
+      "ayah": 33,
+      "arabic": "وَءَايَةٌۭ لَّهُمُ ٱلْأَرْضُ ٱلْمَيْتَةُ أَحْيَيْنَٰهَا وَأَخْرَجْنَا مِنْهَا حَبًّۭا فَمِنْهُ يَأْكُلُونَ",
+      "words": [
+        {
+          "arabic": "وَءَايَةٌۭ",
+          "transliteration": "wa aayatun",
+          "meaning": "dan suatu tanda"
+        },
+        {
+          "arabic": "لَّهُمُ",
+          "transliteration": "lahumu",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "ٱلْأَرْضُ",
+          "transliteration": "al-ardhu",
+          "meaning": "bumi"
+        },
+        {
+          "arabic": "ٱلْمَيْتَةُ",
+          "transliteration": "al-maitah",
+          "meaning": "yang mati (tandus)"
+        },
+        {
+          "arabic": "أَحْيَيْنَٰهَا",
+          "transliteration": "ahyainaahaa",
+          "meaning": "Kami hidupkan ia"
+        },
+        {
+          "arabic": "وَأَخْرَجْنَا",
+          "transliteration": "wa akhrajnaa",
+          "meaning": "dan Kami keluarkan"
+        },
+        {
+          "arabic": "مِنْهَا",
+          "transliteration": "minhaa",
+          "meaning": "darinya"
+        },
+        {
+          "arabic": "حَبًّۭا",
+          "transliteration": "habban",
+          "meaning": "biji-bijian"
+        },
+        {
+          "arabic": "فَمِنْهُ",
+          "transliteration": "faminhu",
+          "meaning": "maka darinya"
+        },
+        {
+          "arabic": "يَأْكُلُونَ",
+          "transliteration": "ya'kuluun",
+          "meaning": "mereka makan"
+        }
+      ]
+    },
+    {
+      "ayah": 34,
+      "arabic": "وَجَعَلْنَا فِيهَا جَنَّٰتٍۢ مِّن نَّخِيلٍۢ وَأَعْنَٰبٍۢ وَفَجَّرْنَا فِيهَا مِنَ ٱلْعُيُونِ",
+      "words": [
+        {
+          "arabic": "وَجَعَلْنَا",
+          "transliteration": "wa ja'alnaa",
+          "meaning": "dan Kami jadikan"
+        },
+        {
+          "arabic": "فِيهَا",
+          "transliteration": "fiihaa",
+          "meaning": "padanya"
+        },
+        {
+          "arabic": "جَنَّٰتٍۢ",
+          "transliteration": "jannaatin",
+          "meaning": "kebun-kebun"
+        },
+        {
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "نَّخِيلٍۢ",
+          "transliteration": "nakhiilin",
+          "meaning": "kurma"
+        },
+        {
+          "arabic": "وَأَعْنَٰبٍۢ",
+          "transliteration": "wa a'naabin",
+          "meaning": "dan anggur"
+        },
+        {
+          "arabic": "وَفَجَّرْنَا",
+          "transliteration": "wa fajjarnaa",
+          "meaning": "dan Kami pancarkan"
+        },
+        {
+          "arabic": "فِيهَا",
+          "transliteration": "fiihaa",
+          "meaning": "padanya"
+        },
+        {
+          "arabic": "مِنَ",
+          "transliteration": "mina",
+          "meaning": "beberapa"
+        },
+        {
+          "arabic": "ٱلْعُيُونِ",
+          "transliteration": "al-'uyuun",
+          "meaning": "mata air"
+        }
+      ]
+    },
+    {
+      "ayah": 35,
+      "arabic": "لِيَأْكُلُوا۟ مِن ثَمَرِهِۦ وَمَا عَمِلَتْهُ أَيْدِيهِمْ ۖ أَفَلَا يَشْكُرُونَ",
+      "words": [
+        {
+          "arabic": "لِيَأْكُلُوا۟",
+          "transliteration": "liya'kuluu",
+          "meaning": "agar mereka makan"
+        },
+        {
+          "arabic": "مِن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "ثَمَرِهِۦ",
+          "transliteration": "tsamarihi",
+          "meaning": "buahnya"
+        },
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan apa yang"
+        },
+        {
+          "arabic": "عَمِلَتْهُ",
+          "transliteration": "'amilathu",
+          "meaning": "dikerjakan oleh"
+        },
+        {
+          "arabic": "أَيْدِيهِمْ",
+          "transliteration": "aidiihim",
+          "meaning": "tangan-tangan mereka"
+        },
+        {
+          "arabic": "أَفَلَا",
+          "transliteration": "a falaa",
+          "meaning": "maka mengapa tidak"
+        },
+        {
+          "arabic": "يَشْكُرُونَ",
+          "transliteration": "yasykuruun",
+          "meaning": "mereka bersyukur"
+        }
+      ]
+    },
+    {
+      "ayah": 36,
+      "arabic": "سُبْحَٰنَ ٱلَّذِى خَلَقَ ٱلْأَزْوَٰجَ كُلَّهَا مِمَّا تُنۢبِتُ ٱلْأَرْضُ وَمِنْ أَنفُسِهِمْ وَمِمَّا لَا يَعْلَمُونَ",
+      "words": [
+        {
+          "arabic": "سُبْحَٰنَ",
+          "transliteration": "subhaana",
+          "meaning": "Mahasuci"
+        },
+        {
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladzii",
+          "meaning": "(Tuhan) yang"
+        },
+        {
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "meaning": "menciptakan"
+        },
+        {
+          "arabic": "ٱلْأَزْوَٰجَ",
+          "transliteration": "al-azwaaj",
+          "meaning": "pasangan-pasangan"
+        },
+        {
+          "arabic": "كُلَّهَا",
+          "transliteration": "kullahaa",
+          "meaning": "semuanya"
+        },
+        {
+          "arabic": "مِمَّا",
+          "transliteration": "mimmaa",
+          "meaning": "dari apa yang"
+        },
+        {
+          "arabic": "تُنۢبِتُ",
+          "transliteration": "tunbitu",
+          "meaning": "ditumbuhkan"
+        },
+        {
+          "arabic": "ٱلْأَرْضُ",
+          "transliteration": "al-ardhu",
+          "meaning": "bumi"
+        },
+        {
+          "arabic": "وَمِنْ",
+          "transliteration": "wa min",
+          "meaning": "dan dari"
+        },
+        {
+          "arabic": "أَنفُسِهِمْ",
+          "transliteration": "anfusihim",
+          "meaning": "diri mereka sendiri"
+        },
+        {
+          "arabic": "وَمِمَّا",
+          "transliteration": "wa mimmaa",
+          "meaning": "dan dari apa yang"
+        },
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "يَعْلَمُونَ",
+          "transliteration": "ya'lamuun",
+          "meaning": "mereka ketahui"
+        }
+      ]
+    },
+    {
+      "ayah": 37,
+      "arabic": "وَءَايَةٌۭ لَّهُمُ ٱلَّيْلُ نَسْلَخُ مِنْهُ ٱلنَّهَارَ فَإِذَا هُم مُّظْلِمُونَ",
+      "words": [
+        {
+          "arabic": "وَءَايَةٌۭ",
+          "transliteration": "wa aayatun",
+          "meaning": "dan suatu tanda"
+        },
+        {
+          "arabic": "لَّهُمُ",
+          "transliteration": "lahumu",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "ٱلَّيْلُ",
+          "transliteration": "al-lail",
+          "meaning": "malam"
+        },
+        {
+          "arabic": "نَسْلَخُ",
+          "transliteration": "naslakhu",
+          "meaning": "Kami tanggalkan"
+        },
+        {
+          "arabic": "مِنْهُ",
+          "transliteration": "minhu",
+          "meaning": "darinya"
+        },
+        {
+          "arabic": "ٱلنَّهَارَ",
+          "transliteration": "an-nahaar",
+          "meaning": "siang"
+        },
+        {
+          "arabic": "فَإِذَا",
+          "transliteration": "fa idzaa",
+          "meaning": "maka seketika itu"
+        },
+        {
+          "arabic": "هُم",
+          "transliteration": "hum",
+          "meaning": "mereka"
+        },
+        {
+          "arabic": "مُّظْلِمُونَ",
+          "transliteration": "muzhlimuun",
+          "meaning": "berada dalam kegelapan"
+        }
+      ]
+    },
+    {
+      "ayah": 38,
+      "arabic": "وَٱلشَّمْسُ تَجْرِى لِمُسْتَقَرٍّۢ لَّهَا ۚ ذَٰلِكَ تَقْدِيرُ ٱلْعَزِيزِ ٱلْعَلِيمِ",
+      "words": [
+        {
+          "arabic": "وَٱلشَّمْسُ",
+          "transliteration": "wa asy-syams",
+          "meaning": "dan matahari"
+        },
+        {
+          "arabic": "تَجْرِى",
+          "transliteration": "tajrii",
+          "meaning": "beredar"
+        },
+        {
+          "arabic": "لِمُسْتَقَرٍّۢ",
+          "transliteration": "li mustaqarrin",
+          "meaning": "menuju tempat peredaran"
+        },
+        {
+          "arabic": "لَّهَا",
+          "transliteration": "lahaa",
+          "meaning": "baginya"
+        },
+        {
+          "arabic": "ذَٰلِكَ",
+          "transliteration": "dzaalika",
+          "meaning": "itulah"
+        },
+        {
+          "arabic": "تَقْدِيرُ",
+          "transliteration": "taqdiiru",
+          "meaning": "ketetapan"
+        },
+        {
+          "arabic": "ٱلْعَزِيزِ",
+          "transliteration": "al-'aziiz",
+          "meaning": "Yang Mahaperkasa"
+        },
+        {
+          "arabic": "ٱلْعَلِيمِ",
+          "transliteration": "al-'aliim",
+          "meaning": "Yang Maha Mengetahui"
+        }
+      ]
+    },
+    {
+      "ayah": 39,
+      "arabic": "وَٱلْقَمَرَ قَدَّرْنَٰهُ مَنَازِلَ حَتَّىٰ عَادَ كَٱلْعُرْجُونِ ٱلْقَدِيمِ",
+      "words": [
+        {
+          "arabic": "وَٱلْقَمَرَ",
+          "transliteration": "wa al-qamar",
+          "meaning": "dan bulan"
+        },
+        {
+          "arabic": "قَدَّرْنَٰهُ",
+          "transliteration": "qaddarnaahu",
+          "meaning": "Kami tetapkan baginya"
+        },
+        {
+          "arabic": "مَنَازِلَ",
+          "transliteration": "manaazila",
+          "meaning": "fase-fase peredaran"
+        },
+        {
+          "arabic": "حَتَّىٰ",
+          "transliteration": "hattaa",
+          "meaning": "hingga"
+        },
+        {
+          "arabic": "عَادَ",
+          "transliteration": "'aada",
+          "meaning": "ia kembali"
+        },
+        {
+          "arabic": "كَٱلْعُرْجُونِ",
+          "transliteration": "kal-'urjuun",
+          "meaning": "seperti tandan"
+        },
+        {
+          "arabic": "ٱلْقَدِيمِ",
+          "transliteration": "al-qadiim",
+          "meaning": "yang tua melengkung"
+        }
+      ]
+    },
+    {
+      "ayah": 40,
+      "arabic": "لَا ٱلشَّمْسُ يَنۢبَغِى لَهَآ أَن تُدْرِكَ ٱلْقَمَرَ وَلَا ٱلَّيْلُ سَابِقُ ٱلنَّهَارِ ۚ وَكُلٌّۭ فِى فَلَكٍۢ يَسْبَحُونَ",
+      "words": [
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "ٱلشَّمْسُ",
+          "transliteration": "asy-syams",
+          "meaning": "matahari"
+        },
+        {
+          "arabic": "يَنۢبَغِى",
+          "transliteration": "yanbaghii",
+          "meaning": "mungkin"
+        },
+        {
+          "arabic": "لَهَآ",
+          "transliteration": "lahaa",
+          "meaning": "baginya"
+        },
+        {
+          "arabic": "أَن",
+          "transliteration": "an",
+          "meaning": "untuk"
+        },
+        {
+          "arabic": "تُدْرِكَ",
+          "transliteration": "tudrika",
+          "meaning": "mengejar"
+        },
+        {
+          "arabic": "ٱلْقَمَرَ",
+          "transliteration": "al-qamar",
+          "meaning": "bulan"
+        },
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa laa",
+          "meaning": "dan tidak (pula)"
+        },
+        {
+          "arabic": "ٱلَّيْلُ",
+          "transliteration": "al-lail",
+          "meaning": "malam"
+        },
+        {
+          "arabic": "سَابِقُ",
+          "transliteration": "saabiqu",
+          "meaning": "mendahului"
+        },
+        {
+          "arabic": "ٱلنَّهَارِ",
+          "transliteration": "an-nahaar",
+          "meaning": "siang"
+        },
+        {
+          "arabic": "وَكُلٌّۭ",
+          "transliteration": "wa kullun",
+          "meaning": "dan masing-masing"
+        },
+        {
+          "arabic": "فِى",
+          "transliteration": "fii",
+          "meaning": "pada"
+        },
+        {
+          "arabic": "فَلَكٍۢ",
+          "transliteration": "falakin",
+          "meaning": "garis edarnya"
+        },
+        {
+          "arabic": "يَسْبَحُونَ",
+          "transliteration": "yasbahuun",
+          "meaning": "beredar"
+        }
+      ]
+    },
+    {
+      "ayah": 41,
+      "arabic": "وَءَايَةٌۭ لَّهُمْ أَنَّا حَمَلْنَا ذُرِّيَّتَهُمْ فِى ٱلْفُلْكِ ٱلْمَشْحُونِ",
+      "words": [
+        {
+          "arabic": "وَءَايَةٌۭ",
+          "transliteration": "wa aayatun",
+          "meaning": "dan suatu tanda"
+        },
+        {
+          "arabic": "لَّهُمْ",
+          "transliteration": "lahum",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "أَنَّا",
+          "transliteration": "annaa",
+          "meaning": "bahwa Kami"
+        },
+        {
+          "arabic": "حَمَلْنَا",
+          "transliteration": "hamalnaa",
+          "meaning": "mengangkut"
+        },
+        {
+          "arabic": "ذُرِّيَّتَهُمْ",
+          "transliteration": "dzurriyyatahum",
+          "meaning": "keturunan mereka"
+        },
+        {
+          "arabic": "فِى",
+          "transliteration": "fii",
+          "meaning": "dalam"
+        },
+        {
+          "arabic": "ٱلْفُلْكِ",
+          "transliteration": "al-fulk",
+          "meaning": "bahtera"
+        },
+        {
+          "arabic": "ٱلْمَشْحُونِ",
+          "transliteration": "al-masyhuun",
+          "meaning": "yang penuh muatan"
+        }
+      ]
+    },
+    {
+      "ayah": 42,
+      "arabic": "وَخَلَقْنَا لَهُم مِّن مِّثْلِهِۦ مَا يَرْكَبُونَ",
+      "words": [
+        {
+          "arabic": "وَخَلَقْنَا",
+          "transliteration": "wa khalaqnaa",
+          "meaning": "dan Kami ciptakan"
+        },
+        {
+          "arabic": "لَهُم",
+          "transliteration": "lahum",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "مِّثْلِهِۦ",
+          "transliteration": "mitslihi",
+          "meaning": "yang serupa dengannya"
+        },
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "apa yang"
+        },
+        {
+          "arabic": "يَرْكَبُونَ",
+          "transliteration": "yarkabuun",
+          "meaning": "mereka kendarai"
+        }
+      ]
+    },
+    {
+      "ayah": 43,
+      "arabic": "وَإِن نَّشَأْ نُغْرِقْهُمْ فَلَا صَرِيخَ لَهُمْ وَلَا هُمْ يُنقَذُونَ",
+      "words": [
+        {
+          "arabic": "وَإِن",
+          "transliteration": "wa in",
+          "meaning": "dan jika"
+        },
+        {
+          "arabic": "نَّشَأْ",
+          "transliteration": "nasya'",
+          "meaning": "Kami menghendaki"
+        },
+        {
+          "arabic": "نُغْرِقْهُمْ",
+          "transliteration": "nughriqhum",
+          "meaning": "Kami tenggelamkan mereka"
+        },
+        {
+          "arabic": "فَلَا",
+          "transliteration": "falaa",
+          "meaning": "maka tidak ada"
+        },
+        {
+          "arabic": "صَرِيخَ",
+          "transliteration": "shariikha",
+          "meaning": "penolong"
+        },
+        {
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa laa",
+          "meaning": "dan tidak"
+        },
+        {
+          "arabic": "هُمْ",
+          "transliteration": "hum",
+          "meaning": "mereka"
+        },
+        {
+          "arabic": "يُنقَذُونَ",
+          "transliteration": "yunqadzuun",
+          "meaning": "diselamatkan"
+        }
+      ]
+    },
+    {
+      "ayah": 44,
+      "arabic": "إِلَّا رَحْمَةًۭ مِّنَّا وَمَتَٰعًا إِلَىٰ حِينٍۢ",
+      "words": [
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "kecuali"
+        },
+        {
+          "arabic": "رَحْمَةًۭ",
+          "transliteration": "rahmatan",
+          "meaning": "karena rahmat"
+        },
+        {
+          "arabic": "مِّنَّا",
+          "transliteration": "minnaa",
+          "meaning": "dari Kami"
+        },
+        {
+          "arabic": "وَمَتَٰعًا",
+          "transliteration": "wa mataa'an",
+          "meaning": "dan kesenangan"
+        },
+        {
+          "arabic": "إِلَىٰ",
+          "transliteration": "ilaa",
+          "meaning": "sampai"
+        },
+        {
+          "arabic": "حِينٍۢ",
+          "transliteration": "hiin",
+          "meaning": "waktu tertentu"
+        }
+      ]
+    },
+    {
+      "ayah": 45,
+      "arabic": "وَإِذَا قِيلَ لَهُمُ ٱتَّقُوا۟ مَا بَيْنَ أَيْدِيكُمْ وَمَا خَلْفَكُمْ لَعَلَّكُمْ تُرْحَمُونَ",
+      "words": [
+        {
+          "arabic": "وَإِذَا",
+          "transliteration": "wa idzaa",
+          "meaning": "dan apabila"
+        },
+        {
+          "arabic": "قِيلَ",
+          "transliteration": "qiila",
+          "meaning": "dikatakan"
+        },
+        {
+          "arabic": "لَهُمُ",
+          "transliteration": "lahumu",
+          "meaning": "kepada mereka"
+        },
+        {
+          "arabic": "ٱتَّقُوا۟",
+          "transliteration": "ittaquu",
+          "meaning": "waspadalah"
+        },
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "akan apa yang"
+        },
+        {
+          "arabic": "بَيْنَ",
+          "transliteration": "baina",
+          "meaning": "di hadapan"
+        },
+        {
+          "arabic": "أَيْدِيكُمْ",
+          "transliteration": "aidiikum",
+          "meaning": "kalian (masa kini)"
+        },
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan apa yang"
+        },
+        {
+          "arabic": "خَلْفَكُمْ",
+          "transliteration": "khalfakum",
+          "meaning": "di belakang kalian"
+        },
+        {
+          "arabic": "لَعَلَّكُمْ",
+          "transliteration": "la'allakum",
+          "meaning": "agar kalian"
+        },
+        {
+          "arabic": "تُرْحَمُونَ",
+          "transliteration": "turhamuun",
+          "meaning": "dirahmati"
+        }
+      ]
+    },
+    {
+      "ayah": 46,
+      "arabic": "وَمَا تَأْتِيهِم مِّنْ ءَايَةٍۢ مِّنْ ءَايَٰتِ رَبِّهِمْ إِلَّا كَانُوا۟ عَنْهَا مُعْرِضِينَ",
+      "words": [
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan tidaklah"
+        },
+        {
+          "arabic": "تَأْتِيهِم",
+          "transliteration": "ta'tiihim",
+          "meaning": "datang kepada mereka"
+        },
+        {
+          "arabic": "مِّنْ",
+          "transliteration": "min",
+          "meaning": "suatu"
+        },
+        {
+          "arabic": "ءَايَةٍۢ",
+          "transliteration": "aayatin",
+          "meaning": "tanda (ayat)"
+        },
+        {
+          "arabic": "مِّنْ",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "ءَايَٰتِ",
+          "transliteration": "aayaati",
+          "meaning": "tanda-tanda"
+        },
+        {
+          "arabic": "رَبِّهِمْ",
+          "transliteration": "rabbihim",
+          "meaning": "Tuhan mereka"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "كَانُوا۟",
+          "transliteration": "kaanuu",
+          "meaning": "mereka selalu"
+        },
+        {
+          "arabic": "عَنْهَا",
+          "transliteration": "'anhaa",
+          "meaning": "darinya"
+        },
+        {
+          "arabic": "مُعْرِضِينَ",
+          "transliteration": "mu'ridhiin",
+          "meaning": "berpaling"
+        }
+      ]
+    },
+    {
+      "ayah": 47,
+      "arabic": "وَإِذَا قِيلَ لَهُمْ أَنفِقُوا۟ مِمَّا رَزَقَكُمُ ٱللَّهُ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَنُطْعِمُ مَن لَّوْ يَشَآءُ ٱللَّهُ أَطْعَمَهُۥٓ إِنْ أَنتُمْ إِلَّا فِى ضَلَٰلٍۢ مُّبِينٍۢ",
+      "words": [
+        {
+          "arabic": "وَإِذَا",
+          "transliteration": "wa idzaa",
+          "meaning": "dan apabila"
+        },
+        {
+          "arabic": "قِيلَ",
+          "transliteration": "qiila",
+          "meaning": "dikatakan"
+        },
+        {
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "meaning": "kepada mereka"
+        },
+        {
+          "arabic": "أَنفِقُوا۟",
+          "transliteration": "anfiquu",
+          "meaning": "infakkanlah"
+        },
+        {
+          "arabic": "مِمَّا",
+          "transliteration": "mimmaa",
+          "meaning": "sebagian dari apa yang"
+        },
+        {
+          "arabic": "رَزَقَكُمُ",
+          "transliteration": "razaqakumu",
+          "meaning": "direzekikan kepada kalian oleh"
+        },
+        {
+          "arabic": "ٱللَّهُ",
+          "transliteration": "allaahu",
+          "meaning": "Allah"
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "berkatalah"
+        },
+        {
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladziina",
+          "meaning": "orang-orang yang"
+        },
+        {
+          "arabic": "كَفَرُوا۟",
+          "transliteration": "kafaruu",
+          "meaning": "kafir"
+        },
+        {
+          "arabic": "لِلَّذِينَ",
+          "transliteration": "lilladziina",
+          "meaning": "kepada orang-orang yang"
+        },
+        {
+          "arabic": "ءَامَنُوٓا۟",
+          "transliteration": "aamanuu",
+          "meaning": "beriman"
+        },
+        {
+          "arabic": "أَنُطْعِمُ",
+          "transliteration": "a nuth'imu",
+          "meaning": "apakah kami akan memberi makan"
+        },
+        {
+          "arabic": "مَن",
+          "transliteration": "man",
+          "meaning": "orang yang"
+        },
+        {
+          "arabic": "لَّوْ",
+          "transliteration": "lau",
+          "meaning": "jika"
+        },
+        {
+          "arabic": "يَشَآءُ",
+          "transliteration": "yasyaa'u",
+          "meaning": "menghendaki"
+        },
+        {
+          "arabic": "ٱللَّهُ",
+          "transliteration": "allaahu",
+          "meaning": "Allah"
+        },
+        {
+          "arabic": "أَطْعَمَهُۥٓ",
+          "transliteration": "ath'amahu",
+          "meaning": "tentu Dia memberinya makan"
+        },
+        {
+          "arabic": "إِنْ",
+          "transliteration": "in",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "أَنتُمْ",
+          "transliteration": "antum",
+          "meaning": "kalian"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "فِى",
+          "transliteration": "fii",
+          "meaning": "dalam"
+        },
+        {
+          "arabic": "ضَلَٰلٍۢ",
+          "transliteration": "dhalaalin",
+          "meaning": "kesesatan"
+        },
+        {
+          "arabic": "مُّبِينٍۢ",
+          "transliteration": "mubiin",
+          "meaning": "yang nyata"
+        }
+      ]
+    },
+    {
+      "ayah": 48,
+      "arabic": "وَيَقُولُونَ مَتَىٰ هَٰذَا ٱلْوَعْدُ إِن كُنتُمْ صَٰدِقِينَ",
+      "words": [
+        {
+          "arabic": "وَيَقُولُونَ",
+          "transliteration": "wa yaquuluun",
+          "meaning": "dan mereka berkata"
+        },
+        {
+          "arabic": "مَتَىٰ",
+          "transliteration": "mataa",
+          "meaning": "kapankah"
+        },
+        {
+          "arabic": "هَٰذَا",
+          "transliteration": "haadzaa",
+          "meaning": "ini"
+        },
+        {
+          "arabic": "ٱلْوَعْدُ",
+          "transliteration": "al-wa'du",
+          "meaning": "janji (azab)"
+        },
+        {
+          "arabic": "إِن",
+          "transliteration": "in",
+          "meaning": "jika"
+        },
+        {
+          "arabic": "كُنتُمْ",
+          "transliteration": "kuntum",
+          "meaning": "kalian"
+        },
+        {
+          "arabic": "صَٰدِقِينَ",
+          "transliteration": "shaadiqiin",
+          "meaning": "orang-orang yang benar"
+        }
+      ]
+    },
+    {
+      "ayah": 49,
+      "arabic": "مَا يَنظُرُونَ إِلَّا صَيْحَةًۭ وَٰحِدَةًۭ تَأْخُذُهُمْ وَهُمْ يَخِصِّمُونَ",
+      "words": [
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "يَنظُرُونَ",
+          "transliteration": "yanzhuruun",
+          "meaning": "mereka menunggu"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "صَيْحَةًۭ",
+          "transliteration": "shaihatan",
+          "meaning": "satu teriakan"
+        },
+        {
+          "arabic": "وَٰحِدَةًۭ",
+          "transliteration": "waahidatan",
+          "meaning": "yang tunggal"
+        },
+        {
+          "arabic": "تَأْخُذُهُمْ",
+          "transliteration": "ta'khudzuhum",
+          "meaning": "yang menyambar mereka"
+        },
+        {
+          "arabic": "وَهُمْ",
+          "transliteration": "wa hum",
+          "meaning": "sedang mereka"
+        },
+        {
+          "arabic": "يَخِصِّمُونَ",
+          "transliteration": "yakhishshimuun",
+          "meaning": "sedang bertengkar"
+        }
+      ]
+    },
+    {
+      "ayah": 50,
+      "arabic": "فَلَا يَسْتَطِيعُونَ تَوْصِيَةًۭ وَلَآ إِلَىٰٓ أَهْلِهِمْ يَرْجِعُونَ",
+      "words": [
+        {
+          "arabic": "فَلَا",
+          "transliteration": "falaa",
+          "meaning": "maka tidak"
+        },
+        {
+          "arabic": "يَسْتَطِيعُونَ",
+          "transliteration": "yastathii'uun",
+          "meaning": "mereka mampu"
+        },
+        {
+          "arabic": "تَوْصِيَةًۭ",
+          "transliteration": "taushiyatan",
+          "meaning": "membuat wasiat"
+        },
+        {
+          "arabic": "وَلَآ",
+          "transliteration": "wa laa",
+          "meaning": "dan tidak (pula)"
+        },
+        {
+          "arabic": "إِلَىٰٓ",
+          "transliteration": "ilaa",
+          "meaning": "kepada"
+        },
+        {
+          "arabic": "أَهْلِهِمْ",
+          "transliteration": "ahlihim",
+          "meaning": "keluarga mereka"
+        },
+        {
+          "arabic": "يَرْجِعُونَ",
+          "transliteration": "yarji'uun",
+          "meaning": "kembali"
+        }
+      ]
+    },
+    {
+      "ayah": 51,
+      "arabic": "وَنُفِخَ فِى ٱلصُّورِ فَإِذَا هُم مِّنَ ٱلْأَجْدَاثِ إِلَىٰ رَبِّهِمْ يَنسِلُونَ",
+      "words": [
+        {
+          "arabic": "وَنُفِخَ",
+          "transliteration": "wa nufikha",
+          "meaning": "dan ditiuplah"
+        },
+        {
+          "arabic": "فِى",
+          "transliteration": "fii",
+          "meaning": "pada"
+        },
+        {
+          "arabic": "ٱلصُّورِ",
+          "transliteration": "ash-shuur",
+          "meaning": "sangkakala"
+        },
+        {
+          "arabic": "فَإِذَا",
+          "transliteration": "fa idzaa",
+          "meaning": "maka seketika itu"
+        },
+        {
+          "arabic": "هُم",
+          "transliteration": "hum",
+          "meaning": "mereka"
+        },
+        {
+          "arabic": "مِّنَ",
+          "transliteration": "mina",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "ٱلْأَجْدَاثِ",
+          "transliteration": "al-ajdaats",
+          "meaning": "kubur-kubur"
+        },
+        {
+          "arabic": "إِلَىٰ",
+          "transliteration": "ilaa",
+          "meaning": "menuju"
+        },
+        {
+          "arabic": "رَبِّهِمْ",
+          "transliteration": "rabbihim",
+          "meaning": "Tuhan mereka"
+        },
+        {
+          "arabic": "يَنسِلُونَ",
+          "transliteration": "yansiluun",
+          "meaning": "bergegas keluar"
+        }
+      ]
+    },
+    {
+      "ayah": 52,
+      "arabic": "قَالُوا۟ يَٰوَيْلَنَا مَنۢ بَعَثَنَا مِن مَّرْقَدِنَا ۜ ۗ هَٰذَا مَا وَعَدَ ٱلرَّحْمَٰنُ وَصَدَقَ ٱلْمُرْسَلُونَ",
+      "words": [
+        {
+          "arabic": "قَالُوا۟",
+          "transliteration": "qaaluu",
+          "meaning": "mereka berkata"
+        },
+        {
+          "arabic": "يَٰوَيْلَنَا",
+          "transliteration": "yaa wailanaa",
+          "meaning": "aduhai, celakalah kami"
+        },
+        {
+          "arabic": "مَنۢ",
+          "transliteration": "man",
+          "meaning": "siapakah yang"
+        },
+        {
+          "arabic": "بَعَثَنَا",
+          "transliteration": "ba'atsanaa",
+          "meaning": "membangkitkan kami"
+        },
+        {
+          "arabic": "مِن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "مَّرْقَدِنَا",
+          "transliteration": "marqadinaa",
+          "meaning": "tempat tidur kami"
+        },
+        {
+          "arabic": "هَٰذَا",
+          "transliteration": "haadzaa",
+          "meaning": "inilah"
+        },
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "apa yang"
+        },
+        {
+          "arabic": "وَعَدَ",
+          "transliteration": "wa'ada",
+          "meaning": "dijanjikan"
+        },
+        {
+          "arabic": "ٱلرَّحْمَٰنُ",
+          "transliteration": "ar-rahmaan",
+          "meaning": "Yang Maha Pengasih"
+        },
+        {
+          "arabic": "وَصَدَقَ",
+          "transliteration": "wa shadaqa",
+          "meaning": "dan benarlah"
+        },
+        {
+          "arabic": "ٱلْمُرْسَلُونَ",
+          "transliteration": "al-mursaluun",
+          "meaning": "para utusan"
+        }
+      ]
+    },
+    {
+      "ayah": 53,
+      "arabic": "إِن كَانَتْ إِلَّا صَيْحَةًۭ وَٰحِدَةًۭ فَإِذَا هُمْ جَمِيعٌۭ لَّدَيْنَا مُحْضَرُونَ",
+      "words": [
+        {
+          "arabic": "إِن",
+          "transliteration": "in",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "كَانَتْ",
+          "transliteration": "kaanat",
+          "meaning": "ia (kejadian itu)"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "صَيْحَةًۭ",
+          "transliteration": "shaihatan",
+          "meaning": "satu teriakan"
+        },
+        {
+          "arabic": "وَٰحِدَةًۭ",
+          "transliteration": "waahidatan",
+          "meaning": "yang tunggal"
+        },
+        {
+          "arabic": "فَإِذَا",
+          "transliteration": "fa idzaa",
+          "meaning": "maka seketika itu"
+        },
+        {
+          "arabic": "هُمْ",
+          "transliteration": "hum",
+          "meaning": "mereka"
+        },
+        {
+          "arabic": "جَمِيعٌۭ",
+          "transliteration": "jamii'un",
+          "meaning": "semuanya"
+        },
+        {
+          "arabic": "لَّدَيْنَا",
+          "transliteration": "ladainaa",
+          "meaning": "di hadapan Kami"
+        },
+        {
+          "arabic": "مُحْضَرُونَ",
+          "transliteration": "muhdharuun",
+          "meaning": "dihadirkan"
+        }
+      ]
+    },
+    {
+      "ayah": 54,
+      "arabic": "فَٱلْيَوْمَ لَا تُظْلَمُ نَفْسٌۭ شَيْـًۭٔا وَلَا تُجْزَوْنَ إِلَّا مَا كُنتُمْ تَعْمَلُونَ",
+      "words": [
+        {
+          "arabic": "فَٱلْيَوْمَ",
+          "transliteration": "fal-yaum",
+          "meaning": "maka pada hari ini"
+        },
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "تُظْلَمُ",
+          "transliteration": "tuzhlamu",
+          "meaning": "dizalimi"
+        },
+        {
+          "arabic": "نَفْسٌۭ",
+          "transliteration": "nafsun",
+          "meaning": "seseorang"
+        },
+        {
+          "arabic": "شَيْـًۭٔا",
+          "transliteration": "syai'an",
+          "meaning": "sedikit pun"
+        },
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa laa",
+          "meaning": "dan tidak"
+        },
+        {
+          "arabic": "تُجْزَوْنَ",
+          "transliteration": "tujzauna",
+          "meaning": "kalian diberi balasan"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "apa yang"
+        },
+        {
+          "arabic": "كُنتُمْ",
+          "transliteration": "kuntum",
+          "meaning": "kalian dahulu"
+        },
+        {
+          "arabic": "تَعْمَلُونَ",
+          "transliteration": "ta'maluun",
+          "meaning": "kerjakan"
+        }
+      ]
+    },
+    {
+      "ayah": 55,
+      "arabic": "إِنَّ أَصْحَٰبَ ٱلْجَنَّةِ ٱلْيَوْمَ فِى شُغُلٍۢ فَٰكِهُونَ",
+      "words": [
+        {
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "meaning": "sesungguhnya"
+        },
+        {
+          "arabic": "أَصْحَٰبَ",
+          "transliteration": "ashhaaba",
+          "meaning": "penghuni"
+        },
+        {
+          "arabic": "ٱلْجَنَّةِ",
+          "transliteration": "al-jannah",
+          "meaning": "surga"
+        },
+        {
+          "arabic": "ٱلْيَوْمَ",
+          "transliteration": "al-yaum",
+          "meaning": "pada hari itu"
+        },
+        {
+          "arabic": "فِى",
+          "transliteration": "fii",
+          "meaning": "dalam"
+        },
+        {
+          "arabic": "شُغُلٍۢ",
+          "transliteration": "syughulin",
+          "meaning": "kesibukan yang menyenangkan"
+        },
+        {
+          "arabic": "فَٰكِهُونَ",
+          "transliteration": "faakihuun",
+          "meaning": "bergembira"
+        }
+      ]
+    },
+    {
+      "ayah": 56,
+      "arabic": "هُمْ وَأَزْوَٰجُهُمْ فِى ظِلَٰلٍ عَلَى ٱلْأَرَآئِكِ مُتَّكِـُٔونَ",
+      "words": [
+        {
+          "arabic": "هُمْ",
+          "transliteration": "hum",
+          "meaning": "mereka"
+        },
+        {
+          "arabic": "وَأَزْوَٰجُهُمْ",
+          "transliteration": "wa azwaajuhum",
+          "meaning": "dan pasangan-pasangan mereka"
+        },
+        {
+          "arabic": "فِى",
+          "transliteration": "fii",
+          "meaning": "berada dalam"
+        },
+        {
+          "arabic": "ظِلَٰلٍ",
+          "transliteration": "zhilaalin",
+          "meaning": "naungan yang teduh"
+        },
+        {
+          "arabic": "عَلَى",
+          "transliteration": "'alaa",
+          "meaning": "di atas"
+        },
+        {
+          "arabic": "ٱلْأَرَآئِكِ",
+          "transliteration": "al-araa'ik",
+          "meaning": "dipan-dipan"
+        },
+        {
+          "arabic": "مُتَّكِـُٔونَ",
+          "transliteration": "muttaki'uun",
+          "meaning": "bersandar"
+        }
+      ]
+    },
+    {
+      "ayah": 57,
+      "arabic": "لَهُمْ فِيهَا فَٰكِهَةٌۭ وَلَهُم مَّا يَدَّعُونَ",
+      "words": [
+        {
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "فِيهَا",
+          "transliteration": "fiihaa",
+          "meaning": "di dalamnya"
+        },
+        {
+          "arabic": "فَٰكِهَةٌۭ",
+          "transliteration": "faakihatun",
+          "meaning": "buah-buahan"
+        },
+        {
+          "arabic": "وَلَهُم",
+          "transliteration": "wa lahum",
+          "meaning": "dan bagi mereka"
+        },
+        {
+          "arabic": "مَّا",
+          "transliteration": "maa",
+          "meaning": "apa saja yang"
+        },
+        {
+          "arabic": "يَدَّعُونَ",
+          "transliteration": "yadda'uun",
+          "meaning": "mereka minta"
+        }
+      ]
+    },
+    {
+      "ayah": 58,
+      "arabic": "سَلَٰمٌۭ قَوْلًۭا مِّن رَّبٍّۢ رَّحِيمٍۢ",
+      "words": [
+        {
+          "arabic": "سَلَٰمٌۭ",
+          "transliteration": "salaamun",
+          "meaning": "(salam) sejahtera"
+        },
+        {
+          "arabic": "قَوْلًۭا",
+          "transliteration": "qaulan",
+          "meaning": "sebagai ucapan"
+        },
+        {
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "رَّبٍّۢ",
+          "transliteration": "rabbin",
+          "meaning": "Tuhan"
+        },
+        {
+          "arabic": "رَّحِيمٍۢ",
+          "transliteration": "rahiim",
+          "meaning": "Yang Maha Penyayang"
+        }
+      ]
+    },
+    {
+      "ayah": 59,
+      "arabic": "وَٱمْتَٰزُوا۟ ٱلْيَوْمَ أَيُّهَا ٱلْمُجْرِمُونَ",
+      "words": [
+        {
+          "arabic": "وَٱمْتَٰزُوا۟",
+          "transliteration": "wamtaazuu",
+          "meaning": "dan berpisahlah"
+        },
+        {
+          "arabic": "ٱلْيَوْمَ",
+          "transliteration": "al-yaum",
+          "meaning": "pada hari ini"
+        },
+        {
+          "arabic": "أَيُّهَا",
+          "transliteration": "ayyuhaa",
+          "meaning": "wahai"
+        },
+        {
+          "arabic": "ٱلْمُجْرِمُونَ",
+          "transliteration": "al-mujrimuun",
+          "meaning": "para pendurhaka"
+        }
+      ]
+    },
+    {
+      "ayah": 60,
+      "arabic": "۞ أَلَمْ أَعْهَدْ إِلَيْكُمْ يَٰبَنِىٓ ءَادَمَ أَن لَّا تَعْبُدُوا۟ ٱلشَّيْطَٰنَ ۖ إِنَّهُۥ لَكُمْ عَدُوٌّۭ مُّبِينٌۭ",
+      "words": [
+        {
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "meaning": "bukankah"
+        },
+        {
+          "arabic": "أَعْهَدْ",
+          "transliteration": "a'had",
+          "meaning": "telah Aku perintahkan"
+        },
+        {
+          "arabic": "إِلَيْكُمْ",
+          "transliteration": "ilaikum",
+          "meaning": "kepada kalian"
+        },
+        {
+          "arabic": "يَٰبَنِىٓ",
+          "transliteration": "yaa banii",
+          "meaning": "wahai anak-anak"
+        },
+        {
+          "arabic": "ءَادَمَ",
+          "transliteration": "aadama",
+          "meaning": "Adam"
+        },
+        {
+          "arabic": "أَن",
+          "transliteration": "an",
+          "meaning": "agar"
+        },
+        {
+          "arabic": "لَّا",
+          "transliteration": "laa",
+          "meaning": "jangan"
+        },
+        {
+          "arabic": "تَعْبُدُوا۟",
+          "transliteration": "ta'buduu",
+          "meaning": "kalian menyembah"
+        },
+        {
+          "arabic": "ٱلشَّيْطَٰنَ",
+          "transliteration": "asy-syaithaan",
+          "meaning": "setan"
+        },
+        {
+          "arabic": "إِنَّهُۥ",
+          "transliteration": "innahu",
+          "meaning": "sesungguhnya ia"
+        },
+        {
+          "arabic": "لَكُمْ",
+          "transliteration": "lakum",
+          "meaning": "bagi kalian"
+        },
+        {
+          "arabic": "عَدُوٌّۭ",
+          "transliteration": "'aduwwun",
+          "meaning": "musuh"
+        },
+        {
+          "arabic": "مُّبِينٌۭ",
+          "transliteration": "mubiin",
+          "meaning": "yang nyata"
+        }
+      ]
+    },
+    {
+      "ayah": 61,
+      "arabic": "وَأَنِ ٱعْبُدُونِى ۚ هَٰذَا صِرَٰطٌۭ مُّسْتَقِيمٌۭ",
+      "words": [
+        {
+          "arabic": "وَأَنِ",
+          "transliteration": "wa ani",
+          "meaning": "dan hendaklah"
+        },
+        {
+          "arabic": "ٱعْبُدُونِى",
+          "transliteration": "u'buduunii",
+          "meaning": "kalian menyembah-Ku"
+        },
+        {
+          "arabic": "هَٰذَا",
+          "transliteration": "haadzaa",
+          "meaning": "inilah"
+        },
+        {
+          "arabic": "صِرَٰطٌۭ",
+          "transliteration": "shiraathun",
+          "meaning": "jalan"
+        },
+        {
+          "arabic": "مُّسْتَقِيمٌۭ",
+          "transliteration": "mustaqiim",
+          "meaning": "yang lurus"
+        }
+      ]
+    },
+    {
+      "ayah": 62,
+      "arabic": "وَلَقَدْ أَضَلَّ مِنكُمْ جِبِلًّۭا كَثِيرًا ۖ أَفَلَمْ تَكُونُوا۟ تَعْقِلُونَ",
+      "words": [
+        {
+          "arabic": "وَلَقَدْ",
+          "transliteration": "wa laqad",
+          "meaning": "dan sungguh"
+        },
+        {
+          "arabic": "أَضَلَّ",
+          "transliteration": "adhalla",
+          "meaning": "ia (setan) telah menyesatkan"
+        },
+        {
+          "arabic": "مِنكُمْ",
+          "transliteration": "minkum",
+          "meaning": "dari kalian"
+        },
+        {
+          "arabic": "جِبِلًّۭا",
+          "transliteration": "jibillan",
+          "meaning": "segolongan"
+        },
+        {
+          "arabic": "كَثِيرًا",
+          "transliteration": "katsiiran",
+          "meaning": "yang banyak"
+        },
+        {
+          "arabic": "أَفَلَمْ",
+          "transliteration": "a falam",
+          "meaning": "maka apakah tidak"
+        },
+        {
+          "arabic": "تَكُونُوا۟",
+          "transliteration": "takuunuu",
+          "meaning": "kalian"
+        },
+        {
+          "arabic": "تَعْقِلُونَ",
+          "transliteration": "ta'qiluun",
+          "meaning": "memahami"
+        }
+      ]
+    },
+    {
+      "ayah": 63,
+      "arabic": "هَٰذِهِۦ جَهَنَّمُ ٱلَّتِى كُنتُمْ تُوعَدُونَ",
+      "words": [
+        {
+          "arabic": "هَٰذِهِۦ",
+          "transliteration": "haadzihi",
+          "meaning": "inilah"
+        },
+        {
+          "arabic": "جَهَنَّمُ",
+          "transliteration": "jahannam",
+          "meaning": "(neraka) Jahanam"
+        },
+        {
+          "arabic": "ٱلَّتِى",
+          "transliteration": "allatii",
+          "meaning": "yang"
+        },
+        {
+          "arabic": "كُنتُمْ",
+          "transliteration": "kuntum",
+          "meaning": "dahulu kalian"
+        },
+        {
+          "arabic": "تُوعَدُونَ",
+          "transliteration": "tuu'aduun",
+          "meaning": "diancam"
+        }
+      ]
+    },
+    {
+      "ayah": 64,
+      "arabic": "ٱصْلَوْهَا ٱلْيَوْمَ بِمَا كُنتُمْ تَكْفُرُونَ",
+      "words": [
+        {
+          "arabic": "ٱصْلَوْهَا",
+          "transliteration": "ishlauhaa",
+          "meaning": "masuklah ke dalamnya"
+        },
+        {
+          "arabic": "ٱلْيَوْمَ",
+          "transliteration": "al-yaum",
+          "meaning": "pada hari ini"
+        },
+        {
+          "arabic": "بِمَا",
+          "transliteration": "bimaa",
+          "meaning": "karena apa yang"
+        },
+        {
+          "arabic": "كُنتُمْ",
+          "transliteration": "kuntum",
+          "meaning": "dahulu kalian"
+        },
+        {
+          "arabic": "تَكْفُرُونَ",
+          "transliteration": "takfuruun",
+          "meaning": "ingkari"
+        }
+      ]
+    },
+    {
+      "ayah": 65,
+      "arabic": "ٱلْيَوْمَ نَخْتِمُ عَلَىٰٓ أَفْوَٰهِهِمْ وَتُكَلِّمُنَآ أَيْدِيهِمْ وَتَشْهَدُ أَرْجُلُهُم بِمَا كَانُوا۟ يَكْسِبُونَ",
+      "words": [
+        {
+          "arabic": "ٱلْيَوْمَ",
+          "transliteration": "al-yaum",
+          "meaning": "pada hari ini"
+        },
+        {
+          "arabic": "نَخْتِمُ",
+          "transliteration": "nakhtimu",
+          "meaning": "Kami kunci"
+        },
+        {
+          "arabic": "عَلَىٰٓ",
+          "transliteration": "'alaa",
+          "meaning": "atas"
+        },
+        {
+          "arabic": "أَفْوَٰهِهِمْ",
+          "transliteration": "afwaahihim",
+          "meaning": "mulut-mulut mereka"
+        },
+        {
+          "arabic": "وَتُكَلِّمُنَآ",
+          "transliteration": "wa tukallimunaa",
+          "meaning": "dan berkatalah kepada Kami"
+        },
+        {
+          "arabic": "أَيْدِيهِمْ",
+          "transliteration": "aidiihim",
+          "meaning": "tangan-tangan mereka"
+        },
+        {
+          "arabic": "وَتَشْهَدُ",
+          "transliteration": "wa tasyhadu",
+          "meaning": "dan bersaksilah"
+        },
+        {
+          "arabic": "أَرْجُلُهُم",
+          "transliteration": "arjuluhum",
+          "meaning": "kaki-kaki mereka"
+        },
+        {
+          "arabic": "بِمَا",
+          "transliteration": "bimaa",
+          "meaning": "atas apa yang"
+        },
+        {
+          "arabic": "كَانُوا۟",
+          "transliteration": "kaanuu",
+          "meaning": "dahulu mereka"
+        },
+        {
+          "arabic": "يَكْسِبُونَ",
+          "transliteration": "yaksibuun",
+          "meaning": "usahakan"
+        }
+      ]
+    },
+    {
+      "ayah": 66,
+      "arabic": "وَلَوْ نَشَآءُ لَطَمَسْنَا عَلَىٰٓ أَعْيُنِهِمْ فَٱسْتَبَقُوا۟ ٱلصِّرَٰطَ فَأَنَّىٰ يُبْصِرُونَ",
+      "words": [
+        {
+          "arabic": "وَلَوْ",
+          "transliteration": "wa lau",
+          "meaning": "dan jika"
+        },
+        {
+          "arabic": "نَشَآءُ",
+          "transliteration": "nasyaa'u",
+          "meaning": "Kami menghendaki"
+        },
+        {
+          "arabic": "لَطَمَسْنَا",
+          "transliteration": "la thamasnaa",
+          "meaning": "pasti Kami hapuskan"
+        },
+        {
+          "arabic": "عَلَىٰٓ",
+          "transliteration": "'alaa",
+          "meaning": "atas"
+        },
+        {
+          "arabic": "أَعْيُنِهِمْ",
+          "transliteration": "a'yunihim",
+          "meaning": "mata-mata mereka"
+        },
+        {
+          "arabic": "فَٱسْتَبَقُوا۟",
+          "transliteration": "fastabaquu",
+          "meaning": "lalu mereka berlomba mencari"
+        },
+        {
+          "arabic": "ٱلصِّرَٰطَ",
+          "transliteration": "ash-shiraath",
+          "meaning": "jalan"
+        },
+        {
+          "arabic": "فَأَنَّىٰ",
+          "transliteration": "fa annaa",
+          "meaning": "maka bagaimana mungkin"
+        },
+        {
+          "arabic": "يُبْصِرُونَ",
+          "transliteration": "yubshiruun",
+          "meaning": "mereka melihat"
+        }
+      ]
+    },
+    {
+      "ayah": 67,
+      "arabic": "وَلَوْ نَشَآءُ لَمَسَخْنَٰهُمْ عَلَىٰ مَكَانَتِهِمْ فَمَا ٱسْتَطَٰعُوا۟ مُضِيًّۭا وَلَا يَرْجِعُونَ",
+      "words": [
+        {
+          "arabic": "وَلَوْ",
+          "transliteration": "wa lau",
+          "meaning": "dan jika"
+        },
+        {
+          "arabic": "نَشَآءُ",
+          "transliteration": "nasyaa'u",
+          "meaning": "Kami menghendaki"
+        },
+        {
+          "arabic": "لَمَسَخْنَٰهُمْ",
+          "transliteration": "la masakhnaahum",
+          "meaning": "pasti Kami ubah bentuk mereka"
+        },
+        {
+          "arabic": "عَلَىٰ",
+          "transliteration": "'alaa",
+          "meaning": "di"
+        },
+        {
+          "arabic": "مَكَانَتِهِمْ",
+          "transliteration": "makaanatihim",
+          "meaning": "tempat mereka"
+        },
+        {
+          "arabic": "فَمَا",
+          "transliteration": "famaa",
+          "meaning": "maka tidak"
+        },
+        {
+          "arabic": "ٱسْتَطَٰعُوا۟",
+          "transliteration": "istathaa'uu",
+          "meaning": "mereka sanggup"
+        },
+        {
+          "arabic": "مُضِيًّۭا",
+          "transliteration": "mudhiyyan",
+          "meaning": "berjalan maju"
+        },
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa laa",
+          "meaning": "dan tidak (pula)"
+        },
+        {
+          "arabic": "يَرْجِعُونَ",
+          "transliteration": "yarji'uun",
+          "meaning": "kembali"
+        }
+      ]
+    },
+    {
+      "ayah": 68,
+      "arabic": "وَمَن نُّعَمِّرْهُ نُنَكِّسْهُ فِى ٱلْخَلْقِ ۖ أَفَلَا يَعْقِلُونَ",
+      "words": [
+        {
+          "arabic": "وَمَن",
+          "transliteration": "wa man",
+          "meaning": "dan barang siapa"
+        },
+        {
+          "arabic": "نُّعَمِّرْهُ",
+          "transliteration": "nu'ammirhu",
+          "meaning": "Kami panjangkan umurnya"
+        },
+        {
+          "arabic": "نُنَكِّسْهُ",
+          "transliteration": "nunakkishu",
+          "meaning": "Kami kembalikan ia (menurun)"
+        },
+        {
+          "arabic": "فِى",
+          "transliteration": "fii",
+          "meaning": "dalam"
+        },
+        {
+          "arabic": "ٱلْخَلْقِ",
+          "transliteration": "al-khalq",
+          "meaning": "penciptaan"
+        },
+        {
+          "arabic": "أَفَلَا",
+          "transliteration": "a falaa",
+          "meaning": "maka mengapa tidak"
+        },
+        {
+          "arabic": "يَعْقِلُونَ",
+          "transliteration": "ya'qiluun",
+          "meaning": "mereka mengerti"
+        }
+      ]
+    },
+    {
+      "ayah": 69,
+      "arabic": "وَمَا عَلَّمْنَٰهُ ٱلشِّعْرَ وَمَا يَنۢبَغِى لَهُۥٓ ۚ إِنْ هُوَ إِلَّا ذِكْرٌۭ وَقُرْءَانٌۭ مُّبِينٌۭ",
+      "words": [
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan tidaklah"
+        },
+        {
+          "arabic": "عَلَّمْنَٰهُ",
+          "transliteration": "'allamnaahu",
+          "meaning": "Kami ajarkan kepadanya (Nabi)"
+        },
+        {
+          "arabic": "ٱلشِّعْرَ",
+          "transliteration": "asy-syi'r",
+          "meaning": "syair"
+        },
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan tidaklah"
+        },
+        {
+          "arabic": "يَنۢبَغِى",
+          "transliteration": "yanbaghii",
+          "meaning": "layak"
+        },
+        {
+          "arabic": "لَهُۥٓ",
+          "transliteration": "lahu",
+          "meaning": "baginya"
+        },
+        {
+          "arabic": "إِنْ",
+          "transliteration": "in",
+          "meaning": "tidaklah"
+        },
+        {
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "meaning": "ia (Al-Quran)"
+        },
+        {
+          "arabic": "إِلَّا",
+          "transliteration": "illaa",
+          "meaning": "melainkan"
+        },
+        {
+          "arabic": "ذِكْرٌۭ",
+          "transliteration": "dzikrun",
+          "meaning": "pelajaran"
+        },
+        {
+          "arabic": "وَقُرْءَانٌۭ",
+          "transliteration": "wa qur'aanun",
+          "meaning": "dan bacaan (Al-Quran)"
+        },
+        {
+          "arabic": "مُّبِينٌۭ",
+          "transliteration": "mubiin",
+          "meaning": "yang jelas"
+        }
+      ]
+    },
+    {
+      "ayah": 70,
+      "arabic": "لِّيُنذِرَ مَن كَانَ حَيًّۭا وَيَحِقَّ ٱلْقَوْلُ عَلَى ٱلْكَٰفِرِينَ",
+      "words": [
+        {
+          "arabic": "لِّيُنذِرَ",
+          "transliteration": "liyundzira",
+          "meaning": "agar ia memberi peringatan"
+        },
+        {
+          "arabic": "مَن",
+          "transliteration": "man",
+          "meaning": "kepada orang yang"
+        },
+        {
+          "arabic": "كَانَ",
+          "transliteration": "kaana",
+          "meaning": "adalah"
+        },
+        {
+          "arabic": "حَيًّۭا",
+          "transliteration": "hayyan",
+          "meaning": "hidup (hatinya)"
+        },
+        {
+          "arabic": "وَيَحِقَّ",
+          "transliteration": "wa yahiqqa",
+          "meaning": "dan agar berlaku pasti"
+        },
+        {
+          "arabic": "ٱلْقَوْلُ",
+          "transliteration": "al-qaul",
+          "meaning": "ketetapan (azab)"
+        },
+        {
+          "arabic": "عَلَى",
+          "transliteration": "'alaa",
+          "meaning": "atas"
+        },
+        {
+          "arabic": "ٱلْكَٰفِرِينَ",
+          "transliteration": "al-kaafiriin",
+          "meaning": "orang-orang kafir"
+        }
+      ]
+    },
+    {
+      "ayah": 71,
+      "arabic": "أَوَلَمْ يَرَوْا۟ أَنَّا خَلَقْنَا لَهُم مِّمَّا عَمِلَتْ أَيْدِينَآ أَنْعَٰمًۭا فَهُمْ لَهَا مَٰلِكُونَ",
+      "words": [
+        {
+          "arabic": "أَوَلَمْ",
+          "transliteration": "a wa lam",
+          "meaning": "dan tidakkah"
+        },
+        {
+          "arabic": "يَرَوْا۟",
+          "transliteration": "yarau",
+          "meaning": "mereka melihat"
+        },
+        {
+          "arabic": "أَنَّا",
+          "transliteration": "annaa",
+          "meaning": "bahwa Kami"
+        },
+        {
+          "arabic": "خَلَقْنَا",
+          "transliteration": "khalaqnaa",
+          "meaning": "telah menciptakan"
+        },
+        {
+          "arabic": "لَهُم",
+          "transliteration": "lahum",
+          "meaning": "untuk mereka"
+        },
+        {
+          "arabic": "مِّمَّا",
+          "transliteration": "mimmaa",
+          "meaning": "dari apa yang"
+        },
+        {
+          "arabic": "عَمِلَتْ",
+          "transliteration": "'amilat",
+          "meaning": "dikerjakan"
+        },
+        {
+          "arabic": "أَيْدِينَآ",
+          "transliteration": "aidiinaa",
+          "meaning": "kekuasaan Kami"
+        },
+        {
+          "arabic": "أَنْعَٰمًۭا",
+          "transliteration": "an'aaman",
+          "meaning": "hewan ternak"
+        },
+        {
+          "arabic": "فَهُمْ",
+          "transliteration": "fahum",
+          "meaning": "lalu mereka"
+        },
+        {
+          "arabic": "لَهَا",
+          "transliteration": "lahaa",
+          "meaning": "atasnya"
+        },
+        {
+          "arabic": "مَٰلِكُونَ",
+          "transliteration": "maalikuun",
+          "meaning": "menjadi pemilik"
+        }
+      ]
+    },
+    {
+      "ayah": 72,
+      "arabic": "وَذَلَّلْنَٰهَا لَهُمْ فَمِنْهَا رَكُوبُهُمْ وَمِنْهَا يَأْكُلُونَ",
+      "words": [
+        {
+          "arabic": "وَذَلَّلْنَٰهَا",
+          "transliteration": "wa dzallalnaahaa",
+          "meaning": "dan Kami tundukkan ia"
+        },
+        {
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "meaning": "bagi mereka"
+        },
+        {
+          "arabic": "فَمِنْهَا",
+          "transliteration": "faminhaa",
+          "meaning": "maka sebagiannya"
+        },
+        {
+          "arabic": "رَكُوبُهُمْ",
+          "transliteration": "rakuubuhum",
+          "meaning": "menjadi tunggangan mereka"
+        },
+        {
+          "arabic": "وَمِنْهَا",
+          "transliteration": "wa minhaa",
+          "meaning": "dan sebagiannya"
+        },
+        {
+          "arabic": "يَأْكُلُونَ",
+          "transliteration": "ya'kuluun",
+          "meaning": "mereka makan"
+        }
+      ]
+    },
+    {
+      "ayah": 73,
+      "arabic": "وَلَهُمْ فِيهَا مَنَٰفِعُ وَمَشَارِبُ ۖ أَفَلَا يَشْكُرُونَ",
+      "words": [
+        {
+          "arabic": "وَلَهُمْ",
+          "transliteration": "wa lahum",
+          "meaning": "dan bagi mereka"
+        },
+        {
+          "arabic": "فِيهَا",
+          "transliteration": "fiihaa",
+          "meaning": "padanya"
+        },
+        {
+          "arabic": "مَنَٰفِعُ",
+          "transliteration": "manaafi'u",
+          "meaning": "berbagai manfaat"
+        },
+        {
+          "arabic": "وَمَشَارِبُ",
+          "transliteration": "wa masyaarib",
+          "meaning": "dan minuman"
+        },
+        {
+          "arabic": "أَفَلَا",
+          "transliteration": "a falaa",
+          "meaning": "maka mengapa tidak"
+        },
+        {
+          "arabic": "يَشْكُرُونَ",
+          "transliteration": "yasykuruun",
+          "meaning": "mereka bersyukur"
+        }
+      ]
+    },
+    {
+      "ayah": 74,
+      "arabic": "وَٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ ءَالِهَةًۭ لَّعَلَّهُمْ يُنصَرُونَ",
+      "words": [
+        {
+          "arabic": "وَٱتَّخَذُوا۟",
+          "transliteration": "wattakhadzuu",
+          "meaning": "dan mereka menjadikan"
+        },
+        {
+          "arabic": "مِن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "دُونِ",
+          "transliteration": "duuni",
+          "meaning": "selain"
+        },
+        {
+          "arabic": "ٱللَّهِ",
+          "transliteration": "allaah",
+          "meaning": "Allah"
+        },
+        {
+          "arabic": "ءَالِهَةًۭ",
+          "transliteration": "aalihatan",
+          "meaning": "tuhan-tuhan"
+        },
+        {
+          "arabic": "لَّعَلَّهُمْ",
+          "transliteration": "la'allahum",
+          "meaning": "agar mereka"
+        },
+        {
+          "arabic": "يُنصَرُونَ",
+          "transliteration": "yunsharuun",
+          "meaning": "ditolong"
+        }
+      ]
+    },
+    {
+      "ayah": 75,
+      "arabic": "لَا يَسْتَطِيعُونَ نَصْرَهُمْ وَهُمْ لَهُمْ جُندٌۭ مُّحْضَرُونَ",
+      "words": [
+        {
+          "arabic": "لَا",
+          "transliteration": "laa",
+          "meaning": "tidak"
+        },
+        {
+          "arabic": "يَسْتَطِيعُونَ",
+          "transliteration": "yastathii'uun",
+          "meaning": "mereka (berhala) mampu"
+        },
+        {
+          "arabic": "نَصْرَهُمْ",
+          "transliteration": "nashrahum",
+          "meaning": "menolong mereka"
+        },
+        {
+          "arabic": "وَهُمْ",
+          "transliteration": "wa hum",
+          "meaning": "padahal mereka (penyembah)"
+        },
+        {
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "meaning": "bagi berhala itu"
+        },
+        {
+          "arabic": "جُندٌۭ",
+          "transliteration": "jundun",
+          "meaning": "bala tentara"
+        },
+        {
+          "arabic": "مُّحْضَرُونَ",
+          "transliteration": "muhdharuun",
+          "meaning": "yang dihadirkan (di neraka)"
+        }
+      ]
+    },
+    {
+      "ayah": 76,
+      "arabic": "فَلَا يَحْزُنكَ قَوْلُهُمْ ۘ إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ",
+      "words": [
+        {
+          "arabic": "فَلَا",
+          "transliteration": "falaa",
+          "meaning": "maka janganlah"
+        },
+        {
+          "arabic": "يَحْزُنكَ",
+          "transliteration": "yahzunka",
+          "meaning": "menyedihkanmu"
+        },
+        {
+          "arabic": "قَوْلُهُمْ",
+          "transliteration": "qauluhum",
+          "meaning": "perkataan mereka"
+        },
+        {
+          "arabic": "إِنَّا",
+          "transliteration": "innaa",
+          "meaning": "sesungguhnya Kami"
+        },
+        {
+          "arabic": "نَعْلَمُ",
+          "transliteration": "na'lamu",
+          "meaning": "mengetahui"
+        },
+        {
+          "arabic": "مَا",
+          "transliteration": "maa",
+          "meaning": "apa yang"
+        },
+        {
+          "arabic": "يُسِرُّونَ",
+          "transliteration": "yusirruun",
+          "meaning": "mereka rahasiakan"
+        },
+        {
+          "arabic": "وَمَا",
+          "transliteration": "wa maa",
+          "meaning": "dan apa yang"
+        },
+        {
+          "arabic": "يُعْلِنُونَ",
+          "transliteration": "yu'linuun",
+          "meaning": "mereka tampakkan"
+        }
+      ]
+    },
+    {
+      "ayah": 77,
+      "arabic": "أَوَلَمْ يَرَ ٱلْإِنسَٰنُ أَنَّا خَلَقْنَٰهُ مِن نُّطْفَةٍۢ فَإِذَا هُوَ خَصِيمٌۭ مُّبِينٌۭ",
+      "words": [
+        {
+          "arabic": "أَوَلَمْ",
+          "transliteration": "a wa lam",
+          "meaning": "dan tidakkah"
+        },
+        {
+          "arabic": "يَرَ",
+          "transliteration": "yara",
+          "meaning": "memperhatikan"
+        },
+        {
+          "arabic": "ٱلْإِنسَٰنُ",
+          "transliteration": "al-insaan",
+          "meaning": "manusia"
+        },
+        {
+          "arabic": "أَنَّا",
+          "transliteration": "annaa",
+          "meaning": "bahwa Kami"
+        },
+        {
+          "arabic": "خَلَقْنَٰهُ",
+          "transliteration": "khalaqnaahu",
+          "meaning": "menciptakannya"
+        },
+        {
+          "arabic": "مِن",
+          "transliteration": "min",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "نُّطْفَةٍۢ",
+          "transliteration": "nuthfatin",
+          "meaning": "setetes mani"
+        },
+        {
+          "arabic": "فَإِذَا",
+          "transliteration": "fa idzaa",
+          "meaning": "tiba-tiba"
+        },
+        {
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "meaning": "ia"
+        },
+        {
+          "arabic": "خَصِيمٌۭ",
+          "transliteration": "khashiimun",
+          "meaning": "penantang"
+        },
+        {
+          "arabic": "مُّبِينٌۭ",
+          "transliteration": "mubiin",
+          "meaning": "yang nyata"
+        }
+      ]
+    },
+    {
+      "ayah": 78,
+      "arabic": "وَضَرَبَ لَنَا مَثَلًۭا وَنَسِىَ خَلْقَهُۥ ۖ قَالَ مَن يُحْىِ ٱلْعِظَٰمَ وَهِىَ رَمِيمٌۭ",
+      "words": [
+        {
+          "arabic": "وَضَرَبَ",
+          "transliteration": "wa dharaba",
+          "meaning": "dan ia membuat"
+        },
+        {
+          "arabic": "لَنَا",
+          "transliteration": "lanaa",
+          "meaning": "bagi Kami"
+        },
+        {
+          "arabic": "مَثَلًۭا",
+          "transliteration": "matsalan",
+          "meaning": "suatu perumpamaan"
+        },
+        {
+          "arabic": "وَنَسِىَ",
+          "transliteration": "wa nasiya",
+          "meaning": "dan ia lupa"
+        },
+        {
+          "arabic": "خَلْقَهُۥ",
+          "transliteration": "khalqahu",
+          "meaning": "akan kejadian dirinya"
+        },
+        {
+          "arabic": "قَالَ",
+          "transliteration": "qaala",
+          "meaning": "ia berkata"
+        },
+        {
+          "arabic": "مَن",
+          "transliteration": "man",
+          "meaning": "siapakah yang"
+        },
+        {
+          "arabic": "يُحْىِ",
+          "transliteration": "yuhyii",
+          "meaning": "dapat menghidupkan"
+        },
+        {
+          "arabic": "ٱلْعِظَٰمَ",
+          "transliteration": "al-'izhaam",
+          "meaning": "tulang belulang"
+        },
+        {
+          "arabic": "وَهِىَ",
+          "transliteration": "wa hiya",
+          "meaning": "padahal ia"
+        },
+        {
+          "arabic": "رَمِيمٌۭ",
+          "transliteration": "ramiim",
+          "meaning": "telah hancur luluh"
+        }
+      ]
+    },
+    {
+      "ayah": 79,
+      "arabic": "قُلْ يُحْيِيهَا ٱلَّذِىٓ أَنشَأَهَآ أَوَّلَ مَرَّةٍۢ ۖ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ",
+      "words": [
+        {
+          "arabic": "قُلْ",
+          "transliteration": "qul",
+          "meaning": "katakanlah"
+        },
+        {
+          "arabic": "يُحْيِيهَا",
+          "transliteration": "yuhyiihaa",
+          "meaning": "Dia akan menghidupkannya"
+        },
+        {
+          "arabic": "ٱلَّذِىٓ",
+          "transliteration": "alladzii",
+          "meaning": "(Tuhan) yang"
+        },
+        {
+          "arabic": "أَنشَأَهَآ",
+          "transliteration": "ansya'ahaa",
+          "meaning": "menciptakannya"
+        },
+        {
+          "arabic": "أَوَّلَ",
+          "transliteration": "awwala",
+          "meaning": "pertama"
+        },
+        {
+          "arabic": "مَرَّةٍۢ",
+          "transliteration": "marratin",
+          "meaning": "kali"
+        },
+        {
+          "arabic": "وَهُوَ",
+          "transliteration": "wa huwa",
+          "meaning": "dan Dia"
+        },
+        {
+          "arabic": "بِكُلِّ",
+          "transliteration": "bikulli",
+          "meaning": "atas segala"
+        },
+        {
+          "arabic": "خَلْقٍ",
+          "transliteration": "khalqin",
+          "meaning": "ciptaan"
+        },
+        {
+          "arabic": "عَلِيمٌ",
+          "transliteration": "'aliim",
+          "meaning": "Maha Mengetahui"
+        }
+      ]
+    },
+    {
+      "ayah": 80,
+      "arabic": "ٱلَّذِى جَعَلَ لَكُم مِّنَ ٱلشَّجَرِ ٱلْأَخْضَرِ نَارًۭا فَإِذَآ أَنتُم مِّنْهُ تُوقِدُونَ",
+      "words": [
+        {
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladzii",
+          "meaning": "(Tuhan) yang"
+        },
+        {
+          "arabic": "جَعَلَ",
+          "transliteration": "ja'ala",
+          "meaning": "menjadikan"
+        },
+        {
+          "arabic": "لَكُم",
+          "transliteration": "lakum",
+          "meaning": "bagi kalian"
+        },
+        {
+          "arabic": "مِّنَ",
+          "transliteration": "mina",
+          "meaning": "dari"
+        },
+        {
+          "arabic": "ٱلشَّجَرِ",
+          "transliteration": "asy-syajar",
+          "meaning": "pohon"
+        },
+        {
+          "arabic": "ٱلْأَخْضَرِ",
+          "transliteration": "al-akhdhar",
+          "meaning": "yang hijau"
+        },
+        {
+          "arabic": "نَارًۭا",
+          "transliteration": "naaran",
+          "meaning": "api"
+        },
+        {
+          "arabic": "فَإِذَآ",
+          "transliteration": "fa idzaa",
+          "meaning": "maka seketika itu"
+        },
+        {
+          "arabic": "أَنتُم",
+          "transliteration": "antum",
+          "meaning": "kalian"
+        },
+        {
+          "arabic": "مِّنْهُ",
+          "transliteration": "minhu",
+          "meaning": "darinya"
+        },
+        {
+          "arabic": "تُوقِدُونَ",
+          "transliteration": "tuuqiduun",
+          "meaning": "menyalakan api"
+        }
+      ]
+    },
+    {
+      "ayah": 81,
+      "arabic": "أَوَلَيْسَ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ بِقَٰدِرٍ عَلَىٰٓ أَن يَخْلُقَ مِثْلَهُم ۚ بَلَىٰ وَهُوَ ٱلْخَلَّٰقُ ٱلْعَلِيمُ",
+      "words": [
+        {
+          "arabic": "أَوَلَيْسَ",
+          "transliteration": "a wa laisa",
+          "meaning": "dan bukankah"
+        },
+        {
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladzii",
+          "meaning": "(Tuhan) yang"
+        },
+        {
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "meaning": "menciptakan"
+        },
+        {
+          "arabic": "ٱلسَّمَٰوَٰتِ",
+          "transliteration": "as-samaawaat",
+          "meaning": "langit"
+        },
+        {
+          "arabic": "وَٱلْأَرْضَ",
+          "transliteration": "wa al-ardh",
+          "meaning": "dan bumi"
+        },
+        {
+          "arabic": "بِقَٰدِرٍ",
+          "transliteration": "bi qaadirin",
+          "meaning": "berkuasa"
+        },
+        {
+          "arabic": "عَلَىٰٓ",
+          "transliteration": "'alaa",
+          "meaning": "untuk"
+        },
+        {
+          "arabic": "أَن",
+          "transliteration": "an",
+          "meaning": "untuk"
+        },
+        {
+          "arabic": "يَخْلُقَ",
+          "transliteration": "yakhluqa",
+          "meaning": "menciptakan"
+        },
+        {
+          "arabic": "مِثْلَهُم",
+          "transliteration": "mitslahum",
+          "meaning": "yang serupa dengan mereka"
+        },
+        {
+          "arabic": "بَلَىٰ",
+          "transliteration": "balaa",
+          "meaning": "tentu benar"
+        },
+        {
+          "arabic": "وَهُوَ",
+          "transliteration": "wa huwa",
+          "meaning": "dan Dia"
+        },
+        {
+          "arabic": "ٱلْخَلَّٰقُ",
+          "transliteration": "al-khallaaq",
+          "meaning": "Maha Pencipta"
+        },
+        {
+          "arabic": "ٱلْعَلِيمُ",
+          "transliteration": "al-'aliim",
+          "meaning": "Maha Mengetahui"
+        }
+      ]
+    },
+    {
+      "ayah": 82,
+      "arabic": "إِنَّمَآ أَمْرُهُۥٓ إِذَآ أَرَادَ شَيْـًٔا أَن يَقُولَ لَهُۥ كُن فَيَكُونُ",
+      "words": [
+        {
+          "arabic": "إِنَّمَآ",
+          "transliteration": "innamaa",
+          "meaning": "sesungguhnya hanyalah"
+        },
+        {
+          "arabic": "أَمْرُهُۥٓ",
+          "transliteration": "amruhu",
+          "meaning": "perintah-Nya"
+        },
+        {
+          "arabic": "إِذَآ",
+          "transliteration": "idzaa",
+          "meaning": "apabila"
+        },
+        {
+          "arabic": "أَرَادَ",
+          "transliteration": "araada",
+          "meaning": "Dia menghendaki"
+        },
+        {
+          "arabic": "شَيْـًٔا",
+          "transliteration": "syai'an",
+          "meaning": "sesuatu"
+        },
+        {
+          "arabic": "أَن",
+          "transliteration": "an",
+          "meaning": "hanyalah"
+        },
+        {
+          "arabic": "يَقُولَ",
+          "transliteration": "yaquula",
+          "meaning": "Dia berkata"
+        },
+        {
+          "arabic": "لَهُۥ",
+          "transliteration": "lahu",
+          "meaning": "kepadanya"
+        },
+        {
+          "arabic": "كُن",
+          "transliteration": "kun",
+          "meaning": "jadilah"
+        },
+        {
+          "arabic": "فَيَكُونُ",
+          "transliteration": "fa yakuun",
+          "meaning": "maka jadilah ia"
+        }
+      ]
+    },
+    {
+      "ayah": 83,
+      "arabic": "فَسُبْحَٰنَ ٱلَّذِى بِيَدِهِۦ مَلَكُوتُ كُلِّ شَىْءٍۢ وَإِلَيْهِ تُرْجَعُونَ",
+      "words": [
+        {
+          "arabic": "فَسُبْحَٰنَ",
+          "transliteration": "fa subhaana",
+          "meaning": "maka Mahasuci"
+        },
+        {
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladzii",
+          "meaning": "(Tuhan) yang"
+        },
+        {
+          "arabic": "بِيَدِهِۦ",
+          "transliteration": "bi yadihi",
+          "meaning": "di tangan-Nya"
+        },
+        {
+          "arabic": "مَلَكُوتُ",
+          "transliteration": "malakuutu",
+          "meaning": "kekuasaan atas"
+        },
+        {
+          "arabic": "كُلِّ",
+          "transliteration": "kulli",
+          "meaning": "segala"
+        },
+        {
+          "arabic": "شَىْءٍۢ",
+          "transliteration": "syai'in",
+          "meaning": "sesuatu"
+        },
+        {
+          "arabic": "وَإِلَيْهِ",
+          "transliteration": "wa ilaihi",
+          "meaning": "dan kepada-Nya"
+        },
+        {
+          "arabic": "تُرْجَعُونَ",
+          "transliteration": "turja'uun",
+          "meaning": "kalian dikembalikan"
+        }
+      ]
+    }
+  ]
+}

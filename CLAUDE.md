@@ -19,6 +19,7 @@ npm run build                    # tsc type-check + vite build (build base path 
 npm run preview                  # serve the production build
 npm run generate-manifest        # rebuild src/data/flashcards/manifest.json from all deck JSON files
 npm run generate-qs-manifest     # rebuild src/data/qs-breakdown/qs-manifest.json from all breakdown files
+npm run generate-reading-manifest # rebuild src/data/reading/reading-manifest.json from all reading files
 ```
 
 There is no test runner or linter; `tsc` (run as part of `build`) is the only static check. `tsconfig.json` enables `noUnusedLocals` / `noUnusedParameters`, so unused symbols fail the build.
@@ -32,10 +33,14 @@ There is no test runner or linter; `tsc` (run as part of `build`) is the only st
 - `#test` → 50-question exam across all decks ([src/pages/test.ts](src/pages/test.ts))
 - `#qs` → navigation page with the Surah Breakdown tab active
 - `#qs/<id>` → word-by-word verse reader ([src/pages/qs-breakdown.ts](src/pages/qs-breakdown.ts))
+- `#read` → navigation page with the Read tab active
+- `#read/<id>` → fluent Quran reader ([src/pages/reading.ts](src/pages/reading.ts))
 
-The navigation page ([src/pages/navigation.ts](src/pages/navigation.ts)) has two tabs — **Flashcard** (deck grid, route ``) and **Surah Breakdown** (route `#qs`). The active tab is driven by the hash, not internal state, so the QS reader's back button (`#qs`) returns to the right tab.
+The navigation page ([src/pages/navigation.ts](src/pages/navigation.ts)) has three tabs — **Flashcard** (deck grid, route ``), **Surah Breakdown** (route `#qs`), and **Read** (route `#read`). The active tab is driven by the hash, not internal state, so each reader's back button returns to the right tab.
 
 **Surah Breakdown** is a separate learning module from decks (not a flashcard). It renders a contiguous range of Quran verses for *reading comprehension*: each verse shows full Arabic + Indonesian translation, and tapping any word reveals a gentle, beginner-level grammar card (`ism`/`fi'l`/`harf` type, root, contextual meaning, optional note, and for `fi'l` words the past/present/future/command conjugation forms). Data lives in [src/data/qs-breakdown/](src/data/qs-breakdown/) as `{surah}_{from}-{to}.json` files (one passage per file), normalized by [src/data/qs-breakdown/index.ts](src/data/qs-breakdown/index.ts); `qs-manifest.json` is generated, never hand-edited. Generate new passages with the `/qs-breakdown <surah> <from> <to>` command ([.claude/commands/qs-breakdown.md](.claude/commands/qs-breakdown.md)), then run `npm run generate-qs-manifest`.
+
+**Read** ([src/pages/reading.ts](src/pages/reading.ts)) is a separate, lighter reading module: a full surah rendered as Arabic only (no inline translation), where tapping any word reveals *just* its meaning (transliteration + Indonesian meaning) — no grammar, root, forms, or notes. Data lives in [src/data/reading/](src/data/reading/) as `{surah}_1-{ayahCount}.json` (one file per surah, full span), with minimal per-word `{ arabic, transliteration, meaning }`, normalized by [src/data/reading/index.ts](src/data/reading/index.ts); `reading-manifest.json` is generated, never hand-edited. Generate/extend a surah with the `/quran-reading <surah> [<from>] [<to>]` command ([.claude/commands/quran-reading.md](.claude/commands/quran-reading.md)) — batches merge into the one per-surah file — then run `npm run generate-reading-manifest`.
 
 Each page module exports a `render*(container, ...)` function that owns its own `innerHTML` and event wiring. There is no shared component layer or virtual DOM — pages re-render by reassigning `innerHTML`. Scores persist in `localStorage`.
 

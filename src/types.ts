@@ -94,6 +94,42 @@ export interface QsMeta {
   verseCount: number
 }
 
+// ── Quran Reading types (fluent reader, tap a word for its meaning) ───────────
+
+export interface ReadingWord {
+  arabic: string
+  transliteration: string
+  meaning: string          // Indonesian, contextual
+}
+
+export interface ReadingVerse {
+  ayah: number
+  arabic: string           // uthmani full verse
+  words: ReadingWord[]
+}
+
+export interface ReadingSurah {
+  id: string               // e.g. "36_1-83"
+  surah: number
+  surahName: string
+  from: number
+  to: number
+  title: string
+  description: string      // Indonesian
+  verses: ReadingVerse[]
+}
+
+export interface ReadingMeta {
+  id: string
+  surah: number
+  surahName: string
+  from: number
+  to: number
+  title: string
+  description: string
+  verseCount: number
+}
+
 // ── Raw JSON types ────────────────────────────────────────────────────────────
 
 interface QuranExample {
