@@ -1488,6 +1488,24 @@ body {
 }
 .dzikir-item-title { font-weight: 700; color: var(--text); }
 
+/* Ayah separator badge inside a multi-verse dzikir (e.g. the three Quls). */
+.qs-ayah-sep {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--bg);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border));
+  border-radius: 50%;
+  user-select: none;
+}
+
 /* ── Dzikir source hadith ────────────────────────────────────────────────── */
 .dzikir-hadith-btn {
   margin-left: auto;

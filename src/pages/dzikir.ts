@@ -16,6 +16,12 @@ function isWaqaf(token: string): boolean {
 function itemArabic(item: { arabic: string; words: DzikirWord[] }, ii: number): string {
   let wi = 0
   return item.arabic.split(' ').map(token => {
+    // Ayah separator: a token starting with the end-of-ayah mark ۝ (U+06DD),
+    // optionally followed by the ayah number — shown as a badge, not a word.
+    if (token.codePointAt(0) === 0x06dd) {
+      const num = token.slice(1)
+      return `<span class="qs-ayah-sep">${num || '۝'}</span>`
+    }
     if (isWaqaf(token) || wi >= item.words.length) {
       return `<span class="qs-waqaf">${token}</span>`
     }
