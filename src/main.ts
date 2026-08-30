@@ -24,8 +24,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="header-actions">
       <button class="settings-toggle" aria-label="Settings">⚙️</button>
     </div>
+    <div class="nav-scrim" hidden></div>
   </header>
-  <div class="nav-scrim" hidden></div>
   <main class="app-main" id="main-content"></main>
   <footer class="app-footer">
     <a class="github-link" href="https://github.com/ikhwanh/arabic-flashcard" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
