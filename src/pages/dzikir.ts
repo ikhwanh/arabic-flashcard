@@ -69,13 +69,13 @@ export async function renderDzikir(container: HTMLElement, id: string) {
         <span class="qs-deck-title">${set.title}</span>
       </div>
 
-      <p class="qs-tip">👆 Tap any word to see its meaning</p>
+      <p class="qs-tip">👆 Tap the card to count · tap a word for its meaning</p>
 
       <div class="qs-verses">
         ${set.items.map((item, ii) => `
           <div class="qs-verse dzikir-item">
             <div class="dzikir-item-head">
-              <span class="dzikir-repeat">${item.repeat}×</span>
+              <span class="dzikir-counter" data-target="${item.repeat}" data-count="0">0 / ${item.repeat}</span>
               ${item.title ? `<span class="dzikir-item-title">${item.title}</span>` : ''}
               ${item.hadith ? `<button class="dzikir-hadith-btn" data-ii="${ii}" aria-label="View source hadith">📖</button>` : ''}
             </div>
@@ -130,8 +130,30 @@ export async function renderDzikir(container: HTMLElement, id: string) {
     window.location.hash = 'dzikir'
   })
 
+  // Tapping anywhere on a card counts one recitation; tapping again once the
+  // target is reached resets to 0. Word/hadith taps stop propagation so they
+  // do their own thing without also counting.
+  container.querySelectorAll<HTMLElement>('.dzikir-item').forEach(card => {
+    const counter = card.querySelector<HTMLElement>('.dzikir-counter')!
+    const target = Number(counter.dataset.target)
+    card.addEventListener('click', () => {
+      tip?.remove()
+      let count = Number(counter.dataset.count)
+      count = count >= target ? 0 : count + 1
+      counter.dataset.count = String(count)
+      const done = count >= target
+      counter.textContent = done ? `✓ ${count} / ${target}` : `${count} / ${target}`
+      counter.classList.toggle('done', done)
+      // Brief bump so the tap registers visually.
+      counter.classList.remove('bump')
+      void counter.offsetWidth
+      counter.classList.add('bump')
+    })
+  })
+
   container.querySelectorAll<HTMLButtonElement>('.qs-word').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation()
       tip?.remove()
       if (activeBtn === btn) {
         closeSheet()
@@ -144,7 +166,8 @@ export async function renderDzikir(container: HTMLElement, id: string) {
   })
 
   container.querySelectorAll<HTMLButtonElement>('.dzikir-hadith-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation()
       tip?.remove()
       // A hadith isn't a word, so drop any active word highlight.
       activeBtn?.classList.remove('active')
