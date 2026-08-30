@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "time": "morning",
+    "title": "Dzikir Pagi",
+    "description": "Kumpulan dzikir pagi dari Hisnul Muslim, dibaca setelah Subuh hingga terbit matahari.",
+    "itemCount": 23
+  },
+  {
+    "id": "2",
+    "time": "evening",
+    "title": "Dzikir Petang",
+    "description": "Kumpulan dzikir petang dari Hisnul Muslim, dibaca setelah Asar hingga terbenam matahari.",
+    "itemCount": 23
+  }
+]

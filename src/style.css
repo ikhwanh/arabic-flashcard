@@ -103,7 +103,8 @@ body {
 .qs-word,
 .qs-detail-arabic,
 .qs-detail-root,
-.qs-form-arabic {
+.qs-form-arabic,
+.dzikir-hadith-arabic {
   font-family: var(--font-arabic);
   font-feature-settings: var(--font-feature, normal);
 }
@@ -134,7 +135,12 @@ body {
 .header-tabs {
   display: flex;
   gap: 1.25rem;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+
+.header-tabs::-webkit-scrollbar { display: none; }
 
 .header-tab {
   padding: 0.85rem 0.15rem;
@@ -145,6 +151,7 @@ body {
   font-weight: 600;
   color: var(--text-muted);
   cursor: pointer;
+  white-space: nowrap;
   transition: color 0.15s, border-color 0.15s;
 }
 
@@ -175,6 +182,26 @@ body {
 
 .settings-toggle:hover {
   background: var(--border);
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 0 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .header-tabs {
+    gap: 0.9rem;
+  }
+
+  .header-tab {
+    font-size: 0.85rem;
+    padding: 0.8rem 0.1rem;
+  }
+
+  .settings-toggle {
+    padding: 0.35rem 0.55rem;
+  }
 }
 
 /* ── Settings page ── */
@@ -1358,6 +1385,65 @@ body {
   letter-spacing: 0.03em;
 }
 .qs-form-arabic { font-size: 1.15rem; font-weight: 600; }
+
+/* ── Dzikir item header ──────────────────────────────────────────────────── */
+.dzikir-item { padding-left: 1.25rem; }
+.dzikir-item-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.7rem;
+}
+.dzikir-repeat {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6rem;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.dzikir-item-title { font-weight: 700; color: var(--text); }
+
+/* ── Dzikir source hadith ────────────────────────────────────────────────── */
+.dzikir-hadith-btn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.dzikir-hadith-btn:hover { color: var(--text); border-color: var(--accent); }
+
+.dzikir-hadith {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.dzikir-hadith-ref { font-size: 0.9rem; font-weight: 700; color: var(--accent); }
+.dzikir-hadith-arabic {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 2;
+  direction: rtl;
+  color: var(--text);
+}
+.dzikir-hadith-content { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--text); }
 
 .qs-tip {
   display: flex;

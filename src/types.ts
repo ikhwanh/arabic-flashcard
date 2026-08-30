@@ -130,6 +130,44 @@ export interface ReadingMeta {
   verseCount: number
 }
 
+// ── Dzikir types (morning/evening remembrance, tap a word for its meaning) ────
+
+export interface DzikirWord {
+  arabic: string
+  transliteration: string
+  meaning: string          // Indonesian, contextual
+}
+
+export interface DzikirHadith {
+  reference: string        // e.g. "HR. Muslim no. 2708"
+  arabic?: string          // optional hadith Arabic text
+  content: string          // Indonesian narration / virtue of the dzikir
+}
+
+export interface DzikirItem {
+  title?: string           // optional label, e.g. "Ayat Kursi"
+  repeat: number           // how many times to recite
+  hadith?: DzikirHadith    // optional source hadith, shown behind an icon
+  arabic: string           // full remembrance text
+  words: DzikirWord[]
+}
+
+export interface DzikirSet {
+  id: string               // e.g. "1"
+  time: 'morning' | 'evening'
+  title: string            // e.g. "Dzikir Pagi"
+  description: string       // Indonesian
+  items: DzikirItem[]
+}
+
+export interface DzikirMeta {
+  id: string
+  time: 'morning' | 'evening'
+  title: string
+  description: string
+  itemCount: number
+}
+
 // ── Raw JSON types ────────────────────────────────────────────────────────────
 
 interface QuranExample {

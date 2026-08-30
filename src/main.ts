@@ -8,14 +8,16 @@ import { renderTest } from './pages/test'
 import { renderQsBreakdown } from './pages/qs-breakdown'
 import { renderQsGame } from './pages/qs-game'
 import { renderReading } from './pages/reading'
+import { renderDzikir } from './pages/dzikir'
 import { renderSettings } from './pages/settings'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="app-header">
     <nav class="header-tabs" role="tablist">
       <button class="header-tab" data-tab="flashcard" role="tab">Flashcard</button>
-      <button class="header-tab" data-tab="breakdown" role="tab">Surah Breakdown</button>
+      <button class="header-tab" data-tab="breakdown" role="tab">Breakdown</button>
       <button class="header-tab" data-tab="reading" role="tab">Read</button>
+      <button class="header-tab" data-tab="dzikir" role="tab">Dzikir</button>
     </nav>
     <div class="header-actions">
       <button class="settings-toggle" aria-label="Settings">⚙️</button>
@@ -42,7 +44,7 @@ const headerTabs = appHeader.querySelectorAll<HTMLButtonElement>('.header-tab')
 headerTabs.forEach(btn => {
   btn.addEventListener('click', () => {
     const tab = btn.dataset.tab
-    window.location.hash = tab === 'breakdown' ? 'qs' : tab === 'reading' ? 'read' : ''
+    window.location.hash = tab === 'breakdown' ? 'qs' : tab === 'reading' ? 'read' : tab === 'dzikir' ? 'dzikir' : ''
   })
 })
 
@@ -50,7 +52,7 @@ appHeader.querySelector<HTMLButtonElement>('.settings-toggle')!.addEventListener
   window.location.hash = 'settings'
 })
 
-function setActiveTab(tab: 'flashcard' | 'breakdown' | 'reading' | null) {
+function setActiveTab(tab: 'flashcard' | 'breakdown' | 'reading' | 'dzikir' | null) {
   headerTabs.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab))
 }
 
@@ -65,6 +67,8 @@ function route() {
   const qsIndexMatch = hash === 'qs'
   const readReaderMatch = hash.match(/^read\/(.+)$/)
   const readIndexMatch = hash === 'read'
+  const dzikirReaderMatch = hash.match(/^dzikir\/(.+)$/)
+  const dzikirIndexMatch = hash === 'dzikir'
   const settingsMatch = hash === 'settings'
 
   if (settingsMatch) {
@@ -88,6 +92,13 @@ function route() {
     appHeader.hidden = false
     setActiveTab('reading')
     renderNavigation(mainContent, 'reading')
+  } else if (dzikirReaderMatch) {
+    appHeader.hidden = true
+    renderDzikir(mainContent, dzikirReaderMatch[1]).catch(console.error)
+  } else if (dzikirIndexMatch) {
+    appHeader.hidden = false
+    setActiveTab('dzikir')
+    renderNavigation(mainContent, 'dzikir')
   } else if (testMatch) {
     appHeader.hidden = true
     renderTest(mainContent, testMatch[1]).catch(console.error)

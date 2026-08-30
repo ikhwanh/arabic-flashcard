@@ -1,8 +1,9 @@
 import { deckMetas } from '../data/flashcards'
 import { qsMetas } from '../data/qs-breakdown'
 import { readingMetas } from '../data/reading'
+import { dzikirMetas } from '../data/dzikir'
 
-type NavTab = 'flashcard' | 'breakdown' | 'reading'
+type NavTab = 'flashcard' | 'breakdown' | 'reading' | 'dzikir'
 
 function getQuizScore(deckId: string): string | null {
   return localStorage.getItem(`quiz_score_${deckId}`)
@@ -221,6 +222,27 @@ function renderReadingGrid(container: HTMLElement) {
   })
 }
 
+function renderDzikirGrid(container: HTMLElement) {
+  const grid = container.querySelector<HTMLElement>('.qs-index-grid')!
+  grid.innerHTML = dzikirMetas.length === 0
+    ? `<p class="nav-empty">No dzikir yet.</p>`
+    : dzikirMetas.map(m => `
+        <div class="qs-index-card">
+          <button class="qs-index-open" data-id="${m.id}">
+            <span class="qs-index-surah">${m.time === 'morning' ? '🌅' : '🌇'} ${m.title}</span>
+            <span class="qs-index-desc">${m.description}</span>
+            <span class="qs-index-count">${m.itemCount} dzikir</span>
+          </button>
+        </div>
+      `).join('')
+
+  grid.querySelectorAll<HTMLButtonElement>('.qs-index-open').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.hash = `dzikir/${btn.dataset.id!}`
+    })
+  })
+}
+
 function syncResetAllButton(container: HTMLElement) {
   const btn = container.querySelector<HTMLButtonElement>('.btn-reset-all')
   if (btn) btn.disabled = !hasAnyProgress()
@@ -272,8 +294,17 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
     <div class="qs-index-grid"></div>
   `
 
+  const dzikirSection = `
+    <div class="nav-hero">
+      <h2>Dzikir</h2>
+      <p class="nav-subtitle">Morning & evening remembrance, tap a word for its meaning</p>
+    </div>
+    <div class="qs-index-grid"></div>
+  `
+
   const section = activeTab === 'breakdown' ? breakdownSection
     : activeTab === 'reading' ? readingSection
+    : activeTab === 'dzikir' ? dzikirSection
     : flashcardSection
 
   container.innerHTML = `
@@ -289,6 +320,11 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
 
   if (activeTab === 'reading') {
     renderReadingGrid(container)
+    return
+  }
+
+  if (activeTab === 'dzikir') {
+    renderDzikirGrid(container)
     return
   }
 
