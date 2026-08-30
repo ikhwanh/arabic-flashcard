@@ -455,13 +455,13 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
         <span class="qs-deck-title">${n.title}</span>
       </div>
 
-      <p class="qs-tip">👆 Tap any word to see its meaning</p>
+      <p class="qs-tip">👆 Tap the card to count · tap a word for its meaning</p>
 
       <div class="qs-verses">
         ${n.items.map((e,t)=>`
           <div class="qs-verse dzikir-item">
             <div class="dzikir-item-head">
-              <span class="dzikir-repeat">${e.repeat}×</span>
+              <span class="dzikir-counter" data-target="${e.repeat}" data-count="0">0 / ${e.repeat}</span>
               ${e.title?`<span class="dzikir-item-title">${e.title}</span>`:``}
               ${e.hadith?`<button class="dzikir-hadith-btn" data-ii="${t}" aria-label="View source hadith">📖</button>`:``}
             </div>
@@ -481,7 +481,7 @@ var e=Object.defineProperty,t=(t,n)=>{let r={};for(var i in t)e(r,i,{get:t[i],en
         <div class="qs-sheet-body"></div>
       </div>
     </div>
-  `;let r=e.querySelector(`.qs-sheet`),i=e.querySelector(`.qs-sheet-body`),a=e.querySelector(`.qs-tip`),o=null;function s(){r.hidden=!0,r.classList.remove(`open`),o?.classList.remove(`active`),o=null}function c(e){i.innerHTML=e,r.hidden=!1,r.offsetWidth,r.classList.add(`open`)}function l(e,t){o?.classList.remove(`active`),o=e,e.classList.add(`active`),c(et(t))}e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`dzikir`}),e.querySelectorAll(`.qs-word`).forEach(e=>{e.addEventListener(`click`,()=>{if(a?.remove(),o===e){s();return}let t=Number(e.dataset.vi),r=Number(e.dataset.wi);l(e,n.items[t].words[r])})}),e.querySelectorAll(`.dzikir-hadith-btn`).forEach(e=>{e.addEventListener(`click`,()=>{a?.remove(),o?.classList.remove(`active`),o=null;let t=Number(e.dataset.ii);c(tt(n.items[t].hadith))})}),e.querySelector(`.qs-sheet-backdrop`).addEventListener(`click`,s),e.querySelector(`.qs-sheet-close`).addEventListener(`click`,s),document.addEventListener(`keydown`,function e(t){t.key===`Escape`&&!r.hidden&&s(),document.contains(r)||document.removeEventListener(`keydown`,e)})}var rt=`رَبِّ`,it=[{id:`low`,label:`Low (under letter)`,feature:`"cv62" 1`},{id:`high`,label:`High (under shadda)`,feature:`normal`}];function at(e){return e.replace(/^Kosakata Al-Quran - /,``)}function ot(e){let t=Date.now()-e,n=6e4,r=60*n,i=24*r;return t<n?`just now`:t<r?`${Math.floor(t/n)}m ago`:t<i?`${Math.floor(t/r)}h ago`:t<7*i?`${Math.floor(t/i)}d ago`:new Date(e).toLocaleDateString()}function st(){return C.map(e=>({deck:e,visited:Number(localStorage.getItem(`last_visited_${e.id}`)??0)})).filter(e=>e.visited>0).sort((e,t)=>t.visited-e.visited)}function ct(e){let t=st();e.innerHTML=`
+  `;let r=e.querySelector(`.qs-sheet`),i=e.querySelector(`.qs-sheet-body`),a=e.querySelector(`.qs-tip`),o=null;function s(){r.hidden=!0,r.classList.remove(`open`),o?.classList.remove(`active`),o=null}function c(e){i.innerHTML=e,r.hidden=!1,r.offsetWidth,r.classList.add(`open`)}function l(e,t){o?.classList.remove(`active`),o=e,e.classList.add(`active`),c(et(t))}e.querySelector(`.btn-back`).addEventListener(`click`,()=>{window.location.hash=`dzikir`}),e.querySelectorAll(`.dzikir-item`).forEach(e=>{let t=e.querySelector(`.dzikir-counter`),n=Number(t.dataset.target);e.addEventListener(`click`,()=>{a?.remove();let e=Number(t.dataset.count);e=e>=n?0:e+1,t.dataset.count=String(e);let r=e>=n;t.textContent=r?`✓ ${e} / ${n}`:`${e} / ${n}`,t.classList.toggle(`done`,r),t.classList.remove(`bump`),t.offsetWidth,t.classList.add(`bump`)})}),e.querySelectorAll(`.qs-word`).forEach(e=>{e.addEventListener(`click`,t=>{if(t.stopPropagation(),a?.remove(),o===e){s();return}let r=Number(e.dataset.vi),i=Number(e.dataset.wi);l(e,n.items[r].words[i])})}),e.querySelectorAll(`.dzikir-hadith-btn`).forEach(e=>{e.addEventListener(`click`,t=>{t.stopPropagation(),a?.remove(),o?.classList.remove(`active`),o=null;let r=Number(e.dataset.ii);c(tt(n.items[r].hadith))})}),e.querySelector(`.qs-sheet-backdrop`).addEventListener(`click`,s),e.querySelector(`.qs-sheet-close`).addEventListener(`click`,s),document.addEventListener(`keydown`,function e(t){t.key===`Escape`&&!r.hidden&&s(),document.contains(r)||document.removeEventListener(`keydown`,e)})}var rt=`رَبِّ`,it=[{id:`low`,label:`Low (under letter)`,feature:`"cv62" 1`},{id:`high`,label:`High (under shadda)`,feature:`normal`}];function at(e){return e.replace(/^Kosakata Al-Quran - /,``)}function ot(e){let t=Date.now()-e,n=6e4,r=60*n,i=24*r;return t<n?`just now`:t<r?`${Math.floor(t/n)}m ago`:t<i?`${Math.floor(t/r)}h ago`:t<7*i?`${Math.floor(t/i)}d ago`:new Date(e).toLocaleDateString()}function st(){return C.map(e=>({deck:e,visited:Number(localStorage.getItem(`last_visited_${e.id}`)??0)})).filter(e=>e.visited>0).sort((e,t)=>t.visited-e.visited)}function ct(e){let t=st();e.innerHTML=`
     <div class="nav-page settings-page">
       <div class="nav-hero">
         <h2>Settings</h2>
