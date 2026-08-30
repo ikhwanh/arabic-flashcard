@@ -13,7 +13,9 @@ import { renderSettings } from './pages/settings'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header class="app-header">
-    <nav class="header-tabs" role="tablist">
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">☰</button>
+    <span class="app-title"></span>
+    <nav class="header-tabs" id="nav-drawer" role="tablist" aria-label="Sections">
       <button class="header-tab" data-tab="flashcard" role="tab">Flashcard</button>
       <button class="header-tab" data-tab="breakdown" role="tab">Breakdown</button>
       <button class="header-tab" data-tab="reading" role="tab">Read</button>
@@ -23,6 +25,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button class="settings-toggle" aria-label="Settings">⚙️</button>
     </div>
   </header>
+  <div class="nav-scrim" hidden></div>
   <main class="app-main" id="main-content"></main>
   <footer class="app-footer">
     <a class="github-link" href="https://github.com/ikhwanh/arabic-flashcard" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
@@ -40,11 +43,42 @@ initTheme()
 const mainContent = document.getElementById('main-content')!
 const appHeader = document.querySelector<HTMLElement>('.app-header')!
 
+const navToggle = appHeader.querySelector<HTMLButtonElement>('.nav-toggle')!
+const navDrawer = appHeader.querySelector<HTMLElement>('.header-tabs')!
+const appTitle = appHeader.querySelector<HTMLElement>('.app-title')!
+const navScrim = document.querySelector<HTMLElement>('.nav-scrim')!
+
+const TAB_LABELS: Record<string, string> = {
+  flashcard: 'Flashcard',
+  breakdown: 'Breakdown',
+  reading: 'Read',
+  dzikir: 'Dzikir',
+}
+
+const closeDrawer = () => {
+  navDrawer.classList.remove('open')
+  navScrim.hidden = true
+  navToggle.setAttribute('aria-expanded', 'false')
+}
+const openDrawer = () => {
+  navDrawer.classList.add('open')
+  navScrim.hidden = false
+  navToggle.setAttribute('aria-expanded', 'true')
+}
+navToggle.addEventListener('click', () => {
+  navDrawer.classList.contains('open') ? closeDrawer() : openDrawer()
+})
+navScrim.addEventListener('click', closeDrawer)
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDrawer()
+})
+
 const headerTabs = appHeader.querySelectorAll<HTMLButtonElement>('.header-tab')
 headerTabs.forEach(btn => {
   btn.addEventListener('click', () => {
     const tab = btn.dataset.tab
     window.location.hash = tab === 'breakdown' ? 'qs' : tab === 'reading' ? 'read' : tab === 'dzikir' ? 'dzikir' : ''
+    closeDrawer()
   })
 })
 
@@ -54,6 +88,7 @@ appHeader.querySelector<HTMLButtonElement>('.settings-toggle')!.addEventListener
 
 function setActiveTab(tab: 'flashcard' | 'breakdown' | 'reading' | 'dzikir' | null) {
   headerTabs.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tab))
+  appTitle.textContent = tab ? TAB_LABELS[tab] : 'Settings'
 }
 
 function route() {
