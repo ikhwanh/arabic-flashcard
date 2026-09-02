@@ -1,4 +1,5 @@
 import { loadBreakdown } from '../data/qs-breakdown'
+import { isVersePlayable } from './qs-game'
 import type { QsWord, WordType } from '../types'
 
 const TYPE_LABEL: Record<WordType, string> = {
@@ -98,6 +99,7 @@ export async function renderQsBreakdown(container: HTMLElement, id: string) {
         ${bd.verses.map((verse, vi) => `
           <div class="qs-verse">
             <span class="qs-ayah-num">${verse.ayah}</span>
+            ${isVersePlayable(verse) ? `<button class="btn-qs-ayah-play" data-ayah="${verse.ayah}" aria-label="Play ayah ${verse.ayah}">▶</button>` : ''}
             <div class="qs-arabic" dir="rtl">
               ${verseArabic(verse, vi)}
             </div>
@@ -148,6 +150,12 @@ export async function renderQsBreakdown(container: HTMLElement, id: string) {
 
   container.querySelector('.btn-qs-play')!.addEventListener('click', () => {
     window.location.hash = `qs/${id}/game`
+  })
+
+  container.querySelectorAll<HTMLButtonElement>('.btn-qs-ayah-play').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.hash = `qs/${id}/game/${btn.dataset.ayah}`
+    })
   })
 
   container.querySelectorAll<HTMLButtonElement>('.qs-word').forEach(btn => {

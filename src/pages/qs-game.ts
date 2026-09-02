@@ -78,11 +78,19 @@ function buildRounds(verses: QsVerse[]): Round[] {
   return rounds
 }
 
+// A single verse is worth offering as its own game only if it yields at least
+// one round. Reusing buildRounds keeps this in lockstep with the game itself.
+export function isVersePlayable(v: QsVerse): boolean {
+  return buildRounds([v]).length > 0
+}
+
 function saveScore(id: string, score: number, total: number) {
   localStorage.setItem(`qs_score_${id}`, `${score}/${total}`)
 }
 
-export async function renderQsGame(container: HTMLElement, id: string) {
+// `ayah` narrows the game to a single verse of the passage; omitted, it plays
+// the whole passage.
+export async function renderQsGame(container: HTMLElement, id: string, ayah?: number) {
   container.innerHTML = `<div class="fc-loading">Loading…</div>`
 
   const bd = await loadBreakdown(id)
@@ -97,12 +105,24 @@ export async function renderQsGame(container: HTMLElement, id: string) {
     return
   }
 
-  const rounds = buildRounds(bd.verses)
+  const verses = ayah === undefined ? bd.verses : bd.verses.filter(v => v.ayah === ayah)
+
+  if (verses.length === 0) {
+    container.innerHTML = `
+      <div class="error-page">
+        <p>Ayat ${ayah} is not in this passage.</p>
+        <button class="btn-back" onclick="window.location.hash='qs/${id}'">← Back to Reader</button>
+      </div>
+    `
+    return
+  }
+
+  const rounds = buildRounds(verses)
 
   if (rounds.length === 0) {
     container.innerHTML = `
       <div class="error-page">
-        <p>Not enough words in this passage to play.</p>
+        <p>Not enough words ${ayah === undefined ? 'in this passage' : `in ayat ${ayah}`} to play.</p>
         <button class="btn-back" onclick="window.location.hash='qs/${id}'">← Back to Reader</button>
       </div>
     `
@@ -302,7 +322,8 @@ export async function renderQsGame(container: HTMLElement, id: string) {
           currentIndex++
           startRound()
         } else {
-          saveScore(id, score, rounds.length)
+          // A single-ayah run must not overwrite the passage's score chip.
+          if (ayah === undefined) saveScore(id, score, rounds.length)
           renderResult()
         }
       })
@@ -321,7 +342,7 @@ export async function renderQsGame(container: HTMLElement, id: string) {
       <div class="qs-game-page">
         <div class="qs-header">
           <button class="btn-back">← Back</button>
-          <span class="qs-deck-title">${bd!.surahName} · Ayat ${bd!.from}–${bd!.to}</span>
+          <span class="qs-deck-title">${bd!.surahName} · ${ayah !== undefined ? `Ayat ${ayah}` : `Ayat ${bd!.from}–${bd!.to}`}</span>
         </div>
 
         <div class="quiz-result">
@@ -339,7 +360,7 @@ export async function renderQsGame(container: HTMLElement, id: string) {
       window.location.hash = `qs/${id}`
     })
     container.querySelector('.btn-quiz-retry')!.addEventListener('click', () => {
-      renderQsGame(container, id)
+      renderQsGame(container, id, ayah)
     })
     container.querySelector('.btn-quiz-back')!.addEventListener('click', () => {
       window.location.hash = `qs/${id}`

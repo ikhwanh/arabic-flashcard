@@ -97,6 +97,7 @@ function route() {
 
   const quizMatch = hash.match(/^deck\/(.+)\/quiz$/)
   const testMatch = hash.match(/^test(?:\/(.+))?$/)
+  const qsAyahGameMatch = hash.match(/^qs\/(.+)\/game\/(\d+)$/)
   const qsGameMatch = hash.match(/^qs\/(.+)\/game$/)
   const qsReaderMatch = hash.match(/^qs\/(.+)$/)
   const qsIndexMatch = hash === 'qs'
@@ -110,6 +111,9 @@ function route() {
     appHeader.hidden = false
     setActiveTab(null)
     renderSettings(mainContent)
+  } else if (qsAyahGameMatch) {
+    appHeader.hidden = true
+    renderQsGame(mainContent, qsAyahGameMatch[1], Number(qsAyahGameMatch[2])).catch(console.error)
   } else if (qsGameMatch) {
     appHeader.hidden = true
     renderQsGame(mainContent, qsGameMatch[1]).catch(console.error)

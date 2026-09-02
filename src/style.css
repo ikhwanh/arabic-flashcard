@@ -1654,6 +1654,29 @@ body {
 }
 .btn-qs-play:hover { background: var(--accent); color: #fff; }
 
+/* Per-ayah play button, stacked under the ayah badge in the verse card's
+   left gutter — a top-right button would collide with the RTL Arabic block. */
+.btn-qs-ayah-play {
+  position: absolute;
+  top: 3.05rem;
+  left: 0.85rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: var(--accent);
+  background: var(--bg);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border));
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.btn-qs-ayah-play:hover { background: var(--accent); color: #fff; }
+
 /* ── Surah Breakdown game ───────────────────────────────────────────────────── */
 .qs-game-page { max-width: 760px; margin: 0 auto; padding: 1rem; }
 .qs-game-label {
