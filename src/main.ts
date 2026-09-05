@@ -8,6 +8,7 @@ import { renderTest } from './pages/test'
 import { renderQsBreakdown } from './pages/qs-breakdown'
 import { renderQsGame } from './pages/qs-game'
 import { renderReading } from './pages/reading'
+import { readingMetas } from './data/reading'
 import { renderDzikir } from './pages/dzikir'
 import { renderSettings } from './pages/settings'
 
@@ -18,7 +19,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <nav class="header-tabs" id="nav-drawer" role="tablist" aria-label="Sections">
       <button class="header-tab" data-tab="flashcard" role="tab">Flashcard</button>
       <button class="header-tab" data-tab="breakdown" role="tab">Breakdown</button>
-      <button class="header-tab" data-tab="reading" role="tab">Read</button>
+      <button class="header-tab" data-tab="reading" role="tab">Yasin</button>
       <button class="header-tab" data-tab="dzikir" role="tab">Dzikir</button>
     </nav>
     <div class="header-actions">
@@ -51,7 +52,7 @@ const navScrim = document.querySelector<HTMLElement>('.nav-scrim')!
 const TAB_LABELS: Record<string, string> = {
   flashcard: 'Flashcard',
   breakdown: 'Breakdown',
-  reading: 'Read',
+  reading: 'Yasin',
   dzikir: 'Dzikir',
 }
 
@@ -130,7 +131,10 @@ function route() {
   } else if (readIndexMatch) {
     appHeader.hidden = false
     setActiveTab('reading')
-    renderNavigation(mainContent, 'reading')
+    // The tab opens the surah itself rather than an index of one card.
+    const firstReading = readingMetas[0]
+    if (firstReading) renderReading(mainContent, firstReading.id, true).catch(console.error)
+    else renderNavigation(mainContent, 'reading')
   } else if (dzikirReaderMatch) {
     appHeader.hidden = true
     renderDzikir(mainContent, dzikirReaderMatch[1]).catch(console.error)

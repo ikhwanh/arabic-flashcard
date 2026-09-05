@@ -37,7 +37,9 @@ function wordDetail(word: ReadingWord): string {
   `
 }
 
-export async function renderReading(container: HTMLElement, id: string) {
+// `embedded` renders the surah straight into the Yasin tab: the app header
+// already names it, so the page drops its own back/title row.
+export async function renderReading(container: HTMLElement, id: string, embedded = false) {
   container.innerHTML = `<div class="fc-loading">Loading…</div>`
 
   const surah = await loadReading(id)
@@ -54,10 +56,12 @@ export async function renderReading(container: HTMLElement, id: string) {
 
   container.innerHTML = `
     <div class="qs-page">
-      <div class="qs-header">
-        <button class="btn-back">← Back</button>
-        <span class="qs-deck-title">QS ${surah.surah} · ${surah.surahName}</span>
-      </div>
+      ${embedded ? '' : `
+        <div class="qs-header">
+          <button class="btn-back">← Back</button>
+          <span class="qs-deck-title">QS ${surah.surah} · ${surah.surahName}</span>
+        </div>
+      `}
 
       <p class="qs-tip">👆 Tap any word to see its meaning</p>
 
@@ -108,7 +112,7 @@ export async function renderReading(container: HTMLElement, id: string) {
     sheet.classList.add('open')
   }
 
-  container.querySelector('.btn-back')!.addEventListener('click', () => {
+  container.querySelector('.btn-back')?.addEventListener('click', () => {
     window.location.hash = 'read'
   })
 

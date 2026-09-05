@@ -288,7 +288,7 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
 
   const readingSection = `
     <div class="nav-hero">
-      <h2>Read</h2>
+      <h2>Yasin</h2>
       <p class="nav-subtitle">Read the Quran, tap a word for its meaning</p>
     </div>
     <div class="qs-index-grid"></div>
