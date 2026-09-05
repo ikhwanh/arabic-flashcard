@@ -133,8 +133,12 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
   let score = 0
   // Word index placed in each gloss slot, in Arabic reading order (null = empty).
   let slots: (number | null)[] = []
-  // Word indices not yet placed into a slot.
+  // Word indices not yet placed into a slot, always laid out in `poolOrder`.
   let pool: number[] = []
+  // The fixed shuffled layout of the pool for this round. A word that comes back
+  // to the pool returns to its own place here, so the pool never reshuffles
+  // itself under the player.
+  let poolOrder: number[] = []
   let checked = false
   let skipped = false
 
@@ -148,10 +152,18 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
   function startRound() {
     const round = rounds[currentIndex]
     slots = new Array(round.words.length).fill(null)
-    pool = shuffle(round.words.map((_, i) => i))
+    poolOrder = shuffle(round.words.map((_, i) => i))
+    pool = [...poolOrder]
     checked = false
     skipped = false
     renderRound()
+  }
+
+  // Put a word back in the pool, in its fixed layout position.
+  function returnToPool(idx: number) {
+    if (pool.includes(idx)) return
+    pool.push(idx)
+    pool.sort((a, b) => poolOrder.indexOf(a) - poolOrder.indexOf(b))
   }
 
   // Detach a word from wherever it currently sits (pool or a slot).
@@ -235,8 +247,9 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
       const slotDoms = [...container.querySelectorAll<HTMLElement>('.qs-slot')]
 
       // Tap places a pooled word into the first empty slot (or returns a placed
-      // word to the pool); press-and-drag drops it onto a specific slot. Nothing
-      // reflows during the drag — the layout only changes on drop.
+      // word to the pool); press-and-drag drops it onto a specific slot. A drag
+      // that lands nowhere leaves the word exactly where it was. Nothing reflows
+      // during the drag — the layout only changes on drop.
       const wireChip = (chip: HTMLButtonElement, from: 'pool' | 'slot') => {
         chip.addEventListener('pointerdown', e => {
           if (e.button !== 0 && e.pointerType === 'mouse') return
@@ -277,7 +290,7 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
                 const empty = slots.indexOf(null)
                 if (empty !== -1) { removeWord(idx); slots[empty] = idx }
               } else {
-                removeWord(idx); pool.push(idx)
+                removeWord(idx); returnToPool(idx)
               }
               renderRound()
               return
@@ -289,10 +302,10 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
             if (targetSlot !== -1) {
               const occupant = slots[targetSlot]
               removeWord(idx)
-              if (occupant !== null && occupant !== idx) pool.push(occupant)
+              if (occupant !== null && occupant !== idx) returnToPool(occupant)
               slots[targetSlot] = idx
             } else if (within(poolEl, ev.clientX, ev.clientY)) {
-              removeWord(idx); pool.push(idx)
+              removeWord(idx); returnToPool(idx)
             }
             renderRound()
           }
