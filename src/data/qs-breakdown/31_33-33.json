@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "surah": 31,
+    "surahName": "Luqman",
+    "from": 33,
+    "to": 33,
+    "title": "Luqman 33",
+    "description": "Seruan kepada seluruh manusia untuk bertakwa dan mengingat hari ketika tidak ada seorang pun, bahkan ayah atau anak sendiri, yang bisa menolong; janji Allah itu pasti, maka jangan sampai dunia dan tipu daya setan memperdaya kita."
+  },
+  "verses": [
+    {
+      "ayah": 33,
+      "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمْ وَٱخْشَوْا۟ يَوْمًۭا لَّا يَجْزِى وَالِدٌ عَن وَلَدِهِۦ وَلَا مَوْلُودٌ هُوَ جَازٍ عَن وَالِدِهِۦ شَيْـًٔا ۚ إِنَّ وَعْدَ ٱللَّهِ حَقٌّۭ ۖ فَلَا تَغُرَّنَّكُمُ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَلَا يَغُرَّنَّكُم بِٱللَّهِ ٱلْغَرُورُ",
+      "translation": "Hai manusia, bertakwalah kepada Tuhanmu dan takutilah suatu hari yang (pada hari itu) seorang bapak tidak dapat menolong anaknya dan seorang anak tidak dapat (pula) menolong bapaknya sedikitpun. Sesungguhnya janji Allah adalah benar, maka janganlah sekali-kali kehidupan dunia memperdayakan kamu, dan jangan (pula) penipu (syaitan) memperdayakan kamu dalam (mentaati) Allah.",
+      "literalTranslation": "Wahai manusia, bertakwalah kepada Tuhan kalian dan takutlah kepada suatu hari yang seorang ayah tidak dapat menolong anaknya, dan tidak pula seorang anak dapat menolong ayahnya sedikit pun. Sesungguhnya janji Allah itu benar, maka janganlah kehidupan dunia memperdaya kalian, dan jangan pula si penipu memperdaya kalian tentang Allah.",
+      "words": [
+        {
+          "arabic": "يَٰٓأَيُّهَا",
+          "transliteration": "yaa ayyuhaa",
+          "meaning": "wahai",
+          "type": "harf",
+          "notes": "Kata seruan untuk memanggil."
+        },
+        {
+          "arabic": "ٱلنَّاسُ",
+          "transliteration": "an-naasu",
+          "meaning": "manusia",
+          "type": "ism",
+          "root": "ن و س"
+        },
+        {
+          "arabic": "ٱتَّقُوا۟",
+          "transliteration": "ittaquu",
+          "meaning": "bertakwalah kalian",
+          "type": "fi'l",
+          "root": "و ق ي",
+          "forms": {
+            "past": "ٱتَّقَىٰ",
+            "present": "يَتَّقِي",
+            "future": "سَيَتَّقِي",
+            "command": "ٱتَّقِ"
+          },
+          "notes": "Bentuk perintah untuk banyak orang."
+        },
+        {
+          "arabic": "رَبَّكُمْ",
+          "transliteration": "rabbakum",
+          "meaning": "Tuhan kalian",
+          "type": "ism",
+          "root": "ر ب ب",
+          "notes": "Akhiran -kum berarti 'kalian'."
+        },
+        {
+          "arabic": "وَٱخْشَوْا۟",
+          "transliteration": "wakhshaw",
+          "meaning": "dan takutlah kalian",
+          "type": "fi'l",
+          "root": "خ ش ي",
+          "forms": {
+            "past": "خَشِيَ",
+            "present": "يَخْشَىٰ",
+            "future": "سَيَخْشَىٰ",
+            "command": "ٱخْشَ"
+          },
+          "notes": "Awalan وَ berarti 'dan'."
+        },
+        {
+          "arabic": "يَوْمًۭا",
+          "transliteration": "yawman",
+          "meaning": "suatu hari",
+          "type": "ism",
+          "root": "ي و م",
+          "notes": "Maksudnya hari kiamat."
+        },
+        {
+          "arabic": "لَّا",
+          "transliteration": "laa",
+          "meaning": "tidak",
+          "type": "harf"
+        },
+        {
+          "arabic": "يَجْزِى",
+          "transliteration": "yajzii",
+          "meaning": "dapat menolong / membalas",
+          "type": "fi'l",
+          "root": "ج ز ي",
+          "forms": {
+            "past": "جَزَىٰ",
+            "present": "يَجْزِي",
+            "future": "سَيَجْزِي",
+            "command": "ٱجْزِ"
+          },
+          "notes": "Bentuk sekarang."
+        },
+        {
+          "arabic": "وَالِدٌ",
+          "transliteration": "waalidun",
+          "meaning": "seorang ayah",
+          "type": "ism",
+          "root": "و ل د"
+        },
+        {
+          "arabic": "عَن",
+          "transliteration": "'an",
+          "meaning": "dari / untuk",
+          "type": "harf"
+        },
+        {
+          "arabic": "وَلَدِهِۦ",
+          "transliteration": "waladihii",
+          "meaning": "anaknya",
+          "type": "ism",
+          "root": "و ل د",
+          "notes": "Akhiran -hi berarti 'nya'."
+        },
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa laa",
+          "meaning": "dan tidak",
+          "type": "harf"
+        },
+        {
+          "arabic": "مَوْلُودٌ",
+          "transliteration": "mawluudun",
+          "meaning": "seorang anak (yang dilahirkan)",
+          "type": "ism",
+          "root": "و ل د"
+        },
+        {
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "meaning": "dia",
+          "type": "ism",
+          "notes": "Kata ganti orang ketiga."
+        },
+        {
+          "arabic": "جَازٍ",
+          "transliteration": "jaazin",
+          "meaning": "yang dapat menolong",
+          "type": "ism",
+          "root": "ج ز ي",
+          "notes": "Bentuk pelaku, dari kata kerja yang sama."
+        },
+        {
+          "arabic": "عَن",
+          "transliteration": "'an",
+          "meaning": "dari / untuk",
+          "type": "harf"
+        },
+        {
+          "arabic": "وَالِدِهِۦ",
+          "transliteration": "waalidihii",
+          "meaning": "ayahnya",
+          "type": "ism",
+          "root": "و ل د"
+        },
+        {
+          "arabic": "شَيْـًٔا",
+          "transliteration": "shay'an",
+          "meaning": "sedikit pun",
+          "type": "ism",
+          "root": "ش ي أ"
+        },
+        {
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "meaning": "sesungguhnya",
+          "type": "harf",
+          "notes": "Untuk penekanan."
+        },
+        {
+          "arabic": "وَعْدَ",
+          "transliteration": "wa'da",
+          "meaning": "janji",
+          "type": "ism",
+          "root": "و ع د"
+        },
+        {
+          "arabic": "ٱللَّهِ",
+          "transliteration": "allaahi",
+          "meaning": "Allah",
+          "type": "ism"
+        },
+        {
+          "arabic": "حَقٌّۭ",
+          "transliteration": "haqqun",
+          "meaning": "benar / pasti",
+          "type": "ism",
+          "root": "ح ق ق"
+        },
+        {
+          "arabic": "فَلَا",
+          "transliteration": "fa laa",
+          "meaning": "maka janganlah",
+          "type": "harf"
+        },
+        {
+          "arabic": "تَغُرَّنَّكُمُ",
+          "transliteration": "taghurrannakumu",
+          "meaning": "sekali-kali memperdaya kalian",
+          "type": "fi'l",
+          "root": "غ ر ر",
+          "forms": {
+            "past": "غَرَّ",
+            "present": "يَغُرُّ",
+            "future": "سَيَغُرُّ",
+            "command": "غُرَّ"
+          },
+          "notes": "Akhiran -kum berarti 'kalian'."
+        },
+        {
+          "arabic": "ٱلْحَيَوٰةُ",
+          "transliteration": "al-hayaatu",
+          "meaning": "kehidupan",
+          "type": "ism",
+          "root": "ح ي ي"
+        },
+        {
+          "arabic": "ٱلدُّنْيَا",
+          "transliteration": "ad-dunyaa",
+          "meaning": "dunia",
+          "type": "ism",
+          "root": "د ن و"
+        },
+        {
+          "arabic": "وَلَا",
+          "transliteration": "wa laa",
+          "meaning": "dan janganlah",
+          "type": "harf"
+        },
+        {
+          "arabic": "يَغُرَّنَّكُم",
+          "transliteration": "yaghurrannakum",
+          "meaning": "sekali-kali memperdaya kalian",
+          "type": "fi'l",
+          "root": "غ ر ر",
+          "forms": {
+            "past": "غَرَّ",
+            "present": "يَغُرُّ",
+            "future": "سَيَغُرُّ",
+            "command": "غُرَّ"
+          }
+        },
+        {
+          "arabic": "بِٱللَّهِ",
+          "transliteration": "billaahi",
+          "meaning": "tentang Allah",
+          "type": "ism",
+          "notes": "Awalan بِ di sini berarti 'tentang / terhadap'."
+        },
+        {
+          "arabic": "ٱلْغَرُورُ",
+          "transliteration": "al-gharuuru",
+          "meaning": "si penipu (setan)",
+          "type": "ism",
+          "root": "غ ر ر"
+        }
+      ],
+      "segments": [
+        {
+          "translation": "Wahai manusia, bertakwalah kepada Tuhan kalian dan takutlah kepada suatu hari",
+          "wordCount": 6
+        },
+        {
+          "translation": "yang seorang ayah tidak dapat menolong anaknya",
+          "wordCount": 5
+        },
+        {
+          "translation": "dan tidak pula seorang anak dapat menolong ayahnya sedikit pun",
+          "wordCount": 7
+        },
+        {
+          "translation": "Sesungguhnya janji Allah itu benar",
+          "wordCount": 4
+        },
+        {
+          "translation": "maka janganlah kehidupan dunia memperdaya kalian",
+          "wordCount": 4
+        },
+        {
+          "translation": "dan jangan pula si penipu memperdaya kalian tentang Allah",
+          "wordCount": 4
+        }
+      ]
+    }
+  ]
+}
