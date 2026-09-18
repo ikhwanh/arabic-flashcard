@@ -117,6 +117,16 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
     return
   }
 
+  // For a single-ayah run, the next playable ayah after `ayah` in this passage
+  // (in verse order), so the result screen can offer to continue. Undefined for
+  // a whole-passage run or when nothing playable follows.
+  const nextAyah = ayah === undefined ? undefined : (() => {
+    const i = bd.verses.findIndex(v => v.ayah === ayah)
+    if (i === -1) return undefined
+    const next = bd.verses.slice(i + 1).find(isVersePlayable)
+    return next?.ayah
+  })()
+
   const rounds = buildRounds(verses)
 
   if (rounds.length === 0) {
@@ -362,6 +372,7 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
           <div class="quiz-result-score">${score} / ${total}</div>
           <p class="quiz-result-label">${score === total ? 'Perfect!' : score >= total * 0.7 ? 'Well done!' : 'Keep practicing!'}</p>
           <div class="quiz-result-actions">
+            ${nextAyah !== undefined ? `<button class="btn-quiz-next-ayah">Next Verse →</button>` : ''}
             <button class="btn-quiz-retry">Play Again</button>
             <button class="btn-quiz-back">← Back to Reader</button>
           </div>
@@ -371,6 +382,9 @@ export async function renderQsGame(container: HTMLElement, id: string, ayah?: nu
 
     container.querySelector('.btn-back')!.addEventListener('click', () => {
       window.location.hash = `qs/${id}`
+    })
+    container.querySelector('.btn-quiz-next-ayah')?.addEventListener('click', () => {
+      window.location.hash = `qs/${id}/game/${nextAyah}`
     })
     container.querySelector('.btn-quiz-retry')!.addEventListener('click', () => {
       renderQsGame(container, id, ayah)
