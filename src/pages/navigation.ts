@@ -2,6 +2,7 @@ import { deckMetas } from '../data/flashcards'
 import { qsMetas } from '../data/qs-breakdown'
 import { readingMetas } from '../data/reading'
 import { dzikirMetas } from '../data/dzikir'
+import type { DzikirTime } from '../types'
 
 type NavTab = 'flashcard' | 'breakdown' | 'reading' | 'dzikir'
 
@@ -222,16 +223,22 @@ function renderReadingGrid(container: HTMLElement) {
   })
 }
 
+const DZIKIR_EMOJI: Record<DzikirTime, string> = {
+  prayer: '🕌',
+  morning: '🌅',
+  evening: '🌇',
+}
+
 function renderDzikirGrid(container: HTMLElement) {
   const grid = container.querySelector<HTMLElement>('.qs-index-grid')!
   grid.innerHTML = dzikirMetas.length === 0
-    ? `<p class="nav-empty">No dzikir yet.</p>`
+    ? `<p class="nav-empty">Nothing here yet.</p>`
     : dzikirMetas.map(m => `
         <div class="qs-index-card">
           <button class="qs-index-open" data-id="${m.id}">
-            <span class="qs-index-surah">${m.time === 'morning' ? '🌅' : '🌇'} ${m.title}</span>
+            <span class="qs-index-surah">${DZIKIR_EMOJI[m.time]} ${m.title}</span>
             <span class="qs-index-desc">${m.description}</span>
-            <span class="qs-index-count">${m.itemCount} dzikir</span>
+            <span class="qs-index-count">${m.itemCount} ${m.time === 'prayer' ? 'recitations' : 'dzikir'}</span>
           </button>
         </div>
       `).join('')
@@ -296,8 +303,8 @@ export function renderNavigation(container: HTMLElement, activeTab: NavTab = 'fl
 
   const dzikirSection = `
     <div class="nav-hero">
-      <h2>Dzikir</h2>
-      <p class="nav-subtitle">Morning & evening remembrance, tap a word for its meaning</p>
+      <h2>Prayer and Dzikir</h2>
+      <p class="nav-subtitle">Prayer recitations & morning/evening remembrance, tap a word for its meaning</p>
     </div>
     <div class="qs-index-grid"></div>
   `

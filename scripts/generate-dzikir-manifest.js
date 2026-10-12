@@ -22,8 +22,8 @@ const entries = files.map(filename => {
   };
 });
 
-// Sort by time (morning before evening), then id
-const timeOrder = { morning: 0, evening: 1 };
+// Sort by time (prayer, then morning, then evening), then id
+const timeOrder = { prayer: 0, morning: 1, evening: 2 };
 entries.sort((a, b) => timeOrder[a.time] - timeOrder[b.time] || a.id.localeCompare(b.id));
 
 writeFileSync(manifestPath, JSON.stringify(entries, null, 2) + '\n');

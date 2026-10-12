@@ -1,5 +1,12 @@
 [
   {
+    "id": "3",
+    "time": "prayer",
+    "title": "Bacaan Shalat",
+    "description": "Bacaan shalat dari takbiratul ihram hingga salam, dengan tanda rukun menurut mazhab Syafi'i (niat, tuma'ninah, dan tertib juga rukun meski tanpa bacaan khusus).",
+    "itemCount": 13
+  },
+  {
     "id": "1",
     "time": "morning",
     "title": "Dzikir Pagi",

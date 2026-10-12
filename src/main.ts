@@ -20,7 +20,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button class="header-tab" data-tab="flashcard" role="tab">Flashcard</button>
       <button class="header-tab" data-tab="breakdown" role="tab">Breakdown</button>
       <button class="header-tab" data-tab="reading" role="tab">Yasin</button>
-      <button class="header-tab" data-tab="dzikir" role="tab">Dzikir</button>
+      <button class="header-tab" data-tab="dzikir" role="tab">Prayer and Dzikir</button>
     </nav>
     <div class="header-actions">
       <button class="settings-toggle" aria-label="Settings">⚙️</button>
@@ -53,7 +53,7 @@ const TAB_LABELS: Record<string, string> = {
   flashcard: 'Flashcard',
   breakdown: 'Breakdown',
   reading: 'Yasin',
-  dzikir: 'Dzikir',
+  dzikir: 'Prayer and Dzikir',
 }
 
 const closeDrawer = () => {

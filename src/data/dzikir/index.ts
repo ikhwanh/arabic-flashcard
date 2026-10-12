@@ -1,4 +1,4 @@
-import type { DzikirSet, DzikirMeta, DzikirItem } from '../../types'
+import type { DzikirSet, DzikirMeta, DzikirItem, DzikirTime } from '../../types'
 import manifestData from './dzikir-manifest.json'
 
 export const dzikirMetas: DzikirMeta[] = manifestData as DzikirMeta[]
@@ -6,7 +6,7 @@ export const dzikirMetas: DzikirMeta[] = manifestData as DzikirMeta[]
 interface DzikirFile {
   meta: {
     id: string
-    time: 'morning' | 'evening'
+    time: DzikirTime
     title: string
     description: string
   }

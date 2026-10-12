@@ -144,17 +144,25 @@ export interface DzikirHadith {
   content: string          // Indonesian narration / virtue of the dzikir
 }
 
+export interface DzikirRukun {
+  part: 'action' | 'recitation' | 'both'  // which part is the rukun (Shafi'i)
+  note: string             // Indonesian explanation
+}
+
 export interface DzikirItem {
   title?: string           // optional label, e.g. "Ayat Kursi"
   repeat: number           // how many times to recite
   hadith?: DzikirHadith    // optional source hadith, shown behind an icon
+  rukun?: DzikirRukun      // prayer only: set when this step is an essential element
   arabic: string           // full remembrance text
   words: DzikirWord[]
 }
 
+export type DzikirTime = 'prayer' | 'morning' | 'evening'
+
 export interface DzikirSet {
   id: string               // e.g. "1"
-  time: 'morning' | 'evening'
+  time: DzikirTime
   title: string            // e.g. "Dzikir Pagi"
   description: string       // Indonesian
   items: DzikirItem[]
@@ -162,7 +170,7 @@ export interface DzikirSet {
 
 export interface DzikirMeta {
   id: string
-  time: 'morning' | 'evening'
+  time: DzikirTime
   title: string
   description: string
   itemCount: number

@@ -1,5 +1,5 @@
 import { loadDzikir } from '../data/dzikir'
-import type { DzikirWord, DzikirHadith } from '../types'
+import type { DzikirWord, DzikirHadith, DzikirRukun } from '../types'
 
 // A standalone waqaf/pause sign (ۖ ۗ ۘ ۙ ۚ ۛ ۜ …) is a token whose every char
 // falls in the Arabic pause-mark range. These sit between words in item.arabic
@@ -53,6 +53,21 @@ function hadithDetail(hadith: DzikirHadith): string {
   `
 }
 
+const RUKUN_LABELS: Record<DzikirRukun['part'], string> = {
+  action: 'Rukun · action',
+  recitation: 'Rukun · recitation',
+  both: 'Rukun',
+}
+
+function rukunDetail(rukun: DzikirRukun): string {
+  return `
+    <div class="dzikir-hadith">
+      <span class="dzikir-hadith-ref">Essential element of prayer (Shafi'i)</span>
+      <p class="dzikir-hadith-content">${rukun.note}</p>
+    </div>
+  `
+}
+
 export async function renderDzikir(container: HTMLElement, id: string) {
   container.innerHTML = `<div class="fc-loading">Loading…</div>`
 
@@ -83,6 +98,7 @@ export async function renderDzikir(container: HTMLElement, id: string) {
             <div class="dzikir-item-head">
               <span class="dzikir-counter" data-target="${item.repeat}" data-count="0">0 / ${item.repeat}</span>
               ${item.title ? `<span class="dzikir-item-title">${item.title}</span>` : ''}
+              ${item.rukun ? `<button class="dzikir-rukun-tag" data-ii="${ii}">${RUKUN_LABELS[item.rukun.part]}</button>` : ''}
               ${item.hadith ? `<button class="dzikir-hadith-btn" data-ii="${ii}" aria-label="View source hadith">📖</button>` : ''}
             </div>
             <div class="qs-arabic" dir="rtl">
@@ -171,17 +187,21 @@ export async function renderDzikir(container: HTMLElement, id: string) {
     })
   })
 
-  container.querySelectorAll<HTMLButtonElement>('.dzikir-hadith-btn').forEach(btn => {
-    btn.addEventListener('click', e => {
-      e.stopPropagation()
-      tip?.remove()
-      // A hadith isn't a word, so drop any active word highlight.
-      activeBtn?.classList.remove('active')
-      activeBtn = null
-      const ii = Number(btn.dataset.ii)
-      revealSheet(hadithDetail(set.items[ii].hadith!))
+  function revealItemSheet(selector: string, detail: (ii: number) => string) {
+    container.querySelectorAll<HTMLButtonElement>(selector).forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation()
+        tip?.remove()
+        // Not a word, so drop any active word highlight.
+        activeBtn?.classList.remove('active')
+        activeBtn = null
+        revealSheet(detail(Number(btn.dataset.ii)))
+      })
     })
-  })
+  }
+
+  revealItemSheet('.dzikir-hadith-btn', ii => hadithDetail(set.items[ii].hadith!))
+  revealItemSheet('.dzikir-rukun-tag', ii => rukunDetail(set.items[ii].rukun!))
 
   container.querySelector('.qs-sheet-backdrop')!.addEventListener('click', closeSheet)
   container.querySelector('.qs-sheet-close')!.addEventListener('click', closeSheet)

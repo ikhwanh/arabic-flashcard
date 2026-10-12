@@ -1488,6 +1488,23 @@ body {
 }
 .dzikir-item-title { font-weight: 700; color: var(--text); }
 
+/* Prayer step that is (or contains) an essential element of prayer. */
+.dzikir-rukun-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 1.4rem;
+  padding: 0 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--border));
+  border-radius: 999px;
+  cursor: pointer;
+}
+.dzikir-rukun-tag:hover { border-color: var(--accent); }
+
 /* Ayah separator badge inside a multi-verse dzikir (e.g. the three Quls). */
 .qs-ayah-sep {
   align-self: center;
