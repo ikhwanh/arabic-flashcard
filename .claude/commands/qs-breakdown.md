@@ -56,7 +56,7 @@ For each verse, produce a `literalTranslation` — this is the translation the r
 - Still fetch the official Kemenag `translation` in step 1 and keep it in the JSON (it is retained as data even though it is hidden in the UI).
 
 ### 2c. Split long verses into parts (`segments`)
-The **game** (`#qs/<id>/game`) asks the player to arrange a verse's words in order. A long verse becomes an unplayable wall of chips, so any verse over **12 words** must be split into parts — each part becomes its own page in the game.
+The **game** (`/qs/<id>/game`) asks the player to arrange a verse's words in order. A long verse becomes an unplayable wall of chips, so any verse over **12 words** must be split into parts — each part becomes its own page in the game.
 
 For each verse longer than 12 words, add a `segments` array that **partitions the verse's `words` in order**:
 - Cut the verse at natural clause boundaries — align to the waqaf/pause marks (ۖ ۗ ۚ …) in the Arabic where possible.

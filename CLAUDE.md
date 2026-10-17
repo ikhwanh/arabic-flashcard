@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-A Quranic Arabic vocabulary flashcard SPA, built with vanilla TypeScript + Vite (no framework). Translations are in Indonesian. Deployed to GitHub Pages — pushes to `main` auto-build and deploy via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+A Quranic Arabic vocabulary flashcard SPA, built with Vue 3 (`<script setup lang="ts">` SFCs) + vue-router + Vite. Translations are in Indonesian. Deployed to GitHub Pages — pushes to `main` auto-build and deploy via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
 
 ## Language conventions
 
@@ -15,7 +15,7 @@ A Quranic Arabic vocabulary flashcard SPA, built with vanilla TypeScript + Vite 
 
 ```bash
 npm run dev                      # Vite dev server
-npm run build                    # tsc type-check + vite build (build base path is /arabic-flashcard/)
+npm run build                    # vue-tsc type-check + vite build + copy index.html → 404.html (base path /arabic-flashcard/)
 npm run preview                  # serve the production build
 npm run generate-manifest        # rebuild src/data/flashcards/manifest.json from all deck JSON files
 npm run generate-qs-manifest     # rebuild src/data/qs-breakdown/qs-manifest.json from all breakdown files
@@ -23,31 +23,54 @@ npm run generate-reading-manifest # rebuild src/data/reading/reading-manifest.js
 npm run generate-dzikir-manifest # rebuild src/data/dzikir/dzikir-manifest.json from all dzikir files
 ```
 
-There is no test runner or linter; `tsc` (run as part of `build`) is the only static check. `tsconfig.json` enables `noUnusedLocals` / `noUnusedParameters`, so unused symbols fail the build.
+There is no test runner or linter; `vue-tsc` (run as part of `build`) is the only static check, and it covers `.vue` files. `tsconfig.json` enables `noUnusedLocals` / `noUnusedParameters`, so unused symbols fail the build.
 
 ## Architecture
 
-**Hash-based routing.** [src/main.ts](src/main.ts) renders the shell and routes on `window.location.hash`:
-- `` (empty) → deck navigation grid ([src/pages/navigation.ts](src/pages/navigation.ts))
-- `#deck/<id>` → flashcard viewer ([src/pages/flashcard.ts](src/pages/flashcard.ts))
-- `#deck/<id>/quiz` → per-deck quiz ([src/pages/quiz.ts](src/pages/quiz.ts))
-- `#test` → 50-question exam across all decks ([src/pages/test.ts](src/pages/test.ts))
-- `#qs` → navigation page with the Surah Breakdown tab active
-- `#qs/<id>` → word-by-word verse reader ([src/pages/qs-breakdown.ts](src/pages/qs-breakdown.ts))
-- `#read` → **Yasin** tab — renders the first reading surah inline ([src/pages/reading.ts](src/pages/reading.ts) in embedded mode), falling back to the index grid when there is no reading data
-- `#read/<id>` → fluent Quran reader ([src/pages/reading.ts](src/pages/reading.ts))
-- `#dzikir` → navigation page with the Prayer and Dzikir tab active
-- `#dzikir/<id>` → prayer recitation / morning-evening dzikir reader ([src/pages/dzikir.ts](src/pages/dzikir.ts))
+**Path-based routing.** [src/router.ts](src/router.ts) uses vue-router with `createWebHistory(import.meta.env.BASE_URL)`. GitHub Pages has no SPA fallback, so `npm run build` copies `dist/index.html` to `dist/404.html` to serve deep links. Old hash URLs (`#deck/<id>`) are rewritten to their path equivalent at the top of `router.ts`, before the router reads the URL. Routes (page components in [src/pages/](src/pages/)):
+- `/` → deck navigation grid (`FlashcardIndex.vue`)
+- `/deck/:id` → flashcard viewer (`FlashcardPage.vue`)
+- `/deck/:id/quiz` → per-deck quiz (`QuizPage.vue`)
+- `/test/:slug?` → exam; `1-10` … `41-50` are per-range exams, and no slug means the 100-question final exam (`TestPage.vue`)
+- `/qs` → Surah Breakdown index (`BreakdownIndex.vue`)
+- `/qs/:id` → word-by-word verse reader (`QsBreakdownPage.vue`)
+- `/qs/:id/game/:ayah?` → word-ordering game for the passage or one ayah (`QsGamePage.vue`)
+- `/read` → **Yasin** tab. It renders the first reading surah inline (`ReadingTab.vue` → `ReadingPage.vue` with `embedded`), falling back to an empty-state grid when there is no reading data
+- `/read/:id` → fluent Quran reader (`ReadingPage.vue`)
+- `/dzikir` → Prayer and Dzikir index (`DzikirIndex.vue`)
+- `/dzikir/:id` → prayer recitation / morning-evening dzikir reader (`DzikirPage.vue`)
+- `/settings` → theme, kasra position, recently visited (`SettingsPage.vue`)
 
-The navigation page ([src/pages/navigation.ts](src/pages/navigation.ts)) has four tabs — **Flashcard** (deck grid, route ``), **Surah Breakdown** (route `#qs`), **Yasin** (route `#read`), and **Prayer and Dzikir** (route `#dzikir`). The active tab is driven by the hash, not internal state, so each reader's back button returns to the right tab.
+[src/App.vue](src/App.vue) is the shell: header with four tabs — **Flashcard** (`/`), **Breakdown** (`/qs`), **Yasin** (`/read`), **Prayer and Dzikir** (`/dzikir`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
+
+**PWA / offline.** [vite.config.ts](vite.config.ts) configures `vite-plugin-pwa`:
+- **Install:** the manifest lives in the config. Icons are PNGs in `public/` (`pwa-*`, `maskable-icon-512x512.png`, `apple-touch-icon-180x180.png`, `favicon-64x64.png`).
+- **Offline:** the generated Workbox service worker precaches *every* build asset, including all lazy deck/surah/dzikir data chunks and the fonts, so the whole app works offline after the first load. Its navigation fallback serves `index.html` for deep links.
+- **Updates:** `registerType: 'prompt'`. [src/components/ReloadPrompt.vue](src/components/ReloadPrompt.vue) shows a toast when a new version is waiting or the app is first ready offline, and checks for updates hourly. Never switch to auto-reload, because it would interrupt quizzes in progress.
+- **Dev:** the service worker only exists in `npm run build` output. Test offline behavior against a build, not `npm run dev`.
 
 **Surah Breakdown** is a separate learning module from decks (not a flashcard). It renders a contiguous range of Quran verses for *reading comprehension*: each verse shows full Arabic + Indonesian translation, and tapping any word reveals a gentle, beginner-level grammar card (`ism`/`fi'l`/`harf` type, root, contextual meaning, optional note, and for `fi'l` words the past/present/future/command conjugation forms). Data lives in [src/data/qs-breakdown/](src/data/qs-breakdown/) as `{surah}_{from}-{to}.json` files (one passage per file), normalized by [src/data/qs-breakdown/index.ts](src/data/qs-breakdown/index.ts); `qs-manifest.json` is generated, never hand-edited. Generate new passages with the `/qs-breakdown <surah> <from> <to>` command ([.claude/commands/qs-breakdown.md](.claude/commands/qs-breakdown.md)), then run `npm run generate-qs-manifest`.
 
-**Yasin** ([src/pages/reading.ts](src/pages/reading.ts)) is a separate, lighter reading module: a full surah rendered as Arabic only (no inline translation), where tapping any word reveals *just* its meaning (transliteration + Indonesian meaning) — no grammar, root, forms, or notes. Data lives in [src/data/reading/](src/data/reading/) as `{surah}_1-{ayahCount}.json` (one file per surah, full span), with minimal per-word `{ arabic, transliteration, meaning }`, normalized by [src/data/reading/index.ts](src/data/reading/index.ts); `reading-manifest.json` is generated, never hand-edited. Generate/extend a surah with the `/quran-reading <surah> [<from>] [<to>]` command ([.claude/commands/quran-reading.md](.claude/commands/quran-reading.md)) — batches merge into the one per-surah file — then run `npm run generate-reading-manifest`.
+**Yasin** ([src/pages/ReadingPage.vue](src/pages/ReadingPage.vue)) is a separate, lighter reading module: a full surah rendered as Arabic only (no inline translation), where tapping any word reveals *just* its meaning (transliteration + Indonesian meaning) — no grammar, root, forms, or notes. Data lives in [src/data/reading/](src/data/reading/) as `{surah}_1-{ayahCount}.json` (one file per surah, full span), with minimal per-word `{ arabic, transliteration, meaning }`, normalized by [src/data/reading/index.ts](src/data/reading/index.ts); `reading-manifest.json` is generated, never hand-edited. Generate/extend a surah with the `/quran-reading <surah> [<from>] [<to>]` command ([.claude/commands/quran-reading.md](.claude/commands/quran-reading.md)) — batches merge into the one per-surah file — then run `npm run generate-reading-manifest`.
 
-**Prayer and Dzikir** ([src/pages/dzikir.ts](src/pages/dzikir.ts)) is a parallel of the Yasin reader for prayer recitations (bacaan shalat) and morning/evening remembrances (dzikir pagi/petang). Same word-by-word tap-to-reveal interaction (reusing the `qs-*` classes), but each item is a repeated remembrance rather than a numbered ayat: the per-item badge shows the recitation count (e.g. `3×`) instead of an ayah number, with an optional item `title` and `source`. Morning/evening content is sourced from **Hisnul Muslim**; prayer recitations use the wording common in Indonesia. Prayer items whose action or recitation is an essential element of prayer (rukun, **Shafi'i**) carry `rukun: { part: 'action' | 'recitation' | 'both', note }`, rendered as a tappable tag. Data lives in [src/data/dzikir/](src/data/dzikir/) as numeric-prefixed files (`1.json` = morning, `2.json` = evening, `3.json` = prayer), each `{ meta: { id, time: 'prayer' | 'morning' | 'evening', title, description }, items: [{ title?, repeat, hadith?: { reference, arabic?, content }, rukun?, arabic, words: [{ arabic, transliteration, meaning }] }] }`, normalized by [src/data/dzikir/index.ts](src/data/dzikir/index.ts). The item `arabic` must split on spaces into exactly the `words[]` tokens in order. Generate/extend a set with the `/dzikir <prayer|morning|evening> [<from>] [<to>]` command ([.claude/commands/dzikir.md](.claude/commands/dzikir.md)), then run `npm run generate-dzikir-manifest`; `dzikir-manifest.json` is generated, never hand-edited.
+**Prayer and Dzikir** ([src/pages/DzikirPage.vue](src/pages/DzikirPage.vue)) is a parallel of the Yasin reader for prayer recitations (bacaan shalat) and morning/evening remembrances (dzikir pagi/petang). Same word-by-word tap-to-reveal interaction (reusing the `qs-*` classes), but each item is a repeated remembrance rather than a numbered ayat: the per-item badge shows the recitation count (e.g. `3×`) instead of an ayah number, with an optional item `title` and `source`. Morning/evening content is sourced from **Hisnul Muslim**; prayer recitations use the wording common in Indonesia. Prayer items whose action or recitation is an essential element of prayer (rukun, **Shafi'i**) carry `rukun: { part: 'action' | 'recitation' | 'both', note }`, rendered as a tappable tag. Data lives in [src/data/dzikir/](src/data/dzikir/) as numeric-prefixed files (`1.json` = morning, `2.json` = evening, `3.json` = prayer), each `{ meta: { id, time: 'prayer' | 'morning' | 'evening', title, description }, items: [{ title?, repeat, hadith?: { reference, arabic?, content }, rukun?, arabic, words: [{ arabic, transliteration, meaning }] }] }`, normalized by [src/data/dzikir/index.ts](src/data/dzikir/index.ts). The item `arabic` must split on spaces into exactly the `words[]` tokens in order. Generate/extend a set with the `/dzikir <prayer|morning|evening> [<from>] [<to>]` command ([.claude/commands/dzikir.md](.claude/commands/dzikir.md)), then run `npm run generate-dzikir-manifest`; `dzikir-manifest.json` is generated, never hand-edited.
 
-Each page module exports a `render*(container, ...)` function that owns its own `innerHTML` and event wiring. There is no shared component layer or virtual DOM — pages re-render by reassigning `innerHTML`. Scores persist in `localStorage`.
+Shared code:
+- [src/components/](src/components/):
+  - `ArabicLine` — waqaf-aware tappable word line, used by all three readers
+  - `WordSheet` — bottom sheet with Escape/backdrop close
+  - `WordDetail` — word meaning card; shows grammar fields when present
+  - `QuizRunner` — question/answer/result flow shared by the quiz and exam
+  - `ConfirmDialog`, `ErrorPage`, `IndexCard`
+- [src/lib/](src/lib/):
+  - `progress.ts` — every localStorage score/visit key, plus resume/next-up logic
+  - `quiz.ts` — question building
+  - `qs-rounds.ts` — game rounds and `isVersePlayable`
+  - `arabic.ts` — tokenizing a line into words, waqaf marks and ayah separators
+  - `random.ts`
+- [src/theme.ts](src/theme.ts) and [src/font.ts](src/font.ts) stay framework-agnostic modules that apply settings to `document.documentElement`.
+
+`src/style.css` is a single global stylesheet. Components use its class names and have no scoped styles. Scores persist in `localStorage`. Vue can't observe localStorage, so derived views recompute from it on mount, or after an explicit version bump (see the reset in `FlashcardIndex.vue`). JSON content is rendered with `{{ }}` interpolation. None of it contains HTML.
 
 **Data layer is the core complexity.** Decks live as numbered JSON files in [src/data/flashcards/](src/data/flashcards/) and come in **two distinct on-disk formats** (see [src/types.ts](src/types.ts)):
 - **Grouped format** (`{ groups: [...] }`, e.g. `0.json`) — one file holds multiple decks; each group is its own deck. Cards are minimal (no root/forms/relatedWords).

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vue-tsc --noEmit && vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "generate-manifest": "node scripts/generate-manifest.js",
     "generate-qs-manifest": "node scripts/generate-qs-manifest.js",
@@ -13,7 +13,14 @@
     "generate-dzikir-manifest": "node scripts/generate-dzikir-manifest.js"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
     "typescript": "~6.0.2",
-    "vite": "^8.0.12"
+    "vite": "^8.0.12",
+    "vite-plugin-pwa": "^2.0.0",
+    "vue-tsc": "^3.3.13"
+  },
+  "dependencies": {
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0"
   }
 }

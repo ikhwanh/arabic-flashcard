@@ -1827,3 +1827,35 @@ body {
 .qs-game-result-ok { color: #16a34a; font-weight: 700; }
 .qs-game-result-bad { color: #dc2626; font-weight: 600; margin-bottom: 0.35rem; }
 .qs-game-correct { font-size: 1.6rem; color: var(--text); line-height: 1.6; }
+
+/* ── PWA update / offline toast ─────────────────────────────────────────── */
+.pwa-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  z-index: 60;
+  width: min(360px, calc(100vw - 2rem));
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+}
+.pwa-toast-message { flex: 1; margin: 0; font-size: 0.9rem; }
+.pwa-toast-actions { display: flex; gap: 0.4rem; }
+.pwa-toast-reload,
+.pwa-toast-close {
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pwa-toast-reload { background: var(--accent); color: #fff; border: none; }
+.pwa-toast-reload:hover { background: var(--accent-hover); }
+.pwa-toast-close { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
