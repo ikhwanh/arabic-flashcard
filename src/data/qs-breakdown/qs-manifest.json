@@ -1,15 +1,5 @@
 [
   {
-    "id": "4_36-40",
-    "surah": 4,
-    "surahName": "An-Nisa",
-    "from": 36,
-    "to": 40,
-    "title": "An-Nisa 36–40",
-    "description": "Perintah menyembah Allah tanpa menyekutukan-Nya dan berbuat baik kepada orang tua, kerabat, tetangga, dan sesama; lalu celaan bagi orang yang sombong, kikir, dan riya, serta janji balasan bagi yang beriman dan berinfak — sebab Allah tidak menzalimi sedikit pun dan melipatgandakan kebaikan.",
-    "verseCount": 5
-  },
-  {
     "id": "6_76-79",
     "surah": 6,
     "surahName": "Al-An'aam",
@@ -38,5 +28,15 @@
     "title": "Al-Ahzab 72–73",
     "description": "Dua ayat penutup Surah Al-Ahzab tentang amanat yang ditawarkan kepada langit, bumi, dan gunung — semuanya enggan memikulnya, lalu manusia yang mengembannya; dan mengapa amanat itu diberikan: agar tampak jelas siapa yang khianat dan siapa yang setia.",
     "verseCount": 2
+  },
+  {
+    "id": "39_27-29",
+    "surah": 39,
+    "surahName": "Az-Zumar",
+    "from": 27,
+    "to": 29,
+    "title": "Az-Zumar 27–29",
+    "description": "Allah membuat berbagai perumpamaan dalam Al-Qur'an yang lurus dan berbahasa Arab, di antaranya perumpamaan budak yang dimiliki banyak tuan yang berselisih dibanding budak yang hanya dimiliki satu tuan.",
+    "verseCount": 3
   }
 ]
