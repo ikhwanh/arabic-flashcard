@@ -1,0 +1,1 @@
+import{O as e,S as t,f as n,h as r,j as i,n as a,v as o}from"./index-DGCwneAK.js";var s={class:`error-page`},c=o({__name:`ErrorPage`,props:{message:{},backTo:{},backLabel:{default:`← Back`}},setup(o){let c=a();return(a,l)=>(t(),r(`div`,s,[n(`p`,null,i(o.message),1),n(`button`,{class:`btn-back`,onClick:l[0]||=t=>e(c).push(o.backTo)},i(o.backLabel),1)]))}});export{c as t};
