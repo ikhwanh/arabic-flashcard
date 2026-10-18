@@ -1,22 +1,16 @@
 /*
- * Self-hosted Scheherazade New 4.500 (SIL, OFL — see assets/fonts/OFL.txt).
- * The Google Fonts build ships an older cv62 ("Shadda+kasra placement") that
- * only lowers the kasra in final/isolated forms; 4.500 lowers it everywhere,
- * which the Kasra Position setting relies on.
+ * LPMQ Isep Misbah, the Indonesian standard mushaf font from Lajnah Pentashihan
+ * Mushaf Al-Qur'an (Kemenag), as used on quran.kemenag.go.id. The upstream font
+ * has no glyph for U+0671 (alef wasla), which the Uthmani text uses throughout,
+ * so this copy maps U+0671 to the plain alef glyph, matching how the Indonesian
+ * mushaf writes it. Re-apply that cmap patch if the font is ever updated.
  */
 @font-face {
-  font-family: 'Scheherazade New';
+  font-family: 'LPMQ Isep Misbah';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('./assets/fonts/ScheherazadeNew-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Scheherazade New';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('./assets/fonts/ScheherazadeNew-Bold.woff2') format('woff2');
+  src: url('./assets/fonts/LPMQIsepMisbah.woff2') format('woff2');
 }
 
 :root {
@@ -29,9 +23,7 @@
   --accent-hover: #1d4ed8;
   --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
   --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.15), 0 4px 10px -2px rgba(0,0,0,0.08);
-  --font-arabic: 'Scheherazade New', serif;
-  /* Set by src/font.ts; cv62 lowers the kasra under a shadda in SIL fonts */
-  --font-feature: normal;
+  --font-arabic: 'LPMQ Isep Misbah', serif;
 
   color-scheme: light;
 }
@@ -106,7 +98,6 @@ body {
 .qs-form-arabic,
 .dzikir-hadith-arabic {
   font-family: var(--font-arabic);
-  font-feature-settings: var(--font-feature, normal);
 }
 
 #app {
@@ -314,12 +305,6 @@ body {
 .settings-option-icon {
   font-size: 1.5rem;
   line-height: 1;
-}
-
-.settings-option-sample {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  direction: rtl;
 }
 
 .settings-option-label {

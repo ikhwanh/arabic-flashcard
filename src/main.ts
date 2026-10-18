@@ -1,5 +1,4 @@
 import './style.css'
-import './font'
 import { createApp } from 'vue'
 import { initTheme } from './theme'
 import { router } from './router'

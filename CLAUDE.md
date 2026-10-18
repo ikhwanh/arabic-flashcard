@@ -39,7 +39,7 @@ There is no test runner or linter; `vue-tsc` (run as part of `build`) is the onl
 - `/read/:id` → fluent Quran reader (`ReadingPage.vue`)
 - `/dzikir` → Prayer and Dzikir index (`DzikirIndex.vue`)
 - `/dzikir/:id` → prayer recitation / morning-evening dzikir reader (`DzikirPage.vue`)
-- `/settings` → theme, kasra position, recently visited (`SettingsPage.vue`)
+- `/settings` → theme, recently visited (`SettingsPage.vue`)
 
 [src/App.vue](src/App.vue) is the shell: header with four tabs — **Flashcard** (`/`), **Breakdown** (`/qs`), **Yasin** (`/read`), **Prayer and Dzikir** (`/dzikir`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
 
@@ -68,7 +68,8 @@ Shared code:
   - `qs-rounds.ts` — game rounds and `isVersePlayable`
   - `arabic.ts` — tokenizing a line into words, waqaf marks and ayah separators
   - `random.ts`
-- [src/theme.ts](src/theme.ts) and [src/font.ts](src/font.ts) stay framework-agnostic modules that apply settings to `document.documentElement`.
+- [src/theme.ts](src/theme.ts) stays a framework-agnostic module that applies the theme to `document.documentElement`.
+- Arabic text uses one self-hosted font, LPMQ Isep Misbah (the Kemenag mushaf font), declared in `src/style.css`. The bundled copy is patched to map U+0671 (alef wasla) to the plain alef glyph, because upstream has no glyph for it.
 
 `src/style.css` is a single global stylesheet. Components use its class names and have no scoped styles. Scores persist in `localStorage`. Vue can't observe localStorage, so derived views recompute from it on mount, or after an explicit version bump (see the reset in `FlashcardIndex.vue`). JSON content is rendered with `{{ }}` interpolation. None of it contains HTML.
 

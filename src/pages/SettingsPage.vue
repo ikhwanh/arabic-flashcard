@@ -3,29 +3,15 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { deckMetas } from '../data/flashcards'
 import { THEMES, THEME_META, getTheme, setTheme, type Theme } from '../theme'
-import { getKasra, setKasra, type KasraPosition } from '../font'
 import { deckLabel, getLastVisited } from '../lib/progress'
-
-// Has a shadda + kasra (رَبِّ) so the two positions are visibly different
-const KASRA_SAMPLE = 'رَبِّ'
-const KASRA_OPTIONS: { id: KasraPosition; label: string; feature: string }[] = [
-  { id: 'low', label: 'Low (under letter)', feature: '"cv62" 1' },
-  { id: 'high', label: 'High (under shadda)', feature: 'normal' },
-]
 
 const router = useRouter()
 
 const theme = ref(getTheme())
-const kasra = ref(getKasra())
 
 function chooseTheme(t: Theme) {
   setTheme(t)
   theme.value = t
-}
-
-function chooseKasra(k: KasraPosition) {
-  setKasra(k)
-  kasra.value = k
 }
 
 function relativeTime(ts: number): string {
@@ -63,22 +49,6 @@ const visited = deckMetas
         >
           <span class="settings-option-icon">{{ THEME_META[t].icon }}</span>
           <span class="settings-option-label">{{ THEME_META[t].label }}</span>
-        </button>
-      </div>
-    </section>
-
-    <section class="settings-section">
-      <h3 class="settings-heading">Kasra Position</h3>
-      <div class="settings-options">
-        <button
-          v-for="k in KASRA_OPTIONS"
-          :key="k.id"
-          class="settings-option kasra-option"
-          :class="{ active: kasra === k.id }"
-          @click="chooseKasra(k.id)"
-        >
-          <span class="settings-option-sample" :style="{ fontFamily: `'Scheherazade New', serif`, fontFeatureSettings: k.feature }">{{ KASRA_SAMPLE }}</span>
-          <span class="settings-option-label">{{ k.label }}</span>
         </button>
       </div>
     </section>
