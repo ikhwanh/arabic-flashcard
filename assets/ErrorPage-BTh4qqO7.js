@@ -1,0 +1,1 @@
+import{A as e,O as t,S as n,f as r,h as i,n as a,v as o}from"./index-AP9uqVpv.js";var s={class:`error-page`},c=o({__name:`ErrorPage`,props:{message:{},backTo:{},backLabel:{default:`← Back`}},setup(o){let c=a();return(a,l)=>(n(),i(`div`,s,[r(`p`,null,e(o.message),1),r(`button`,{class:`btn-back`,onClick:l[0]||=e=>t(c).push(o.backTo)},e(o.backLabel),1)]))}});export{c as t};
