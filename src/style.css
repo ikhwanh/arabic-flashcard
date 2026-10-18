@@ -782,7 +782,6 @@ body {
 
 .fc-arabic {
   font-size: 3rem;
-  font-weight: 700;
   direction: rtl;
   line-height: 1.2;
 }
@@ -1392,7 +1391,7 @@ body {
   gap: 0.6rem;
   flex-wrap: wrap;
 }
-.qs-detail-arabic { font-size: 1.5rem; font-weight: 700; direction: rtl; }
+.qs-detail-arabic { font-size: 1.5rem; direction: rtl; }
 .qs-detail-translit { color: var(--text-muted); font-style: italic; }
 .qs-detail-meaning { font-size: 1.05rem; font-weight: 600; color: var(--text); }
 .qs-detail-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
@@ -1430,7 +1429,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
-.qs-form-arabic { font-size: 1.15rem; font-weight: 600; }
+.qs-form-arabic { font-size: 1.15rem; }
 
 /* ── Dzikir item header ──────────────────────────────────────────────────── */
 .dzikir-item { padding-left: 1.25rem; cursor: pointer; user-select: none; }
