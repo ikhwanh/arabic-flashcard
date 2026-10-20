@@ -3,7 +3,11 @@
  * Mushaf Al-Qur'an (Kemenag), as used on quran.kemenag.go.id. The upstream font
  * has no glyph for U+0671 (alef wasla), which the Uthmani text uses throughout,
  * so this copy maps U+0671 to the plain alef glyph, matching how the Indonesian
- * mushaf writes it. Re-apply that cmap patch if the font is ever updated.
+ * mushaf writes it. Its `allahumma` ligature also had the vowel marks drawn into
+ * the glyph and no mark-to-ligature anchors, so the text's own marks were drawn
+ * twice, piled up beside the meem; this copy strips those marks from the glyph
+ * and adds anchors to GPOS lookup 32. Re-apply both patches if the font is ever
+ * updated.
  */
 @font-face {
   font-family: 'LPMQ Isep Misbah';
