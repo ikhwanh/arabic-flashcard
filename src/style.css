@@ -89,10 +89,6 @@ body {
 }
 
 /* Arabic script elements use a dedicated Naskh webfont */
-.deck-preview,
-.fc-arabic,
-.fc-related-arabic,
-.fc-quran-arabic,
 .quiz-word,
 .quiz-ayat-arabic,
 .qs-arabic,
@@ -322,41 +318,26 @@ body {
   color: var(--accent);
 }
 
-.settings-history {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.settings-history-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-  padding: 0.85rem 1rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  cursor: pointer;
-  color: var(--text);
-  text-align: left;
-  transition: border-color 0.15s, background 0.15s;
-}
-
-.settings-history-item:hover {
-  border-color: var(--accent);
-}
-
-.settings-history-title {
-  font-size: 0.95rem;
+.btn-reset-all {
+  background: none;
+  border: 1px solid #dc2626;
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  color: #dc2626;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
 }
 
-.settings-history-time {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  white-space: nowrap;
+.btn-reset-all:hover:not(:disabled) {
+  background: #dc2626;
+  color: #fff;
+}
+
+.btn-reset-all:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
 /* ── Main ── */
@@ -388,132 +369,6 @@ body {
 .nav-subtitle {
   color: var(--text-muted);
   font-size: 1rem;
-}
-
-.nav-menu {
-  position: relative;
-}
-
-.nav-menu-trigger {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  line-height: 1;
-  cursor: pointer;
-  color: var(--text-muted);
-  transition: background 0.15s, border-color 0.15s, color 0.15s;
-}
-
-.nav-menu-trigger:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.nav-menu-dropdown {
-  position: absolute;
-  top: calc(100% + 0.4rem);
-  right: 0;
-  z-index: 20;
-  min-width: 11rem;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  padding: 0.35rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-menu-dropdown[hidden] {
-  display: none;
-}
-
-.nav-menu-item {
-  background: none;
-  border: none;
-  border-radius: 6px;
-  padding: 0.55rem 0.75rem;
-  font-size: 0.85rem;
-  text-align: left;
-  cursor: pointer;
-  color: var(--text);
-  transition: background 0.15s, color 0.15s;
-}
-
-.nav-menu-item:hover:not(:disabled) {
-  background: var(--accent);
-  color: #fff;
-}
-
-.nav-menu-item.btn-reset-all:hover:not(:disabled) {
-  background: #dc2626;
-  color: #fff;
-}
-
-.nav-menu-item:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-.nav-menu-item-sub {
-  display: block;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  margin-top: 0.1rem;
-}
-
-.nav-menu-item:hover:not(:disabled) .nav-menu-item-sub {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.nav-menu-divider {
-  height: 1px;
-  background: var(--border);
-  margin: 0.35rem 0.25rem;
-}
-
-.nav-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.nav-filters {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.nav-filter-chip {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.3rem 0.85rem;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  color: var(--text-muted);
-  transition: background 0.15s, border-color 0.15s, color 0.15s;
-}
-
-.nav-filter-chip:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.nav-filter-chip.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
 }
 
 .confirm-overlay {
@@ -594,42 +449,6 @@ body {
   padding: 2rem 0;
 }
 
-.deck-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.deck-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
-}
-
-.deck-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-  border-color: var(--accent);
-}
-
-.deck-card-study {
-  background: none;
-  border: none;
-  padding: 1.25rem 1.25rem 1rem;
-  cursor: pointer;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  color: var(--text);
-  flex: 1;
-  position: relative;
-}
-
 .deck-score-chip {
   position: absolute;
   top: 0.75rem;
@@ -643,51 +462,7 @@ body {
   pointer-events: none;
 }
 
-.deck-card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.6rem 1.25rem;
-  border-top: 1px solid var(--border);
-  background: var(--bg);
-}
-
-.deck-emoji {
-  font-size: 2rem;
-  line-height: 1;
-  margin-bottom: 0.25rem;
-}
-
-.deck-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.deck-preview {
-  font-size: 1rem;
-  color: var(--text-muted);
-  line-height: 1.4;
-  direction: rtl;
-}
-
-.deck-count {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-/* ── Flashcard page ── */
-.fc-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem 1rem;
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
+/* ── Page header + back button (quiz, loading) ── */
 .fc-header {
   display: flex;
   align-items: center;
@@ -720,147 +495,6 @@ body {
   background: var(--border);
 }
 
-/* ── Card flip ── */
-.fc-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-}
-
-.fc-card {
-  width: 100%;
-  max-width: 520px;
-  min-height: 260px;
-  position: relative;
-  cursor: pointer;
-  perspective: 1200px;
-  outline: none;
-  /* height driven by the taller face */
-  display: grid;
-}
-
-.fc-card:focus-visible .fc-face {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.fc-face {
-  grid-area: 1 / 1;
-  border-radius: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  backface-visibility: hidden;
-  transition: transform 0.45s ease;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.fc-back {
-  justify-content: flex-start;
-  overflow-y: auto;
-}
-
-.fc-front {
-  transform: rotateY(0deg);
-}
-
-.fc-back {
-  transform: rotateY(180deg);
-}
-
-.fc-card.flipped .fc-front {
-  transform: rotateY(-180deg);
-}
-
-.fc-card.flipped .fc-back {
-  transform: rotateY(0deg);
-}
-
-.fc-arabic {
-  font-size: 3rem;
-  direction: rtl;
-  line-height: 1.2;
-}
-
-.fc-transliteration {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  font-style: italic;
-}
-
-.fc-english {
-  font-size: 1.75rem;
-  font-weight: 600;
-}
-
-.fc-hint {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* ── Controls ── */
-.fc-controls {
-  display: flex;
-  gap: 1rem;
-}
-
-.btn-nav {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 0.6rem 1.4rem;
-  cursor: pointer;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.btn-nav:hover:not(:disabled) {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.btn-nav:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-/* ── Dots ── */
-.fc-dots {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 480px;
-}
-
-.fc-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--border);
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
-}
-
-.fc-dot.active {
-  background: var(--accent);
-  transform: scale(1.3);
-}
-
-.fc-dot:hover:not(.active) {
-  background: var(--text-muted);
-}
-
 /* ── Error page ── */
 .error-page {
   display: flex;
@@ -869,122 +503,6 @@ body {
   gap: 1rem;
   padding: 3rem;
   color: var(--text-muted);
-}
-
-/* ── Vocab extras (back face) ── */
-.fc-badge {
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
-  border-radius: 4px;
-  padding: 0.15rem 0.5rem;
-}
-
-.fc-root {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-}
-
-.fc-forms {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  justify-content: center;
-}
-
-.fc-form {
-  font-size: 0.78rem;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 0.2rem 0.5rem;
-}
-
-.fc-form em {
-  font-style: normal;
-  color: var(--text-muted);
-  margin-right: 0.25rem;
-}
-
-.fc-related {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  width: 100%;
-  border-top: 1px solid var(--border);
-  padding-top: 0.6rem;
-  margin-top: 0.2rem;
-}
-
-.fc-related-label {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-}
-
-.fc-related-word {
-  font-size: 0.82rem;
-  color: var(--text);
-}
-
-.fc-related-arabic {
-  font-size: 1rem;
-  direction: rtl;
-}
-
-.fc-quran {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-  width: 100%;
-  background: var(--bg);
-  border-radius: 8px;
-  padding: 0.6rem 0.75rem;
-  margin-top: 0.2rem;
-}
-
-.fc-quran-arabic {
-  font-size: 1rem;
-  direction: rtl;
-  line-height: 1.6;
-}
-
-.fc-quran-translation {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  font-style: italic;
-}
-
-.fc-quran-ref {
-  font-size: 0.7rem;
-  color: var(--accent);
-  font-weight: 500;
-}
-
-/* ── Navigation: deck card footer + quiz button + score ── */
-.btn-quiz {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 0.3rem 0.75rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-  white-space: nowrap;
-}
-
-.btn-quiz:hover {
-  background: var(--accent-hover);
 }
 
 /* ── Quiz page ── */
@@ -1588,41 +1106,6 @@ body {
   transition: color 0.15s;
 }
 .github-link:hover { color: var(--text); }
-
-/* ── Continue strip (curriculum progress) ───────────────────────────────────── */
-.nav-continue {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
-}
-.nav-continue-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding: 0.9rem 1.1rem;
-  border-radius: 12px;
-  border: 1px solid var(--accent);
-  background: var(--surface);
-  cursor: pointer;
-  text-align: left;
-  color: var(--text);
-  transition: box-shadow 0.15s, transform 0.15s;
-}
-.nav-continue-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
-.nav-continue-card.resume {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-.nav-continue-kicker {
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  opacity: 0.85;
-}
-.nav-continue-title { font-size: 1.05rem; font-weight: 600; }
 
 /* ── Surah Breakdown passage card (wrapper + play) ──────────────────────────── */
 .qs-index-card { position: relative; padding: 0; }

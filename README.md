@@ -1,13 +1,15 @@
 # Arabic Flashcard
 
-A Quranic Arabic vocabulary flashcard app built with TypeScript and Vite, deployed to GitHub Pages.
+A Quranic Arabic learning app built with Vue 3, TypeScript and Vite, deployed to GitHub Pages.
 
 **Live:** https://ikhwanh.github.io/arabic-flashcard/
 
 ## Features
 
-- Flashcard decks for Quranic vocabulary (nouns, verbs, particles, prepositions, etc.)
-- Each card includes Arabic text, transliteration, Indonesian translation, word root, grammatical forms, related words, and a Quran verse example
+- Surah Breakdown: verse-by-verse reading with a tap-to-reveal grammar card for every word (type, root, verb forms), plus a meaning quiz and a word-ordering game per passage
+- Yasin: a fluent reader for Surah Yasin, tap any word for its meaning
+- Prayer and Dzikir: prayer recitations and morning/evening remembrances, word by word
+- Works offline as an installable PWA
 - Dark/light theme toggle
 
 ## Getting Started
@@ -17,22 +19,15 @@ npm install
 npm run dev
 ```
 
-## Adding Vocabulary
+## Adding Content
 
-Use the `/add-word` slash command in Claude Code to add a new word from a specific Quran verse:
+Content is generated with Claude Code slash commands, each followed by its manifest script:
 
-```
-/add-word <surah>:<ayah> <arabic_word>
-```
-
-Example:
-
-```
-/add-word 12:23 رَبّ
-```
-
-This fetches the verse from the Quran Cloud API, generates a complete vocab card, and appends it to the appropriate file in [src/data/flashcards/](src/data/flashcards/).
-
+| Command | Then run |
+| --- | --- |
+| `/qs-breakdown <surah> <from> <to>` | `npm run generate-qs-manifest` |
+| `/quran-reading <surah> [<from>] [<to>]` | `npm run generate-reading-manifest` |
+| `/dzikir <prayer\|morning\|evening> [<from>] [<to>]` | `npm run generate-dzikir-manifest` |
 
 ## Deployment
 

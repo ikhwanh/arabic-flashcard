@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-export type NavTab = 'flashcard' | 'breakdown' | 'reading' | 'dzikir'
+export type NavTab = 'breakdown' | 'reading' | 'dzikir'
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -20,10 +20,7 @@ export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior: () => ({ top: 0 }),
   routes: [
-    { path: '/', component: () => import('./pages/FlashcardIndex.vue'), meta: { tab: 'flashcard', header: true } },
-    { path: '/deck/:id', component: () => import('./pages/FlashcardPage.vue'), props: true },
-    { path: '/deck/:id/quiz', component: () => import('./pages/QuizPage.vue'), props: true },
-    { path: '/test/:slug?', component: () => import('./pages/TestPage.vue'), props: true },
+    { path: '/', redirect: '/qs' },
     { path: '/qs', component: () => import('./pages/BreakdownIndex.vue'), meta: { tab: 'breakdown', header: true } },
     { path: '/qs/:id', component: () => import('./pages/QsBreakdownPage.vue'), props: true },
     { path: '/qs/:id/quiz', component: () => import('./pages/QsQuizPage.vue'), props: true },

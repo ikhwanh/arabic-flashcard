@@ -4,14 +4,14 @@ import { useRouter } from 'vue-router'
 import type { Question } from '../lib/quiz'
 import WordDetail from './WordDetail.vue'
 
-const props = withDefaults(defineProps<{
+const props = defineProps<{
   title: string
   questions: Question[]
   resultsLabel: string
   retryLabel: string
   praise: (score: number, total: number) => string
-  backTo?: string
-}>(), { backTo: '/' })
+  backTo: string
+}>()
 
 const emit = defineEmits<{ finish: [score: number, total: number]; retry: [] }>()
 

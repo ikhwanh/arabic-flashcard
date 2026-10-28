@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-A Quranic Arabic vocabulary flashcard SPA, built with Vue 3 (`<script setup lang="ts">` SFCs) + vue-router + Vite. Translations are in Indonesian. Deployed to GitHub Pages — pushes to `main` auto-build and deploy via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+A Quranic Arabic learning SPA (word-by-word Quran and dzikir readers), built with Vue 3 (`<script setup lang="ts">` SFCs) + vue-router + Vite. Translations are in Indonesian. Deployed to GitHub Pages — pushes to `main` auto-build and deploy via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
 
 ## Language conventions
 
-- **Generated content** (card translations, vocabulary meanings, verse translations, any user-facing data) must be in **Indonesian**.
+- **Generated content** (word meanings, verse translations, any user-facing data) must be in **Indonesian**.
 - **UI elements** (labels, buttons, headings, navigation, prompts in the interface) must be in **English**.
 
 ## Commands
@@ -17,7 +17,6 @@ A Quranic Arabic vocabulary flashcard SPA, built with Vue 3 (`<script setup lang
 npm run dev                      # Vite dev server
 npm run build                    # vue-tsc type-check + vite build + copy index.html → 404.html (base path /arabic-flashcard/)
 npm run preview                  # serve the production build
-npm run generate-manifest        # rebuild src/data/flashcards/manifest.json from all deck JSON files
 npm run generate-qs-manifest     # rebuild src/data/qs-breakdown/qs-manifest.json from all breakdown files
 npm run generate-reading-manifest # rebuild src/data/reading/reading-manifest.json from all reading files
 npm run generate-dzikir-manifest # rebuild src/data/dzikir/dzikir-manifest.json from all dzikir files
@@ -27,29 +26,26 @@ There is no test runner or linter; `vue-tsc` (run as part of `build`) is the onl
 
 ## Architecture
 
-**Path-based routing.** [src/router.ts](src/router.ts) uses vue-router with `createWebHistory(import.meta.env.BASE_URL)`. GitHub Pages has no SPA fallback, so `npm run build` copies `dist/index.html` to `dist/404.html` to serve deep links. Old hash URLs (`#deck/<id>`) are rewritten to their path equivalent at the top of `router.ts`, before the router reads the URL. Routes (page components in [src/pages/](src/pages/)):
-- `/` → deck navigation grid (`FlashcardIndex.vue`)
-- `/deck/:id` → flashcard viewer (`FlashcardPage.vue`)
-- `/deck/:id/quiz` → per-deck quiz (`QuizPage.vue`)
-- `/test/:slug?` → exam; `1-10` … `41-50` are per-range exams, and no slug means the 100-question final exam (`TestPage.vue`)
+**Path-based routing.** [src/router.ts](src/router.ts) uses vue-router with `createWebHistory(import.meta.env.BASE_URL)`. GitHub Pages has no SPA fallback, so `npm run build` copies `dist/index.html` to `dist/404.html` to serve deep links. Old hash URLs (`#qs/<id>`) are rewritten to their path equivalent at the top of `router.ts`, before the router reads the URL. Unknown paths (including the removed flashcard `/deck/…` and `/test/…` routes) redirect to `/`, which redirects to `/qs`. Routes (page components in [src/pages/](src/pages/)):
 - `/qs` → Surah Breakdown index (`BreakdownIndex.vue`)
 - `/qs/:id` → word-by-word verse reader (`QsBreakdownPage.vue`)
+- `/qs/:id/quiz` → per-passage meaning quiz; each answer reveals the word's detail card (`QsQuizPage.vue`)
 - `/qs/:id/game/:ayah?` → word-ordering game for the passage or one ayah (`QsGamePage.vue`)
 - `/read` → **Yasin** tab. It renders the first reading surah inline (`ReadingTab.vue` → `ReadingPage.vue` with `embedded`), falling back to an empty-state grid when there is no reading data
 - `/read/:id` → fluent Quran reader (`ReadingPage.vue`)
 - `/dzikir` → Prayer and Dzikir index (`DzikirIndex.vue`)
 - `/dzikir/:id` → prayer recitation / morning-evening dzikir reader (`DzikirPage.vue`)
-- `/settings` → theme, recently visited (`SettingsPage.vue`)
+- `/settings` → theme, reset all progress (`SettingsPage.vue`)
 
-[src/App.vue](src/App.vue) is the shell: header with four tabs — **Flashcard** (`/`), **Breakdown** (`/qs`), **Yasin** (`/read`), **Prayer and Dzikir** (`/dzikir`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
+[src/App.vue](src/App.vue) is the shell: header with three tabs — **Breakdown** (`/qs`), **Yasin** (`/read`), **Prayer and Dzikir** (`/dzikir`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
 
 **PWA / offline.** [vite.config.ts](vite.config.ts) configures `vite-plugin-pwa`:
 - **Install:** the manifest lives in the config. Icons are PNGs in `public/` (`pwa-*`, `maskable-icon-512x512.png`, `apple-touch-icon-180x180.png`, `favicon-64x64.png`).
-- **Offline:** the generated Workbox service worker precaches *every* build asset, including all lazy deck/surah/dzikir data chunks and the fonts, so the whole app works offline after the first load. Its navigation fallback serves `index.html` for deep links.
+- **Offline:** the generated Workbox service worker precaches *every* build asset, including all lazy surah/dzikir data chunks and the fonts, so the whole app works offline after the first load. Its navigation fallback serves `index.html` for deep links.
 - **Updates:** `registerType: 'prompt'`. [src/components/ReloadPrompt.vue](src/components/ReloadPrompt.vue) shows a toast when a new version is waiting or the app is first ready offline, and checks for updates hourly. Never switch to auto-reload, because it would interrupt quizzes in progress.
 - **Dev:** the service worker only exists in `npm run build` output. Test offline behavior against a build, not `npm run dev`.
 
-**Surah Breakdown** is a separate learning module from decks (not a flashcard). It renders a contiguous range of Quran verses for *reading comprehension*: each verse shows full Arabic + Indonesian translation, and tapping any word reveals a gentle, beginner-level grammar card (`ism`/`fi'l`/`harf` type, root, contextual meaning, optional note, and for `fi'l` words the past/present/future/command conjugation forms). Data lives in [src/data/qs-breakdown/](src/data/qs-breakdown/) as `{surah}_{from}-{to}.json` files (one passage per file), normalized by [src/data/qs-breakdown/index.ts](src/data/qs-breakdown/index.ts); `qs-manifest.json` is generated, never hand-edited. Generate new passages with the `/qs-breakdown <surah> <from> <to>` command ([.claude/commands/qs-breakdown.md](.claude/commands/qs-breakdown.md)), then run `npm run generate-qs-manifest`.
+**Surah Breakdown** is the main learning module. It renders a contiguous range of Quran verses for *reading comprehension*: each verse shows full Arabic + Indonesian translation, and tapping any word reveals a gentle, beginner-level grammar card (`ism`/`fi'l`/`harf` type, root, contextual meaning, optional note, and for `fi'l` words the past/present/future/command conjugation forms). Data lives in [src/data/qs-breakdown/](src/data/qs-breakdown/) as `{surah}_{from}-{to}.json` files (one passage per file), normalized by [src/data/qs-breakdown/index.ts](src/data/qs-breakdown/index.ts); `qs-manifest.json` is generated, never hand-edited. Generate new passages with the `/qs-breakdown <surah> <from> <to>` command ([.claude/commands/qs-breakdown.md](.claude/commands/qs-breakdown.md)), then run `npm run generate-qs-manifest`.
 
 **Yasin** ([src/pages/ReadingPage.vue](src/pages/ReadingPage.vue)) is a separate, lighter reading module: a full surah rendered as Arabic only (no inline translation), where tapping any word reveals *just* its meaning (transliteration + Indonesian meaning) — no grammar, root, forms, or notes. Data lives in [src/data/reading/](src/data/reading/) as `{surah}_1-{ayahCount}.json` (one file per surah, full span), with minimal per-word `{ arabic, transliteration, meaning }`, normalized by [src/data/reading/index.ts](src/data/reading/index.ts); `reading-manifest.json` is generated, never hand-edited. Generate/extend a surah with the `/quran-reading <surah> [<from>] [<to>]` command ([.claude/commands/quran-reading.md](.claude/commands/quran-reading.md)) — batches merge into the one per-surah file — then run `npm run generate-reading-manifest`.
 
@@ -60,29 +56,15 @@ Shared code:
   - `ArabicLine` — waqaf-aware tappable word line, used by all three readers
   - `WordSheet` — bottom sheet with Escape/backdrop close
   - `WordDetail` — word meaning card; shows grammar fields when present
-  - `QuizRunner` — question/answer/result flow shared by the quiz and exam
+  - `QuizRunner` — question/answer/result flow for the breakdown quiz
   - `ConfirmDialog`, `ErrorPage`, `IndexCard`
 - [src/lib/](src/lib/):
-  - `progress.ts` — every localStorage score/visit key, plus resume/next-up logic
-  - `quiz.ts` — question building
+  - `progress.ts` — every localStorage score key, plus reset
+  - `quiz.ts` — breakdown quiz question building
   - `qs-rounds.ts` — game rounds and `isVersePlayable`
   - `arabic.ts` — tokenizing a line into words, waqaf marks and ayah separators
   - `random.ts`
 - [src/theme.ts](src/theme.ts) stays a framework-agnostic module that applies the theme to `document.documentElement`.
 - Arabic text uses one self-hosted font, LPMQ Isep Misbah (the Kemenag mushaf font), declared in `src/style.css`. The bundled copy is patched to map U+0671 (alef wasla) to the plain alef glyph, because upstream has no glyph for it, and to fix the `allahumma` ligature (upstream draws the vowel marks into the glyph and has no mark anchors for it, so `اللَّهُمَّ` showed doubled marks).
 
-`src/style.css` is a single global stylesheet. Components use its class names and have no scoped styles. Scores persist in `localStorage`. Vue can't observe localStorage, so derived views recompute from it on mount, or after an explicit version bump (see the reset in `FlashcardIndex.vue`). JSON content is rendered with `{{ }}` interpolation. None of it contains HTML.
-
-**Data layer is the core complexity.** Decks live as numbered JSON files in [src/data/flashcards/](src/data/flashcards/) and come in **two distinct on-disk formats** (see [src/types.ts](src/types.ts)):
-- **Grouped format** (`{ groups: [...] }`, e.g. `0.json`) — one file holds multiple decks; each group is its own deck. Cards are minimal (no root/forms/relatedWords).
-- **Vocab format** (`{ cards: [...] }`) — one file = one deck of rich vocab cards with `root`, `forms`, `related_words`, `quran_example`.
-
-[src/data/flashcards/index.ts](src/data/flashcards/index.ts) normalizes both into the unified `Card`/`Deck` app types via `loadDeck(id)` and `loadAllCards()`. JSON files are lazy-loaded with `import.meta.glob`. Note: `loadAllCards()` (used by the exam) deliberately **excludes grouped files** (`0.json`) and only aggregates vocab-format decks.
-
-**manifest.json is generated, not hand-edited.** [scripts/generate-manifest.js](scripts/generate-manifest.js) scans all deck files and emits the `DeckMeta[]` list the navigation page reads. It preserves existing `emoji` values across regenerations. Always run `npm run generate-manifest` after adding/changing deck data, and never edit `manifest.json` by hand.
-
-## Adding vocabulary
-
-To add a word: fetch its verse context from the Quran Cloud API (`https://api.alquran.cloud/v1/ayah/<surah>:<ayah>/editions/quran-uthmani,id.indonesian`), build a vocab-format card (Arabic, transliteration, Indonesian translation, `root`, `forms`, `related_words`, `quran_example`), append it to the appropriate vocab deck file, then run `npm run generate-manifest`. Check for duplicates by comparing Arabic with diacritics stripped.
-
-Auto-generated cards go into sequential vocab part files — when the current part file reaches its card limit, create the next sequential number (e.g. `13.json` after `12.json`). Do **not** use `99.json`, which is reserved as a special user-curated file.
+`src/style.css` is a single global stylesheet. Components use its class names and have no scoped styles. Scores persist in `localStorage`. Vue can't observe localStorage, so derived views recompute from it on mount. JSON content is rendered with `{{ }}` interpolation. None of it contains HTML.

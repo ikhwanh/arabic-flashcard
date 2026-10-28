@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
-    "generate-manifest": "node scripts/generate-manifest.js",
     "generate-qs-manifest": "node scripts/generate-qs-manifest.js",
     "generate-reading-manifest": "node scripts/generate-reading-manifest.js",
     "generate-dzikir-manifest": "node scripts/generate-dzikir-manifest.js"

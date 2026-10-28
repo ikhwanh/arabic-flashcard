@@ -5,7 +5,6 @@ import type { NavTab } from './router'
 import ReloadPrompt from './components/ReloadPrompt.vue'
 
 const TABS: { tab: NavTab; label: string; path: string }[] = [
-  { tab: 'flashcard', label: 'Flashcard', path: '/' },
   { tab: 'breakdown', label: 'Breakdown', path: '/qs' },
   { tab: 'reading', label: 'Yasin', path: '/read' },
   { tab: 'dzikir', label: 'Prayer and Dzikir', path: '/dzikir' },
