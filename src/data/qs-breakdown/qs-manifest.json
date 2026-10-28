@@ -1,5 +1,15 @@
 [
   {
+    "id": "3_190-191",
+    "surah": 3,
+    "surahName": "Ali 'Imran",
+    "from": 190,
+    "to": 191,
+    "title": "Ali 'Imran 190–191",
+    "description": "Tanda-tanda kebesaran Allah dalam penciptaan langit dan bumi serta pergantian malam dan siang, dan sifat orang-orang berakal yang mengingat Allah dalam setiap keadaan, merenungkan ciptaan-Nya, lalu berdoa.",
+    "verseCount": 2
+  },
+  {
     "id": "6_76-79",
     "surah": 6,
     "surahName": "Al-An'aam",
@@ -20,6 +30,16 @@
     "verseCount": 4
   },
   {
+    "id": "18_45-46",
+    "surah": 18,
+    "surahName": "Al-Kahf",
+    "from": 45,
+    "to": 46,
+    "title": "Al-Kahf 45–46",
+    "description": "Perumpamaan kehidupan dunia seperti tanaman yang subur karena hujan lalu kering diterbangkan angin; harta dan anak-anak hanyalah perhiasan, sedangkan amal saleh yang kekal lebih baik di sisi Allah.",
+    "verseCount": 2
+  },
+  {
     "id": "24_35-38",
     "surah": 24,
     "surahName": "An-Nur",
@@ -28,6 +48,16 @@
     "title": "An-Nur 35–38",
     "description": "Ayat Cahaya (Ayatun Nur): perumpamaan agung tentang cahaya Allah, lalu gambaran orang-orang beriman yang berdzikir di masjid dan tidak dilalaikan dunia.",
     "verseCount": 4
+  },
+  {
+    "id": "26_77-82",
+    "surah": 26,
+    "surahName": "Asy-Syu'ara",
+    "from": 77,
+    "to": 82,
+    "title": "Asy-Syu'ara 77–82",
+    "description": "Nabi Ibrahim memperkenalkan Tuhannya kepada kaumnya: Dialah yang menciptakan dan memberi petunjuk, memberi makan dan minum, menyembuhkan saat sakit, mematikan lalu menghidupkan kembali, dan yang ampunan-Nya ia harapkan pada hari pembalasan.",
+    "verseCount": 6
   },
   {
     "id": "33_72-73",
