@@ -2,14 +2,16 @@
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import type { Question } from '../lib/quiz'
+import WordDetail from './WordDetail.vue'
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   title: string
   questions: Question[]
   resultsLabel: string
   retryLabel: string
   praise: (score: number, total: number) => string
-}>()
+  backTo?: string
+}>(), { backTo: '/' })
 
 const emit = defineEmits<{ finish: [score: number, total: number]; retry: [] }>()
 
@@ -48,7 +50,7 @@ function next() {
   }
 }
 
-const back = () => router.push('/')
+const back = () => router.push(props.backTo)
 </script>
 
 <template>
@@ -80,6 +82,10 @@ const back = () => router.push('/')
           :disabled="answered"
           @click="choose(opt)"
         >{{ opt }}</button>
+      </div>
+
+      <div v-if="answered && q.word" class="quiz-explain">
+        <WordDetail :word="q.word" />
       </div>
 
       <button v-if="answered" class="btn-quiz-next" style="display:block" @click="next">

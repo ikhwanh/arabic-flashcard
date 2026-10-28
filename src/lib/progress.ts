@@ -18,6 +18,10 @@ export function getQsScore(id: string): string | null {
   return localStorage.getItem(`qs_score_${id}`)
 }
 
+export function getQsQuizScore(id: string): string | null {
+  return localStorage.getItem(`qs_quiz_score_${id}`)
+}
+
 export function saveScore(key: string, score: number, total: number) {
   localStorage.setItem(key, `${score}/${total}`)
 }
@@ -27,12 +31,15 @@ export function resetAll() {
     localStorage.removeItem(`quiz_score_${d.id}`)
     localStorage.removeItem(`last_visited_${d.id}`)
   })
-  qsMetas.forEach(m => localStorage.removeItem(`qs_score_${m.id}`))
+  qsMetas.forEach(m => {
+    localStorage.removeItem(`qs_score_${m.id}`)
+    localStorage.removeItem(`qs_quiz_score_${m.id}`)
+  })
 }
 
 export function hasAnyProgress(): boolean {
   return deckMetas.some(d => getQuizScore(d.id) !== null || getLastVisited(d.id) > 0)
-    || qsMetas.some(m => getQsScore(m.id) !== null)
+    || qsMetas.some(m => getQsScore(m.id) !== null || getQsQuizScore(m.id) !== null)
 }
 
 export function deckLabel(title: string): string {

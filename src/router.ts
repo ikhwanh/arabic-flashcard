@@ -26,6 +26,7 @@ export const router = createRouter({
     { path: '/test/:slug?', component: () => import('./pages/TestPage.vue'), props: true },
     { path: '/qs', component: () => import('./pages/BreakdownIndex.vue'), meta: { tab: 'breakdown', header: true } },
     { path: '/qs/:id', component: () => import('./pages/QsBreakdownPage.vue'), props: true },
+    { path: '/qs/:id/quiz', component: () => import('./pages/QsQuizPage.vue'), props: true },
     {
       path: '/qs/:id/game/:ayah?',
       component: () => import('./pages/QsGamePage.vue'),

@@ -34,7 +34,10 @@ function tapWord(vi: number, wi: number) {
       <div class="qs-header">
         <button class="btn-back" @click="router.push('/qs')">← Back</button>
         <span class="qs-deck-title">QS {{ bd.surah }} · {{ bd.surahName }}</span>
-        <button class="btn-qs-play" @click="router.push(`/qs/${id}/game`)">Play ▶</button>
+        <span class="qs-header-actions">
+          <button class="btn-qs-play" @click="router.push(`/qs/${id}/quiz`)">Quiz</button>
+          <button class="btn-qs-play" @click="router.push(`/qs/${id}/game`)">Play ▶</button>
+        </span>
       </div>
 
       <p v-if="tipVisible" class="qs-tip">👆 Tap any word to see its meaning and grammar</p>

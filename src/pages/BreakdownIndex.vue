@@ -2,7 +2,7 @@
 import { useRouter } from 'vue-router'
 import { qsMetas } from '../data/qs-breakdown'
 import IndexCard from '../components/IndexCard.vue'
-import { getQsScore } from '../lib/progress'
+import { getQsQuizScore, getQsScore } from '../lib/progress'
 
 const router = useRouter()
 </script>
@@ -25,7 +25,12 @@ const router = useRouter()
         :count="`Ayat ${m.from}–${m.to} · ${m.verseCount} ayat`"
         :score="getQsScore(m.id)"
       >
-        <button class="btn-qs-play-card" @click="router.push(`/qs/${m.id}/game`)">Play ▶</button>
+        <div class="qs-card-actions">
+          <button class="btn-qs-play-card" @click="router.push(`/qs/${m.id}/quiz`)">
+            Quiz<template v-if="getQsQuizScore(m.id)"> · {{ getQsQuizScore(m.id) }}</template>
+          </button>
+          <button class="btn-qs-play-card" @click="router.push(`/qs/${m.id}/game`)">Play ▶</button>
+        </div>
       </IndexCard>
     </div>
   </div>
