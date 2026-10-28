@@ -8,6 +8,7 @@
     "build": "vue-tsc --noEmit && vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "generate-qs-manifest": "node scripts/generate-qs-manifest.js",
+    "fetch-qs-audio": "node scripts/fetch-qs-audio.js",
     "generate-reading-manifest": "node scripts/generate-reading-manifest.js",
     "generate-dzikir-manifest": "node scripts/generate-dzikir-manifest.js"
   },

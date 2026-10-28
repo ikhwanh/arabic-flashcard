@@ -16,7 +16,7 @@ const route = useRoute()
 const router = useRouter()
 
 const drawerOpen = ref(false)
-const title = computed(() => TABS.find(t => t.tab === route.meta.tab)?.label ?? 'Settings')
+const title = computed(() => TABS.find(t => t.tab === route.meta.tab)?.label ?? (route.path === '/credits' ? 'Credits' : 'Settings'))
 
 function goTab(path: string) {
   router.push(path)
@@ -66,6 +66,7 @@ onUnmounted(() => document.removeEventListener('keydown', onKey))
       </svg>
       <span>Source on GitHub</span>
     </a>
+    <RouterLink class="github-link" to="/credits">Credits</RouterLink>
     <span class="app-version">v{{ appVersion }}</span>
   </footer>
   <ReloadPrompt />

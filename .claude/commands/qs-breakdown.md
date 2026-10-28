@@ -113,10 +113,12 @@ Write `src/data/qs-breakdown/<surah>_<from>-<to>.json` (for a single ayah, use `
 
 Use a clean English `title` like `<surahName> <from>–<to>`.
 
-### 4. Regenerate the manifest
+### 4. Regenerate the manifest and fetch the audio
 ```
 node scripts/generate-qs-manifest.js
+node scripts/fetch-qs-audio.js
 ```
+The second script downloads the Husary recitation for any new ayah into `public/audio/husary/`. Commit the new `.mp3` files with the passage.
 
 ### 5. Confirm
 Report a short summary: surah, ayah range, number of verses, total words, and the output file path. Remind the user that the per-word grammar is your analysis (not from an API) and worth a quick eyeball.

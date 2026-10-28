@@ -49,6 +49,12 @@ function confirmReset() {
       <p class="settings-hint">Clears every Surah Breakdown quiz and game score.</p>
     </section>
 
+    <section class="settings-section">
+      <h3 class="settings-heading">About</h3>
+      <RouterLink class="settings-link" to="/credits">Credits →</RouterLink>
+      <p class="settings-hint">Recitation audio and its source.</p>
+    </section>
+
     <ConfirmDialog
       v-if="confirming"
       title="Reset all progress?"

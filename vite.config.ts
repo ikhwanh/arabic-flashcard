@@ -28,9 +28,9 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Precache every lazy deck/surah/dzikir chunk and the Arabic fonts so the
-        // whole app works offline, not just pages visited while online.
-        globPatterns: ['**/*.{js,css,html,woff2,png,svg}'],
+        // Precache every lazy surah/dzikir chunk, the Arabic fonts and the ayah
+        // audio so the whole app works offline, not just pages visited while online.
+        globPatterns: ['**/*.{js,css,html,woff2,png,svg,mp3}'],
         cleanupOutdatedCaches: true,
       },
     }),

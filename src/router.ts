@@ -37,6 +37,7 @@ export const router = createRouter({
     { path: '/dzikir', component: () => import('./pages/DzikirIndex.vue'), meta: { tab: 'dzikir', header: true } },
     { path: '/dzikir/:id', component: () => import('./pages/DzikirPage.vue'), props: true },
     { path: '/settings', component: () => import('./pages/SettingsPage.vue'), meta: { header: true } },
+    { path: '/credits', component: () => import('./pages/CreditsPage.vue'), meta: { header: true } },
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
 })
