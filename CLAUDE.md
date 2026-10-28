@@ -65,6 +65,6 @@ Shared code:
   - `arabic.ts` — tokenizing a line into words, waqaf marks and ayah separators
   - `random.ts`
 - [src/theme.ts](src/theme.ts) stays a framework-agnostic module that applies the theme to `document.documentElement`.
-- Arabic text uses one self-hosted font, LPMQ Isep Misbah (the Kemenag mushaf font), declared in `src/style.css`. The bundled copy is patched to map U+0671 (alef wasla) to the plain alef glyph, because upstream has no glyph for it, and to fix the `allahumma` ligature (upstream draws the vowel marks into the glyph and has no mark anchors for it, so `اللَّهُمَّ` showed doubled marks).
+- Arabic text uses one self-hosted font, LPMQ Isep Misbah (the Kemenag mushaf font), declared in `src/style.css`. The bundled copy is patched to map U+0671 (alef wasla) to the plain alef glyph, because upstream has no glyph for it, and to fix the `allahumma` ligature (upstream draws the vowel marks into the glyph and has no mark anchors for it, so `اللَّهُمَّ` showed doubled marks). A `ccmp` ligature also turns fatha + dagger alif (U+064E U+0670, as in Uthmani `هَٰذَا`) into the dagger alif alone, because upstream draws the two marks on top of each other.
 
 `src/style.css` is a single global stylesheet. Components use its class names and have no scoped styles. Scores persist in `localStorage`. Vue can't observe localStorage, so derived views recompute from it on mount. JSON content is rendered with `{{ }}` interpolation. None of it contains HTML.
