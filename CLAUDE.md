@@ -28,7 +28,7 @@ There is no test runner or linter; `vue-tsc` (run as part of `build`) is the onl
 ## Architecture
 
 **Path-based routing.** [src/router.ts](src/router.ts) uses vue-router with `createWebHistory(import.meta.env.BASE_URL)`. GitHub Pages has no SPA fallback, so `npm run build` copies `dist/index.html` to `dist/404.html` to serve deep links. Old hash URLs (`#qs/<id>`) are rewritten to their path equivalent at the top of `router.ts`, before the router reads the URL. Unknown paths (including the removed flashcard `/deck/…` and `/test/…` routes) redirect to `/`, which redirects to `/qs`. Routes (page components in [src/pages/](src/pages/)):
-- `/qs` → Surah Breakdown index (`BreakdownIndex.vue`)
+- `/qs` → Surah Breakdown index (`BreakdownIndex.vue`); passages can be bookmarked per card, with a "Bookmarked only" filter
 - `/qs/:id` → word-by-word verse reader (`QsBreakdownPage.vue`)
 - `/qs/:id/quiz` → per-passage meaning quiz; each answer reveals the word's detail card (`QsQuizPage.vue`)
 - `/qs/:id/game/:ayah?` → word-ordering game for the passage or one ayah (`QsGamePage.vue`)
@@ -64,6 +64,7 @@ Shared code:
   - `ConfirmDialog`, `ErrorPage`, `IndexCard`
 - [src/lib/](src/lib/):
   - `progress.ts` — every localStorage score key, plus reset
+  - `bookmarks.ts` — bookmarked breakdown passages and the "Bookmarked only" filter (localStorage; not cleared by "Reset all progress")
   - `quiz.ts` — breakdown quiz question building
   - `qs-rounds.ts` — game rounds and `isVersePlayable`
   - `arabic.ts` — tokenizing a line into words, waqaf marks and ayah separators

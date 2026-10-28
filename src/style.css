@@ -1156,6 +1156,34 @@ body {
 .btn-qs-play-card:hover { background: var(--accent); color: #fff; }
 .qs-card-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 1.1rem 1rem; }
 .qs-card-actions .btn-qs-play-card { margin: 0; }
+
+/* ── Surah Breakdown bookmarks ──────────────────────────────────────────────── */
+.btn-qs-bookmark,
+.btn-qs-filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.btn-qs-bookmark path,
+.btn-qs-filter path { fill: none; }
+.btn-qs-bookmark.active path,
+.btn-qs-filter.active path { fill: currentColor; }
+.btn-qs-bookmark { margin-left: auto; width: 2rem; height: 2rem; padding: 0; }
+.btn-qs-bookmark:hover { color: var(--accent); border-color: var(--accent); }
+.btn-qs-bookmark.active { color: var(--accent); border-color: var(--accent); }
+.qs-index-filter { display: flex; justify-content: flex-end; margin-bottom: 1rem; }
+.btn-qs-filter { padding: 0.4rem 0.9rem; }
+.btn-qs-filter:hover { color: var(--accent); border-color: var(--accent); }
+.btn-qs-filter.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 .qs-header-actions { display: flex; gap: 0.5rem; }
 
 .btn-qs-play {
