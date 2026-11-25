@@ -8,6 +8,8 @@ const TABS: { tab: NavTab; label: string; path: string }[] = [
   { tab: 'breakdown', label: 'Breakdown', path: '/qs' },
   { tab: 'reading', label: 'Yasin', path: '/read' },
   { tab: 'dzikir', label: 'Prayer and Dzikir', path: '/dzikir' },
+  { tab: 'prayer', label: 'Prayer Times', path: '/prayer-times' },
+  { tab: 'calendar', label: 'Calendar', path: '/calendar' },
 ]
 
 const appVersion = __APP_VERSION__

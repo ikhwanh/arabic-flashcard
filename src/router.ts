@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-export type NavTab = 'breakdown' | 'reading' | 'dzikir'
+export type NavTab = 'breakdown' | 'reading' | 'dzikir' | 'prayer' | 'calendar'
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -36,6 +36,8 @@ export const router = createRouter({
     { path: '/read/:id', component: () => import('./pages/ReadingPage.vue'), props: true },
     { path: '/dzikir', component: () => import('./pages/DzikirIndex.vue'), meta: { tab: 'dzikir', header: true } },
     { path: '/dzikir/:id', component: () => import('./pages/DzikirPage.vue'), props: true },
+    { path: '/prayer-times', component: () => import('./pages/PrayerTimesPage.vue'), meta: { tab: 'prayer', header: true } },
+    { path: '/calendar', component: () => import('./pages/HijriCalendarPage.vue'), meta: { tab: 'calendar', header: true } },
     { path: '/settings', component: () => import('./pages/SettingsPage.vue'), meta: { header: true } },
     { path: '/credits', component: () => import('./pages/CreditsPage.vue'), meta: { header: true } },
     { path: '/:pathMatch(.*)*', redirect: '/' },

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-A Quranic Arabic learning SPA (word-by-word Quran and dzikir readers), built with Vue 3 (`<script setup lang="ts">` SFCs) + vue-router + Vite. Translations are in Indonesian. Deployed to GitHub Pages — pushes to `main` auto-build and deploy via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+A Quranic Arabic learning SPA (word-by-word Quran and dzikir readers, plus prayer times and a Hijri calendar), built with Vue 3 (`<script setup lang="ts">` SFCs) + vue-router + Vite. Translations are in Indonesian. Deployed to GitHub Pages — pushes to `main` auto-build and deploy via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
 
 ## Language conventions
 
@@ -36,10 +36,12 @@ There is no test runner or linter; `vue-tsc` (run as part of `build`) is the onl
 - `/read/:id` → fluent Quran reader (`ReadingPage.vue`)
 - `/dzikir` → Prayer and Dzikir index (`DzikirIndex.vue`)
 - `/dzikir/:id` → prayer recitation / morning-evening dzikir reader (`DzikirPage.vue`)
-- `/settings` → theme, reset all progress (`SettingsPage.vue`)
+- `/prayer-times` → **Prayer Times** tab: today's schedule with next-prayer countdown, plus a monthly table (`PrayerTimesPage.vue`)
+- `/calendar` → **Calendar** tab: Hijri month grid with Gregorian dates, Islamic days and sunnah fasting days (`HijriCalendarPage.vue`)
+- `/settings` → theme, Hijri date adjustment, reset all progress (`SettingsPage.vue`)
 - `/credits` → recitation audio attribution (`CreditsPage.vue`), linked from the footer, Settings and the breakdown reader
 
-[src/App.vue](src/App.vue) is the shell: header with three tabs — **Breakdown** (`/qs`), **Yasin** (`/read`), **Prayer and Dzikir** (`/dzikir`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
+[src/App.vue](src/App.vue) is the shell: header with five tabs — **Breakdown** (`/qs`), **Yasin** (`/read`), **Prayer and Dzikir** (`/dzikir`), **Prayer Times** (`/prayer-times`), **Calendar** (`/calendar`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
 
 **PWA / offline.** [vite.config.ts](vite.config.ts) configures `vite-plugin-pwa`:
 - **Install:** the manifest lives in the config. Icons are PNGs in `public/` (`pwa-*`, `maskable-icon-512x512.png`, `apple-touch-icon-180x180.png`, `favicon-64x64.png`).
@@ -54,6 +56,21 @@ Each verse has a listen button that plays Sheikh Mahmoud Khalil Al-Husary's mura
 **Yasin** ([src/pages/ReadingPage.vue](src/pages/ReadingPage.vue)) is a separate, lighter reading module: a full surah rendered as Arabic only (no inline translation), where tapping any word reveals *just* its meaning (transliteration + Indonesian meaning) — no grammar, root, forms, or notes. Data lives in [src/data/reading/](src/data/reading/) as `{surah}_1-{ayahCount}.json` (one file per surah, full span), with minimal per-word `{ arabic, transliteration, meaning }`, normalized by [src/data/reading/index.ts](src/data/reading/index.ts); `reading-manifest.json` is generated, never hand-edited. Generate/extend a surah with the `/quran-reading <surah> [<from>] [<to>]` command ([.claude/commands/quran-reading.md](.claude/commands/quran-reading.md)) — batches merge into the one per-surah file — then run `npm run generate-reading-manifest`.
 
 **Prayer and Dzikir** ([src/pages/DzikirPage.vue](src/pages/DzikirPage.vue)) is a parallel of the Yasin reader for prayer recitations (bacaan shalat) and morning/evening remembrances (dzikir pagi/petang). Same word-by-word tap-to-reveal interaction (reusing the `qs-*` classes), but each item is a repeated remembrance rather than a numbered ayat: the per-item badge shows the recitation count (e.g. `3×`) instead of an ayah number, with an optional item `title` and `source`. Morning/evening content is sourced from **Hisnul Muslim**; prayer recitations use the wording common in Indonesia. Prayer items whose action or recitation is an essential element of prayer (rukun, **Shafi'i**) carry `rukun: { part: 'action' | 'recitation' | 'both', note }`, rendered as a tappable tag. Data lives in [src/data/dzikir/](src/data/dzikir/) as numeric-prefixed files (`1.json` = morning, `2.json` = evening, `3.json` = prayer), each `{ meta: { id, time: 'prayer' | 'morning' | 'evening', title, description }, items: [{ title?, repeat, hadith?: { reference, arabic?, content }, rukun?, arabic, words: [{ arabic, transliteration, meaning }] }] }`, normalized by [src/data/dzikir/index.ts](src/data/dzikir/index.ts). The item `arabic` must split on spaces into exactly the `words[]` tokens in order. Generate/extend a set with the `/dzikir <prayer|morning|evening> [<from>] [<to>]` command ([.claude/commands/dzikir.md](.claude/commands/dzikir.md)), then run `npm run generate-dzikir-manifest`; `dzikir-manifest.json` is generated, never hand-edited.
+
+**Prayer Times** is computed offline, with no API. [src/lib/prayer-times.ts](src/lib/prayer-times.ts) wraps the `adhan` library with Kemenag RI parameters:
+- Fajr 20°, Isha 18°, Shafi'i Asr
+- a 2-minute ihtiyat added to each prayer and subtracted from sunrise
+- Imsak = Fajr − 10 min
+- Dhuha at sun altitude 4.5°, which adhan doesn't provide, so it is derived from sunrise
+
+The location is a bundled Indonesian city ([src/data/cities.ts](src/data/cities.ts), each with its IANA timezone) or the device's GPS. It is stored in localStorage as `prayer_location`. Times are formatted in the location's timezone, so a WITA/WIT city shows its own local time.
+
+**Hijri Calendar**: [src/lib/hijri.ts](src/lib/hijri.ts) converts dates with the browser's `Intl` `islamic-umalqura` calendar.
+- A user adjustment of −2…+2 days (localStorage `hijri_adjust`, set in Settings) shifts every date, for when the Indonesian rukyat/MABIMS announcement differs from Umm al-Qura.
+- Calendar days are UTC-noon `Date`s so whole-day arithmetic never crosses a boundary.
+- Notable days and sunnah fasting days are in [src/data/hijri-events.ts](src/data/hijri-events.ts).
+
+"Reset all progress" clears neither `prayer_location` nor `hijri_adjust`.
 
 Shared code:
 - [src/components/](src/components/):

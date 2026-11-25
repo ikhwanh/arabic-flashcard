@@ -16,7 +16,7 @@ export default defineConfig({
       manifest: {
         name: 'Arabic Flashcards',
         short_name: 'Arabic',
-        description: 'Learn Quranic Arabic word by word: surah breakdowns, Yasin, and prayer & dzikir.',
+        description: 'Learn Quranic Arabic word by word: surah breakdowns, Yasin, prayer & dzikir, prayer times and a Hijri calendar.',
         lang: 'en',
         theme_color: '#2563eb',
         background_color: '#f5f5f5',

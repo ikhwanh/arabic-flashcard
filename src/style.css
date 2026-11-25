@@ -96,7 +96,9 @@ body {
 .qs-detail-arabic,
 .qs-detail-root,
 .qs-form-arabic,
-.dzikir-hadith-arabic {
+.dzikir-hadith-arabic,
+.hcal-month-arabic,
+.hcal-detail-arabic {
   font-family: var(--font-arabic);
 }
 
@@ -1404,3 +1406,300 @@ body {
 .pwa-toast-reload { background: var(--accent); color: #fff; border: none; }
 .pwa-toast-reload:hover { background: var(--accent-hover); }
 .pwa-toast-close { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
+
+/* ── Prayer times ───────────────────────────────────────────────────────────── */
+.prayer-page,
+.hcal-page { max-width: 640px; }
+
+.prayer-btn {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.prayer-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.prayer-btn:disabled { opacity: 0.5; cursor: default; }
+.prayer-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.prayer-btn.primary:hover:not(:disabled) { background: var(--accent-hover); color: #fff; }
+
+.prayer-nav-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.prayer-nav-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.prayer-nav-btn:disabled { opacity: 0.4; cursor: default; }
+
+.prayer-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.prayer-location {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.prayer-location-icon { flex-shrink: 0; color: var(--accent); }
+.prayer-location-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.prayer-location-text span { font-size: 0.82rem; color: var(--text-muted); }
+
+.prayer-today,
+.prayer-month,
+.hcal,
+.hcal-detail {
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.prayer-today-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.9rem;
+}
+.prayer-date { font-weight: 600; }
+.prayer-hijri { color: var(--text-muted); }
+
+.prayer-next {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 10px;
+}
+.prayer-next-label { font-weight: 600; }
+.prayer-next-time { font-size: 1.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.prayer-next-countdown { margin-left: auto; font-size: 0.9rem; opacity: 0.9; }
+
+.prayer-list { list-style: none; }
+.prayer-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+.prayer-row:last-child { border-bottom: none; }
+.prayer-name { font-weight: 600; }
+.prayer-time { font-weight: 600; }
+.prayer-row.minor .prayer-name,
+.prayer-row.minor .prayer-time { font-weight: 400; color: var(--text-muted); font-size: 0.92rem; }
+.prayer-row.past:not(.next) { opacity: 0.55; }
+.prayer-row.next {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  border-radius: 8px;
+}
+
+.prayer-month-head,
+.hcal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+.prayer-month-head h3 { font-size: 1.05rem; }
+
+.prayer-table-wrap { overflow-x: auto; margin: 0 -0.5rem; }
+.prayer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+.prayer-table th {
+  padding: 0.4rem 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+.prayer-table td { padding: 0.35rem; border-bottom: 1px solid var(--border); }
+.prayer-table tbody tr:last-child td { border-bottom: none; }
+.prayer-table-date { text-align: left; white-space: nowrap; font-weight: 600; }
+.prayer-table-date small { display: block; font-size: 0.7rem; font-weight: 400; color: var(--text-muted); }
+.prayer-table tr.today td { color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--surface)); }
+.prayer-month .settings-hint { margin-top: 0.75rem; }
+
+.prayer-picker-title { margin-bottom: 0.9rem; font-size: 1.1rem; }
+.prayer-gps { width: 100%; padding: 0.65rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; }
+.prayer-error { margin-top: 0.5rem; font-size: 0.85rem; color: #dc2626; }
+.prayer-search {
+  width: 100%;
+  margin: 0.9rem 0 0.5rem;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.prayer-search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.prayer-city-list { list-style: none; }
+.prayer-city {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.6rem 0.5rem;
+  font: inherit;
+  color: var(--text);
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.prayer-city:hover { background: var(--bg); }
+.prayer-city.active { color: var(--accent); font-weight: 600; }
+.prayer-city small { font-size: 0.78rem; color: var(--text-muted); font-weight: 400; }
+.prayer-city-empty { padding: 0.75rem 0.5rem; font-size: 0.9rem; color: var(--text-muted); }
+
+.hijri-adjust { display: flex; align-items: center; gap: 0.75rem; }
+.hijri-adjust-value { min-width: 4.5rem; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ── Hijri calendar ─────────────────────────────────────────────────────────── */
+.hcal-title { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hcal-month { font-size: 1.1rem; font-weight: 700; }
+.hcal-month-arabic { font-size: 1.3rem; line-height: 1.6; color: var(--accent); }
+.hcal-span { font-size: 0.82rem; color: var(--text-muted); }
+.hcal-today-row { display: flex; justify-content: center; margin-bottom: 0.9rem; }
+
+.hcal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+.hcal-weekday {
+  padding-bottom: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-muted);
+}
+.hcal-weekday.friday { color: var(--accent); }
+.hcal-day {
+  position: relative;
+  aspect-ratio: 1;
+  min-height: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  padding: 0.2rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.hcal-day:hover { border-color: var(--border); }
+.hcal-day.bidh { background: color-mix(in srgb, var(--accent) 14%, var(--bg)); }
+.hcal-day.friday .hcal-day-hijri { color: var(--accent); }
+.hcal-day.today { border: 2px solid var(--accent); }
+.hcal-day.selected { color: #fff; background: var(--accent); }
+.hcal-day.selected .hcal-day-hijri,
+.hcal-day.selected .hcal-day-greg { color: #fff; }
+.hcal-day-hijri { font-size: 1.05rem; font-weight: 700; line-height: 1.1; }
+.hcal-day-greg { font-size: 0.7rem; color: var(--text-muted); }
+.hcal-day .hcal-dot { position: absolute; top: 0.3rem; right: 0.3rem; }
+.hcal-day.selected .hcal-dot { box-shadow: 0 0 0 1.5px #fff; }
+
+.hcal-dot {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.hcal-dot-holiday { background: #dc2626; }
+.hcal-dot-fasting { background: #16a34a; }
+.hcal-dot-observance { background: #d97706; }
+.hcal-swatch {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: -0.1rem;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--accent) 14%, var(--bg));
+  border: 1px solid var(--border);
+}
+
+.hcal-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1rem;
+  margin-top: 0.9rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.hcal-detail { display: flex; flex-direction: column; gap: 0.25rem; }
+.hcal-detail-dates { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; }
+.hcal-detail-arabic { font-size: 1.2rem; color: var(--accent); }
+.hcal-detail-greg { font-size: 0.88rem; color: var(--text-muted); }
+.hcal-events { list-style: none; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem; }
+.hcal-events li { display: flex; align-items: center; gap: 0.5rem; }
+.hcal-no-events { margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted); }
+.hcal-hint { text-align: center; }
+.hcal-hint a { color: var(--accent); }
+
+@media (max-width: 600px) {
+  .prayer-page,
+  .hcal-page { padding: 1.25rem 1rem; }
+  .prayer-today,
+  .prayer-month,
+  .hcal,
+  .hcal-detail { padding: 1rem 0.85rem; }
+  .hcal-grid { gap: 0.2rem; }
+  .hcal-day { border-radius: 8px; }
+  .prayer-table { font-size: 0.78rem; }
+  .prayer-table th,
+  .prayer-table td { padding: 0.3rem 0.15rem; }
+  .prayer-table th { font-size: 0.68rem; }
+}

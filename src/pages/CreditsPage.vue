@@ -29,5 +29,20 @@ import { RECITER } from '../lib/ayah-audio'
         <a href="https://github.com/ikhwanh/arabic-flashcard/issues" target="_blank" rel="noopener noreferrer">open an issue on GitHub</a>.
       </p>
     </section>
+
+    <section class="settings-section">
+      <h3 class="settings-heading">Prayer times</h3>
+      <dl class="credits-list">
+        <dt>Library</dt>
+        <dd>
+          <a href="https://github.com/batoulapps/adhan-js" target="_blank" rel="noopener noreferrer">Adhan JavaScript</a>
+          by Batoul Apps (MIT license)
+        </dd>
+        <dt>Method</dt>
+        <dd>Kemenag RI parameters: Fajr 20°, Isha 18°, Shafi'i Asr, 2-minute ihtiyat</dd>
+        <dt>Calendar</dt>
+        <dd>Umm al-Qura, from the browser's built-in calendar support</dd>
+      </dl>
+    </section>
   </div>
 </template>
