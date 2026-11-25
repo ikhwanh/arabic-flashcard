@@ -70,11 +70,6 @@ function goToday() {
 
 <template>
   <div class="nav-page hcal-page">
-    <div class="nav-hero">
-      <h2>Hijri Calendar</h2>
-      <p class="nav-subtitle">Today is {{ formatHijri(todayHijri) }}</p>
-    </div>
-
     <section class="hcal">
       <div class="hcal-head">
         <button class="prayer-nav-btn" aria-label="Previous month" @click="shiftMonth(-1)">‹</button>

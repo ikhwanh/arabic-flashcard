@@ -5,11 +5,11 @@ import type { NavTab } from './router'
 import ReloadPrompt from './components/ReloadPrompt.vue'
 
 const TABS: { tab: NavTab; label: string; path: string }[] = [
-  { tab: 'breakdown', label: 'Breakdown', path: '/qs' },
+  { tab: 'breakdown', label: 'Bedah Surah', path: '/qs' },
   { tab: 'reading', label: 'Yasin', path: '/read' },
-  { tab: 'dzikir', label: 'Prayer and Dzikir', path: '/dzikir' },
-  { tab: 'prayer', label: 'Prayer Times', path: '/prayer-times' },
-  { tab: 'calendar', label: 'Calendar', path: '/calendar' },
+  { tab: 'dzikir', label: 'Dzikir', path: '/dzikir' },
+  { tab: 'prayer', label: 'Jadwal Shalat', path: '/prayer-times' },
+  { tab: 'calendar', label: 'Kalender Hijriah', path: '/calendar' },
 ]
 
 const appVersion = __APP_VERSION__

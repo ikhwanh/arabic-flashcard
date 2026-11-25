@@ -122,11 +122,6 @@ function useGps() {
 
 <template>
   <div class="nav-page prayer-page">
-    <div class="nav-hero">
-      <h2>Prayer Times</h2>
-      <p class="nav-subtitle">Daily prayer schedule, calculated with the Kemenag RI method</p>
-    </div>
-
     <div v-if="!loc" class="prayer-empty">
       <p>Choose your city or use your location to see today's prayer times.</p>
       <button class="prayer-btn primary" @click="openPicker">Choose location</button>

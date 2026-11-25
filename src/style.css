@@ -375,22 +375,6 @@ body {
   margin: 0 auto;
 }
 
-.nav-hero {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.nav-hero h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.nav-subtitle {
-  color: var(--text-muted);
-  font-size: 1rem;
-}
-
 .confirm-overlay {
   position: fixed;
   inset: 0;

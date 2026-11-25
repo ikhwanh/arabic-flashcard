@@ -9,10 +9,6 @@ const first = readingMetas[0]
 <template>
   <ReadingPage v-if="first" :id="first.id" embedded />
   <div v-else class="nav-page">
-    <div class="nav-hero">
-      <h2>Yasin</h2>
-      <p class="nav-subtitle">Read the Quran, tap a word for its meaning</p>
-    </div>
     <div class="qs-index-grid">
       <p class="nav-empty">No surahs yet. Generate one with the quran-reading command.</p>
     </div>

@@ -25,10 +25,6 @@ function bookmarkLabel(id: string, heading: string) {
 
 <template>
   <div class="nav-page">
-    <div class="nav-hero">
-      <h2>Surah Breakdown</h2>
-      <p class="nav-subtitle">Read verses word by word</p>
-    </div>
     <div v-if="qsMetas.length > 0" class="qs-index-filter">
       <button
         class="btn-qs-filter"

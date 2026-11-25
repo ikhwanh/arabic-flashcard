@@ -4,11 +4,6 @@ import { RECITER } from '../lib/ayah-audio'
 
 <template>
   <div class="nav-page settings-page">
-    <div class="nav-hero">
-      <h2>Credits</h2>
-      <p class="nav-subtitle">The people and projects this app relies on</p>
-    </div>
-
     <section class="settings-section">
       <h3 class="settings-heading">Recitation audio</h3>
       <dl class="credits-list">

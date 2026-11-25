@@ -29,11 +29,6 @@ function confirmReset() {
 
 <template>
   <div class="nav-page settings-page">
-    <div class="nav-hero">
-      <h2>Settings</h2>
-      <p class="nav-subtitle">Personalize your appearance and manage your progress</p>
-    </div>
-
     <section class="settings-section">
       <h3 class="settings-heading">Theme</h3>
       <div class="settings-options">

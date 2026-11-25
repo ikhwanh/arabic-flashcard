@@ -12,10 +12,6 @@ const DZIKIR_EMOJI: Record<DzikirTime, string> = {
 
 <template>
   <div class="nav-page">
-    <div class="nav-hero">
-      <h2>Prayer and Dzikir</h2>
-      <p class="nav-subtitle">Prayer recitations &amp; morning/evening remembrance, tap a word for its meaning</p>
-    </div>
     <div class="qs-index-grid">
       <p v-if="dzikirMetas.length === 0" class="nav-empty">Nothing here yet.</p>
       <IndexCard

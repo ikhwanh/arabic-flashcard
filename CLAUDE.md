@@ -9,7 +9,7 @@ A Quranic Arabic learning SPA (word-by-word Quran and dzikir readers, plus praye
 ## Language conventions
 
 - **Generated content** (word meanings, verse translations, any user-facing data) must be in **Indonesian**.
-- **UI elements** (labels, buttons, headings, navigation, prompts in the interface) must be in **English**.
+- **UI elements** (labels, buttons, headings, navigation, prompts in the interface) must be in **English**, except the header tab labels, which are in **Indonesian**.
 
 ## Commands
 
@@ -41,7 +41,7 @@ There is no test runner or linter; `vue-tsc` (run as part of `build`) is the onl
 - `/settings` → theme, Hijri date adjustment, reset all progress (`SettingsPage.vue`)
 - `/credits` → recitation audio attribution (`CreditsPage.vue`), linked from the footer, Settings and the breakdown reader
 
-[src/App.vue](src/App.vue) is the shell: header with five tabs — **Breakdown** (`/qs`), **Yasin** (`/read`), **Prayer and Dzikir** (`/dzikir`), **Prayer Times** (`/prayer-times`), **Calendar** (`/calendar`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
+[src/App.vue](src/App.vue) is the shell: header with five tabs — **Bedah Surah** (`/qs`), **Yasin** (`/read`), **Dzikir** (`/dzikir`), **Jadwal Shalat** (`/prayer-times`), **Kalender Hijriah** (`/calendar`) — plus the settings button and footer. Route `meta: { tab, header }` decides the active tab and whether the header shows (readers hide it). The active tab comes from the route, not internal state, so each reader's back button returns to the right tab. `<RouterView :key="route.fullPath">` remounts the page on every navigation, including param-only changes.
 
 **PWA / offline.** [vite.config.ts](vite.config.ts) configures `vite-plugin-pwa`:
 - **Install:** the manifest lives in the config. Icons are PNGs in `public/` (`pwa-*`, `maskable-icon-512x512.png`, `apple-touch-icon-180x180.png`, `favicon-64x64.png`).
